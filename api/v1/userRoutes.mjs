@@ -19,18 +19,6 @@ router.post("/signup", async (req, res) => {
 
     try {
         let { name, email, password, dateOfBirth } = req.body;
-        name = name.trim();
-        email = email.trim();
-        password = password.trim();
-        dateOfBirth = dateOfBirth.trim();
-
-        if (!name || !email || !password || !dateOfBirth) {
-            return res.status(400).json({
-                status: "FAILED",
-                message: "Empty Input Field",
-                response_code: 400,
-            });
-        }
 
         if (!name || !email || !password || !dateOfBirth) {
             return res.status(400).json({
