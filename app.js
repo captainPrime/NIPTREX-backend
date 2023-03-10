@@ -9,7 +9,7 @@ const app = express(),
 app.use(cors());
 connectMongoDB();
 
-app.use("/api/v1/user", v1UserRouter);
+app.use("/v1/user", v1UserRouter);
 
 app.listen(PORT, () => {
     console.table(`Express server is running & listening on port ${PORT}`);

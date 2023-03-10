@@ -6,6 +6,10 @@ import bodyParser from "body-parser";
 const router = express.Router();
 router.use(bodyParser.json());
 
+router.get("/", (req, res) => {
+    res.send("Hello Devs");
+});
+
 // Signup
 router.post("/signup", async (req, res) => {
     res.set({
