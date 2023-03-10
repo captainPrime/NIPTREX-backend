@@ -5,7 +5,7 @@ dotenv.config();
 
 const connectMongoDB = () => {
     mongoose
-        .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+        .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, dbName: "NiptrexUsers" })
         .then(() => {
             console.log("DB Connected");
         })
