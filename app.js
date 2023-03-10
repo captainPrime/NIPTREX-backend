@@ -4,7 +4,7 @@ import v1UserRouter from "./api/v1/userRoutes.mjs";
 import cors from "cors";
 
 const app = express(),
-    PORT = process.env.PORT || 3003;
+    PORT = process.env.PORT || 5000;
 
 app.use(cors());
 connectMongoDB();
