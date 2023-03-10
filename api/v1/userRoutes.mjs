@@ -6,6 +6,18 @@ import bodyParser from "body-parser";
 const router = express.Router();
 router.use(bodyParser.json());
 
+// Trims string fields and returns an object with trimmed values
+const trimFields = (obj) => {
+    return Object.entries(obj).reduce((acc, [key, value]) => {
+        if (typeof value === "string") {
+            acc[key] = value.trim();
+        } else {
+            acc[key] = value;
+        }
+        return acc;
+    }, {});
+};
+
 router.get("/", (req, res) => {
     res.send("Hello Devs");
 });
@@ -19,10 +31,6 @@ router.post("/signup", async (req, res) => {
 
     try {
         let { name, email, password, dateOfBirth } = req.body;
-        name = name.trim();
-        email = email.trim();
-        password = password.trim();
-        dateOfBirth = dateOfBirth.trim();
 
         if (!name || !email || !password || !dateOfBirth) {
             return res.status(400).json({
@@ -31,6 +39,13 @@ router.post("/signup", async (req, res) => {
                 response_code: 400,
             });
         }
+
+        // Trim input fields
+        const trimmedFields = trimFields(req.body);
+        name = trimmedFields.name;
+        email = trimmedFields.email;
+        password = trimmedFields.password;
+        dateOfBirth = trimmedFields.dateOfBirth;
 
         if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(name)) {
             return res.status(400).json({
@@ -108,18 +123,22 @@ router.post("/signin", async (req, res) => {
 
     try {
         let { email, password } = req.body;
-        email = email.trim();
-        password = password.trim();
 
         if (!email || !password) {
             return res.status(400).json({
                 status: "FAILED",
-                message: "Empty credentials supplied",
+                message: "Empty Input Field",
                 response_code: 400,
             });
         }
 
+        // Trim input fields
+        const trimmedFields = trimFields(req.body);
+        email = trimmedFields.email;
+        password = trimmedFields.password;
+
         const user = await User.findOne({ email });
+
         if (!user) {
             return res.status(400).json({
                 status: "FAILED",
@@ -128,13 +147,12 @@ router.post("/signin", async (req, res) => {
             });
         }
 
-        const hashedPassword = user.password;
-        const isMatch = await bcrypt.compare(password, hashedPassword);
+        const isMatch = await bcrypt.compare(password, user.password);
 
         if (!isMatch) {
             return res.status(400).json({
                 status: "FAILED",
-                message: "Invalid password entered",
+                message: "Invalid credentials entered",
                 response_code: 400,
             });
         }
