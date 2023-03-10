@@ -32,6 +32,20 @@ router.post("/signup", async (req, res) => {
             });
         }
 
+        if (!name || !email || !password || !dateOfBirth) {
+            return res.status(400).json({
+                status: "FAILED",
+                message: "Empty Input Field",
+                response_code: 400,
+            });
+        }
+
+        // Add null checks before calling trim()
+        name = name ? name.trim() : "";
+        email = email ? email.trim() : "";
+        password = password ? password.trim() : "";
+        dateOfBirth = dateOfBirth ? dateOfBirth.trim() : "";
+
         if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(name)) {
             return res.status(400).json({
                 status: "FAILED",
