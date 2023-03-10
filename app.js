@@ -1,18 +1,16 @@
 import express from "express";
-import bodyParser from "body-parser";
 import connectMongoDB from "./config/db.mjs";
-import UserRouter from "./api/userRoutes.mjs";
+import v1UserRouter from "./api/v1/userRoutes.mjs";
+import cors from "cors";
 
 const app = express(),
-    port = process.env.PORT || 3003;
+    PORT = process.env.PORT || 3003;
 
+app.use(cors());
 connectMongoDB();
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use("/api/v1/user", v1UserRouter);
 
-app.use("/user", UserRouter);
-
-app.listen(port, () => {
-    console.table(`Express server is running & listening on port ${port}`);
+app.listen(PORT, () => {
+    console.table(`Express server is running & listening on port ${PORT}`);
 });

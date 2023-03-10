@@ -1,11 +1,18 @@
 import express from "express";
 import bcrypt from "bcrypt";
-import User from "./../models/user.mjs";
+import User from "../../models/user.mjs";
+import bodyParser from "body-parser";
 
 const router = express.Router();
+router.use(bodyParser.json());
 
 // Signup
 router.post("/signup", async (req, res) => {
+    res.set({
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+    });
+
     try {
         let { name, email, password, dateOfBirth } = req.body;
         name = name.trim();
@@ -17,6 +24,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Empty Input Field",
+                response_code: 400,
             });
         }
 
@@ -24,6 +32,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid username entered",
+                response_code: 400,
             });
         }
 
@@ -31,6 +40,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid email entered",
+                response_code: 400,
             });
         }
 
@@ -38,6 +48,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid date of birth entered",
+                response_code: 400,
             });
         }
 
@@ -45,6 +56,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Password is too short",
+                response_code: 400,
             });
         }
 
@@ -53,6 +65,7 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "User with the provided email already exists",
+                response_code: 400,
             });
         }
 
@@ -67,21 +80,28 @@ router.post("/signup", async (req, res) => {
 
         const savedUser = await newUser.save();
         return res.status(201).json({
+            data: savedUser,
             status: "SUCCESS",
             message: "Signup successful",
-            data: savedUser,
+            response_code: 201,
         });
     } catch (error) {
         console.log(error);
         return res.status(500).json({
             status: "FAILED",
             message: "An error occurred while processing request",
+            response_code: 500,
         });
     }
 });
 
 // Signin
 router.post("/signin", async (req, res) => {
+    res.set({
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+    });
+
     try {
         let { email, password } = req.body;
         email = email.trim();
@@ -91,6 +111,7 @@ router.post("/signin", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Empty credentials supplied",
+                response_code: 400,
             });
         }
 
@@ -99,6 +120,7 @@ router.post("/signin", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid credentials entered",
+                response_code: 400,
             });
         }
 
@@ -109,19 +131,22 @@ router.post("/signin", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid password entered",
+                response_code: 400,
             });
         }
 
         return res.status(200).json({
+            data: user,
             status: "SUCCESS",
             message: "Signin successful",
-            data: user,
+            response_code: 200,
         });
     } catch (error) {
         console.log(error);
         return res.status(500).json({
             status: "FAILED",
             message: "An error occurred while processing request",
+            response_code: 500,
         });
     }
 });
