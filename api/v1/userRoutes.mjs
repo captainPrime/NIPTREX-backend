@@ -10,7 +10,12 @@ router.use(bodyParser.json());
 const trimFields = (obj) => {
     return Object.entries(obj).reduce((acc, [key, value]) => {
         if (typeof value === "string") {
-            acc[key] = value.trim();
+            if (key === "dateOfBirth") {
+                const [month, day, year] = value.split("-");
+                acc[key] = new Date(`${year}-${month}-${day}`).toISOString();
+            } else {
+                acc[key] = value.trim();
+            }
         } else {
             acc[key] = value;
         }
