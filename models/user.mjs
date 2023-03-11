@@ -3,10 +3,11 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    name: String,
+    fname: String,
+    lname: String,
     email: String,
     password: String,
-    dateOfBirth: Date,
+    country: String,
 });
 
 const User = mongoose.model("User", UserSchema);

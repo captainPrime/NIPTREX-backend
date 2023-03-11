@@ -8,7 +8,7 @@ const app = express(),
 
 app.use(cors());
 
-app.use("/v1/user", v1UserRouter);
+app.use("/v1", v1UserRouter);
 
 connectMongoDB().then(() => {
     app.listen(PORT, () => {

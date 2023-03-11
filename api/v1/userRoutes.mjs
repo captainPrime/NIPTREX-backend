@@ -1,10 +1,15 @@
 import express from "express";
+import swaggerDoc from "swagger-ui-express";
+import swaggerDocs from "../../helper/docs.mjs";
 import bcrypt from "bcrypt";
 import User from "../../models/user.mjs";
 import bodyParser from "body-parser";
 
 const router = express.Router();
 router.use(bodyParser.json());
+
+router.use("/docs", swaggerDoc.serve);
+router.use("/docs", swaggerDoc.setup(swaggerDocs));
 
 // Trims string fields and returns an object with trimmed values
 const trimFields = (obj) => {
@@ -23,16 +28,16 @@ router.get("/", (req, res) => {
 });
 
 // Signup
-router.post("/signup", async (req, res) => {
+router.post("/user/signup", async (req, res) => {
     res.set({
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
     });
 
     try {
-        let { name, email, password, dateOfBirth } = req.body;
+        let { firstName, lastName, email, password, country } = req.body;
 
-        if (!name || !email || !password || !dateOfBirth) {
+        if (!firstName || !lastName || !email || !password || !country) {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Empty Input Field",
@@ -42,15 +47,16 @@ router.post("/signup", async (req, res) => {
 
         // Trim input fields
         const trimmedFields = trimFields(req.body);
-        name = trimmedFields.name;
+        firstName = trimmedFields.firstName;
+        lastName = trimmedFields.lastName;
         email = trimmedFields.email;
         password = trimmedFields.password;
-        dateOfBirth = trimmedFields.dateOfBirth;
+        country = trimmedFields.country;
 
-        if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(name)) {
+        if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(firstName) || !/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(lastName)) {
             return res.status(400).json({
                 status: "FAILED",
-                message: "Invalid username entered",
+                message: "Invalid name entered",
                 response_code: 400,
             });
         }
@@ -59,14 +65,6 @@ router.post("/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid email entered",
-                response_code: 400,
-            });
-        }
-
-        if (!new Date(dateOfBirth).getTime()) {
-            return res.status(400).json({
-                status: "FAILED",
-                message: "Invalid date of birth entered",
                 response_code: 400,
             });
         }
@@ -91,10 +89,11 @@ router.post("/signup", async (req, res) => {
         const saltRounds = 10;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
         const newUser = new User({
-            name,
+            firstName,
+            lastName,
             email,
             password: hashedPassword,
-            dateOfBirth,
+            country,
         });
 
         const savedUser = await newUser.save();
@@ -115,7 +114,7 @@ router.post("/signup", async (req, res) => {
 });
 
 // Signin
-router.post("/signin", async (req, res) => {
+router.post("/user/signin", async (req, res) => {
     res.set({
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
