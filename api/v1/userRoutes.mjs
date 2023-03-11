@@ -6,10 +6,11 @@ import User from "../../models/user.mjs";
 import bodyParser from "body-parser";
 
 const router = express.Router();
-router.use(bodyParser.json());
 
 router.use("/docs", swaggerDoc.serve);
 router.use("/docs", swaggerDoc.setup(swaggerDocs));
+
+router.use(bodyParser.json());
 
 // Trims string fields and returns an object with trimmed values
 const trimFields = (obj) => {
@@ -35,9 +36,9 @@ router.post("/user/signup", async (req, res) => {
     });
 
     try {
-        let { firstName, lastName, email, password, country } = req.body;
+        let { fName, lName, email, password, country } = req.body;
 
-        if (!firstName || !lastName || !email || !password || !country) {
+        if (!fName || !lName || !email || !password || !country) {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Empty Input Field",
@@ -47,13 +48,13 @@ router.post("/user/signup", async (req, res) => {
 
         // Trim input fields
         const trimmedFields = trimFields(req.body);
-        firstName = trimmedFields.firstName;
-        lastName = trimmedFields.lastName;
+        fName = trimmedFields.fName;
+        lName = trimmedFields.lName;
         email = trimmedFields.email;
         password = trimmedFields.password;
         country = trimmedFields.country;
 
-        if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(firstName) || !/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(lastName)) {
+        if (!/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(fName) || !/^[a-zA-Z'-]+(\s[a-zA-Z'-]+)*$/.test(lName)) {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Invalid name entered",
@@ -89,8 +90,8 @@ router.post("/user/signup", async (req, res) => {
         const saltRounds = 10;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
         const newUser = new User({
-            firstName,
-            lastName,
+            fName,
+            lName,
             email,
             password: hashedPassword,
             country,
