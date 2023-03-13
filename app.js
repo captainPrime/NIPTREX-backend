@@ -7,8 +7,7 @@ const app = express(),
     PORT = process.env.PORT || 3000;
 
 app.use(cors());
-
-app.use("/v1/user", v1UserRouter);
+app.use("/v1", v1UserRouter);
 
 connectMongoDB().then(() => {
     app.listen(PORT, () => {
