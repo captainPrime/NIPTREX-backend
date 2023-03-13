@@ -34,6 +34,7 @@ let transporter = nodemailer.createTransport({
     auth: {
         user: process.env.AUTH_EMAIL,
         pass: process.env.AUTH_APP_PASS,
+        authMethod: "PLAIN",
     },
 });
 
@@ -72,7 +73,7 @@ router.post("/user/signup", async (req, res) => {
             return res.status(400).json({
                 status: "FAILED",
                 message: "Empty Input Field",
-                response_code: 2002,
+                response_code: 2003,
             });
         }
 
