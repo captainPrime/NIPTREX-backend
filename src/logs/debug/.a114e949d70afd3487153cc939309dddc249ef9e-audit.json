@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/olashina/Documents/workspace/express-typescript-starter/src/logs/debug/.a114e949d70afd3487153cc939309dddc249ef9e-audit.json",
+    "files": [
+        {
+            "date": 1678872496508,
+            "name": "/Users/olashina/Documents/workspace/express-typescript-starter/src/logs/debug/info-2023-03-15.log",
+            "hash": "e3779144db7fe39dde797e74759e35d335eff34a96ab84d2bb8b542dc92be3d6"
+        },
+        {
+            "date": 1678957121660,
+            "name": "/Users/olashina/Documents/workspace/express-typescript-starter/src/logs/debug/info-2023-03-16.log",
+            "hash": "a8f947740571d7abced89b6563eb4f57c4802922b8ce0f9e52554154807d4641"
+        }
+    ],
+    "hashType": "sha256"
+}

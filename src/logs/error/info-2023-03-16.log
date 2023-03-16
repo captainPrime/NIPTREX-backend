@@ -1,0 +1,132 @@
+2023-03-16 09:59:18 error: Error connecting to Database: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-16 10:10:21 error: Error connecting to Database: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-16 12:21:30 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5697377976465583.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5697377976465583.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5697377976465583.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:23:09 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-574993392640109.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-574993392640109.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-574993392640109.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:24:27 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:24:47 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:25:26 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:26:08 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:26:14 error: uncaughtException: Cannot set properties of undefined (setting 'mailer')
+TypeError: Cannot set properties of undefined (setting 'mailer')
+    at new Mail (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/mailer/index.js:45:33)
+    at Object.module.exports.createTransport (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/nodemailer/lib/nodemailer.js:53:14)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/express-typescript-starter/src/modules/email/email.service.ts:6:37)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-33227428046615537.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-03-16 12:36:04 error: [GET] /api >> StatusCode:: 404, Message:: The requested path /api not found!
+2023-03-16 12:36:11 error: [GET] /api/users >> StatusCode:: 404, Message:: The requested path /api/users not found!
+2023-03-16 12:36:18 error: [GET] /api/users >> StatusCode:: 404, Message:: The requested path /api/users not found!
+2023-03-16 12:36:24 error: [GET] /api/users >> StatusCode:: 404, Message:: The requested path /api/users not found!
+2023-03-16 12:38:53 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/iconv-lite/lib/index.js:65:27)
+2023-03-16 12:38:53 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/iconv-lite/lib/index.js:65:27)
+2023-03-16 12:39:05 error: [POST] /signup >> StatusCode:: 400, Message:: user must be a string
+2023-03-16 12:39:22 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 12:39:48 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 12:44:10 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:45:31 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:45:53 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:48:54 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:54:45 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:57:34 error: [POST] /login >> StatusCode:: 400, Message:: first_name must be shorter than or equal to 32 characters,first_name must be longer than or equal to 3 characters,first_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,first_name must be a string, last_name must be shorter than or equal to 32 characters,last_name must be longer than or equal to 3 characters,last_name must match /^[a-zA-Z0-9-_.@]+$/ regular expression,last_name must be a string, user must be a string
+2023-03-16 12:58:05 error: [POST] /login >> StatusCode:: 409, Message:: You're password not matching
+2023-03-16 12:58:56 error: [POST] /login >> StatusCode:: 409, Message:: You're password not matching
+2023-03-16 12:58:59 error: [POST] /login >> StatusCode:: 409, Message:: You're password not matching
+2023-03-16 12:59:28 error: [POST] /login >> StatusCode:: 409, Message:: email or password not correct
+2023-03-16 12:59:47 error: [POST] /login >> StatusCode:: 409, Message:: email or password not correct
+2023-03-16 13:01:15 error: [POST] /login >> StatusCode:: 409, Message:: email or password not correct
+2023-03-16 13:13:02 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-16 13:24:30 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 17:34:33 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
