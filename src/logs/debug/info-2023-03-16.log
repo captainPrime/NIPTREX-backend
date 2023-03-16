@@ -153,3 +153,36 @@
 2023-03-16 17:31:31 info: Connected to Database Successfully...
 2023-03-16 17:34:33 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
 2023-03-16 17:34:33 info: [0mPOST /signup [33m404[0m 84.070 ms - 66[0m
+2023-03-16 18:03:01 info: =================================
+2023-03-16 18:03:01 info: ======= ENV: development =======
+2023-03-16 18:03:01 info: 🚀 App listening on the port 3000
+2023-03-16 18:03:01 info: =================================
+2023-03-16 18:03:08 info: Connected to Database Successfully...
+2023-03-16 18:04:16 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:04:16 info: [0mPOST /signup [33m404[0m 154.063 ms - 66[0m
+2023-03-16 18:05:08 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:05:08 info: [0mPOST /signup [33m404[0m 5.220 ms - 66[0m
+2023-03-16 18:05:55 info: =================================
+2023-03-16 18:05:55 info: ======= ENV: development =======
+2023-03-16 18:05:55 info: 🚀 App listening on the port 3000
+2023-03-16 18:05:55 info: =================================
+2023-03-16 18:06:06 info: Connected to Database Successfully...
+2023-03-16 18:06:17 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:06:17 info: [0mPOST /signup [33m404[0m 190.314 ms - 66[0m
+2023-03-16 18:07:24 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:07:24 info: [0mPOST /signup [33m404[0m 9.723 ms - 66[0m
+2023-03-16 18:07:48 info: =================================
+2023-03-16 18:07:48 info: ======= ENV: development =======
+2023-03-16 18:07:48 info: 🚀 App listening on the port 3000
+2023-03-16 18:07:48 info: =================================
+2023-03-16 18:08:06 info: Connected to Database Successfully...
+2023-03-16 18:09:24 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:09:24 info: [0mPOST /signup [33m404[0m 71.591 ms - 66[0m
+2023-03-16 18:17:11 info: =================================
+2023-03-16 18:17:11 info: ======= ENV: development =======
+2023-03-16 18:17:11 info: 🚀 App listening on the port 3000
+2023-03-16 18:17:11 info: =================================
+2023-03-16 18:17:33 info: Connected to Database Successfully...
+2023-03-16 18:17:42 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:17:42 info: [0mPOST /signup [33m404[0m 112.519 ms - 66[0m
+2023-03-16 18:17:45 error: [Error] >> email quadri201@gmail.com already exists

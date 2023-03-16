@@ -130,3 +130,19 @@ Error: Channel closed
 2023-03-16 13:13:02 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
 2023-03-16 13:24:30 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
 2023-03-16 17:34:33 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:04:16 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:05:08 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:06:17 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:07:24 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:09:24 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:17:42 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-16 18:17:45 error: unhandledRejection: email quadri201@gmail.com already exists
+Error: email quadri201@gmail.com already exists
+    at AuthService.signup (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/auth.service.ts:21:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at AuthController.signUp (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/auth.controller.ts:13:35)
+2023-03-16 18:17:45 error: unhandledRejection: email quadri201@gmail.com already exists
+Error: email quadri201@gmail.com already exists
+    at AuthService.signup (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/auth.service.ts:21:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at AuthController.signUp (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/auth.controller.ts:13:35)

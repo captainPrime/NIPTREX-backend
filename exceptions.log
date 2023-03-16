@@ -274,3 +274,13 @@ Error: Channel closed
     at Module.require (node:internal/modules/cjs/loader:1057:19)
     at require (node:internal/modules/cjs/helpers:103:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/express-typescript-starter/node_modules/iconv-lite/lib/index.js:65:27)
+2023-03-16 18:17:45 error: unhandledRejection: email quadri201@gmail.com already exists
+Error: email quadri201@gmail.com already exists
+    at AuthService.signup (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/auth.service.ts:21:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at AuthController.signUp (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/auth.controller.ts:13:35)
+2023-03-16 18:17:45 error: unhandledRejection: email quadri201@gmail.com already exists
+Error: email quadri201@gmail.com already exists
+    at AuthService.signup (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/auth.service.ts:21:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at AuthController.signUp (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/auth.controller.ts:13:35)
