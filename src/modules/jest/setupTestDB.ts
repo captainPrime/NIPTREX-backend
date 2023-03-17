@@ -3,7 +3,7 @@ import { dbConnection } from '@/databases';
 
 const setupTestDB = () => {
   beforeAll(async () => {
-    await mongoose.connect(dbConnection.url);
+    await mongoose.connect(dbConnection.url as string);
   });
 
   beforeEach(async () => {

@@ -1,44 +1,51 @@
 import moment from 'moment';
 import mongoose from 'mongoose';
 import { faker } from '@faker-js/faker';
-import config from '../../config/config';
 import { NewToken } from './token.interfaces';
 import tokenTypes from './token.types';
 import Token from './token.model';
-import * as tokenService from './token.service';
+import { JWT_ACCESS_EXPIRATION_MINUTES, JWT_REFRESH_EXPIRATION_DAYS } from '@/config';
+import TokenService from './token.service';
 
-const password = 'password1';
-const accessTokenExpires = moment().add(config.jwt.accessExpirationMinutes, 'minutes');
+class TokenModelTest {
+  password = 'password1';
+  public tokenService = new TokenService();
+  accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'minutes');
 
-const userOne = {
-  _id: new mongoose.Types.ObjectId(),
-  name: faker.name.findName(),
-  email: faker.internet.email().toLowerCase(),
-  password,
-  role: 'user',
-  isEmailVerified: false,
-};
+  userOne = {
+    _id: new mongoose.Types.ObjectId(),
+    name: faker.name.findName(),
+    email: faker.internet.email().toLowerCase(),
+    password: this.password,
+    role: 'user',
+    isEmailVerified: false,
+  };
 
-const userOneAccessToken = tokenService.generateToken(userOne._id, accessTokenExpires, tokenTypes.ACCESS);
+  userOneAccessToken = this.tokenService.generateToken(this.userOne._id, this.accessTokenExpires, tokenTypes.ACCESS);
+
+  refreshTokenExpires = moment().add(JWT_REFRESH_EXPIRATION_DAYS, 'days');
+
+  newToken: NewToken = {
+    token: this.userOneAccessToken,
+    user: this.userOne._id.toHexString(),
+    type: tokenTypes.REFRESH,
+    expires: this.refreshTokenExpires.toDate(),
+  };
+
+  testValidToken = async () => {
+    await expect(new Token(this.newToken).validate()).resolves.toBeUndefined();
+  };
+
+  testInvalidTypeToken = async () => {
+    this.newToken.type = 'invalidType';
+    await expect(new Token(this.newToken).validate()).rejects.toThrow();
+  };
+}
 
 describe('Token Model', () => {
-  const refreshTokenExpires = moment().add(config.jwt.refreshExpirationDays, 'days');
-  let newToken: NewToken;
-  beforeEach(() => {
-    newToken = {
-      token: userOneAccessToken,
-      user: userOne._id.toHexString(),
-      type: tokenTypes.REFRESH,
-      expires: refreshTokenExpires.toDate(),
-    };
-  });
+  const tokenModelTest = new TokenModelTest();
 
-  test('should correctly validate a valid token', async () => {
-    await expect(new Token(newToken).validate()).resolves.toBeUndefined();
-  });
+  test('should correctly validate a valid token', tokenModelTest.testValidToken);
 
-  test('should throw a validation error if type is unknown', async () => {
-    newToken.type = 'invalidType';
-    await expect(new Token(newToken).validate()).rejects.toThrow();
-  });
+  test('should throw a validation error if type is unknown', tokenModelTest.testInvalidTypeToken);
 });
