@@ -1,9 +1,10 @@
 import { hash } from 'bcrypt';
 import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
-import { IUserModel } from '@interfaces/users.interface';
+import { IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
+import mongoose from 'mongoose';
 
 class UserService {
   public users = User;
@@ -13,10 +14,19 @@ class UserService {
     return users;
   }
 
-  public async findUserById(userId: string): Promise<IUserModel> {
+  public async findUserById(userId: mongoose.Types.ObjectId): Promise<IUserModel> {
     if (isEmpty(userId)) throw new HttpException(400, "You're not userId");
 
     const findUser: IUserModel | null = await this.users.findOne({ _id: userId });
+    if (!findUser) throw new HttpException(409, "You're not user");
+
+    return findUser;
+  }
+
+  public async findUserByEmail(email: string): Promise<IUserModel> {
+    if (isEmpty(email)) throw new HttpException(400, 'Email should not be empty');
+
+    const findUser: IUserModel | null = await this.users.findOne({ email });
     if (!findUser) throw new HttpException(409, "You're not user");
 
     return findUser;
@@ -34,12 +44,12 @@ class UserService {
     return createUserData;
   }
 
-  public async updateUser(userId: string, userData: CreateUserDto): Promise<IUserModel> {
+  public async updateUser(userId: mongoose.Types.ObjectId, userData: UpdateUserBody): Promise<IUserDoc> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
     if (userData.email) {
       const findUser: IUserModel | null = await this.users.findOne({ email: userData.email });
-      if (findUser && findUser._id.toString() != userId) throw new HttpException(409, `You're email ${userData.email} already exists`);
+      if (findUser && findUser._id != userId) throw new HttpException(409, `email ${userData.email} already exists`);
     }
 
     if (userData.password) {
@@ -47,13 +57,13 @@ class UserService {
       userData = { ...userData, password: hashedPassword };
     }
 
-    const updateUserById: IUserModel | null = await this.users.findByIdAndUpdate(userId, { userData });
+    const updateUserById: IUserDoc | null = await this.users.findByIdAndUpdate(userId, { userData });
     if (!updateUserById) throw new HttpException(409, "You're not user");
 
     return updateUserById;
   }
 
-  public async deleteUser(userId: string): Promise<IUserModel> {
+  public async deleteUser(userId: mongoose.Types.ObjectId): Promise<IUserModel> {
     const deleteUserById: IUserModel | null = await this.users.findByIdAndDelete(userId);
     if (!deleteUserById) throw new HttpException(409, "You're not user");
 

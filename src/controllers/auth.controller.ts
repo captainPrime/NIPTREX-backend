@@ -6,11 +6,13 @@ import { IUser } from '@interfaces/users.interface';
 import AuthService from '@services/auth.service';
 import { asyncWrapper } from '@/utils/asyncWrapper';
 import { emailService } from '@/modules/email';
+import TokenService from '@/modules/token/token.service';
 
 class AuthController {
   public authService = new AuthService();
+  public tokenService = new TokenService();
 
-  public signUp = asyncWrapper(async (req: Request, res: Response, _next: NextFunction) => {
+  public signUp = asyncWrapper(async (req: Request, res: Response) => {
     const userData: CreateUserDto = req.body;
     const signUpUserData: IUser = await this.authService.signup(userData);
 
@@ -29,20 +31,13 @@ class AuthController {
     }
   });
 
-  public logOut = asyncWrapper(async (req: RequestWithUser, res: Response, next: NextFunction) => {
-    try {
-      const userData: IUser = req.user;
-      const logOutUserData: IUser = await this.authService.logout(userData);
-
-      res.setHeader('Set-Cookie', ['Authorization=; Max-age=0']);
-      res.status(200).json({ data: logOutUserData, message: 'logout' });
-    } catch (error) {
-      next(error);
-    }
+  public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
+    await this.authService.logout(req.body.refreshToken);
+    res.status(httpStatus.NO_CONTENT).send();
   });
 
   public forgotPassword = asyncWrapper(async (req: Request, res: Response) => {
-    const resetPasswordToken = await tokenService.generateResetPasswordToken(req.body.email);
+    const resetPasswordToken = await this.tokenService.generateResetPasswordToken(req.body.email);
     await emailService.sendResetPasswordEmail(req.body.email, resetPasswordToken);
     res.status(httpStatus.NO_CONTENT).send();
   });
@@ -53,7 +48,7 @@ class AuthController {
   });
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {
-    const verifyEmailToken = await tokenService.generateVerifyEmailToken(req.user);
+    const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(req.user);
     await emailService.sendVerificationEmail(req.user.email, verifyEmailToken, req.user.name);
     res.status(httpStatus.NO_CONTENT).send();
   });
