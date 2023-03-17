@@ -1,4 +1,4 @@
-import { hash } from 'bcrypt';
+import { hash } from 'bcryptjs';
 import httpStatus from 'http-status';
 import { sign } from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
@@ -20,19 +20,19 @@ class AuthService {
   public tokenService = new TokenService();
 
   public async signup(userData: CreateUserDto): Promise<IUserDoc> {
-    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
+    if (isEmpty(userData)) throw new ApiError(400, "You're not userData");
 
     const findUser: IUserDoc | null = await this.users.findOne({ email: userData.email });
-    if (findUser) throw new HttpException(409, `email ${userData.email} already exists`);
+    if (findUser) throw new ApiError(409, `email ${userData.email} already exists`);
 
-    const hashedPassword = await hash(userData.password, 10);
-    const createUserData: IUserDoc = await this.users.create({ ...userData, password: hashedPassword });
+    const createUserData: IUserDoc = await this.users.create(userData);
 
     return createUserData;
   }
 
   public loginUserWithEmailAndPassword = async (email: string, password: string): Promise<IUserDoc> => {
     const user = await this.userService.findUserByEmail(email);
+
     if (!user || !(await user.isPasswordMatch(password))) {
       throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
     }
@@ -75,18 +75,14 @@ class AuthService {
   };
 
   public verifyEmail = async (verifyEmailToken: any): Promise<IUserDoc | null> => {
-    try {
-      const verifyEmailTokenDoc = await this.tokenService.verifyToken(verifyEmailToken, tokenTypes.VERIFY_EMAIL);
-      const user = await this.userService.findUserById(new mongoose.Types.ObjectId(verifyEmailTokenDoc.user));
-      if (!user) {
-        throw new Error();
-      }
-      await Token.deleteMany({ user: user._id, type: tokenTypes.VERIFY_EMAIL });
-      const updatedUser = await this.userService.updateUser(user._id, { isEmailVerified: true });
-      return updatedUser;
-    } catch (error) {
-      throw new ApiError(httpStatus.UNAUTHORIZED, 'Email verification failed');
+    const verifyEmailTokenDoc = await this.tokenService.verifyToken(verifyEmailToken, tokenTypes.VERIFY_EMAIL);
+    const user = await this.userService.findUserById(verifyEmailTokenDoc.user);
+    if (!user) {
+      throw new Error();
     }
+    await Token.deleteMany({ user: user._id, type: tokenTypes.VERIFY_EMAIL });
+    const updatedUser = await this.userService.updateUser(user._id, { isEmailVerified: true });
+    return updatedUser;
   };
 
   public refreshAuth = async (refreshToken: string): Promise<IUserWithTokens> => {

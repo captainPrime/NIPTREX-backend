@@ -1,5 +1,5 @@
 import { model, Schema, ObjectId } from 'mongoose';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { IUserDoc, IUserModel } from '@interfaces/users.interface';
 import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';

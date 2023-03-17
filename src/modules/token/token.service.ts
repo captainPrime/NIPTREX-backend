@@ -59,7 +59,7 @@ class TokenService {
   }
 
   async generateAuthTokens(user: IUserDoc): Promise<AccessAndRefreshTokens> {
-    const accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'minutes');
+    const accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'day');
     const accessToken = this.generateToken(user.id, accessTokenExpires, tokenTypes.ACCESS);
 
     const refreshTokenExpires = moment().add(JWT_REFRESH_EXPIRATION_DAYS, 'days');
@@ -89,10 +89,10 @@ class TokenService {
     return resetPasswordToken;
   }
 
-  async generateVerifyEmailToken(user: IUserDoc): Promise<string> {
+  async generateVerifyEmailToken(userId: mongoose.Types.ObjectId): Promise<string> {
     const expires = moment().add(JWT_VERIFY_EMAIL_EXPIRATION_MINUTES, 'minutes');
-    const verifyEmailToken = this.generateToken(user.id, expires, tokenTypes.VERIFY_EMAIL);
-    await this.saveToken(verifyEmailToken, user.id, expires, tokenTypes.VERIFY_EMAIL);
+    const verifyEmailToken = this.generateToken(userId, expires, tokenTypes.VERIFY_EMAIL);
+    await this.saveToken(verifyEmailToken, userId, expires, tokenTypes.VERIFY_EMAIL);
     return verifyEmailToken;
   }
 }
