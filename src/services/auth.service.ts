@@ -2,7 +2,7 @@ import { hash } from 'bcrypt';
 import httpStatus from 'http-status';
 import { sign } from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
-import { CreateUserDto, UserLoginDto } from '@dtos/users.dto';
+import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
 import { DataStoredInToken, TokenData } from '@interfaces/auth.interface';
 import { IUserDoc } from '@interfaces/users.interface';
@@ -36,19 +36,13 @@ class AuthService {
     return createUserData;
   }
 
-  public async loginUserWithEmailAndPassword(userData: UserLoginDto): Promise<{ cookie: string; user: IUserDoc }> {
-    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
-
-    const user: IUserDoc | null = await this.users.findOne({ email: userData.email });
-    if (!user || !(await user.isPasswordMatch(user.password))) {
+  public loginUserWithEmailAndPassword = async (email: string, password: string): Promise<IUserDoc> => {
+    const user = await this.userService.findUserByEmail(email);
+    if (!user || !(await user.isPasswordMatch(password))) {
       throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
     }
-
-    const tokenData = this.createToken(user);
-    const cookie = this.createCookie(tokenData);
-
-    return { cookie, user };
-  }
+    return user;
+  };
 
   public async logout(refreshToken: string): Promise<void> {
     const refreshTokenDoc = await Token.findOne({ token: refreshToken, type: tokenTypes.REFRESH, blacklisted: false });

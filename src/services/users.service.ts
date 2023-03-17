@@ -23,10 +23,10 @@ class UserService {
     return findUser;
   }
 
-  public async findUserByEmail(email: string): Promise<IUserModel> {
+  public async findUserByEmail(email: string): Promise<IUserDoc> {
     if (isEmpty(email)) throw new HttpException(400, 'Email should not be empty');
 
-    const findUser: IUserModel | null = await this.users.findOne({ email });
+    const findUser: IUserDoc | null = await this.users.findOne({ email });
     if (!findUser) throw new HttpException(409, "You're not user");
 
     return findUser;

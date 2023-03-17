@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import { CreateUserDto, UserLoginDto } from '@dtos/users.dto';
+import { CreateUserDto } from '@dtos/users.dto';
 import { RequestWithUser } from '@interfaces/auth.interface';
 import { IUser } from '@interfaces/users.interface';
 import AuthService from '@services/auth.service';
@@ -19,16 +19,11 @@ class AuthController {
     res.status(201).json({ data: signUpUserData, message: 'signup' });
   });
 
-  public logIn = asyncWrapper(async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const userData: UserLoginDto = req.body;
-      const { cookie, user } = await this.authService.loginUserWithEmailAndPassword(userData);
-
-      res.setHeader('Set-Cookie', [cookie]);
-      res.send({ user, token: cookie });
-    } catch (error) {
-      next(error);
-    }
+  public logIn = asyncWrapper(async (req: Request, res: Response) => {
+    const { email, password } = req.body;
+    const user = await this.authService.loginUserWithEmailAndPassword(email, password);
+    const tokens = await this.tokenService.generateAuthTokens(user);
+    res.send({ user, tokens });
   });
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
