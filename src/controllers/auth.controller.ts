@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-possible-timing-attacks */
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
 import { CreateUserDto } from '@dtos/users.dto';
@@ -7,6 +8,7 @@ import { asyncWrapper } from '@/utils/asyncWrapper';
 import TokenService from '@/modules/token/token.service';
 import EmailService from '@/modules/email/email.service';
 import UserService from '@/services/users.service';
+import ApiError from '@/exceptions/ApiError';
 
 class AuthController {
   public authService = new AuthService();
@@ -43,7 +45,11 @@ class AuthController {
   });
 
   public resetPassword = asyncWrapper(async (req: Request, res: Response) => {
-    await this.authService.resetPassword(req.query['token'], req.body.password);
+    const { password, confirm_password } = req.body;
+    if (confirm_password !== password) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'password mismatch');
+    }
+    await this.authService.resetPassword(req.query['token'], password);
     res.status(200).send({ success: true, message: 'Password Reset successfully' });
   });
 
