@@ -1,0 +1,30 @@
+2023-03-15 10:28:18 info: =================================
+2023-03-15 10:28:18 info: ======= ENV: development =======
+2023-03-15 10:28:18 info: 🚀 App listening on the port 3000
+2023-03-15 10:28:18 info: =================================
+2023-03-15 10:28:36 info: [0mGET / [32m200[0m 7.345 ms - 115[0m
+2023-03-15 10:28:41 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-03-15 10:28:41 info: [0mGET /favicon.ico [33m404[0m 4.406 ms - 71[0m
+2023-03-15 10:28:48 error: Error connecting to Database: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-15 22:40:44 info: =================================
+2023-03-15 22:40:44 info: ======= ENV: development =======
+2023-03-15 22:40:44 info: 🚀 App listening on the port 3000
+2023-03-15 22:40:44 info: =================================
+2023-03-15 22:41:14 error: Error connecting to Database: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-15 22:44:03 info: [0mGET / [32m200[0m 5.706 ms - 115[0m
+2023-03-15 22:44:10 error: [GET] /doc >> StatusCode:: 404, Message:: The requested path /doc not found!
+2023-03-15 22:44:10 info: [0mGET /doc [33m404[0m 5.679 ms - 63[0m
+2023-03-15 22:45:03 info: [0mGET /api-docs [36m301[0m 4.225 ms - 183[0m
+2023-03-15 22:45:03 info: [0mGET /api-docs/ [32m200[0m 4.107 ms - -[0m
+2023-03-15 22:45:04 info: [0mGET /api-docs/swagger-ui-init.js [32m200[0m 0.808 ms - -[0m
+2023-03-15 22:45:04 info: [0mGET /api-docs/swagger-ui.css [32m200[0m 21.532 ms - -[0m
+2023-03-15 22:45:04 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [32m200[0m 18.941 ms - -[0m
+2023-03-15 22:45:04 info: [0mGET /api-docs/swagger-ui-bundle.js [32m200[0m 22.237 ms - -[0m
+2023-03-15 22:45:05 info: [0mGET /api-docs/favicon-32x32.png [32m200[0m 2.585 ms - 628[0m
+2023-03-15 22:45:06 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.474 ms - -[0m
+2023-03-15 22:45:20 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 0.925 ms - -[0m
+2023-03-15 22:45:22 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 5.496 ms - -[0m
+2023-03-15 22:45:24 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.007 ms - -[0m
+2023-03-15 22:45:28 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.412 ms - -[0m
+2023-03-15 22:45:30 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 1.923 ms - -[0m
+2023-03-15 22:45:33 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.685 ms - -[0m
