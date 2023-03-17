@@ -237,3 +237,39 @@ Error: Channel closed
 2023-03-17 16:57:43 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
 2023-03-17 16:57:51 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
 2023-03-17 16:57:58 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 19:31:32 error: [POST] /register >> StatusCode:: 404, Message:: The requested path /register not found!
+2023-03-17 19:32:54 error: [POST] /register >> StatusCode:: 404, Message:: The requested path /register not found!
+2023-03-17 19:36:38 error: [POST] /register >> StatusCode:: 404, Message:: The requested path /register not found!
+2023-03-17 19:36:42 error: [POST] /login >> StatusCode:: 404, Message:: The requested path /login not found!
+2023-03-17 19:36:54 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-17 19:37:24 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 20:25:17 error: [POST] /auth/register >> StatusCode:: 404, Message:: The requested path /auth/register not found!
+2023-03-17 20:26:33 error: [POST] /auth/register >> StatusCode:: 404, Message:: The requested path /auth/register not found!
+2023-03-17 20:26:54 error: [POST] /auth/register >> StatusCode:: 404, Message:: The requested path /auth/register not found!
+2023-03-17 20:27:19 error: [POST] /auth/register >> StatusCode:: 404, Message:: The requested path /auth/register not found!
+2023-03-17 20:27:26 error: [POST] /auth/log >> StatusCode:: 404, Message:: The requested path /auth/log not found!
+2023-03-17 20:28:05 error: [POST] /auth/register >> StatusCode:: 409, Message:: email quadri2011@gmail.com already exists
+2023-03-17 20:28:28 error: [POST] /auth/register >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 20:31:39 error: [POST] /auth/register >> StatusCode:: 409, Message:: email quadri2012@gmail.com already exists
+2023-03-17 20:31:48 error: [POST] /auth/register >> StatusCode:: 409, Message:: email quadri2012@gmail.com already exists
+2023-03-17 20:31:54 error: [POST] /auth/register >> StatusCode:: 500, Message:: User validation failed: password: Path `password` (`quadri`) is shorter than the minimum allowed length (8).
+2023-03-17 20:32:09 error: [POST] /auth/register >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:33:50 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:35:45 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:44:03 error: [GET] /users/profile >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "profile" (type string) at path "_id" for model "User"
+2023-03-17 20:44:28 error: [GET] /users/profile >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "profile" (type string) at path "_id" for model "User"
+2023-03-17 20:44:35 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:44:45 error: [GET] /users/profile >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "profile" (type string) at path "_id" for model "User"
+2023-03-17 20:45:54 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:46:09 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:46:21 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:49:22 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:49:32 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-17 20:49:41 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:49:49 error: [GET] /users/profile >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 20:52:11 error: [GET] /users/profile >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 20:52:30 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:53:48 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:54:56 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 20:55:44 error: [GET] /users/profile >> StatusCode:: 401, Message:: Wrong authentication token
+2023-03-17 21:00:44 error: [POST] /auth/forgot_password >> StatusCode:: 404, Message:: The requested path /auth/forgot_password not found!

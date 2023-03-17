@@ -21,14 +21,14 @@ class AuthController {
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(signUpUserData._id);
     await this.emailService.sendVerificationEmail(signUpUserData.email, verifyEmailToken, signUpUserData.first_name);
 
-    res.status(201).send({ data: signUpUserData, message: 'signup' });
+    res.send({ status: 201, message: 'user created successfully', data: signUpUserData });
   });
 
   public logIn = asyncWrapper(async (req: Request, res: Response) => {
     const { email, password } = req.body;
     const user = await this.authService.loginUserWithEmailAndPassword(email, password);
     const tokens = await this.tokenService.generateAuthTokens(user);
-    res.send({ user, tokens });
+    res.send({ status: 200, message: 'user login successful', data: tokens });
   });
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {

@@ -8,13 +8,11 @@ import User from '@models/users.model';
 
 const authMiddleware = async (req: RequestWithUser, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization')!.split('Bearer ')[1] : null);
+    const Authorization = req.headers.authorization ? req.headers.authorization!.split('Bearer ')[1] : null;
 
     if (Authorization) {
-      const secretKey: string | undefined = SECRET_KEY;
-      const verificationResponse = (await verify(Authorization, secretKey!)) as DataStoredInToken;
-      const userId = verificationResponse._id;
-      const findUser = await User.findById(userId);
+      const verificationResponse = verify(Authorization, SECRET_KEY!);
+      const findUser = await User.findById(verificationResponse.sub);
 
       if (findUser) {
         req.user = findUser;

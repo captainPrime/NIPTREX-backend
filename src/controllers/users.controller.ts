@@ -38,6 +38,17 @@ class UsersController {
     }
   };
 
+  public getProfile = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId: string = req.user.id;
+      const findOneUserData: IUserModel = await this.userService.findUserById(userId);
+
+      res.status(200).json({ status: 200, message: 'user profile fetched successful', data: findOneUserData });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   public updateUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.params.id;

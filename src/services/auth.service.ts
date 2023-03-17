@@ -17,7 +17,7 @@ class AuthService {
   public userService = new UserService();
   public tokenService = new TokenService();
 
-  public async signup(userData: CreateUserDto): Promise<IUserDoc> {
+  public signup = async (userData: CreateUserDto): Promise<IUserDoc> => {
     if (isEmpty(userData)) throw new ApiError(400, 'required fields cannot be empty');
 
     const findUser: IUserDoc | null = await this.users.findOne({ email: userData.email });
@@ -26,7 +26,7 @@ class AuthService {
     const createUserData: IUserDoc = await this.users.create(userData);
 
     return createUserData;
-  }
+  };
 
   public loginUserWithEmailAndPassword = async (email: string, password: string): Promise<IUserDoc> => {
     const user = await this.userService.findUserByEmail(email);

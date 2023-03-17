@@ -35,7 +35,7 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
       type: String,
       required: true,
     },
-    isEmailVerified: {
+    verified: {
       type: Boolean,
       default: false,
     },

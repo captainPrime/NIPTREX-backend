@@ -19,11 +19,11 @@ export const isEmpty = (value: string | number | object): boolean => {
 };
 
 export class SuccessResponse {
-  statusCode: number;
+  status: number;
   data: any;
 
-  constructor(data: any, statusCode = 200) {
-    this.statusCode = statusCode;
+  constructor(data: any, status = 200) {
+    this.status = status;
     this.data = data;
   }
 }

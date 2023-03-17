@@ -12,7 +12,7 @@ export default class ErrorMiddleware {
         // const stack: string = error.stack || 'No stack trace available';
 
         logger.error(`[${req.method}] ${req.path} >> StatusCode:: ${status}, Message:: ${message}`);
-        res.status(status).json({ message, rawErrors });
+        res.status(status).json({ success: false, message, rawErrors });
       } catch (error) {
         next(error);
       }
