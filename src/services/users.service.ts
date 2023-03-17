@@ -17,10 +17,10 @@ class UserService {
   }
 
   public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUserModel> {
-    if (isEmpty(userId)) throw new HttpException(400, "You're not userId");
+    if (isEmpty(userId)) throw new HttpException(400, 'User id can not be empty');
 
     const findUser: IUserModel | null = await this.users.findOne({ _id: userId });
-    if (!findUser) throw new HttpException(409, "You're not user");
+    if (!findUser) throw new HttpException(409, 'User with this credentials does not exist');
 
     return findUser;
   }
@@ -47,20 +47,17 @@ class UserService {
   }
 
   public async updateUser(userId: mongoose.Types.ObjectId, userData: UpdateUserBody): Promise<IUserDoc> {
-    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
-
-    // const user = await this.findUserById(userId);
+    if (isEmpty(userData)) throw new HttpException(400, 'Fields cannot be empty');
 
     if (userData.email && (await User.isEmailTaken(userData.email, userId))) {
       throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
     }
 
     if (userData.password) {
+      console.log('Password');
       const hashedPassword = await hash(userData.password, 10);
       userData = { ...userData, password: hashedPassword };
     }
-
-    console.log(userData);
 
     const updateUserById: IUserDoc | null = await this.users.findByIdAndUpdate(userId, userData, {
       new: true,

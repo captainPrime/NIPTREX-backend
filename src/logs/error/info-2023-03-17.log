@@ -197,3 +197,43 @@ Error: Channel closed
 2023-03-17 16:38:44 error: [POST] /send-verification-email >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
 2023-03-17 16:39:01 error: [POST] /verify-email >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
 2023-03-17 16:39:09 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:41:44 error: [POST] /forgot-password >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 16:43:16 error: [POST] /forgot-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:46:04 error: [POST] /reset-password >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 16:46:39 error: [POST] /reset-password >> StatusCode:: 401, Message:: Password reset failed
+2023-03-17 16:48:23 error: [POST] /reset-password >> StatusCode:: 400, Message:: You're not userId
+2023-03-17 16:50:14 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:50:51 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:51:38 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:52:19 error: [POST] /reset-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:53:19 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-03-17 16:53:19 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-03-17 16:53:53 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:54:29 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-17 16:56:39 error: [POST] /forgot-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:25 error: [POST] /reset-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:43 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:51 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-17 16:57:58 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')

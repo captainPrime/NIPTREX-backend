@@ -60,18 +60,15 @@ class AuthService {
     return `Authorization=${tokenData.token}; HttpOnly; Max-Age=${tokenData.expiresIn};`;
   }
 
-  public resetPassword = async (resetPasswordToken: any, newPassword: string): Promise<void> => {
-    try {
-      const resetPasswordTokenDoc = await this.tokenService.verifyToken(resetPasswordToken, tokenTypes.RESET_PASSWORD);
-      const user = await this.userService.findUserById(new mongoose.Types.ObjectId(resetPasswordTokenDoc.user));
-      if (!user) {
-        throw new Error();
-      }
-      await this.userService.updateUser(user._id, { password: newPassword });
-      await Token.deleteMany({ user: user._id, type: tokenTypes.RESET_PASSWORD });
-    } catch (error) {
-      throw new ApiError(httpStatus.UNAUTHORIZED, 'Password reset failed');
+  public resetPassword = async (resetPasswordToken: any, newPassword: string): Promise<IUserDoc> => {
+    const resetPasswordTokenDoc = await this.tokenService.verifyToken(resetPasswordToken, tokenTypes.RESET_PASSWORD);
+    const user = await this.userService.findUserById(resetPasswordTokenDoc.user);
+    if (!user) {
+      throw new Error();
     }
+    const updatedUser = await this.userService.updateUser(user._id, { password: newPassword });
+    await Token.deleteMany({ user: user._id, type: tokenTypes.RESET_PASSWORD });
+    return updatedUser;
   };
 
   public verifyEmail = async (verifyEmailToken: any): Promise<IUserDoc | null> => {

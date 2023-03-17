@@ -39,12 +39,12 @@ class AuthController {
   public forgotPassword = asyncWrapper(async (req: Request, res: Response) => {
     const resetPasswordToken = await this.tokenService.generateResetPasswordToken(req.body.email);
     await this.emailService.sendResetPasswordEmail(req.body.email, resetPasswordToken);
-    res.status(httpStatus.NO_CONTENT).send({ status: 200, message: 'Reset password email sent' });
+    res.status(200).send({ status: 200, message: 'Reset password email sent' });
   });
 
   public resetPassword = asyncWrapper(async (req: Request, res: Response) => {
     await this.authService.resetPassword(req.query['token'], req.body.password);
-    res.status(httpStatus.NO_CONTENT).send();
+    res.status(200).send({ success: true, message: 'Password Reset successfully' });
   });
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {

@@ -412,3 +412,102 @@
 2023-03-17 16:39:01 error: [POST] /verify-email >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
 2023-03-17 16:39:09 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
 2023-03-17 16:39:09 info: [0mPOST /login [31m500[0m 621.430 ms - 747[0m
+2023-03-17 16:40:57 info: =================================
+2023-03-17 16:40:57 info: ======= ENV: development =======
+2023-03-17 16:40:57 info: 🚀 App listening on the port 3000
+2023-03-17 16:40:57 info: =================================
+2023-03-17 16:40:59 info: Connected to email server
+2023-03-17 16:41:00 info: Connected to Database Successfully...
+2023-03-17 16:41:29 info: =================================
+2023-03-17 16:41:29 info: ======= ENV: development =======
+2023-03-17 16:41:29 info: 🚀 App listening on the port 3000
+2023-03-17 16:41:29 info: =================================
+2023-03-17 16:41:31 info: Connected to email server
+2023-03-17 16:41:32 info: Connected to Database Successfully...
+2023-03-17 16:41:44 error: [POST] /forgot-password >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 16:41:44 info: [0mPOST /forgot-password [33m404[0m 29.253 ms - 57[0m
+2023-03-17 16:42:07 info: =================================
+2023-03-17 16:42:07 info: ======= ENV: development =======
+2023-03-17 16:42:07 info: 🚀 App listening on the port 3000
+2023-03-17 16:42:07 info: =================================
+2023-03-17 16:42:09 info: Connected to email server
+2023-03-17 16:42:10 info: Connected to Database Successfully...
+2023-03-17 16:43:16 error: [POST] /forgot-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:43:16 info: [0mPOST /forgot-password [31m500[0m 7060.738 ms - 52[0m
+2023-03-17 16:46:04 error: [POST] /reset-password >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-17 16:46:04 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m404[0m 3.324 ms - 57[0m
+2023-03-17 16:46:33 info: =================================
+2023-03-17 16:46:33 info: ======= ENV: development =======
+2023-03-17 16:46:33 info: 🚀 App listening on the port 3000
+2023-03-17 16:46:33 info: =================================
+2023-03-17 16:46:35 info: Connected to email server
+2023-03-17 16:46:36 info: Connected to Database Successfully...
+2023-03-17 16:46:39 error: [POST] /reset-password >> StatusCode:: 401, Message:: Password reset failed
+2023-03-17 16:46:40 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m401[0m 235.002 ms - 50[0m
+2023-03-17 16:48:16 info: =================================
+2023-03-17 16:48:16 info: ======= ENV: development =======
+2023-03-17 16:48:16 info: 🚀 App listening on the port 3000
+2023-03-17 16:48:16 info: =================================
+2023-03-17 16:48:18 info: Connected to email server
+2023-03-17 16:48:19 info: Connected to Database Successfully...
+2023-03-17 16:48:23 error: [POST] /reset-password >> StatusCode:: 400, Message:: You're not userId
+2023-03-17 16:48:23 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m400[0m 249.505 ms - 46[0m
+2023-03-17 16:50:08 info: =================================
+2023-03-17 16:50:08 info: ======= ENV: development =======
+2023-03-17 16:50:08 info: 🚀 App listening on the port 3000
+2023-03-17 16:50:08 info: =================================
+2023-03-17 16:50:10 info: Connected to email server
+2023-03-17 16:50:10 info: Connected to Database Successfully...
+2023-03-17 16:50:14 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:50:14 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m400[0m 249.065 ms - 53[0m
+2023-03-17 16:50:45 info: =================================
+2023-03-17 16:50:45 info: ======= ENV: development =======
+2023-03-17 16:50:45 info: 🚀 App listening on the port 3000
+2023-03-17 16:50:45 info: =================================
+2023-03-17 16:50:47 info: Connected to email server
+2023-03-17 16:50:47 info: Connected to Database Successfully...
+2023-03-17 16:50:51 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:50:51 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m400[0m 317.045 ms - 53[0m
+2023-03-17 16:51:30 info: =================================
+2023-03-17 16:51:30 info: ======= ENV: development =======
+2023-03-17 16:51:30 info: 🚀 App listening on the port 3000
+2023-03-17 16:51:30 info: =================================
+2023-03-17 16:51:32 info: Connected to email server
+2023-03-17 16:51:32 info: Connected to Database Successfully...
+2023-03-17 16:51:38 error: [POST] /reset-password >> StatusCode:: 400, Message:: User id can not be empty
+2023-03-17 16:51:38 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [33m400[0m 290.991 ms - 53[0m
+2023-03-17 16:52:04 info: =================================
+2023-03-17 16:52:04 info: ======= ENV: development =======
+2023-03-17 16:52:04 info: 🚀 App listening on the port 3000
+2023-03-17 16:52:04 info: =================================
+2023-03-17 16:52:12 info: Connected to email server
+2023-03-17 16:52:13 info: Connected to Database Successfully...
+2023-03-17 16:52:19 error: [POST] /reset-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:52:19 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjc3ODksImV4cCI6MTY3OTA2ODM4OSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.0FdZUh8WXC50SK59qZ8g8ZYn75Dx4c6gfCwGRoz0PCg [31m500[0m 1230.913 ms - 56[0m
+2023-03-17 16:53:19 error: [Error] >> Channel closed
+2023-03-17 16:53:30 info: =================================
+2023-03-17 16:53:30 info: ======= ENV: development =======
+2023-03-17 16:53:30 info: 🚀 App listening on the port 3000
+2023-03-17 16:53:30 info: =================================
+2023-03-17 16:53:32 info: Connected to email server
+2023-03-17 16:53:46 info: Connected to Database Successfully...
+2023-03-17 16:53:53 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:53:53 info: [0mPOST /login [31m500[0m 503.075 ms - 747[0m
+2023-03-17 16:54:29 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-17 16:54:29 info: [0mPOST /login [33m401[0m 241.863 ms - 56[0m
+2023-03-17 16:56:19 info: =================================
+2023-03-17 16:56:19 info: ======= ENV: development =======
+2023-03-17 16:56:19 info: 🚀 App listening on the port 3000
+2023-03-17 16:56:19 info: =================================
+2023-03-17 16:56:21 info: Connected to email server
+2023-03-17 16:56:21 info: Connected to Database Successfully...
+2023-03-17 16:56:39 error: [POST] /forgot-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:56:39 info: [0mPOST /forgot-password [31m500[0m 3705.291 ms - 52[0m
+2023-03-17 16:57:25 error: [POST] /reset-password >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:25 info: [0mPOST /reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0N2ExN2ZhZTk0MjNlNjE0NjBkOWQiLCJpYXQiOjE2NzkwNjg1OTYsImV4cCI6MTY3OTA2OTE5NiwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.-A6LFrCJfBw_IvnURkhcinPbiw9w4LmYXDZbrAVADTM [31m500[0m 1205.781 ms - 56[0m
+2023-03-17 16:57:43 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:43 info: [0mPOST /login [31m500[0m 537.077 ms - 747[0m
+2023-03-17 16:57:51 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-17 16:57:51 info: [0mPOST /login [33m401[0m 374.810 ms - 56[0m
+2023-03-17 16:57:58 error: [POST] /login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'statusCode')
+2023-03-17 16:57:58 info: [0mPOST /login [31m500[0m 588.965 ms - 747[0m
