@@ -1,9 +1,7 @@
-import { hash } from 'bcryptjs';
 import httpStatus from 'http-status';
 import { sign } from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
 import { CreateUserDto } from '@dtos/users.dto';
-import { HttpException } from '@exceptions/HttpException';
 import { DataStoredInToken, TokenData } from '@interfaces/auth.interface';
 import { IUserDoc, IUserWithTokens } from '@interfaces/users.interface';
 import User from '@models/users.model';
@@ -20,7 +18,7 @@ class AuthService {
   public tokenService = new TokenService();
 
   public async signup(userData: CreateUserDto): Promise<IUserDoc> {
-    if (isEmpty(userData)) throw new ApiError(400, "You're not userData");
+    if (isEmpty(userData)) throw new ApiError(400, 'required fields cannot be empty');
 
     const findUser: IUserDoc | null = await this.users.findOne({ email: userData.email });
     if (findUser) throw new ApiError(409, `email ${userData.email} already exists`);
