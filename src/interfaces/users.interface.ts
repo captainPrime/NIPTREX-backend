@@ -9,6 +9,7 @@ export interface IUser {
   phone_number: string;
   password: string;
   user: string;
+  country: string;
   verified: boolean;
 }
 
