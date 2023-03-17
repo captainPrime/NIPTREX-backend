@@ -5,6 +5,8 @@ export const HAS_CREDENTIALS = process.env.CREDENTIALS === 'true';
 export const {
   NODE_ENV,
   PORT,
+  SMTP_HOST,
+  SMTP_PORT,
   DB_HOST,
   DB_PORT,
   DB_DATABASE,

@@ -9,7 +9,6 @@ import { IUserDoc, IUserWithTokens } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import ApiError from '@/exceptions/ApiError';
-import { sendSuccessfulRegistration } from '@/modules/email/email.service';
 import UserService from './users.service';
 import TokenService from '@/modules/token/token.service';
 import { Token, tokenTypes } from '@/modules/token';
@@ -28,10 +27,6 @@ class AuthService {
 
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: IUserDoc = await this.users.create({ ...userData, password: hashedPassword });
-    //
-    const tokenData = this.createToken(createUserData);
-    const cookie = this.createCookie(tokenData);
-    await sendSuccessfulRegistration(userData.email, cookie, userData.first_name);
 
     return createUserData;
   }

@@ -5,16 +5,20 @@ import { RequestWithUser } from '@interfaces/auth.interface';
 import { IUser } from '@interfaces/users.interface';
 import AuthService from '@services/auth.service';
 import { asyncWrapper } from '@/utils/asyncWrapper';
-import { emailService } from '@/modules/email';
 import TokenService from '@/modules/token/token.service';
+import EmailService from '@/modules/email/email.service';
 
 class AuthController {
   public authService = new AuthService();
   public tokenService = new TokenService();
+  public emailService = new EmailService();
 
   public signUp = asyncWrapper(async (req: Request, res: Response) => {
     const userData: CreateUserDto = req.body;
     const signUpUserData: IUser = await this.authService.signup(userData);
+
+    const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(req.user);
+    await this.emailService.sendVerificationEmail(signUpUserData.email, verifyEmailToken, signUpUserData.first_name);
 
     res.status(201).json({ data: signUpUserData, message: 'signup' });
   });
@@ -33,7 +37,7 @@ class AuthController {
 
   public forgotPassword = asyncWrapper(async (req: Request, res: Response) => {
     const resetPasswordToken = await this.tokenService.generateResetPasswordToken(req.body.email);
-    await emailService.sendResetPasswordEmail(req.body.email, resetPasswordToken);
+    await this.emailService.sendResetPasswordEmail(req.body.email, resetPasswordToken);
     res.status(httpStatus.NO_CONTENT).send();
   });
 
@@ -44,7 +48,7 @@ class AuthController {
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(req.user);
-    await emailService.sendVerificationEmail(req.user.email, verifyEmailToken, req.user.name);
+    await this.emailService.sendVerificationEmail(req.user.email, verifyEmailToken, req.user.name);
     res.status(httpStatus.NO_CONTENT).send();
   });
 
