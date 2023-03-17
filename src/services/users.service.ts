@@ -46,7 +46,7 @@ class UserService {
     return createUserData;
   }
 
-  public async updateUser(userId: mongoose.Types.ObjectId, userData: UpdateUserBody): Promise<IUserDoc> {
+  public async updateUser(userId: mongoose.Types.ObjectId | string, userData: UpdateUserBody): Promise<IUserDoc> {
     if (isEmpty(userData)) throw new HttpException(400, 'Fields cannot be empty');
 
     if (userData.email && (await User.isEmailTaken(userData.email, userId))) {
@@ -68,7 +68,7 @@ class UserService {
     return updateUserById;
   }
 
-  public async deleteUser(userId: mongoose.Types.ObjectId): Promise<IUserModel> {
+  public async deleteUser(userId: mongoose.Types.ObjectId | string): Promise<IUserModel> {
     const deleteUserById: IUserModel | null = await this.users.findByIdAndDelete(userId);
     if (!deleteUserById) throw new HttpException(409, "You're not user");
 
