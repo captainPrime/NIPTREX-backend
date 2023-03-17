@@ -10,9 +10,11 @@ import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import ApiError from '@/exceptions/ApiError';
 import { sendSuccessfulRegistration } from '@/modules/email/email.service';
+import UserService from './users.service';
 
 class AuthService {
   public users = User;
+  public userService = new UserService();
 
   public async signup(userData: CreateUserDto): Promise<IUserDoc> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
@@ -65,6 +67,35 @@ class AuthService {
   public createCookie(tokenData: TokenData): string {
     return `Authorization=${tokenData.token}; HttpOnly; Max-Age=${tokenData.expiresIn};`;
   }
+
+  public resetPassword = async (resetPasswordToken: any, newPassword: string): Promise<void> => {
+    try {
+      const resetPasswordTokenDoc = await verifyToken(resetPasswordToken, tokenTypes.RESET_PASSWORD);
+      const user = await getUserById(new mongoose.Types.ObjectId(resetPasswordTokenDoc.user));
+      if (!user) {
+        throw new Error();
+      }
+      await this.userService.updateUser(user.id, { password: newPassword });
+      await Token.deleteMany({ user: user.id, type: tokenTypes.RESET_PASSWORD });
+    } catch (error) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'Password reset failed');
+    }
+  };
+
+  public verifyEmail = async (verifyEmailToken: any): Promise<IUserDoc | null> => {
+    try {
+      const verifyEmailTokenDoc = await verifyToken(verifyEmailToken, tokenTypes.VERIFY_EMAIL);
+      const user = await getUserById(new mongoose.Types.ObjectId(verifyEmailTokenDoc.user));
+      if (!user) {
+        throw new Error();
+      }
+      await Token.deleteMany({ user: user.id, type: tokenTypes.VERIFY_EMAIL });
+      const updatedUser = await updateUserById(user.id, { isEmailVerified: true });
+      return updatedUser;
+    } catch (error) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'Email verification failed');
+    }
+  };
 }
 
 export default AuthService;
