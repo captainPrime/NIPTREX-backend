@@ -18,7 +18,7 @@ class TokenModelTest {
     email: faker.internet.email().toLowerCase(),
     password: this.password,
     role: 'user',
-    isEmailVerified: false,
+    verified: false,
   };
 
   userOneAccessToken = this.tokenService.generateToken(this.userOne._id, this.accessTokenExpires, tokenTypes.ACCESS);

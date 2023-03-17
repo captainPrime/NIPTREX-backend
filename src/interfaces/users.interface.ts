@@ -9,7 +9,7 @@ export interface IUser {
   phone_number: string;
   password: string;
   user: string;
-  isEmailVerified: boolean;
+  verified: boolean;
 }
 
 export interface IUserDoc extends IUser, Document {
@@ -24,9 +24,9 @@ export interface IUserModel extends Model<IUserDoc> {
 
 export type UpdateUserBody = Partial<IUser>;
 
-export type NewRegisteredUser = Omit<IUser, 'role' | 'isEmailVerified'>;
+export type NewRegisteredUser = Omit<IUser, 'role' | 'verified'>;
 
-export type NewCreatedUser = Omit<IUser, 'isEmailVerified'>;
+export type NewCreatedUser = Omit<IUser, 'verified'>;
 
 export interface IUserWithTokens {
   user: IUserModel;

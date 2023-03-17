@@ -76,7 +76,7 @@ class AuthService {
       throw new Error();
     }
     await Token.deleteMany({ user: user._id, type: tokenTypes.VERIFY_EMAIL });
-    const updatedUser = await this.userService.updateUser(user._id, { isEmailVerified: true });
+    const updatedUser = await this.userService.updateUser(user._id, { verified: true });
     return updatedUser;
   };
 
