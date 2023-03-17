@@ -186,3 +186,76 @@
 2023-03-16 18:17:42 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
 2023-03-16 18:17:42 info: [0mPOST /signup [33m404[0m 112.519 ms - 66[0m
 2023-03-16 18:17:45 error: [Error] >> email quadri201@gmail.com already exists
+2023-03-16 22:15:09 info: =================================
+2023-03-16 22:15:09 info: ======= ENV: development =======
+2023-03-16 22:15:09 info: 🚀 App listening on the port 3000
+2023-03-16 22:15:09 info: =================================
+2023-03-16 22:15:18 info: Connected to Database Successfully...
+2023-03-16 22:15:51 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-16 22:15:51 info: [0mPOST /login [33m401[0m 439.172 ms - 56[0m
+2023-03-16 22:17:38 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-16 22:17:38 info: [0mPOST /login [33m401[0m 520.595 ms - 56[0m
+2023-03-16 22:18:02 info: =================================
+2023-03-16 22:18:02 info: ======= ENV: development =======
+2023-03-16 22:18:02 info: 🚀 App listening on the port 3000
+2023-03-16 22:18:02 info: =================================
+2023-03-16 22:18:05 info: Connected to Database Successfully...
+2023-03-16 22:18:41 error: [POST] /login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-16 22:18:41 info: [0mPOST /login [33m400[0m 798.953 ms - 56[0m
+2023-03-16 22:20:38 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2023-03-16 22:20:38 info: [0mPOST /logout [33m404[0m 7.117 ms - 57[0m
+2023-03-16 22:22:25 error: [POST] /login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-16 22:22:25 info: [0mPOST /login [33m400[0m 342.001 ms - 56[0m
+2023-03-16 22:22:53 error: [POST] /login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-16 22:22:53 info: [0mPOST /login [33m400[0m 337.556 ms - 56[0m
+2023-03-16 22:23:22 error: [POST] /login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-16 22:23:22 info: [0mPOST /login [33m400[0m 321.340 ms - 56[0m
+2023-03-16 22:23:40 info: =================================
+2023-03-16 22:23:40 info: ======= ENV: development =======
+2023-03-16 22:23:40 info: 🚀 App listening on the port 3000
+2023-03-16 22:23:40 info: =================================
+2023-03-16 22:23:50 info: Connected to Database Successfully...
+2023-03-16 22:23:56 info: [0mPOST /login [32m204[0m 7356.930 ms - -[0m
+2023-03-16 22:24:28 info: [0mPOST /login [32m204[0m 430.790 ms - -[0m
+2023-03-16 22:24:32 info: [0mPOST /login [32m204[0m 353.635 ms - -[0m
+2023-03-16 22:25:21 info: =================================
+2023-03-16 22:25:21 info: ======= ENV: development =======
+2023-03-16 22:25:21 info: 🚀 App listening on the port 3000
+2023-03-16 22:25:21 info: =================================
+2023-03-16 22:25:34 info: Connected to Database Successfully...
+2023-03-16 22:25:38 info: [0mPOST /login [32m204[0m 474.718 ms - -[0m
+2023-03-16 22:27:59 info: =================================
+2023-03-16 22:27:59 info: ======= ENV: development =======
+2023-03-16 22:27:59 info: 🚀 App listening on the port 3000
+2023-03-16 22:27:59 info: =================================
+2023-03-16 22:28:02 info: Connected to Database Successfully...
+2023-03-16 22:28:23 info: [0mPOST /login [32m200[0m 503.999 ms - 452[0m
+2023-03-16 22:30:51 info: =================================
+2023-03-16 22:30:51 info: ======= ENV: development =======
+2023-03-16 22:30:51 info: 🚀 App listening on the port 3000
+2023-03-16 22:30:51 info: =================================
+2023-03-16 22:31:22 error: [POST] /login >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-03-16 22:31:22 info: [0mPOST /login [31m500[0m 10131.042 ms - 90[0m
+2023-03-16 22:31:31 error: Error connecting to Database: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2023-03-16 22:31:46 info: =================================
+2023-03-16 22:31:46 info: ======= ENV: development =======
+2023-03-16 22:31:46 info: 🚀 App listening on the port 3000
+2023-03-16 22:31:46 info: =================================
+2023-03-16 22:31:49 info: Connected to Database Successfully...
+2023-03-16 22:32:17 info: [0mPOST /login [32m200[0m 509.191 ms - 223[0m
+2023-03-16 22:33:20 info: [0mPOST /login [32m200[0m 361.307 ms - 223[0m
+2023-03-16 22:33:33 info: [0mPOST /login [32m200[0m 319.420 ms - 223[0m
+2023-03-16 22:34:26 info: =================================
+2023-03-16 22:34:26 info: ======= ENV: development =======
+2023-03-16 22:34:26 info: 🚀 App listening on the port 3000
+2023-03-16 22:34:26 info: =================================
+2023-03-16 22:35:07 error: Error connecting to Database: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2023-03-16 22:40:13 info: =================================
+2023-03-16 22:40:13 info: ======= ENV: development =======
+2023-03-16 22:40:13 info: 🚀 App listening on the port 3000
+2023-03-16 22:40:13 info: =================================
+2023-03-16 22:40:16 info: Connected to Database Successfully...
+2023-03-16 22:40:19 info: [0mPOST /login [32m200[0m 533.912 ms - 448[0m
+2023-03-16 22:41:57 info: [0mPOST /login [32m200[0m 436.729 ms - 448[0m
+2023-03-16 22:42:43 info: [0mPOST /login [32m200[0m 307.564 ms - 448[0m
+2023-03-16 22:43:11 info: [0mPOST /logout [32m200[0m 604.617 ms - 245[0m

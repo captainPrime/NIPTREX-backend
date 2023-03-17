@@ -9,7 +9,7 @@ import { IUserDoc } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import ApiError from '@/exceptions/ApiError';
-// import { sendSuccessfulRegistration } from '@/modules/email/email.service';
+import { sendSuccessfulRegistration } from '@/modules/email/email.service';
 
 class AuthService {
   public users = User;
@@ -23,25 +23,25 @@ class AuthService {
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: IUserDoc = await this.users.create({ ...userData, password: hashedPassword });
     //
-    // const tokenData = this.createToken(createUserData);
-    // const cookie = this.createCookie(tokenData);
-    // await sendSuccessfulRegistration(userData.email, cookie, userData.first_name);
+    const tokenData = this.createToken(createUserData);
+    const cookie = this.createCookie(tokenData);
+    await sendSuccessfulRegistration(userData.email, cookie, userData.first_name);
 
     return createUserData;
   }
 
-  public async loginUserWithEmailAndPassword(userData: UserLoginDto): Promise<{ cookie: string; findUser: IUserDoc }> {
+  public async loginUserWithEmailAndPassword(userData: UserLoginDto): Promise<{ cookie: string; user: IUserDoc }> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
-    const findUser: IUserDoc | null = await this.users.findOne({ email: userData.email });
-    if (!findUser || !(await findUser.isPasswordMatch(findUser.password))) {
+    const user: IUserDoc | null = await this.users.findOne({ email: userData.email });
+    if (!user || !(await user.isPasswordMatch(user.password))) {
       throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
     }
 
-    const tokenData = this.createToken(findUser);
+    const tokenData = this.createToken(user);
     const cookie = this.createCookie(tokenData);
 
-    return { cookie, findUser };
+    return { cookie, user };
   }
 
   public async logout(userData: IUserDoc): Promise<IUserDoc> {
