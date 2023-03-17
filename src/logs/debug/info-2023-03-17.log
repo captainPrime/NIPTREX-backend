@@ -3,3 +3,35 @@
 2023-03-17 13:15:41 info: 🚀 App listening on the port 3000
 2023-03-17 13:15:41 info: =================================
 2023-03-17 13:15:45 info: Connected to Database Successfully...
+2023-03-17 13:26:00 info: =================================
+2023-03-17 13:26:00 info: ======= ENV: development =======
+2023-03-17 13:26:00 info: 🚀 App listening on the port 3000
+2023-03-17 13:26:00 info: =================================
+2023-03-17 13:26:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-03-17 13:26:04 info: Connected to Database Successfully...
+2023-03-17 13:26:36 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-17 13:26:36 info: [0mPOST /signup [33m404[0m 416.653 ms - 66[0m
+2023-03-17 13:35:34 info: =================================
+2023-03-17 13:35:34 info: ======= ENV: development =======
+2023-03-17 13:35:34 info: 🚀 App listening on the port 3000
+2023-03-17 13:35:34 info: =================================
+2023-03-17 13:35:35 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-03-17 13:35:37 info: Connected to Database Successfully...
+2023-03-17 13:38:06 info: =================================
+2023-03-17 13:38:06 info: ======= ENV: development =======
+2023-03-17 13:38:06 info: 🚀 App listening on the port 3000
+2023-03-17 13:38:06 info: =================================
+2023-03-17 13:38:07 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-03-17 13:38:09 info: Connected to Database Successfully...
+2023-03-17 13:38:37 info: =================================
+2023-03-17 13:38:37 info: ======= ENV: development =======
+2023-03-17 13:38:37 info: 🚀 App listening on the port 3000
+2023-03-17 13:38:37 info: =================================
+2023-03-17 13:38:40 info: Connected to email server
+2023-03-17 13:38:46 info: Connected to Database Successfully...
+2023-03-17 13:38:56 error: [POST] /signup >> StatusCode:: 404, Message:: The requested path /signup not found!
+2023-03-17 13:38:56 info: [0mPOST /signup [33m404[0m 73.194 ms - 66[0m
+2023-03-17 13:41:28 error: [POST] /login >> StatusCode:: 409, Message:: You're not user
+2023-03-17 13:41:28 info: [0mPOST /login [33m409[0m 219.590 ms - 44[0m
+2023-03-17 13:41:36 error: [POST] /login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-17 13:41:36 info: [0mPOST /login [33m401[0m 248.320 ms - 56[0m

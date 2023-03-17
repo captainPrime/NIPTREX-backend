@@ -6,7 +6,7 @@ import { Message } from './email.interfaces';
 class EmailService {
   private transport = nodemailer.createTransport({
     host: 'smtp.mailtrap.io',
-    port: 465,
+    port: 2525,
     auth: {
       user: MAIL_USERNAME,
       pass: MAIL_PASSWORD,

@@ -20,7 +20,7 @@ class AuthController {
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(req.user);
     await this.emailService.sendVerificationEmail(signUpUserData.email, verifyEmailToken, signUpUserData.first_name);
 
-    res.status(201).json({ data: signUpUserData, message: 'signup' });
+    res.status(201).send({ data: signUpUserData, message: 'signup' });
   });
 
   public logIn = asyncWrapper(async (req: Request, res: Response) => {
