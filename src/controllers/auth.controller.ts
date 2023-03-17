@@ -52,6 +52,11 @@ class AuthController {
     await this.authService.verifyEmail(req.query['token']);
     res.status(httpStatus.NO_CONTENT).send();
   });
+
+  public refreshTokens = asyncWrapper(async (req: Request, res: Response) => {
+    const userWithTokens = await this.authService.refreshAuth(req.body.refreshToken);
+    res.send({ ...userWithTokens });
+  });
 }
 
 export default AuthController;

@@ -29,6 +29,6 @@ export type NewRegisteredUser = Omit<IUser, 'role' | 'isEmailVerified'>;
 export type NewCreatedUser = Omit<IUser, 'isEmailVerified'>;
 
 export interface IUserWithTokens {
-  user: IUserDoc;
+  user: IUserModel;
   tokens: AccessAndRefreshTokens;
 }

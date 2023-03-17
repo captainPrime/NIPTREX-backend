@@ -5,7 +5,7 @@ import { SECRET_KEY } from '@config';
 import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
 import { DataStoredInToken, TokenData } from '@interfaces/auth.interface';
-import { IUserDoc } from '@interfaces/users.interface';
+import { IUserDoc, IUserWithTokens } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import ApiError from '@/exceptions/ApiError';
@@ -91,6 +91,21 @@ class AuthService {
       return updatedUser;
     } catch (error) {
       throw new ApiError(httpStatus.UNAUTHORIZED, 'Email verification failed');
+    }
+  };
+
+  public refreshAuth = async (refreshToken: string): Promise<IUserWithTokens> => {
+    try {
+      const refreshTokenDoc = await this.tokenService.verifyToken(refreshToken, tokenTypes.REFRESH);
+      const user: any = await this.userService.findUserById(new mongoose.Types.ObjectId(refreshTokenDoc.user));
+      if (!user) {
+        throw new Error();
+      }
+      await refreshTokenDoc.remove();
+      const tokens = await this.tokenService.generateAuthTokens(user);
+      return { user, tokens };
+    } catch (error) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate');
     }
   };
 }
