@@ -48,6 +48,7 @@
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
     "toobusy-js": "^0.5.1",
+    "tslib": "^2.5.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5",
     "xss-clean": "^0.1.1"
