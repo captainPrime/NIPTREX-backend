@@ -215,3 +215,54 @@
 2023-03-21 16:13:24 info: [0mPOST /auth/login [32m200[0m 59.895 ms - 104[0m
 2023-03-21 16:13:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-03-21 16:13:31 info: [0mPOST /auth/login [32m200[0m 633.087 ms - 587[0m
+2023-03-21 22:24:43 info: =================================
+2023-03-21 22:24:43 info: ======= ENV: development =======
+2023-03-21 22:24:43 info: 🚀 App listening on the port 3000
+2023-03-21 22:24:43 info: =================================
+2023-03-21 22:24:50 info: Connected to email server
+2023-03-21 22:24:58 info: Connected to Database Successfully...
+2023-03-21 22:25:05 error: [POST] /profile >> StatusCode:: 404, Message:: The requested path /profile not found!
+2023-03-21 22:25:05 info: [0mPOST /profile [32m200[0m 28.959 ms - 96[0m
+2023-03-21 22:27:37 info: =================================
+2023-03-21 22:27:37 info: ======= ENV: development =======
+2023-03-21 22:27:37 info: 🚀 App listening on the port 3000
+2023-03-21 22:27:37 info: =================================
+2023-03-21 22:27:43 info: Connected to email server
+2023-03-21 22:27:51 info: Connected to Database Successfully...
+2023-03-21 22:27:55 error: [POST] /profile >> StatusCode:: 404, Message:: Something went wrong
+2023-03-21 22:27:55 info: [0mPOST /profile [32m200[0m 34.338 ms - 104[0m
+2023-03-21 22:28:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 22:28:08 info: [0mPOST /auth/login [32m200[0m 2334.917 ms - 587[0m
+2023-03-21 22:28:24 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: work_preference.work_preference: `Flexible hours` is not a valid enum value for path `work_preference.work_preference`., work_preference.work_location: `Remote` is not a valid enum value for path `work_preference.work_location`., work_preference.team_size: `5-10` is not a valid enum value for path `work_preference.team_size`., work_preference.project_duration: `Long-term` is not a valid enum value for path `work_preference.project_duration`., work_preference.company_size: `Small` is not a valid enum value for path `work_preference.company_size`., work_preference.company_culture: `Startup` is not a valid enum value for path `work_preference.company_culture`., work_preference.industry_type: `Technology` is not a valid enum value for path `work_preference.industry_type`., education_history.employment_type: `Full-time` is not a valid enum value for path `education_history.employment_type`., experience.employment_type: `Full-time` is not a valid enum value for path `experience.employment_type`.
+2023-03-21 22:28:24 info: [0mPOST /profile [32m200[0m 743.998 ms - -[0m
+2023-03-21 22:32:44 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: work_preference.work_location: `Remote` is not a valid enum value for path `work_preference.work_location`., work_preference.team_size: `Small team (4-6 members)` is not a valid enum value for path `work_preference.team_size`.
+2023-03-21 22:32:44 info: [0mPOST /profile [32m200[0m 858.775 ms - 310[0m
+2023-03-21 22:34:34 info: =================================
+2023-03-21 22:34:34 info: ======= ENV: development =======
+2023-03-21 22:34:34 info: 🚀 App listening on the port 3000
+2023-03-21 22:34:34 info: =================================
+2023-03-21 22:34:39 info: Connected to email server
+2023-03-21 22:34:57 info: Connected to Database Successfully...
+2023-03-21 22:35:04 info: [0mPOST /profile [32m200[0m 2902.514 ms - -[0m
+2023-03-21 22:43:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 22:43:09 info: [0mPOST /auth/login [32m200[0m 1122.677 ms - 85[0m
+2023-03-21 22:43:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 22:43:21 info: [0mPOST /auth/login [32m200[0m 459.338 ms - 85[0m
+2023-03-21 22:43:38 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 22:43:38 info: [0mPOST /auth/forgot_password [32m200[0m 9399.202 ms - 81[0m
+2023-03-21 22:43:57 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password must be longer than or equal to 6 characters, confirm_password must be longer than or equal to 6 characters
+2023-03-21 22:43:57 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0NWY2MThmNzlmZmRmODc2MjBkNjkiLCJpYXQiOjE2Nzk0MzUwMDksImV4cCI6MTY3OTQzNTYwOSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.ECCm93rBzzvmFUfSwTVLXKW_VQ44Rd27RHf-36ajsuI [32m200[0m 3.638 ms - 349[0m
+2023-03-21 22:44:10 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 22:44:10 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0NWY2MThmNzlmZmRmODc2MjBkNjkiLCJpYXQiOjE2Nzk0MzUwMDksImV4cCI6MTY3OTQzNTYwOSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.ECCm93rBzzvmFUfSwTVLXKW_VQ44Rd27RHf-36ajsuI [32m200[0m 2504.706 ms - 81[0m
+2023-03-21 22:44:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 22:44:17 info: [0mPOST /auth/login [32m200[0m 764.064 ms - 587[0m
+2023-03-21 22:44:38 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: education_history.employment_type: Path `education_history.employment_type` is required., education_history.date_attended: Path `education_history.date_attended` is required., education_history.degree_level: Path `education_history.degree_level` is required., education_history.institution: Path `education_history.institution` is required., experience.employment_type: Path `experience.employment_type` is required., experience.role: Path `experience.role` is required., experience.country: Path `experience.country` is required., experience.company: Path `experience.company` is required., experience.end_date: Path `experience.end_date` is required., experience.start_date: Path `experience.start_date` is required.
+2023-03-21 22:44:38 info: [0mPOST /profile [32m200[0m 380.801 ms - 802[0m
+2023-03-21 22:45:16 info: [0mPOST /profile [32m200[0m 1010.911 ms - -[0m
+2023-03-21 22:45:59 info: =================================
+2023-03-21 22:45:59 info: ======= ENV: development =======
+2023-03-21 22:45:59 info: 🚀 App listening on the port 3000
+2023-03-21 22:45:59 info: =================================
+2023-03-21 22:46:03 info: Connected to email server
+2023-03-21 22:46:16 info: Connected to Database Successfully...
+2023-03-21 22:46:23 info: [0mPOST /profile [32m200[0m 1439.838 ms - -[0m

@@ -151,12 +151,18 @@ interface IProfile extends Document {
 }
 
 const profileSchema: Schema = new Schema({
+  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   personal_details: {
     first_name: { type: String, required: true },
     last_name: { type: String, required: true },
     email: { type: String, required: true },
     country: { type: String, required: true },
     profile_picture: { type: String, required: true },
+    dob: { type: String, required: true },
+    role: { type: String, required: true },
+    phone_number: { type: String, required: true },
+    seniority: { type: String, required: true },
+    gender: { type: String, required: true },
   },
   address: {
     line1: { type: String, required: true },
@@ -174,30 +180,34 @@ const profileSchema: Schema = new Schema({
     glass_door: { type: String },
   },
   languages: [{ type: String }],
-  experience: {
-    start_date: { type: Date, required: true },
-    end_date: { type: Date, required: true },
-    company: { type: String, required: true },
-    country: { type: String, required: true },
-    role: { type: String, required: true },
-    employment_type: {
-      type: String,
-      enum: Object.values(EmploymentType),
-      required: true,
+  experience: [
+    {
+      start_date: { type: Date, required: true },
+      end_date: { type: Date, required: true },
+      company: { type: String, required: true },
+      country: { type: String, required: true },
+      role: { type: String, required: true },
+      employment_type: {
+        type: String,
+        enum: Object.values(EmploymentType),
+        required: true,
+      },
+      description: { type: String },
     },
-    description: { type: String },
-  },
-  education_history: {
-    institution: { type: String, required: true },
-    field_of_study: { type: String },
-    degree_level: { type: String, required: true },
-    date_attended: { type: String, required: true },
-    employment_type: {
-      type: String,
-      enum: Object.values(EmploymentType),
-      required: true,
+  ],
+  education_history: [
+    {
+      institution: { type: String, required: true },
+      field_of_study: { type: String },
+      degree_level: { type: String, required: true },
+      date_attended: { type: String, required: true },
+      employment_type: {
+        type: String,
+        enum: Object.values(EmploymentType),
+        required: true,
+      },
     },
-  },
+  ],
   work_preference: {
     industry_type: {
       type: String,
@@ -221,12 +231,12 @@ const profileSchema: Schema = new Schema({
     },
     team_size: {
       type: String,
-      enum: Object.values(EmploymentType),
+      enum: Object.values(TeamSize),
       required: true,
     },
     work_location: {
       type: String,
-      enum: Object.values(EmploymentType),
+      enum: Object.values(WorkOption),
       required: true,
     },
     work_timezone: {
@@ -242,6 +252,19 @@ const profileSchema: Schema = new Schema({
   identity: {
     proof_of_identity: { type: String, required: true },
     proof_of_address: { type: String, required: true },
+  },
+  certification: [
+    {
+      name: { type: String, required: true },
+      organisation: { type: String, required: true },
+      certificate_url: { type: String, required: true },
+      date_obtained: { type: Date, required: true },
+    },
+  ],
+  billing: {
+    per_annum: { type: String, required: true },
+    hourly_rate: { type: String, required: true },
+    payment_method: { type: String, required: true },
   },
 });
 

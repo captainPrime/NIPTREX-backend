@@ -8,7 +8,6 @@ import { asyncWrapper } from '@/utils/asyncWrapper';
 import TokenService from '@/modules/token/token.service';
 import EmailService from '@/modules/email/email.service';
 import UserService from '@/services/users.service';
-import ApiError from '@/exceptions/ApiError';
 import { HttpException } from '@/exceptions/HttpException';
 
 class AuthController {
