@@ -9,17 +9,16 @@ export class CreateUserRequest {
   @IsDefined()
   userName!: string;
 }
+
 export default class RequestValidator {
   static validate = <T extends object>(
     classInstance: ClassConstructor<T>,
-    value: string | 'body' | 'query' | 'params' = 'body',
     skipMissingProperties = false,
     whitelist = true,
     forbidNonWhitelisted = true,
   ): RequestHandler => {
     return async (req: Request, res: Response, next: NextFunction) => {
-      // eslint-disable-next-line security/detect-object-injection
-      const convertedObject = plainToInstance(classInstance, (req as any)[value]);
+      const convertedObject = plainToInstance(classInstance, req.body);
       await validate(convertedObject, { skipMissingProperties, whitelist, forbidNonWhitelisted }).then((errors: ValidationError[]) => {
         if (errors.length > 0) {
           let rawErrors: string[] = [];
@@ -32,7 +31,6 @@ export default class RequestValidator {
           next();
         }
       });
-      next();
     };
   };
 }

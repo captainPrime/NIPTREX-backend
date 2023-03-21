@@ -37,3 +37,15 @@ export class UserLoginDto {
   @IsString()
   public password!: string;
 }
+
+export class ResetPasswordDto {
+  @IsString()
+  @MinLength(6)
+  @MaxLength(32)
+  public password!: string;
+
+  @IsString()
+  @MinLength(6)
+  @MaxLength(32)
+  public confirm_password!: string;
+}

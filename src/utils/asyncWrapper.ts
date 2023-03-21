@@ -7,6 +7,7 @@ export const asyncWrapper = (handler: AsyncFunction) => (req: Request, res: Resp
   Promise.resolve(handler(req, res, next))
     .then((response: SuccessResponse) =>
       res.status(response.status).send({
+        status: response.status,
         data: response.data,
       }),
     )
