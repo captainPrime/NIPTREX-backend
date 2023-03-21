@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-possible-timing-attacks */
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import { CreateUserDto } from '@dtos/users.dto';
+import { CreateUserDto, ResetPasswordDto, UserLoginDto } from '@dtos/users.dto';
 import { RequestWithUser } from '@interfaces/auth.interface';
 import AuthService from '@services/auth.service';
 import { asyncWrapper } from '@/utils/asyncWrapper';
@@ -9,6 +9,7 @@ import TokenService from '@/modules/token/token.service';
 import EmailService from '@/modules/email/email.service';
 import UserService from '@/services/users.service';
 import ApiError from '@/exceptions/ApiError';
+import { HttpException } from '@/exceptions/HttpException';
 
 class AuthController {
   public authService = new AuthService();
@@ -23,14 +24,14 @@ class AuthController {
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(signUpUserData._id);
     await this.emailService.sendVerificationEmail(signUpUserData.email, verifyEmailToken, signUpUserData.first_name);
 
-    res.send({ status: 201, message: 'user created successfully', data: signUpUserData });
+    res.send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: signUpUserData });
   });
 
   public logIn = asyncWrapper(async (req: Request, res: Response) => {
-    const { email, password } = req.body;
-    const user = await this.authService.loginUserWithEmailAndPassword(email, password);
+    const userLogindata: UserLoginDto = req.body;
+    const user = await this.authService.loginUserWithEmailAndPassword(userLogindata.email, userLogindata.password);
     const tokens = await this.tokenService.generateAuthTokens(user);
-    res.send({ status: 200, message: 'user login successful', data: tokens });
+    res.send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: tokens });
   });
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
@@ -41,28 +42,28 @@ class AuthController {
   public forgotPassword = asyncWrapper(async (req: Request, res: Response) => {
     const resetPasswordToken = await this.tokenService.generateResetPasswordToken(req.body.email);
     await this.emailService.sendResetPasswordEmail(req.body.email, resetPasswordToken);
-    res.status(200).send({ status: 200, message: 'Reset password email sent' });
+    res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
   });
 
   public resetPassword = asyncWrapper(async (req: Request, res: Response) => {
-    const { password, confirm_password } = req.body;
-    if (confirm_password !== password) {
-      throw new ApiError(httpStatus.UNAUTHORIZED, 'password mismatch');
+    const passwordData: ResetPasswordDto = req.body;
+    if (passwordData.confirm_password !== passwordData.password) {
+      throw new HttpException(400, 1020, 'password mismatch');
     }
-    await this.authService.resetPassword(req.query['token'], password);
-    res.status(200).send({ success: true, message: 'Password Reset successfully' });
+    await this.authService.resetPassword(req.query['token'], passwordData.password);
+    res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
   });
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {
     const user = await this.userService.findUserByEmail(req.body.email);
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(user.id);
     await this.emailService.sendVerificationEmail(user.email, verifyEmailToken, user.first_name);
-    res.status(200).send({ status: 200, message: 'Verification email sent' });
+    res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
   });
 
   public verifyEmail = asyncWrapper(async (req: Request, res: Response) => {
     await this.authService.verifyEmail(req.query.token);
-    res.status(200).send({ success: true, message: 'Verified email successfully' });
+    res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
   });
 
   public refreshTokens = asyncWrapper(async (req: Request, res: Response) => {

@@ -11,6 +11,7 @@ import UserService from './users.service';
 import TokenService from '@/modules/token/token.service';
 import { Token, tokenTypes } from '@/modules/token';
 import mongoose from 'mongoose';
+import { HttpException } from '@/exceptions/HttpException';
 
 class AuthService {
   public users = User;
@@ -18,10 +19,10 @@ class AuthService {
   public tokenService = new TokenService();
 
   public signup = async (userData: CreateUserDto): Promise<IUserDoc> => {
-    if (isEmpty(userData)) throw new ApiError(400, 'required fields cannot be empty');
+    if (isEmpty(userData)) throw new HttpException(400, 1001, 'required fields cannot be empty');
 
     const findUser: IUserDoc | null = await this.users.findOne({ email: userData.email });
-    if (findUser) throw new ApiError(409, `email ${userData.email} already exists`);
+    if (findUser) throw new HttpException(400, 1002, `email ${userData.email} already exists`);
 
     const createUserData: IUserDoc = await this.users.create(userData);
 
@@ -32,7 +33,7 @@ class AuthService {
     const user = await this.userService.findUserByEmail(email);
 
     if (!user || !(await user.isPasswordMatch(password))) {
-      throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
+      throw new HttpException(400, 1003, 'Incorrect email or password');
     }
     return user;
   };
@@ -40,7 +41,7 @@ class AuthService {
   public async logout(refreshToken: string): Promise<void> {
     const refreshTokenDoc = await Token.findOne({ token: refreshToken, type: tokenTypes.REFRESH, blacklisted: false });
     if (!refreshTokenDoc) {
-      throw new ApiError(httpStatus.NOT_FOUND, 'Not found');
+      throw new HttpException(400, 1004, 'Not found');
     }
     await refreshTokenDoc.remove();
   }
@@ -62,7 +63,7 @@ class AuthService {
     const resetPasswordTokenDoc = await this.tokenService.verifyToken(resetPasswordToken, tokenTypes.RESET_PASSWORD);
     const user = await this.userService.findUserById(resetPasswordTokenDoc.user);
     if (!user) {
-      throw new Error();
+      throw new HttpException(400, 1005, 'Invalid reset password token');
     }
     const updatedUser = await this.userService.updateUser(user._id, { password: newPassword });
     await Token.deleteMany({ user: user._id, type: tokenTypes.RESET_PASSWORD });
@@ -73,7 +74,7 @@ class AuthService {
     const verifyEmailTokenDoc = await this.tokenService.verifyToken(verifyEmailToken, tokenTypes.VERIFY_EMAIL);
     const user = await this.userService.findUserById(verifyEmailTokenDoc.user);
     if (!user) {
-      throw new Error();
+      throw new HttpException(400, 1006, 'Invalid verification token');
     }
     await Token.deleteMany({ user: user._id, type: tokenTypes.VERIFY_EMAIL });
     const updatedUser = await this.userService.updateUser(user._id, { verified: true });
@@ -85,7 +86,7 @@ class AuthService {
       const refreshTokenDoc = await this.tokenService.verifyToken(refreshToken, tokenTypes.REFRESH);
       const user: any = await this.userService.findUserById(new mongoose.Types.ObjectId(refreshTokenDoc.user));
       if (!user) {
-        throw new Error();
+        throw new HttpException(400, 1005, 'cannot find user');
       }
       await refreshTokenDoc.remove();
       const tokens = await this.tokenService.generateAuthTokens(user);

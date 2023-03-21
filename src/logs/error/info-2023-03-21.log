@@ -1,0 +1,49 @@
+2023-03-21 14:12:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:27:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:27:42 error: [POST] /auth/register >> StatusCode:: 400, Message:: email quadri29@gmail.com already exists
+2023-03-21 14:29:16 error: [POST] /auth/send_verification_email >> StatusCode:: 409, Message:: Something went wrong
+2023-03-21 14:30:19 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-03-21 14:30:45 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-03-21 14:32:22 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:34:32 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:39:02 error: [POST] /auth/send_verification_email >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:39:24 error: [POST] /auth/forgot_password >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:39:58 error: [POST] /auth/forgot_password >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:42:29 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:45:28 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: You're not user
+2023-03-21 14:45:48 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-21 14:49:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:49:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:49:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:52:58 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:54:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:54:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:54:36 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:56:55 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Connection closed unexpectedly
+2023-03-21 14:57:15 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:57:47 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-21 14:58:15 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:58:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:58:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:58:47 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Token not found
+2023-03-21 15:03:22 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:03:55 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:04:10 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:04:44 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: jwt malformed
+2023-03-21 15:08:10 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:08:14 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Token not found
+2023-03-21 15:08:32 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:09:52 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:12:15 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:12:35 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:12:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 15:13:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 16:00:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:00:14 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:01:18 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:06:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:06:45 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:09:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:09:26 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:13:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:13:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

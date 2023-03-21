@@ -6,13 +6,13 @@ export default class ErrorMiddleware {
   static handleError = () => {
     return async (error: HttpException, req: Request, res: Response, next: NextFunction) => {
       try {
-        const status: number = error.statusCode || 500;
+        const status: number = error.status || 400;
+        const response_code: number = error.responseCode || 400;
         const message: string = error.message || 'Something went wrong';
-        const rawErrors: string[] = error.rawErrors || [];
-        // const stack: string = error.stack || 'No stack trace available';
+        const data: any[] = error.data || [];
 
         logger.error(`[${req.method}] ${req.path} >> StatusCode:: ${status}, Message:: ${message}`);
-        res.status(status).json({ success: false, message, rawErrors });
+        res.status(200).json({ status, response_code, message, data });
       } catch (error) {
         next(error);
       }

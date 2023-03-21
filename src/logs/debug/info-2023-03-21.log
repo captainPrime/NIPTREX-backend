@@ -1,0 +1,217 @@
+2023-03-21 14:11:29 info: =================================
+2023-03-21 14:11:29 info: ======= ENV: development =======
+2023-03-21 14:11:29 info: 🚀 App listening on the port 3000
+2023-03-21 14:11:29 info: =================================
+2023-03-21 14:11:37 info: Connected to Database Successfully...
+2023-03-21 14:11:38 info: Connected to email server
+2023-03-21 14:12:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:12:51 info: [0mPOST /auth/login [33m400[0m 1437.294 ms - 72[0m
+2023-03-21 14:26:50 info: =================================
+2023-03-21 14:26:50 info: ======= ENV: development =======
+2023-03-21 14:26:50 info: 🚀 App listening on the port 3000
+2023-03-21 14:26:50 info: =================================
+2023-03-21 14:26:55 info: Connected to email server
+2023-03-21 14:27:00 info: Connected to Database Successfully...
+2023-03-21 14:27:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:27:10 info: [0mPOST /auth/login [33m400[0m 432.421 ms - 83[0m
+2023-03-21 14:27:42 error: [POST] /auth/register >> StatusCode:: 400, Message:: email quadri29@gmail.com already exists
+2023-03-21 14:27:42 info: [0mPOST /auth/register [33m400[0m 343.276 ms - 95[0m
+2023-03-21 14:29:16 error: [POST] /auth/send_verification_email >> StatusCode:: 409, Message:: Something went wrong
+2023-03-21 14:29:16 info: [0mPOST /auth/send_verification_email [33m409[0m 261.088 ms - 90[0m
+2023-03-21 14:30:02 info: =================================
+2023-03-21 14:30:02 info: ======= ENV: development =======
+2023-03-21 14:30:02 info: 🚀 App listening on the port 3000
+2023-03-21 14:30:02 info: =================================
+2023-03-21 14:30:19 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-03-21 14:30:19 info: [0mPOST /auth/send_verification_email [33m400[0m 10091.928 ms - 118[0m
+2023-03-21 14:30:45 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-03-21 14:30:45 info: [0mPOST /auth/send_verification_email [33m400[0m 10002.863 ms - 118[0m
+2023-03-21 14:31:07 info: =================================
+2023-03-21 14:31:07 info: ======= ENV: development =======
+2023-03-21 14:31:07 info: 🚀 App listening on the port 3000
+2023-03-21 14:31:07 info: =================================
+2023-03-21 14:32:22 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:33:17 info: =================================
+2023-03-21 14:33:17 info: ======= ENV: development =======
+2023-03-21 14:33:17 info: 🚀 App listening on the port 3000
+2023-03-21 14:33:17 info: =================================
+2023-03-21 14:34:32 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:38:33 info: =================================
+2023-03-21 14:38:33 info: ======= ENV: development =======
+2023-03-21 14:38:33 info: 🚀 App listening on the port 3000
+2023-03-21 14:38:33 info: =================================
+2023-03-21 14:38:36 info: Connected to email server
+2023-03-21 14:38:57 info: Connected to Database Successfully...
+2023-03-21 14:39:02 error: [POST] /auth/send_verification_email >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:39:02 info: [0mPOST /auth/send_verification_email [33m409[0m 316.332 ms - 73[0m
+2023-03-21 14:39:24 error: [POST] /auth/forgot_password >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:39:24 info: [0mPOST /auth/forgot_password [33m409[0m 347.960 ms - 73[0m
+2023-03-21 14:39:58 error: [POST] /auth/forgot_password >> StatusCode:: 409, Message:: You're not user
+2023-03-21 14:39:58 info: [0mPOST /auth/forgot_password [33m409[0m 704.847 ms - 73[0m
+2023-03-21 14:41:14 info: =================================
+2023-03-21 14:41:14 info: ======= ENV: development =======
+2023-03-21 14:41:14 info: 🚀 App listening on the port 3000
+2023-03-21 14:41:14 info: =================================
+2023-03-21 14:42:29 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:43:02 info: Connected to email server
+2023-03-21 14:44:44 info: =================================
+2023-03-21 14:44:44 info: ======= ENV: development =======
+2023-03-21 14:44:44 info: 🚀 App listening on the port 3000
+2023-03-21 14:44:44 info: =================================
+2023-03-21 14:45:10 info: Connected to email server
+2023-03-21 14:45:17 info: Connected to Database Successfully...
+2023-03-21 14:45:28 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: You're not user
+2023-03-21 14:45:28 info: [0mPOST /auth/forgot_password [32m200[0m 334.306 ms - 73[0m
+2023-03-21 14:45:48 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-21 14:45:48 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE0Y2VlMjQ5NmI4MTRhODhmMzQ3ZWUiLCJpYXQiOjE2NzkwODU0NzIsImV4cCI6MTY3OTA4NjA3MiwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.fMhICWcnfHdFlkeoMOOMb15WSq4Razxpa94jly5CRwA [32m200[0m 2.586 ms - 74[0m
+2023-03-21 14:48:08 info: =================================
+2023-03-21 14:48:08 info: ======= ENV: development =======
+2023-03-21 14:48:08 info: 🚀 App listening on the port 3000
+2023-03-21 14:48:08 info: =================================
+2023-03-21 14:48:19 info: Connected to email server
+2023-03-21 14:48:26 info: Connected to Database Successfully...
+2023-03-21 14:49:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:49:11 info: [0mPOST /auth/login [32m200[0m 576.372 ms - 85[0m
+2023-03-21 14:49:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:49:22 info: [0mPOST /auth/login [32m200[0m 731.511 ms - 585[0m
+2023-03-21 14:49:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:49:39 info: [0mPOST /auth/login [32m200[0m 298.751 ms - 85[0m
+2023-03-21 14:51:43 info: =================================
+2023-03-21 14:51:43 info: ======= ENV: development =======
+2023-03-21 14:51:43 info: 🚀 App listening on the port 3000
+2023-03-21 14:51:43 info: =================================
+2023-03-21 14:52:58 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-21 14:53:16 info: Connected to email server
+2023-03-21 14:53:22 info: =================================
+2023-03-21 14:53:22 info: ======= ENV: development =======
+2023-03-21 14:53:22 info: 🚀 App listening on the port 3000
+2023-03-21 14:53:22 info: =================================
+2023-03-21 14:53:47 info: Connected to Database Successfully...
+2023-03-21 14:53:56 info: Connected to email server
+2023-03-21 14:54:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:54:08 info: [0mPOST /auth/login [32m200[0m 609.011 ms - 85[0m
+2023-03-21 14:54:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:54:17 info: [0mPOST /auth/login [32m200[0m 3763.776 ms - 587[0m
+2023-03-21 14:54:36 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:54:36 info: [0mPOST /auth/forgot_password [32m200[0m 6632.528 ms - 71[0m
+2023-03-21 14:55:52 info: =================================
+2023-03-21 14:55:52 info: ======= ENV: development =======
+2023-03-21 14:55:52 info: 🚀 App listening on the port 3000
+2023-03-21 14:55:52 info: =================================
+2023-03-21 14:55:56 info: Connected to email server
+2023-03-21 14:56:03 info: Connected to Database Successfully...
+2023-03-21 14:56:55 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Connection closed unexpectedly
+2023-03-21 14:56:55 info: [0mPOST /auth/forgot_password [32m200[0m 36967.168 ms - 87[0m
+2023-03-21 14:57:15 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:57:15 info: [0mPOST /auth/forgot_password [32m200[0m 7807.647 ms - 81[0m
+2023-03-21 14:57:47 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-21 14:57:47 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDcwMjgsImV4cCI6MTY3OTQwNzYyOCwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.ksVVDkby5IhvPh0k-lOZMz2cPmvQnP4_GelKrQcH9Fk [32m200[0m 1.775 ms - 75[0m
+2023-03-21 14:58:15 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:58:15 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDcwMjgsImV4cCI6MTY3OTQwNzYyOCwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.ksVVDkby5IhvPh0k-lOZMz2cPmvQnP4_GelKrQcH9Fk [32m200[0m 1185.154 ms - 81[0m
+2023-03-21 14:58:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 14:58:30 info: [0mPOST /auth/login [32m200[0m 2777.609 ms - 85[0m
+2023-03-21 14:58:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 14:58:37 info: [0mPOST /auth/login [32m200[0m 906.281 ms - 587[0m
+2023-03-21 14:58:47 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Token not found
+2023-03-21 14:58:47 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDcwMjgsImV4cCI6MTY3OTQwNzYyOCwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.ksVVDkby5IhvPh0k-lOZMz2cPmvQnP4_GelKrQcH9Fk [32m200[0m 822.580 ms - 72[0m
+2023-03-21 15:02:56 info: =================================
+2023-03-21 15:02:56 info: ======= ENV: development =======
+2023-03-21 15:02:56 info: 🚀 App listening on the port 3000
+2023-03-21 15:02:56 info: =================================
+2023-03-21 15:03:02 info: Connected to email server
+2023-03-21 15:03:03 info: Connected to Database Successfully...
+2023-03-21 15:03:22 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:03:22 info: [0mPOST /auth/forgot_password [32m200[0m 5722.272 ms - 81[0m
+2023-03-21 15:03:55 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:03:55 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDczOTcsImV4cCI6MTY3OTQwNzk5NywidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.c89b8qivL3cmVjNWvKcV_KIvbTobzHSId9PTzvv9ikc [32m200[0m 1841.432 ms - 81[0m
+2023-03-21 15:04:10 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:04:10 info: [0mPOST /auth/forgot_password [32m200[0m 5342.754 ms - 81[0m
+2023-03-21 15:04:44 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: jwt malformed
+2023-03-21 15:04:44 info: [0mPOST /auth/reset_password?token=olashina201@gmail.com [32m200[0m 7.632 ms - 70[0m
+2023-03-21 15:07:24 info: =================================
+2023-03-21 15:07:24 info: ======= ENV: development =======
+2023-03-21 15:07:24 info: 🚀 App listening on the port 3000
+2023-03-21 15:07:24 info: =================================
+2023-03-21 15:07:28 info: Connected to email server
+2023-03-21 15:07:37 info: =================================
+2023-03-21 15:07:37 info: ======= ENV: development =======
+2023-03-21 15:07:37 info: 🚀 App listening on the port 3000
+2023-03-21 15:07:37 info: =================================
+2023-03-21 15:07:40 info: Connected to email server
+2023-03-21 15:07:41 info: Connected to Database Successfully...
+2023-03-21 15:08:10 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:08:10 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDc0NDUsImV4cCI6MTY3OTQwODA0NSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.yCmB4dVRfS7QJzCnH_eK7GjWAaxZvL4_43xieVrVEtM [32m200[0m 16586.068 ms - 81[0m
+2023-03-21 15:08:14 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Token not found
+2023-03-21 15:08:14 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDc0NDUsImV4cCI6MTY3OTQwODA0NSwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.yCmB4dVRfS7QJzCnH_eK7GjWAaxZvL4_43xieVrVEtM [32m200[0m 253.038 ms - 72[0m
+2023-03-21 15:08:32 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:08:32 info: [0mPOST /auth/forgot_password [32m200[0m 4539.814 ms - 81[0m
+2023-03-21 15:09:52 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:09:52 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDc3MDgsImV4cCI6MTY3OTQwODMwOCwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.M2mkBgzZ8psIzSskIoKCk7WKr_Kees_H-y2IDr-9vXI [32m200[0m 55284.501 ms - 81[0m
+2023-03-21 15:11:26 info: =================================
+2023-03-21 15:11:26 info: ======= ENV: development =======
+2023-03-21 15:11:26 info: 🚀 App listening on the port 3000
+2023-03-21 15:11:26 info: =================================
+2023-03-21 15:11:34 info: Connected to Database Successfully...
+2023-03-21 15:12:01 info: Connected to email server
+2023-03-21 15:12:15 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:12:15 info: [0mPOST /auth/forgot_password [32m200[0m 35625.473 ms - 81[0m
+2023-03-21 15:12:35 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:12:35 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk0MDc5MDAsImV4cCI6MTY3OTQwODUwMCwidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.HYTRZcnIsSvzUA2pZUsxmYpt5n-UfmOeyn6cOQ5xRn0 [32m200[0m 2302.001 ms - 81[0m
+2023-03-21 15:12:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-21 15:12:59 info: [0mPOST /auth/login [32m200[0m 1986.058 ms - 85[0m
+2023-03-21 15:13:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 15:13:04 info: [0mPOST /auth/login [32m200[0m 1453.237 ms - 587[0m
+2023-03-21 15:59:08 info: =================================
+2023-03-21 15:59:08 info: ======= ENV: development =======
+2023-03-21 15:59:08 info: 🚀 App listening on the port 3000
+2023-03-21 15:59:08 info: =================================
+2023-03-21 15:59:14 info: Connected to email server
+2023-03-21 15:59:24 info: Connected to Database Successfully...
+2023-03-21 16:00:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:00:05 info: [0mPOST /auth/login [32m200[0m 59.713 ms - 104[0m
+2023-03-21 16:00:14 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:00:14 info: [0mPOST /auth/login [32m200[0m 6.590 ms - 99[0m
+2023-03-21 16:01:01 info: =================================
+2023-03-21 16:01:01 info: ======= ENV: development =======
+2023-03-21 16:01:01 info: 🚀 App listening on the port 3000
+2023-03-21 16:01:01 info: =================================
+2023-03-21 16:01:04 info: Connected to email server
+2023-03-21 16:01:05 info: Connected to Database Successfully...
+2023-03-21 16:01:18 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:01:18 info: [0mPOST /auth/login [32m200[0m 50.118 ms - 99[0m
+2023-03-21 16:05:19 info: =================================
+2023-03-21 16:05:19 info: ======= ENV: development =======
+2023-03-21 16:05:19 info: 🚀 App listening on the port 3000
+2023-03-21 16:05:19 info: =================================
+2023-03-21 16:05:21 info: Connected to email server
+2023-03-21 16:05:22 info: Connected to Database Successfully...
+2023-03-21 16:06:17 info: =================================
+2023-03-21 16:06:17 info: ======= ENV: development =======
+2023-03-21 16:06:17 info: 🚀 App listening on the port 3000
+2023-03-21 16:06:17 info: =================================
+2023-03-21 16:06:20 info: Connected to Database Successfully...
+2023-03-21 16:06:21 info: Connected to email server
+2023-03-21 16:06:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:06:38 info: [0mPOST /auth/login [32m200[0m 58.896 ms - 104[0m
+2023-03-21 16:06:45 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:06:45 info: [0mPOST /auth/login [32m200[0m 10.481 ms - 99[0m
+2023-03-21 16:09:02 info: =================================
+2023-03-21 16:09:02 info: ======= ENV: development =======
+2023-03-21 16:09:02 info: 🚀 App listening on the port 3000
+2023-03-21 16:09:02 info: =================================
+2023-03-21 16:09:06 info: Connected to email server
+2023-03-21 16:09:10 info: Connected to Database Successfully...
+2023-03-21 16:09:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:09:19 info: [0mPOST /auth/login [32m200[0m 45.042 ms - 104[0m
+2023-03-21 16:09:26 error: [POST] /auth/login >> StatusCode:: 404, Message:: The requested path /auth/login not found!
+2023-03-21 16:09:26 info: [0mPOST /auth/login [32m200[0m 13.086 ms - 99[0m
+2023-03-21 16:13:04 info: =================================
+2023-03-21 16:13:04 info: ======= ENV: development =======
+2023-03-21 16:13:04 info: 🚀 App listening on the port 3000
+2023-03-21 16:13:04 info: =================================
+2023-03-21 16:13:08 info: Connected to email server
+2023-03-21 16:13:17 info: Connected to Database Successfully...
+2023-03-21 16:13:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email
+2023-03-21 16:13:24 info: [0mPOST /auth/login [32m200[0m 59.895 ms - 104[0m
+2023-03-21 16:13:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-21 16:13:31 info: [0mPOST /auth/login [32m200[0m 633.087 ms - 587[0m

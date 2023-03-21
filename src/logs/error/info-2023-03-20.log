@@ -1,0 +1,13 @@
+2023-03-20 18:00:10 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-03-20 18:05:32 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-20 18:05:54 error: [POST] /auth/login >> StatusCode:: 500, Message:: responseMessage is not defined
+2023-03-20 18:15:29 error: [POST] /auth/login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-20 18:16:11 error: [POST] /auth/login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-20 18:16:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-20 18:16:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-20 18:19:06 error: [POST] /auth/login >> StatusCode:: 500, Message:: Something went wrong
+2023-03-20 18:19:32 error: [POST] /auth/login >> StatusCode:: 500, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-20 18:19:39 error: [POST] /auth/login >> StatusCode:: 500, Message:: Something went wrong
+2023-03-20 18:20:22 error: [POST] /auth/login >> StatusCode:: 500, Message:: Incorrect email or password
+2023-03-20 18:21:50 error: [POST] /auth/login >> StatusCode:: 401, Message:: Incorrect email or password
+2023-03-20 18:22:11 error: [POST] /auth/login >> StatusCode:: 401, Message:: Incorrect email or password

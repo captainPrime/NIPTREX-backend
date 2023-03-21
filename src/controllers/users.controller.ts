@@ -10,7 +10,7 @@ class UsersController {
     try {
       const findAllUsersData: IUserModel[] = await this.userService.findAllUser();
 
-      res.status(200).json({ data: findAllUsersData, message: 'findAll' });
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findAllUsersData });
     } catch (error) {
       next(error);
     }
@@ -21,7 +21,7 @@ class UsersController {
       const userId: string = req.params.id;
       const findOneUserData: IUserModel = await this.userService.findUserById(userId);
 
-      res.status(200).json({ data: findOneUserData, message: 'findOne' });
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findOneUserData });
     } catch (error) {
       next(error);
     }
@@ -32,7 +32,7 @@ class UsersController {
       const userData: CreateUserDto = req.body;
       const createUserData: IUserModel = await this.userService.createUser(userData);
 
-      res.status(201).json({ data: createUserData, message: 'created' });
+      res.status(201).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: createUserData });
     } catch (error) {
       next(error);
     }
@@ -43,7 +43,7 @@ class UsersController {
       const userId: string = req.user.id;
       const findOneUserData: IUserModel = await this.userService.findUserById(userId);
 
-      res.status(200).json({ status: 200, message: 'user profile fetched successful', data: findOneUserData });
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findOneUserData });
     } catch (error) {
       next(error);
     }
@@ -55,7 +55,7 @@ class UsersController {
       const userData: CreateUserDto = req.body;
       const updateUserData: IUserDoc = await this.userService.updateUser(userId, userData);
 
-      res.status(200).json({ data: updateUserData, message: 'updated' });
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: updateUserData });
     } catch (error) {
       next(error);
     }
@@ -66,7 +66,7 @@ class UsersController {
       const userId: string = req.params.id;
       const deleteUserData: IUserModel = await this.userService.deleteUser(userId);
 
-      res.status(200).json({ data: deleteUserData, message: 'deleted' });
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: deleteUserData });
     } catch (error) {
       next(error);
     }
