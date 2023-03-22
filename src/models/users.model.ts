@@ -43,6 +43,10 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
       type: Boolean,
       default: false,
     },
+    has_profile: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
