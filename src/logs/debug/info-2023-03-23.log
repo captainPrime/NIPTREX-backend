@@ -108,3 +108,24 @@
 2023-03-23 11:58:15 error: [POST] /auth/register >> StatusCode:: 400, Message:: email quadri29189@gmail.com already exists
 2023-03-23 11:58:15 info: [0mPOST /auth/register [32m200[0m 748.535 ms - 100[0m
 2023-03-23 11:58:56 info: [0mPUT /profile [32m200[0m 817.278 ms - 86[0m
+2023-03-23 18:10:02 info: =================================
+2023-03-23 18:10:02 info: ======= ENV: development =======
+2023-03-23 18:10:02 info: 🚀 App listening on the port 3000
+2023-03-23 18:10:02 info: =================================
+2023-03-23 18:10:04 info: Connected to email server
+2023-03-23 18:10:04 info: Connected to Database Successfully...
+2023-03-23 18:10:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:10:29 info: [0mPOST /auth/login [32m200[0m 880.228 ms - 587[0m
+2023-03-23 18:10:37 error: [GET] /reload_db >> StatusCode:: 404, Message:: The requested path /reload_db not found!
+2023-03-23 18:10:37 info: [0mGET /reload_db [32m200[0m 4.337 ms - 98[0m
+2023-03-23 18:11:12 info: =================================
+2023-03-23 18:11:12 info: ======= ENV: development =======
+2023-03-23 18:11:12 info: 🚀 App listening on the port 3000
+2023-03-23 18:11:12 info: =================================
+2023-03-23 18:11:14 info: Connected to email server
+2023-03-23 18:11:14 info: Connected to Database Successfully...
+2023-03-23 18:11:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:11:18 info: [0mPOST /auth/login [32m200[0m 684.118 ms - 587[0m
+2023-03-23 18:11:22 info: [0mGET /reload_db [32m200[0m 499.678 ms - 74[0m
+2023-03-23 18:11:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: You're not user
+2023-03-23 18:11:26 info: [0mPOST /auth/login [32m200[0m 227.765 ms - 73[0m

@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import { Schema, Document, model } from 'mongoose';
 
 enum EmploymentType {
   FullTime = 'Full Time',
@@ -270,4 +270,6 @@ const profileSchema: Schema = new Schema({
   },
 });
 
-export default mongoose.model<IProfile>('Profile', profileSchema);
+const Profile = model<IProfile>('Profile', profileSchema);
+
+export default Profile;

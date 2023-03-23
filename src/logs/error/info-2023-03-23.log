@@ -21,3 +21,7 @@
 2023-03-23 11:57:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-03-23 11:58:05 error: [GET] /profile >> StatusCode:: 404, Message:: Something went wrong
 2023-03-23 11:58:15 error: [POST] /auth/register >> StatusCode:: 400, Message:: email quadri29189@gmail.com already exists
+2023-03-23 18:10:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:10:37 error: [GET] /reload_db >> StatusCode:: 404, Message:: The requested path /reload_db not found!
+2023-03-23 18:11:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:11:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: You're not user
