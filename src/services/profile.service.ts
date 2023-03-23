@@ -3,6 +3,7 @@ import { isEmpty } from '@utils/util';
 import profileModel from '@/models/profile.model';
 import UserService from './users.service';
 import { CreateProfileDto } from '@/dtos/profile.dto';
+import mongoose from 'mongoose';
 
 class ProfileService {
   public userService = new UserService();
@@ -15,6 +16,15 @@ class ProfileService {
     await this.userService.updateUser(data.user_id, { has_profile: true });
 
     return data;
+  }
+
+  public async getProfileById(userId: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
+
+    const profile: any | null = await profileModel.findOne({ user_id: userId });
+    if (!profile) throw new HttpException(400, 2002, 'PROFILE_NOT_FOUND');
+
+    return profile;
   }
 }
 

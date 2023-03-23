@@ -40,3 +40,26 @@
 2023-03-23 10:43:31 info: [0mPOST /auth/register [32m200[0m 4925.621 ms - 314[0m
 2023-03-23 10:45:14 error: [POST] /profile >> StatusCode:: 400, Message:: ACCOUNT_NOT_VERIFIED
 2023-03-23 10:45:14 info: [0mPOST /profile [32m200[0m 451.417 ms - 78[0m
+2023-03-23 10:57:29 info: =================================
+2023-03-23 10:57:29 info: ======= ENV: development =======
+2023-03-23 10:57:29 info: 🚀 App listening on the port 3000
+2023-03-23 10:57:29 info: =================================
+2023-03-23 10:57:31 info: Connected to email server
+2023-03-23 10:57:32 info: Connected to Database Successfully...
+2023-03-23 11:00:34 info: [0mGET /profile [32m200[0m 493.218 ms - -[0m
+2023-03-23 11:01:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:01:03 info: [0mPOST /auth/login [32m200[0m 883.836 ms - 587[0m
+2023-03-23 11:01:26 info: [0mGET /profile [32m200[0m 484.330 ms - -[0m
+2023-03-23 11:01:42 info: [0mGET /profile [32m200[0m 466.873 ms - -[0m
+2023-03-23 11:02:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:10 info: [0mPOST /auth/login [32m200[0m 491.248 ms - 587[0m
+2023-03-23 11:02:25 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:25 info: [0mPOST /auth/send_verification_email [32m200[0m 3715.581 ms - 81[0m
+2023-03-23 11:02:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:50 info: [0mPOST /auth/login [32m200[0m 537.891 ms - 587[0m
+2023-03-23 11:03:01 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-03-23 11:03:01 info: [0mGET /profile [32m200[0m 931.132 ms - 75[0m
+2023-03-23 11:03:16 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: personal_details.first_name: Path `personal_details.first_name` is required.
+2023-03-23 11:03:16 info: [0mPOST /profile [32m200[0m 485.697 ms - 160[0m
+2023-03-23 11:04:07 info: [0mPOST /profile [32m200[0m 965.056 ms - -[0m
+2023-03-23 11:04:22 info: [0mGET /profile [32m200[0m 487.161 ms - -[0m

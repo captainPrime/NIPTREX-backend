@@ -10,3 +10,9 @@
 2023-03-23 10:43:16 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
 2023-03-23 10:43:31 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-03-23 10:45:14 error: [POST] /profile >> StatusCode:: 400, Message:: ACCOUNT_NOT_VERIFIED
+2023-03-23 11:01:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:25 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:02:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:03:01 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-03-23 11:03:16 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: personal_details.first_name: Path `personal_details.first_name` is required.
