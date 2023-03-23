@@ -15,6 +15,7 @@ class ProfileRoute implements Routes {
   private initializeRoutes() {
     this.router.post(`${this.path}`, authMiddleware, this.profileController.createProfile);
     this.router.get(`${this.path}`, authMiddleware, this.profileController.getProfile);
+    this.router.put(`${this.path}`, authMiddleware, this.profileController.updateProfile);
   }
 }
 

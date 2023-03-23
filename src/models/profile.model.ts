@@ -150,6 +150,8 @@ interface IProfile extends Document {
   identity: IDocument;
 }
 
+export type IUpdateProfile = Partial<IProfile>;
+
 const profileSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   personal_details: {

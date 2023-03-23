@@ -38,6 +38,17 @@ class ProfileController {
       next(error);
     }
   };
+
+  public updateProfile = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId: string = req.user.id;
+      const data = await this.profileService.updateProfile(userId, req.body);
+
+      res.status(200).json({ status: 200, response_code: 2000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default ProfileController;

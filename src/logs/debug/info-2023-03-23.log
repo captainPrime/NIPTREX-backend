@@ -63,3 +63,48 @@
 2023-03-23 11:03:16 info: [0mPOST /profile [32m200[0m 485.697 ms - 160[0m
 2023-03-23 11:04:07 info: [0mPOST /profile [32m200[0m 965.056 ms - -[0m
 2023-03-23 11:04:22 info: [0mGET /profile [32m200[0m 487.161 ms - -[0m
+2023-03-23 11:07:01 info: =================================
+2023-03-23 11:07:01 info: ======= ENV: development =======
+2023-03-23 11:07:01 info: 🚀 App listening on the port 3000
+2023-03-23 11:07:01 info: =================================
+2023-03-23 11:07:04 info: Connected to email server
+2023-03-23 11:07:05 info: Connected to Database Successfully...
+2023-03-23 11:51:14 info: =================================
+2023-03-23 11:51:14 info: ======= ENV: development =======
+2023-03-23 11:51:14 info: 🚀 App listening on the port 3000
+2023-03-23 11:51:14 info: =================================
+2023-03-23 11:51:16 info: Connected to email server
+2023-03-23 11:51:16 info: Connected to Database Successfully...
+2023-03-23 11:52:17 info: [0mPUT /profile [32m200[0m 1965.975 ms - 86[0m
+2023-03-23 11:52:25 info: [0mGET /profile [32m200[0m 434.598 ms - -[0m
+2023-03-23 11:53:01 info: [0mGET /profile [32m200[0m 437.393 ms - -[0m
+2023-03-23 11:53:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:53:23 info: [0mPOST /auth/login [32m200[0m 623.067 ms - 587[0m
+2023-03-23 11:53:40 info: [0mGET /profile [32m200[0m 481.906 ms - -[0m
+2023-03-23 11:53:55 info: [0mPUT /profile [32m200[0m 836.188 ms - 86[0m
+2023-03-23 11:54:01 info: [0mGET /profile [32m200[0m 430.153 ms - -[0m
+2023-03-23 11:55:07 info: =================================
+2023-03-23 11:55:07 info: ======= ENV: development =======
+2023-03-23 11:55:07 info: 🚀 App listening on the port 3000
+2023-03-23 11:55:07 info: =================================
+2023-03-23 11:55:09 info: Connected to email server
+2023-03-23 11:55:15 info: Connected to Database Successfully...
+2023-03-23 11:55:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:55:51 info: [0mPOST /auth/login [32m200[0m 750.600 ms - 587[0m
+2023-03-23 11:56:13 info: [0mPUT /profile [32m200[0m 736.274 ms - 86[0m
+2023-03-23 11:56:22 info: [0mGET /profile [32m200[0m 633.141 ms - -[0m
+2023-03-23 11:57:15 info: =================================
+2023-03-23 11:57:15 info: ======= ENV: development =======
+2023-03-23 11:57:15 info: 🚀 App listening on the port 3000
+2023-03-23 11:57:15 info: =================================
+2023-03-23 11:57:18 info: Connected to email server
+2023-03-23 11:57:18 info: Connected to Database Successfully...
+2023-03-23 11:57:28 info: [0mGET /profile [32m200[0m 518.205 ms - -[0m
+2023-03-23 11:57:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 11:57:45 info: [0mPOST /auth/login [32m200[0m 678.773 ms - 587[0m
+2023-03-23 11:57:50 info: [0mGET /profile [32m200[0m 453.135 ms - -[0m
+2023-03-23 11:58:05 error: [GET] /profile >> StatusCode:: 404, Message:: Something went wrong
+2023-03-23 11:58:05 info: [0mGET /profile [32m200[0m 4.965 ms - 104[0m
+2023-03-23 11:58:15 error: [POST] /auth/register >> StatusCode:: 400, Message:: email quadri29189@gmail.com already exists
+2023-03-23 11:58:15 info: [0mPOST /auth/register [32m200[0m 748.535 ms - 100[0m
+2023-03-23 11:58:56 info: [0mPUT /profile [32m200[0m 817.278 ms - 86[0m
