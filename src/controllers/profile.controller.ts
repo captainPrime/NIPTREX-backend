@@ -16,6 +16,10 @@ class ProfileController {
         throw new HttpException(400, 1003, 'USER_ALREADY_HAS_PROFILE');
       }
 
+      if (!user.verified) {
+        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
+      }
+
       const createUserData = await this.profileService.createProfile({ ...userData, user_id: req.user.id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data: createUserData });

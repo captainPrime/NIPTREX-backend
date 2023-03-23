@@ -37,7 +37,6 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
     },
     country: {
       type: String,
-      required: false,
     },
     verified: {
       type: Boolean,

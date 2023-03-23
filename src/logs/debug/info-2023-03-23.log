@@ -1,0 +1,42 @@
+2023-03-23 10:33:55 info: =================================
+2023-03-23 10:33:55 info: ======= ENV: development =======
+2023-03-23 10:33:55 info: 🚀 App listening on the port 3000
+2023-03-23 10:33:55 info: =================================
+2023-03-23 10:34:04 info: Connected to Database Successfully...
+2023-03-23 10:34:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 10:34:23 info: [0mPOST /auth/login [32m200[0m 853.467 ms - 587[0m
+2023-03-23 10:34:28 info: Connected to email server
+2023-03-23 10:34:33 error: [POST] /profile >> StatusCode:: 400, Message:: USER_ALREADY_HAS_PROFILE
+2023-03-23 10:34:33 info: [0mPOST /profile [32m200[0m 1802.246 ms - 82[0m
+2023-03-23 10:34:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-23 10:34:54 info: [0mPOST /auth/login [32m200[0m 1177.371 ms - 85[0m
+2023-03-23 10:35:11 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 10:35:11 info: [0mPOST /auth/forgot_password [32m200[0m 4524.585 ms - 81[0m
+2023-03-23 10:35:59 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 10:35:59 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDE2MTE2NTQ0MjIxOWQ1MTZiYTA1MzQiLCJpYXQiOjE2Nzk1NjQxMDcsImV4cCI6MTY3OTU2NDcwNywidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.Qo9RKKHs-SF4hU_It61V05FW3p0ZAP7e8GbWBJEcJCc [32m200[0m 1943.632 ms - 81[0m
+2023-03-23 10:36:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 10:36:06 info: [0mPOST /auth/login [32m200[0m 1365.945 ms - 587[0m
+2023-03-23 10:36:28 error: [POST] /profile >> StatusCode:: 400, Message:: Profile validation failed: personal_details.email: Path `personal_details.email` is required., personal_details.last_name: Path `personal_details.last_name` is required., personal_details.first_name: Path `personal_details.first_name` is required.
+2023-03-23 10:36:28 info: [0mPOST /profile [32m200[0m 477.960 ms - 304[0m
+2023-03-23 10:38:16 info: =================================
+2023-03-23 10:38:16 info: ======= ENV: development =======
+2023-03-23 10:38:16 info: 🚀 App listening on the port 3000
+2023-03-23 10:38:16 info: =================================
+2023-03-23 10:38:20 info: Connected to email server
+2023-03-23 10:38:34 info: Connected to Database Successfully...
+2023-03-23 10:39:01 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-23 10:39:01 info: [0mPOST /auth/register [32m200[0m 37.550 ms - 126[0m
+2023-03-23 10:39:57 info: =================================
+2023-03-23 10:39:57 info: ======= ENV: development =======
+2023-03-23 10:39:57 info: 🚀 App listening on the port 3000
+2023-03-23 10:39:57 info: =================================
+2023-03-23 10:40:00 info: Connected to email server
+2023-03-23 10:40:10 info: Connected to Database Successfully...
+2023-03-23 10:42:36 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-23 10:42:37 info: [0mPOST /auth/register [32m200[0m 257.729 ms - 126[0m
+2023-03-23 10:43:16 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-23 10:43:16 info: [0mPOST /auth/register [32m200[0m 9.742 ms - 126[0m
+2023-03-23 10:43:31 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 10:43:31 info: [0mPOST /auth/register [32m200[0m 4925.621 ms - 314[0m
+2023-03-23 10:45:14 error: [POST] /profile >> StatusCode:: 400, Message:: ACCOUNT_NOT_VERIFIED
+2023-03-23 10:45:14 info: [0mPOST /profile [32m200[0m 451.417 ms - 78[0m
