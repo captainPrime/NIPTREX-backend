@@ -1,35 +1,161 @@
-import mongoose, { Model, Document } from 'mongoose';
-import { QueryResult } from '@/modules/paginate/paginate';
-import { AccessAndRefreshTokens } from '@/modules/token/token.interfaces';
+import { Document } from 'mongoose';
 
-export interface IUser {
+export enum EmploymentType {
+  FullTime = 'Full Time',
+  PartTime = 'Part Time',
+  Contract = 'Contract',
+  Freelance = 'Freelance',
+  Internship = 'Internship',
+  Volunteer = 'Volunteer',
+}
+
+export enum JobTitle {
+  'Artificial Intelligence Engineer',
+  'Business Analyst',
+  'Cloud Architect',
+  'Cybersecurity Analyst',
+  'Data Analyst',
+  'Data Scientist',
+  'Full-stack Developer',
+  'Game Developer',
+  'Information Security Analyst',
+  'IT Manager',
+  'Java Developer',
+  'Machine Learning Engineer',
+  'Mobile Application Developer',
+  'Network Administrator',
+  'Network Architect',
+  'Project Manager',
+  'Quality Assurance Analyst',
+  'Robotics Engineer',
+  'Software Developer',
+  'Software Engineer',
+  'System Administrator',
+  'UI/UX Designer',
+  'Web Developer',
+}
+
+export enum TeamSize {
+  'Small team (4-6 members)',
+  'Large team (9-10 members)',
+  'X-Large team (11-16 members)',
+}
+
+export enum WorkSchedule {
+  'Full time - Weekdays',
+  'Weekdays (AM)',
+  'Weekdays (PM)',
+  'Weekends',
+}
+
+export enum JobDuration {
+  'Mid-term (<6 months)',
+  'Mid-term (6-12 months)',
+  'Long-term (12 months or longer)',
+}
+
+export enum WorkOption {
+  Remote = 'Remote',
+  Hybrid = 'Hybrid',
+  OnSite = 'On-site',
+}
+
+export interface IPersonalDetails {
   first_name: string;
   last_name: string;
   email: string;
-  phone_number: string;
-  password: string;
-  user: string;
   country: string;
-  verified: boolean;
+  profile_picture: string;
+  dob: Date;
+  role: string;
+  phone_number: string;
+  seniority: string;
+  gender: string;
 }
 
-// export interface IUserDoc extends IUser, Document {
-//   isPasswordMatch(password: string): Promise<boolean>;
-// }
+export interface IAddress {
+  line1: string;
+  line2?: string;
+  city: string;
+  state: string;
+}
 
-// export interface IUserModel extends Model<IUserDoc> {
-//   _id: mongoose.Types.ObjectId;
-//   isEmailTaken(email: string, excludeUserId?: mongoose.Types.ObjectId | string): Promise<boolean>;
-//   paginate(filter: Record<string, any>, options: Record<string, any>): Promise<QueryResult>;
-// }
+export interface ISocialLink {
+  personal_website?: string;
+  linkedin?: string;
+  stack_overflow?: string;
+  github?: string;
+  dribble?: string;
+  behance?: string;
+  glass_door?: string;
+}
 
-export type UpdateUserBody = Partial<IUser>;
+export interface IExperience {
+  id: string;
+  start_date: Date;
+  end_date: Date;
+  company: string;
+  country: string;
+  role: string;
+  employment_type: EmploymentType;
+  description?: string;
+}
 
-// export type NewRegisteredUser = Omit<IUser, 'role' | 'verified'>;
+export interface IEducationHistory {
+  id: string;
+  institution: string;
+  field_of_study: string;
+  degree_level: string;
+  date_attended: Date;
+  employment_type: EmploymentType;
+}
 
-// export type NewCreatedUser = Omit<IUser, 'verified'>;
+export interface ICertification {
+  id: string;
+  name: string;
+  organisation: string;
+  certificate_url: string;
+  date_obtained: Date;
+}
 
-// export interface IUserWithTokens {
-//   user: IUserModel;
-//   tokens: AccessAndRefreshTokens;
-// }
+export interface ILanguage {
+  id: string;
+  name: string;
+}
+
+export interface IBilling {
+  per_annum: string;
+  hourly_rate: string;
+  payment_method: string;
+}
+
+export interface IPreferences {
+  industry_type: JobTitle;
+  company_culture: TeamSize;
+  company_size: TeamSize;
+  project_duration: JobDuration;
+  team_size: TeamSize;
+  work_location: WorkOption;
+  work_timezone: string;
+  work_preference: WorkSchedule;
+}
+
+export interface IDocument {
+  proof_of_identity: string;
+  proof_of_address: string;
+}
+
+export interface IProfile extends Document {
+  personal_details: IPersonalDetails;
+  address: IAddress;
+  social_details?: ISocialLink;
+  languages?: ILanguage[];
+  experiences?: IExperience[];
+  education_history?: IEducationHistory[];
+  certification?: ICertification[];
+  billing?: IBilling;
+  preference?: IPreferences;
+  identity?: IDocument;
+}
+
+export type IUpdateProfile = Partial<IProfile>;
