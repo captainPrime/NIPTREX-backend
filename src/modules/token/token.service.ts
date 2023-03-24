@@ -59,7 +59,7 @@ class TokenService {
   }
 
   async generateAuthTokens(user: IUserDoc): Promise<AccessAndRefreshTokens> {
-    const accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'day');
+    const accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'minutes');
     const accessToken = this.generateToken(user.id, accessTokenExpires, tokenTypes.ACCESS);
 
     const refreshTokenExpires = moment().add(JWT_REFRESH_EXPIRATION_DAYS, 'days');

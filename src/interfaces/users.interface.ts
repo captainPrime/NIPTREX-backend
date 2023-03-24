@@ -11,6 +11,7 @@ export interface IUser {
   user: string;
   country: string;
   verified: boolean;
+  has_profile: boolean;
 }
 
 export interface IUserDoc extends IUser, Document {

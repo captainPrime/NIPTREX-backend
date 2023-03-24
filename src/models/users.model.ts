@@ -37,9 +37,12 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
     },
     country: {
       type: String,
-      required: false,
     },
     verified: {
+      type: Boolean,
+      default: false,
+    },
+    has_profile: {
       type: Boolean,
       default: false,
     },

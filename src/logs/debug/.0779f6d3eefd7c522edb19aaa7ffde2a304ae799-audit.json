@@ -24,6 +24,21 @@
             "date": 1679404288085,
             "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-21.log",
             "hash": "f04b5c8ae245c3dd7cf2243011bf80b9a02ecf884d7a560a36bf191628f831f7"
+        },
+        {
+            "date": 1679493532952,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-22.log",
+            "hash": "d6f5ddd2da2f344406b6c1a85e0326f2cd18125d0687ac2261e9a4284694cbae"
+        },
+        {
+            "date": 1679564031910,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-23.log",
+            "hash": "4739365b4e84286b1d150919951fd469ab2cca81ceb7443e4839b819167ee1c1"
+        },
+        {
+            "date": 1679645688953,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-24.log",
+            "hash": "2fea9ac9dbcac04c8a96cae00c9f53751f68cef58c844e195be7da5dc423df48"
         }
     ],
     "hashType": "sha256"
