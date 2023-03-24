@@ -91,6 +91,7 @@ interface ISocialLink {
 }
 
 interface IExperience {
+  id: string;
   start_date: Date;
   end_date: Date;
   company: string;
@@ -101,6 +102,7 @@ interface IExperience {
 }
 
 interface IEducationHistory {
+  id: string;
   institution: string;
   field_of_study: string;
   degree_level: string;
@@ -109,10 +111,16 @@ interface IEducationHistory {
 }
 
 interface ICertification {
+  id: string;
   name: string;
   organisation: string;
   certificate_url: string;
   date_obtained: Date;
+}
+
+interface ILanguage {
+  id: string;
+  name: string;
 }
 
 interface IBilling {
@@ -140,14 +148,14 @@ interface IDocument {
 interface IProfile extends Document {
   personal_details: IPersonalDetails;
   address: IAddress;
-  social_details: ISocialLink;
-  languages: string[];
-  experiences: IExperience[];
-  education_history: IEducationHistory[];
-  certification: ICertification[];
-  billing: IBilling;
-  preference: IPreferences;
-  identity: IDocument;
+  social_details?: ISocialLink;
+  languages?: ILanguage[];
+  experiences?: IExperience[];
+  education_history?: IEducationHistory[];
+  certification?: ICertification[];
+  billing?: IBilling;
+  preference?: IPreferences;
+  identity?: IDocument;
 }
 
 export type IUpdateProfile = Partial<IProfile>;
@@ -181,32 +189,39 @@ const profileSchema: Schema = new Schema({
     behance: { type: String },
     glass_door: { type: String },
   },
-  languages: [{ type: String }],
+  languages: [
+    {
+      id: { type: String },
+      name: { type: String },
+    },
+  ],
   experience: [
     {
-      start_date: { type: Date, required: true },
-      end_date: { type: Date, required: true },
-      company: { type: String, required: true },
-      country: { type: String, required: true },
-      role: { type: String, required: true },
+      id: { type: String, trim: true },
+      start_date: { type: Date, trim: true },
+      end_date: { type: Date, trim: true },
+      company: { type: String, trim: true },
+      country: { type: String, trim: true },
+      role: { type: String, trim: true },
       employment_type: {
         type: String,
         enum: Object.values(EmploymentType),
-        required: true,
+        trim: true,
       },
       description: { type: String },
     },
   ],
   education_history: [
     {
-      institution: { type: String, required: true },
+      id: { type: String, trim: true },
+      institution: { type: String, trim: true },
       field_of_study: { type: String },
-      degree_level: { type: String, required: true },
-      date_attended: { type: String, required: true },
+      degree_level: { type: String, trim: true },
+      date_attended: { type: String, trim: true },
       employment_type: {
         type: String,
         enum: Object.values(EmploymentType),
-        required: true,
+        trim: true,
       },
     },
   ],
@@ -214,59 +229,60 @@ const profileSchema: Schema = new Schema({
     industry_type: {
       type: String,
       enum: Object.values(JobTitle),
-      required: true,
+      trim: true,
     },
     company_culture: {
       type: String,
       enum: Object.values(TeamSize),
-      required: true,
+      trim: true,
     },
     company_size: {
       type: String,
       enum: Object.values(TeamSize),
-      required: true,
+      trim: true,
     },
     project_duration: {
       type: String,
       enum: Object.values(JobDuration),
-      required: true,
+      trim: true,
     },
     team_size: {
       type: String,
       enum: Object.values(TeamSize),
-      required: true,
+      trim: true,
     },
     work_location: {
       type: String,
       enum: Object.values(WorkOption),
-      required: true,
+      trim: true,
     },
     work_timezone: {
       type: String,
-      required: true,
+      trim: true,
     },
     work_preference: {
       type: String,
       enum: Object.values(WorkSchedule),
-      required: true,
+      trim: true,
     },
   },
   identity: {
-    proof_of_identity: { type: String, required: true },
-    proof_of_address: { type: String, required: true },
+    proof_of_identity: { type: String, trim: true },
+    proof_of_address: { type: String, trim: true },
   },
   certification: [
     {
-      name: { type: String, required: true },
-      organisation: { type: String, required: true },
-      certificate_url: { type: String, required: true },
-      date_obtained: { type: Date, required: true },
+      id: { type: String, trim: true },
+      name: { type: String, trim: true },
+      organisation: { type: String, trim: true },
+      certificate_url: { type: String, trim: true },
+      date_obtained: { type: Date, trim: true },
     },
   ],
   billing: {
-    per_annum: { type: String, required: true },
-    hourly_rate: { type: String, required: true },
-    payment_method: { type: String, required: true },
+    per_annum: { type: String, trim: true },
+    hourly_rate: { type: String, trim: true },
+    payment_method: { type: String, trim: true },
   },
 });
 

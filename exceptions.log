@@ -510,3 +510,33 @@ RangeError: Maximum call stack size exceeded
     at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:20:05 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:20:05 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:20:55 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:20:55 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:25:35 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-24 09:25:35 error: unhandledRejection: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7

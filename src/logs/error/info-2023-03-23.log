@@ -25,3 +25,15 @@
 2023-03-23 18:10:37 error: [GET] /reload_db >> StatusCode:: 404, Message:: The requested path /reload_db not found!
 2023-03-23 18:11:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-03-23 18:11:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: You're not user
+2023-03-23 18:16:28 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-23 18:16:48 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:18:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:19:57 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:20:24 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:20:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:21:31 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:22:16 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-23 18:22:40 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:22:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-23 18:23:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:28:46 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND

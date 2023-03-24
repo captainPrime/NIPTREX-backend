@@ -129,3 +129,35 @@
 2023-03-23 18:11:22 info: [0mGET /reload_db [32m200[0m 499.678 ms - 74[0m
 2023-03-23 18:11:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: You're not user
 2023-03-23 18:11:26 info: [0mPOST /auth/login [32m200[0m 227.765 ms - 73[0m
+2023-03-23 18:16:05 info: =================================
+2023-03-23 18:16:05 info: ======= ENV: development =======
+2023-03-23 18:16:05 info: 🚀 App listening on the port 3000
+2023-03-23 18:16:05 info: =================================
+2023-03-23 18:16:08 info: Connected to email server
+2023-03-23 18:16:08 info: Connected to Database Successfully...
+2023-03-23 18:16:28 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-23 18:16:28 info: [0mPOST /auth/register [32m200[0m 65.893 ms - 126[0m
+2023-03-23 18:16:48 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:16:48 info: [0mPOST /auth/register [32m200[0m 3874.534 ms - 314[0m
+2023-03-23 18:18:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:18:14 info: [0mPOST /auth/login [32m200[0m 540.292 ms - 587[0m
+2023-03-23 18:19:57 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:19:57 info: [0mPOST /auth/send_verification_email [32m200[0m 3456.188 ms - 81[0m
+2023-03-23 18:20:24 info: [0mPOST /auth/verify_email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDFjODk3YzVmZWJkYTQ0M2RhODJjZTUiLCJpYXQiOjE2Nzk1OTE5OTQsImV4cCI6MTY3OTU5MjU5NCwidHlwZSI6InZlcmlmeUVtYWlsIn0.CASjM3F74CYQQGCZUcLgKyWNDOQbQ7mTWIfUZJzix1s [32m200[0m 872.007 ms - 81[0m
+2023-03-23 18:20:24 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:20:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:20:52 info: [0mPOST /auth/login [32m200[0m 528.230 ms - 587[0m
+2023-03-23 18:21:02 info: [0mGET /users/profile [32m200[0m 463.151 ms - 313[0m
+2023-03-23 18:21:31 error: [POST] /auth/forgot_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:21:31 info: [0mPOST /auth/forgot_password [32m200[0m 3614.246 ms - 81[0m
+2023-03-23 18:22:16 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: password mismatch
+2023-03-23 18:22:16 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDFjODk3YzVmZWJkYTQ0M2RhODJjZTUiLCJpYXQiOjE2Nzk1OTIwODcsImV4cCI6MTY3OTU5MjY4NywidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.-Jgv-StHV2Qu0SHzvtDuh4X6ATzZ0BVqpMFLWY_h6GY [32m200[0m 4.238 ms - 75[0m
+2023-03-23 18:22:40 error: [POST] /auth/reset_password >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:22:40 info: [0mPOST /auth/reset_password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDFjODk3YzVmZWJkYTQ0M2RhODJjZTUiLCJpYXQiOjE2Nzk1OTIwODcsImV4cCI6MTY3OTU5MjY4NywidHlwZSI6InJlc2V0UGFzc3dvcmQifQ.-Jgv-StHV2Qu0SHzvtDuh4X6ATzZ0BVqpMFLWY_h6GY [32m200[0m 1257.369 ms - 81[0m
+2023-03-23 18:22:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-03-23 18:22:52 info: [0mPOST /auth/login [32m200[0m 608.828 ms - 85[0m
+2023-03-23 18:23:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-23 18:23:05 info: [0mPOST /auth/login [32m200[0m 681.375 ms - 587[0m
+2023-03-23 18:23:16 info: [0mGET /users/profile [32m200[0m 1181.139 ms - 313[0m
+2023-03-23 18:28:46 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-03-23 18:28:46 info: [0mGET /profile [32m200[0m 447.612 ms - 75[0m

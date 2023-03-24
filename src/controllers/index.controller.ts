@@ -24,6 +24,19 @@ class IndexController {
       await this.users.deleteMany({});
       await this.profile.deleteMany({});
 
+      const user = {
+        first_name: 'John',
+        last_name: 'Doe',
+        email: 'johndoe@gmail.com',
+        password: 'johndoe21',
+        user: 'client',
+        verified: true,
+        has_profile: false,
+        country: 'Nigeria',
+      };
+
+      await this.users.create(user);
+
       res.status(200).json({ status: 200, response_code: 2000, message: 'DATABASE_RELOAD_SUCCESSFUL' });
     } catch (error) {
       next(error);

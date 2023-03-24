@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import ProfileService from '@/services/profile.service';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
+import { CreateProfileDto } from '@/dtos/profile.dto';
 
 class ProfileController {
   public userService = new UserService();
@@ -9,7 +10,7 @@ class ProfileController {
 
   public createProfile = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const userData = req.body;
+      const userData: CreateProfileDto = req.body;
       const user: any = await this.userService.findUserById(req.user.id);
 
       if (user.has_profile) {
