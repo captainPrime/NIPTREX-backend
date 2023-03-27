@@ -1,0 +1,2 @@
+2023-03-27 12:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-27 12:25:58 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND

@@ -1,0 +1,15 @@
+2023-03-27 12:24:02 info: =================================
+2023-03-27 12:24:02 info: ======= ENV: development =======
+2023-03-27 12:24:02 info: 🚀 App listening on the port 3000
+2023-03-27 12:24:02 info: =================================
+2023-03-27 12:24:06 info: Connected to email server
+2023-03-27 12:24:20 info: Connected to Database Successfully...
+2023-03-27 12:25:05 info: [0mGET /reload_db [32m200[0m 4045.950 ms - 74[0m
+2023-03-27 12:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-27 12:25:43 info: [0mPOST /auth/login [32m200[0m 2668.352 ms - 587[0m
+2023-03-27 12:25:58 error: [GET] /profile >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-03-27 12:25:58 info: [0mGET /profile [32m200[0m 2359.450 ms - 75[0m
+2023-03-27 12:27:16 info: [0mPOST /profile [32m200[0m 4602.123 ms - 657[0m
+2023-03-27 12:27:32 info: [0mGET /profile [32m200[0m 1929.371 ms - 657[0m
+2023-03-27 12:28:45 info: [0mPATCH /profile [32m200[0m 2956.916 ms - -[0m
+2023-03-27 12:30:32 info: [0mGET /profile [32m200[0m 1897.973 ms - -[0m
