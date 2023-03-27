@@ -71,6 +71,7 @@ export interface IPersonalDetails {
   phone_number: string;
   seniority: string;
   gender: string;
+  resume?: string;
 }
 
 export interface IAddress {
@@ -150,12 +151,6 @@ export interface IProfile extends Document {
   address: IAddress;
   social_details?: ISocialLink;
   languages?: ILanguage[];
-  experiences?: IExperience[];
-  education_history?: IEducationHistory[];
-  certification?: ICertification[];
-  billing?: IBilling;
-  preference?: IPreferences;
-  identity?: IDocument;
 }
 
 export type IUpdateProfile = Partial<IProfile>;
