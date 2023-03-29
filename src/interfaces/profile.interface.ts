@@ -71,6 +71,7 @@ export interface IPersonalDetails {
   phone_number: string;
   seniority: string;
   gender: string;
+  resume?: string;
 }
 
 export interface IAddress {
@@ -145,17 +146,17 @@ export interface IDocument {
   proof_of_address: string;
 }
 
-export interface IProfile extends Document {
+export interface IAbout extends Document {
   personal_details: IPersonalDetails;
   address: IAddress;
   social_details?: ISocialLink;
   languages?: ILanguage[];
-  experiences?: IExperience[];
-  education_history?: IEducationHistory[];
-  certification?: ICertification[];
-  billing?: IBilling;
-  preference?: IPreferences;
-  identity?: IDocument;
 }
 
-export type IUpdateProfile = Partial<IProfile>;
+export type IUpdateAbout = Partial<IAbout>;
+export type IUpdateExperience = Partial<IExperience>;
+export type IUpdateEducationHistory = Partial<IEducationHistory>;
+export type IUpdateCertification = Partial<ICertification>;
+export type IUpdateBilling = Partial<IBilling>;
+export type IUpdateDocument = Partial<IDocument>;
+export type IUpdatePreference = Partial<IPreferences>;

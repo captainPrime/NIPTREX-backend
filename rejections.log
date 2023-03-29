@@ -540,3 +540,103 @@ RangeError: Maximum call stack size exceeded
     at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:26:35
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at /Users/olashina/Documents/workspace/NIPTREX-backend/src/middlewares/validation.middleware.ts:22:7
+2023-03-29 00:44:02 error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:16:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9242982932312214.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9242982932312214.js:114:20)
+2023-03-29 00:44:44 error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:16:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+2023-03-29 00:45:38 error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:16:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+2023-03-29 00:45:46 error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as post] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:16:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+2023-03-29 00:45:52 error: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as get] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:17:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+2023-03-29 00:45:59 error: uncaughtException: Route.patch() requires a callback function but got a [object Undefined]
+Error: Route.patch() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as patch] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/route.js:211:15)
+    at Function.proto.<computed> [as patch] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/express/lib/router/index.js:521:19)
+    at ProfileRoute.initializeRoutes (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:18:17)
+    at new ProfileRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:12:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:75)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+2023-03-29 00:46:04 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/routes/profile.route.ts(18,89): error TS1003: Identifier expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/routes/profile.route.ts(18,89): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/profile.route.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-04194583057514478.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-03-29 00:51:02 error: uncaughtException: Profile is not defined
+ReferenceError: Profile is not defined
+    at new IndexController (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/index.controller.ts:7:25)
+    at new IndexRoute (/Users/olashina/Documents/workspace/NIPTREX-backend/src/routes/index.route.ts:8:28)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/server.ts:11:22)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-07935325120459513.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-07935325120459513.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-07935325120459513.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)

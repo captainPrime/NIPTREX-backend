@@ -1,10 +1,10 @@
-import Profile from '@/models/profile.model';
+// import Profile from '@/models/profile.model';
 import User from '@/models/users.model';
 import { NextFunction, Request, Response } from 'express';
 
 class IndexController {
   public users = User;
-  public profile: any = Profile;
+  // public profile: any = Profile;
 
   public index = (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -22,7 +22,7 @@ class IndexController {
   public reloadDb = async (req: Request, res: Response, next: NextFunction) => {
     try {
       await this.users.deleteMany({});
-      await this.profile.deleteMany({});
+      // await this.profile.deleteMany({});
 
       const user = {
         first_name: 'John',

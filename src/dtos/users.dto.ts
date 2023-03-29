@@ -28,6 +28,9 @@ export class CreateUserDto {
 
   @IsString()
   public user!: string;
+
+  @IsString()
+  public country!: string;
 }
 
 export class UserLoginDto {
