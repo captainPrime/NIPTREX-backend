@@ -113,3 +113,25 @@
 2023-03-29 01:19:41 info: [0mGET /profile/experience [32m200[0m 648.254 ms - 759[0m
 2023-03-29 01:19:51 info: [0mDELETE /profile/experience/64237fb1a727a4b7f2c8b51e [32m200[0m 586.464 ms - 419[0m
 2023-03-29 01:19:54 info: [0mGET /profile/experience [32m200[0m 617.282 ms - 421[0m
+2023-03-29 01:40:02 error: [POST] /profile/education >> StatusCode:: 404, Message:: The requested path /profile/education not found!
+2023-03-29 01:40:02 info: [0mPOST /profile/education [32m200[0m 1.245 ms - 106[0m
+2023-03-29 01:40:17 info: =================================
+2023-03-29 01:40:17 info: ======= ENV: development =======
+2023-03-29 01:40:17 info: 🚀 App listening on the port 3000
+2023-03-29 01:40:17 info: =================================
+2023-03-29 01:40:20 info: Connected to email server
+2023-03-29 01:40:20 info: Connected to Database Successfully...
+2023-03-29 01:40:23 error: [POST] /profile/education >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-03-29 01:40:23 info: [0mPOST /profile/education [32m200[0m 34.444 ms - 79[0m
+2023-03-29 01:40:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-29 01:40:29 info: [0mPOST /auth/login [32m200[0m 515.063 ms - 587[0m
+2023-03-29 01:40:33 error: [POST] /profile/education >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:40:33 info: [0mPOST /profile/education [32m200[0m 466.649 ms - 185[0m
+2023-03-29 01:40:44 info: [0mPOST /profile/education [32m200[0m 674.583 ms - 344[0m
+2023-03-29 01:41:12 info: [0mGET /profile/education [32m200[0m 734.304 ms - 346[0m
+2023-03-29 01:41:23 info: [0mPOST /profile/education [32m200[0m 784.970 ms - 344[0m
+2023-03-29 01:41:28 info: [0mGET /profile/education [32m200[0m 669.765 ms - 609[0m
+2023-03-29 01:42:21 info: [0mPUT /profile/education/642389331f0e970e85f2f927 [32m200[0m 941.096 ms - 344[0m
+2023-03-29 01:42:25 info: [0mGET /profile/education [32m200[0m 658.565 ms - 609[0m
+2023-03-29 01:42:55 info: [0mDELETE /profile/education/642389331f0e970e85f2f927 [32m200[0m 624.683 ms - 344[0m
+2023-03-29 01:42:58 info: [0mGET /profile/education [32m200[0m 651.205 ms - 346[0m
