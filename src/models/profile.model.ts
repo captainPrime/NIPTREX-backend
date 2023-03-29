@@ -68,16 +68,20 @@ const identitySchema: Schema = new Schema({
 
 const workPreference: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  industry_type: {
-    type: String,
-    enum: Object.values(JobTitle),
-    required: true,
-  },
-  company_culture: {
-    type: String,
-    enum: Object.values(TeamSize),
-    required: true,
-  },
+  industry_type: [
+    {
+      type: String,
+      enum: Object.values(JobTitle),
+      required: true,
+    },
+  ],
+  company_culture: [
+    {
+      type: String,
+      enum: Object.values(TeamSize),
+      required: true,
+    },
+  ],
   company_size: {
     type: String,
     enum: Object.values(TeamSize),

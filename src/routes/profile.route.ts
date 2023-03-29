@@ -2,10 +2,11 @@ import { Router } from 'express';
 import { Routes } from '@interfaces/routes.interface';
 import authMiddleware from '@middlewares/auth.middleware';
 import ProfileController from '@/controllers/profile.controller';
-import EducationController from '@/controllers/education.controller';
-import CertificationController from '@/controllers/certification.controller';
 import BillingController from '@/controllers/billing.controller';
 import IdentityController from '@/controllers/identity.controller';
+import EducationController from '@/controllers/education.controller';
+import PreferenceController from '@/controllers/preference.controller';
+import CertificationController from '@/controllers/certification.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
@@ -14,6 +15,7 @@ class ProfileRoute implements Routes {
   public profileController = new ProfileController();
   public identityController = new IdentityController();
   public educationController = new EducationController();
+  public preferenceController = new PreferenceController();
   public certificationController = new CertificationController();
 
   constructor() {
@@ -75,6 +77,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/identity/:id`, authMiddleware, this.identityController.updateIdentity);
     this.router.delete(`${this.path}/identity/:id`, authMiddleware, this.identityController.deleteIdentity);
     this.router.get(`${this.path}/identity/:id`, authMiddleware, this.identityController.getIdentityById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Work Preference Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/preference`, authMiddleware, this.preferenceController.createPreference);
+    this.router.get(`${this.path}/preference`, authMiddleware, this.preferenceController.getUserPreference);
+    this.router.put(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.updatePreference);
+    this.router.delete(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.deletePreference);
+    this.router.get(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.getPreferenceById);
   }
 }
 

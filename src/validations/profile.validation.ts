@@ -1,4 +1,4 @@
-import { EmploymentType } from '@/interfaces/profile.interface';
+import { EmploymentType, JobDuration, JobTitle, TeamSize, WorkOption, WorkSchedule } from '@/interfaces/profile.interface';
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
@@ -80,4 +80,47 @@ export const identitySchema = Joi.object({
   user_id: Joi.string().required(),
   proof_of_identity: Joi.string().required(),
   proof_of_address: Joi.string().required(),
+});
+
+/*
+|--------------------------------------------------------------------------
+| Identity Validation
+|--------------------------------------------------------------------------
+*/
+export const workPreferenceSchema = Joi.object({
+  user_id: Joi.string().required(),
+  industry_type: Joi.array()
+    .items(
+      Joi.object({
+        type: Joi.string()
+          .valid(...Object.values(JobTitle))
+          .required(),
+      }),
+    )
+    .required(),
+  company_culture: Joi.array()
+    .items(
+      Joi.object({
+        type: Joi.string()
+          .valid(...Object.values(TeamSize))
+          .required(),
+      }),
+    )
+    .required(),
+  company_size: Joi.string()
+    .valid(...Object.values(TeamSize))
+    .required(),
+  project_duration: Joi.string()
+    .valid(...Object.values(JobDuration))
+    .required(),
+  team_size: Joi.string()
+    .valid(...Object.values(TeamSize))
+    .required(),
+  work_location: Joi.string()
+    .valid(...Object.values(WorkOption))
+    .required(),
+  work_timezone: Joi.string().required(),
+  work_preference: Joi.string()
+    .valid(...Object.values(WorkSchedule))
+    .required(),
 });
