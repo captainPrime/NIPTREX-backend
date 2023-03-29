@@ -46,24 +46,24 @@ const educationHistorySchema: Schema = new Schema({
 
 const certificationSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  id: { type: String, trim: true },
-  name: { type: String, trim: true },
-  organisation: { type: String, trim: true },
-  certificate_url: { type: String, trim: true },
-  date_obtained: { type: Date, trim: true },
+  id: { type: String, required: true },
+  name: { type: String, required: true },
+  organisation: { type: String, required: true },
+  certificate_url: { type: String, required: true },
+  date_obtained: { type: Date, required: true },
 });
 
 const billingSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  per_annum: { type: String, trim: true },
-  hourly_rate: { type: String, trim: true },
-  payment_method: { type: String, trim: true },
+  per_annum: { type: String, required: true },
+  hourly_rate: { type: String, trequiredrim: true },
+  payment_method: { type: String, required: true },
 });
 
 const identitySchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  proof_of_identity: { type: String, trim: true },
-  proof_of_address: { type: String, trim: true },
+  proof_of_identity: { type: String, required: true },
+  proof_of_address: { type: String, required: true },
 });
 
 const workPreference: Schema = new Schema({
@@ -71,41 +71,41 @@ const workPreference: Schema = new Schema({
   industry_type: {
     type: String,
     enum: Object.values(JobTitle),
-    trim: true,
+    required: true,
   },
   company_culture: {
     type: String,
     enum: Object.values(TeamSize),
-    trim: true,
+    required: true,
   },
   company_size: {
     type: String,
     enum: Object.values(TeamSize),
-    trim: true,
+    required: true,
   },
   project_duration: {
     type: String,
     enum: Object.values(JobDuration),
-    trim: true,
+    required: true,
   },
   team_size: {
     type: String,
     enum: Object.values(TeamSize),
-    trim: true,
+    required: true,
   },
   work_location: {
     type: String,
     enum: Object.values(WorkOption),
-    trim: true,
+    required: true,
   },
   work_timezone: {
     type: String,
-    trim: true,
+    required: true,
   },
   work_preference: {
     type: String,
     enum: Object.values(WorkSchedule),
-    trim: true,
+    required: true,
   },
 });
 
