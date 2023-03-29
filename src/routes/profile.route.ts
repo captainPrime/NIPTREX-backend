@@ -13,9 +13,11 @@ class ProfileRoute implements Routes {
   }
 
   private initializeRoutes() {
-    this.router.post(`${this.path}`, authMiddleware, this.profileController.createProfile);
-    this.router.get(`${this.path}`, authMiddleware, this.profileController.getProfile);
-    this.router.patch(`${this.path}`, authMiddleware, this.profileController.updateProfile);
+    this.router.post(`${this.path}/experience`, authMiddleware, this.profileController.createExperience);
+    this.router.get(`${this.path}/experience`, authMiddleware, this.profileController.getUserExperience);
+    this.router.put(`${this.path}/experience/:id`, authMiddleware, this.profileController.updateExperience);
+    this.router.delete(`${this.path}/experience/:id`, authMiddleware, this.profileController.deleteExperience);
+    this.router.get(`${this.path}/experience/:id`, authMiddleware, this.profileController.getExperienceById);
   }
 }
 

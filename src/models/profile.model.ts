@@ -16,16 +16,16 @@ import { Schema, model } from 'mongoose';
 
 const experienceSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  id: { type: String, trim: true },
-  start_date: { type: Date, trim: true },
-  end_date: { type: Date, trim: true },
-  company: { type: String, trim: true },
-  country: { type: String, trim: true },
-  role: { type: String, trim: true },
+  id: { type: String, required: true },
+  start_date: { type: Date, required: true },
+  end_date: { type: Date, required: true },
+  company: { type: String, requiredrequired: true },
+  country: { type: String, required: true },
+  role: { type: String, required: true },
   employment_type: {
     type: String,
     enum: Object.values(EmploymentType),
-    trim: true,
+    required: true,
   },
   description: { type: String },
 });
@@ -160,4 +160,4 @@ const Billing = model<IEducationHistory>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
 
-export default { About, Experience, Education, Certification, Billing, Identity, Preference };
+export { About, Experience, Education, Certification, Billing, Identity, Preference };

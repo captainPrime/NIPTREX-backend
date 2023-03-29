@@ -1,0 +1,115 @@
+2023-03-29 00:44:04 info: Connected to email server
+2023-03-29 00:44:46 info: Connected to email server
+2023-03-29 00:45:40 info: Connected to email server
+2023-03-29 00:45:55 info: Connected to email server
+2023-03-29 00:46:01 info: Connected to email server
+2023-03-29 00:46:10 info: =================================
+2023-03-29 00:46:10 info: ======= ENV: development =======
+2023-03-29 00:46:10 info: 🚀 App listening on the port 3000
+2023-03-29 00:46:10 info: =================================
+2023-03-29 00:46:12 info: Connected to email server
+2023-03-29 00:46:13 info: Connected to Database Successfully...
+2023-03-29 00:46:47 info: =================================
+2023-03-29 00:46:47 info: ======= ENV: development =======
+2023-03-29 00:46:47 info: 🚀 App listening on the port 3000
+2023-03-29 00:46:47 info: =================================
+2023-03-29 00:46:51 info: Connected to email server
+2023-03-29 00:46:55 info: Connected to Database Successfully...
+2023-03-29 00:49:27 error: [GET] /reload_db >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'deleteMany')
+2023-03-29 00:49:27 info: [0mGET /reload_db [32m200[0m 250.018 ms - 115[0m
+2023-03-29 00:51:24 info: =================================
+2023-03-29 00:51:24 info: ======= ENV: development =======
+2023-03-29 00:51:24 info: 🚀 App listening on the port 3000
+2023-03-29 00:51:24 info: =================================
+2023-03-29 00:51:27 info: Connected to email server
+2023-03-29 00:51:32 info: Connected to Database Successfully...
+2023-03-29 00:51:53 info: [0mGET /reload_db [32m200[0m 625.274 ms - 74[0m
+2023-03-29 00:52:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-29 00:52:04 info: [0mPOST /auth/login [32m200[0m 691.273 ms - 587[0m
+2023-03-29 00:52:30 error: [POST] /profile/experience >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 00:52:30 info: [0mPOST /profile/experience [32m200[0m 2.661 ms - 86[0m
+2023-03-29 00:52:38 info: [0mPOST /profile/experience [32m200[0m 664.094 ms - 417[0m
+2023-03-29 00:53:34 info: [0mGET /profile/experience [32m200[0m 647.244 ms - 417[0m
+2023-03-29 00:53:44 info: [0mPOST /profile/experience [32m200[0m 862.805 ms - 419[0m
+2023-03-29 00:53:48 info: [0mGET /profile/experience [32m200[0m 942.924 ms - 417[0m
+2023-03-29 00:54:16 info: [0mPOST /profile/experience [32m200[0m 784.274 ms - 419[0m
+2023-03-29 00:54:25 info: [0mGET /profile/experience [32m200[0m 878.879 ms - 417[0m
+2023-03-29 00:55:03 info: =================================
+2023-03-29 00:55:03 info: ======= ENV: development =======
+2023-03-29 00:55:03 info: 🚀 App listening on the port 3000
+2023-03-29 00:55:03 info: =================================
+2023-03-29 00:55:05 info: Connected to email server
+2023-03-29 00:55:05 info: Connected to Database Successfully...
+2023-03-29 00:55:11 info: [0mGET /profile/experience [32m200[0m 751.221 ms - -[0m
+2023-03-29 00:56:28 info: =================================
+2023-03-29 00:56:28 info: ======= ENV: development =======
+2023-03-29 00:56:28 info: 🚀 App listening on the port 3000
+2023-03-29 00:56:28 info: =================================
+2023-03-29 00:56:30 info: Connected to email server
+2023-03-29 00:56:42 info: Connected to Database Successfully...
+2023-03-29 00:57:58 error: [PUT] /profile/experience/64237dc649fa46ffb54d8282 >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 306
+2023-03-29 00:57:58 info: [0mPUT /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 31.995 ms - 99[0m
+2023-03-29 00:58:03 error: [PUT] /profile/experience/64237dc649fa46ffb54d8282 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 00:58:03 info: [0mPUT /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 6.881 ms - 86[0m
+2023-03-29 00:58:11 info: [0mPUT /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 678.529 ms - 417[0m
+2023-03-29 00:58:18 info: [0mGET /profile/experience [32m200[0m 966.053 ms - -[0m
+2023-03-29 00:58:49 error: [DELETE] /profile/experience/64237dc649fa46ffb54d8282 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 00:58:49 info: [0mDELETE /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 1.491 ms - 86[0m
+2023-03-29 00:58:56 info: [0mDELETE /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 442.149 ms - 417[0m
+2023-03-29 00:59:02 info: [0mGET /profile/experience [32m200[0m 867.591 ms - 759[0m
+2023-03-29 01:00:36 info: =================================
+2023-03-29 01:00:36 info: ======= ENV: development =======
+2023-03-29 01:00:36 info: 🚀 App listening on the port 3000
+2023-03-29 01:00:36 info: =================================
+2023-03-29 01:00:41 info: Connected to email server
+2023-03-29 01:00:44 info: Connected to Database Successfully...
+2023-03-29 01:00:49 info: [0mPOST /profile/experience [32m200[0m 742.154 ms - 419[0m
+2023-03-29 01:12:45 info: =================================
+2023-03-29 01:12:45 info: ======= ENV: development =======
+2023-03-29 01:12:45 info: 🚀 App listening on the port 3000
+2023-03-29 01:12:45 info: =================================
+2023-03-29 01:12:48 info: Connected to email server
+2023-03-29 01:12:48 info: Connected to Database Successfully...
+2023-03-29 01:13:13 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:13:13 info: [0mPOST /profile/experience [32m200[0m 507.574 ms - 108[0m
+2023-03-29 01:14:30 info: =================================
+2023-03-29 01:14:30 info: ======= ENV: development =======
+2023-03-29 01:14:30 info: 🚀 App listening on the port 3000
+2023-03-29 01:14:30 info: =================================
+2023-03-29 01:14:32 info: Connected to email server
+2023-03-29 01:14:42 info: Connected to Database Successfully...
+2023-03-29 01:14:50 info: [0mPOST /profile/experience [32m200[0m 1071.875 ms - 419[0m
+2023-03-29 01:15:22 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:15:22 info: [0mPOST /profile/experience [32m200[0m 416.325 ms - 134[0m
+2023-03-29 01:15:50 info: =================================
+2023-03-29 01:15:50 info: ======= ENV: development =======
+2023-03-29 01:15:50 info: 🚀 App listening on the port 3000
+2023-03-29 01:15:50 info: =================================
+2023-03-29 01:15:52 info: Connected to email server
+2023-03-29 01:16:03 info: Connected to Database Successfully...
+2023-03-29 01:16:09 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:16:09 info: [0mPOST /profile/experience [32m200[0m 507.556 ms - 134[0m
+2023-03-29 01:16:46 info: =================================
+2023-03-29 01:16:46 info: ======= ENV: development =======
+2023-03-29 01:16:46 info: 🚀 App listening on the port 3000
+2023-03-29 01:16:46 info: =================================
+2023-03-29 01:16:48 info: Connected to email server
+2023-03-29 01:16:49 info: Connected to Database Successfully...
+2023-03-29 01:16:58 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:16:58 info: [0mPOST /profile/experience [32m200[0m 1093.862 ms - 136[0m
+2023-03-29 01:17:15 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:17:15 info: [0mPOST /profile/experience [32m200[0m 630.903 ms - 136[0m
+2023-03-29 01:17:24 error: [POST] /profile/experience >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 01:17:24 info: [0mPOST /profile/experience [32m200[0m 413.373 ms - 122[0m
+2023-03-29 01:18:24 info: [0mPOST /profile/experience [32m200[0m 656.759 ms - 419[0m
+2023-03-29 01:18:38 info: [0mGET /profile/experience [32m200[0m 647.984 ms - -[0m
+2023-03-29 01:18:46 info: [0mDELETE /profile/experience/642383d0334b6e46f7e2b931 [32m200[0m 429.402 ms - 419[0m
+2023-03-29 01:18:51 info: [0mGET /profile/experience [32m200[0m 627.706 ms - -[0m
+2023-03-29 01:18:59 info: [0mDELETE /profile/experience/64237e0849fa46ffb54d8289 [32m200[0m 421.957 ms - 419[0m
+2023-03-29 01:19:03 info: [0mGET /profile/experience [32m200[0m 618.759 ms - -[0m
+2023-03-29 01:19:11 info: [0mDELETE /profile/experience/642382fa1c0a43e6112d916c [32m200[0m 632.898 ms - 419[0m
+2023-03-29 01:19:16 error: [PUT] /profile/experience/64237dc649fa46ffb54d8282 >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-03-29 01:19:16 info: [0mPUT /profile/experience/64237dc649fa46ffb54d8282 [32m200[0m 426.005 ms - 75[0m
+2023-03-29 01:19:41 info: [0mGET /profile/experience [32m200[0m 648.254 ms - 759[0m
+2023-03-29 01:19:51 info: [0mDELETE /profile/experience/64237fb1a727a4b7f2c8b51e [32m200[0m 586.464 ms - 419[0m
+2023-03-29 01:19:54 info: [0mGET /profile/experience [32m200[0m 617.282 ms - 421[0m

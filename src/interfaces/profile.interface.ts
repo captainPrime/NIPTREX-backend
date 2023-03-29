@@ -154,3 +154,4 @@ export interface IProfile extends Document {
 }
 
 export type IUpdateProfile = Partial<IProfile>;
+export type IUpdateExperience = Partial<IExperience>;

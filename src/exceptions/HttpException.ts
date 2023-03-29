@@ -8,7 +8,7 @@ export class HttpException extends Error {
   public message: string;
   public data: any[];
 
-  constructor(status: number, responseCode: number, message: string, data: any[] = []) {
+  constructor(status: number, responseCode: number, message: string, data: any = []) {
     super(message);
     this.status = status;
     this.responseCode = responseCode;
