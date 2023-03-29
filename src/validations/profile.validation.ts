@@ -149,18 +149,18 @@ export const aboutSchema = Joi.object({
   }).required(),
   address: Joi.object({
     line1: Joi.string().required(),
-    line2: Joi.string().optional(),
+    line2: Joi.string().optional().allow(''),
     city: Joi.string().required(),
     state: Joi.string().required(),
   }).required(),
   social_links: Joi.object({
-    personal_website: Joi.string().optional(),
-    linkedin: Joi.string().optional(),
-    stack_overflow: Joi.string().optional(),
-    github: Joi.string().optional(),
-    dribble: Joi.string().optional(),
-    behance: Joi.string().optional(),
-    glass_door: Joi.string().optional(),
+    personal_website: Joi.string().optional().allow(''),
+    linkedin: Joi.string().optional().allow(''),
+    stack_overflow: Joi.string().optional().allow(''),
+    github: Joi.string().optional().allow(''),
+    dribble: Joi.string().optional().allow(''),
+    behance: Joi.string().optional().allow(''),
+    glass_door: Joi.string().optional().allow(''),
   }),
   languages: Joi.array().items(
     Joi.object({

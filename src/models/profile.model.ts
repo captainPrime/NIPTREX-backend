@@ -7,11 +7,6 @@ import {
   IEducationHistory,
   IExperience,
   IPreferences,
-  JobDuration,
-  JobTitle,
-  TeamSize,
-  WorkOption,
-  WorkSchedule,
 } from '@/interfaces/profile.interface';
 import { Schema, model } from 'mongoose';
 
@@ -98,33 +93,29 @@ const workPreference: Schema = new Schema(
     industry_type: [
       {
         id: { type: String, required: true },
-        name: { type: String, enum: Object.values(JobTitle), required: true },
+        name: { type: String, required: true },
       },
     ],
     company_culture: [
       {
         id: { type: String, required: true },
-        name: { type: String, enum: Object.values(TeamSize), required: true },
+        name: { type: String, required: true },
       },
     ],
     company_size: {
       type: String,
-      enum: Object.values(TeamSize),
       required: true,
     },
     project_duration: {
       type: String,
-      enum: Object.values(JobDuration),
       required: true,
     },
     team_size: {
       type: String,
-      enum: Object.values(TeamSize),
       required: true,
     },
     work_location: {
       type: String,
-      enum: Object.values(WorkOption),
       required: true,
     },
     work_timezone: {
@@ -133,7 +124,6 @@ const workPreference: Schema = new Schema(
     },
     work_preference: {
       type: String,
-      enum: Object.values(WorkSchedule),
       required: true,
     },
   },

@@ -229,3 +229,35 @@
 2023-03-29 03:16:27 info: [0mPOST /auth/login [32m200[0m 1083.016 ms - 587[0m
 2023-03-29 03:16:32 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-03-29 03:16:32 info: [0mPOST /profile/about [32m200[0m 1286.281 ms - 135[0m
+2023-03-29 03:17:54 info: =================================
+2023-03-29 03:17:54 info: ======= ENV: development =======
+2023-03-29 03:17:54 info: 🚀 App listening on the port 3000
+2023-03-29 03:17:54 info: =================================
+2023-03-29 03:17:57 info: Connected to email server
+2023-03-29 03:18:08 info: Connected to Database Successfully...
+2023-03-29 03:18:12 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:18:12 info: [0mPOST /profile/about [32m200[0m 503.478 ms - 135[0m
+2023-03-29 03:18:14 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:18:14 info: [0mPOST /profile/about [32m200[0m 529.793 ms - 135[0m
+2023-03-29 03:18:28 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:18:28 info: [0mPOST /profile/about [32m200[0m 505.758 ms - 135[0m
+2023-03-29 03:21:42 info: =================================
+2023-03-29 03:21:42 info: ======= ENV: development =======
+2023-03-29 03:21:42 info: 🚀 App listening on the port 3000
+2023-03-29 03:21:42 info: =================================
+2023-03-29 03:21:46 info: Connected to email server
+2023-03-29 03:21:58 info: Connected to Database Successfully...
+2023-03-29 03:22:03 info: [0mPOST /profile/about [32m200[0m 1040.248 ms - 982[0m
+2023-03-29 03:22:37 info: [0mGET /profile/about [32m200[0m 844.924 ms - 984[0m
+2023-03-29 03:23:07 info: [0mPUT /profile/about/6423a0caa159f04952e37d49 [32m200[0m 756.652 ms - 982[0m
+2023-03-29 03:23:17 error: [DELETE] /profile/about/6423a0caa159f04952e37d49 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:23:17 info: [0mDELETE /profile/about/6423a0caa159f04952e37d49 [32m200[0m 1.646 ms - 86[0m
+2023-03-29 03:26:34 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:26:34 info: [0mPOST /profile/preference [32m200[0m 418.579 ms - 120[0m
+2023-03-29 03:27:02 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:27:02 info: [0mPOST /profile/preference [32m200[0m 438.258 ms - 219[0m
+2023-03-29 03:28:20 info: =================================
+2023-03-29 03:28:20 info: ======= ENV: development =======
+2023-03-29 03:28:20 info: 🚀 App listening on the port 3000
+2023-03-29 03:28:20 info: =================================
+2023-03-29 03:28:24 info: Connected to email server
