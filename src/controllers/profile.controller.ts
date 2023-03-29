@@ -55,7 +55,7 @@ class ProfileController {
 
   /*
   |--------------------------------------------------------------------------
-  | Add Comment
+  | Create Experience
   |--------------------------------------------------------------------------
   */
   public createExperience = async (req: Request, res: Response, next: NextFunction) => {
@@ -77,7 +77,7 @@ class ProfileController {
 
   /*
   |--------------------------------------------------------------------------
-  | Add Comment
+  | Get User Experience
   |--------------------------------------------------------------------------
   */
   public getUserExperience = async (req: Request, res: Response, next: NextFunction) => {
@@ -98,7 +98,7 @@ class ProfileController {
 
   /*
   |--------------------------------------------------------------------------
-  | Add Comment
+  | Get Experience By Id
   |--------------------------------------------------------------------------
   */
   public getExperienceById = async (req: Request, res: Response, next: NextFunction) => {
@@ -114,7 +114,7 @@ class ProfileController {
 
   /*
   |--------------------------------------------------------------------------
-  | Add Comment
+  | Update Experience
   |--------------------------------------------------------------------------
   */
   public updateExperience = async (req: Request, res: Response, next: NextFunction) => {
@@ -131,10 +131,102 @@ class ProfileController {
 
   /*
   |--------------------------------------------------------------------------
-  | Add Comment
+  | Delete Experience
   |--------------------------------------------------------------------------
   */
   public deleteExperience = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+      const data = await this.profileService.deleteExperience(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Create Education
+  |--------------------------------------------------------------------------
+  */
+  public createEducation = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userData = req.body;
+      const user: any = await this.userService.findUserById(req.user.id);
+
+      if (!user.verified) {
+        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
+      }
+
+      const data = await this.profileService.createEducation({ ...userData, user_id: req.user.id });
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Education
+  |--------------------------------------------------------------------------
+  */
+  public getUserEducation = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const user: any = await this.userService.findUserById(req.user.id);
+
+      if (!user.verified) {
+        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
+      }
+
+      const data = await this.profileService.getUserExperience(req.user.id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Education By Id
+  |--------------------------------------------------------------------------
+  */
+  public getEducationById = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+      const data = await this.profileService.getExperienceById(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Update Education
+  |--------------------------------------------------------------------------
+  */
+  public updateEducation = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+      const body: IUpdateExperience = req.body;
+      const data = await this.profileService.updateExperienceById(id, body);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Delete Education
+  |--------------------------------------------------------------------------
+  */
+  public deleteEducation = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
       const data = await this.profileService.deleteExperience(id);

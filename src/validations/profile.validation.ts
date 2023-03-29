@@ -22,3 +22,15 @@ export const experienceValidation = Joi.object({
     .required(),
   description: Joi.string(),
 });
+
+export const educationHistorySchema = Joi.object({
+  user_id: Joi.string().required(),
+  id: Joi.string().required(),
+  institution: Joi.string().required(),
+  field_of_study: Joi.string(),
+  degree_level: Joi.string().required(),
+  date_attended: Joi.string().required(),
+  employment_type: Joi.string()
+    .valid(...Object.values(EmploymentType))
+    .required(),
+});
