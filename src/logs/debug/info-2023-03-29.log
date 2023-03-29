@@ -135,3 +135,83 @@
 2023-03-29 01:42:25 info: [0mGET /profile/education [32m200[0m 658.565 ms - 609[0m
 2023-03-29 01:42:55 info: [0mDELETE /profile/education/642389331f0e970e85f2f927 [32m200[0m 624.683 ms - 344[0m
 2023-03-29 01:42:58 info: [0mGET /profile/education [32m200[0m 651.205 ms - 346[0m
+2023-03-29 02:43:37 info: =================================
+2023-03-29 02:43:37 info: ======= ENV: development =======
+2023-03-29 02:43:37 info: 🚀 App listening on the port 3000
+2023-03-29 02:43:37 info: =================================
+2023-03-29 02:43:55 info: Connected to Database Successfully...
+2023-03-29 02:44:00 error: [POST] /profile/billing >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-03-29 02:44:00 info: [0mPOST /profile/billing [32m200[0m 30.293 ms - 79[0m
+2023-03-29 02:44:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-29 02:44:04 info: [0mPOST /auth/login [32m200[0m 594.263 ms - 587[0m
+2023-03-29 02:44:08 info: [0mPOST /profile/billing [32m200[0m 694.554 ms - 317[0m
+2023-03-29 02:44:09 info: Connected to email server
+2023-03-29 02:44:50 info: [0mGET /profile/billing [32m200[0m 1302.826 ms - 319[0m
+2023-03-29 02:46:17 info: =================================
+2023-03-29 02:46:17 info: ======= ENV: development =======
+2023-03-29 02:46:17 info: 🚀 App listening on the port 3000
+2023-03-29 02:46:17 info: =================================
+2023-03-29 02:46:57 error: Error connecting to Database: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2023-03-29 02:47:16 info: =================================
+2023-03-29 02:47:16 info: ======= ENV: development =======
+2023-03-29 02:47:16 info: 🚀 App listening on the port 3000
+2023-03-29 02:47:16 info: =================================
+2023-03-29 02:47:46 error: Error connecting to Database: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2023-03-29 02:48:17 info: =================================
+2023-03-29 02:48:17 info: ======= ENV: development =======
+2023-03-29 02:48:17 info: 🚀 App listening on the port 3000
+2023-03-29 02:48:17 info: =================================
+2023-03-29 02:48:50 info: Connected to email server
+2023-03-29 02:48:57 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-03-29 02:49:21 info: =================================
+2023-03-29 02:49:21 info: ======= ENV: development =======
+2023-03-29 02:49:21 info: 🚀 App listening on the port 3000
+2023-03-29 02:49:21 info: =================================
+2023-03-29 02:49:23 info: Connected to email server
+2023-03-29 02:49:35 info: Connected to Database Successfully...
+2023-03-29 02:49:53 info: [0mGET /profile/billing [32m200[0m 784.427 ms - 319[0m
+2023-03-29 02:51:30 info: [0mPUT /profile/billing/642397e898394bcb4427d0c3 [32m200[0m 901.946 ms - 317[0m
+2023-03-29 02:51:38 info: [0mPUT /profile/billing/642397e898394bcb4427d0c3 [32m200[0m 666.473 ms - 318[0m
+2023-03-29 02:52:01 error: [DELETE] /profile/billing/642397e898394bcb4427d0c3 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 02:52:01 info: [0mDELETE /profile/billing/642397e898394bcb4427d0c3 [32m200[0m 1.933 ms - 86[0m
+2023-03-29 02:52:07 info: [0mDELETE /profile/billing/642397e898394bcb4427d0c3 [32m200[0m 433.353 ms - 318[0m
+2023-03-29 02:52:17 info: [0mPOST /profile/billing [32m200[0m 1054.821 ms - 317[0m
+2023-03-29 02:52:21 info: [0mGET /profile/billing [32m200[0m 686.559 ms - 319[0m
+2023-03-29 02:54:28 info: [0mPOST /profile/certificate [32m200[0m 814.374 ms - 453[0m
+2023-03-29 02:54:50 info: [0mPOST /profile/certificate [32m200[0m 673.379 ms - 455[0m
+2023-03-29 02:55:13 info: [0mGET /profile/certificate [32m200[0m 702.601 ms - 829[0m
+2023-03-29 02:57:04 info: [0mPUT /profile/certificate/64239a6a02fa802e30ae2246 [32m200[0m 1066.139 ms - 452[0m
+2023-03-29 02:57:10 info: [0mGET /profile/certificate [32m200[0m 692.634 ms - 826[0m
+2023-03-29 02:57:42 info: [0mDELETE /profile/certificate/64239a6a02fa802e30ae2246 [32m200[0m 1216.942 ms - 452[0m
+2023-03-29 02:57:46 info: [0mGET /profile/certificate [32m200[0m 634.562 ms - 455[0m
+2023-03-29 02:59:33 info: [0mPOST /profile/identity [32m200[0m 788.991 ms - 365[0m
+2023-03-29 03:00:09 info: [0mGET /profile/identity [32m200[0m 721.050 ms - 367[0m
+2023-03-29 03:03:02 info: [0mPUT /profile/identity/64239b8502fa802e30ae2258 [32m200[0m 878.547 ms - 366[0m
+2023-03-29 03:03:08 info: [0mGET /profile/identity [32m200[0m 1175.031 ms - 368[0m
+2023-03-29 03:03:48 error: [DELETE] /profile/identity/64239b8502fa802e30ae2258 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:03:48 info: [0mDELETE /profile/identity/64239b8502fa802e30ae2258 [32m200[0m 1.164 ms - 86[0m
+2023-03-29 03:03:54 info: [0mDELETE /profile/identity/64239b8502fa802e30ae2258 [32m200[0m 439.044 ms - 366[0m
+2023-03-29 03:04:01 info: [0mGET /profile/identity [32m200[0m 647.699 ms - 84[0m
+2023-03-29 03:07:03 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:07:03 info: [0mPOST /profile/about [32m200[0m 527.105 ms - 142[0m
+2023-03-29 03:07:25 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:07:25 info: [0mPOST /profile/about [32m200[0m 478.251 ms - 132[0m
+2023-03-29 03:07:31 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:07:31 info: [0mPOST /profile/about [32m200[0m 510.125 ms - 128[0m
+2023-03-29 03:08:35 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:08:35 info: [0mPOST /profile/about [32m200[0m 432.691 ms - 135[0m
+2023-03-29 03:10:07 info: =================================
+2023-03-29 03:10:07 info: ======= ENV: development =======
+2023-03-29 03:10:07 info: 🚀 App listening on the port 3000
+2023-03-29 03:10:07 info: =================================
+2023-03-29 03:10:37 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-03-29 03:10:50 info: =================================
+2023-03-29 03:10:50 info: ======= ENV: development =======
+2023-03-29 03:10:50 info: 🚀 App listening on the port 3000
+2023-03-29 03:10:50 info: =================================
+2023-03-29 03:11:20 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-03-29 03:12:05 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-03-29 03:14:20 info: =================================
+2023-03-29 03:14:20 info: ======= ENV: development =======
+2023-03-29 03:14:20 info: 🚀 App listening on the port 3000
+2023-03-29 03:14:20 info: =================================

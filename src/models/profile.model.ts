@@ -1,6 +1,7 @@
 import {
   EmploymentType,
   IAbout,
+  IBilling,
   ICertification,
   IDocument,
   IEducationHistory,
@@ -188,7 +189,7 @@ const About = model<IAbout>('About', aboutSchema);
 const Experience = model<IExperience>('Experience', experienceSchema);
 const Education = model<IEducationHistory>('Education', educationHistorySchema);
 const Certification = model<ICertification>('Certification', certificationSchema);
-const Billing = model<IEducationHistory>('Billing', billingSchema);
+const Billing = model<IBilling>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
 
