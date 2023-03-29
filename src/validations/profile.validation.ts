@@ -2,6 +2,11 @@ import { EmploymentType } from '@/interfaces/profile.interface';
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
+/*
+|--------------------------------------------------------------------------
+| Experience Validation
+|--------------------------------------------------------------------------
+*/
 export const experienceValidation = Joi.object({
   user_id: Joi.string()
     .custom((value, helpers) => {
@@ -23,6 +28,11 @@ export const experienceValidation = Joi.object({
   description: Joi.string(),
 });
 
+/*
+|--------------------------------------------------------------------------
+| Education Validation
+|--------------------------------------------------------------------------
+*/
 export const educationHistorySchema = Joi.object({
   user_id: Joi.string().required(),
   id: Joi.string().required(),
