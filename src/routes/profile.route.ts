@@ -3,12 +3,14 @@ import { Routes } from '@interfaces/routes.interface';
 import authMiddleware from '@middlewares/auth.middleware';
 import ProfileController from '@/controllers/profile.controller';
 import EducationController from '@/controllers/education.controller';
+import CertificationController from '@/controllers/certification.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
   public profileController = new ProfileController();
   public educationController = new EducationController();
+  public certificationController = new CertificationController();
 
   constructor() {
     this.initializeRoutes();
@@ -36,6 +38,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/education/:id`, authMiddleware, this.educationController.updateEducation);
     this.router.delete(`${this.path}/education/:id`, authMiddleware, this.educationController.deleteEducation);
     this.router.get(`${this.path}/education/:id`, authMiddleware, this.educationController.getEducationById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Certification Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/certificate`, authMiddleware, this.certificationController.createCertification);
+    this.router.get(`${this.path}/certificate`, authMiddleware, this.certificationController.getUserCertification);
+    this.router.put(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.updateCertification);
+    this.router.delete(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.deleteCertification);
+    this.router.get(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.getCertificationById);
   }
 }
 
