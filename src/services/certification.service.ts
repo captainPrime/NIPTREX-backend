@@ -7,8 +7,8 @@ import { ICertification, IUpdateCertification } from '@/interfaces/profile.inter
 import { certificationSchema } from '@/validations/profile.validation';
 
 class CertificationService {
-  public certification: any = Certification;
   public userService = new UserService();
+  public certification: any = Certification;
 
   /*
   |--------------------------------------------------------------------------

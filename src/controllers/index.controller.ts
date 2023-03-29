@@ -1,10 +1,17 @@
 // import Profile from '@/models/profile.model';
+import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
 import User from '@/models/users.model';
 import { NextFunction, Request, Response } from 'express';
 
 class IndexController {
   public users = User;
-  // public profile: any = Profile;
+  public about: any = About;
+  public billing: any = Billing;
+  public identity: any = Identity;
+  public education: any = Education;
+  public experience: any = Experience;
+  public preference: any = Preference;
+  public certification: any = Certification;
 
   public index = (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -22,7 +29,13 @@ class IndexController {
   public reloadDb = async (req: Request, res: Response, next: NextFunction) => {
     try {
       await this.users.deleteMany({});
-      // await this.profile.deleteMany({});
+      await this.about.deleteMany({});
+      await this.billing.deleteMany({});
+      await this.identity.deleteMany({});
+      await this.education.deleteMany({});
+      await this.experience.deleteMany({});
+      await this.preference.deleteMany({});
+      await this.certification.deleteMany({});
 
       const user = {
         first_name: 'John',
