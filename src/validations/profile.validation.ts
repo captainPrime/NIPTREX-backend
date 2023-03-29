@@ -1,4 +1,4 @@
-import { EmploymentType, JobDuration, JobTitle, TeamSize, WorkOption, WorkSchedule } from '@/interfaces/profile.interface';
+import { EmploymentType } from '@/interfaces/profile.interface';
 import Joi from 'joi';
 import mongoose from 'mongoose';
 

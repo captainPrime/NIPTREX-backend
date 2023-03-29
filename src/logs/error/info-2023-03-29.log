@@ -140,3 +140,9 @@ ReferenceError: Profile is not defined
 2023-03-29 03:27:02 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-03-29 03:28:51 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-03-29 03:28:57 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:31:48 error: [PUT] /profile/preference/6423a2bac3f565778bd4ec3f >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:33:06 error: [GET] /profile/preference/6423a2bac3f565778bd4ec3f >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:33:58 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-29 03:36:13 error: [POST] /auth/register >> StatusCode:: 400, Message:: email johndoe@gmail.com already exists
+2023-03-29 03:36:31 error: [POST] /auth/register >> StatusCode:: 400, Message:: User validation failed: password: Path `password` (`johndoe`) is shorter than the minimum allowed length (8).
+2023-03-29 03:36:46 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

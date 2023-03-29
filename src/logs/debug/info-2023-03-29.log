@@ -266,3 +266,31 @@
 2023-03-29 03:28:51 info: [0mPOST /profile/preference [32m200[0m 535.297 ms - 219[0m
 2023-03-29 03:28:57 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-03-29 03:28:57 info: [0mPOST /profile/preference [32m200[0m 637.724 ms - 219[0m
+2023-03-29 03:29:59 info: =================================
+2023-03-29 03:29:59 info: ======= ENV: development =======
+2023-03-29 03:29:59 info: 🚀 App listening on the port 3000
+2023-03-29 03:29:59 info: =================================
+2023-03-29 03:30:04 info: Connected to email server
+2023-03-29 03:30:08 info: Connected to Database Successfully...
+2023-03-29 03:30:19 info: [0mPOST /profile/preference [32m200[0m 986.058 ms - 630[0m
+2023-03-29 03:31:48 error: [PUT] /profile/preference/6423a2bac3f565778bd4ec3f >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:31:48 info: [0mPUT /profile/preference/6423a2bac3f565778bd4ec3f [32m200[0m 2.814 ms - 86[0m
+2023-03-29 03:32:25 info: [0mGET /profile/preference [32m200[0m 972.664 ms - 632[0m
+2023-03-29 03:32:32 info: [0mPUT /profile/preference/6423a2bac3f565778bd4ec3f [32m200[0m 930.935 ms - 692[0m
+2023-03-29 03:33:06 error: [GET] /profile/preference/6423a2bac3f565778bd4ec3f >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-03-29 03:33:06 info: [0mGET /profile/preference/6423a2bac3f565778bd4ec3f [32m200[0m 1.811 ms - 86[0m
+2023-03-29 03:33:12 info: [0mGET /profile/preference/6423a2bac3f565778bd4ec3f [32m200[0m 513.927 ms - 692[0m
+2023-03-29 03:33:58 error: [POST] /auth/register >> StatusCode:: 400, Message:: property country should not exist
+2023-03-29 03:33:58 info: [0mPOST /auth/register [32m200[0m 9.432 ms - 126[0m
+2023-03-29 03:35:56 info: =================================
+2023-03-29 03:35:56 info: ======= ENV: development =======
+2023-03-29 03:35:56 info: 🚀 App listening on the port 3000
+2023-03-29 03:35:56 info: =================================
+2023-03-29 03:35:59 info: Connected to email server
+2023-03-29 03:36:09 info: Connected to Database Successfully...
+2023-03-29 03:36:13 error: [POST] /auth/register >> StatusCode:: 400, Message:: email johndoe@gmail.com already exists
+2023-03-29 03:36:13 info: [0mPOST /auth/register [32m200[0m 277.671 ms - 96[0m
+2023-03-29 03:36:31 error: [POST] /auth/register >> StatusCode:: 400, Message:: User validation failed: password: Path `password` (`johndoe`) is shorter than the minimum allowed length (8).
+2023-03-29 03:36:31 info: [0mPOST /auth/register [32m200[0m 263.526 ms - 166[0m
+2023-03-29 03:36:46 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-03-29 03:36:46 info: [0mPOST /auth/register [32m200[0m 6845.181 ms - 327[0m
