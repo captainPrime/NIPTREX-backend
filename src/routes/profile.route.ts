@@ -5,12 +5,14 @@ import ProfileController from '@/controllers/profile.controller';
 import EducationController from '@/controllers/education.controller';
 import CertificationController from '@/controllers/certification.controller';
 import BillingController from '@/controllers/billing.controller';
+import IdentityController from '@/controllers/identity.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
   public billingController = new BillingController();
   public profileController = new ProfileController();
+  public identityController = new IdentityController();
   public educationController = new EducationController();
   public certificationController = new CertificationController();
 
@@ -62,6 +64,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/billing/:id`, authMiddleware, this.billingController.updateBilling);
     this.router.delete(`${this.path}/billing/:id`, authMiddleware, this.billingController.deleteBilling);
     this.router.get(`${this.path}/billing/:id`, authMiddleware, this.billingController.getBillingById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Identity Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/identity`, authMiddleware, this.identityController.createIdentity);
+    this.router.get(`${this.path}/identity`, authMiddleware, this.identityController.getUserIdentity);
+    this.router.put(`${this.path}/identity/:id`, authMiddleware, this.identityController.updateIdentity);
+    this.router.delete(`${this.path}/identity/:id`, authMiddleware, this.identityController.deleteIdentity);
+    this.router.get(`${this.path}/identity/:id`, authMiddleware, this.identityController.getIdentityById);
   }
 }
 
