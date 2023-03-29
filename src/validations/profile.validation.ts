@@ -92,7 +92,8 @@ export const workPreferenceSchema = Joi.object({
   industry_type: Joi.array()
     .items(
       Joi.object({
-        type: Joi.string()
+        id: Joi.string().required(),
+        name: Joi.string()
           .valid(...Object.values(JobTitle))
           .required(),
       }),
@@ -101,7 +102,8 @@ export const workPreferenceSchema = Joi.object({
   company_culture: Joi.array()
     .items(
       Joi.object({
-        type: Joi.string()
+        id: Joi.string().required(),
+        name: Joi.string()
           .valid(...Object.values(TeamSize))
           .required(),
       }),
@@ -123,4 +125,47 @@ export const workPreferenceSchema = Joi.object({
   work_preference: Joi.string()
     .valid(...Object.values(WorkSchedule))
     .required(),
+});
+
+/*
+|--------------------------------------------------------------------------
+| Identity Validation
+|--------------------------------------------------------------------------
+*/
+export const aboutSchema = Joi.object({
+  user_id: Joi.string().required(),
+  personal_details: Joi.object({
+    first_name: Joi.string().required(),
+    last_name: Joi.string().required(),
+    email: Joi.string().email().required(),
+    country: Joi.string().required(),
+    profile_picture: Joi.string().required(),
+    dob: Joi.string().required(),
+    role: Joi.string().required(),
+    phone_number: Joi.string().required(),
+    seniority: Joi.string().required(),
+    gender: Joi.string().required(),
+    resume: Joi.string(),
+  }).required(),
+  address: Joi.object({
+    line1: Joi.string().required(),
+    line2: Joi.string(),
+    city: Joi.string().required(),
+    state: Joi.string().required(),
+  }).required(),
+  social_links: Joi.object({
+    personal_website: Joi.string(),
+    linkedin: Joi.string(),
+    stack_overflow: Joi.string(),
+    github: Joi.string(),
+    dribble: Joi.string(),
+    behance: Joi.string(),
+    glass_door: Joi.string(),
+  }),
+  languages: Joi.array().items(
+    Joi.object({
+      id: Joi.string().required(),
+      name: Joi.string().required(),
+    }),
+  ),
 });

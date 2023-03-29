@@ -1,11 +1,11 @@
 import {
   EmploymentType,
+  IAbout,
   ICertification,
   IDocument,
   IEducationHistory,
   IExperience,
   IPreferences,
-  IProfile,
   JobDuration,
   JobTitle,
   TeamSize,
@@ -14,104 +14,132 @@ import {
 } from '@/interfaces/profile.interface';
 import { Schema, model } from 'mongoose';
 
-const experienceSchema: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  id: { type: String, required: true },
-  start_date: { type: Date, required: true },
-  end_date: { type: Date, required: true },
-  company: { type: String, requiredrequired: true },
-  country: { type: String, required: true },
-  role: { type: String, required: true },
-  employment_type: {
-    type: String,
-    enum: Object.values(EmploymentType),
-    required: true,
-  },
-  description: { type: String },
-});
-
-const educationHistorySchema: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  id: { type: String, trim: true },
-  institution: { type: String, trim: true },
-  field_of_study: { type: String },
-  degree_level: { type: String, trim: true },
-  date_attended: { type: String, trim: true },
-  employment_type: {
-    type: String,
-    enum: Object.values(EmploymentType),
-    trim: true,
-  },
-});
-
-const certificationSchema: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  id: { type: String, trim: true },
-  name: { type: String, trim: true },
-  organisation: { type: String, trim: true },
-  certificate_url: { type: String, trim: true },
-  date_obtained: { type: Date, trim: true },
-});
-
-const billingSchema: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  per_annum: { type: String, required: true },
-  hourly_rate: { type: String, trequiredrim: true },
-  payment_method: { type: String, required: true },
-});
-
-const identitySchema: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  proof_of_identity: { type: String, required: true },
-  proof_of_address: { type: String, required: true },
-});
-
-const workPreference: Schema = new Schema({
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  industry_type: [
-    {
+const experienceSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    id: { type: String, required: true },
+    start_date: { type: Date, required: true },
+    end_date: { type: Date, required: true },
+    company: { type: String, requiredrequired: true },
+    country: { type: String, required: true },
+    role: { type: String, required: true },
+    employment_type: {
       type: String,
-      enum: Object.values(JobTitle),
+      enum: Object.values(EmploymentType),
       required: true,
     },
-  ],
-  company_culture: [
-    {
+    description: { type: String },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const educationHistorySchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    id: { type: String, trim: true },
+    institution: { type: String, trim: true },
+    field_of_study: { type: String },
+    degree_level: { type: String, trim: true },
+    date_attended: { type: String, trim: true },
+    employment_type: {
+      type: String,
+      enum: Object.values(EmploymentType),
+      trim: true,
+    },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const certificationSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    id: { type: String, trim: true },
+    name: { type: String, trim: true },
+    organisation: { type: String, trim: true },
+    certificate_url: { type: String, trim: true },
+    date_obtained: { type: Date, trim: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const billingSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    per_annum: { type: String, required: true },
+    hourly_rate: { type: String, trequiredrim: true },
+    payment_method: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const identitySchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    proof_of_identity: { type: String, required: true },
+    proof_of_address: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const workPreference: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    industry_type: [
+      {
+        id: { type: String, required: true },
+        name: { type: String, enum: Object.values(JobTitle), required: true },
+      },
+    ],
+    company_culture: [
+      {
+        id: { type: String, required: true },
+        name: { type: String, enum: Object.values(TeamSize), required: true },
+      },
+    ],
+    company_size: {
       type: String,
       enum: Object.values(TeamSize),
       required: true,
     },
-  ],
-  company_size: {
-    type: String,
-    enum: Object.values(TeamSize),
-    required: true,
+    project_duration: {
+      type: String,
+      enum: Object.values(JobDuration),
+      required: true,
+    },
+    team_size: {
+      type: String,
+      enum: Object.values(TeamSize),
+      required: true,
+    },
+    work_location: {
+      type: String,
+      enum: Object.values(WorkOption),
+      required: true,
+    },
+    work_timezone: {
+      type: String,
+      required: true,
+    },
+    work_preference: {
+      type: String,
+      enum: Object.values(WorkSchedule),
+      required: true,
+    },
   },
-  project_duration: {
-    type: String,
-    enum: Object.values(JobDuration),
-    required: true,
+  {
+    timestamps: true,
   },
-  team_size: {
-    type: String,
-    enum: Object.values(TeamSize),
-    required: true,
-  },
-  work_location: {
-    type: String,
-    enum: Object.values(WorkOption),
-    required: true,
-  },
-  work_timezone: {
-    type: String,
-    required: true,
-  },
-  work_preference: {
-    type: String,
-    enum: Object.values(WorkSchedule),
-    required: true,
-  },
-});
+);
 
 const aboutSchema: Schema = new Schema(
   {
@@ -156,7 +184,7 @@ const aboutSchema: Schema = new Schema(
   },
 );
 
-const About = model<IProfile>('About', aboutSchema);
+const About = model<IAbout>('About', aboutSchema);
 const Experience = model<IExperience>('Experience', experienceSchema);
 const Education = model<IEducationHistory>('Education', educationHistorySchema);
 const Certification = model<ICertification>('Certification', certificationSchema);

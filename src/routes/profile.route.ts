@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { Routes } from '@interfaces/routes.interface';
 import authMiddleware from '@middlewares/auth.middleware';
+import AboutController from '@/controllers/about.controller';
 import ProfileController from '@/controllers/profile.controller';
 import BillingController from '@/controllers/billing.controller';
 import IdentityController from '@/controllers/identity.controller';
@@ -11,6 +12,7 @@ import CertificationController from '@/controllers/certification.controller';
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
+  public aboutController = new AboutController();
   public billingController = new BillingController();
   public profileController = new ProfileController();
   public identityController = new IdentityController();
@@ -88,6 +90,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.updatePreference);
     this.router.delete(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.deletePreference);
     this.router.get(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.getPreferenceById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | About Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/about`, authMiddleware, this.aboutController.createAbout);
+    this.router.get(`${this.path}/about`, authMiddleware, this.aboutController.getUserAbout);
+    this.router.put(`${this.path}/about/:id`, authMiddleware, this.aboutController.updateAbout);
+    this.router.delete(`${this.path}/about/:id`, authMiddleware, this.aboutController.deleteAbout);
+    this.router.get(`${this.path}/about/:id`, authMiddleware, this.aboutController.getAboutById);
   }
 }
 

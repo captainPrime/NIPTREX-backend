@@ -146,14 +146,14 @@ export interface IDocument {
   proof_of_address: string;
 }
 
-export interface IProfile extends Document {
+export interface IAbout extends Document {
   personal_details: IPersonalDetails;
   address: IAddress;
   social_details?: ISocialLink;
   languages?: ILanguage[];
 }
 
-export type IUpdateProfile = Partial<IProfile>;
+export type IUpdateAbout = Partial<IAbout>;
 export type IUpdateExperience = Partial<IExperience>;
 export type IUpdateEducationHistory = Partial<IEducationHistory>;
 export type IUpdateCertification = Partial<ICertification>;
