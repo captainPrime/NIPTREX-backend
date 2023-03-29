@@ -138,3 +138,5 @@ ReferenceError: Profile is not defined
 2023-03-29 03:23:17 error: [DELETE] /profile/about/6423a0caa159f04952e37d49 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
 2023-03-29 03:26:34 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-03-29 03:27:02 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:28:51 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:28:57 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR

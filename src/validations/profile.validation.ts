@@ -93,9 +93,7 @@ export const workPreferenceSchema = Joi.object({
     .items(
       Joi.object({
         id: Joi.string().required(),
-        name: Joi.string()
-          .valid(...Object.values(JobTitle))
-          .required(),
+        name: Joi.string().required(),
       }),
     )
     .required(),
@@ -103,33 +101,21 @@ export const workPreferenceSchema = Joi.object({
     .items(
       Joi.object({
         id: Joi.string().required(),
-        name: Joi.string()
-          .valid(...Object.values(TeamSize))
-          .required(),
+        name: Joi.string().required(),
       }),
     )
     .required(),
-  company_size: Joi.string()
-    .valid(...Object.values(TeamSize))
-    .required(),
-  project_duration: Joi.string()
-    .valid(...Object.values(JobDuration))
-    .required(),
-  team_size: Joi.string()
-    .valid(...Object.values(TeamSize))
-    .required(),
-  work_location: Joi.string()
-    .valid(...Object.values(WorkOption))
-    .required(),
+  company_size: Joi.string().required(),
+  project_duration: Joi.string().required(),
+  team_size: Joi.string().required(),
+  work_location: Joi.string().required(),
   work_timezone: Joi.string().required(),
-  work_preference: Joi.string()
-    .valid(...Object.values(WorkSchedule))
-    .required(),
+  work_preference: Joi.string().required(),
 });
 
 /*
 |--------------------------------------------------------------------------
-| Identity Validation
+| About Validation
 |--------------------------------------------------------------------------
 */
 export const aboutSchema = Joi.object({

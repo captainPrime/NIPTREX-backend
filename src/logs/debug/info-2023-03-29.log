@@ -261,3 +261,8 @@
 2023-03-29 03:28:20 info: 🚀 App listening on the port 3000
 2023-03-29 03:28:20 info: =================================
 2023-03-29 03:28:24 info: Connected to email server
+2023-03-29 03:28:28 info: Connected to Database Successfully...
+2023-03-29 03:28:51 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:28:51 info: [0mPOST /profile/preference [32m200[0m 535.297 ms - 219[0m
+2023-03-29 03:28:57 error: [POST] /profile/preference >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-03-29 03:28:57 info: [0mPOST /profile/preference [32m200[0m 637.724 ms - 219[0m
