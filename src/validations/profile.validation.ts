@@ -44,3 +44,40 @@ export const educationHistorySchema = Joi.object({
     .valid(...Object.values(EmploymentType))
     .required(),
 });
+
+/*
+|--------------------------------------------------------------------------
+| Certification Validation
+|--------------------------------------------------------------------------
+*/
+export const certificationSchema = Joi.object({
+  user_id: Joi.string().required(),
+  id: Joi.string().optional(),
+  name: Joi.string().optional(),
+  organisation: Joi.string().optional(),
+  certificate_url: Joi.string().optional(),
+  date_obtained: Joi.date().optional(),
+});
+
+/*
+|--------------------------------------------------------------------------
+| Billing Validation
+|--------------------------------------------------------------------------
+*/
+export const billingSchema = Joi.object({
+  user_id: Joi.string().required(),
+  per_annum: Joi.string().required(),
+  hourly_rate: Joi.string().required(),
+  payment_method: Joi.string().required(),
+});
+
+/*
+|--------------------------------------------------------------------------
+| Identity Validation
+|--------------------------------------------------------------------------
+*/
+export const identitySchema = Joi.object({
+  user_id: Joi.string().required(),
+  proof_of_identity: Joi.string().required(),
+  proof_of_address: Joi.string().required(),
+});
