@@ -4,10 +4,12 @@ import authMiddleware from '@middlewares/auth.middleware';
 import ProfileController from '@/controllers/profile.controller';
 import EducationController from '@/controllers/education.controller';
 import CertificationController from '@/controllers/certification.controller';
+import BillingController from '@/controllers/billing.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
+  public billingController = new BillingController();
   public profileController = new ProfileController();
   public educationController = new EducationController();
   public certificationController = new CertificationController();
@@ -49,6 +51,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.updateCertification);
     this.router.delete(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.deleteCertification);
     this.router.get(`${this.path}/certificate/:id`, authMiddleware, this.certificationController.getCertificationById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Billing Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/billing`, authMiddleware, this.billingController.createBilling);
+    this.router.get(`${this.path}/billing`, authMiddleware, this.billingController.getUserBilling);
+    this.router.put(`${this.path}/billing/:id`, authMiddleware, this.billingController.updateBilling);
+    this.router.delete(`${this.path}/billing/:id`, authMiddleware, this.billingController.deleteBilling);
+    this.router.get(`${this.path}/billing/:id`, authMiddleware, this.billingController.getBillingById);
   }
 }
 

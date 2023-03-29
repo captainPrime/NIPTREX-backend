@@ -157,3 +157,4 @@ export type IUpdateProfile = Partial<IProfile>;
 export type IUpdateExperience = Partial<IExperience>;
 export type IUpdateEducationHistory = Partial<IEducationHistory>;
 export type IUpdateCertification = Partial<ICertification>;
+export type IUpdateBilling = Partial<IBilling>;
