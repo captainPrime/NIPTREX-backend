@@ -1,0 +1,4 @@
+2023-03-31 00:00:00 info: Connected to email server
+2023-03-31 00:00:11 info: Connected to Database Successfully...
+2023-03-31 00:00:53 error: [GET] /profile >> StatusCode:: 404, Message:: The requested path /profile not found!
+2023-03-31 00:00:53 info: [0mGET /profile [32m200[0m 9.107 ms - 96[0m

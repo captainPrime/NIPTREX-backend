@@ -8,12 +8,12 @@ import {
   IExperience,
   IPreferences,
 } from '@/interfaces/profile.interface';
+import { toJSON } from '@/modules/toJSON';
 import { Schema, model } from 'mongoose';
 
 const experienceSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    id: { type: String, required: true },
     start_date: { type: Date, required: true },
     end_date: { type: Date, required: true },
     company: { type: String, requiredrequired: true },
@@ -53,7 +53,6 @@ const educationHistorySchema: Schema = new Schema(
 const certificationSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    id: { type: String, trim: true },
     name: { type: String, trim: true },
     organisation: { type: String, trim: true },
     certificate_url: { type: String, trim: true },
@@ -163,17 +162,20 @@ const aboutSchema: Schema = new Schema(
       behance: { type: String },
       glass_door: { type: String },
     },
-    languages: [
-      {
-        id: { type: String },
-        name: { type: String },
-      },
-    ],
+    languages: [{ type: String }],
   },
   {
     timestamps: true,
   },
 );
+
+aboutSchema.plugin(toJSON);
+experienceSchema.plugin(toJSON);
+educationHistorySchema.plugin(toJSON);
+certificationSchema.plugin(toJSON);
+billingSchema.plugin(toJSON);
+identitySchema.plugin(toJSON);
+workPreference.plugin(toJSON);
 
 const About = model<IAbout>('About', aboutSchema);
 const Experience = model<IExperience>('Experience', experienceSchema);

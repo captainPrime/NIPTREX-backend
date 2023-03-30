@@ -150,7 +150,7 @@ export interface IAbout extends Document {
   personal_details: IPersonalDetails;
   address: IAddress;
   social_details?: ISocialLink;
-  languages?: ILanguage[];
+  languages?: string[];
 }
 
 export type IUpdateAbout = Partial<IAbout>;
