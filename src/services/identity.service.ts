@@ -24,6 +24,8 @@ class IdentityService {
 
     const data: any = await this.identity.create(body);
 
+    await this.userService.updateUser(data.user_id, { has_identity: true });
+
     return data;
   }
 

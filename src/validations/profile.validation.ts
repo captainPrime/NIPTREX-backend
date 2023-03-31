@@ -16,7 +16,6 @@ export const experienceValidation = Joi.object({
       return value;
     }, 'MongoDB ObjectId')
     .required(),
-  id: Joi.string().required(),
   start_date: Joi.date().required(),
   end_date: Joi.date().greater(Joi.ref('start_date')).required(),
   company: Joi.string().required(),
@@ -35,7 +34,6 @@ export const experienceValidation = Joi.object({
 */
 export const educationHistorySchema = Joi.object({
   user_id: Joi.string().required(),
-  id: Joi.string().required(),
   institution: Joi.string().required(),
   field_of_study: Joi.string(),
   degree_level: Joi.string().required(),
@@ -52,7 +50,6 @@ export const educationHistorySchema = Joi.object({
 */
 export const certificationSchema = Joi.object({
   user_id: Joi.string().required(),
-  id: Joi.string().optional(),
   name: Joi.string().optional(),
   organisation: Joi.string().optional(),
   certificate_url: Joi.string().optional(),
@@ -89,22 +86,8 @@ export const identitySchema = Joi.object({
 */
 export const workPreferenceSchema = Joi.object({
   user_id: Joi.string().required(),
-  industry_type: Joi.array()
-    .items(
-      Joi.object({
-        id: Joi.string().required(),
-        name: Joi.string().required(),
-      }),
-    )
-    .required(),
-  company_culture: Joi.array()
-    .items(
-      Joi.object({
-        id: Joi.string().required(),
-        name: Joi.string().required(),
-      }),
-    )
-    .required(),
+  industry_type: Joi.array().items(Joi.string()).required(),
+  company_culture: Joi.array().items(Joi.string()).required(),
   company_size: Joi.string().required(),
   project_duration: Joi.string().required(),
   team_size: Joi.string().required(),
@@ -148,10 +131,5 @@ export const aboutSchema = Joi.object({
     behance: Joi.string().optional().allow(''),
     glass_door: Joi.string().optional().allow(''),
   }),
-  languages: Joi.array().items(
-    Joi.object({
-      id: Joi.string().required(),
-      name: Joi.string().required(),
-    }),
-  ),
+  languages: Joi.array().items(Joi.string()),
 });

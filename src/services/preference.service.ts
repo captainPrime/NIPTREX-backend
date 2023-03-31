@@ -24,6 +24,8 @@ class PreferenceService {
 
     const data: any = await this.preference.create(body);
 
+    await this.userService.updateUser(data.user_id, { has_work_preference: true });
+
     return data;
   }
 

@@ -24,6 +24,8 @@ class BillingService {
 
     const data: any = await this.billing.create(body);
 
+    await this.userService.updateUser(data.user_id, { has_billing: true });
+
     return data;
   }
 

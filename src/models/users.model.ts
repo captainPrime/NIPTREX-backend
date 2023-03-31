@@ -47,6 +47,38 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
       type: Boolean,
       default: false,
     },
+    has_about: {
+      type: Boolean,
+      default: false,
+    },
+    has_experience: {
+      type: Boolean,
+      default: false,
+    },
+    has_education: {
+      type: Boolean,
+      default: false,
+    },
+    has_certification: {
+      type: Boolean,
+      default: false,
+    },
+    has_billing: {
+      type: Boolean,
+      default: false,
+    },
+    has_identity: {
+      type: Boolean,
+      default: false,
+    },
+    has_work_preference: {
+      type: Boolean,
+      default: false,
+    },
+    is_profile_completed: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
@@ -82,6 +114,14 @@ userSchema.pre('save', async function (next) {
   const user = this;
   if (user.isModified('password')) {
     user.password = await bcrypt.hash(user.password, 8);
+  }
+  next();
+});
+
+userSchema.pre('save', async function (next) {
+  const user = this;
+  if (user.isModified('has_education')) {
+    user.is_profile_completed = true;
   }
   next();
 });

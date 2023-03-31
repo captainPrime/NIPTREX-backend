@@ -3,13 +3,18 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 // import { CreateProfileDto } from '@/dtos/profile.dto';
 import mongoose from 'mongoose';
-import { Experience, Education } from '@/models/profile.model';
+import { Experience, Education, Certification, Preference, Identity, Billing, About } from '@/models/profile.model';
 import { IEducationHistory, IExperience, IUpdateEducationHistory, IUpdateExperience } from '@/interfaces/profile.interface';
 import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
 
 class ProfileService {
-  public experience: any = Experience;
+  public about: any = About;
+  public billing: any = Billing;
+  public identity: any = Identity;
   public education: any = Education;
+  public experience: any = Experience;
+  public preference: any = Preference;
+  public certification: any = Certification;
   public userService = new UserService();
 
   /*
@@ -17,15 +22,50 @@ class ProfileService {
   | Add Comment
   |--------------------------------------------------------------------------
   */
-  // public async createProfile(profileData: CreateProfileDto): Promise<any> {
-  //   if (isEmpty(profileData)) throw new HttpException(400, 2005, "You're not userData");
+  public async getProfile(userId: string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2005, "You're not userData");
 
-  //   const data: any = await this.profile.create(profileData);
+    const about = await this.about.find({ user_id: userId });
+    const billing = await this.billing.find({ user_id: userId });
+    const identity = await this.identity.find({ user_id: userId });
+    const education = await this.education.find({ user_id: userId });
+    const experience = await this.experience.find({ user_id: userId });
+    const preference = await this.preference.find({ user_id: userId });
+    const certification = await this.certification.find({ user_id: userId });
 
-  //   await this.userService.updateUser(data.user_id, { has_profile: true });
+    // Define a function to calculate the percentage of profile completion
+    const calculateProfileCompletion = (userProfile: any) => {
+      let completion = 0;
+      if (userProfile.personal_details) completion += 10;
+      if (userProfile.address) completion += 10;
+      if (userProfile.social_links) completion += 10;
+      if (userProfile.languages) completion += 10;
+      if (userProfile.work_preferences) completion += 10;
+      if (userProfile.education_history.length !== 0) completion += 10;
+      if (userProfile.experience.length !== 0) completion += 10;
+      if (userProfile.certification.length !== 0) completion += 10;
+      if (userProfile.proof_of_identity) completion += 10;
+      if (userProfile.billing) completion += 10;
+      return `${completion}%`;
+    };
 
-  //   return data;
-  // }
+    const profile = {
+      personal_details: about[0]?.personal_details,
+      address: about[0]?.address,
+      social_links: about[0]?.social_links,
+      languages: about[0]?.languages,
+      work_preferences: preference[0],
+      education_history: education,
+      experience,
+      certification,
+      proof_of_identity: identity[0],
+      billing: billing[0],
+    };
+
+    const profile_percentage = calculateProfileCompletion(profile);
+
+    return { profile_percentage, profile };
+  }
 
   /*
   |--------------------------------------------------------------------------
@@ -40,6 +80,8 @@ class ProfileService {
     if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: any = await this.experience.create(body);
+
+    await this.userService.updateUser(data.user_id, { has_profile: true, has_experience: true });
 
     return data;
   }

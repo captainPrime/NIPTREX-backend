@@ -25,6 +25,8 @@ class EducationService {
 
     const data: any = await this.education.create(body);
 
+    await this.userService.updateUser(data.user_id, { has_education: true });
+
     return data;
   }
 

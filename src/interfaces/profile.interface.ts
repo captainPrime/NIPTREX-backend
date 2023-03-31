@@ -131,8 +131,8 @@ export interface IBilling {
 }
 
 export interface IPreferences {
-  industry_type: JobTitle;
-  company_culture: TeamSize;
+  industry_type: string[];
+  company_culture: string[];
   company_size: TeamSize;
   project_duration: JobDuration;
   team_size: TeamSize;

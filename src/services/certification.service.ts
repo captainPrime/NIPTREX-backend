@@ -24,6 +24,8 @@ class CertificationService {
 
     const data: any = await this.certification.create(body);
 
+    await this.userService.updateUser(data.user_id, { has_certification: true });
+
     return data;
   }
 

@@ -12,6 +12,14 @@ export interface IUser {
   country: string;
   verified: boolean;
   has_profile: boolean;
+  has_about: boolean;
+  has_experience: boolean;
+  has_education: boolean;
+  has_certification: boolean;
+  has_billing: boolean;
+  has_identity: boolean;
+  has_work_preference: boolean;
+  is_profile_completed: boolean;
 }
 
 export interface IUserDoc extends IUser, Document {

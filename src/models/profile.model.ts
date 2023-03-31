@@ -89,18 +89,8 @@ const identitySchema: Schema = new Schema(
 const workPreference: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    industry_type: [
-      {
-        id: { type: String, required: true },
-        name: { type: String, required: true },
-      },
-    ],
-    company_culture: [
-      {
-        id: { type: String, required: true },
-        name: { type: String, required: true },
-      },
-    ],
+    industry_type: [{ type: String }],
+    company_culture: [{ type: String }],
     company_size: {
       type: String,
       required: true,
