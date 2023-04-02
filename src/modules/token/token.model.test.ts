@@ -10,7 +10,7 @@ import TokenService from './token.service';
 class TokenModelTest {
   password = 'password1';
   public tokenService = new TokenService();
-  accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'minutes');
+  accessTokenExpires = moment().add(JWT_ACCESS_EXPIRATION_MINUTES, 'days');
 
   userOne = {
     _id: new mongoose.Types.ObjectId(),

@@ -22,7 +22,9 @@ class AboutController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.aboutService.createAbout({ ...userData, user_id: req.user.id });
+      const { first_name, last_name, email, country, phone_number, id } = req.user;
+
+      const data = await this.aboutService.createAbout({ ...userData, user_id: id, first_name, last_name, email, country, phone_number });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

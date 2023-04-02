@@ -102,14 +102,9 @@ export const workPreferenceSchema = Joi.object({
 export const aboutSchema = Joi.object({
   user_id: Joi.string().required(),
   personal_details: Joi.object({
-    first_name: Joi.string().required(),
-    last_name: Joi.string().required(),
-    email: Joi.string().email().required(),
-    country: Joi.string().required(),
     profile_picture: Joi.string().required(),
     dob: Joi.string().required(),
     role: Joi.string().required(),
-    phone_number: Joi.string().required(),
     seniority: Joi.string().required(),
     gender: Joi.string().required(),
     resume: Joi.string(),

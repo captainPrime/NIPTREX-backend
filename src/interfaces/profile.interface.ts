@@ -61,14 +61,9 @@ export enum WorkOption {
 }
 
 export interface IPersonalDetails {
-  first_name: string;
-  last_name: string;
-  email: string;
-  country: string;
   profile_picture: string;
   dob: Date;
   role: string;
-  phone_number: string;
   seniority: string;
   gender: string;
   resume?: string;
