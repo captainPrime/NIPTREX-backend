@@ -1,0 +1,40 @@
+2023-04-02 02:28:36 info: =================================
+2023-04-02 02:28:36 info: ======= ENV: development =======
+2023-04-02 02:28:36 info: 🚀 App listening on the port 3000
+2023-04-02 02:28:36 info: =================================
+2023-04-02 02:28:39 info: Connected to email server
+2023-04-02 02:28:50 info: Connected to Database Successfully...
+2023-04-02 02:29:51 info: [0mGET /reload_db [32m200[0m 3919.523 ms - 74[0m
+2023-04-02 02:30:32 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:30:32 info: [0mPOST /auth/register [32m200[0m 5514.328 ms - 513[0m
+2023-04-02 02:30:48 error: [GET] /profile >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-02 02:30:48 info: [0mGET /profile [32m200[0m 3.487 ms - 79[0m
+2023-04-02 02:31:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:31:11 info: [0mPOST /auth/login [32m200[0m 710.630 ms - 587[0m
+2023-04-02 02:31:19 info: [0mGET /profile [32m200[0m 2234.510 ms - 179[0m
+2023-04-02 02:31:41 error: [POST] /profile/about >> StatusCode:: 400, Message:: ACCOUNT_NOT_VERIFIED
+2023-04-02 02:31:41 info: [0mPOST /profile/about [32m200[0m 1361.328 ms - 78[0m
+2023-04-02 02:32:00 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:32:00 info: [0mPOST /auth/send_verification_email [32m200[0m 4651.490 ms - 81[0m
+2023-04-02 02:32:24 info: [0mPOST /auth/verify_email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDI4ZGFiMzUwN2I2MTJmMTFiOGRkZTUiLCJpYXQiOjE2ODAzOTkxMTYsImV4cCI6MTY4MDM5OTcxNiwidHlwZSI6InZlcmlmeUVtYWlsIn0.V3eo0K1Xmp7WMFpBDR423IgxWxs0o2aHmq-096sD5oI [32m200[0m 1532.220 ms - 81[0m
+2023-04-02 02:32:24 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:32:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:32:31 info: [0mPOST /auth/login [32m200[0m 673.607 ms - 587[0m
+2023-04-02 02:32:36 info: [0mPOST /profile/about [32m200[0m 1459.468 ms - 796[0m
+2023-04-02 02:32:55 info: [0mGET /profile [32m200[0m 2840.232 ms - 824[0m
+2023-04-02 03:15:49 info: =================================
+2023-04-02 03:15:49 info: ======= ENV: development =======
+2023-04-02 03:15:49 info: 🚀 App listening on the port 3000
+2023-04-02 03:15:49 info: =================================
+2023-04-02 03:15:52 info: Connected to email server
+2023-04-02 03:15:52 info: Connected to Database Successfully...
+2023-04-02 03:21:11 info: =================================
+2023-04-02 03:21:11 info: ======= ENV: development =======
+2023-04-02 03:21:11 info: 🚀 App listening on the port 3000
+2023-04-02 03:21:11 info: =================================
+2023-04-02 03:21:14 info: Connected to email server
+2023-04-02 03:21:15 info: Connected to Database Successfully...
+2023-04-02 03:23:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 03:23:04 info: [0mPOST /auth/login [32m200[0m 631.582 ms - 587[0m
+2023-04-02 03:23:11 info: [0mPOST /profile/education [32m200[0m 1593.377 ms - 321[0m
+2023-04-02 03:23:20 info: [0mPOST /profile/experience [32m200[0m 971.990 ms - 401[0m

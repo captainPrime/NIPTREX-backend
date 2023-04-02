@@ -1,0 +1,8 @@
+2023-04-02 02:30:32 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:30:48 error: [GET] /profile >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-02 02:31:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:31:41 error: [POST] /profile/about >> StatusCode:: 400, Message:: ACCOUNT_NOT_VERIFIED
+2023-04-02 02:32:00 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:32:24 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 02:32:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 03:23:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

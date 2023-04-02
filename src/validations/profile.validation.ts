@@ -38,9 +38,7 @@ export const educationHistorySchema = Joi.object({
   field_of_study: Joi.string(),
   degree_level: Joi.string().required(),
   date_attended: Joi.string().required(),
-  employment_type: Joi.string()
-    .valid(...Object.values(EmploymentType))
-    .required(),
+  graduation_date: Joi.string().required(),
 });
 
 /*

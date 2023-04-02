@@ -39,9 +39,8 @@ const educationHistorySchema: Schema = new Schema(
     field_of_study: { type: String },
     degree_level: { type: String, trim: true },
     date_attended: { type: String, trim: true },
-    employment_type: {
+    graduation_date: {
       type: String,
-      enum: Object.values(EmploymentType),
       trim: true,
     },
   },

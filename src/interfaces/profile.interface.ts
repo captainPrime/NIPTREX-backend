@@ -108,7 +108,7 @@ export interface IEducationHistory {
   field_of_study: string;
   degree_level: string;
   date_attended: Date;
-  employment_type: EmploymentType;
+  graduation_date: string;
 }
 
 export interface ICertification {
