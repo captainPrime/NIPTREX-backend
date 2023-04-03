@@ -49,21 +49,16 @@ const educationHistorySchema: Schema = new Schema(
   },
 );
 
-const certificationSchema: Schema = new Schema(
-  {
-    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    name: { type: String, trim: true },
-    organisation: { type: String, trim: true },
-    certificate_url: { type: String, trim: true },
-    date_obtained: {
-      type: String,
-      trim: true,
-    },
+const certificationSchema: Schema = new Schema({
+  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  name: { type: String, trim: true },
+  organisation: { type: String, trim: true },
+  certificate_url: { type: String, trim: true },
+  date_obtained: {
+    type: String,
+    trim: true,
   },
-  {
-    timestamps: true,
-  },
-);
+});
 
 const billingSchema: Schema = new Schema(
   {

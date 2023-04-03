@@ -32,3 +32,5 @@ TypeError: Invalid schema configuration: `ToLocaleString` is not a valid type at
 2023-04-03 18:43:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-03 18:46:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-03 18:46:42 error: [POST] /profile/certificate >> StatusCode:: 400, Message:: userData.date_obtained.toISOString is not a function
+2023-04-03 19:14:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 19:34:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
