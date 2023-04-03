@@ -67,7 +67,6 @@ export interface IPersonalDetails {
   seniority: string;
   gender: string;
   resume?: string;
-  skills: string[];
 }
 
 export interface IAddress {
@@ -147,6 +146,7 @@ export interface IAbout extends Document {
   address: IAddress;
   social_details?: ISocialLink;
   languages?: string[];
+  skills: string[];
 }
 
 export type IUpdateAbout = Partial<IAbout>;

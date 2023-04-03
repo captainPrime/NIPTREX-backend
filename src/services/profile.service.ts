@@ -52,6 +52,7 @@ class ProfileService {
     const profile = {
       personal_details: about[0]?.personal_details,
       address: about[0]?.address,
+      skills: about[0]?.skills,
       social_links: about[0]?.social_links,
       languages: about[0]?.languages,
       work_preferences: preference[0],

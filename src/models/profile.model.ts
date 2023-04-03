@@ -55,7 +55,10 @@ const certificationSchema: Schema = new Schema(
     name: { type: String, trim: true },
     organisation: { type: String, trim: true },
     certificate_url: { type: String, trim: true },
-    date_obtained: { type: Date, trim: true },
+    date_obtained: {
+      type: Date,
+      trim: true,
+    },
   },
   {
     timestamps: true,
@@ -66,7 +69,7 @@ const billingSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     per_annum: { type: String, required: true },
-    hourly_rate: { type: String, trequiredrim: true },
+    hourly_rate: { type: String, required: true },
     payment_method: { type: String, required: true },
   },
   {
@@ -135,7 +138,6 @@ const aboutSchema: Schema = new Schema(
       seniority: { type: String, required: true },
       gender: { type: String, required: true },
       resume: { type: String },
-      skills: [{ type: String }],
     },
     address: {
       line1: { type: String, required: true },
@@ -153,6 +155,7 @@ const aboutSchema: Schema = new Schema(
       glass_door: { type: String },
     },
     languages: [{ type: String }],
+    skills: [{ type: String }],
   },
   {
     timestamps: true,

@@ -117,3 +117,103 @@
 2023-04-03 18:04:32 info: Connected to Database Successfully...
 2023-04-03 18:04:40 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-03 18:04:40 info: [0mPOST /profile/about [32m200[0m 595.306 ms - 129[0m
+2023-04-03 18:05:19 info: =================================
+2023-04-03 18:05:19 info: ======= ENV: development =======
+2023-04-03 18:05:19 info: 🚀 App listening on the port 3000
+2023-04-03 18:05:19 info: =================================
+2023-04-03 18:05:21 info: Connected to email server
+2023-04-03 18:05:22 info: Connected to Database Successfully...
+2023-04-03 18:05:28 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 18:05:28 info: [0mPOST /profile/about [32m200[0m 1423.556 ms - 130[0m
+2023-04-03 18:08:46 info: =================================
+2023-04-03 18:08:46 info: ======= ENV: development =======
+2023-04-03 18:08:46 info: 🚀 App listening on the port 3000
+2023-04-03 18:08:46 info: =================================
+2023-04-03 18:08:48 info: Connected to email server
+2023-04-03 18:08:49 info: Connected to Database Successfully...
+2023-04-03 18:09:00 info: [0mPOST /profile/about [32m200[0m 1308.975 ms - 814[0m
+2023-04-03 18:13:07 info: =================================
+2023-04-03 18:13:07 info: ======= ENV: development =======
+2023-04-03 18:13:07 info: 🚀 App listening on the port 3000
+2023-04-03 18:13:07 info: =================================
+2023-04-03 18:13:09 info: Connected to email server
+2023-04-03 18:13:10 info: Connected to Database Successfully...
+2023-04-03 18:13:27 info: [0mGET /reload_db [32m200[0m 3514.603 ms - 74[0m
+2023-04-03 18:13:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 18:13:32 info: [0mPOST /auth/login [32m200[0m 764.177 ms - 587[0m
+2023-04-03 18:13:39 info: [0mGET /profile [32m200[0m 2307.637 ms - 179[0m
+2023-04-03 18:13:50 info: [0mPOST /profile/about [32m200[0m 988.293 ms - 814[0m
+2023-04-03 18:14:41 info: [0mGET /profile [32m200[0m 1969.020 ms - 816[0m
+2023-04-03 18:14:54 info: [0mGET /profile/about [32m200[0m 836.594 ms - 816[0m
+2023-04-03 18:15:14 info: [0mPOST /profile/education [32m200[0m 887.768 ms - 321[0m
+2023-04-03 18:15:21 info: [0mGET /profile/education [32m200[0m 714.824 ms - 323[0m
+2023-04-03 18:15:37 info: [0mPOST /profile/experience [32m200[0m 1159.124 ms - 401[0m
+2023-04-03 18:15:44 info: [0mGET /profile/experience [32m200[0m 651.202 ms - 403[0m
+2023-04-03 18:16:22 error: [POST] /profile/certificate >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 18:16:22 info: [0mPOST /profile/certificate [32m200[0m 423.703 ms - 105[0m
+2023-04-03 18:16:29 info: [0mPOST /profile/certificate [32m200[0m 1231.479 ms - 359[0m
+2023-04-03 18:28:11 info: =================================
+2023-04-03 18:28:11 info: ======= ENV: development =======
+2023-04-03 18:28:11 info: 🚀 App listening on the port 3000
+2023-04-03 18:28:11 info: =================================
+2023-04-03 18:28:14 info: Connected to email server
+2023-04-03 18:28:19 info: Connected to Database Successfully...
+2023-04-03 18:28:26 info: [0mPOST /profile/certificate [32m200[0m 1084.509 ms - 359[0m
+2023-04-03 18:35:35 info: =================================
+2023-04-03 18:35:35 info: ======= ENV: development =======
+2023-04-03 18:35:35 info: 🚀 App listening on the port 3000
+2023-04-03 18:35:35 info: =================================
+2023-04-03 18:35:40 info: Connected to email server
+2023-04-03 18:35:48 info: Connected to Database Successfully...
+2023-04-03 18:42:48 info: =================================
+2023-04-03 18:42:48 info: ======= ENV: development =======
+2023-04-03 18:42:48 info: 🚀 App listening on the port 3000
+2023-04-03 18:42:48 info: =================================
+2023-04-03 18:42:50 info: Connected to email server
+2023-04-03 18:42:50 info: Connected to Database Successfully...
+2023-04-03 18:43:01 info: [0mGET /reload_db [32m200[0m 2250.122 ms - 74[0m
+2023-04-03 18:43:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 18:43:05 info: [0mPOST /auth/login [32m200[0m 797.845 ms - 587[0m
+2023-04-03 18:43:15 info: [0mPOST /profile/about [32m200[0m 1377.259 ms - 814[0m
+2023-04-03 18:43:28 info: [0mPOST /profile/experience [32m200[0m 1067.293 ms - 401[0m
+2023-04-03 18:43:34 info: [0mGET /profile/experience [32m200[0m 748.060 ms - 403[0m
+2023-04-03 18:45:57 info: =================================
+2023-04-03 18:45:57 info: ======= ENV: development =======
+2023-04-03 18:45:57 info: 🚀 App listening on the port 3000
+2023-04-03 18:45:57 info: =================================
+2023-04-03 18:45:59 info: Connected to email server
+2023-04-03 18:46:10 info: Connected to Database Successfully...
+2023-04-03 18:46:24 info: [0mGET /reload_db [32m200[0m 4681.876 ms - 74[0m
+2023-04-03 18:46:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 18:46:28 info: [0mPOST /auth/login [32m200[0m 1127.260 ms - 587[0m
+2023-04-03 18:46:39 info: [0mPOST /profile/about [32m200[0m 2117.255 ms - 814[0m
+2023-04-03 18:46:42 error: [POST] /profile/certificate >> StatusCode:: 400, Message:: userData.date_obtained.toISOString is not a function
+2023-04-03 18:46:42 info: [0mPOST /profile/certificate [32m200[0m 825.122 ms - 109[0m
+2023-04-03 18:48:05 info: =================================
+2023-04-03 18:48:05 info: ======= ENV: development =======
+2023-04-03 18:48:05 info: 🚀 App listening on the port 3000
+2023-04-03 18:48:05 info: =================================
+2023-04-03 18:48:29 info: Connected to Database Successfully...
+2023-04-03 18:48:37 info: Connected to email server
+2023-04-03 18:48:37 info: [0mPOST /profile/certificate [32m200[0m 1500.058 ms - 359[0m
+2023-04-03 18:49:43 info: =================================
+2023-04-03 18:49:43 info: ======= ENV: development =======
+2023-04-03 18:49:43 info: 🚀 App listening on the port 3000
+2023-04-03 18:49:43 info: =================================
+2023-04-03 18:49:45 info: Connected to Database Successfully...
+2023-04-03 18:49:45 info: Connected to email server
+2023-04-03 18:49:55 info: [0mPOST /profile/certificate [32m200[0m 1118.306 ms - 359[0m
+2023-04-03 18:51:49 info: =================================
+2023-04-03 18:51:49 info: ======= ENV: development =======
+2023-04-03 18:51:49 info: 🚀 App listening on the port 3000
+2023-04-03 18:51:49 info: =================================
+2023-04-03 18:51:52 info: Connected to email server
+2023-04-03 18:52:14 info: Connected to Database Successfully...
+2023-04-03 18:52:22 info: [0mPOST /profile/certificate [32m200[0m 1175.393 ms - 359[0m
+2023-04-03 18:52:36 info: [0mGET /profile [32m200[0m 2024.404 ms - -[0m
+2023-04-03 18:54:02 info: =================================
+2023-04-03 18:54:02 info: ======= ENV: development =======
+2023-04-03 18:54:02 info: 🚀 App listening on the port 3000
+2023-04-03 18:54:02 info: =================================
+2023-04-03 18:54:15 info: Connected to Database Successfully...
+2023-04-03 18:54:35 info: Connected to email server

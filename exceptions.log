@@ -640,3 +640,15 @@ ReferenceError: Profile is not defined
     at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-07935325120459513.js:114:20)
     at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-07935325120459513.js:71:20)
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-04-03 18:34:41 error: uncaughtException: Invalid schema configuration: `ToLocaleString` is not a valid type at path `start_date`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `ToLocaleString` is not a valid type at path `start_date`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schema.js:1251:11)
+    at Schema.path (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schema.js:882:27)
+    at Schema.add (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schema.js:636:14)
+    at new Schema (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schema.js:133:10)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/models/profile.model.ts:14:34)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5863748516134406.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5863748516134406.js:114:20)

@@ -22,7 +22,11 @@ class CertificationController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.certificationService.createCertification({ ...userData, user_id: req.user.id });
+      const data = await this.certificationService.createCertification({
+        ...userData,
+        user_id: req.user.id,
+        date_obtained: new Date(userData.date_obtained).toString(),
+      });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

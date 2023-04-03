@@ -35,8 +35,6 @@ class AboutController {
           country,
         },
       };
-
-      console.log(payload);
       const data = await this.aboutService.createAbout(payload);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });

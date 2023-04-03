@@ -109,8 +109,9 @@ export const aboutSchema = Joi.object({
     phone_number: Joi.string().required(),
     gender: Joi.string().required(),
     resume: Joi.string(),
-    skills: Joi.array().items(Joi.string()),
-  }).required(),
+  })
+    .unknown(true)
+    .required(),
   address: Joi.object({
     line1: Joi.string().required(),
     line2: Joi.string().optional().allow(''),
@@ -127,4 +128,5 @@ export const aboutSchema = Joi.object({
     glass_door: Joi.string().optional().allow(''),
   }),
   languages: Joi.array().items(Joi.string()),
+  skills: Joi.array().items(Joi.string()),
 });
