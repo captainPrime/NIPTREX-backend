@@ -9,3 +9,6 @@
 2023-04-02 22:23:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-02 22:25:37 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-02 22:50:56 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-02 22:54:15 error: [POST] /profile/about >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-02 22:54:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 22:54:41 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR

@@ -63,3 +63,16 @@
 2023-04-02 22:53:49 info: =================================
 2023-04-02 22:53:54 info: Connected to email server
 2023-04-02 22:54:02 info: Connected to Database Successfully...
+2023-04-02 22:54:15 error: [POST] /profile/about >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-02 22:54:15 info: [0mPOST /profile/about [32m200[0m 47.293 ms - 79[0m
+2023-04-02 22:54:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-02 22:54:24 info: [0mPOST /auth/login [32m200[0m 781.213 ms - 587[0m
+2023-04-02 22:54:35 info: [0mGET /profile [32m200[0m 3932.566 ms - 179[0m
+2023-04-02 22:54:41 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-02 22:54:41 info: [0mPOST /profile/about [32m200[0m 535.255 ms - 113[0m
+2023-04-02 23:07:12 info: =================================
+2023-04-02 23:07:12 info: ======= ENV: development =======
+2023-04-02 23:07:12 info: 🚀 App listening on the port 3000
+2023-04-02 23:07:12 info: =================================
+2023-04-02 23:07:16 info: Connected to email server
+2023-04-02 23:07:18 info: Connected to Database Successfully...

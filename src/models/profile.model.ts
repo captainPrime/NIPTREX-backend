@@ -135,6 +135,7 @@ const aboutSchema: Schema = new Schema(
       seniority: { type: String, required: true },
       gender: { type: String, required: true },
       resume: { type: String },
+      skills: [{ type: String }],
     },
     address: {
       line1: { type: String, required: true },

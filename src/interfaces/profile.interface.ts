@@ -67,6 +67,7 @@ export interface IPersonalDetails {
   seniority: string;
   gender: string;
   resume?: string;
+  skills: string[];
 }
 
 export interface IAddress {

@@ -1,0 +1,119 @@
+2023-04-03 17:27:39 info: =================================
+2023-04-03 17:27:39 info: ======= ENV: development =======
+2023-04-03 17:27:39 info: 🚀 App listening on the port 3000
+2023-04-03 17:27:39 info: =================================
+2023-04-03 17:28:54 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-03 17:29:22 info: =================================
+2023-04-03 17:29:22 info: ======= ENV: development =======
+2023-04-03 17:29:22 info: 🚀 App listening on the port 3000
+2023-04-03 17:29:22 info: =================================
+2023-04-03 17:30:37 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-03 17:35:26 info: =================================
+2023-04-03 17:35:26 info: ======= ENV: development =======
+2023-04-03 17:35:26 info: 🚀 App listening on the port 3000
+2023-04-03 17:35:26 info: =================================
+2023-04-03 17:35:26 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-03 17:35:58 info: Connected to email server
+2023-04-03 17:38:18 info: =================================
+2023-04-03 17:38:18 info: ======= ENV: development =======
+2023-04-03 17:38:18 info: 🚀 App listening on the port 3000
+2023-04-03 17:38:18 info: =================================
+2023-04-03 17:38:25 info: Connected to email server
+2023-04-03 17:38:33 info: Connected to Database Successfully...
+2023-04-03 17:38:43 error: [GET] /users/profile >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-03 17:38:43 info: [0mGET /users/profile [32m200[0m 8.811 ms - 79[0m
+2023-04-03 17:38:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 17:38:49 info: [0mPOST /auth/login [32m200[0m 550.110 ms - 587[0m
+2023-04-03 17:38:54 info: [0mGET /users/profile [32m200[0m 469.622 ms - 507[0m
+2023-04-03 17:39:43 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:39:43 info: [0mPOST /profile/about [32m200[0m 1131.946 ms - 113[0m
+2023-04-03 17:41:39 info: =================================
+2023-04-03 17:41:39 info: ======= ENV: development =======
+2023-04-03 17:41:39 info: 🚀 App listening on the port 3000
+2023-04-03 17:41:39 info: =================================
+2023-04-03 17:41:42 info: Connected to Database Successfully...
+2023-04-03 17:41:42 info: Connected to email server
+2023-04-03 17:42:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-03 17:42:02 info: [0mPOST /auth/login [32m200[0m 642.850 ms - 587[0m
+2023-04-03 17:43:59 info: =================================
+2023-04-03 17:43:59 info: ======= ENV: development =======
+2023-04-03 17:43:59 info: 🚀 App listening on the port 3000
+2023-04-03 17:43:59 info: =================================
+2023-04-03 17:44:02 info: Connected to email server
+2023-04-03 17:44:13 info: Connected to Database Successfully...
+2023-04-03 17:44:25 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:44:25 info: [0mPOST /profile/about [32m200[0m 854.767 ms - 113[0m
+2023-04-03 17:45:19 info: =================================
+2023-04-03 17:45:19 info: ======= ENV: development =======
+2023-04-03 17:45:19 info: 🚀 App listening on the port 3000
+2023-04-03 17:45:19 info: =================================
+2023-04-03 17:45:22 info: Connected to email server
+2023-04-03 17:45:33 info: Connected to Database Successfully...
+2023-04-03 17:45:37 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:45:37 info: [0mPOST /profile/about [32m200[0m 492.382 ms - 113[0m
+2023-04-03 17:49:15 info: =================================
+2023-04-03 17:49:15 info: ======= ENV: development =======
+2023-04-03 17:49:15 info: 🚀 App listening on the port 3000
+2023-04-03 17:49:15 info: =================================
+2023-04-03 17:50:17 info: =================================
+2023-04-03 17:50:17 info: ======= ENV: development =======
+2023-04-03 17:50:17 info: 🚀 App listening on the port 3000
+2023-04-03 17:50:17 info: =================================
+2023-04-03 17:50:19 info: Connected to email server
+2023-04-03 17:50:25 info: Connected to Database Successfully...
+2023-04-03 17:50:33 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:50:33 info: [0mPOST /profile/about [32m200[0m 636.016 ms - 107[0m
+2023-04-03 17:51:35 info: =================================
+2023-04-03 17:51:35 info: ======= ENV: development =======
+2023-04-03 17:51:35 info: 🚀 App listening on the port 3000
+2023-04-03 17:51:35 info: =================================
+2023-04-03 17:51:37 info: Connected to email server
+2023-04-03 17:51:50 info: Connected to Database Successfully...
+2023-04-03 17:51:56 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:51:56 info: [0mPOST /profile/about [32m200[0m 1647.699 ms - 116[0m
+2023-04-03 17:57:54 info: =================================
+2023-04-03 17:57:54 info: ======= ENV: development =======
+2023-04-03 17:57:54 info: 🚀 App listening on the port 3000
+2023-04-03 17:57:54 info: =================================
+2023-04-03 17:57:57 info: Connected to email server
+2023-04-03 17:58:06 info: Connected to Database Successfully...
+2023-04-03 17:58:12 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:58:12 info: [0mPOST /profile/about [32m200[0m 502.782 ms - 130[0m
+2023-04-03 17:58:39 info: =================================
+2023-04-03 17:58:39 info: ======= ENV: development =======
+2023-04-03 17:58:39 info: 🚀 App listening on the port 3000
+2023-04-03 17:58:39 info: =================================
+2023-04-03 17:58:42 info: Connected to Database Successfully...
+2023-04-03 17:58:42 info: Connected to email server
+2023-04-03 17:58:47 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 17:58:47 info: [0mPOST /profile/about [32m200[0m 663.713 ms - 132[0m
+2023-04-03 18:00:07 info: =================================
+2023-04-03 18:00:07 info: ======= ENV: development =======
+2023-04-03 18:00:07 info: 🚀 App listening on the port 3000
+2023-04-03 18:00:07 info: =================================
+2023-04-03 18:00:25 info: Connected to Database Successfully...
+2023-04-03 18:00:30 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 18:00:30 info: [0mPOST /profile/about [32m200[0m 1761.135 ms - 132[0m
+2023-04-03 18:00:42 info: Connected to email server
+2023-04-03 18:01:51 info: =================================
+2023-04-03 18:01:51 info: ======= ENV: development =======
+2023-04-03 18:01:51 info: 🚀 App listening on the port 3000
+2023-04-03 18:01:51 info: =================================
+2023-04-03 18:01:53 info: Connected to email server
+2023-04-03 18:02:03 info: Connected to Database Successfully...
+2023-04-03 18:02:10 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 18:02:10 info: [0mPOST /profile/about [32m200[0m 1149.603 ms - 126[0m
+2023-04-03 18:03:07 info: =================================
+2023-04-03 18:03:07 info: ======= ENV: development =======
+2023-04-03 18:03:07 info: 🚀 App listening on the port 3000
+2023-04-03 18:03:07 info: =================================
+2023-04-03 18:03:09 info: Connected to email server
+2023-04-03 18:03:20 info: Connected to Database Successfully...
+2023-04-03 18:04:25 info: =================================
+2023-04-03 18:04:25 info: ======= ENV: development =======
+2023-04-03 18:04:25 info: 🚀 App listening on the port 3000
+2023-04-03 18:04:25 info: =================================
+2023-04-03 18:04:27 info: Connected to email server
+2023-04-03 18:04:32 info: Connected to Database Successfully...
+2023-04-03 18:04:40 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-03 18:04:40 info: [0mPOST /profile/about [32m200[0m 595.306 ms - 129[0m

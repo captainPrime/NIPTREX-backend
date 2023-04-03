@@ -106,8 +106,10 @@ export const aboutSchema = Joi.object({
     dob: Joi.string().required(),
     role: Joi.string().required(),
     seniority: Joi.string().required(),
+    phone_number: Joi.string().required(),
     gender: Joi.string().required(),
     resume: Joi.string(),
+    skills: Joi.array().items(Joi.string()),
   }).required(),
   address: Joi.object({
     line1: Joi.string().required(),
