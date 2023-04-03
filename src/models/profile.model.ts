@@ -14,8 +14,8 @@ import { Schema, model } from 'mongoose';
 const experienceSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    start_date: { type: Date, required: true },
-    end_date: { type: Date, required: true },
+    start_date: { type: String, required: true },
+    end_date: { type: String, required: true },
     company: { type: String, requiredrequired: true },
     country: { type: String, required: true },
     role: { type: String, required: true },
@@ -56,7 +56,7 @@ const certificationSchema: Schema = new Schema(
     organisation: { type: String, trim: true },
     certificate_url: { type: String, trim: true },
     date_obtained: {
-      type: Date,
+      type: String,
       trim: true,
     },
   },
