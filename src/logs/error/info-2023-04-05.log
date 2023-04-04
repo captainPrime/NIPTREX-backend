@@ -1,0 +1,8 @@
+2023-04-05 00:00:09 error: [GET] /job/saveJob >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "saveJob" (type string) at path "_id" for model "Job"
+2023-04-05 00:02:57 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:03:47 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:04:38 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:05:41 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:08:10 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:08:18 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:09:11 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED

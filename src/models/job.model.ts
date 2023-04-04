@@ -15,7 +15,26 @@ export interface IJob {
 
 const JobSchema: Schema = new Schema(
   {
-    jobsTags: { type: String, required: true },
+    jobsTags: [{ type: String, required: true }],
+    jobTitle: { type: String, required: true },
+    jobSubInfo: { type: String, required: true },
+    jobDescription: { type: String, required: true },
+    verified: { type: String, required: true },
+    rating: { type: String, required: true },
+    location: { type: String, required: true },
+    jobType: { type: String, required: true },
+    jobSize: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const SavedJobSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    job_id: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
+    jobsTags: [{ type: String, required: true }],
     jobTitle: { type: String, required: true },
     jobSubInfo: { type: String, required: true },
     jobDescription: { type: String, required: true },
@@ -31,5 +50,9 @@ const JobSchema: Schema = new Schema(
 );
 
 JobSchema.plugin(toJSON);
+SavedJobSchema.plugin(toJSON);
 
-export const JobModel = model<IJob>('Job', JobSchema);
+const JobModel = model<IJob>('Job', JobSchema);
+const SavedJob = model<any>('SavedJob', SavedJobSchema);
+
+export { JobModel, SavedJob };

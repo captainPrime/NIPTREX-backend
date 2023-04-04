@@ -1,0 +1,54 @@
+2023-04-05 00:00:02 info: =================================
+2023-04-05 00:00:02 info: ======= ENV: development =======
+2023-04-05 00:00:02 info: 🚀 App listening on the port 3000
+2023-04-05 00:00:02 info: =================================
+2023-04-05 00:00:05 info: Connected to email server
+2023-04-05 00:00:06 info: Connected to Database Successfully...
+2023-04-05 00:00:09 error: [GET] /job/saveJob >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "saveJob" (type string) at path "_id" for model "Job"
+2023-04-05 00:00:09 info: [0mGET /job/saveJob [32m200[0m 255.002 ms - 150[0m
+2023-04-05 00:02:28 info: =================================
+2023-04-05 00:02:28 info: ======= ENV: development =======
+2023-04-05 00:02:28 info: 🚀 App listening on the port 3000
+2023-04-05 00:02:28 info: =================================
+2023-04-05 00:02:30 info: Connected to email server
+2023-04-05 00:02:41 info: Connected to Database Successfully...
+2023-04-05 00:02:49 info: [0mGET /job/saveJob [32m200[0m 566.796 ms - 676[0m
+2023-04-05 00:02:57 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:02:57 info: [0mPOST /job/saveJob/642c9196781b4dd78830a409 [32m200[0m 467.876 ms - 71[0m
+2023-04-05 00:03:39 info: =================================
+2023-04-05 00:03:39 info: ======= ENV: development =======
+2023-04-05 00:03:39 info: 🚀 App listening on the port 3000
+2023-04-05 00:03:39 info: =================================
+2023-04-05 00:03:41 info: Connected to email server
+2023-04-05 00:03:42 info: Connected to Database Successfully...
+2023-04-05 00:03:47 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:03:47 info: [0mPOST /job/saveJob/642c9196781b4dd78830a409 [32m200[0m 475.843 ms - 71[0m
+2023-04-05 00:04:38 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:04:38 info: [0mPOST /job/saveJob/642c9196781b4dd78830a408 [32m200[0m 441.939 ms - 71[0m
+2023-04-05 00:05:27 info: =================================
+2023-04-05 00:05:27 info: ======= ENV: development =======
+2023-04-05 00:05:27 info: 🚀 App listening on the port 3000
+2023-04-05 00:05:27 info: =================================
+2023-04-05 00:05:30 info: Connected to email server
+2023-04-05 00:05:35 info: Connected to Database Successfully...
+2023-04-05 00:05:41 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:05:41 info: [0mPOST /job/saveJob/642c9196781b4dd78830a408 [32m200[0m 466.181 ms - 71[0m
+2023-04-05 00:07:51 info: =================================
+2023-04-05 00:07:51 info: ======= ENV: development =======
+2023-04-05 00:07:51 info: 🚀 App listening on the port 3000
+2023-04-05 00:07:51 info: =================================
+2023-04-05 00:07:54 info: Connected to email server
+2023-04-05 00:08:00 info: Connected to Database Successfully...
+2023-04-05 00:08:10 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:08:10 info: [0mPOST /job/saveJob/642c9196781b4dd78830a409 [32m200[0m 781.629 ms - 71[0m
+2023-04-05 00:08:18 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:08:18 info: [0mPOST /job/saveJob/642c9196781b4dd78830a408 [32m200[0m 745.512 ms - 71[0m
+2023-04-05 00:09:01 info: =================================
+2023-04-05 00:09:01 info: ======= ENV: development =======
+2023-04-05 00:09:01 info: 🚀 App listening on the port 3000
+2023-04-05 00:09:01 info: =================================
+2023-04-05 00:09:03 info: Connected to email server
+2023-04-05 00:09:03 info: Connected to Database Successfully...
+2023-04-05 00:09:11 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:09:11 info: [0mPOST /job/saveJob/642c9196781b4dd78830a408 [32m200[0m 747.342 ms - 74[0m
+2023-04-05 00:09:26 info: [0mGET /job/savedJobs [32m200[0m 484.508 ms - 676[0m
