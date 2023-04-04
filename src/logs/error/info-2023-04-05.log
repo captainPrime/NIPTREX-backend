@@ -6,3 +6,26 @@
 2023-04-05 00:08:10 error: [POST] /job/saveJob/642c9196781b4dd78830a409 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
 2023-04-05 00:08:18 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
 2023-04-05 00:09:11 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:13:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 00:13:29 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:14:21 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:15:26 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:16:18 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:17:15 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:17:55 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:19:07 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:20:10 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:31:27 error: [POST] /job/saveJob/642c9196781b4d78830a406 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4d78830a406" (type string) at path "_id" for model "Job"
+2023-04-05 00:31:44 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:32:35 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:32:44 error: [POST] /job/saveJob/642c9196781b4dd78830a06 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4dd78830a06" (type string) at path "_id" for model "Job"
+2023-04-05 00:32:52 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:34:23 error: [GET] /job/642c9196781b4dd78830a40 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4dd78830a40" (type string) at path "_id" for model "Job"
+2023-04-05 00:38:42 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-05 00:38:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 00:38:52 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:38:59 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:39:32 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:40:40 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:45:12 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:46:35 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED

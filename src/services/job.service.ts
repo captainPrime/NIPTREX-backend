@@ -70,10 +70,10 @@ class JobService {
   | Get Job By Id
   |--------------------------------------------------------------------------
   */
-  public async getJobById(id: mongoose.Types.ObjectId | string): Promise<any> {
+  public async getJobById(id: string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.job.find({ _id: id });
+    const data = await this.job.findOne({ _id: id });
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     return data;
@@ -88,7 +88,7 @@ class JobService {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.saveJob.find({ job_id: id });
-    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+    if (!data) throw new HttpException(400, 2002, 'SAVED_JOB_NOT_FOUND');
 
     return data;
   }

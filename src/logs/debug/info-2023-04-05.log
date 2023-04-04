@@ -52,3 +52,157 @@
 2023-04-05 00:09:11 error: [POST] /job/saveJob/642c9196781b4dd78830a408 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
 2023-04-05 00:09:11 info: [0mPOST /job/saveJob/642c9196781b4dd78830a408 [32m200[0m 747.342 ms - 74[0m
 2023-04-05 00:09:26 info: [0mGET /job/savedJobs [32m200[0m 484.508 ms - 676[0m
+2023-04-05 00:12:32 info: =================================
+2023-04-05 00:12:32 info: ======= ENV: development =======
+2023-04-05 00:12:32 info: 🚀 App listening on the port 3000
+2023-04-05 00:12:32 info: =================================
+2023-04-05 00:12:34 info: Connected to email server
+2023-04-05 00:12:39 info: Connected to Database Successfully...
+2023-04-05 00:12:49 info: [0mGET /reload_db [32m200[0m 2915.440 ms - 74[0m
+2023-04-05 00:12:56 info: [0mGET /job/getAllJobs [32m200[0m 1365.735 ms - -[0m
+2023-04-05 00:13:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 00:13:08 info: [0mPOST /auth/login [32m200[0m 532.439 ms - 587[0m
+2023-04-05 00:13:18 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 556.823 ms - 751[0m
+2023-04-05 00:13:29 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:13:29 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 670.920 ms - 74[0m
+2023-04-05 00:14:14 info: =================================
+2023-04-05 00:14:14 info: ======= ENV: development =======
+2023-04-05 00:14:14 info: 🚀 App listening on the port 3000
+2023-04-05 00:14:14 info: =================================
+2023-04-05 00:14:16 info: Connected to email server
+2023-04-05 00:14:16 info: Connected to Database Successfully...
+2023-04-05 00:14:21 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:14:21 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 481.239 ms - 77[0m
+2023-04-05 00:15:14 info: =================================
+2023-04-05 00:15:14 info: ======= ENV: development =======
+2023-04-05 00:15:14 info: 🚀 App listening on the port 3000
+2023-04-05 00:15:14 info: =================================
+2023-04-05 00:15:16 info: Connected to email server
+2023-04-05 00:15:22 info: Connected to Database Successfully...
+2023-04-05 00:15:26 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:15:26 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 492.555 ms - 77[0m
+2023-04-05 00:16:04 info: =================================
+2023-04-05 00:16:04 info: ======= ENV: development =======
+2023-04-05 00:16:04 info: 🚀 App listening on the port 3000
+2023-04-05 00:16:04 info: =================================
+2023-04-05 00:16:07 info: Connected to email server
+2023-04-05 00:16:12 info: Connected to Database Successfully...
+2023-04-05 00:16:18 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:16:18 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 722.164 ms - 77[0m
+2023-04-05 00:17:03 info: =================================
+2023-04-05 00:17:03 info: ======= ENV: development =======
+2023-04-05 00:17:03 info: 🚀 App listening on the port 3000
+2023-04-05 00:17:03 info: =================================
+2023-04-05 00:17:06 info: Connected to email server
+2023-04-05 00:17:08 info: Connected to Database Successfully...
+2023-04-05 00:17:15 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:17:15 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 511.565 ms - 77[0m
+2023-04-05 00:17:41 info: =================================
+2023-04-05 00:17:41 info: ======= ENV: development =======
+2023-04-05 00:17:41 info: 🚀 App listening on the port 3000
+2023-04-05 00:17:41 info: =================================
+2023-04-05 00:17:44 info: Connected to email server
+2023-04-05 00:17:49 info: Connected to Database Successfully...
+2023-04-05 00:17:55 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:17:55 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 476.806 ms - 77[0m
+2023-04-05 00:18:50 info: =================================
+2023-04-05 00:18:50 info: ======= ENV: development =======
+2023-04-05 00:18:50 info: 🚀 App listening on the port 3000
+2023-04-05 00:18:50 info: =================================
+2023-04-05 00:18:53 info: Connected to email server
+2023-04-05 00:19:03 info: Connected to Database Successfully...
+2023-04-05 00:19:07 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:19:07 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 469.038 ms - 77[0m
+2023-04-05 00:20:02 info: =================================
+2023-04-05 00:20:02 info: ======= ENV: development =======
+2023-04-05 00:20:02 info: 🚀 App listening on the port 3000
+2023-04-05 00:20:02 info: =================================
+2023-04-05 00:20:05 info: Connected to email server
+2023-04-05 00:20:05 info: Connected to Database Successfully...
+2023-04-05 00:20:10 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:20:10 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 752.831 ms - 74[0m
+2023-04-05 00:20:21 info: [0mGET /job/savedJobs [32m200[0m 522.088 ms - 80[0m
+2023-04-05 00:22:13 info: =================================
+2023-04-05 00:22:13 info: ======= ENV: development =======
+2023-04-05 00:22:13 info: 🚀 App listening on the port 3000
+2023-04-05 00:22:13 info: =================================
+2023-04-05 00:22:15 info: Connected to email server
+2023-04-05 00:22:26 info: Connected to Database Successfully...
+2023-04-05 00:31:27 error: [POST] /job/saveJob/642c9196781b4d78830a406 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4d78830a406" (type string) at path "_id" for model "Job"
+2023-04-05 00:31:27 info: [0mPOST /job/saveJob/642c9196781b4d78830a406 [32m200[0m 512.727 ms - 166[0m
+2023-04-05 00:31:44 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:31:44 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 664.489 ms - 74[0m
+2023-04-05 00:32:22 info: =================================
+2023-04-05 00:32:22 info: ======= ENV: development =======
+2023-04-05 00:32:22 info: 🚀 App listening on the port 3000
+2023-04-05 00:32:22 info: =================================
+2023-04-05 00:32:25 info: Connected to email server
+2023-04-05 00:32:30 info: Connected to Database Successfully...
+2023-04-05 00:32:35 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:32:35 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 1371.223 ms - 74[0m
+2023-04-05 00:32:44 error: [POST] /job/saveJob/642c9196781b4dd78830a06 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4dd78830a06" (type string) at path "_id" for model "Job"
+2023-04-05 00:32:44 info: [0mPOST /job/saveJob/642c9196781b4dd78830a06 [32m200[0m 222.694 ms - 166[0m
+2023-04-05 00:32:52 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:32:52 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 950.721 ms - 74[0m
+2023-04-05 00:33:43 info: =================================
+2023-04-05 00:33:43 info: ======= ENV: development =======
+2023-04-05 00:33:43 info: 🚀 App listening on the port 3000
+2023-04-05 00:33:43 info: =================================
+2023-04-05 00:33:45 info: Connected to email server
+2023-04-05 00:33:45 info: Connected to Database Successfully...
+2023-04-05 00:34:16 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 485.002 ms - 749[0m
+2023-04-05 00:34:23 error: [GET] /job/642c9196781b4dd78830a40 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "642c9196781b4dd78830a40" (type string) at path "_id" for model "Job"
+2023-04-05 00:34:23 info: [0mGET /job/642c9196781b4dd78830a40 [32m200[0m 231.666 ms - 166[0m
+2023-04-05 00:34:53 info: =================================
+2023-04-05 00:34:53 info: ======= ENV: development =======
+2023-04-05 00:34:53 info: 🚀 App listening on the port 3000
+2023-04-05 00:34:53 info: =================================
+2023-04-05 00:34:55 info: Connected to email server
+2023-04-05 00:35:06 info: Connected to Database Successfully...
+2023-04-05 00:37:55 info: =================================
+2023-04-05 00:37:55 info: ======= ENV: development =======
+2023-04-05 00:37:55 info: 🚀 App listening on the port 3000
+2023-04-05 00:37:55 info: =================================
+2023-04-05 00:38:00 info: Connected to email server
+2023-04-05 00:38:01 info: Connected to Database Successfully...
+2023-04-05 00:38:22 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 501.146 ms - 749[0m
+2023-04-05 00:38:34 info: [0mGET /reload_db [32m200[0m 2775.069 ms - 74[0m
+2023-04-05 00:38:42 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-05 00:38:42 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 221.515 ms - 79[0m
+2023-04-05 00:38:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 00:38:48 info: [0mPOST /auth/login [32m200[0m 531.019 ms - 587[0m
+2023-04-05 00:38:52 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:38:52 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 459.704 ms - 71[0m
+2023-04-05 00:38:59 error: [POST] /job/saveJob/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-05 00:38:59 info: [0mPOST /job/saveJob/642c9196781b4dd78830a406 [32m200[0m 466.281 ms - 71[0m
+2023-04-05 00:39:06 info: [0mGET /job/savedJobs [32m200[0m 438.676 ms - 80[0m
+2023-04-05 00:39:09 info: [0mGET /job/savedJobs [32m200[0m 466.689 ms - 80[0m
+2023-04-05 00:39:21 info: [0mPOST /job [32m200[0m 253.801 ms - -[0m
+2023-04-05 00:39:32 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:39:32 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 725.483 ms - 74[0m
+2023-04-05 00:40:26 info: =================================
+2023-04-05 00:40:26 info: ======= ENV: development =======
+2023-04-05 00:40:26 info: 🚀 App listening on the port 3000
+2023-04-05 00:40:26 info: =================================
+2023-04-05 00:40:28 info: Connected to email server
+2023-04-05 00:40:33 info: Connected to Database Successfully...
+2023-04-05 00:40:40 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: id can not be empty
+2023-04-05 00:40:40 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 1843.943 ms - 77[0m
+2023-04-05 00:42:01 info: =================================
+2023-04-05 00:42:01 info: ======= ENV: development =======
+2023-04-05 00:42:01 info: 🚀 App listening on the port 3000
+2023-04-05 00:42:01 info: =================================
+2023-04-05 00:42:03 info: Connected to email server
+2023-04-05 00:42:14 info: Connected to Database Successfully...
+2023-04-05 00:45:12 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:45:12 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 814.645 ms - 74[0m
+2023-04-05 00:46:20 info: =================================
+2023-04-05 00:46:20 info: ======= ENV: development =======
+2023-04-05 00:46:20 info: 🚀 App listening on the port 3000
+2023-04-05 00:46:20 info: =================================
+2023-04-05 00:46:22 info: Connected to email server
+2023-04-05 00:46:22 info: Connected to Database Successfully...
+2023-04-05 00:46:32 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 1164.474 ms - 822[0m
+2023-04-05 00:46:35 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 00:46:35 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 836.433 ms - 74[0m
+2023-04-05 00:46:42 info: [0mGET /job/savedJobs [32m200[0m 452.471 ms - 824[0m

@@ -110,16 +110,17 @@ class JobController {
   public savedJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
+
       const job = await this.jobService.getJobById(id);
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
-      const saveJob = await this.jobService.getSavedJobById(id);
-      if (saveJob) throw new HttpException(400, 2002, 'JOB_ALREAD_ADDED');
+      const saveJob = await this.jobService.getSavedJobById(job._id.toString());
+      if (saveJob.length !== 0) throw new HttpException(400, 5002, 'JOB_ALREAD_ADDED');
 
       const { jobsTags, jobTitle, jobSubInfo, jobDescription, verified, rating, location, jobType, jobSize } = job;
       const payload = {
         user_id: req.user.id,
-        job_id: job.id,
+        job_id: job._id.toString(),
         jobsTags,
         jobTitle,
         jobSubInfo,
