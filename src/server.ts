@@ -1,4 +1,5 @@
 import App from '@/app';
+import JobRoute from './routes/job.route';
 import AuthRoute from '@routes/auth.route';
 import IndexRoute from '@routes/index.route';
 import UsersRoute from '@routes/users.route';
@@ -8,7 +9,7 @@ import ProfileRoute from './routes/profile.route';
 
 validateEnv();
 
-const app = new App([new IndexRoute(), new UsersRoute(), new AuthRoute(), new ProfileRoute()]);
+const app = new App([new IndexRoute(), new UsersRoute(), new AuthRoute(), new ProfileRoute(), new JobRoute()]);
 
 app.listen();
 
