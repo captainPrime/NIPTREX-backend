@@ -206,3 +206,64 @@
 2023-04-05 00:46:35 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
 2023-04-05 00:46:35 info: [0mPOST /job/saveJob/642cb529f73302c683c1ee35 [32m200[0m 836.433 ms - 74[0m
 2023-04-05 00:46:42 info: [0mGET /job/savedJobs [32m200[0m 452.471 ms - 824[0m
+2023-04-05 11:37:05 info: =================================
+2023-04-05 11:37:05 info: ======= ENV: development =======
+2023-04-05 11:37:05 info: 🚀 App listening on the port 3000
+2023-04-05 11:37:05 info: =================================
+2023-04-05 11:37:07 info: Connected to email server
+2023-04-05 11:37:17 info: Connected to Database Successfully...
+2023-04-05 11:39:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 11:39:18 info: [0mPOST /auth/login [32m200[0m 694.752 ms - 587[0m
+2023-04-05 11:39:28 info: [0mPOST /profile/about [32m200[0m 1297.252 ms - 815[0m
+2023-04-05 11:39:32 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-05 11:39:32 info: [0mPOST /profile/about [32m200[0m 683.197 ms - 76[0m
+2023-04-05 11:39:40 info: [0mGET /profile/about [32m200[0m 688.867 ms - 817[0m
+2023-04-05 11:40:33 error: [PUT] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-05 11:40:33 info: [0mPUT /profile/about [32m200[0m 501.386 ms - 73[0m
+2023-04-05 11:41:57 info: =================================
+2023-04-05 11:41:57 info: ======= ENV: development =======
+2023-04-05 11:41:57 info: 🚀 App listening on the port 3000
+2023-04-05 11:41:57 info: =================================
+2023-04-05 11:41:59 info: Connected to email server
+2023-04-05 11:41:59 info: Connected to Database Successfully...
+2023-04-05 11:42:05 info: [0mPUT /profile/about [32m200[0m 744.598 ms - 728[0m
+2023-04-05 11:42:13 info: [0mPUT /profile/about [32m200[0m 672.607 ms - 729[0m
+2023-04-05 11:46:20 info: =================================
+2023-04-05 11:46:20 info: ======= ENV: development =======
+2023-04-05 11:46:20 info: 🚀 App listening on the port 3000
+2023-04-05 11:46:20 info: =================================
+2023-04-05 11:46:23 info: Connected to email server
+2023-04-05 11:46:28 info: Connected to Database Successfully...
+2023-04-05 11:48:58 info: [0mPOST /profile/billing [32m200[0m 1258.658 ms - 230[0m
+2023-04-05 11:49:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: BILLING_ALREAD_ADDED
+2023-04-05 11:49:02 info: [0mPOST /profile/billing [32m200[0m 691.668 ms - 78[0m
+2023-04-05 11:49:17 error: [PUT] /profile/billing >> StatusCode:: 404, Message:: The requested path /profile/billing not found!
+2023-04-05 11:49:17 info: [0mPUT /profile/billing [32m200[0m 1.777 ms - 104[0m
+2023-04-05 11:52:45 error: [PUT] /profile/billing >> StatusCode:: 404, Message:: The requested path /profile/billing not found!
+2023-04-05 11:52:45 info: [0mPUT /profile/billing [32m200[0m 2.566 ms - 104[0m
+2023-04-05 11:52:59 info: =================================
+2023-04-05 11:52:59 info: ======= ENV: development =======
+2023-04-05 11:52:59 info: 🚀 App listening on the port 3000
+2023-04-05 11:52:59 info: =================================
+2023-04-05 11:53:02 info: Connected to email server
+2023-04-05 11:53:07 info: Connected to Database Successfully...
+2023-04-05 11:53:19 info: [0mPUT /profile/billing [32m200[0m 1029.244 ms - 232[0m
+2023-04-05 11:53:25 info: [0mGET /profile/billing [32m200[0m 767.091 ms - 234[0m
+2023-04-05 11:58:50 info: =================================
+2023-04-05 11:58:50 info: ======= ENV: development =======
+2023-04-05 11:58:50 info: 🚀 App listening on the port 3000
+2023-04-05 11:58:50 info: =================================
+2023-04-05 11:58:52 info: Connected to email server
+2023-04-05 11:59:03 info: Connected to Database Successfully...
+2023-04-05 11:59:12 info: [0mPOST /profile/identity [32m200[0m 1231.152 ms - 278[0m
+2023-04-05 11:59:18 error: [POST] /profile/identity >> StatusCode:: 400, Message:: IDENTITY_ALREAD_ADDED
+2023-04-05 11:59:18 info: [0mPOST /profile/identity [32m200[0m 662.739 ms - 79[0m
+2023-04-05 11:59:51 info: [0mPOST /profile/preference [32m200[0m 1174.558 ms - 479[0m
+2023-04-05 11:59:53 error: [POST] /profile/preference >> StatusCode:: 400, Message:: WORK_PREFERENCE_ALREAD_ADDED
+2023-04-05 11:59:53 info: [0mPOST /profile/preference [32m200[0m 730.845 ms - 86[0m
+2023-04-05 12:00:04 error: [PUT] /profile/preference >> StatusCode:: 400, Message:: Cast to [string] failed for value "[\n  { id: '1', name: 'Business Analyst' },\n  { id: '2', name: 'Business' }\n]" (type string) at path "company_culture.0" because of "CastError"
+2023-04-05 12:00:04 info: [0mPUT /profile/preference [32m200[0m 545.080 ms - 246[0m
+2023-04-05 12:00:29 info: [0mPUT /profile/preference [32m200[0m 754.244 ms - 471[0m
+2023-04-05 12:00:43 error: [PUT] /profile/identity/64239b8502fa802e30ae2258 >> StatusCode:: 404, Message:: The requested path /profile/identity/64239b8502fa802e30ae2258 not found!
+2023-04-05 12:00:43 info: [0mPUT /profile/identity/64239b8502fa802e30ae2258 [32m200[0m 1.615 ms - 130[0m
+2023-04-05 12:00:51 info: [0mPUT /profile/identity [32m200[0m 686.389 ms - 287[0m

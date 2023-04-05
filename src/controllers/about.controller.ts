@@ -22,6 +22,9 @@ class AboutController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
+      const about = await this.aboutService.getUserAbout(req.user.id);
+      if (about.length !== 0) throw new HttpException(400, 5002, 'ABOUT_ALREAD_ADDED');
+
       const { first_name, last_name, email, country, id } = req.user;
 
       const payload = {
@@ -87,9 +90,8 @@ class AboutController {
   */
   public updateAbout = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const id: string = req.params.id;
       const body: IUpdateAbout = req.body;
-      const data = await this.aboutService.updateAboutById(id, body);
+      const data = await this.aboutService.updateAboutById(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

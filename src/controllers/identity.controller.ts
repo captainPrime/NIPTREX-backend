@@ -22,6 +22,9 @@ class IdentityController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
+      const identity = await this.identityService.getUserIdentity(req.user.id);
+      if (identity.length !== 0) throw new HttpException(400, 5002, 'IDENTITY_ALREAD_ADDED');
+
       const data = await this.identityService.createIdentity({ ...userData, user_id: req.user.id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
@@ -74,9 +77,8 @@ class IdentityController {
   */
   public updateIdentity = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const id: string = req.params.id;
       const body: IUpdateDocument = req.body;
-      const data = await this.identityService.updateIdentityById(id, body);
+      const data = await this.identityService.updateIdentityById(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

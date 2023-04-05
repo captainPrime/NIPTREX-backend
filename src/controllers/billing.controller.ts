@@ -22,6 +22,9 @@ class BillingController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
+      const billing = await this.billingService.getUserBilling(req.user.id);
+      if (billing.length !== 0) throw new HttpException(400, 5002, 'BILLING_ALREAD_ADDED');
+
       const data = await this.billingService.createBilling({ ...userData, user_id: req.user.id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
@@ -74,9 +77,8 @@ class BillingController {
   */
   public updateBilling = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const id: string = req.params.id;
       const body: IUpdateBilling = req.body;
-      const data = await this.billingService.updateBillingById(id, body);
+      const data = await this.billingService.updateBillingById(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

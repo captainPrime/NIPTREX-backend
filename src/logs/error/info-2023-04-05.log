@@ -29,3 +29,13 @@
 2023-04-05 00:40:40 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: id can not be empty
 2023-04-05 00:45:12 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
 2023-04-05 00:46:35 error: [POST] /job/saveJob/642cb529f73302c683c1ee35 >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-05 11:39:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-05 11:39:32 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-05 11:40:33 error: [PUT] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-05 11:49:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: BILLING_ALREAD_ADDED
+2023-04-05 11:49:17 error: [PUT] /profile/billing >> StatusCode:: 404, Message:: The requested path /profile/billing not found!
+2023-04-05 11:52:45 error: [PUT] /profile/billing >> StatusCode:: 404, Message:: The requested path /profile/billing not found!
+2023-04-05 11:59:18 error: [POST] /profile/identity >> StatusCode:: 400, Message:: IDENTITY_ALREAD_ADDED
+2023-04-05 11:59:53 error: [POST] /profile/preference >> StatusCode:: 400, Message:: WORK_PREFERENCE_ALREAD_ADDED
+2023-04-05 12:00:04 error: [PUT] /profile/preference >> StatusCode:: 400, Message:: Cast to [string] failed for value "[\n  { id: '1', name: 'Business Analyst' },\n  { id: '2', name: 'Business' }\n]" (type string) at path "company_culture.0" because of "CastError"
+2023-04-05 12:00:43 error: [PUT] /profile/identity/64239b8502fa802e30ae2258 >> StatusCode:: 404, Message:: The requested path /profile/identity/64239b8502fa802e30ae2258 not found!

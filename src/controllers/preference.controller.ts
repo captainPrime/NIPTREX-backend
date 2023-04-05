@@ -22,6 +22,9 @@ class PreferenceController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
+      const preference = await this.preferenceService.getUserPreference(req.user.id);
+      if (preference.length !== 0) throw new HttpException(400, 5002, 'WORK_PREFERENCE_ALREAD_ADDED');
+
       const data = await this.preferenceService.createPreference({ ...userData, user_id: req.user.id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
@@ -74,9 +77,8 @@ class PreferenceController {
   */
   public updatePreference = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const id: string = req.params.id;
       const body: IUpdatePreference = req.body;
-      const data = await this.preferenceService.updatePreferenceById(id, body);
+      const data = await this.preferenceService.updatePreferenceById(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

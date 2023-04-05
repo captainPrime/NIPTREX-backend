@@ -65,7 +65,7 @@ class AboutService {
   public async updateAboutById(id: mongoose.Types.ObjectId | string, body: IUpdateAbout): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.about.findOne({ _id: id });
+    const data = await this.about.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
 
     const updatedData = await this.about.findByIdAndUpdate(data._id, body, {

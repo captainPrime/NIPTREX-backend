@@ -65,7 +65,7 @@ class BillingService {
   public async updateBillingById(id: mongoose.Types.ObjectId | string, body: IUpdateBilling): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.billing.findOne({ _id: id });
+    const data = await this.billing.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'BILLING_NOT_FOUND');
 
     const updatedData = await this.billing.findByIdAndUpdate(data._id, body, {

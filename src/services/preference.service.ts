@@ -65,7 +65,7 @@ class PreferenceService {
   public async updatePreferenceById(id: mongoose.Types.ObjectId | string, body: IUpdatePreference): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.preference.findOne({ _id: id });
+    const data = await this.preference.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');
 
     const updatedData = await this.preference.findByIdAndUpdate(data._id, body, {

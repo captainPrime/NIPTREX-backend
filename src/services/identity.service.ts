@@ -65,7 +65,7 @@ class IdentityService {
   public async updateIdentityById(id: mongoose.Types.ObjectId | string, body: IUpdateDocument): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.identity.findOne({ _id: id });
+    const data = await this.identity.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'IDENTITY_NOT_FOUND');
 
     const updatedData = await this.identity.findByIdAndUpdate(data._id, body, {

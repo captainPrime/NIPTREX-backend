@@ -66,7 +66,7 @@ class ProfileRoute implements Routes {
     */
     this.router.post(`${this.path}/billing`, authMiddleware, this.billingController.createBilling);
     this.router.get(`${this.path}/billing`, authMiddleware, this.billingController.getUserBilling);
-    this.router.put(`${this.path}/billing/:id`, authMiddleware, this.billingController.updateBilling);
+    this.router.put(`${this.path}/billing`, authMiddleware, this.billingController.updateBilling);
     this.router.delete(`${this.path}/billing/:id`, authMiddleware, this.billingController.deleteBilling);
     this.router.get(`${this.path}/billing/:id`, authMiddleware, this.billingController.getBillingById);
 
@@ -77,7 +77,7 @@ class ProfileRoute implements Routes {
     */
     this.router.post(`${this.path}/identity`, authMiddleware, this.identityController.createIdentity);
     this.router.get(`${this.path}/identity`, authMiddleware, this.identityController.getUserIdentity);
-    this.router.put(`${this.path}/identity/:id`, authMiddleware, this.identityController.updateIdentity);
+    this.router.put(`${this.path}/identity`, authMiddleware, this.identityController.updateIdentity);
     this.router.delete(`${this.path}/identity/:id`, authMiddleware, this.identityController.deleteIdentity);
     this.router.get(`${this.path}/identity/:id`, authMiddleware, this.identityController.getIdentityById);
 
@@ -88,7 +88,7 @@ class ProfileRoute implements Routes {
     */
     this.router.post(`${this.path}/preference`, authMiddleware, this.preferenceController.createPreference);
     this.router.get(`${this.path}/preference`, authMiddleware, this.preferenceController.getUserPreference);
-    this.router.put(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.updatePreference);
+    this.router.put(`${this.path}/preference`, authMiddleware, this.preferenceController.updatePreference);
     this.router.delete(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.deletePreference);
     this.router.get(`${this.path}/preference/:id`, authMiddleware, this.preferenceController.getPreferenceById);
 
@@ -99,7 +99,7 @@ class ProfileRoute implements Routes {
     */
     this.router.post(`${this.path}/about`, authMiddleware, this.aboutController.createAbout);
     this.router.get(`${this.path}/about`, authMiddleware, this.aboutController.getUserAbout);
-    this.router.put(`${this.path}/about/:id`, authMiddleware, this.aboutController.updateAbout);
+    this.router.put(`${this.path}/about`, authMiddleware, this.aboutController.updateAbout);
     this.router.delete(`${this.path}/about/:id`, authMiddleware, this.aboutController.deleteAbout);
     this.router.get(`${this.path}/about/:id`, authMiddleware, this.aboutController.getAboutById);
   }
