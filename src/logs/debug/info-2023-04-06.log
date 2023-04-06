@@ -45,3 +45,17 @@
 2023-04-06 15:08:18 info: [0mGET /job/getAllJobs [32m200[0m 264.861 ms - -[0m
 2023-04-06 15:08:29 info: [0mGET /job/getUserJobBestMatches [32m200[0m 878.465 ms - 674[0m
 2023-04-06 15:08:52 info: [0mGET /job/savedJobs [32m200[0m 437.625 ms - -[0m
+2023-04-06 15:45:58 info: =================================
+2023-04-06 15:45:58 info: ======= ENV: development =======
+2023-04-06 15:45:58 info: 🚀 App listening on the port 3000
+2023-04-06 15:45:58 info: =================================
+2023-04-06 15:46:00 info: Connected to Database Successfully...
+2023-04-06 15:46:00 info: Connected to email server
+2023-04-06 15:46:54 info: =================================
+2023-04-06 15:46:54 info: ======= ENV: development =======
+2023-04-06 15:46:54 info: 🚀 App listening on the port 3000
+2023-04-06 15:46:54 info: =================================
+2023-04-06 15:47:08 info: Connected to email server
+2023-04-06 15:47:08 info: Connected to Database Successfully...
+2023-04-06 15:49:24 info: [0mGET /reload_db [32m200[0m 2572.992 ms - 74[0m
+2023-04-06 15:49:31 info: [0mPOST /job [32m200[0m 307.412 ms - -[0m

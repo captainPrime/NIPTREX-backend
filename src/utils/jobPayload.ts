@@ -18,6 +18,7 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
+    status: 'inactive',
   },
   {
     jobsTags: ['Photography', 'Design', 'Mobile App Design', 'Sketch', 'Responsive designs', 'User  interface Design', 'Mobile App Design'],
@@ -42,6 +43,32 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
+    is_saved: true,
+  },
+  {
+    jobsTags: ['Responsive designs', 'Mobile App Design'],
+    jobTitle: 'UI/UX Designer',
+    jobSubInfo: 'Hourly: $40-$66-Intermediate- Est. Time:12 Months,Less than 30hrs/week-posted 2hours ago',
+    jobDescription:
+      'Looking for a figma UI/UX designer who can design a cosmetic mobile and website application.The app consists of 10 screens, and the ideal candidate should have a strong background in designing for mobile applications.',
+    verified: true,
+    rating: 5,
+    location: 'United Kingdom',
+    jobType: 'Remote',
+    jobSize: 'Small team (4-6 members)',
+    is_saved: true,
+  },
+  {
+    jobsTags: ['Responsive designs', 'Mobile App Design'],
+    jobTitle: 'UI/UX Designer',
+    jobSubInfo: 'Hourly: $40-$66-Intermediate- Est. Time:12 Months,Less than 30hrs/week-posted 2hours ago',
+    jobDescription:
+      'Looking for a figma UI/UX designer who can design a cosmetic mobile and website application.The app consists of 10 screens, and the ideal candidate should have a strong background in designing for mobile applications.',
+    verified: true,
+    rating: 5,
+    location: 'United Kingdom',
+    jobType: 'Remote',
+    jobSize: 'Small team (4-6 members)',
   },
   {
     jobsTags: ['Rest API', 'NodeJS', 'Apache'],
@@ -54,5 +81,6 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
+    status: 'inactive',
   },
 ];

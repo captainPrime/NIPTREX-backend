@@ -16,7 +16,7 @@ export interface IJob {
 enum JobStatus {
   ACTIVE = 'active',
   IN_PROGRESS = 'in_progress',
-  CLOSED = 'closed',
+  CLOSED = 'inactive',
 }
 
 const JobSchema: Schema = new Schema(
