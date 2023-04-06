@@ -1,0 +1,47 @@
+2023-04-06 14:56:27 info: =================================
+2023-04-06 14:56:27 info: ======= ENV: development =======
+2023-04-06 14:56:27 info: 🚀 App listening on the port 3000
+2023-04-06 14:56:27 info: =================================
+2023-04-06 14:56:30 info: Connected to email server
+2023-04-06 14:56:30 info: Connected to Database Successfully...
+2023-04-06 14:56:43 info: [0mGET /job/skills [32m200[0m 10.255 ms - -[0m
+2023-04-06 14:57:29 info: =================================
+2023-04-06 14:57:29 info: ======= ENV: development =======
+2023-04-06 14:57:29 info: 🚀 App listening on the port 3000
+2023-04-06 14:57:29 info: =================================
+2023-04-06 14:57:31 info: Connected to email server
+2023-04-06 14:57:31 info: Connected to Database Successfully...
+2023-04-06 14:57:38 info: [0mGET /job/skills [32m200[0m 10.567 ms - -[0m
+2023-04-06 14:57:55 info: [0mGET /job/getAllJobs [32m200[0m 301.478 ms - -[0m
+2023-04-06 15:03:30 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1885.995 ms - 80[0m
+2023-04-06 15:04:50 info: =================================
+2023-04-06 15:04:50 info: ======= ENV: development =======
+2023-04-06 15:04:50 info: 🚀 App listening on the port 3000
+2023-04-06 15:04:50 info: =================================
+2023-04-06 15:04:52 info: Connected to email server
+2023-04-06 15:04:52 info: Connected to Database Successfully...
+2023-04-06 15:04:57 info: [0mGET /profile [32m200[0m 1860.199 ms - -[0m
+2023-04-06 15:05:22 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1242.224 ms - 80[0m
+2023-04-06 15:05:54 info: =================================
+2023-04-06 15:05:54 info: ======= ENV: development =======
+2023-04-06 15:05:54 info: 🚀 App listening on the port 3000
+2023-04-06 15:05:54 info: =================================
+2023-04-06 15:05:56 info: Connected to email server
+2023-04-06 15:05:56 info: Connected to Database Successfully...
+2023-04-06 15:06:03 info: [0mGET /job/getUserJobBestMatches [32m200[0m 941.635 ms - 674[0m
+2023-04-06 15:07:00 info: =================================
+2023-04-06 15:07:00 info: ======= ENV: development =======
+2023-04-06 15:07:00 info: 🚀 App listening on the port 3000
+2023-04-06 15:07:00 info: =================================
+2023-04-06 15:07:02 info: Connected to email server
+2023-04-06 15:07:02 info: Connected to Database Successfully...
+2023-04-06 15:07:13 info: [0mGET /job/getUserJobBestMatches [32m200[0m 919.020 ms - 80[0m
+2023-04-06 15:08:12 info: =================================
+2023-04-06 15:08:12 info: ======= ENV: development =======
+2023-04-06 15:08:12 info: 🚀 App listening on the port 3000
+2023-04-06 15:08:12 info: =================================
+2023-04-06 15:08:14 info: Connected to email server
+2023-04-06 15:08:14 info: Connected to Database Successfully...
+2023-04-06 15:08:18 info: [0mGET /job/getAllJobs [32m200[0m 264.861 ms - -[0m
+2023-04-06 15:08:29 info: [0mGET /job/getUserJobBestMatches [32m200[0m 878.465 ms - 674[0m
+2023-04-06 15:08:52 info: [0mGET /job/savedJobs [32m200[0m 437.625 ms - -[0m

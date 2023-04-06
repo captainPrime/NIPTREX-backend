@@ -13,6 +13,12 @@ export interface IJob {
   jobSize: string;
 }
 
+enum JobStatus {
+  ACTIVE = 'active',
+  IN_PROGRESS = 'in_progress',
+  CLOSED = 'closed',
+}
+
 const JobSchema: Schema = new Schema(
   {
     jobsTags: [{ type: String, required: true }],
@@ -21,6 +27,8 @@ const JobSchema: Schema = new Schema(
     jobDescription: { type: String, required: true },
     verified: { type: String, required: true },
     rating: { type: String, required: true },
+    status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
+    is_saved: { type: Boolean, default: false },
     location: { type: String, required: true },
     jobType: { type: String, required: true },
     jobSize: { type: String, required: true },
@@ -39,6 +47,7 @@ const SavedJobSchema: Schema = new Schema(
     jobSubInfo: { type: String, required: true },
     jobDescription: { type: String, required: true },
     verified: { type: String, required: true },
+    status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
     rating: { type: String, required: true },
     location: { type: String, required: true },
     jobType: { type: String, required: true },

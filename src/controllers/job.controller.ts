@@ -7,6 +7,7 @@ import { jobPayload } from '@/utils/jobPayload';
 import { HttpException } from '@/exceptions/HttpException';
 import AboutService from '@/services/about.service';
 import PreferenceService from '@/services/preference.service';
+import { skills } from '@/utils/skills';
 
 class JobController {
   public userService = new UserService();
@@ -38,7 +39,20 @@ class JobController {
     try {
       const data = await this.jobService.getAllJobs();
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get all Jobs
+  |--------------------------------------------------------------------------
+  */
+  public getAllSkills = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: skills });
     } catch (error) {
       next(error);
     }
@@ -65,7 +79,7 @@ class JobController {
       console.log('QUERY', jobQueries);
       const data = await this.jobService.getUserJobBestMatches(jobQueries, preference[0]);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }

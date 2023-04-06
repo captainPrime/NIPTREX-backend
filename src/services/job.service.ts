@@ -43,12 +43,11 @@ class JobService {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
-      jobType: new RegExp(preference.work_location, 'i'),
-      jobSize: new RegExp(preference.company_size, 'i'),
+      // jobSize: new RegExp(preference.company_size, 'i'),
     };
 
     const data = await this.job.find(filter);
-    if (!data) throw new HttpException(400, 2002, 'IDENTITY_NOT_FOUND');
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     return data;
   }
