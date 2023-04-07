@@ -56,3 +56,41 @@
 2023-04-07 12:16:06 info: Connected to email server
 2023-04-07 12:16:07 info: Connected to Database Successfully...
 2023-04-07 12:16:13 info: [0mGET /job/mostRecents [32m200[0m 943.604 ms - -[0m
+2023-04-07 12:29:37 info: =================================
+2023-04-07 12:29:37 info: ======= ENV: development =======
+2023-04-07 12:29:37 info: 🚀 App listening on the port 3000
+2023-04-07 12:29:37 info: =================================
+2023-04-07 12:29:39 info: Connected to email server
+2023-04-07 12:29:50 info: Connected to Database Successfully...
+2023-04-07 12:30:00 info: [0mGET /reload_db [32m200[0m 2599.088 ms - 74[0m
+2023-04-07 12:30:09 error: [POST] /profile/about >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-07 12:30:09 info: [0mPOST /profile/about [32m200[0m 319.993 ms - 79[0m
+2023-04-07 12:30:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 12:30:17 info: [0mPOST /auth/login [32m200[0m 498.295 ms - 587[0m
+2023-04-07 12:30:23 info: [0mPOST /profile/about [32m200[0m 1164.886 ms - 815[0m
+2023-04-07 12:30:28 info: [0mPOST /job [32m200[0m 255.189 ms - -[0m
+2023-04-07 12:30:38 info: [0mPOST /job/saveJob/642ffed4bbdfec008795d6d2 [32m200[0m 943.410 ms - 184[0m
+2023-04-07 12:30:48 info: [0mGET /job/savedJobs [32m200[0m 1015.261 ms - 868[0m
+2023-04-07 12:33:36 info: =================================
+2023-04-07 12:33:36 info: ======= ENV: development =======
+2023-04-07 12:33:36 info: 🚀 App listening on the port 3000
+2023-04-07 12:33:36 info: =================================
+2023-04-07 12:33:38 info: Connected to email server
+2023-04-07 12:33:39 info: Connected to Database Successfully...
+2023-04-07 12:33:46 info: [0mGET /job/savedJobs [32m200[0m 554.536 ms - 186[0m
+2023-04-07 12:34:11 info: [0mGET /job/savedJobs [32m200[0m 553.079 ms - 186[0m
+2023-04-07 12:34:24 info: [0mGET /reload_db [32m200[0m 2842.910 ms - 74[0m
+2023-04-07 12:34:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 12:34:29 info: [0mPOST /auth/login [32m200[0m 645.176 ms - 587[0m
+2023-04-07 12:34:36 info: [0mPOST /profile/about [32m200[0m 1143.150 ms - 815[0m
+2023-04-07 12:34:42 info: [0mPOST /job [32m200[0m 272.820 ms - -[0m
+2023-04-07 12:34:58 error: [POST] /job/saveJob/642fffd2b6626e45e5d2a1f0 >> StatusCode:: 400, Message:: SavedJob validation failed: job: Path `job` is required.
+2023-04-07 12:34:58 info: [0mPOST /job/saveJob/642fffd2b6626e45e5d2a1f0 [32m200[0m 629.033 ms - 113[0m
+2023-04-07 12:36:29 info: =================================
+2023-04-07 12:36:29 info: ======= ENV: development =======
+2023-04-07 12:36:29 info: 🚀 App listening on the port 3000
+2023-04-07 12:36:29 info: =================================
+2023-04-07 12:36:31 info: Connected to email server
+2023-04-07 12:36:31 info: Connected to Database Successfully...
+2023-04-07 12:36:37 info: [0mPOST /job/saveJob/642fffd2b6626e45e5d2a1f0 [32m200[0m 913.009 ms - 181[0m
+2023-04-07 12:36:43 info: [0mGET /job/savedJobs [32m200[0m 895.294 ms - 865[0m

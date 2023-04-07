@@ -41,17 +41,7 @@ const JobSchema: Schema = new Schema(
 const SavedJobSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    job_id: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
-    jobsTags: [{ type: String, required: true }],
-    jobTitle: { type: String, required: true },
-    jobSubInfo: { type: String, required: true },
-    jobDescription: { type: String, required: true },
-    verified: { type: String, required: true },
-    status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
-    rating: { type: String, required: true },
-    location: { type: String, required: true },
-    jobType: { type: String, required: true },
-    jobSize: { type: String, required: true },
+    job: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
   },
   {
     timestamps: true,
