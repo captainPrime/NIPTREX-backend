@@ -137,6 +137,20 @@ class JobService {
 
     return data;
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Saved Job
+  |--------------------------------------------------------------------------
+  */
+  public async getUserSavedItems(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.saveJob.find({ user_id: id });
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    return data;
+  }
 }
 
 export default JobService;

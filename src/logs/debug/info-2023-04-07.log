@@ -94,3 +94,10 @@
 2023-04-07 12:36:31 info: Connected to Database Successfully...
 2023-04-07 12:36:37 info: [0mPOST /job/saveJob/642fffd2b6626e45e5d2a1f0 [32m200[0m 913.009 ms - 181[0m
 2023-04-07 12:36:43 info: [0mGET /job/savedJobs [32m200[0m 895.294 ms - 865[0m
+2023-04-07 13:14:57 info: =================================
+2023-04-07 13:14:57 info: ======= ENV: development =======
+2023-04-07 13:14:57 info: 🚀 App listening on the port 3000
+2023-04-07 13:14:57 info: =================================
+2023-04-07 13:14:59 info: Connected to email server
+2023-04-07 13:14:59 info: Connected to Database Successfully...
+2023-04-07 13:15:29 info: [0mGET /job/getUserSavedItems [32m200[0m 453.070 ms - 183[0m
