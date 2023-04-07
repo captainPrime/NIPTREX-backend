@@ -18,3 +18,4 @@
 2023-04-07 18:16:42 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-07 18:17:23 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-07 18:17:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:19:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
