@@ -1,10 +1,11 @@
 /* eslint-disable security/detect-non-literal-regexp */
-import { HttpException } from '@exceptions/HttpException';
-import { isEmpty } from '@utils/util';
-import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IJob, JobModel, SavedJob } from '@/models/job.model';
+
+import { isEmpty } from '@utils/util';
 import User from '@/models/users.model';
+import UserService from './users.service';
+import { HttpException } from '@exceptions/HttpException';
+import { IJob, JobModel, SavedJob } from '@/models/job.model';
 
 class JobService {
   public job: any = JobModel;

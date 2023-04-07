@@ -1,7 +1,8 @@
 import { Router } from 'express';
+
 import { Routes } from '@interfaces/routes.interface';
-import authMiddleware from '@/middlewares/auth.middleware';
 import JobController from '@/controllers/job.controller';
+import authMiddleware from '@/middlewares/auth.middleware';
 
 class JobRoute implements Routes {
   public path = '/job';
