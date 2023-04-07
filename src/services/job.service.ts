@@ -46,7 +46,24 @@ class JobService {
       // jobSize: new RegExp(preference.company_size, 'i'),
     };
 
-    const data = await this.job.find(filter);
+    const data = await this.job.find(filter).limit(10);
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Job Best Matches
+  |--------------------------------------------------------------------------
+  */
+  public async getMostRecentJobs(query: any): Promise<any> {
+    const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
+    const filter = {
+      jobsTags: { $in: regexTags },
+    };
+
+    const data = await this.job.find(filter).sort({ createdAt: -1 }).limit(10);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     return data;

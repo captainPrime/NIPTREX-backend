@@ -1,0 +1,58 @@
+2023-04-07 12:05:36 info: =================================
+2023-04-07 12:05:36 info: ======= ENV: development =======
+2023-04-07 12:05:36 info: 🚀 App listening on the port 3000
+2023-04-07 12:05:36 info: =================================
+2023-04-07 12:05:38 info: Connected to Database Successfully...
+2023-04-07 12:05:39 info: Connected to email server
+2023-04-07 12:05:45 info: [0mGET /reload_db [32m200[0m 2926.207 ms - 74[0m
+2023-04-07 12:05:51 info: [0mGET /job/skills [32m200[0m 3.791 ms - -[0m
+2023-04-07 12:05:59 info: [0mGET /job/getAllJobs [32m200[0m 606.168 ms - 80[0m
+2023-04-07 12:06:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 12:06:08 info: [0mPOST /auth/login [32m200[0m 505.749 ms - 587[0m
+2023-04-07 12:06:12 info: [0mPOST /job [32m200[0m 248.637 ms - -[0m
+2023-04-07 12:09:09 info: =================================
+2023-04-07 12:09:09 info: ======= ENV: development =======
+2023-04-07 12:09:09 info: 🚀 App listening on the port 3000
+2023-04-07 12:09:09 info: =================================
+2023-04-07 12:09:11 info: Connected to email server
+2023-04-07 12:09:22 info: Connected to Database Successfully...
+2023-04-07 12:10:45 info: [0mGET /job/getAllJobs [32m200[0m 264.180 ms - -[0m
+2023-04-07 12:10:58 info: [0mPOST /job/saveJob/642ff9249990e7776f7c8294 [32m200[0m 955.675 ms - 840[0m
+2023-04-07 12:11:13 info: [0mGET /job/savedJobs [32m200[0m 428.660 ms - 842[0m
+2023-04-07 12:11:26 error: [POST] /job/unSaveJob/642ff9249990e7776f7c8294 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-04-07 12:11:26 info: [0mPOST /job/unSaveJob/642ff9249990e7776f7c8294 [32m200[0m 1.870 ms - 86[0m
+2023-04-07 12:11:34 error: [POST] /job/unSaveJob/642ff9249990e7776f7c8294 >> StatusCode:: 400, Message:: SAVED_JOB_NOT_FOUND
+2023-04-07 12:11:34 info: [0mPOST /job/unSaveJob/642ff9249990e7776f7c8294 [32m200[0m 504.576 ms - 77[0m
+2023-04-07 12:11:57 info: [0mPOST /job/unSaveJob/642ffa4125038288e926e57a [32m200[0m 612.785 ms - 70[0m
+2023-04-07 12:12:02 info: [0mGET /job/savedJobs [32m200[0m 462.468 ms - 80[0m
+2023-04-07 12:12:44 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:12:44 info: [0mGET /job/mostRecents [32m200[0m 434.734 ms - 111[0m
+2023-04-07 12:13:14 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:13:14 info: [0mGET /job/mostRecents [32m200[0m 620.836 ms - 111[0m
+2023-04-07 12:13:29 info: =================================
+2023-04-07 12:13:29 info: ======= ENV: development =======
+2023-04-07 12:13:29 info: 🚀 App listening on the port 3000
+2023-04-07 12:13:29 info: =================================
+2023-04-07 12:13:31 info: Connected to email server
+2023-04-07 12:13:32 info: Connected to Database Successfully...
+2023-04-07 12:13:37 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:13:37 info: [0mGET /job/mostRecents [32m200[0m 1676.377 ms - 111[0m
+2023-04-07 12:14:01 info: =================================
+2023-04-07 12:14:01 info: ======= ENV: development =======
+2023-04-07 12:14:01 info: 🚀 App listening on the port 3000
+2023-04-07 12:14:01 info: =================================
+2023-04-07 12:14:03 info: Connected to email server
+2023-04-07 12:14:09 info: Connected to Database Successfully...
+2023-04-07 12:14:15 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:14:15 info: [0mGET /job/mostRecents [32m200[0m 460.100 ms - 111[0m
+2023-04-07 12:14:38 info: [0mPOST /profile/about [32m200[0m 1371.911 ms - 815[0m
+2023-04-07 12:14:45 info: [0mGET /job/mostRecents [32m200[0m 668.948 ms - 676[0m
+2023-04-07 12:15:20 info: [0mPUT /profile/about [32m200[0m 689.645 ms - 734[0m
+2023-04-07 12:15:42 info: [0mGET /job/mostRecents [32m200[0m 733.787 ms - -[0m
+2023-04-07 12:16:04 info: =================================
+2023-04-07 12:16:04 info: ======= ENV: development =======
+2023-04-07 12:16:04 info: 🚀 App listening on the port 3000
+2023-04-07 12:16:04 info: =================================
+2023-04-07 12:16:06 info: Connected to email server
+2023-04-07 12:16:07 info: Connected to Database Successfully...
+2023-04-07 12:16:13 info: [0mGET /job/mostRecents [32m200[0m 943.604 ms - -[0m

@@ -87,6 +87,27 @@ class JobController {
 
   /*
   |--------------------------------------------------------------------------
+  | getMostRecentJobs
+  |--------------------------------------------------------------------------
+  */
+  public getMostRecentJobs = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const jobQueries: any = [];
+      const about = await this.aboutService.getUserAbout(req.user.id);
+      if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+
+      about[0].skills.forEach((skill: string) => jobQueries.push(skill));
+
+      const data = await this.jobService.getMostRecentJobs(jobQueries);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Get JOB By Id
   |--------------------------------------------------------------------------
   */

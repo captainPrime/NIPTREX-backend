@@ -1,0 +1,7 @@
+2023-04-07 12:06:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 12:11:26 error: [POST] /job/unSaveJob/642ff9249990e7776f7c8294 >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-04-07 12:11:34 error: [POST] /job/unSaveJob/642ff9249990e7776f7c8294 >> StatusCode:: 400, Message:: SAVED_JOB_NOT_FOUND
+2023-04-07 12:12:44 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:13:14 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:13:37 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-07 12:14:15 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
