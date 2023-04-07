@@ -28,7 +28,6 @@ const JobSchema: Schema = new Schema(
     verified: { type: String, required: true },
     rating: { type: String, required: true },
     status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
-    is_saved: { type: Boolean, default: false },
     location: { type: String, required: true },
     jobType: { type: String, required: true },
     jobSize: { type: String, required: true },

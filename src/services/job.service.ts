@@ -40,7 +40,7 @@ class JobService {
   | Get User Job Best Matches
   |--------------------------------------------------------------------------
   */
-  public async getUserJobBestMatches(query: any, _preference: any): Promise<any> {
+  public async getUserJobBestMatches(query: any, _preference: any, userId: string): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
@@ -50,7 +50,15 @@ class JobService {
     const data = await this.job.find(filter).limit(10);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
-    return data;
+    const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
+
+    const updatedData = data.map((job: any) => {
+      return {
+        ...job.toJSON(),
+        isSaved: savedJobIds.includes(job._id.toString()),
+      };
+    });
+    return updatedData;
   }
 
   /*
@@ -147,7 +155,7 @@ class JobService {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.saveJob.find({ user_id: id });
-    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+    if (!data) throw new HttpException(400, 2002, 'SAVED_JOB_NOT_FOUND');
 
     return data;
   }

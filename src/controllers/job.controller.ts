@@ -77,7 +77,7 @@ class JobController {
       about[0].skills.forEach((skill: string) => jobQueries.push(skill));
 
       console.log('QUERY', jobQueries);
-      const data = await this.jobService.getUserJobBestMatches(jobQueries, preference[0]);
+      const data = await this.jobService.getUserJobBestMatches(jobQueries, preference[0], req.user.id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
