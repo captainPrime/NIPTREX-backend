@@ -9,3 +9,7 @@
 2023-04-07 12:30:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-07 12:34:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-07 12:34:58 error: [POST] /job/saveJob/642fffd2b6626e45e5d2a1f0 >> StatusCode:: 400, Message:: SavedJob validation failed: job: Path `job` is required.
+2023-04-07 15:31:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 15:32:47 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-07 15:34:00 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3c >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-07 15:37:03 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3b >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED

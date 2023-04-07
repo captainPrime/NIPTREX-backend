@@ -101,3 +101,37 @@
 2023-04-07 13:14:59 info: Connected to email server
 2023-04-07 13:14:59 info: Connected to Database Successfully...
 2023-04-07 13:15:29 info: [0mGET /job/getUserSavedItems [32m200[0m 453.070 ms - 183[0m
+2023-04-07 15:30:06 info: =================================
+2023-04-07 15:30:06 info: ======= ENV: development =======
+2023-04-07 15:30:06 info: 🚀 App listening on the port 3000
+2023-04-07 15:30:06 info: =================================
+2023-04-07 15:30:09 info: Connected to email server
+2023-04-07 15:30:21 info: Connected to Database Successfully...
+2023-04-07 15:31:02 info: [0mGET /reload_db [32m200[0m 4235.124 ms - 74[0m
+2023-04-07 15:31:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 15:31:29 info: [0mPOST /auth/login [32m200[0m 1604.920 ms - 587[0m
+2023-04-07 15:31:47 info: [0mPOST /profile/about [32m200[0m 1769.676 ms - 815[0m
+2023-04-07 15:32:24 info: [0mGET /job/getAllJobs [32m200[0m 211.047 ms - 80[0m
+2023-04-07 15:32:28 info: [0mPOST /job [32m200[0m 249.122 ms - -[0m
+2023-04-07 15:32:34 info: [0mGET /job/getAllJobs [32m200[0m 232.787 ms - -[0m
+2023-04-07 15:32:41 info: [0mGET /job/getUserJobBestMatches [32m200[0m 856.371 ms - 676[0m
+2023-04-07 15:32:47 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-07 15:32:47 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 439.242 ms - 71[0m
+2023-04-07 15:33:29 info: [0mPOST /job/saveJob/6430297cd3d1556331bfcb3d [32m200[0m 3713.669 ms - 181[0m
+2023-04-07 15:33:45 info: [0mGET /job/savedJobs [32m200[0m 1011.938 ms - 753[0m
+2023-04-07 15:34:00 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3c >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-07 15:34:00 info: [0mPOST /job/saveJob/6430297cd3d1556331bfcb3c [32m200[0m 941.999 ms - 74[0m
+2023-04-07 15:36:06 info: =================================
+2023-04-07 15:36:06 info: ======= ENV: development =======
+2023-04-07 15:36:06 info: 🚀 App listening on the port 3000
+2023-04-07 15:36:06 info: =================================
+2023-04-07 15:36:09 info: Connected to email server
+2023-04-07 15:36:19 info: Connected to Database Successfully...
+2023-04-07 15:36:31 info: [0mPOST /job/saveJob/6430297cd3d1556331bfcb3c [32m200[0m 980.334 ms - 181[0m
+2023-04-07 15:36:45 info: [0mGET /job/getUserSavedItems [32m200[0m 421.855 ms - 287[0m
+2023-04-07 15:37:00 info: [0mPOST /job/saveJob/6430297cd3d1556331bfcb3b [32m200[0m 858.880 ms - 181[0m
+2023-04-07 15:37:03 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3b >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
+2023-04-07 15:37:03 info: [0mPOST /job/saveJob/6430297cd3d1556331bfcb3b [32m200[0m 790.198 ms - 74[0m
+2023-04-07 15:37:09 info: [0mGET /job/getUserSavedItems [32m200[0m 430.674 ms - 391[0m
+2023-04-07 15:37:44 info: [0mPOST /job/unSaveJob/6430297cd3d1556331bfcb3d [32m200[0m 1142.662 ms - 70[0m
+2023-04-07 15:37:53 info: [0mGET /job/getUserSavedItems [32m200[0m 1118.395 ms - 287[0m
