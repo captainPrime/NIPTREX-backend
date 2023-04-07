@@ -153,6 +153,23 @@ class JobController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get JOB By Id
+  |--------------------------------------------------------------------------
+  */
+  public unSaveJob = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+
+      await this.jobService.deleteSavedJob(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL' });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default JobController;
