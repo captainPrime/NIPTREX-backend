@@ -66,7 +66,7 @@ class JobService {
   | Get User Job Best Matches
   |--------------------------------------------------------------------------
   */
-  public async getMostRecentJobs(query: any): Promise<any> {
+  public async getMostRecentJobs(query: any, userId: string): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
@@ -75,7 +75,16 @@ class JobService {
     const data = await this.job.find(filter).sort({ createdAt: -1 }).limit(10);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
-    return data;
+    const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
+
+    const updatedData = data.map((job: any) => {
+      return {
+        ...job.toJSON(),
+        isSaved: savedJobIds.includes(job._id.toString()),
+      };
+    });
+
+    return updatedData;
   }
 
   /*

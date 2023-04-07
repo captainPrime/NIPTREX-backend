@@ -257,3 +257,20 @@
 2023-04-07 18:13:08 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1600.965 ms - -[0m
 2023-04-07 18:13:29 info: [0mPOST /job/saveJob/64304ef82f4f2b8f8494f36b [32m200[0m 1377.042 ms - 181[0m
 2023-04-07 18:13:35 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1225.788 ms - -[0m
+2023-04-07 18:15:39 info: =================================
+2023-04-07 18:15:39 info: ======= ENV: development =======
+2023-04-07 18:15:39 info: 🚀 App listening on the port 3000
+2023-04-07 18:15:39 info: =================================
+2023-04-07 18:15:42 info: Connected to email server
+2023-04-07 18:15:47 info: Connected to Database Successfully...
+2023-04-07 18:15:59 info: [0mGET /job/mostRecents [32m200[0m 1171.733 ms - -[0m
+2023-04-07 18:16:26 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:16:26 info: [0mPOST /auth/register [32m200[0m 5798.236 ms - 513[0m
+2023-04-07 18:16:42 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:16:42 info: [0mPOST /auth/send_verification_email [32m200[0m 4947.130 ms - 81[0m
+2023-04-07 18:17:23 info: [0mPOST /auth/verify_email?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NDMwNGZlNDVhMDQ2ZjQxODA1OGJkNWQiLCJpYXQiOjE2ODA4ODc3OTcsImV4cCI6MTY4MDg4ODM5NywidHlwZSI6InZlcmlmeUVtYWlsIn0.kNXxPHseKP6qSYBdMvzXo74L7M-FiWqEQ5CtPROQCNM [32m200[0m 1125.105 ms - 81[0m
+2023-04-07 18:17:23 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:17:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:17:47 info: [0mPOST /auth/login [32m200[0m 483.616 ms - 587[0m
+2023-04-07 18:17:59 info: [0mPOST /profile/about [32m200[0m 1896.616 ms - 838[0m
+2023-04-07 18:18:07 info: [0mGET /job/getUserJobBestMatches [32m200[0m 2195.186 ms - -[0m

@@ -14,3 +14,7 @@
 2023-04-07 15:34:00 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3c >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
 2023-04-07 15:37:03 error: [POST] /job/saveJob/6430297cd3d1556331bfcb3b >> StatusCode:: 400, Message:: JOB_ALREAD_ADDED
 2023-04-07 18:12:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:16:26 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:16:42 error: [POST] /auth/send_verification_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:17:23 error: [POST] /auth/verify_email >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-07 18:17:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
