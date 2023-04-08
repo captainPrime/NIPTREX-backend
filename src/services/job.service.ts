@@ -5,8 +5,8 @@ import { isEmpty } from '@utils/util';
 import User from '@/models/users.model';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
-import { IJob, JobModel, SavedJob } from '@/models/job.model';
-import { PaginationOptions } from '@/interfaces/job.inteface';
+import { JobModel, SavedJob } from '@/models/job.model';
+import { IJob, PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobService {
   public job: any = JobModel;

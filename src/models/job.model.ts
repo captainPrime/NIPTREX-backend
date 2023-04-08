@@ -1,24 +1,7 @@
+import { IJob, JobStatus } from '@/interfaces/job.inteface';
 import { paginate } from '@/modules/paginate';
 import { toJSON } from '@/modules/toJSON';
 import { Schema, model } from 'mongoose';
-
-export interface IJob {
-  jobsTags: string[];
-  jobTitle: string;
-  jobSubInfo: string;
-  jobDescription: string;
-  verified: boolean;
-  rating: number;
-  location: string;
-  jobType: string;
-  jobSize: string;
-}
-
-enum JobStatus {
-  ACTIVE = 'active',
-  IN_PROGRESS = 'in_progress',
-  CLOSED = 'inactive',
-}
 
 const JobSchema: Schema = new Schema(
   {
@@ -26,6 +9,18 @@ const JobSchema: Schema = new Schema(
     jobTitle: { type: String, required: true },
     jobSubInfo: { type: String, required: true },
     jobDescription: { type: String, required: true },
+    attachments: [{ type: String }],
+    links: [{ type: String }],
+    duration: { type: String },
+    hourly: { type: Number },
+    level: { type: String },
+    activities: {
+      proposals: { type: Number, default: 0 },
+      lastViewed: { type: Date },
+      interviewing: { type: Number, default: 0 },
+      invitesSent: { type: Number, default: 0 },
+      unAnsweredInvites: { type: Number, default: 0 },
+    },
     verified: { type: String, required: true },
     rating: { type: String, required: true },
     status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
