@@ -24,7 +24,7 @@ export interface IJob {
   };
   verified: boolean;
   rating: number;
-  status: JobStatus;
+  status: string;
   location: string;
   jobType: string;
   jobSize: string;
