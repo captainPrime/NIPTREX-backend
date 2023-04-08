@@ -22,7 +22,7 @@ export interface IJob {
     invitesSent: number;
     unAnsweredInvites: number;
   };
-  verified: string;
+  verified: boolean;
   rating: string;
   status: JobStatus;
   location: string;
