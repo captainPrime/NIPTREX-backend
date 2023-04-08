@@ -28,7 +28,7 @@ export interface IJob {
   location: string;
   jobType: string;
   jobSize: string;
-  datePosted: string; // formatted as "2 hours ago" or "now"
+  datePosted: string;
 }
 
 export enum JobStatus {
