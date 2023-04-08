@@ -8,6 +8,7 @@ import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {
   public userService = new UserService();
@@ -37,7 +38,13 @@ class JobController {
   */
   public getAllJobs = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data = await this.jobService.getAllJobs();
+      const options: PaginationOptions = {
+        sortBy: 'name:desc',
+        limit: 5,
+        page: 1,
+        projectBy: 'name:hide, role:hide',
+      };
+      const data = await this.jobService.getAllJobs(req.query, options);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

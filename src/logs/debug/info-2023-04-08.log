@@ -4,3 +4,38 @@
 2023-04-08 02:20:39 info: =================================
 2023-04-08 02:20:42 info: Connected to Database Successfully...
 2023-04-08 02:20:44 info: Connected to email server
+2023-04-08 02:31:28 info: =================================
+2023-04-08 02:31:28 info: ======= ENV: development =======
+2023-04-08 02:31:28 info: 🚀 App listening on the port 3000
+2023-04-08 02:31:28 info: =================================
+2023-04-08 02:31:30 info: Connected to email server
+2023-04-08 02:31:35 info: Connected to Database Successfully...
+2023-04-08 02:31:46 info: [0mGET /job/getAllJobs [32m200[0m 252.601 ms - 769[0m
+2023-04-08 02:33:17 info: =================================
+2023-04-08 02:33:17 info: ======= ENV: development =======
+2023-04-08 02:33:17 info: 🚀 App listening on the port 3000
+2023-04-08 02:33:17 info: =================================
+2023-04-08 02:33:19 info: Connected to email server
+2023-04-08 02:33:20 info: Connected to Database Successfully...
+2023-04-08 02:33:25 info: [0mGET /job/getAllJobs [32m200[0m 280.523 ms - 659[0m
+2023-04-08 02:33:59 info: =================================
+2023-04-08 02:33:59 info: ======= ENV: development =======
+2023-04-08 02:33:59 info: 🚀 App listening on the port 3000
+2023-04-08 02:33:59 info: =================================
+2023-04-08 02:34:01 info: Connected to email server
+2023-04-08 02:34:02 info: Connected to Database Successfully...
+2023-04-08 02:35:27 info: [0mGET /job/getAllJobs [32m200[0m 316.714 ms - 769[0m
+2023-04-08 02:36:07 info: [0mGET /job/getAllJobs?status=active [32m200[0m 252.248 ms - 162[0m
+2023-04-08 02:36:57 info: =================================
+2023-04-08 02:36:57 info: ======= ENV: development =======
+2023-04-08 02:36:57 info: 🚀 App listening on the port 3000
+2023-04-08 02:36:57 info: =================================
+2023-04-08 02:37:00 info: Connected to email server
+2023-04-08 02:37:00 info: Connected to Database Successfully...
+2023-04-08 02:37:09 info: [0mGET /job/getAllJobs?status=active [32m200[0m 256.298 ms - -[0m
+2023-04-08 02:37:42 info: [0mGET /job/getAllJobs?status=active&id=64304ef82f4f2b8f8494f367 [32m200[0m 224.817 ms - -[0m
+2023-04-08 02:37:48 info: [0mGET /job/getAllJobs?id=64304ef82f4f2b8f8494f367 [32m200[0m 214.248 ms - -[0m
+2023-04-08 02:38:31 info: [0mGET /job/getAllJobs?status=inactive [32m200[0m 217.631 ms - -[0m
+2023-04-08 02:38:56 info: [0mGET /job/getAllJobs?status=inactive&jobType=Remote [32m200[0m 223.518 ms - -[0m
+2023-04-08 02:39:02 info: [0mGET /job/getAllJobs?jobType=Remote [32m200[0m 218.569 ms - -[0m
+2023-04-08 02:40:49 info: [0mGET /reload_db [32m200[0m 2772.837 ms - 74[0m
