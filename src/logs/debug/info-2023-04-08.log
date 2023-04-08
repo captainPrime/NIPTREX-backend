@@ -154,3 +154,26 @@
 2023-04-08 04:15:50 info: Connected to email server
 2023-04-08 04:15:52 info: Connected to Database Successfully...
 2023-04-08 04:16:04 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 260.216 ms - -[0m
+2023-04-08 04:42:57 info: =================================
+2023-04-08 04:42:57 info: ======= ENV: development =======
+2023-04-08 04:42:57 info: 🚀 App listening on the port 3000
+2023-04-08 04:42:57 info: =================================
+2023-04-08 04:43:00 info: Connected to email server
+2023-04-08 04:43:00 info: Connected to Database Successfully...
+2023-04-08 04:43:09 info: [0mGET /reload_db [32m200[0m 2782.725 ms - 74[0m
+2023-04-08 04:43:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 04:43:17 info: [0mPOST /auth/login [32m200[0m 976.447 ms - 587[0m
+2023-04-08 04:43:22 info: [0mPOST /job [32m200[0m 389.791 ms - -[0m
+2023-04-08 04:43:34 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 234.173 ms - -[0m
+2023-04-08 04:56:48 info: [0mGET /profile [32m200[0m 2401.837 ms - 179[0m
+2023-04-08 04:57:00 error: [POST] /profile/about >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'lastViewed')
+2023-04-08 04:57:00 info: [0mPOST /profile/about [32m200[0m 1354.876 ms - 115[0m
+2023-04-08 05:09:07 info: =================================
+2023-04-08 05:09:07 info: ======= ENV: development =======
+2023-04-08 05:09:07 info: 🚀 App listening on the port 3000
+2023-04-08 05:09:07 info: =================================
+2023-04-08 05:09:09 info: Connected to email server
+2023-04-08 05:09:09 info: Connected to Database Successfully...
+2023-04-08 05:09:18 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-08 05:09:18 info: [0mPOST /profile/about [32m200[0m 740.673 ms - 76[0m
+2023-04-08 05:09:28 info: [0mGET /profile [32m200[0m 2487.249 ms - 865[0m

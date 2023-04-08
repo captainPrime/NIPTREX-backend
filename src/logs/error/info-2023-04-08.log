@@ -4,3 +4,6 @@
 2023-04-08 03:34:57 error: [POST] /job >> StatusCode:: 400, Message:: Job validation failed: status: `ACTIVE` is not a valid enum value for path `status`.
 2023-04-08 04:06:43 error: [GET] /job/getAllJobs >> StatusCode:: 400, Message:: BSON field 'skip' value must be >= 0, actual value '-2'
 2023-04-08 04:13:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 04:43:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 04:57:00 error: [POST] /profile/about >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'lastViewed')
+2023-04-08 05:09:18 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
