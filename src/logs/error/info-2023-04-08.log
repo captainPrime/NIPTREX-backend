@@ -1,1 +1,4 @@
 2023-04-08 02:45:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 03:33:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 03:33:39 error: [POST] /job >> StatusCode:: 400, Message:: Job validation failed: hourly: Cast to Number failed for value "{ min: 40, max: 66 }" (type Object) at path "hourly"
+2023-04-08 03:34:57 error: [POST] /job >> StatusCode:: 400, Message:: Job validation failed: status: `ACTIVE` is not a valid enum value for path `status`.

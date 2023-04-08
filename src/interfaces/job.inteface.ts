@@ -5,35 +5,34 @@ export interface PaginationOptions {
   projectBy?: unknown;
 }
 
-export enum JobStatus {
-  ACTIVE = 'active',
-  IN_PROGRESS = 'in_progress',
-  CLOSED = 'inactive',
-}
-
 export interface IJob {
   jobsTags: string[];
   jobTitle: string;
   jobSubInfo: string;
   jobDescription: string;
-  verified: boolean;
-  rating: number;
   attachments: string[];
   links: string[];
-  duration: number;
+  duration: string;
   hourly: number;
   level: string;
   activities: {
     proposals: number;
-    lastViewed: Date;
+    lastViewed?: Date;
     interviewing: number;
     invitesSent: number;
     unAnsweredInvites: number;
   };
+  verified: string;
+  rating: string;
   status: JobStatus;
   location: string;
   jobType: string;
   jobSize: string;
-  createdAt: Date;
-  updatedAt: Date;
+  datePosted: string; // formatted as "2 hours ago" or "now"
+}
+
+export enum JobStatus {
+  ACTIVE = 'active',
+  INACTIVE = 'inactive',
+  PENDING = 'pending',
 }

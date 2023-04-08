@@ -27,6 +27,30 @@ const JobSchema: Schema = new Schema(
     location: { type: String, required: true },
     jobType: { type: String, required: true },
     jobSize: { type: String, required: true },
+    datePosted: {
+      type: Date,
+      default: Date.now,
+      get: function (datePosted: Date) {
+        const now = new Date();
+        const diff = (now.getTime() - datePosted.getTime()) / 1000;
+
+        if (diff < 60) {
+          return 'now';
+        } else if (diff < 60 * 60) {
+          const minutes = Math.floor(diff / 60);
+          return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ago`;
+        } else if (diff < 24 * 60 * 60) {
+          const hours = Math.floor(diff / (60 * 60));
+          return `${hours} ${hours === 1 ? 'hour' : 'hours'} ago`;
+        } else if (diff < 365 * 24 * 60 * 60) {
+          const days = Math.floor(diff / (24 * 60 * 60));
+          return `${days} ${days === 1 ? 'day' : 'days'} ago`;
+        } else {
+          const years = Math.floor(diff / (365 * 24 * 60 * 60));
+          return `${years} ${years === 1 ? 'year' : 'years'} ago`;
+        }
+      },
+    },
   },
   {
     timestamps: true,

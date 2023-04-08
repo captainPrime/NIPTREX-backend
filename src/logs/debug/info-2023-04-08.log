@@ -69,3 +69,28 @@
 2023-04-08 02:54:40 info: [0mGET /job/getAllJobs?status=active&rating=5&limit [32m200[0m 253.162 ms - 751[0m
 2023-04-08 02:54:45 info: [0mGET /job/getAllJobs?rating=5&limit [32m200[0m 280.716 ms - -[0m
 2023-04-08 02:54:54 info: [0mGET /job/getAllJobs?rating=5&limit=1 [32m200[0m 256.095 ms - 805[0m
+2023-04-08 03:33:15 info: =================================
+2023-04-08 03:33:15 info: ======= ENV: development =======
+2023-04-08 03:33:15 info: 🚀 App listening on the port 3000
+2023-04-08 03:33:15 info: =================================
+2023-04-08 03:33:17 info: Connected to email server
+2023-04-08 03:33:18 info: Connected to Database Successfully...
+2023-04-08 03:33:32 info: [0mGET /reload_db [32m200[0m 2829.648 ms - 74[0m
+2023-04-08 03:33:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 03:33:36 info: [0mPOST /auth/login [32m200[0m 564.564 ms - 587[0m
+2023-04-08 03:33:39 error: [POST] /job >> StatusCode:: 400, Message:: Job validation failed: hourly: Cast to Number failed for value "{ min: 40, max: 66 }" (type Object) at path "hourly"
+2023-04-08 03:33:39 info: [0mPOST /job [32m200[0m 90.745 ms - 177[0m
+2023-04-08 03:34:40 info: =================================
+2023-04-08 03:34:40 info: ======= ENV: development =======
+2023-04-08 03:34:40 info: 🚀 App listening on the port 3000
+2023-04-08 03:34:40 info: =================================
+2023-04-08 03:34:42 info: Connected to email server
+2023-04-08 03:34:47 info: Connected to Database Successfully...
+2023-04-08 03:34:57 error: [POST] /job >> StatusCode:: 400, Message:: Job validation failed: status: `ACTIVE` is not a valid enum value for path `status`.
+2023-04-08 03:34:57 info: [0mPOST /job [32m200[0m 50.751 ms - 141[0m
+2023-04-08 03:35:52 info: =================================
+2023-04-08 03:35:52 info: ======= ENV: development =======
+2023-04-08 03:35:52 info: 🚀 App listening on the port 3000
+2023-04-08 03:35:52 info: =================================
+2023-04-08 03:35:55 info: Connected to email server
+2023-04-08 03:35:55 info: Connected to Database Successfully...
