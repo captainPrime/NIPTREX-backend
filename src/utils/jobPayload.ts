@@ -12,7 +12,7 @@ export const jobPayload = [
     level: 'Intermediate',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
@@ -38,7 +38,7 @@ export const jobPayload = [
     level: 'Entry Level',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
@@ -64,7 +64,7 @@ export const jobPayload = [
     level: 'Intermediate',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
@@ -90,7 +90,7 @@ export const jobPayload = [
     level: 'Intermediate',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
@@ -116,7 +116,7 @@ export const jobPayload = [
     level: 'Intermediate',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
@@ -142,7 +142,7 @@ export const jobPayload = [
     level: 'Expert',
     activities: {
       proposals: 0,
-      lastViewed: null,
+      lastViewed: new Date(),
       interviewing: 0,
       invitesSent: 0,
       unAnsweredInvites: 0,
