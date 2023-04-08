@@ -28,7 +28,7 @@ export interface IJob {
   location: string;
   jobType: string;
   jobSize: string;
-  datePosted: string;
+  datePosted: Date;
 }
 
 export enum JobStatus {
