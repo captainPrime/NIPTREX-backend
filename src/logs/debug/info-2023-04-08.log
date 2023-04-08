@@ -39,3 +39,33 @@
 2023-04-08 02:38:56 info: [0mGET /job/getAllJobs?status=inactive&jobType=Remote [32m200[0m 223.518 ms - -[0m
 2023-04-08 02:39:02 info: [0mGET /job/getAllJobs?jobType=Remote [32m200[0m 218.569 ms - -[0m
 2023-04-08 02:40:49 info: [0mGET /reload_db [32m200[0m 2772.837 ms - 74[0m
+2023-04-08 02:45:06 info: =================================
+2023-04-08 02:45:06 info: ======= ENV: development =======
+2023-04-08 02:45:06 info: 🚀 App listening on the port 3000
+2023-04-08 02:45:06 info: =================================
+2023-04-08 02:45:09 info: Connected to email server
+2023-04-08 02:45:14 info: Connected to Database Successfully...
+2023-04-08 02:45:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 02:45:23 info: [0mPOST /auth/login [32m200[0m 1288.527 ms - 587[0m
+2023-04-08 02:45:26 info: [0mPOST /job [32m200[0m 292.911 ms - -[0m
+2023-04-08 02:45:32 info: [0mGET /job/getAllJobs?jobType=Remote [32m200[0m 224.152 ms - -[0m
+2023-04-08 02:45:57 info: [0mGET /job/getAllJobs?status=inactive&jobType=Remote&location=india [32m200[0m 233.562 ms - 162[0m
+2023-04-08 02:46:04 info: [0mGET /job/getAllJobs?jobType=Remote&location=india [32m200[0m 446.363 ms - 162[0m
+2023-04-08 02:46:08 info: [0mGET /job/getAllJobs?location=india [32m200[0m 217.723 ms - 162[0m
+2023-04-08 02:46:18 info: [0mGET /job/getAllJobs?location=India [32m200[0m 466.781 ms - 709[0m
+2023-04-08 02:46:26 info: [0mGET /job/getAllJobs?jobType=Remote&location=India [32m200[0m 452.958 ms - 709[0m
+2023-04-08 02:46:56 info: [0mGET /job/getAllJobs?status=inactive&jobType=Remote&location=India [32m200[0m 1398.198 ms - 162[0m
+2023-04-08 02:47:03 info: [0mGET /job/getAllJobs?status=active&jobType=Remote&location=India [32m200[0m 226.690 ms - 709[0m
+2023-04-08 02:47:35 info: [0mGET /job/getAllJobs?status=active&jobType=Remote&location=India&rating=5 [32m200[0m 270.110 ms - 162[0m
+2023-04-08 02:47:40 info: [0mGET /job/getAllJobs?rating=5 [32m200[0m 240.132 ms - -[0m
+2023-04-08 02:48:15 info: [0mGET /job/getAllJobs?rating=5&verified=true [32m200[0m 272.371 ms - -[0m
+2023-04-08 02:48:23 info: [0mGET /job/getAllJobs?status=active&rating=5&verified=true [32m200[0m 265.403 ms - 751[0m
+2023-04-08 02:54:17 info: =================================
+2023-04-08 02:54:17 info: ======= ENV: development =======
+2023-04-08 02:54:17 info: 🚀 App listening on the port 3000
+2023-04-08 02:54:17 info: =================================
+2023-04-08 02:54:20 info: Connected to email server
+2023-04-08 02:54:20 info: Connected to Database Successfully...
+2023-04-08 02:54:40 info: [0mGET /job/getAllJobs?status=active&rating=5&limit [32m200[0m 253.162 ms - 751[0m
+2023-04-08 02:54:45 info: [0mGET /job/getAllJobs?rating=5&limit [32m200[0m 280.716 ms - -[0m
+2023-04-08 02:54:54 info: [0mGET /job/getAllJobs?rating=5&limit=1 [32m200[0m 256.095 ms - 805[0m
