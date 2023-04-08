@@ -33,6 +33,7 @@ const toJSON = (schema: any) => {
       });
 
       if (ret.datePosted) ret.datePosted = moment(new Date(ret.datePosted)).fromNow();
+      if (ret.activities.lastViewed) ret.activities.lastViewed = moment(new Date(ret.activities.lastViewed)).fromNow();
 
       // eslint-disable-next-line no-param-reassign
       ret.id = ret._id.toString();
