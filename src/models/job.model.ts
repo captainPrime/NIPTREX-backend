@@ -1,3 +1,4 @@
+import { paginate } from '@/modules/paginate';
 import { toJSON } from '@/modules/toJSON';
 import { Schema, model } from 'mongoose';
 
@@ -48,6 +49,7 @@ const SavedJobSchema: Schema = new Schema(
 );
 
 JobSchema.plugin(toJSON);
+JobSchema.plugin(paginate);
 SavedJobSchema.plugin(toJSON);
 
 const JobModel = model<IJob>('Job', JobSchema);

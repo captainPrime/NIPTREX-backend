@@ -6,6 +6,7 @@ import User from '@/models/users.model';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { IJob, JobModel, SavedJob } from '@/models/job.model';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobService {
   public job: any = JobModel;
@@ -92,8 +93,8 @@ class JobService {
   | getAllJobs
   |--------------------------------------------------------------------------
   */
-  public async getAllJobs(): Promise<any> {
-    const data = await this.job.find({});
+  public async getAllJobs(filter: any, options: PaginationOptions): Promise<any> {
+    const data = await this.job.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     return data;
