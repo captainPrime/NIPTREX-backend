@@ -94,3 +94,63 @@
 2023-04-08 03:35:52 info: =================================
 2023-04-08 03:35:55 info: Connected to email server
 2023-04-08 03:35:55 info: Connected to Database Successfully...
+2023-04-08 03:36:04 info: [0mPOST /job [32m200[0m 311.743 ms - -[0m
+2023-04-08 03:37:43 info: [0mGET /job/getAllJobs?rating=5&limit=1&page=2 [32m200[0m 269.582 ms - 1007[0m
+2023-04-08 03:37:57 info: [0mGET /job/getAllJobs?rating=5&limit=3&page=2 [32m200[0m 229.896 ms - 162[0m
+2023-04-08 03:38:11 info: [0mGET /job/getAllJobs?rating=5&limit=1&page=2 [32m200[0m 248.212 ms - 1007[0m
+2023-04-08 03:38:19 info: [0mGET /job/getAllJobs?rating=5&limit=1&page=1 [32m200[0m 225.000 ms - -[0m
+2023-04-08 03:38:26 info: [0mGET /job/getAllJobs?limit=1&page=1 [32m200[0m 220.105 ms - -[0m
+2023-04-08 03:38:36 info: [0mGET /job/getAllJobs?limit=5&page=1 [32m200[0m 227.688 ms - -[0m
+2023-04-08 03:42:34 info: =================================
+2023-04-08 03:42:34 info: ======= ENV: development =======
+2023-04-08 03:42:34 info: 🚀 App listening on the port 3000
+2023-04-08 03:42:34 info: =================================
+2023-04-08 03:42:36 info: Connected to email server
+2023-04-08 03:42:36 info: Connected to Database Successfully...
+2023-04-08 03:42:54 info: [0mGET /reload_db [32m200[0m 4145.915 ms - 74[0m
+2023-04-08 03:44:45 info: [0mGET /job/getAllJobs?next=2 [32m200[0m 273.257 ms - 162[0m
+2023-04-08 03:48:50 info: [0mGET /reload_db [32m200[0m 2953.035 ms - 74[0m
+2023-04-08 03:48:56 info: [0mPOST /job [32m200[0m 622.748 ms - -[0m
+2023-04-08 03:49:27 info: [0mGET /job/getAllJobs?next=2 [32m200[0m 304.707 ms - -[0m
+2023-04-08 03:50:03 info: [0mGET /job/getAllJobs?limit=2 [32m200[0m 465.706 ms - -[0m
+2023-04-08 04:01:51 info: =================================
+2023-04-08 04:01:51 info: ======= ENV: development =======
+2023-04-08 04:01:51 info: 🚀 App listening on the port 3000
+2023-04-08 04:01:51 info: =================================
+2023-04-08 04:01:54 info: Connected to email server
+2023-04-08 04:02:00 info: Connected to Database Successfully...
+2023-04-08 04:02:05 info: [0mGET /job/getAllJobs?limit=2 [32m200[0m 257.688 ms - -[0m
+2023-04-08 04:02:25 info: [0mGET /job/getAllJobs?limit=2&skip=2 [32m200[0m 234.370 ms - -[0m
+2023-04-08 04:06:34 info: =================================
+2023-04-08 04:06:34 info: ======= ENV: development =======
+2023-04-08 04:06:34 info: 🚀 App listening on the port 3000
+2023-04-08 04:06:34 info: =================================
+2023-04-08 04:06:36 info: Connected to email server
+2023-04-08 04:06:36 info: Connected to Database Successfully...
+2023-04-08 04:06:43 error: [GET] /job/getAllJobs >> StatusCode:: 400, Message:: BSON field 'skip' value must be >= 0, actual value '-2'
+2023-04-08 04:06:43 info: [0mGET /job/getAllJobs?limit=2&skip=2 [32m200[0m 350.276 ms - 112[0m
+2023-04-08 04:11:33 info: =================================
+2023-04-08 04:11:33 info: ======= ENV: development =======
+2023-04-08 04:11:33 info: 🚀 App listening on the port 3000
+2023-04-08 04:11:33 info: =================================
+2023-04-08 04:11:35 info: Connected to email server
+2023-04-08 04:11:36 info: Connected to Database Successfully...
+2023-04-08 04:11:56 info: [0mGET /job/getAllJobs?limit=2&skip=2 [32m200[0m 302.443 ms - -[0m
+2023-04-08 04:12:15 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 360.932 ms - -[0m
+2023-04-08 04:13:02 info: =================================
+2023-04-08 04:13:02 info: ======= ENV: development =======
+2023-04-08 04:13:02 info: 🚀 App listening on the port 3000
+2023-04-08 04:13:02 info: =================================
+2023-04-08 04:13:07 info: Connected to email server
+2023-04-08 04:13:20 info: Connected to Database Successfully...
+2023-04-08 04:13:40 info: [0mGET /reload_db [32m200[0m 3081.315 ms - 74[0m
+2023-04-08 04:13:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-08 04:13:45 info: [0mPOST /auth/login [32m200[0m 563.023 ms - 587[0m
+2023-04-08 04:13:49 info: [0mPOST /job [32m200[0m 440.509 ms - -[0m
+2023-04-08 04:15:48 info: =================================
+2023-04-08 04:15:48 info: ======= ENV: development =======
+2023-04-08 04:15:48 info: 🚀 App listening on the port 3000
+2023-04-08 04:15:48 info: =================================
+2023-04-08 04:15:50 info: Connected to email server
+2023-04-08 04:15:52 info: Connected to Database Successfully...
+2023-04-08 04:16:04 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 260.216 ms - -[0m

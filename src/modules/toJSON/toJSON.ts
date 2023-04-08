@@ -1,4 +1,5 @@
 /* eslint-disable no-param-reassign */
+import moment from 'moment';
 import { Document } from 'mongoose';
 
 /**
@@ -30,6 +31,8 @@ const toJSON = (schema: any) => {
           deleteAtPath(ret, path.split('.'), 0);
         }
       });
+
+      if (ret.datePosted) ret.datePosted = moment(new Date(ret.datePosted)).fromNow();
 
       // eslint-disable-next-line no-param-reassign
       ret.id = ret._id.toString();

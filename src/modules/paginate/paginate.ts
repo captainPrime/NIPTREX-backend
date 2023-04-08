@@ -122,6 +122,7 @@ const paginate = (schema: Schema) => {
           limit,
           totalPages,
           countOfFilteredDocuments,
+          skip,
           next,
           prev,
         };

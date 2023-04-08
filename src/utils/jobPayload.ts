@@ -23,7 +23,6 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
-    datePosted: new Date(Date.now() - 2 * 60 * 60 * 1000),
   },
 
   {
@@ -49,7 +48,6 @@ export const jobPayload = [
     location: 'United States',
     jobType: 'Part-time',
     jobSize: 'Individual',
-    datePosted: new Date(Date.now() - 4 * 60 * 60 * 1000),
   },
 
   {
@@ -75,8 +73,6 @@ export const jobPayload = [
     location: 'Canada',
     jobType: 'Remote',
     jobSize: 'Small team (2-3 members)',
-    uniqueIdentifier: 'job789',
-    datePosted: new Date(Date.now() - 24 * 60 * 60 * 1000),
   },
   {
     jobsTags: ['Responsive designs', 'Mobile App Design'],
@@ -102,7 +98,6 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
-    datePosted: new Date(),
   },
   {
     jobsTags: ['UI/UX', 'Design', 'Mobile App Design', 'Sketch'],
@@ -128,7 +123,6 @@ export const jobPayload = [
     location: 'Canada',
     jobType: 'Remote',
     jobSize: 'Medium team (7-10 members)',
-    datePosted: new Date(),
   },
   {
     jobsTags: ['Backend Development', 'NodeJS', 'ExpressJS'],
@@ -154,6 +148,5 @@ export const jobPayload = [
     location: 'India',
     jobType: 'Remote',
     jobSize: 'Large team (11+ members)',
-    datePosted: new Date(new Date().getTime() - 24 * 60 * 60 * 1000),
   },
 ];

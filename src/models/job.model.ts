@@ -30,26 +30,6 @@ const JobSchema: Schema = new Schema(
     datePosted: {
       type: Date,
       default: Date.now,
-      get: function (datePosted: Date) {
-        const now = new Date();
-        const diff = (now.getTime() - datePosted.getTime()) / 1000;
-
-        if (diff < 60) {
-          return 'now';
-        } else if (diff < 60 * 60) {
-          const minutes = Math.floor(diff / 60);
-          return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ago`;
-        } else if (diff < 24 * 60 * 60) {
-          const hours = Math.floor(diff / (60 * 60));
-          return `${hours} ${hours === 1 ? 'hour' : 'hours'} ago`;
-        } else if (diff < 365 * 24 * 60 * 60) {
-          const days = Math.floor(diff / (24 * 60 * 60));
-          return `${days} ${days === 1 ? 'day' : 'days'} ago`;
-        } else {
-          const years = Math.floor(diff / (365 * 24 * 60 * 60));
-          return `${years} ${years === 1 ? 'year' : 'years'} ago`;
-        }
-      },
     },
   },
   {
@@ -70,6 +50,14 @@ const SavedJobSchema: Schema = new Schema(
 JobSchema.plugin(toJSON);
 JobSchema.plugin(paginate);
 SavedJobSchema.plugin(toJSON);
+
+// JobSchema.pre('save', async function (next) {
+//   const job = this;
+//   if (job.isModified('datePosted')) {
+//     job.datePosted = await bcrypt.hash(user.password, 8);
+//   }
+//   next();
+// });
 
 const JobModel = model<IJob>('Job', JobSchema);
 const SavedJob = model<any>('SavedJob', SavedJobSchema);
