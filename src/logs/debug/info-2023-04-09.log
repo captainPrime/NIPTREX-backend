@@ -138,3 +138,20 @@
 2023-04-09 17:42:33 info: =================================
 2023-04-09 17:43:48 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-04-09 17:44:19 info: Connected to email server
+2023-04-09 17:50:32 info: =================================
+2023-04-09 17:50:32 info: ======= ENV: development =======
+2023-04-09 17:50:32 info: 🚀 App listening on the port 3000
+2023-04-09 17:50:32 info: =================================
+2023-04-09 17:50:36 info: Connected to email server
+2023-04-09 17:50:36 info: Connected to Database Successfully...
+2023-04-09 17:51:24 info: [0mGET /job/getAllJobs?limit=2&page=3&skip=2 [32m200[0m 333.100 ms - -[0m
+2023-04-09 17:51:30 info: [0mGET /job/skills [32m200[0m 2.069 ms - -[0m
+2023-04-09 17:52:10 info: [0mGET /job/skillsCategory [32m200[0m 1.606 ms - -[0m
+2023-04-09 17:52:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-09 17:52:21 info: [0mPOST /auth/login [32m200[0m 1519.710 ms - 587[0m
+2023-04-09 17:52:32 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
+2023-04-09 17:52:32 info: [0mGET /job/getUserJobBestMatches [32m200[0m 5133.218 ms - 103[0m
+2023-04-09 17:52:59 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
+2023-04-09 17:52:59 info: [0mGET /job/getUserJobBestMatches?status=active [32m200[0m 1254.717 ms - 103[0m
+2023-04-09 17:53:21 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
+2023-04-09 17:53:21 info: [0mGET /job/getUserJobBestMatches?status=active&salary=100000 [32m200[0m 506.680 ms - 103[0m

@@ -4,3 +4,7 @@
 2023-04-09 09:13:43 error: [GET] /docs/ >> StatusCode:: 404, Message:: The requested path /docs/ not found!
 2023-04-09 09:13:43 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
 2023-04-09 17:43:48 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-09 17:52:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-09 17:52:32 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
+2023-04-09 17:52:59 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
+2023-04-09 17:53:21 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: this.job.paginate(...).limit is not a function
