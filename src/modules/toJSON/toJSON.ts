@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable no-param-reassign */
 import moment from 'moment';
 import { Document } from 'mongoose';

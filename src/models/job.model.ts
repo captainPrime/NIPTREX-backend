@@ -51,14 +51,6 @@ JobSchema.plugin(toJSON);
 JobSchema.plugin(paginate);
 SavedJobSchema.plugin(toJSON);
 
-// JobSchema.pre('save', async function (next) {
-//   const job = this;
-//   if (job.isModified('datePosted')) {
-//     job.datePosted = await bcrypt.hash(user.password, 8);
-//   }
-//   next();
-// });
-
 const JobModel = model<IJob>('Job', JobSchema);
 const SavedJob = model<any>('SavedJob', SavedJobSchema);
 
