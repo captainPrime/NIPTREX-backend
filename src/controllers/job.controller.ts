@@ -123,14 +123,14 @@ class JobController {
 
       about[0].skills.forEach((skill: string) => jobQueries.push(skill));
 
-      // const options: PaginationOptions = {
-      //   sortBy: req.query.sortBy || 'name:desc',
-      //   limit: parseInt(req.query.limit as string, 10) || 5,
-      //   page: parseInt(req.query.page as string, 10) || 1,
-      //   projectBy: req.query.projectBy || 'name:hide, role:hide',
-      // };
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'createdAt:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
 
-      const data = await this.jobService.getMostRecentJobs(jobQueries, req.user.id);
+      const data = await this.jobService.getMostRecentJobs(jobQueries, req.user.id, req.query, options);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

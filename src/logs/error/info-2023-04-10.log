@@ -1,0 +1,12 @@
+2023-04-10 00:12:45 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-04-10 00:14:34 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: this.job.paginate(...).sort is not a function
+2023-04-10 00:15:51 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:18:18 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:19:53 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:25:05 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-04-10 00:32:15 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-10 00:39:53 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-04-10 00:40:26 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-10 00:40:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-04-10 00:41:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-04-10 00:42:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

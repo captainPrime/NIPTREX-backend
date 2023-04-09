@@ -1,0 +1,134 @@
+2023-04-10 00:12:01 info: =================================
+2023-04-10 00:12:01 info: ======= ENV: development =======
+2023-04-10 00:12:01 info: 🚀 App listening on the port 3000
+2023-04-10 00:12:01 info: =================================
+2023-04-10 00:12:45 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-04-10 00:13:02 info: =================================
+2023-04-10 00:13:02 info: ======= ENV: development =======
+2023-04-10 00:13:02 info: 🚀 App listening on the port 3000
+2023-04-10 00:13:02 info: =================================
+2023-04-10 00:13:21 info: Connected to Database Successfully...
+2023-04-10 00:13:34 info: Connected to email server
+2023-04-10 00:14:34 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: this.job.paginate(...).sort is not a function
+2023-04-10 00:14:34 info: [0mGET /job/mostRecents [32m200[0m 467.081 ms - 102[0m
+2023-04-10 00:15:37 info: =================================
+2023-04-10 00:15:37 info: ======= ENV: development =======
+2023-04-10 00:15:37 info: 🚀 App listening on the port 3000
+2023-04-10 00:15:37 info: =================================
+2023-04-10 00:15:45 info: Connected to Database Successfully...
+2023-04-10 00:15:51 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:15:51 info: [0mGET /job/mostRecents [32m200[0m 1512.632 ms - 83[0m
+2023-04-10 00:16:59 info: =================================
+2023-04-10 00:16:59 info: ======= ENV: development =======
+2023-04-10 00:16:59 info: 🚀 App listening on the port 3000
+2023-04-10 00:16:59 info: =================================
+2023-04-10 00:17:03 info: Connected to email server
+2023-04-10 00:17:57 info: =================================
+2023-04-10 00:17:57 info: ======= ENV: development =======
+2023-04-10 00:17:57 info: 🚀 App listening on the port 3000
+2023-04-10 00:17:57 info: =================================
+2023-04-10 00:18:00 info: Connected to email server
+2023-04-10 00:18:13 info: Connected to Database Successfully...
+2023-04-10 00:18:18 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:18:18 info: [0mGET /job/mostRecents [32m200[0m 1015.058 ms - 83[0m
+2023-04-10 00:19:00 info: =================================
+2023-04-10 00:19:00 info: ======= ENV: development =======
+2023-04-10 00:19:00 info: 🚀 App listening on the port 3000
+2023-04-10 00:19:00 info: =================================
+2023-04-10 00:19:02 info: Connected to email server
+2023-04-10 00:19:08 info: Connected to Database Successfully...
+2023-04-10 00:19:53 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 00:19:53 info: [0mGET /job/mostRecents [32m200[0m 1205.285 ms - 83[0m
+2023-04-10 00:20:53 info: =================================
+2023-04-10 00:20:53 info: ======= ENV: development =======
+2023-04-10 00:20:53 info: 🚀 App listening on the port 3000
+2023-04-10 00:20:53 info: =================================
+2023-04-10 00:21:01 info: Connected to email server
+2023-04-10 00:21:17 info: Connected to Database Successfully...
+2023-04-10 00:21:58 info: [0mGET /job/mostRecents [32m200[0m 5423.564 ms - -[0m
+2023-04-10 00:22:50 info: [0mGET /job/mostRecents?jobTitle=Backend [32m200[0m 4927.549 ms - 80[0m
+2023-04-10 00:23:00 info: [0mGET /job/mostRecents?jobTitle=Backend%20Developer [32m200[0m 1257.511 ms - 858[0m
+2023-04-10 00:24:35 info: =================================
+2023-04-10 00:24:35 info: ======= ENV: development =======
+2023-04-10 00:24:35 info: 🚀 App listening on the port 3000
+2023-04-10 00:24:35 info: =================================
+2023-04-10 00:24:38 info: Connected to email server
+2023-04-10 00:25:05 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-04-10 00:25:18 info: =================================
+2023-04-10 00:25:18 info: ======= ENV: development =======
+2023-04-10 00:25:18 info: 🚀 App listening on the port 3000
+2023-04-10 00:25:18 info: =================================
+2023-04-10 00:25:20 info: Connected to email server
+2023-04-10 00:25:50 info: =================================
+2023-04-10 00:25:50 info: ======= ENV: development =======
+2023-04-10 00:25:50 info: 🚀 App listening on the port 3000
+2023-04-10 00:25:50 info: =================================
+2023-04-10 00:25:58 info: Connected to Database Successfully...
+2023-04-10 00:26:09 info: [0mGET /job/mostRecents?jobTitle=Backend%20Developer [32m200[0m 1572.156 ms - 866[0m
+2023-04-10 00:32:02 info: =================================
+2023-04-10 00:32:02 info: ======= ENV: development =======
+2023-04-10 00:32:02 info: 🚀 App listening on the port 3000
+2023-04-10 00:32:02 info: =================================
+2023-04-10 00:32:05 info: Connected to Database Successfully...
+2023-04-10 00:32:05 info: Connected to email server
+2023-04-10 00:32:15 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-10 00:32:15 info: [0mGET /job/mostRecents?jobTitle=Backend%20Developer [32m200[0m 1254.952 ms - 108[0m
+2023-04-10 00:32:36 info: =================================
+2023-04-10 00:32:36 info: ======= ENV: development =======
+2023-04-10 00:32:36 info: 🚀 App listening on the port 3000
+2023-04-10 00:32:36 info: =================================
+2023-04-10 00:32:39 info: Connected to email server
+2023-04-10 00:32:44 info: Connected to Database Successfully...
+2023-04-10 00:32:51 info: [0mGET /job/mostRecents?jobTitle=Backend%20Developer [32m200[0m 2084.541 ms - 968[0m
+2023-04-10 00:33:08 info: [0mGET /job/mostRecents?jobTitle=Backend%20Developer&page=2 [32m200[0m 5290.583 ms - 80[0m
+2023-04-10 00:33:27 info: [0mGET /job/mostRecents?page=2 [32m200[0m 10919.133 ms - 80[0m
+2023-04-10 00:33:45 info: [0mGET /job/mostRecents?page=2&limit=2 [32m200[0m 6575.617 ms - -[0m
+2023-04-10 00:34:16 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 1574.321 ms - -[0m
+2023-04-10 00:35:04 info: =================================
+2023-04-10 00:35:04 info: ======= ENV: development =======
+2023-04-10 00:35:04 info: 🚀 App listening on the port 3000
+2023-04-10 00:35:04 info: =================================
+2023-04-10 00:35:07 info: Connected to email server
+2023-04-10 00:35:29 info: =================================
+2023-04-10 00:35:29 info: ======= ENV: development =======
+2023-04-10 00:35:29 info: 🚀 App listening on the port 3000
+2023-04-10 00:35:29 info: =================================
+2023-04-10 00:35:47 info: Connected to Database Successfully...
+2023-04-10 00:35:53 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 1181.046 ms - -[0m
+2023-04-10 00:36:44 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-10 00:37:10 info: =================================
+2023-04-10 00:37:10 info: ======= ENV: development =======
+2023-04-10 00:37:10 info: 🚀 App listening on the port 3000
+2023-04-10 00:37:10 info: =================================
+2023-04-10 00:37:13 info: Connected to Database Successfully...
+2023-04-10 00:37:13 info: Connected to email server
+2023-04-10 00:37:20 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 951.234 ms - -[0m
+2023-04-10 00:39:17 info: =================================
+2023-04-10 00:39:17 info: ======= ENV: development =======
+2023-04-10 00:39:17 info: 🚀 App listening on the port 3000
+2023-04-10 00:39:17 info: =================================
+2023-04-10 00:39:53 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-04-10 00:40:26 error: [GET] /job/mostRecents >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-10 00:40:26 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 10022.023 ms - 79[0m
+2023-04-10 00:40:32 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-10 00:40:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-04-10 00:40:46 info: [0mPOST /auth/login [32m200[0m 10056.917 ms - 118[0m
+2023-04-10 00:41:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2023-04-10 00:41:04 info: [0mPOST /auth/login [32m200[0m 10010.254 ms - 118[0m
+2023-04-10 00:41:21 info: =================================
+2023-04-10 00:41:21 info: ======= ENV: development =======
+2023-04-10 00:41:21 info: 🚀 App listening on the port 3000
+2023-04-10 00:41:21 info: =================================
+2023-04-10 00:41:57 info: =================================
+2023-04-10 00:41:57 info: ======= ENV: development =======
+2023-04-10 00:41:57 info: 🚀 App listening on the port 3000
+2023-04-10 00:41:57 info: =================================
+2023-04-10 00:42:01 info: Connected to Database Successfully...
+2023-04-10 00:42:01 info: Connected to email server
+2023-04-10 00:42:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-10 00:42:06 info: [0mPOST /auth/login [32m200[0m 705.283 ms - 587[0m
+2023-04-10 00:42:13 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 1767.760 ms - -[0m
+2023-04-10 00:42:57 info: =================================
+2023-04-10 00:42:57 info: ======= ENV: development =======
+2023-04-10 00:42:57 info: 🚀 App listening on the port 3000
+2023-04-10 00:42:57 info: =================================
