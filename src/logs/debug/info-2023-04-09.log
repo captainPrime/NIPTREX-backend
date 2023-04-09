@@ -6,3 +6,69 @@
 2023-04-09 08:32:58 info: Connected to Database Successfully...
 2023-04-09 08:34:18 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 274.940 ms - -[0m
 2023-04-09 08:34:45 info: [0mGET /job/getAllJobs?limit=2&page=3&skip=2 [32m200[0m 698.237 ms - -[0m
+2023-04-09 09:08:35 info: =================================
+2023-04-09 09:08:35 info: ======= ENV: development =======
+2023-04-09 09:08:35 info: 🚀 App listening on the port 3000
+2023-04-09 09:08:35 info: =================================
+2023-04-09 09:08:42 info: Connected to email server
+2023-04-09 09:08:43 info: Connected to Database Successfully...
+2023-04-09 09:08:50 info: [0mGET / [32m200[0m 5.142 ms - 115[0m
+2023-04-09 09:08:51 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-04-09 09:08:51 info: [0mGET /favicon.ico [32m200[0m 3.361 ms - 100[0m
+2023-04-09 09:08:55 error: [GET] /doc >> StatusCode:: 404, Message:: The requested path /doc not found!
+2023-04-09 09:08:55 info: [0mGET /doc [32m200[0m 2.231 ms - 92[0m
+2023-04-09 09:08:55 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-04-09 09:08:55 info: [0mGET /favicon.ico [36m304[0m 1.267 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs [36m301[0m 4.995 ms - 175[0m
+2023-04-09 09:09:03 info: [0mGET /docs/ [32m200[0m 2.575 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs/swagger-ui-init.js [32m200[0m 1.664 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs/swagger-ui.css [32m200[0m 29.460 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs/swagger-ui-standalone-preset.js [32m200[0m 14.974 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs/swagger-ui-bundle.js [32m200[0m 15.428 ms - -[0m
+2023-04-09 09:09:03 info: [0mGET /docs/favicon-32x32.png [32m200[0m 3.959 ms - 628[0m
+2023-04-09 09:09:04 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.052 ms - -[0m
+2023-04-09 09:09:43 info: [0mGET /docs/ [36m304[0m 1.043 ms - -[0m
+2023-04-09 09:09:43 info: [0mGET /docs/swagger-ui.css [36m304[0m 1.324 ms - -[0m
+2023-04-09 09:09:43 info: [0mGET /docs/swagger-ui-init.js [36m304[0m 0.597 ms - -[0m
+2023-04-09 09:09:43 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 1.423 ms - -[0m
+2023-04-09 09:09:43 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 1.434 ms - -[0m
+2023-04-09 09:09:44 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.850 ms - -[0m
+2023-04-09 09:09:44 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.746 ms - -[0m
+2023-04-09 09:09:55 info: =================================
+2023-04-09 09:09:55 info: ======= ENV: development =======
+2023-04-09 09:09:55 info: 🚀 App listening on the port 3000
+2023-04-09 09:09:55 info: =================================
+2023-04-09 09:09:59 info: Connected to Database Successfully...
+2023-04-09 09:10:03 info: [0mGET /docs/ [36m304[0m 7.846 ms - -[0m
+2023-04-09 09:10:03 info: [0mGET /docs/swagger-ui.css [36m304[0m 12.193 ms - -[0m
+2023-04-09 09:10:03 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 4.649 ms - -[0m
+2023-04-09 09:10:03 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 5.255 ms - -[0m
+2023-04-09 09:10:03 info: [0mGET /docs/swagger-ui-init.js [32m200[0m 1.781 ms - -[0m
+2023-04-09 09:10:04 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.991 ms - -[0m
+2023-04-09 09:10:04 info: [0mGET /docs/favicon-32x32.png [36m304[0m 2.441 ms - -[0m
+2023-04-09 09:10:29 info: Connected to email server
+2023-04-09 09:13:30 info: =================================
+2023-04-09 09:13:30 info: ======= ENV: development =======
+2023-04-09 09:13:30 info: 🚀 App listening on the port 3000
+2023-04-09 09:13:30 info: =================================
+2023-04-09 09:13:34 info: Connected to email server
+2023-04-09 09:13:36 info: Connected to Database Successfully...
+2023-04-09 09:13:43 error: [GET] /docs/ >> StatusCode:: 404, Message:: The requested path /docs/ not found!
+2023-04-09 09:13:43 info: [0mGET /docs/ [32m200[0m 31.986 ms - 94[0m
+2023-04-09 09:13:43 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-04-09 09:13:43 info: [0mGET /favicon.ico [36m304[0m 3.881 ms - -[0m
+2023-04-09 09:13:58 info: =================================
+2023-04-09 09:13:58 info: ======= ENV: development =======
+2023-04-09 09:13:58 info: 🚀 App listening on the port 3000
+2023-04-09 09:13:58 info: =================================
+2023-04-09 09:14:00 info: Connected to email server
+2023-04-09 09:14:05 info: Connected to Database Successfully...
+2023-04-09 09:14:07 info: [0mGET /docs/ [32m200[0m 12.827 ms - -[0m
+2023-04-09 09:14:07 info: [0mGET /docs/swagger-ui.css [36m304[0m 3.819 ms - -[0m
+2023-04-09 09:14:07 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 3.237 ms - -[0m
+2023-04-09 09:14:07 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 3.337 ms - -[0m
+2023-04-09 09:14:07 info: [0mGET /docs/swagger-ui-init.js [32m200[0m 1.487 ms - -[0m
+2023-04-09 09:14:08 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.472 ms - -[0m
+2023-04-09 09:14:08 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.077 ms - -[0m
+2023-04-09 09:14:14 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.607 ms - -[0m
+2023-04-09 09:14:17 info: [0mGET /docs/favicon-32x32.png [36m304[0m 4.869 ms - -[0m
