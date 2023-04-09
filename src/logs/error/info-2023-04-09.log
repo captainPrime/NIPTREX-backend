@@ -3,3 +3,4 @@
 2023-04-09 09:08:55 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
 2023-04-09 09:13:43 error: [GET] /docs/ >> StatusCode:: 404, Message:: The requested path /docs/ not found!
 2023-04-09 09:13:43 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-04-09 17:43:48 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net

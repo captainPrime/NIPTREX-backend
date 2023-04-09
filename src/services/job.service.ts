@@ -41,14 +41,14 @@ class JobService {
   | Get User Job Best Matches
   |--------------------------------------------------------------------------
   */
-  public async getUserJobBestMatches(query: any, _preference: any, userId: string): Promise<any> {
+  public async getUserJobBestMatches(query: any, options: PaginationOptions, userId: string): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
       // jobSize: new RegExp(preference.company_size, 'i'),
     };
 
-    const data = await this.job.find(filter).limit(10);
+    const data = await this.job.paginate(filter, options).limit(10);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
@@ -67,13 +67,12 @@ class JobService {
   | Get User Job Best Matches
   |--------------------------------------------------------------------------
   */
-  public async getMostRecentJobs(query: any, userId: string): Promise<any> {
+  public async getMostRecentJobs(query: any, userId: string, options: PaginationOptions): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
     };
-
-    const data = await this.job.find(filter).sort({ createdAt: -1 }).limit(10);
+    const data = await this.job.paginate(filter, options).sort({ createdAt: -1 }).limit(10);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());

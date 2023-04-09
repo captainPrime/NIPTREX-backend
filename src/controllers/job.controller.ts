@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-non-literal-regexp */
 import { NextFunction, Request, Response } from 'express';
 
-import { skills } from '@/utils/skills';
+import { skills, skillsWithOutSection } from '@/utils/skills';
 import JobService from '@/services/job.service';
 import { jobPayload } from '@/utils/jobPayload';
 import UserService from '@/services/users.service';
@@ -57,9 +57,22 @@ class JobController {
   | Get all Jobs
   |--------------------------------------------------------------------------
   */
-  public getAllSkills = async (req: Request, res: Response, next: NextFunction) => {
+  public getAllSkillsCategory = async (req: Request, res: Response, next: NextFunction) => {
     try {
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: skills });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get all Jobs
+  |--------------------------------------------------------------------------
+  */
+  public getAllSkills = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: skillsWithOutSection });
     } catch (error) {
       next(error);
     }
@@ -72,18 +85,25 @@ class JobController {
   */
   public getUserJobBestMatches = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const jobQueries: any = [];
+      const jobQueries: any = [req.query];
+
+      console.log('QUESRIES', jobQueries);
       const about = await this.aboutService.getUserAbout(req.user.id);
       if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
 
-      const preference = await this.preferenceService.getUserPreference(req.user.id);
-      if (!preference) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+      // const preference = await this.preferenceService.getUserPreference(req.user.id);
+      // if (!preference) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
 
-      console.log('preference', preference[0]);
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'name:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
 
       about[0].skills.forEach((skill: string) => jobQueries.push(skill));
 
-      const data = await this.jobService.getUserJobBestMatches(jobQueries, preference[0], req.user.id);
+      const data = await this.jobService.getUserJobBestMatches(jobQueries, options, req.user.id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -104,7 +124,14 @@ class JobController {
 
       about[0].skills.forEach((skill: string) => jobQueries.push(skill));
 
-      const data = await this.jobService.getMostRecentJobs(jobQueries, req.user.id);
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'name:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
+
+      const data = await this.jobService.getMostRecentJobs(jobQueries, req.user.id, options);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
