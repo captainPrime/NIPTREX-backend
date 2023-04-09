@@ -72,3 +72,57 @@
 2023-04-09 09:14:08 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.077 ms - -[0m
 2023-04-09 09:14:14 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.607 ms - -[0m
 2023-04-09 09:14:17 info: [0mGET /docs/favicon-32x32.png [36m304[0m 4.869 ms - -[0m
+2023-04-09 09:15:41 info: [0mGET /docs/ [36m304[0m 2.756 ms - -[0m
+2023-04-09 09:15:41 info: [0mGET /docs/swagger-ui.css [36m304[0m 5.193 ms - -[0m
+2023-04-09 09:15:41 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 4.415 ms - -[0m
+2023-04-09 09:15:41 info: [0mGET /docs/swagger-ui-init.js [36m304[0m 0.577 ms - -[0m
+2023-04-09 09:15:41 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 14.869 ms - -[0m
+2023-04-09 09:15:42 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.985 ms - -[0m
+2023-04-09 09:15:42 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.849 ms - -[0m
+2023-04-09 09:15:43 info: [0mGET /docs/ [36m304[0m 3.927 ms - -[0m
+2023-04-09 09:15:43 info: [0mGET /docs/swagger-ui.css [36m304[0m 3.423 ms - -[0m
+2023-04-09 09:15:43 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 5.174 ms - -[0m
+2023-04-09 09:15:43 info: [0mGET /docs/swagger-ui-init.js [36m304[0m 3.007 ms - -[0m
+2023-04-09 09:15:43 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 7.579 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.875 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.892 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/ [36m304[0m 0.861 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/swagger-ui.css [36m304[0m 0.748 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/swagger-ui-init.js [36m304[0m 2.674 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 8.129 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 9.380 ms - -[0m
+2023-04-09 09:15:44 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.694 ms - -[0m
+2023-04-09 09:15:45 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.739 ms - -[0m
+2023-04-09 09:17:25 info: =================================
+2023-04-09 09:17:25 info: ======= ENV: development =======
+2023-04-09 09:17:25 info: 🚀 App listening on the port 3000
+2023-04-09 09:17:25 info: =================================
+2023-04-09 09:17:28 info: Connected to email server
+2023-04-09 09:17:33 info: Connected to Database Successfully...
+2023-04-09 09:17:40 info: [0mGET /docs/ [36m304[0m 7.779 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 7.127 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/swagger-ui.css [36m304[0m 10.426 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 15.679 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/swagger-ui-init.js [32m200[0m 2.148 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/favicon-32x32.png [36m304[0m 0.772 ms - -[0m
+2023-04-09 09:17:40 info: [0mGET /docs/favicon-32x32.png [36m304[0m 2.521 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/ [36m304[0m 1.764 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/swagger-ui.css [36m304[0m 6.510 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 6.767 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/swagger-ui-init.js [36m304[0m 0.563 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 4.920 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.350 ms - -[0m
+2023-04-09 09:21:11 info: [0mGET /docs/favicon-32x32.png [36m304[0m 4.662 ms - -[0m
+2023-04-09 09:21:26 info: =================================
+2023-04-09 09:21:26 info: ======= ENV: development =======
+2023-04-09 09:21:26 info: 🚀 App listening on the port 3000
+2023-04-09 09:21:26 info: =================================
+2023-04-09 09:21:29 info: Connected to email server
+2023-04-09 09:21:30 info: Connected to Database Successfully...
+2023-04-09 16:58:16 info: [0mGET /docs/ [36m304[0m 20.370 ms - -[0m
+2023-04-09 16:58:16 info: [0mGET /docs/swagger-ui.css [36m304[0m 2.837 ms - -[0m
+2023-04-09 16:58:16 info: [0mGET /docs/swagger-ui-bundle.js [36m304[0m 5.847 ms - -[0m
+2023-04-09 16:58:16 info: [0mGET /docs/swagger-ui-standalone-preset.js [36m304[0m 7.302 ms - -[0m
+2023-04-09 16:58:16 info: [0mGET /docs/swagger-ui-init.js [32m200[0m 2.723 ms - -[0m
+2023-04-09 16:58:17 info: [0mGET /docs/favicon-32x32.png [36m304[0m 2.440 ms - -[0m
+2023-04-09 16:58:18 info: [0mGET /docs/favicon-32x32.png [36m304[0m 1.203 ms - -[0m
