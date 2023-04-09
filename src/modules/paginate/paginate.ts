@@ -21,6 +21,7 @@ export interface IOptions {
   selectedFieldsToIncludeOrHide?: string;
   populate?: string;
   limit?: number;
+  skip?: number;
   page?: number;
 }
 
@@ -71,9 +72,10 @@ const paginate = (schema: Schema) => {
       select = '-password -createdAt -updatedAt';
     }
 
+    const skipValue = (options.skip && parseInt(options.skip.toString(), 10)) ?? 1;
     const limit = options.limit && parseInt(options.limit.toString(), 10) > 0 ? parseInt(options.limit.toString(), 10) : 10; // Default limit = 10
     const page = options.page && parseInt(options.page.toString(), 10) > 0 ? parseInt(options.page.toString(), 10) : 1; // Default page number = 1
-    const skip = (page - 1) * limit; // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
+    const skip = (page - skipValue) * limit; // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
     const startIndex = skip;
     const endIndex = page * limit;
 

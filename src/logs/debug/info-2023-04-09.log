@@ -1,0 +1,8 @@
+2023-04-09 08:32:55 info: =================================
+2023-04-09 08:32:55 info: ======= ENV: development =======
+2023-04-09 08:32:55 info: 🚀 App listening on the port 3000
+2023-04-09 08:32:55 info: =================================
+2023-04-09 08:32:57 info: Connected to email server
+2023-04-09 08:32:58 info: Connected to Database Successfully...
+2023-04-09 08:34:18 info: [0mGET /job/getAllJobs?limit=&skip=2 [32m200[0m 274.940 ms - -[0m
+2023-04-09 08:34:45 info: [0mGET /job/getAllJobs?limit=2&page=3&skip=2 [32m200[0m 698.237 ms - -[0m
