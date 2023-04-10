@@ -41,19 +41,19 @@ class JobService {
   | Get User Job Best Matches
   |--------------------------------------------------------------------------
   */
-  public async getUserJobBestMatches(query: any, userId: string): Promise<any> {
+  public async getUserJobBestMatches(query: any, userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobsTags: { $in: regexTags },
-      // jobSize: new RegExp(preference.company_size, 'i'),
+      ...otherQuery,
     };
 
-    const data = await this.job.find(filter).limit(10);
+    const data = await this.job.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
 
-    const updatedData = data.map((job: any) => {
+    const updatedData = data.results.map((job: any) => {
       return {
         ...job.toJSON(),
         isSaved: savedJobIds.includes(job._id.toString()),
@@ -77,7 +77,6 @@ class JobService {
     const data = await this.job.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
-    console.log(data);
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
 
     const updatedData = data.results.map((job: any) => {

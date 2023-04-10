@@ -10,3 +10,4 @@
 2023-04-10 00:40:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
 2023-04-10 00:41:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
 2023-04-10 00:42:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-10 12:00:37 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: data.map is not a function

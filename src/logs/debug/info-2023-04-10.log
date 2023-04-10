@@ -132,3 +132,50 @@
 2023-04-10 00:42:57 info: ======= ENV: development =======
 2023-04-10 00:42:57 info: 🚀 App listening on the port 3000
 2023-04-10 00:42:57 info: =================================
+2023-04-10 11:19:30 info: =================================
+2023-04-10 11:19:30 info: ======= ENV: development =======
+2023-04-10 11:19:30 info: 🚀 App listening on the port 3000
+2023-04-10 11:19:30 info: =================================
+2023-04-10 11:19:34 info: Connected to email server
+2023-04-10 11:19:38 info: Connected to Database Successfully...
+2023-04-10 11:19:55 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 2202.431 ms - -[0m
+2023-04-10 11:20:52 info: =================================
+2023-04-10 11:20:52 info: ======= ENV: development =======
+2023-04-10 11:20:52 info: 🚀 App listening on the port 3000
+2023-04-10 11:20:52 info: =================================
+2023-04-10 11:20:55 info: Connected to email server
+2023-04-10 11:20:55 info: Connected to Database Successfully...
+2023-04-10 11:21:00 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 1253.106 ms - -[0m
+2023-04-10 11:21:22 info: [0mGET /job/mostRecents [32m200[0m 1004.812 ms - -[0m
+2023-04-10 11:29:19 info: =================================
+2023-04-10 11:29:19 info: ======= ENV: development =======
+2023-04-10 11:29:19 info: 🚀 App listening on the port 3000
+2023-04-10 11:29:19 info: =================================
+2023-04-10 11:29:24 info: Connected to email server
+2023-04-10 11:29:24 info: Connected to Database Successfully...
+2023-04-10 11:50:42 info: =================================
+2023-04-10 11:50:42 info: ======= ENV: development =======
+2023-04-10 11:50:42 info: 🚀 App listening on the port 3000
+2023-04-10 11:50:42 info: =================================
+2023-04-10 11:50:45 info: Connected to email server
+2023-04-10 11:50:45 info: Connected to Database Successfully...
+2023-04-10 11:50:57 info: [0mGET /job/mostRecents [32m200[0m 1146.957 ms - -[0m
+2023-04-10 11:51:28 info: [0mGET /job/mostRecents?limit=2 [32m200[0m 1100.649 ms - -[0m
+2023-04-10 11:56:17 info: [0mGET /job/mostRecents?skip=2&limit=2 [32m200[0m 1089.625 ms - -[0m
+2023-04-10 11:56:23 info: [0mGET /job/mostRecents?skip=2&limit=4 [32m200[0m 864.252 ms - -[0m
+2023-04-10 12:00:21 info: =================================
+2023-04-10 12:00:21 info: ======= ENV: development =======
+2023-04-10 12:00:21 info: 🚀 App listening on the port 3000
+2023-04-10 12:00:21 info: =================================
+2023-04-10 12:00:24 info: Connected to email server
+2023-04-10 12:00:34 info: Connected to Database Successfully...
+2023-04-10 12:00:37 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: data.map is not a function
+2023-04-10 12:00:37 info: [0mGET /job/getUserJobBestMatches?status=active&salary=100000 [32m200[0m 998.725 ms - 83[0m
+2023-04-10 12:01:14 info: =================================
+2023-04-10 12:01:14 info: ======= ENV: development =======
+2023-04-10 12:01:14 info: 🚀 App listening on the port 3000
+2023-04-10 12:01:14 info: =================================
+2023-04-10 12:01:16 info: Connected to email server
+2023-04-10 12:01:22 info: Connected to Database Successfully...
+2023-04-10 12:01:27 info: [0mGET /job/getUserJobBestMatches?status=active&salary=100000 [32m200[0m 1301.486 ms - -[0m
+2023-04-10 12:01:46 info: [0mGET /job/getUserJobBestMatches?status=active&limit=2 [32m200[0m 1039.359 ms - -[0m
