@@ -9,7 +9,7 @@ export const jobPayload = [
     links: [],
     duration: '12 Months',
     hourly: 40,
-    level: 'Intermediate',
+    experience_level: 'Intermediate',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -23,6 +23,9 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(Date.now() - 2 * 60 * 60 * 1000),
   },
 
@@ -35,7 +38,7 @@ export const jobPayload = [
     links: [],
     duration: '6 Months',
     hourly: 25,
-    level: 'Entry Level',
+    experience_level: 'Entry Level',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -49,6 +52,9 @@ export const jobPayload = [
     location: 'United States',
     jobType: 'Part-time',
     jobSize: 'Individual',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(Date.now() - 4 * 60 * 60 * 1000),
   },
 
@@ -61,7 +67,7 @@ export const jobPayload = [
     links: [],
     duration: '6 Months',
     hourly: 30,
-    level: 'Intermediate',
+    experience_level: 'Intermediate',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -75,6 +81,9 @@ export const jobPayload = [
     location: 'Canada',
     jobType: 'Remote',
     jobSize: 'Small team (2-3 members)',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(Date.now() - 24 * 60 * 60 * 1000),
   },
   {
@@ -87,7 +96,7 @@ export const jobPayload = [
     links: [],
     duration: '12 Months',
     hourly: 40,
-    level: 'Intermediate',
+    experience_level: 'Intermediate',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -101,6 +110,9 @@ export const jobPayload = [
     location: 'United Kingdom',
     jobType: 'Remote',
     jobSize: 'Small team (4-6 members)',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(),
   },
   {
@@ -113,7 +125,7 @@ export const jobPayload = [
     links: [],
     duration: '12 Months',
     hourly: 40,
-    level: 'Intermediate',
+    experience_level: 'Intermediate',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -127,6 +139,9 @@ export const jobPayload = [
     location: 'Canada',
     jobType: 'Remote',
     jobSize: 'Medium team (7-10 members)',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(),
   },
   {
@@ -139,7 +154,7 @@ export const jobPayload = [
     links: [],
     duration: '6 Months',
     hourly: 25,
-    level: 'Expert',
+    experience_level: 'Expert',
     activities: {
       proposals: 0,
       lastViewed: new Date(),
@@ -153,6 +168,9 @@ export const jobPayload = [
     location: 'India',
     jobType: 'Remote',
     jobSize: 'Large team (11+ members)',
+    industryType: 'Fintech',
+    industrySize: 'Startup (4-6 members)',
+    softSkills: ['Good Communication', 'Detailed Oriented'],
     datePosted: new Date(new Date().getTime() - 24 * 60 * 60 * 1000),
   },
 ];

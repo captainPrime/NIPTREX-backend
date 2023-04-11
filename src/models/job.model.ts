@@ -13,7 +13,7 @@ const JobSchema: Schema = new Schema(
     links: [{ type: String }],
     duration: { type: String },
     hourly: { type: Number },
-    level: { type: String },
+    experience_level: { type: String },
     activities: {
       proposals: { type: Number, default: 0 },
       lastViewed: { type: Date },
@@ -27,6 +27,9 @@ const JobSchema: Schema = new Schema(
     location: { type: String, required: true },
     jobType: { type: String, required: true },
     jobSize: { type: String, required: true },
+    industryType: { type: String, required: true },
+    industrySize: { type: String, required: true },
+    softSkills: [{ type: String }],
     datePosted: {
       type: Date,
       default: Date.now,
