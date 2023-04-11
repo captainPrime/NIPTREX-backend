@@ -14,7 +14,7 @@ export interface IJob {
   links: string[];
   duration: string;
   hourly: number;
-  level: string;
+  experience_level: string;
   activities: {
     proposals: number;
     lastViewed?: Date;
@@ -28,6 +28,9 @@ export interface IJob {
   location: string;
   jobType: string;
   jobSize: string;
+  industryType: string;
+  industrySize: string;
+  softSkills: string[];
   datePosted: Date;
 }
 
