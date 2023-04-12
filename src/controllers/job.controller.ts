@@ -1,13 +1,13 @@
 /* eslint-disable security/detect-non-literal-regexp */
 import { NextFunction, Request, Response } from 'express';
 
-import { skills, skillsWithOutSection } from '@/utils/skills';
 import JobService from '@/services/job.service';
 import { jobPayload } from '@/utils/jobPayload';
 import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
+import { skills, skillsWithOutSection } from '@/utils/skills';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {

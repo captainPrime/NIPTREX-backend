@@ -151,6 +151,7 @@ const aboutSchema: Schema = new Schema(
     },
     languages: [{ type: String }],
     skills: [{ type: String }],
+    available_to_work: { type: Boolean, default: true },
   },
   {
     timestamps: true,

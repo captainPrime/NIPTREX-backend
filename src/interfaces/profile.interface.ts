@@ -147,6 +147,12 @@ export interface IAbout extends Document {
   social_details?: ISocialLink;
   languages?: string[];
   skills: string[];
+  available_to_work: boolean;
+}
+
+export enum UserStatus {
+  ACTIVE = 'active',
+  INACTIVE = 'inactive',
 }
 
 export type IUpdateAbout = Partial<IAbout>;
