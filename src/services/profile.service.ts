@@ -53,7 +53,7 @@ class ProfileService {
       personal_details: about[0]?.personal_details,
       address: about[0]?.address,
       skills: about[0]?.skills,
-      availability: about[0]?.availability,
+      available_to_work: about[0]?.available_to_work,
       social_links: about[0]?.social_links,
       languages: about[0]?.languages,
       work_preferences: preference[0],
