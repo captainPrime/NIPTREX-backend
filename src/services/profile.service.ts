@@ -1,11 +1,11 @@
-import { HttpException } from '@exceptions/HttpException';
+import mongoose from 'mongoose';
+
 import { isEmpty } from '@utils/util';
 import UserService from './users.service';
-// import { CreateProfileDto } from '@/dtos/profile.dto';
-import mongoose from 'mongoose';
+import { HttpException } from '@exceptions/HttpException';
+import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
 import { Experience, Education, Certification, Preference, Identity, Billing, About } from '@/models/profile.model';
 import { IEducationHistory, IExperience, IUpdateEducationHistory, IUpdateExperience } from '@/interfaces/profile.interface';
-import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
 
 class ProfileService {
   public about: any = About;

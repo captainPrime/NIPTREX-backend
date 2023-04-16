@@ -63,9 +63,9 @@ const certificationSchema: Schema = new Schema({
 const billingSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    per_annum: { type: String, required: true },
-    hourly_rate: { type: String, required: true },
-    payment_method: { type: String, required: true },
+    per_annum: { type: Number, required: true },
+    hourly_rate: { type: Number, required: true }, // Updated to Number type
+    payment_method: { type: String, enum: ['USD', 'NGN'], required: true }, // Updated to enum of USD and NGN
   },
   {
     timestamps: true,

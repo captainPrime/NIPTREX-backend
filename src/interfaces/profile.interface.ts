@@ -120,9 +120,9 @@ export interface ILanguage {
 }
 
 export interface IBilling {
-  per_annum: string;
-  hourly_rate: string;
-  payment_method: string;
+  per_annum: number;
+  hourly_rate: number;
+  payment_method: EPaymentMethod;
 }
 
 export interface IPreferences {
@@ -153,6 +153,11 @@ export interface IAbout extends Document {
 export enum UserStatus {
   ACTIVE = 'active',
   INACTIVE = 'inactive',
+}
+
+export enum EPaymentMethod {
+  NGN = 'NGN',
+  USD = 'USD',
 }
 
 export type IUpdateAbout = Partial<IAbout>;

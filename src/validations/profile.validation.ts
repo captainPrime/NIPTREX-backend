@@ -1,4 +1,4 @@
-import { EmploymentType } from '@/interfaces/profile.interface';
+import { EPaymentMethod, EmploymentType } from '@/interfaces/profile.interface';
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
@@ -61,9 +61,11 @@ export const certificationSchema = Joi.object({
 */
 export const billingSchema = Joi.object({
   user_id: Joi.string().required(),
-  per_annum: Joi.string().required(),
-  hourly_rate: Joi.string().required(),
-  payment_method: Joi.string().required(),
+  per_annum: Joi.number().required(),
+  hourly_rate: Joi.number().required(),
+  payment_method: Joi.string()
+    .valid(...Object.values(EPaymentMethod))
+    .required(),
 });
 
 /*

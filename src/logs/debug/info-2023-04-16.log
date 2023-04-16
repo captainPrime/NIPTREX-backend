@@ -1,0 +1,17 @@
+2023-04-16 17:31:35 info: =================================
+2023-04-16 17:31:35 info: ======= ENV: development =======
+2023-04-16 17:31:35 info: 🚀 App listening on the port 3000
+2023-04-16 17:31:35 info: =================================
+2023-04-16 17:31:39 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-16 17:31:47 info: Connected to Database Successfully...
+2023-04-16 22:42:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-16 22:42:34 info: [0mPOST /auth/login [32m200[0m 2187.279 ms - 587[0m
+2023-04-16 22:44:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-16 22:44:02 info: [0mPOST /profile/billing [32m200[0m 1707.947 ms - 114[0m
+2023-04-16 22:47:30 info: =================================
+2023-04-16 22:47:30 info: ======= ENV: development =======
+2023-04-16 22:47:30 info: 🚀 App listening on the port 3000
+2023-04-16 22:47:30 info: =================================
+2023-04-16 22:47:35 info: Connected to Database Successfully...
+2023-04-16 22:47:36 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-16 22:48:31 info: [0mPOST /profile/billing [32m200[0m 1363.042 ms - 212[0m

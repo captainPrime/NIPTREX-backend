@@ -1,0 +1,2 @@
+2023-04-16 22:42:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-16 22:44:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
