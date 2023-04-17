@@ -91,6 +91,7 @@ class AboutController {
   public updateAbout = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body: IUpdateAbout = req.body;
+
       const data = await this.aboutService.updateAboutById(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });

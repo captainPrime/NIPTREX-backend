@@ -68,9 +68,22 @@ class AboutService {
     const data = await this.about.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
 
-    const updatedData = await this.about.findByIdAndUpdate(data._id, body, {
-      new: true,
-    });
+    // Update the desired fields dynamically from the request body
+    const updatedPayload = {
+      ...data.toObject(),
+      personal_details: {
+        ...data.personal_details.toObject(),
+        ...body.personal_details, // Update the fields specified in the request body
+      },
+      address: { ...data.address.toObject(), ...body.address }, // Update the fields specified in the request body
+      social_links: { ...data.social_links.toObject(), ...body.social_details }, // Update the fields specified in the request body
+      languages: body.languages || data.languages, // Update the fields specified in the request body or use the existing value
+      skills: body.skills || data.skills, // Update the fields specified in the request body or use the existing value
+      available_to_work: body.available_to_work || data.available_to_work, // Update the fields specified in the request body or use the existing value
+    };
+
+    // Update the document with the updated payload
+    const updatedData = await this.about.findByIdAndUpdate(data._id, updatedPayload, { new: true });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
 

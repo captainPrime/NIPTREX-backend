@@ -5,3 +5,32 @@
 2023-04-17 13:05:37 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
 2023-04-17 13:07:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
 2023-04-17 13:09:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 15:28:37 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-04-17 15:28:37 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-04-17 15:47:23 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-17 23:07:42 error: [PUT] /profile/billing >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 28
+2023-04-17 23:26:58 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-17 23:28:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-17 23:44:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

@@ -73,7 +73,7 @@ const paginate = (schema: Schema) => {
     }
 
     const skipValue = (options.skip && parseInt(options.skip.toString(), 10)) ?? 1;
-    const limit = options.limit && parseInt(options.limit.toString(), 10) > 0 ? parseInt(options.limit.toString(), 10) : 10; // Default limit = 10
+    const limit = options.limit && parseInt(options.limit.toString(), 10) > 0 ? parseInt(options.limit.toString(), 10) : 2; // Default limit = 10
     const page = options.page && parseInt(options.page.toString(), 10) > 0 ? parseInt(options.page.toString(), 10) : 1; // Default page number = 1
     const skip = (page - skipValue) * limit; // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
     const startIndex = skip;
@@ -133,8 +133,5 @@ const paginate = (schema: Schema) => {
       .catch(err => Promise.reject(err));
   });
 };
-
-// USAGE
-// myModel.paginate(filterObject, queryOptions).then(({ results, currentPage, limit, totalPages, countOfFilteredDocuments, next, prev }) => {}).catch(error => logger.error(error.message)); // Usage
 
 export default paginate;

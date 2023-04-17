@@ -60,15 +60,6 @@ export enum WorkOption {
   OnSite = 'On-site',
 }
 
-export interface IPersonalDetails {
-  profile_picture: string;
-  dob: Date;
-  role: string;
-  seniority: string;
-  gender: string;
-  resume?: string;
-}
-
 export interface IAddress {
   line1: string;
   line2?: string;
@@ -141,6 +132,31 @@ export interface IDocument {
   proof_of_address: string;
 }
 
+export interface IPersonalDetails {
+  profile_picture: string;
+  dob: Date;
+  role: string;
+  seniority: string;
+  gender: string;
+  resume?: string;
+}
+
+export interface IAddress {
+  line1: string;
+  line2?: string;
+  city: string;
+  state: string;
+}
+
+export interface ISocialLink {
+  personal_website?: string;
+  linkedin?: string;
+  stack_overflow?: string;
+  github?: string;
+  dribble?: string;
+  behance?: string;
+  glass_door?: string;
+}
 export interface IAbout extends Document {
   personal_details: IPersonalDetails;
   address: IAddress;
@@ -159,8 +175,15 @@ export enum EPaymentMethod {
   NGN = 'NGN',
   USD = 'USD',
 }
+export interface IUpdateAbout {
+  personal_details?: Partial<IPersonalDetails>;
+  address?: Partial<IAddress>;
+  social_details?: Partial<ISocialLink>;
+  languages?: string[];
+  skills?: string[];
+  available_to_work?: boolean;
+}
 
-export type IUpdateAbout = Partial<IAbout>;
 export type IUpdateExperience = Partial<IExperience>;
 export type IUpdateEducationHistory = Partial<IEducationHistory>;
 export type IUpdateCertification = Partial<ICertification>;
