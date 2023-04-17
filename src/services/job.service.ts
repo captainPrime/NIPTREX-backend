@@ -112,7 +112,30 @@ class JobService {
   | Get Job By Id
   |--------------------------------------------------------------------------
   */
-  public async getJobById(id: string): Promise<any> {
+  public async getJobById(id: string, userId: string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.job.findOne({ _id: id });
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
+
+    const updatedData = data.results.map((job: any) => {
+      return {
+        ...job.toJSON(),
+        isSaved: savedJobIds.includes(job._id.toString()),
+      };
+    });
+
+    return updatedData;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Job By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getJobByJobId(id: string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.job.findOne({ _id: id });

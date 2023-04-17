@@ -145,7 +145,7 @@ class JobController {
   public getJobById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.jobService.getJobById(id);
+      const data = await this.jobService.getJobById(id, req.user.id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -192,7 +192,7 @@ class JobController {
     try {
       const id: string = req.params.id;
 
-      const job = await this.jobService.getJobById(id);
+      const job = await this.jobService.getJobByJobId(id);
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
       const saveJob = await this.jobService.getSavedJobById(job._id.toString());
