@@ -6,7 +6,7 @@ import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
-import { skills, skillsWithOutSection } from '@/utils/skills';
+import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {
@@ -72,6 +72,19 @@ class JobController {
   public getAllSkills = async (req: Request, res: Response, next: NextFunction) => {
     try {
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: skillsWithOutSection });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get all Jobs
+  |--------------------------------------------------------------------------
+  */
+  public getAllSoftSkills = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: softSkills });
     } catch (error) {
       next(error);
     }
