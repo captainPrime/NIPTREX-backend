@@ -3,3 +3,7 @@
 2023-04-18 00:05:34 error: [PUT] /profile/education >> StatusCode:: 404, Message:: The requested path /profile/education not found!
 2023-04-18 00:10:03 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-18 00:10:16 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:19:37 error: [PUT] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:20:36 error: [PUT] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:20:59 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:21:07 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR

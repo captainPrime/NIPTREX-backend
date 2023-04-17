@@ -27,3 +27,27 @@
 2023-04-18 00:10:16 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-18 00:10:16 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 279.950 ms - 118[0m
 2023-04-18 00:10:25 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 897.939 ms - 314[0m
+2023-04-18 00:18:59 info: =================================
+2023-04-18 00:18:59 info: ======= ENV: development =======
+2023-04-18 00:18:59 info: 🚀 App listening on the port 3000
+2023-04-18 00:18:59 info: =================================
+2023-04-18 00:19:02 info: Connected to email server
+2023-04-18 00:19:03 info: Connected to Database Successfully...
+2023-04-18 00:19:23 info: [0mPUT /profile/about [32m200[0m 3882.913 ms - 760[0m
+2023-04-18 00:19:29 info: [0mPUT /profile/about [32m200[0m 799.354 ms - 760[0m
+2023-04-18 00:19:37 info: [0mPUT /profile/about [32m200[0m 382.871 ms - 105[0m
+2023-04-18 00:19:37 error: [PUT] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:20:02 info: [0mPUT /profile/about [32m200[0m 3706.990 ms - 760[0m
+2023-04-18 00:20:19 info: =================================
+2023-04-18 00:20:19 info: ======= ENV: development =======
+2023-04-18 00:20:19 info: 🚀 App listening on the port 3000
+2023-04-18 00:20:19 info: =================================
+2023-04-18 00:20:24 info: Connected to email server
+2023-04-18 00:20:34 info: Connected to Database Successfully...
+2023-04-18 00:20:36 error: [PUT] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:20:36 info: [0mPUT /profile/about [32m200[0m 5628.400 ms - 118[0m
+2023-04-18 00:20:46 info: [0mPOST /profile/certificate [32m200[0m 1309.345 ms - 345[0m
+2023-04-18 00:20:59 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:20:59 info: [0mPUT /profile/certificate/643dd44e637844e37640ea5e [32m200[0m 230.822 ms - 105[0m
+2023-04-18 00:21:07 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:21:07 info: [0mPUT /profile/certificate/643dd44e637844e37640ea5e [32m200[0m 2403.809 ms - 116[0m

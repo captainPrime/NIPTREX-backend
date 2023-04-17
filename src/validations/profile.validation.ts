@@ -203,4 +203,4 @@ export const updateAboutSchema = Joi.object({
   }),
   languages: Joi.array().items(Joi.string()),
   skills: Joi.array().items(Joi.string()),
-});
+}).min(1);
