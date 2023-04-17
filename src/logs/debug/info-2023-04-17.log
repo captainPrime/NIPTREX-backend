@@ -1,0 +1,52 @@
+2023-04-17 12:54:30 info: =================================
+2023-04-17 12:54:30 info: ======= ENV: development =======
+2023-04-17 12:54:30 info: 🚀 App listening on the port 3000
+2023-04-17 12:54:30 info: =================================
+2023-04-17 12:54:32 info: Connected to email server
+2023-04-17 12:54:33 info: Connected to Database Successfully...
+2023-04-17 13:02:58 info: [0mPOST /job [32m200[0m 352.569 ms - -[0m
+2023-04-17 13:03:19 info: [0mGET /job/getAllJobs?limit=10 [32m200[0m 316.965 ms - -[0m
+2023-04-17 13:03:31 info: [0mGET /reload_db [32m200[0m 3306.335 ms - 74[0m
+2023-04-17 13:03:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-17 13:03:38 info: [0mPOST /auth/login [32m200[0m 521.302 ms - 587[0m
+2023-04-17 13:03:45 info: [0mGET /job/getAllJobs?limit=10 [32m200[0m 744.412 ms - 172[0m
+2023-04-17 13:03:52 info: [0mPOST /job [32m200[0m 294.631 ms - -[0m
+2023-04-17 13:03:58 info: [0mGET /job/getAllJobs?limit=10 [32m200[0m 227.177 ms - -[0m
+2023-04-17 13:04:10 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-17 13:04:10 info: [0mGET /job/getUserJobBestMatches?skip=2&limit=2 [32m200[0m 461.114 ms - 111[0m
+2023-04-17 13:04:21 info: [0mPOST /profile/about [32m200[0m 1367.167 ms - 862[0m
+2023-04-17 13:04:42 info: [0mPUT /profile/about [32m200[0m 699.041 ms - 620[0m
+2023-04-17 13:04:52 info: [0mGET /profile/about [32m200[0m 704.475 ms - 622[0m
+2023-04-17 13:05:03 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-17 13:05:03 info: [0mPOST /profile/about [32m200[0m 743.115 ms - 76[0m
+2023-04-17 13:05:13 info: [0mPUT /profile/about [32m200[0m 697.201 ms - 760[0m
+2023-04-17 13:05:22 info: [0mGET /job/getUserJobBestMatches?skip=2&limit=2 [32m200[0m 950.076 ms - -[0m
+2023-04-17 13:05:31 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-17 13:05:31 info: [0mGET /job/642c9196781b4dd78830a406 [32m200[0m 441.219 ms - 71[0m
+2023-04-17 13:05:37 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 13:05:37 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 1533.657 ms - 108[0m
+2023-04-17 13:07:04 info: =================================
+2023-04-17 13:07:04 info: ======= ENV: development =======
+2023-04-17 13:07:04 info: 🚀 App listening on the port 3000
+2023-04-17 13:07:04 info: =================================
+2023-04-17 13:07:09 info: Connected to email server
+2023-04-17 13:07:09 info: Connected to Database Successfully...
+2023-04-17 13:07:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 13:07:33 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 1365.718 ms - 108[0m
+2023-04-17 13:08:10 info: =================================
+2023-04-17 13:08:10 info: ======= ENV: development =======
+2023-04-17 13:08:10 info: 🚀 App listening on the port 3000
+2023-04-17 13:08:10 info: =================================
+2023-04-17 13:08:14 info: Connected to email server
+2023-04-17 13:08:15 info: Connected to Database Successfully...
+2023-04-17 13:09:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 13:09:33 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 1441.640 ms - 108[0m
+2023-04-17 13:11:12 info: =================================
+2023-04-17 13:11:12 info: ======= ENV: development =======
+2023-04-17 13:11:12 info: 🚀 App listening on the port 3000
+2023-04-17 13:11:12 info: =================================
+2023-04-17 13:11:15 info: Connected to email server
+2023-04-17 13:11:16 info: Connected to Database Successfully...
+2023-04-17 13:11:22 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 953.654 ms - -[0m
+2023-04-17 13:11:44 info: [0mPOST /job/saveJob/643d35a8c469111a917df189 [32m200[0m 1886.320 ms - 181[0m
+2023-04-17 13:12:01 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 4894.749 ms - -[0m

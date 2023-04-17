@@ -1,0 +1,7 @@
+2023-04-17 13:03:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-17 13:04:10 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-17 13:05:03 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-17 13:05:31 error: [GET] /job/642c9196781b4dd78830a406 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-04-17 13:05:37 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 13:07:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-04-17 13:09:33 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
