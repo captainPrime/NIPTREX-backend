@@ -5,7 +5,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Education } from '@/models/profile.model';
 import { IEducationHistory, IUpdateEducationHistory } from '@/interfaces/profile.interface';
-import { educationHistorySchema } from '@/validations/profile.validation';
+import { educationHistorySchema, educationHistoryUpdateSchema } from '@/validations/profile.validation';
 
 class EducationService {
   public education: any = Education;
@@ -66,6 +66,9 @@ class EducationService {
   public async updateEducationById(id: mongoose.Types.ObjectId | string, body: IUpdateEducationHistory): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
+    const { error } = educationHistoryUpdateSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
     const data = await this.education.findOne({ _id: id });
     if (!data) throw new HttpException(400, 2002, 'EDUCATION_HISTORY_NOT_FOUND');
 

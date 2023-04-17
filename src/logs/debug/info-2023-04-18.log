@@ -1,0 +1,29 @@
+2023-04-18 00:03:45 info: [0mPOST /profile/education [0m-[0m - ms - -[0m
+2023-04-18 00:03:50 info: [0mPOST /profile/education [32m200[0m 2855.675 ms - 321[0m
+2023-04-18 00:04:09 info: [0mGET /job/softSkills [32m200[0m 3.643 ms - 86[0m
+2023-04-18 00:04:09 error: [GET] /job/softSkills >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-04-18 00:04:32 info: =================================
+2023-04-18 00:04:32 info: ======= ENV: development =======
+2023-04-18 00:04:32 info: 🚀 App listening on the port 3000
+2023-04-18 00:04:32 info: =================================
+2023-04-18 00:04:35 info: Connected to email server
+2023-04-18 00:04:36 info: Connected to Database Successfully...
+2023-04-18 00:04:43 info: [0mGET /job/softSkills [32m200[0m 9.213 ms - 740[0m
+2023-04-18 00:04:55 info: [0mGET /profile/education [32m200[0m 1088.439 ms - 323[0m
+2023-04-18 00:05:24 error: [PUT] /profile/education/642389331f0e970e85f2f927 >> StatusCode:: 400, Message:: EDUCATION_HISTORY_NOT_FOUND
+2023-04-18 00:05:24 info: [0mPUT /profile/education/642389331f0e970e85f2f927 [32m200[0m 895.035 ms - 85[0m
+2023-04-18 00:05:34 error: [PUT] /profile/education >> StatusCode:: 404, Message:: The requested path /profile/education not found!
+2023-04-18 00:05:34 info: [0mPUT /profile/education [32m200[0m 2.405 ms - 106[0m
+2023-04-18 00:05:57 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 1578.705 ms - 321[0m
+2023-04-18 00:06:29 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 853.662 ms - 314[0m
+2023-04-18 00:09:40 info: =================================
+2023-04-18 00:09:40 info: ======= ENV: development =======
+2023-04-18 00:09:40 info: 🚀 App listening on the port 3000
+2023-04-18 00:09:40 info: =================================
+2023-04-18 00:09:52 info: Connected to email server
+2023-04-18 00:09:57 info: Connected to Database Successfully...
+2023-04-18 00:10:03 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:10:03 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 479.395 ms - 118[0m
+2023-04-18 00:10:16 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:10:16 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 279.950 ms - 118[0m
+2023-04-18 00:10:25 info: [0mPUT /profile/education/643dd0555cdac5accc348082 [32m200[0m 897.939 ms - 314[0m

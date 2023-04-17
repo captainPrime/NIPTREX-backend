@@ -1,0 +1,5 @@
+2023-04-18 00:04:09 error: [GET] /job/softSkills >> StatusCode:: 400, Message:: AUTHNETICATION_TOKEN_MISSING
+2023-04-18 00:05:24 error: [PUT] /profile/education/642389331f0e970e85f2f927 >> StatusCode:: 400, Message:: EDUCATION_HISTORY_NOT_FOUND
+2023-04-18 00:05:34 error: [PUT] /profile/education >> StatusCode:: 404, Message:: The requested path /profile/education not found!
+2023-04-18 00:10:03 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-18 00:10:16 error: [PUT] /profile/education/643dd0555cdac5accc348082 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR

@@ -41,6 +41,15 @@ export const educationHistorySchema = Joi.object({
   graduation_date: Joi.string().required(),
 });
 
+export const educationHistoryUpdateSchema = Joi.object({
+  user_id: Joi.string(),
+  institution: Joi.string(),
+  field_of_study: Joi.string(),
+  degree_level: Joi.string(),
+  date_attended: Joi.string(),
+  graduation_date: Joi.string(),
+}).min(1); // Specify minimum 1 field to be updated
+
 /*
 |--------------------------------------------------------------------------
 | Certification Validation
