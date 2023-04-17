@@ -1,0 +1,30 @@
+import Joi from 'joi';
+
+export const jobSchemaValidation = Joi.object({
+  jobsTags: Joi.array().items(Joi.string().required()).required(),
+  jobTitle: Joi.string().required(),
+  jobSubInfo: Joi.string().required(),
+  jobDescription: Joi.string().required(),
+  attachments: Joi.array().items(Joi.string()),
+  links: Joi.array().items(Joi.string()),
+  duration: Joi.string(),
+  hourly: Joi.number(),
+  experience_level: Joi.string(),
+  activities: Joi.object({
+    proposals: Joi.number().default(0),
+    lastViewed: Joi.date(),
+    interviewing: Joi.number().default(0),
+    invitesSent: Joi.number().default(0),
+    unAnsweredInvites: Joi.number().default(0),
+  }),
+  verified: Joi.boolean().required(),
+  rating: Joi.string().required(),
+  status: Joi.string().valid('active', 'inactive', 'other').default('inactive'),
+  location: Joi.string().required(),
+  jobType: Joi.string().required(),
+  jobSize: Joi.string().required(),
+  industryType: Joi.string().required(),
+  industrySize: Joi.string().required(),
+  softSkills: Joi.array().items(Joi.string()),
+  datePosted: Joi.date().default(Date.now),
+}).options({ allowUnknown: true, stripUnknown: true, abortEarly: false });

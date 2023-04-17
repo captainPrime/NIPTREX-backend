@@ -2,7 +2,6 @@
 import { NextFunction, Request, Response } from 'express';
 
 import JobService from '@/services/job.service';
-import { jobPayload } from '@/utils/jobPayload';
 import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
@@ -23,7 +22,7 @@ class JobController {
   */
   public createJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data = await this.jobService.createJob(jobPayload);
+      const data = await this.jobService.createJob(req.body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
