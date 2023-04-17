@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { About } from '@/models/profile.model';
 import { IAbout, IUpdateAbout } from '@/interfaces/profile.interface';
-import { aboutSchema } from '@/validations/profile.validation';
+import { aboutSchema, updateAboutSchema } from '@/validations/profile.validation';
 
 class AboutService {
   public about: any = About;
@@ -64,6 +64,9 @@ class AboutService {
   */
   public async updateAboutById(id: mongoose.Types.ObjectId | string, body: IUpdateAbout): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = updateAboutSchema.validate(body);
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.about.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');

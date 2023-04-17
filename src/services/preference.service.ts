@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Preference } from '@/models/profile.model';
 import { IPreferences, IUpdatePreference } from '@/interfaces/profile.interface';
-import { workPreferenceSchema } from '@/validations/profile.validation';
+import { workPreferenceSchema, workPreferenceUpdateSchema } from '@/validations/profile.validation';
 
 class PreferenceService {
   public preference: any = Preference;
@@ -64,6 +64,10 @@ class PreferenceService {
   */
   public async updatePreferenceById(id: mongoose.Types.ObjectId | string, body: IUpdatePreference): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = workPreferenceUpdateSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.preference.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');

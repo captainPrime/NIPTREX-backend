@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Certification } from '@/models/profile.model';
 import { ICertification, IUpdateCertification } from '@/interfaces/profile.interface';
-import { certificationSchema } from '@/validations/profile.validation';
+import { certificationSchema, certificationUpdateSchema } from '@/validations/profile.validation';
 
 class CertificationService {
   public userService = new UserService();
@@ -64,6 +64,10 @@ class CertificationService {
   */
   public async updateCertificationById(id: mongoose.Types.ObjectId | string, body: IUpdateCertification): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = certificationUpdateSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.certification.findOne({ _id: id });
     if (!data) throw new HttpException(400, 2002, 'CERTIFICATION_NOT_FOUND');

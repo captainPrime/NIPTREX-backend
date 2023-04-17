@@ -63,6 +63,14 @@ export const certificationSchema = Joi.object({
   date_obtained: Joi.date().optional(),
 });
 
+export const certificationUpdateSchema = Joi.object({
+  user_id: Joi.string(),
+  name: Joi.string(),
+  organisation: Joi.string(),
+  certificate_url: Joi.string(),
+  date_obtained: Joi.date(),
+}).min(1);
+
 /*
 |--------------------------------------------------------------------------
 | Billing Validation
@@ -77,6 +85,13 @@ export const billingSchema = Joi.object({
     .required(),
 });
 
+export const billingUpdateSchema = Joi.object({
+  user_id: Joi.string(),
+  per_annum: Joi.number(),
+  hourly_rate: Joi.number(),
+  payment_method: Joi.string().valid(...Object.values(EPaymentMethod)),
+}).min(1);
+
 /*
 |--------------------------------------------------------------------------
 | Identity Validation
@@ -87,6 +102,12 @@ export const identitySchema = Joi.object({
   proof_of_identity: Joi.string().required(),
   proof_of_address: Joi.string().required(),
 });
+
+export const identityUpdateSchema = Joi.object({
+  user_id: Joi.string(),
+  proof_of_identity: Joi.string(),
+  proof_of_address: Joi.string(),
+}).min(1);
 
 /*
 |--------------------------------------------------------------------------
@@ -104,6 +125,18 @@ export const workPreferenceSchema = Joi.object({
   work_timezone: Joi.string().required(),
   work_preference: Joi.string().required(),
 });
+
+export const workPreferenceUpdateSchema = Joi.object({
+  user_id: Joi.string(),
+  industry_type: Joi.array().items(Joi.string()),
+  company_culture: Joi.array().items(Joi.string()),
+  company_size: Joi.string(),
+  project_duration: Joi.string(),
+  team_size: Joi.string(),
+  work_location: Joi.string(),
+  work_timezone: Joi.string(),
+  work_preference: Joi.string(),
+}).min(1);
 
 /*
 |--------------------------------------------------------------------------
@@ -137,6 +170,36 @@ export const aboutSchema = Joi.object({
     dribble: Joi.string().optional().allow(''),
     behance: Joi.string().optional().allow(''),
     glass_door: Joi.string().optional().allow(''),
+  }),
+  languages: Joi.array().items(Joi.string()),
+  skills: Joi.array().items(Joi.string()),
+});
+
+export const updateAboutSchema = Joi.object({
+  user_id: Joi.string(),
+  personal_details: Joi.object({
+    profile_picture: Joi.string(),
+    dob: Joi.string(),
+    role: Joi.string(),
+    seniority: Joi.string(),
+    phone_number: Joi.string(),
+    gender: Joi.string(),
+    resume: Joi.string(),
+  }).unknown(true),
+  address: Joi.object({
+    line1: Joi.string(),
+    line2: Joi.string().allow(''),
+    city: Joi.string(),
+    state: Joi.string(),
+  }),
+  social_links: Joi.object({
+    personal_website: Joi.string().allow(''),
+    linkedin: Joi.string().allow(''),
+    stack_overflow: Joi.string().allow(''),
+    github: Joi.string().allow(''),
+    dribble: Joi.string().allow(''),
+    behance: Joi.string().allow(''),
+    glass_door: Joi.string().allow(''),
   }),
   languages: Joi.array().items(Joi.string()),
   skills: Joi.array().items(Joi.string()),

@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Billing } from '@/models/profile.model';
 import { IBilling, IUpdateBilling } from '@/interfaces/profile.interface';
-import { billingSchema } from '@/validations/profile.validation';
+import { billingSchema, billingUpdateSchema } from '@/validations/profile.validation';
 
 class BillingService {
   public billing: any = Billing;
@@ -64,6 +64,10 @@ class BillingService {
   */
   public async updateBillingById(id: mongoose.Types.ObjectId | string, body: IUpdateBilling): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = billingUpdateSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.billing.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'BILLING_NOT_FOUND');

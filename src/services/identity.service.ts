@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Identity } from '@/models/profile.model';
 import { IDocument, IUpdateDocument } from '@/interfaces/profile.interface';
-import { identitySchema } from '@/validations/profile.validation';
+import { identitySchema, identityUpdateSchema } from '@/validations/profile.validation';
 
 class IdentityService {
   public identity: any = Identity;
@@ -64,6 +64,10 @@ class IdentityService {
   */
   public async updateIdentityById(id: mongoose.Types.ObjectId | string, body: IUpdateDocument): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = identityUpdateSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.identity.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'IDENTITY_NOT_FOUND');
