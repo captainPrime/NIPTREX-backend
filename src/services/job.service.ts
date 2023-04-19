@@ -25,6 +25,8 @@ class JobService {
 
     const { error } = jobSchemaValidation.validate(body);
 
+    console.log(body);
+
     if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
     const data: any = await this.job.create(body);
 

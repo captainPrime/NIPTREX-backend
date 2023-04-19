@@ -5,6 +5,7 @@ import { Schema, model } from 'mongoose';
 
 const JobSchema: Schema = new Schema(
   {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     jobsTags: [{ type: String, required: true }],
     jobTitle: { type: String, required: true },
     jobHeadline: { type: String, required: true },

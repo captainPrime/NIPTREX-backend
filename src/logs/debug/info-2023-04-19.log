@@ -62,3 +62,22 @@
 2023-04-19 06:42:27 info: =================================
 2023-04-19 06:42:29 info: Connected to email server
 2023-04-19 06:42:40 info: Connected to Database Successfully...
+2023-04-19 06:44:16 info: =================================
+2023-04-19 06:44:16 info: ======= ENV: development =======
+2023-04-19 06:44:16 info: 🚀 App listening on the port 3000
+2023-04-19 06:44:16 info: =================================
+2023-04-19 06:44:18 info: Connected to email server
+2023-04-19 06:44:18 info: Connected to Database Successfully...
+2023-04-19 06:44:29 info: [0mGET /reload_db [32m200[0m 3373.588 ms - 74[0m
+2023-04-19 06:44:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 06:44:34 info: [0mPOST /auth/login [32m200[0m 580.161 ms - 587[0m
+2023-04-19 06:44:39 info: [0mPOST /job [32m200[0m 751.057 ms - -[0m
+2023-04-19 06:45:59 info: =================================
+2023-04-19 06:45:59 info: ======= ENV: development =======
+2023-04-19 06:45:59 info: 🚀 App listening on the port 3000
+2023-04-19 06:46:00 info: =================================
+2023-04-19 06:46:02 info: Connected to email server
+2023-04-19 06:46:12 info: Connected to Database Successfully...
+2023-04-19 06:46:17 info: [0mPOST /job [32m200[0m 1334.651 ms - -[0m
+2023-04-19 06:46:39 info: [0mGET /job/getAllJobs?page=2&skip=2&limit=3 [32m200[0m 216.339 ms - 171[0m
+2023-04-19 06:46:54 info: [0mGET /job/getAllJobs [32m200[0m 232.580 ms - -[0m
