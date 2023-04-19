@@ -1,0 +1,4 @@
+2023-04-19 05:30:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 05:31:15 error: [POST] /job >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-04-19 05:32:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 05:32:27 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED

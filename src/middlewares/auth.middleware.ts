@@ -3,7 +3,7 @@ import { NextFunction, Response } from 'express';
 import { verify } from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
 import { HttpException } from '@exceptions/HttpException';
-import { DataStoredInToken, RequestWithUser } from '@interfaces/auth.interface';
+import { RequestWithUser } from '@interfaces/auth.interface';
 import User from '@models/users.model';
 
 const authMiddleware =
@@ -25,7 +25,7 @@ const authMiddleware =
             next();
           } else {
             // If user role does not match the specified role, throw unauthorized error
-            next(new HttpException(401, 1031, 'UNAUTHORIZED'));
+            next(new HttpException(401, 1031, 'UNAUTHORIZED_USER'));
           }
         } else {
           next(new HttpException(400, 1030, 'INVALID_AUTHORIZATION'));

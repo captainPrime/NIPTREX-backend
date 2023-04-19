@@ -4,3 +4,21 @@
 2023-04-19 05:28:17 info: =================================
 2023-04-19 05:28:20 info: Connected to email server
 2023-04-19 05:28:20 info: Connected to Database Successfully...
+2023-04-19 05:29:50 info: [0mGET /reload_db [32m200[0m 4046.636 ms - 74[0m
+2023-04-19 05:30:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 05:30:00 info: [0mPOST /auth/login [32m200[0m 1490.198 ms - 587[0m
+2023-04-19 05:31:12 info: [0mGET /users/profile [0m-[0m - ms - -[0m
+2023-04-19 05:31:15 error: [POST] /job >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-04-19 05:31:15 info: [0mPOST /job [32m200[0m 3.659 ms - 86[0m
+2023-04-19 05:31:25 info: [0mPOST /job [32m200[0m 604.631 ms - -[0m
+2023-04-19 05:31:52 info: =================================
+2023-04-19 05:31:52 info: ======= ENV: development =======
+2023-04-19 05:31:52 info: 🚀 App listening on the port 3000
+2023-04-19 05:31:52 info: =================================
+2023-04-19 05:31:54 info: Connected to email server
+2023-04-19 05:31:59 info: Connected to Database Successfully...
+2023-04-19 05:32:12 info: [0mGET /reload_db [32m200[0m 3129.761 ms - 74[0m
+2023-04-19 05:32:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 05:32:23 info: [0mPOST /auth/login [32m200[0m 544.628 ms - 587[0m
+2023-04-19 05:32:27 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED
+2023-04-19 05:32:27 info: [0mPOST /job [32m200[0m 246.631 ms - 70[0m

@@ -47,7 +47,6 @@ class IndexController {
         last_name: 'Doe',
         email: 'johndoe@gmail.com',
         password: 'johndoe21',
-        user: 'client',
         verified: true,
         has_profile: false,
         country: 'Nigeria',
