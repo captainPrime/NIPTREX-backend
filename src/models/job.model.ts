@@ -1,44 +1,46 @@
 import { IJob, JobStatus } from '@/interfaces/job.inteface';
-import { paginate } from '@/modules/paginate';
+import { WorkOption } from '@/interfaces/profile.interface';
 import { toJSON } from '@/modules/toJSON';
+import { paginate } from '@/modules/paginate';
 import { Query, Schema, UpdateQuery, model } from 'mongoose';
 
 const JobSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    jobsTags: [{ type: String, required: true }],
-    jobTitle: { type: String, required: true },
-    jobHeadline: { type: String, required: true },
-    jobDescription: { type: String, required: true },
+    jobs_tags: [{ type: String, required: true }],
+    job_title: { type: String, required: true },
+    job_headline: { type: String, required: true },
+    job_description: { type: String, required: true },
     attachments: [{ type: String }],
     links: [{ type: String }],
-    duration: { type: String },
-    hourlyRate: { type: Number },
+    project_duration: { type: String },
+    hourly_rate: {
+      min: { type: Number }, // Minimum hourly rate
+      max: { type: Number }, // Maximum hourly rate
+    },
     budget: { type: Number },
-    projectFixed: { type: Boolean, default: false },
-    proposalLimit: { type: Number, default: 50 },
-    proposalLeft: { type: Number, default: 50 },
+    project_fixed: { type: Boolean, default: false },
+    proposal_limit: { type: Number, default: 50 },
+    proposal_left: { type: Number, default: 50 },
     experience_level: { type: String },
     activities: {
       proposals: { type: Number, default: 0 },
-      lastViewed: { type: Date },
+      last_viewed: { type: Date },
       interviewing: { type: Number, default: 0 },
-      invitesSent: { type: Number, default: 0 },
-      unAnsweredInvites: { type: Number, default: 0 },
+      invites_sent: { type: Number, default: 0 },
+      unanswered_invites: { type: Number, default: 0 },
     },
     verified: { type: Boolean, required: true, default: true },
     rating: { type: String, required: true },
     status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
-    location: { type: String, required: true },
-    jobType: { type: String, required: true },
-    teamSize: { type: String, required: true },
-    industryType: { type: String, required: true },
-    industrySize: { type: String, required: true },
-    companyType: { type: String, required: true },
-    projectType: { type: String, required: true },
-    softSkills: [{ type: String }],
+    work_location: { type: String, required: true },
+    job_type: { type: String, enum: Object.values(WorkOption), required: true },
+    team_size: { type: String, required: true },
+    industry_type: { type: String, required: true },
+    project_type: { type: String, required: true },
+    soft_skills: [{ type: String }],
     languages: [{ type: String }],
-    datePosted: {
+    date_posted: {
       type: Date,
       default: Date.now,
     },
