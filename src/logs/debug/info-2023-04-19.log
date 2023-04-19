@@ -22,3 +22,19 @@
 2023-04-19 05:32:23 info: [0mPOST /auth/login [32m200[0m 544.628 ms - 587[0m
 2023-04-19 05:32:27 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED
 2023-04-19 05:32:27 info: [0mPOST /job [32m200[0m 246.631 ms - 70[0m
+2023-04-19 05:37:15 info: =================================
+2023-04-19 05:37:15 info: ======= ENV: development =======
+2023-04-19 05:37:15 info: 🚀 App listening on the port 3000
+2023-04-19 05:37:15 info: =================================
+2023-04-19 05:37:17 info: Connected to email server
+2023-04-19 05:37:23 info: Connected to Database Successfully...
+2023-04-19 05:39:02 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-19 05:39:02 info: [0mPOST /job [32m200[0m 305.780 ms - 75[0m
+2023-04-19 05:39:54 info: [0mPOST /profile/experience [0m-[0m - ms - -[0m
+2023-04-19 05:41:14 info: =================================
+2023-04-19 05:41:14 info: ======= ENV: development =======
+2023-04-19 05:41:14 info: 🚀 App listening on the port 3000
+2023-04-19 05:41:14 info: =================================
+2023-04-19 05:41:16 info: Connected to email server
+2023-04-19 05:41:28 info: Connected to Database Successfully...
+2023-04-19 05:41:50 info: [0mPOST /profile/experience [32m200[0m 989.247 ms - 373[0m
