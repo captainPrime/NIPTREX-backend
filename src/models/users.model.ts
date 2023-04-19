@@ -33,6 +33,8 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
     },
     user: {
       type: String,
+      enum: ['admin', 'freelancer', 'client'],
+      default: 'freelancer',
       required: true,
     },
     country: {
