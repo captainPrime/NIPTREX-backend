@@ -7,6 +7,7 @@ import {
   IEducationHistory,
   IExperience,
   IPreferences,
+  WorkOption,
 } from '@/interfaces/profile.interface';
 import { toJSON } from '@/modules/toJSON';
 import { Schema, model } from 'mongoose';
@@ -87,11 +88,6 @@ const workPreference: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     industry_type: [{ type: String }],
-    company_culture: [{ type: String }],
-    company_size: {
-      type: String,
-      required: true,
-    },
     project_duration: {
       type: String,
       required: true,
@@ -104,12 +100,9 @@ const workPreference: Schema = new Schema(
       type: String,
       required: true,
     },
-    work_timezone: {
+    job_type: {
       type: String,
-      required: true,
-    },
-    work_preference: {
-      type: String,
+      enum: Object.values(WorkOption),
       required: true,
     },
   },

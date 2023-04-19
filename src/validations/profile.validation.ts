@@ -1,4 +1,4 @@
-import { EPaymentMethod, EmploymentType } from '@/interfaces/profile.interface';
+import { EPaymentMethod, EmploymentType, WorkOption } from '@/interfaces/profile.interface';
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
@@ -117,25 +117,21 @@ export const identityUpdateSchema = Joi.object({
 export const workPreferenceSchema = Joi.object({
   user_id: Joi.string().required(),
   industry_type: Joi.array().items(Joi.string()).required(),
-  company_culture: Joi.array().items(Joi.string()).required(),
-  company_size: Joi.string().required(),
   project_duration: Joi.string().required(),
   team_size: Joi.string().required(),
   work_location: Joi.string().required(),
-  work_timezone: Joi.string().required(),
-  work_preference: Joi.string().required(),
+  job_type: Joi.string()
+    .valid(...Object.values(WorkOption))
+    .required(),
 });
 
 export const workPreferenceUpdateSchema = Joi.object({
   user_id: Joi.string(),
   industry_type: Joi.array().items(Joi.string()),
-  company_culture: Joi.array().items(Joi.string()),
-  company_size: Joi.string(),
   project_duration: Joi.string(),
   team_size: Joi.string(),
   work_location: Joi.string(),
-  work_timezone: Joi.string(),
-  work_preference: Joi.string(),
+  job_type: Joi.string().valid(...Object.values(WorkOption)),
 }).min(1);
 
 /*

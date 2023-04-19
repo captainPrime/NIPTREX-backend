@@ -138,3 +138,22 @@
 2023-04-19 07:05:13 info: Connected to email server
 2023-04-19 07:05:14 info: Connected to Database Successfully...
 2023-04-19 07:05:36 info: [0mPUT /job/update [32m200[0m 873.644 ms - -[0m
+2023-04-19 21:57:26 info: =================================
+2023-04-19 21:57:26 info: ======= ENV: development =======
+2023-04-19 21:57:26 info: 🚀 App listening on the port 3000
+2023-04-19 21:57:26 info: =================================
+2023-04-19 21:57:30 info: Connected to email server
+2023-04-19 21:57:31 info: Connected to Database Successfully...
+2023-04-19 21:57:58 info: [0mGET /reload_db [32m200[0m 4109.907 ms - 74[0m
+2023-04-19 21:58:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-04-19 21:58:10 info: [0mPOST /auth/login [32m200[0m 7.132 ms - 184[0m
+2023-04-19 21:58:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 21:58:33 info: [0mPOST /auth/login [32m200[0m 1015.703 ms - 587[0m
+2023-04-19 21:59:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 21:59:40 info: [0mPOST /auth/login [32m200[0m 1142.482 ms - 587[0m
+2023-04-19 21:59:47 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-19 21:59:47 info: [0mGET /job/getUserJobBestMatches?skip=2&limit=2 [32m200[0m 444.293 ms - 111[0m
+2023-04-19 22:00:01 info: [0mPOST /profile/about [32m200[0m 2075.801 ms - 865[0m
+2023-04-19 22:00:09 info: [0mGET /job/getUserJobBestMatches?skip=2&limit=2 [32m200[0m 1214.930 ms - 80[0m
+2023-04-19 22:00:16 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-19 22:00:16 info: [0mPOST /job [32m200[0m 258.315 ms - 75[0m

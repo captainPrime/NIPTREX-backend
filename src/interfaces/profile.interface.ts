@@ -118,13 +118,10 @@ export interface IBilling {
 
 export interface IPreferences {
   industry_type: string[];
-  company_culture: string[];
-  company_size: TeamSize;
   project_duration: JobDuration;
   team_size: TeamSize;
-  work_location: WorkOption;
-  work_timezone: string;
-  work_preference: WorkSchedule;
+  work_location: string;
+  job_type: WorkOption;
 }
 
 export interface IDocument {

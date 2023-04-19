@@ -12,3 +12,8 @@
 2023-04-19 06:52:03 error: [PUT] /job/update >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
 2023-04-19 06:52:12 error: [PUT] /job/update >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
 2023-04-19 07:00:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 21:58:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-04-19 21:58:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 21:59:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 21:59:47 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'skills')
+2023-04-19 22:00:16 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
