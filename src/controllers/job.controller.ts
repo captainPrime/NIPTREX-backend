@@ -22,7 +22,13 @@ class JobController {
   */
   public createJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data = await this.jobService.createJob(req.body);
+      const user: any = await this.userService.findUserById(req.user.id);
+
+      if (!user.verified) {
+        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
+      }
+
+      const data = await this.jobService.createJob({ ...req.body, user_id: req.user.id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

@@ -1,6 +1,7 @@
 import Joi from 'joi';
 
 export const jobSchemaValidation = Joi.object({
+  user_id: Joi.string().required(),
   jobsTags: Joi.array().items(Joi.string()).required(),
   jobTitle: Joi.string().required(),
   jobHeadline: Joi.string().required(),
