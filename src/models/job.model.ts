@@ -22,7 +22,7 @@ const JobSchema: Schema = new Schema(
       invitesSent: { type: Number, default: 0 },
       unAnsweredInvites: { type: Number, default: 0 },
     },
-    verified: { type: String, required: true },
+    verified: { type: Boolean, required: true, default: true },
     rating: { type: String, required: true },
     status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
     location: { type: String, required: true },
