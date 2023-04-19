@@ -8,31 +8,37 @@ export interface PaginationOptions {
 export interface IJob {
   jobsTags: string[];
   jobTitle: string;
-  jobSubInfo: string;
+  jobHeadline: string;
   jobDescription: string;
-  attachments: string[];
-  links: string[];
-  duration: string;
-  hourly: number;
-  experience_level: string;
-  activities: {
+  attachments?: string[];
+  links?: string[];
+  duration?: string;
+  hourly?: number;
+  budget?: string;
+  experience_level?: string;
+  activities?: {
     proposals: number;
     lastViewed?: Date;
     interviewing: number;
     invitesSent: number;
     unAnsweredInvites: number;
   };
-  verified: boolean;
+  verified: string;
   rating: string;
-  status: string;
+  status?: string;
   location: string;
   jobType: string;
-  jobSize: string;
+  teamSize: string;
   industryType: string;
   industrySize: string;
-  softSkills: string[];
-  datePosted: Date;
+  companyType: string;
+  projectType: string;
+  softSkills?: string[];
+  languages?: string[];
+  datePosted?: Date;
 }
+
+export type IUpdateJob = Partial<IJob>;
 
 export enum JobStatus {
   ACTIVE = 'active',
