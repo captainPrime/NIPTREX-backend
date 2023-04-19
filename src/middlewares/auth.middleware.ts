@@ -7,7 +7,7 @@ import { RequestWithUser } from '@interfaces/auth.interface';
 import User from '@models/users.model';
 
 const authMiddleware =
-  (role: string) =>
+  (roles?: string[]) =>
   async (req: RequestWithUser, res: Response, next: NextFunction): Promise<void> => {
     try {
       const Authorization = req.headers.authorization ? req.headers.authorization!.split('Bearer ')[1] : null;
@@ -19,12 +19,12 @@ const authMiddleware =
         if (findUser) {
           // Check user role
           const userRole = findUser.user; // Assuming user role is stored in 'user' property
-          if (userRole === role) {
-            // If user role matches the specified role, allow access
+          if (!roles || roles.includes(userRole)) {
+            // If roles are not specified or user role is included in the specified roles, allow access
             req.user = findUser;
             next();
           } else {
-            // If user role does not match the specified role, throw unauthorized error
+            // If user role does not match the specified roles, throw unauthorized error
             next(new HttpException(401, 1031, 'UNAUTHORIZED_USER'));
           }
         } else {

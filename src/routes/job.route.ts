@@ -15,18 +15,18 @@ class JobRoute implements Routes {
 
   private initializeRoutes() {
     this.router.get(`${this.path}/getAllJobs`, this.jobController.getAllJobs);
-    this.router.post(`${this.path}`, authMiddleware('client'), this.jobController.createJob);
-    this.router.get(`${this.path}/mostRecents`, authMiddleware('freelancer'), this.jobController.getMostRecentJobs);
-    this.router.get(`${this.path}/getUserJobBestMatches`, authMiddleware('freelancer'), this.jobController.getUserJobBestMatches);
+    this.router.post(`${this.path}`, authMiddleware(['client']), this.jobController.createJob);
+    this.router.get(`${this.path}/mostRecents`, authMiddleware(['freelancer']), this.jobController.getMostRecentJobs);
+    this.router.get(`${this.path}/getUserJobBestMatches`, authMiddleware(['freelancer']), this.jobController.getUserJobBestMatches);
 
     this.router.get(`${this.path}/skills`, this.jobController.getAllSkills);
     this.router.get(`${this.path}/softSkills`, this.jobController.getAllSoftSkills);
     this.router.get(`${this.path}/skillsCategory`, this.jobController.getAllSkillsCategory);
-    this.router.get(`${this.path}/savedJobs`, authMiddleware('freelancer'), this.jobController.getUserSavedJobs);
-    this.router.get(`${this.path}/getUserSavedItems`, authMiddleware('freelancer'), this.jobController.getUserSavedItems);
-    this.router.get(`${this.path}/:id`, authMiddleware('freelancer'), this.jobController.getJobById);
-    this.router.post(`${this.path}/saveJob/:id`, authMiddleware('freelancer'), this.jobController.savedJob);
-    this.router.post(`${this.path}/unSaveJob/:id`, authMiddleware('freelancer'), this.jobController.unSaveJob);
+    this.router.get(`${this.path}/savedJobs`, authMiddleware(['freelancer']), this.jobController.getUserSavedJobs);
+    this.router.get(`${this.path}/getUserSavedItems`, authMiddleware(['freelancer']), this.jobController.getUserSavedItems);
+    this.router.get(`${this.path}/:id`, authMiddleware(['freelancer']), this.jobController.getJobById);
+    this.router.post(`${this.path}/saveJob/:id`, authMiddleware(['freelancer']), this.jobController.savedJob);
+    this.router.post(`${this.path}/unSaveJob/:id`, authMiddleware(['freelancer']), this.jobController.unSaveJob);
   }
 }
 
