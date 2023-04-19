@@ -157,3 +157,11 @@
 2023-04-19 22:00:09 info: [0mGET /job/getUserJobBestMatches?skip=2&limit=2 [32m200[0m 1214.930 ms - 80[0m
 2023-04-19 22:00:16 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-04-19 22:00:16 info: [0mPOST /job [32m200[0m 258.315 ms - 75[0m
+2023-04-19 22:09:01 info: =================================
+2023-04-19 22:09:01 info: ======= ENV: development =======
+2023-04-19 22:09:01 info: 🚀 App listening on the port 3000
+2023-04-19 22:09:01 info: =================================
+2023-04-19 22:09:03 info: Connected to email server
+2023-04-19 22:09:13 info: Connected to Database Successfully...
+2023-04-19 22:09:28 info: [0mPOST /profile/preference [32m200[0m 1306.210 ms - 341[0m
+2023-04-19 22:09:43 info: [0mPUT /profile/preference [32m200[0m 685.615 ms - 322[0m
