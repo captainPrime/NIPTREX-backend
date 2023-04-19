@@ -6,3 +6,8 @@
 2023-04-19 06:41:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-19 06:41:27 error: [POST] /job >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
 2023-04-19 06:44:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 06:48:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 06:49:39 error: [GET] /job/update >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-19 06:50:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-19 06:52:03 error: [PUT] /job/update >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-04-19 06:52:12 error: [PUT] /job/update >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
