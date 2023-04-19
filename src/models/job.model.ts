@@ -1,7 +1,7 @@
 import { IJob, JobStatus } from '@/interfaces/job.inteface';
 import { paginate } from '@/modules/paginate';
 import { toJSON } from '@/modules/toJSON';
-import { Schema, model } from 'mongoose';
+import { Query, Schema, UpdateQuery, model } from 'mongoose';
 
 const JobSchema: Schema = new Schema(
   {
@@ -15,6 +15,8 @@ const JobSchema: Schema = new Schema(
     duration: { type: String },
     hourly: { type: Number },
     budget: { type: String },
+    proposalLimit: { type: Number, default: 50 },
+    proposalLeft: { type: Number, default: 50 },
     experience_level: { type: String },
     activities: {
       proposals: { type: Number, default: 0 },
@@ -44,6 +46,15 @@ const JobSchema: Schema = new Schema(
     timestamps: true,
   },
 );
+
+JobSchema.pre<Query<any, any, any, any>>('findOneAndUpdate', function (next) {
+  const update = this.getUpdate() as UpdateQuery<any>;
+  // Calculate proposalLeft by subtracting activities.proposals from proposalLimit
+  if (update && update.activities && update.activities.proposals) {
+    update.proposalLeft = update.proposalLimit - update.activities.proposals;
+  }
+  next();
+});
 
 const SavedJobSchema: Schema = new Schema(
   {
