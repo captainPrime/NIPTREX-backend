@@ -7,7 +7,7 @@ import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
 import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
-import { PaginationOptions } from '@/interfaces/job.inteface';
+import { IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {
   public userService = new UserService();
@@ -43,13 +43,11 @@ class JobController {
   */
   public updateJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const user: any = await this.userService.findUserById(req.user.id);
+      // const user: any = await this.userService.findUserById(req.user.id);
 
-      if (!user.verified) {
-        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
-      }
+      const body: IUpdateJob = req.body;
 
-      const data = await this.jobService.createJob({ ...req.body, user_id: req.user.id });
+      const data = await this.jobService.updateJob(req.user.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

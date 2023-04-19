@@ -6,8 +6,8 @@ import User from '@/models/users.model';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { JobModel, SavedJob } from '@/models/job.model';
-import { IJob, PaginationOptions } from '@/interfaces/job.inteface';
-import { jobSchemaValidation } from '@/validations/job.validation';
+import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
+import { jobSchemaUpdateValidation, jobSchemaValidation } from '@/validations/job.validation';
 
 class JobService {
   public job: any = JobModel;
@@ -29,6 +29,38 @@ class JobService {
     const data: any = await this.job.create(body);
 
     return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Create Job
+  |--------------------------------------------------------------------------
+  */
+  public async updateJob(selector: string, body: IUpdateJob): Promise<any> {
+    if (isEmpty(body)) throw new HttpException(400, 2005, 'Request body cannot be empty');
+
+    const { error } = jobSchemaUpdateValidation.validate(body);
+    if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
+
+    const data = await this.job.findOne({ user_id: selector });
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    const updatedPayload = {
+      ...data.toObject(),
+      activities: {
+        ...data.activities.toObject(),
+        ...body.activities,
+      },
+      ...body,
+    };
+
+    const updatedData = await this.job.findByIdAndUpdate(data._id, updatedPayload, {
+      new: true,
+    });
+
+    if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+
+    return updatedData;
   }
 
   /*
