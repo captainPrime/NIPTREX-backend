@@ -52,8 +52,19 @@ class IndexController {
         has_profile: false,
         country: 'Nigeria',
       };
+      const user2 = {
+        first_name: 'John',
+        last_name: 'Doe',
+        email: 'freelancer@gmail.com',
+        password: 'freelancer',
+        user: 'freelancer',
+        verified: true,
+        has_profile: false,
+        country: 'Nigeria',
+      };
 
       await this.users.create(user);
+      await this.users.create(user2);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'DATABASE_RELOAD_SUCCESSFUL' });
     } catch (error) {
