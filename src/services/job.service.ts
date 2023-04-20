@@ -156,7 +156,7 @@ class JobService {
 
     const updatedData = {
       ...data.toJSON(),
-      isSaved: !!savedJob,
+      is_saved: !!savedJob,
     };
 
     return updatedData;
@@ -220,7 +220,7 @@ class JobService {
     const updatedData = data.map((job: any) => {
       return {
         ...job.toJSON(),
-        isSaved: savedJobIds.includes(job.job.id.toString()),
+        is_saved: savedJobIds.includes(job.job.id.toString()),
       };
     });
 

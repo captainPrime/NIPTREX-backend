@@ -38,7 +38,7 @@ export const jobSchemaValidation = Joi.object({
   rating: Joi.string().required(),
   status: Joi.string().valid('ACTIVE', 'INACTIVE', 'COMPLETED').default('ACTIVE'),
   work_location: Joi.string().required(),
-  job_type: Joi.string().valid('Remote', 'Hybrid', 'Onsite').required(),
+  job_type: Joi.string().valid('Remote', 'Hybrid', 'Onsite', 'Freelance').required(),
   team_size: Joi.string().required(),
   industry_type: Joi.string().required(),
   project_type: Joi.string().required(),

@@ -54,7 +54,7 @@ JobSchema.pre<Query<any, any, any, any>>('findOneAndUpdate', function (next) {
   const update = this.getUpdate() as UpdateQuery<any>;
   // Calculate proposalLeft by subtracting activities.proposals from proposalLimit
   if (update && update.activities && update.activities.proposals) {
-    update.proposalLeft = update.proposalLimit - update.activities.proposals;
+    update.proposal_left = update.proposal_limit - update.activities.proposals;
   }
   next();
 });

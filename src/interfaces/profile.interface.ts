@@ -57,7 +57,8 @@ export enum JobDuration {
 export enum WorkOption {
   Remote = 'Remote',
   Hybrid = 'Hybrid',
-  OnSite = 'On-site',
+  OnSite = 'Onsite',
+  Freelance = 'Freelance',
 }
 
 export interface IAddress {
