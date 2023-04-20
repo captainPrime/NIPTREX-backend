@@ -1,0 +1,11 @@
+2023-04-20 12:50:19 info: =================================
+2023-04-20 12:50:19 info: ======= ENV: development =======
+2023-04-20 12:50:19 info: 🚀 App listening on the port 3000
+2023-04-20 12:50:19 info: =================================
+2023-04-20 12:50:22 info: Connected to email server
+2023-04-20 12:50:27 info: Connected to Database Successfully...
+2023-04-20 12:50:34 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-20 12:50:34 info: [0mGET /job/getUserJobBestMatches [32m200[0m 304.607 ms - 75[0m
+2023-04-20 12:50:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-20 12:50:40 info: [0mPOST /auth/login [32m200[0m 712.924 ms - 587[0m
+2023-04-20 12:50:44 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1023.861 ms - 80[0m

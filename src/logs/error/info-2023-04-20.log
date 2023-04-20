@@ -1,0 +1,2 @@
+2023-04-20 12:50:34 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-20 12:50:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

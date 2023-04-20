@@ -84,7 +84,7 @@ class JobService {
   public async getUserJobBestMatches(query: any, userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
-      jobsTags: { $in: regexTags },
+      jobs_tags: { $in: regexTags },
       ...otherQuery,
     };
 
@@ -96,7 +96,7 @@ class JobService {
     const updatedData = data.results.map((job: any) => {
       return {
         ...job.toJSON(),
-        isSaved: savedJobIds.includes(job._id.toString()),
+        is_saved: savedJobIds.includes(job._id.toString()),
       };
     });
     return updatedData;
@@ -110,7 +110,7 @@ class JobService {
   public async getMostRecentJobs(query: any, userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
-      jobsTags: { $in: regexTags },
+      jobs_tags: { $in: regexTags },
       ...otherQuery,
     };
 
@@ -122,7 +122,7 @@ class JobService {
     const updatedData = data.results.map((job: any) => {
       return {
         ...job.toJSON(),
-        isSaved: savedJobIds.includes(job._id.toString()),
+        is_saved: savedJobIds.includes(job._id.toString()),
       };
     });
 
