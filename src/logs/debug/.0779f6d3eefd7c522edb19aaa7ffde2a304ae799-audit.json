@@ -139,6 +139,11 @@
             "date": 1681991416667,
             "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-04-20.log",
             "hash": "b1f3aba1fb89bfb0db1a52deae730094108006c41e8f98e009550dd252e0cb8f"
+        },
+        {
+            "date": 1682287301499,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-04-23.log",
+            "hash": "2c69e2fd5c72d2fb76cf7e9d770775dd71a3fd2022b06e31faf8dd672059a111"
         }
     ],
     "hashType": "sha256"

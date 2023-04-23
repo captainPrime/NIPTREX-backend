@@ -700,3 +700,15 @@ Error: Channel closed
     at Module.require (node:internal/modules/cjs/loader:1057:19)
     at require (node:internal/modules/cjs/helpers:103:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-04-23 23:01:42 error: uncaughtException: Virtual path "total_hours" conflicts with a real path in the schema
+Error: Virtual path "total_hours" conflicts with a real path in the schema
+    at Schema.virtual (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schema.js:2066:11)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/models/profile.model.ts:168:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-7387411349721147.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-7387411349721147.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-7387411349721147.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)

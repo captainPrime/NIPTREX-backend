@@ -117,7 +117,6 @@ const aboutSchema: Schema = new Schema(
     token_activities: [{ type: Schema.Types.ObjectId, ref: 'Token' }],
     total_earnings: { type: Number, default: 0 },
     total_jobs: { type: Number, default: 0 },
-    total_hours: { type: Number, default: 0 },
     available: { type: Number, default: 0 },
     personal_details: {
       first_name: { type: String, required: true },

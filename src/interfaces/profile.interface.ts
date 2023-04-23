@@ -160,7 +160,6 @@ export interface IAbout extends Document {
   token_activities: ITokenDoc[];
   total_earnings: number;
   total_jobs: number;
-  total_hours: number;
   available: number;
   personal_details: IPersonalDetails;
   address: IAddress;
