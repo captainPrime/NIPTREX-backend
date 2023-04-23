@@ -31,7 +31,7 @@ const tokenSchema = new mongoose.Schema<ITokenDoc, ITokenModel>(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 // add plugin that converts mongoose to json
