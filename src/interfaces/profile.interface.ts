@@ -1,3 +1,4 @@
+import { ITokenDoc } from '@/modules/token/token.interfaces';
 import { Document } from 'mongoose';
 
 export enum EmploymentType {
@@ -156,6 +157,11 @@ export interface ISocialLink {
   glass_door?: string;
 }
 export interface IAbout extends Document {
+  token_activities: ITokenDoc[];
+  total_earnings: number;
+  total_jobs: number;
+  total_hours: number;
+  available: number;
   personal_details: IPersonalDetails;
   address: IAddress;
   social_details?: ISocialLink;

@@ -114,6 +114,11 @@ const workPreference: Schema = new Schema(
 const aboutSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    token_activities: [{ type: Schema.Types.ObjectId, ref: 'Token' }],
+    total_earnings: { type: Number, default: 0 },
+    total_jobs: { type: Number, default: 0 },
+    total_hours: { type: Number, default: 0 },
+    available: { type: Number, default: 0 },
     personal_details: {
       first_name: { type: String, required: true },
       last_name: { type: String, required: true },
@@ -158,6 +163,21 @@ certificationSchema.plugin(toJSON);
 billingSchema.plugin(toJSON);
 identitySchema.plugin(toJSON);
 workPreference.plugin(toJSON);
+
+// Define a virtual for total_hours
+aboutSchema.virtual('total_hours').get(function (this: IAbout) {
+  const now = new Date();
+  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+  const tokenActivities: any[] = this.token_activities.filter((activity: any) => activity.createdAt >= sevenDaysAgo && activity.createdAt <= now);
+
+  let totalHours = 0;
+  tokenActivities.forEach((activity: any) => {
+    totalHours += activity.expires.getTime() - activity.createdAt.getTime();
+  });
+
+  return totalHours;
+});
 
 const About = model<IAbout>('About', aboutSchema);
 const Experience = model<IExperience>('Experience', experienceSchema);
