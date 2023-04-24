@@ -11,3 +11,7 @@
 2023-04-24 07:54:37 error: [DELETE] /profile/bio >> StatusCode:: 404, Message:: The requested path /profile/bio not found!
 2023-04-24 07:59:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-24 08:00:05 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 08:03:44 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 08:03:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 08:04:26 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 08:04:33 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: CERTIFICATION_NOT_FOUND

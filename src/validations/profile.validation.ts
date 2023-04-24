@@ -60,6 +60,7 @@ export const certificationSchema = Joi.object({
   name: Joi.string().optional(),
   organisation: Joi.string().optional(),
   certificate_url: Joi.string().optional(),
+  company_image_url: Joi.string().optional(),
   date_obtained: Joi.date().optional(),
 });
 
@@ -68,6 +69,7 @@ export const certificationUpdateSchema = Joi.object({
   name: Joi.string(),
   organisation: Joi.string(),
   certificate_url: Joi.string(),
+  company_image_url: Joi.string(),
   date_obtained: Joi.date(),
 }).min(1);
 

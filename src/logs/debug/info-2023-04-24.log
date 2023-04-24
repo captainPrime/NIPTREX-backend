@@ -91,3 +91,26 @@
 2023-04-24 08:00:05 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-24 08:00:05 info: [0mPOST /profile/about [32m200[0m 1265.621 ms - 128[0m
 2023-04-24 08:00:25 info: [0mPOST /profile/about [32m200[0m 1902.516 ms - 951[0m
+2023-04-24 08:02:54 info: =================================
+2023-04-24 08:02:54 info: ======= ENV: development =======
+2023-04-24 08:02:54 info: 🚀 App listening on the port 3000
+2023-04-24 08:02:54 info: =================================
+2023-04-24 08:02:57 info: Connected to email server
+2023-04-24 08:03:07 info: Connected to Database Successfully...
+2023-04-24 08:03:24 info: [0mGET /profile/certificate [32m200[0m 686.294 ms - 84[0m
+2023-04-24 08:03:29 info: [0mPOST /profile/certificate [32m200[0m 1228.501 ms - 345[0m
+2023-04-24 08:03:39 info: [0mGET /reload_db [32m200[0m 3257.416 ms - 74[0m
+2023-04-24 08:03:44 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 08:03:44 info: [0mPOST /auth/login [32m200[0m 643.857 ms - 587[0m
+2023-04-24 08:03:48 info: [0mPOST /profile/certificate [32m200[0m 946.804 ms - 345[0m
+2023-04-24 08:03:55 info: [0mGET /reload_db [32m200[0m 2697.943 ms - 74[0m
+2023-04-24 08:03:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 08:03:58 info: [0mPOST /auth/login [32m200[0m 524.596 ms - 587[0m
+2023-04-24 08:04:09 info: [0mPOST /profile/certificate [32m200[0m 1667.894 ms - 418[0m
+2023-04-24 08:04:15 info: [0mGET /profile/certificate [32m200[0m 696.893 ms - 420[0m
+2023-04-24 08:04:26 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 08:04:26 info: [0mPUT /profile/certificate/643dd44e637844e37640ea5e [32m200[0m 238.420 ms - 116[0m
+2023-04-24 08:04:33 error: [PUT] /profile/certificate/643dd44e637844e37640ea5e >> StatusCode:: 400, Message:: CERTIFICATION_NOT_FOUND
+2023-04-24 08:04:33 info: [0mPUT /profile/certificate/643dd44e637844e37640ea5e [32m200[0m 790.112 ms - 81[0m
+2023-04-24 08:04:41 info: [0mGET /profile/certificate [32m200[0m 841.841 ms - 420[0m
+2023-04-24 08:04:55 info: [0mPUT /profile/certificate/644629e825cddbc7acdd4c95 [32m200[0m 728.403 ms - 414[0m

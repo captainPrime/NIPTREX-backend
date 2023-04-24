@@ -104,6 +104,7 @@ export interface ICertification {
   name: string;
   organisation: string;
   certificate_url: string;
+  company_image_url: string;
   date_obtained: Date;
 }
 

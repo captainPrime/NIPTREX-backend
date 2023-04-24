@@ -56,6 +56,7 @@ const certificationSchema: Schema = new Schema({
   name: { type: String, trim: true },
   organisation: { type: String, trim: true },
   certificate_url: { type: String, trim: true },
+  company_image_url: { type: String, trim: true },
   date_obtained: {
     type: String,
     trim: true,
