@@ -50,6 +50,7 @@ class ProfileService {
     };
 
     const profile = {
+      user_id: userId,
       personal_details: about[0]?.personal_details,
       address: about[0]?.address,
       skills: about[0]?.skills,
