@@ -8,10 +8,12 @@ import IdentityController from '@/controllers/identity.controller';
 import EducationController from '@/controllers/education.controller';
 import PreferenceController from '@/controllers/preference.controller';
 import CertificationController from '@/controllers/certification.controller';
+import BioController from '@/controllers/bio.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
+  public bioController = new BioController();
   public aboutController = new AboutController();
   public billingController = new BillingController();
   public profileController = new ProfileController();
@@ -102,6 +104,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/about`, authMiddleware(['freelancer', 'client']), this.aboutController.updateAbout);
     this.router.delete(`${this.path}/about/:id`, authMiddleware(['freelancer', 'client']), this.aboutController.deleteAbout);
     this.router.get(`${this.path}/about/:id`, authMiddleware(['freelancer', 'client']), this.aboutController.getAboutById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Bio Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/bio`, authMiddleware(['freelancer', 'client']), this.bioController.createBio);
+    this.router.get(`${this.path}/bio`, authMiddleware(['freelancer', 'client']), this.bioController.getUserBio);
+    this.router.put(`${this.path}/bio`, authMiddleware(['freelancer', 'client']), this.bioController.updateBio);
+    this.router.delete(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.deleteBio);
+    this.router.get(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.getBioById);
   }
 }
 
