@@ -189,7 +189,7 @@ export interface IUpdateAbout {
 
 export interface IBio {
   title: string;
-  hourly_rate: string;
+  hourly_rate: number;
   description: string;
 }
 

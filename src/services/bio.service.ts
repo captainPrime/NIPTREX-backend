@@ -16,7 +16,7 @@ class BioService {
   |--------------------------------------------------------------------------
   */
   public async createBio(body: IBio): Promise<any> {
-    if (isEmpty(body)) throw new HttpException(400, 2005, "You're not userData");
+    if (isEmpty(body)) throw new HttpException(400, 2005, 'All required fields cannot be empty');
 
     const { error } = bioSchemaValidation.validate(body);
 

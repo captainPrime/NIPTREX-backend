@@ -115,14 +115,15 @@ export const identityUpdateSchema = Joi.object({
 |--------------------------------------------------------------------------
 */
 export const bioSchemaValidation = Joi.object({
+  user_id: Joi.string().required(),
   title: Joi.string().required(),
-  hourly_rate: Joi.string().required(),
+  hourly_rate: Joi.number().required(),
   description: Joi.string().required(),
 });
 
 export const bioSchemaUpdateValidation = Joi.object({
   title: Joi.string(),
-  hourly_rate: Joi.string(),
+  hourly_rate: Joi.number(),
   description: Joi.string(),
 }).min(1);
 

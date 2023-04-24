@@ -1,0 +1,11 @@
+2023-04-24 07:40:21 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_NOT_FOUND
+2023-04-24 07:40:44 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_NOT_FOUND
+2023-04-24 07:42:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 07:42:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 07:42:29 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_NOT_FOUND
+2023-04-24 07:45:59 error: [POST] /profile/bio >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 07:48:36 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_NOT_FOUND
+2023-04-24 07:49:33 error: [POST] /profile/bio >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 07:51:43 error: [POST] /profile/bio >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 07:53:15 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_ALREAD_ADDED
+2023-04-24 07:54:37 error: [DELETE] /profile/bio >> StatusCode:: 404, Message:: The requested path /profile/bio not found!

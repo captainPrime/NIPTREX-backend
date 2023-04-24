@@ -160,7 +160,7 @@ const bioSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     title: { type: String, required: true },
-    hourly_rate: { type: String, required: true },
+    hourly_rate: { type: Number, required: true },
     description: { type: String, required: true },
   },
   {

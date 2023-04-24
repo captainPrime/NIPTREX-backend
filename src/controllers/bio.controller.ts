@@ -22,7 +22,7 @@ class BioController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const bio = await this.bioService.getBioById(req.user.id);
+      const bio = await this.bioService.getUserBio(req.user.id);
       if (bio.length !== 0) throw new HttpException(400, 5002, 'BIO_ALREAD_ADDED');
 
       const data = await this.bioService.createBio({ ...userData, user_id: req.user.id });
