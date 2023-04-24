@@ -9,3 +9,5 @@
 2023-04-24 07:51:43 error: [POST] /profile/bio >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-24 07:53:15 error: [POST] /profile/bio >> StatusCode:: 400, Message:: BIO_ALREAD_ADDED
 2023-04-24 07:54:37 error: [DELETE] /profile/bio >> StatusCode:: 404, Message:: The requested path /profile/bio not found!
+2023-04-24 07:59:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 08:00:05 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR

@@ -137,7 +137,7 @@ export interface IPersonalDetails {
   role: string;
   seniority: string;
   gender: string;
-  resume?: string;
+  resume?: string[];
 }
 
 export interface IAddress {

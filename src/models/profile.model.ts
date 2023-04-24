@@ -130,7 +130,7 @@ const aboutSchema: Schema = new Schema(
       phone_number: { type: String, required: true },
       seniority: { type: String, required: true },
       gender: { type: String, required: true },
-      resume: { type: String },
+      resume: [{ type: String }],
     },
     address: {
       line1: { type: String, required: true },

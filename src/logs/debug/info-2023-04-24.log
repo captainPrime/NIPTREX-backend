@@ -79,3 +79,15 @@
 2023-04-24 07:55:44 info: Connected to Database Successfully...
 2023-04-24 07:55:46 info: [0mDELETE /profile/bio/6446275599f6698e1da5d870 [32m200[0m 4456.455 ms - 332[0m
 2023-04-24 07:55:53 info: [0mGET /profile/bio [32m200[0m 497.905 ms - 84[0m
+2023-04-24 07:59:16 info: =================================
+2023-04-24 07:59:16 info: ======= ENV: development =======
+2023-04-24 07:59:16 info: 🚀 App listening on the port 3000
+2023-04-24 07:59:16 info: =================================
+2023-04-24 07:59:18 info: Connected to email server
+2023-04-24 07:59:29 info: Connected to Database Successfully...
+2023-04-24 07:59:46 info: [0mGET /reload_db [32m200[0m 4049.752 ms - 74[0m
+2023-04-24 07:59:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-24 07:59:52 info: [0mPOST /auth/login [32m200[0m 659.819 ms - 587[0m
+2023-04-24 08:00:05 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-24 08:00:05 info: [0mPOST /profile/about [32m200[0m 1265.621 ms - 128[0m
+2023-04-24 08:00:25 info: [0mPOST /profile/about [32m200[0m 1902.516 ms - 951[0m

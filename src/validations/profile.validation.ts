@@ -166,7 +166,7 @@ export const aboutSchema = Joi.object({
     seniority: Joi.string().required(),
     phone_number: Joi.string().required(),
     gender: Joi.string().required(),
-    resume: Joi.string(),
+    resume: Joi.array().items(Joi.string()),
   })
     .unknown(true)
     .required(),
@@ -198,7 +198,7 @@ export const updateAboutSchema = Joi.object({
     seniority: Joi.string(),
     phone_number: Joi.string(),
     gender: Joi.string(),
-    resume: Joi.string(),
+    resume: Joi.array().items(Joi.string()),
   }).unknown(true),
   address: Joi.object({
     line1: Joi.string(),
