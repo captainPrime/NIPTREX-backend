@@ -199,3 +199,4 @@ export type IUpdateCertification = Partial<ICertification>;
 export type IUpdateBilling = Partial<IBilling>;
 export type IUpdateDocument = Partial<IDocument>;
 export type IUpdatePreference = Partial<IPreferences>;
+export type IUpdateBio = Partial<IBio>;
