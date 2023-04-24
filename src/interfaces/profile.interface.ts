@@ -187,6 +187,12 @@ export interface IUpdateAbout {
   available_to_work?: boolean;
 }
 
+export interface IBio {
+  title: string;
+  hourly_rate: string;
+  description: string;
+}
+
 export type IUpdateExperience = Partial<IExperience>;
 export type IUpdateEducationHistory = Partial<IEducationHistory>;
 export type IUpdateCertification = Partial<ICertification>;

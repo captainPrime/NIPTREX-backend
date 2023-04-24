@@ -2,6 +2,7 @@ import {
   EmploymentType,
   IAbout,
   IBilling,
+  IBio,
   ICertification,
   IDocument,
   IEducationHistory,
@@ -155,6 +156,18 @@ const aboutSchema: Schema = new Schema(
   },
 );
 
+const bioSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    title: { type: String, required: true },
+    hourly_rate: { type: String, required: true },
+    description: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
 aboutSchema.plugin(toJSON);
 experienceSchema.plugin(toJSON);
 educationHistorySchema.plugin(toJSON);
@@ -185,5 +198,6 @@ const Certification = model<ICertification>('Certification', certificationSchema
 const Billing = model<IBilling>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
+const Bio = model<IBio>('Bio', bioSchema);
 
-export { About, Experience, Education, Certification, Billing, Identity, Preference };
+export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio };
