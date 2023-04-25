@@ -21,6 +21,7 @@ const experienceSchema: Schema = new Schema(
     company: { type: String, requiredrequired: true },
     country: { type: String, required: true },
     role: { type: String, required: true },
+    company_image_url: { type: String, trim: true },
     employment_type: {
       type: String,
       enum: Object.values(EmploymentType),
@@ -55,6 +56,7 @@ const certificationSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   name: { type: String, trim: true },
   organisation: { type: String, trim: true },
+  description: { type: String, trim: true },
   certificate_url: { type: String, trim: true },
   company_image_url: { type: String, trim: true },
   date_obtained: {

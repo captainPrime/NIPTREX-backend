@@ -85,6 +85,7 @@ export interface IExperience {
   end_date: Date;
   company: string;
   country: string;
+  company_image_url: string;
   role: string;
   employment_type: EmploymentType;
   description?: string;
@@ -103,6 +104,7 @@ export interface ICertification {
   id: string;
   name: string;
   organisation: string;
+  description: string;
   certificate_url: string;
   company_image_url: string;
   date_obtained: Date;

@@ -20,6 +20,7 @@ export const experienceValidation = Joi.object({
   end_date: Joi.date().greater(Joi.ref('start_date')).required(),
   company: Joi.string().required(),
   country: Joi.string().required(),
+  company_image_url: Joi.string().optional(),
   role: Joi.string().required(),
   employment_type: Joi.string()
     .valid(...Object.values(EmploymentType))
@@ -59,6 +60,7 @@ export const certificationSchema = Joi.object({
   user_id: Joi.string().required(),
   name: Joi.string().optional(),
   organisation: Joi.string().optional(),
+  description: Joi.string().optional(),
   certificate_url: Joi.string().optional(),
   company_image_url: Joi.string().optional(),
   date_obtained: Joi.date().optional(),
