@@ -19,6 +19,8 @@ interface IBidding extends Document {
 }
 
 const BiddingSchema: Schema = new Schema({
+  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  job_id: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
   payment_type: {
     type: String,
     required: true,

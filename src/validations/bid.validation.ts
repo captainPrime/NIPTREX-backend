@@ -1,6 +1,8 @@
 import Joi from 'joi';
 
-export const biddingSchema = Joi.object({
+export const biddingSchemaValidation = Joi.object({
+  user_id: Joi.string().required(),
+  job_id: Joi.string().required(),
   paymentType: Joi.string().valid('milestone', 'outright').required(),
   milestoneStage: Joi.when('paymentType', {
     is: 'milestone',
