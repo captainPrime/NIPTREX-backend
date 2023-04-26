@@ -7,3 +7,6 @@
 2023-04-26 23:37:24 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_NOT_FOUND
 2023-04-26 23:38:07 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
 2023-04-26 23:40:40 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-04-26 23:48:49 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-26 23:48:52 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-26 23:49:49 error: [GET] /bid/getTopBidders >> StatusCode:: 400, Message:: id can not be empty

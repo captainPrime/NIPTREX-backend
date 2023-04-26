@@ -54,3 +54,36 @@
 2023-04-26 23:43:45 info: =================================
 2023-04-26 23:43:49 info: Connected to Database Successfully...
 2023-04-26 23:45:00 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-26 23:45:59 info: =================================
+2023-04-26 23:45:59 info: ======= ENV: development =======
+2023-04-26 23:45:59 info: 🚀 App listening on the port 3000
+2023-04-26 23:45:59 info: =================================
+2023-04-26 23:46:01 info: Connected to email server
+2023-04-26 23:46:02 info: Connected to Database Successfully...
+2023-04-26 23:46:44 info: =================================
+2023-04-26 23:46:44 info: ======= ENV: development =======
+2023-04-26 23:46:44 info: 🚀 App listening on the port 3000
+2023-04-26 23:46:44 info: =================================
+2023-04-26 23:46:46 info: Connected to Database Successfully...
+2023-04-26 23:46:46 info: Connected to email server
+2023-04-26 23:47:09 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 1623.885 ms - -[0m
+2023-04-26 23:47:41 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 1121.573 ms - -[0m
+2023-04-26 23:48:17 info: =================================
+2023-04-26 23:48:17 info: ======= ENV: development =======
+2023-04-26 23:48:17 info: 🚀 App listening on the port 3000
+2023-04-26 23:48:17 info: =================================
+2023-04-26 23:48:19 info: Connected to email server
+2023-04-26 23:48:20 info: Connected to Database Successfully...
+2023-04-26 23:48:49 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-26 23:48:49 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 814.867 ms - 75[0m
+2023-04-26 23:48:52 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-26 23:48:52 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 876.554 ms - 75[0m
+2023-04-26 23:49:49 error: [GET] /bid/getTopBidders >> StatusCode:: 400, Message:: id can not be empty
+2023-04-26 23:49:49 info: [0mGET /bid/getTopBidders [32m200[0m 1.689 ms - 77[0m
+2023-04-26 23:50:45 info: =================================
+2023-04-26 23:50:45 info: ======= ENV: development =======
+2023-04-26 23:50:45 info: 🚀 App listening on the port 3000
+2023-04-26 23:50:45 info: =================================
+2023-04-26 23:50:49 info: Connected to Database Successfully...
+2023-04-26 23:50:54 info: [0mGET /bid/getTopBidders/6446671bb75c302107beb742 [32m200[0m 502.878 ms - -[0m
+2023-04-26 23:52:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env

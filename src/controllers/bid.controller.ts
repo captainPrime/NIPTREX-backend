@@ -23,7 +23,8 @@ class BidController {
       }
 
       const bidJob = await this.bidService.getBidById(id);
-      if (bidJob.length !== 0 && bidJob.user_id === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
+      console.log('bid job user id', bidJob.user_id);
+      if (bidJob.length !== 0 && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
       const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
 
