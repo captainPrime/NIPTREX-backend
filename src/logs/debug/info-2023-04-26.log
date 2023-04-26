@@ -1,0 +1,56 @@
+2023-04-26 23:34:38 info: =================================
+2023-04-26 23:34:38 info: ======= ENV: development =======
+2023-04-26 23:34:38 info: 🚀 App listening on the port 3000
+2023-04-26 23:34:38 info: =================================
+2023-04-26 23:34:43 info: Connected to email server
+2023-04-26 23:34:47 info: Connected to Database Successfully...
+2023-04-26 23:34:55 error: [POST] /bid >> StatusCode:: 404, Message:: The requested path /bid not found!
+2023-04-26 23:34:55 info: [0mPOST /bid [32m200[0m 9.681 ms - 92[0m
+2023-04-26 23:35:03 error: [POST] /bid/123 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-04-26 23:35:03 info: [0mPOST /bid/123 [32m200[0m 3.557 ms - 86[0m
+2023-04-26 23:35:12 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-26 23:35:12 info: [0mPOST /auth/login [32m200[0m 1786.357 ms - 587[0m
+2023-04-26 23:35:16 error: [POST] /bid/123 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-26 23:35:16 info: [0mPOST /bid/123 [32m200[0m 229.487 ms - 75[0m
+2023-04-26 23:35:38 info: =================================
+2023-04-26 23:35:38 info: ======= ENV: development =======
+2023-04-26 23:35:38 info: 🚀 App listening on the port 3000
+2023-04-26 23:35:38 info: =================================
+2023-04-26 23:35:41 info: Connected to email server
+2023-04-26 23:35:42 info: Connected to Database Successfully...
+2023-04-26 23:35:47 error: [POST] /bid/123 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Bidding"
+2023-04-26 23:35:47 info: [0mPOST /bid/123 [32m200[0m 658.685 ms - 150[0m
+2023-04-26 23:36:08 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1520.560 ms - -[0m
+2023-04-26 23:36:27 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-26 23:36:27 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 2756.127 ms - 71[0m
+2023-04-26 23:37:14 info: =================================
+2023-04-26 23:37:14 info: ======= ENV: development =======
+2023-04-26 23:37:14 info: 🚀 App listening on the port 3000
+2023-04-26 23:37:14 info: =================================
+2023-04-26 23:37:17 info: Connected to email server
+2023-04-26 23:37:18 info: Connected to Database Successfully...
+2023-04-26 23:37:24 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-26 23:37:24 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 716.549 ms - 71[0m
+2023-04-26 23:37:55 info: =================================
+2023-04-26 23:37:55 info: ======= ENV: development =======
+2023-04-26 23:37:55 info: 🚀 App listening on the port 3000
+2023-04-26 23:37:55 info: =================================
+2023-04-26 23:37:59 info: Connected to email server
+2023-04-26 23:38:02 info: Connected to Database Successfully...
+2023-04-26 23:38:07 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-04-26 23:38:07 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 494.464 ms - 107[0m
+2023-04-26 23:39:24 info: =================================
+2023-04-26 23:39:24 info: ======= ENV: development =======
+2023-04-26 23:39:24 info: 🚀 App listening on the port 3000
+2023-04-26 23:39:24 info: =================================
+2023-04-26 23:39:27 info: Connected to email server
+2023-04-26 23:39:29 info: Connected to Database Successfully...
+2023-04-26 23:40:40 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-04-26 23:40:40 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 950.840 ms - 108[0m
+2023-04-26 23:42:04 info: [0mPOST /bid/6446671bb75c302107beb742 [32m200[0m 1360.391 ms - -[0m
+2023-04-26 23:43:45 info: =================================
+2023-04-26 23:43:45 info: ======= ENV: development =======
+2023-04-26 23:43:45 info: 🚀 App listening on the port 3000
+2023-04-26 23:43:45 info: =================================
+2023-04-26 23:43:49 info: Connected to Database Successfully...
+2023-04-26 23:45:00 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env

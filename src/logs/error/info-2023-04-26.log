@@ -1,0 +1,9 @@
+2023-04-26 23:34:55 error: [POST] /bid >> StatusCode:: 404, Message:: The requested path /bid not found!
+2023-04-26 23:35:03 error: [POST] /bid/123 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-04-26 23:35:12 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-26 23:35:16 error: [POST] /bid/123 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-26 23:35:47 error: [POST] /bid/123 >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Bidding"
+2023-04-26 23:36:27 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-26 23:37:24 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-26 23:38:07 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-04-26 23:40:40 error: [POST] /bid/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR

@@ -48,8 +48,8 @@ class BidService {
   public async getBidById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.bid.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+    const data = await this.bid.findOne({ job_id: id });
+    // if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     return data;
   }

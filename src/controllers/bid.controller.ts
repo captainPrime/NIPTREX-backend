@@ -3,16 +3,16 @@ import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import BidService from '@/services/bid.service';
 
-class BioController {
+class BidController {
   public userService = new UserService();
   public bidService = new BidService();
 
   /*
   |--------------------------------------------------------------------------
-  | Create Bio
+  | Bid Job
   |--------------------------------------------------------------------------
   */
-  public createBio = async (req: Request, res: Response, next: NextFunction) => {
+  public bidJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userData = req.body;
       const user: any = await this.userService.findUserById(req.user.id);
@@ -23,7 +23,7 @@ class BioController {
       }
 
       const bidJob = await this.bidService.getBidById(id);
-      if (bidJob.length !== 0) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
+      if (bidJob.length !== 0 && bidJob.user_id === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
       const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
 
@@ -50,4 +50,4 @@ class BioController {
   };
 }
 
-export default BioController;
+export default BidController;

@@ -3,8 +3,8 @@ import Joi from 'joi';
 export const biddingSchemaValidation = Joi.object({
   user_id: Joi.string().required(),
   job_id: Joi.string().required(),
-  paymentType: Joi.string().valid('milestone', 'outright').required(),
-  milestoneStage: Joi.when('paymentType', {
+  payment_type: Joi.string().valid('milestone', 'outright').required(),
+  milestone_stage: Joi.when('paymentType', {
     is: 'milestone',
     then: Joi.array()
       .items(
@@ -16,11 +16,11 @@ export const biddingSchemaValidation = Joi.object({
       )
       .required(),
   }),
-  coverLetter: Joi.string().required(),
+  cover_letter: Joi.string().required(),
   attachments: Joi.array().items(Joi.string()),
   links: Joi.array().items(Joi.string()),
-  totalPriceOfProject: Joi.number().required(),
-  serviceFee: Joi.number().required(),
-  amountToBeReceived: Joi.number().required(),
-  biddingAmount: Joi.number().required(),
+  total_price_of_project: Joi.number().required(),
+  service_fee: Joi.number().required(),
+  amount_to_be_received: Joi.number().required(),
+  bidding_amount: Joi.number().required(),
 });

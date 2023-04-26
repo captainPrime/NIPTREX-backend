@@ -6,10 +6,11 @@ import UsersRoute from '@routes/users.route';
 import validateEnv from '@utils/validateEnv';
 import ErrorMiddleware from '@middlewares/error.middleware';
 import ProfileRoute from './routes/profile.route';
+import BidRoute from './routes/bid.route';
 
 validateEnv();
 
-const app = new App([new IndexRoute(), new UsersRoute(), new AuthRoute(), new ProfileRoute(), new JobRoute()]);
+const app = new App([new IndexRoute(), new UsersRoute(), new AuthRoute(), new ProfileRoute(), new JobRoute(), new BidRoute()]);
 
 app.listen();
 
