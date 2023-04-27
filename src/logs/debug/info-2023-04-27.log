@@ -212,3 +212,13 @@
 2023-04-27 16:19:45 info: [0mGET /profile [32m200[0m 2132.746 ms - 1004[0m
 2023-04-27 16:19:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-27 16:19:53 info: [0mPOST /auth/login [32m200[0m 511.567 ms - 587[0m
+2023-04-27 16:20:05 info: Connected to email server
+2023-04-27 16:20:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:20:08 info: [0mPOST /auth/login [32m200[0m 531.187 ms - 587[0m
+2023-04-27 16:20:14 info: [0mPOST /job [32m200[0m 774.010 ms - 927[0m
+2023-04-27 16:20:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:20:24 info: [0mPOST /auth/login [32m200[0m 555.667 ms - 587[0m
+2023-04-27 16:20:34 error: [POST] /bid/644a92ae9a207e237fe8b6e8 >> StatusCode:: 400, Message:: INSUFFICIENT_NIPS_TO_BID
+2023-04-27 16:20:34 info: [0mPOST /bid/644a92ae9a207e237fe8b6e8 [32m200[0m 878.933 ms - 82[0m
+2023-04-27 16:20:46 info: [0mPOST /bid/644a92ae9a207e237fe8b6e8 [32m200[0m 1624.788 ms - -[0m
+2023-04-27 16:20:52 info: [0mGET /profile [32m200[0m 2014.107 ms - 1004[0m
