@@ -15,3 +15,4 @@
 2023-04-27 15:44:58 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
 2023-04-27 15:49:51 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-04-27 15:50:03 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-27 15:54:25 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty

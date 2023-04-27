@@ -111,3 +111,17 @@
 2023-04-27 15:50:03 info: =================================
 2023-04-27 15:50:03 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-04-27 15:50:03 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-27 15:53:33 info: =================================
+2023-04-27 15:53:33 info: ======= ENV: development =======
+2023-04-27 15:53:33 info: 🚀 App listening on the port 3000
+2023-04-27 15:53:33 info: =================================
+2023-04-27 15:53:38 info: Connected to email server
+2023-04-27 15:54:02 info: Connected to Database Successfully...
+2023-04-27 15:54:25 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
+2023-04-27 15:54:25 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1198.435 ms - 77[0m
+2023-04-27 15:55:07 info: =================================
+2023-04-27 15:55:07 info: ======= ENV: development =======
+2023-04-27 15:55:07 info: 🚀 App listening on the port 3000
+2023-04-27 15:55:07 info: =================================
+2023-04-27 15:55:09 info: Connected to email server
+2023-04-27 15:55:11 info: Connected to Database Successfully...

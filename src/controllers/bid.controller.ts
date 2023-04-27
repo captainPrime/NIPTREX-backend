@@ -31,8 +31,8 @@ class BidController {
 
       const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
 
-      const about = await this.aboutService.getUserAbout(data.user_id.toString());
-      await this.aboutService.updateAboutById(data.user_id, { nips: about.nips - userData.bidding_amount });
+      const about = await this.aboutService.getUserAbout(req.user.id);
+      await this.aboutService.updateAboutById(req.user.id, { nips: about.nips - userData.bidding_amount });
 
       res.status(200).json({ status: 200, response_code: 4000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {
