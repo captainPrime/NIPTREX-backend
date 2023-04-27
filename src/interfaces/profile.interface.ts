@@ -164,6 +164,7 @@ export interface IAbout extends Document {
   total_earnings: number;
   total_jobs: number;
   available: number;
+  nips: number;
   personal_details: IPersonalDetails;
   address: IAddress;
   social_details?: ISocialLink;
@@ -182,6 +183,10 @@ export enum EPaymentMethod {
   USD = 'USD',
 }
 export interface IUpdateAbout {
+  total_earnings?: number;
+  total_jobs?: number;
+  available?: number;
+  nips?: number;
   personal_details?: Partial<IPersonalDetails>;
   address?: Partial<IAddress>;
   social_details?: Partial<ISocialLink>;

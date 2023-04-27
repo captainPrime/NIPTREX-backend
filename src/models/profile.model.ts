@@ -122,6 +122,7 @@ const aboutSchema: Schema = new Schema(
     total_earnings: { type: Number, default: 0 },
     total_jobs: { type: Number, default: 0 },
     available: { type: Number, default: 0 },
+    nips: { type: Number, default: 80 },
     personal_details: {
       first_name: { type: String, required: true },
       last_name: { type: String, required: true },
