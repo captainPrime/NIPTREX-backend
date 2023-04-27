@@ -37,6 +37,7 @@ const JobSchema: Schema = new Schema(
     job_type: { type: String, enum: Object.values(WorkOption), required: true },
     team_size: { type: String, required: true },
     industry_type: { type: String, required: true },
+    nips: { type: Number, default: 5 },
     project_type: { type: String, required: true },
     soft_skills: [{ type: String }],
     languages: [{ type: String }],
