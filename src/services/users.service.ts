@@ -14,6 +14,11 @@ class UserService {
     return users;
   }
 
+  public async findAllFreelancer(): Promise<any[]> {
+    const users: any[] = await this.users.find({ user: 'freelancer' });
+    return users;
+  }
+
   public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUserModel> {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
 

@@ -16,6 +16,16 @@ class UsersController {
     }
   };
 
+  public findAllFreelancer = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const findAllUsersData: any[] = await this.userService.findAllFreelancer();
+
+      res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findAllUsersData });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   public getUserById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.params.id;
