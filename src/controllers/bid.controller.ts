@@ -1,11 +1,14 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import { HttpException } from '@/exceptions/HttpException';
+
 import BidService from '@/services/bid.service';
+import UserService from '@/services/users.service';
+import AboutService from '@/services/about.service';
+import { HttpException } from '@/exceptions/HttpException';
 
 class BidController {
-  public userService = new UserService();
   public bidService = new BidService();
+  public userService = new UserService();
+  public aboutService = new AboutService();
 
   /*
   |--------------------------------------------------------------------------
@@ -23,10 +26,13 @@ class BidController {
       }
 
       const bidJob = await this.bidService.getBidById(id);
-      console.log('bid job user id', bidJob.user_id);
-      if (bidJob.length !== 0 && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
+      console.log('bid job user id', bidJob);
+      if (bidJob?.length > 0 && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
       const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
+
+      const about = await this.aboutService.getUserAbout(data.user_id.toString());
+      await this.aboutService.updateAboutById(data.user_id, { nips: about.nips - userData.bidding_amount });
 
       res.status(200).json({ status: 200, response_code: 4000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {

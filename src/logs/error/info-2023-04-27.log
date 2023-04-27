@@ -1,0 +1,17 @@
+2023-04-27 15:32:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:32:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:33:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:33:20 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:35:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:35:57 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:36:47 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'length')
+2023-04-27 15:37:58 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-27 15:39:02 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:40:15 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:40:55 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:42:51 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:43:41 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:44:47 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
+2023-04-27 15:44:58 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
+2023-04-27 15:49:51 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-27 15:50:03 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net

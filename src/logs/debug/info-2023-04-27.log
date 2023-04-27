@@ -4,3 +4,110 @@
 2023-04-27 15:19:07 info: =================================
 2023-04-27 15:19:11 info: Connected to email server
 2023-04-27 15:19:13 info: Connected to Database Successfully...
+2023-04-27 15:30:07 info: =================================
+2023-04-27 15:30:07 info: ======= ENV: development =======
+2023-04-27 15:30:07 info: 🚀 App listening on the port 3000
+2023-04-27 15:30:07 info: =================================
+2023-04-27 15:30:10 info: Connected to email server
+2023-04-27 15:30:11 info: Connected to Database Successfully...
+2023-04-27 15:31:52 info: [0mGET /reload_db [32m200[0m 3569.894 ms - 74[0m
+2023-04-27 15:32:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:32:00 info: [0mPOST /auth/login [32m200[0m 591.031 ms - 587[0m
+2023-04-27 15:32:13 info: [0mGET /profile [32m200[0m 1818.991 ms - 216[0m
+2023-04-27 15:32:27 info: [0mPOST /profile/about [32m200[0m 1167.759 ms - 961[0m
+2023-04-27 15:32:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:32:36 info: [0mPOST /auth/login [32m200[0m 505.439 ms - 587[0m
+2023-04-27 15:32:45 info: [0mGET /job/getAllJobs [32m200[0m 236.516 ms - 171[0m
+2023-04-27 15:32:51 info: [0mPOST /job [32m200[0m 691.202 ms - 927[0m
+2023-04-27 15:33:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:33:10 info: [0mPOST /auth/login [32m200[0m 599.529 ms - 587[0m
+2023-04-27 15:33:20 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:33:20 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 632.411 ms - 107[0m
+2023-04-27 15:35:33 info: =================================
+2023-04-27 15:35:33 info: ======= ENV: development =======
+2023-04-27 15:35:33 info: 🚀 App listening on the port 3000
+2023-04-27 15:35:33 info: =================================
+2023-04-27 15:35:38 info: Connected to Database Successfully...
+2023-04-27 15:35:40 info: Connected to email server
+2023-04-27 15:35:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 15:35:45 info: [0mPOST /auth/login [32m200[0m 598.180 ms - 587[0m
+2023-04-27 15:35:57 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:35:57 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 701.449 ms - 107[0m
+2023-04-27 15:36:39 info: =================================
+2023-04-27 15:36:39 info: ======= ENV: development =======
+2023-04-27 15:36:39 info: 🚀 App listening on the port 3000
+2023-04-27 15:36:39 info: =================================
+2023-04-27 15:36:42 info: Connected to Database Successfully...
+2023-04-27 15:36:43 info: Connected to email server
+2023-04-27 15:36:47 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'length')
+2023-04-27 15:36:47 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1126.363 ms - 106[0m
+2023-04-27 15:37:45 info: =================================
+2023-04-27 15:37:45 info: ======= ENV: development =======
+2023-04-27 15:37:45 info: 🚀 App listening on the port 3000
+2023-04-27 15:37:45 info: =================================
+2023-04-27 15:37:47 info: Connected to email server
+2023-04-27 15:37:53 info: Connected to Database Successfully...
+2023-04-27 15:37:58 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-04-27 15:37:58 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 816.786 ms - 71[0m
+2023-04-27 15:38:22 info: =================================
+2023-04-27 15:38:22 info: ======= ENV: development =======
+2023-04-27 15:38:22 info: 🚀 App listening on the port 3000
+2023-04-27 15:38:22 info: =================================
+2023-04-27 15:38:24 info: Connected to Database Successfully...
+2023-04-27 15:38:24 info: Connected to email server
+2023-04-27 15:38:49 info: =================================
+2023-04-27 15:38:49 info: ======= ENV: development =======
+2023-04-27 15:38:49 info: 🚀 App listening on the port 3000
+2023-04-27 15:38:49 info: =================================
+2023-04-27 15:38:51 info: Connected to email server
+2023-04-27 15:38:51 info: Connected to Database Successfully...
+2023-04-27 15:39:02 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user_id')
+2023-04-27 15:39:02 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 848.198 ms - 107[0m
+2023-04-27 15:39:51 info: =================================
+2023-04-27 15:39:51 info: ======= ENV: development =======
+2023-04-27 15:39:51 info: 🚀 App listening on the port 3000
+2023-04-27 15:39:51 info: =================================
+2023-04-27 15:39:53 info: Connected to email server
+2023-04-27 15:40:10 info: Connected to Database Successfully...
+2023-04-27 15:40:15 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:40:15 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1032.441 ms - 82[0m
+2023-04-27 15:40:55 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:40:55 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 909.257 ms - 82[0m
+2023-04-27 15:42:21 info: =================================
+2023-04-27 15:42:21 info: ======= ENV: development =======
+2023-04-27 15:42:21 info: 🚀 App listening on the port 3000
+2023-04-27 15:42:21 info: =================================
+2023-04-27 15:42:24 info: Connected to email server
+2023-04-27 15:42:39 info: Connected to Database Successfully...
+2023-04-27 15:42:51 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:42:51 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1032.838 ms - 82[0m
+2023-04-27 15:43:26 info: =================================
+2023-04-27 15:43:26 info: ======= ENV: development =======
+2023-04-27 15:43:26 info: 🚀 App listening on the port 3000
+2023-04-27 15:43:26 info: =================================
+2023-04-27 15:43:28 info: Connected to Database Successfully...
+2023-04-27 15:43:37 info: Connected to email server
+2023-04-27 15:43:41 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: User id can not be empty
+2023-04-27 15:43:41 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1345.597 ms - 82[0m
+2023-04-27 15:44:27 info: =================================
+2023-04-27 15:44:27 info: ======= ENV: development =======
+2023-04-27 15:44:27 info: 🚀 App listening on the port 3000
+2023-04-27 15:44:27 info: =================================
+2023-04-27 15:44:29 info: Connected to email server
+2023-04-27 15:44:38 info: Connected to Database Successfully...
+2023-04-27 15:44:47 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
+2023-04-27 15:44:47 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1346.916 ms - 77[0m
+2023-04-27 15:44:58 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: id can not be empty
+2023-04-27 15:44:58 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1151.624 ms - 77[0m
+2023-04-27 15:49:51 info: =================================
+2023-04-27 15:49:51 info: ======= ENV: development =======
+2023-04-27 15:49:51 info: 🚀 App listening on the port 3000
+2023-04-27 15:49:51 info: =================================
+2023-04-27 15:49:51 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-27 15:49:51 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-04-27 15:50:03 info: =================================
+2023-04-27 15:50:03 info: ======= ENV: development =======
+2023-04-27 15:50:03 info: 🚀 App listening on the port 3000
+2023-04-27 15:50:03 info: =================================
+2023-04-27 15:50:03 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-04-27 15:50:03 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
