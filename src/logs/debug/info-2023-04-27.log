@@ -202,3 +202,13 @@
 2023-04-27 16:17:42 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 777.568 ms - 75[0m
 2023-04-27 16:17:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-27 16:17:53 info: [0mPOST /auth/login [32m200[0m 674.165 ms - 587[0m
+2023-04-27 16:19:20 info: =================================
+2023-04-27 16:19:20 info: ======= ENV: development =======
+2023-04-27 16:19:20 info: 🚀 App listening on the port 3000
+2023-04-27 16:19:20 info: =================================
+2023-04-27 16:19:26 info: Connected to Database Successfully...
+2023-04-27 16:19:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:19:35 info: [0mPOST /auth/login [32m200[0m 709.126 ms - 587[0m
+2023-04-27 16:19:45 info: [0mGET /profile [32m200[0m 2132.746 ms - 1004[0m
+2023-04-27 16:19:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:19:53 info: [0mPOST /auth/login [32m200[0m 511.567 ms - 587[0m
