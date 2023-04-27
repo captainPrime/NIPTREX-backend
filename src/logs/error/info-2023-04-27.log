@@ -22,3 +22,5 @@
 2023-04-27 16:05:49 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-27 16:06:20 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
 2023-04-27 16:07:26 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:17:42 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-27 16:17:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

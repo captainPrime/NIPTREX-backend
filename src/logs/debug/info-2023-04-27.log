@@ -191,3 +191,14 @@
 2023-04-27 16:15:50 info: [0mGET /profile/about [32m200[0m 709.679 ms - 963[0m
 2023-04-27 16:15:57 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1975.115 ms - -[0m
 2023-04-27 16:16:06 info: [0mGET /profile/about [32m200[0m 764.226 ms - 963[0m
+2023-04-27 16:17:15 info: =================================
+2023-04-27 16:17:15 info: ======= ENV: development =======
+2023-04-27 16:17:15 info: 🚀 App listening on the port 3000
+2023-04-27 16:17:15 info: =================================
+2023-04-27 16:17:20 info: Connected to email server
+2023-04-27 16:17:28 info: Connected to Database Successfully...
+2023-04-27 16:17:34 info: [0mGET /profile/about [32m200[0m 972.879 ms - 963[0m
+2023-04-27 16:17:42 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-27 16:17:42 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 777.568 ms - 75[0m
+2023-04-27 16:17:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:17:53 info: [0mPOST /auth/login [32m200[0m 674.165 ms - 587[0m
