@@ -5,9 +5,11 @@ import { IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interfac
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
+import { About } from '@/models/profile.model';
 
 class UserService {
   public users = User;
+  public about: any = About;
 
   public async findAllUser(): Promise<IUserModel[]> {
     const users: IUserModel[] = await this.users.find();
@@ -15,7 +17,7 @@ class UserService {
   }
 
   public async findAllFreelancer(): Promise<any[]> {
-    const users: any[] = await this.users.find({ user: 'freelancer' });
+    const users: any[] = await this.about.find({ user: 'freelancer' });
     return users;
   }
 

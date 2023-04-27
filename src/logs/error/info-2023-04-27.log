@@ -29,3 +29,7 @@
 2023-04-27 16:20:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-27 16:20:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-27 16:20:34 error: [POST] /bid/644a92ae9a207e237fe8b6e8 >> StatusCode:: 400, Message:: INSUFFICIENT_NIPS_TO_BID
+2023-04-27 16:28:10 error: [GET] /users/getAllFreelancer >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-27 16:28:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:41:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:41:10 error: [GET] /users/getAllFreelancer >> StatusCode:: 401, Message:: UNAUTHORIZED_USER

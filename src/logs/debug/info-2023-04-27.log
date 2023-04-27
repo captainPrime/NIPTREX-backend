@@ -222,3 +222,32 @@
 2023-04-27 16:20:34 info: [0mPOST /bid/644a92ae9a207e237fe8b6e8 [32m200[0m 878.933 ms - 82[0m
 2023-04-27 16:20:46 info: [0mPOST /bid/644a92ae9a207e237fe8b6e8 [32m200[0m 1624.788 ms - -[0m
 2023-04-27 16:20:52 info: [0mGET /profile [32m200[0m 2014.107 ms - 1004[0m
+2023-04-27 16:27:28 info: =================================
+2023-04-27 16:27:28 info: ======= ENV: development =======
+2023-04-27 16:27:28 info: 🚀 App listening on the port 3000
+2023-04-27 16:27:28 info: =================================
+2023-04-27 16:27:31 info: Connected to email server
+2023-04-27 16:27:38 info: Connected to Database Successfully...
+2023-04-27 16:28:10 error: [GET] /users/getAllFreelancer >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-27 16:28:10 info: [0mGET /users/getAllFreelancer [32m200[0m 324.049 ms - 75[0m
+2023-04-27 16:28:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:28:17 info: [0mPOST /auth/login [32m200[0m 711.015 ms - 587[0m
+2023-04-27 16:28:21 info: [0mGET /users/getAllFreelancer [32m200[0m 992.692 ms - 518[0m
+2023-04-27 16:40:46 info: =================================
+2023-04-27 16:40:46 info: ======= ENV: development =======
+2023-04-27 16:40:46 info: 🚀 App listening on the port 3000
+2023-04-27 16:40:46 info: =================================
+2023-04-27 16:40:49 info: Connected to email server
+2023-04-27 16:40:52 info: Connected to Database Successfully...
+2023-04-27 16:41:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-27 16:41:02 info: [0mPOST /auth/login [32m200[0m 643.482 ms - 587[0m
+2023-04-27 16:41:10 error: [GET] /users/getAllFreelancer >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-04-27 16:41:10 info: [0mGET /users/getAllFreelancer [32m200[0m 241.811 ms - 75[0m
+2023-04-27 16:41:17 info: [0mGET /profile/about [32m200[0m 694.153 ms - 963[0m
+2023-04-27 16:41:52 info: =================================
+2023-04-27 16:41:52 info: ======= ENV: development =======
+2023-04-27 16:41:52 info: 🚀 App listening on the port 3000
+2023-04-27 16:41:52 info: =================================
+2023-04-27 16:41:54 info: Connected to email server
+2023-04-27 16:41:54 info: Connected to Database Successfully...
+2023-04-27 16:42:00 info: [0mGET /profile/about [32m200[0m 828.512 ms - 961[0m

@@ -137,7 +137,7 @@ class JobController {
         projectBy: req.query.projectBy || 'name:hide, role:hide',
       };
 
-      about[0].skills.forEach((skill: string) => jobQueries.push(skill));
+      about.skills.forEach((skill: string) => jobQueries.push(skill));
 
       const data = await this.jobService.getUserJobBestMatches(jobQueries, req.user.id, req.query, options);
 
@@ -158,7 +158,7 @@ class JobController {
       const about = await this.aboutService.getUserAbout(req.user.id);
       if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
 
-      about[0].skills.forEach((skill: string) => jobQueries.push(skill));
+      about.skills.forEach((skill: string) => jobQueries.push(skill));
 
       const options: PaginationOptions = {
         sortBy: req.query.sortBy || 'createdAt:desc',
