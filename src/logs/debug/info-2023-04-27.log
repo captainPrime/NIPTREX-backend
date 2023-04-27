@@ -125,3 +125,69 @@
 2023-04-27 15:55:07 info: =================================
 2023-04-27 15:55:09 info: Connected to email server
 2023-04-27 15:55:11 info: Connected to Database Successfully...
+2023-04-27 15:55:35 info: =================================
+2023-04-27 15:55:35 info: ======= ENV: development =======
+2023-04-27 15:55:35 info: 🚀 App listening on the port 3000
+2023-04-27 15:55:35 info: =================================
+2023-04-27 15:55:37 info: Connected to email server
+2023-04-27 15:55:37 info: Connected to Database Successfully...
+2023-04-27 15:55:43 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 15:55:43 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1680.511 ms - 107[0m
+2023-04-27 16:03:23 info: =================================
+2023-04-27 16:03:23 info: ======= ENV: development =======
+2023-04-27 16:03:23 info: 🚀 App listening on the port 3000
+2023-04-27 16:03:23 info: =================================
+2023-04-27 16:03:26 info: Connected to email server
+2023-04-27 16:03:33 info: Connected to Database Successfully...
+2023-04-27 16:04:03 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:04:03 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1378.606 ms - 109[0m
+2023-04-27 16:04:53 info: =================================
+2023-04-27 16:04:53 info: ======= ENV: development =======
+2023-04-27 16:04:53 info: 🚀 App listening on the port 3000
+2023-04-27 16:04:53 info: =================================
+2023-04-27 16:04:55 info: Connected to email server
+2023-04-27 16:04:59 info: Connected to Database Successfully...
+2023-04-27 16:05:15 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:05:15 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1648.760 ms - 109[0m
+2023-04-27 16:05:39 info: =================================
+2023-04-27 16:05:39 info: ======= ENV: development =======
+2023-04-27 16:05:39 info: 🚀 App listening on the port 3000
+2023-04-27 16:05:39 info: =================================
+2023-04-27 16:05:41 info: Connected to email server
+2023-04-27 16:05:42 info: Connected to Database Successfully...
+2023-04-27 16:05:49 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:05:49 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1928.605 ms - 109[0m
+2023-04-27 16:06:08 info: =================================
+2023-04-27 16:06:08 info: ======= ENV: development =======
+2023-04-27 16:06:08 info: 🚀 App listening on the port 3000
+2023-04-27 16:06:08 info: =================================
+2023-04-27 16:06:10 info: Connected to Database Successfully...
+2023-04-27 16:06:11 info: Connected to email server
+2023-04-27 16:06:20 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:06:20 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1391.260 ms - 109[0m
+2023-04-27 16:07:03 info: =================================
+2023-04-27 16:07:03 info: ======= ENV: development =======
+2023-04-27 16:07:03 info: 🚀 App listening on the port 3000
+2023-04-27 16:07:03 info: =================================
+2023-04-27 16:07:06 info: Connected to email server
+2023-04-27 16:07:12 info: Connected to Database Successfully...
+2023-04-27 16:07:26 error: [POST] /bid/644a87930b26b7a064f3ea8a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-27 16:07:26 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1403.988 ms - 109[0m
+2023-04-27 16:10:38 info: =================================
+2023-04-27 16:10:38 info: ======= ENV: development =======
+2023-04-27 16:10:38 info: 🚀 App listening on the port 3000
+2023-04-27 16:10:38 info: =================================
+2023-04-27 16:10:41 info: Connected to email server
+2023-04-27 16:10:42 info: Connected to Database Successfully...
+2023-04-27 16:10:48 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1903.052 ms - -[0m
+2023-04-27 16:11:02 info: [0mGET /profile [32m200[0m 1862.386 ms - 946[0m
+2023-04-27 16:11:13 info: [0mGET /profile/about [32m200[0m 734.595 ms - 963[0m
+2023-04-27 16:15:36 info: =================================
+2023-04-27 16:15:36 info: ======= ENV: development =======
+2023-04-27 16:15:36 info: 🚀 App listening on the port 3000
+2023-04-27 16:15:36 info: =================================
+2023-04-27 16:15:38 info: Connected to email server
+2023-04-27 16:15:46 info: Connected to Database Successfully...
+2023-04-27 16:15:50 info: [0mGET /profile/about [32m200[0m 709.679 ms - 963[0m
+2023-04-27 16:15:57 info: [0mPOST /bid/644a87930b26b7a064f3ea8a [32m200[0m 1975.115 ms - -[0m
+2023-04-27 16:16:06 info: [0mGET /profile/about [32m200[0m 764.226 ms - 963[0m

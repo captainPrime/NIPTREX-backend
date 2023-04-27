@@ -29,10 +29,11 @@ class BidController {
       console.log('bid job user id', bidJob);
       if (bidJob?.length > 0 && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
-      const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
-
       const about = await this.aboutService.getUserAbout(req.user.id);
-      await this.aboutService.updateAboutById(req.user.id, { nips: about.nips - userData.bidding_amount });
+      if (about[0].nips < userData.bidding_amount) throw new HttpException(400, 4002, 'INSUFFICIENT_NIPS_TO_BID');
+
+      const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
+      await this.aboutService.updateAboutById(req.user.id, { nips: about[0].nips - userData.bidding_amount });
 
       res.status(200).json({ status: 200, response_code: 4000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {

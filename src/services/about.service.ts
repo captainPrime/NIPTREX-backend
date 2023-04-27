@@ -80,6 +80,10 @@ class AboutService {
         ...body.personal_details, // Update the fields specified in the request body
       },
       address: { ...data.address.toObject(), ...body.address }, // Update the fields specified in the request body
+      total_earnings: body.total_earnings || data.total_earnings,
+      total_jobs: body.total_jobs || data.total_jobs,
+      available: body.available || data.available,
+      nips: body.nips || data.nips,
       social_links: { ...data.social_links.toObject(), ...body.social_details }, // Update the fields specified in the request body
       languages: body.languages || data.languages, // Update the fields specified in the request body or use the existing value
       skills: body.skills || data.skills, // Update the fields specified in the request body or use the existing value
