@@ -70,6 +70,7 @@ export const certificationUpdateSchema = Joi.object({
   user_id: Joi.string(),
   name: Joi.string(),
   organisation: Joi.string(),
+  description: Joi.string(),
   certificate_url: Joi.string(),
   company_image_url: Joi.string(),
   date_obtained: Joi.date(),

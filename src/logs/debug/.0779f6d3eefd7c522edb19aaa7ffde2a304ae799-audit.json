@@ -6,11 +6,6 @@
     "auditLog": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/.0779f6d3eefd7c522edb19aaa7ffde2a304ae799-audit.json",
     "files": [
         {
-            "date": 1679055075758,
-            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-17.log",
-            "hash": "c7f07657a938994a06a2077fcf73657ae31cf6e8ba9f16888b3bcf10d09eb2ed"
-        },
-        {
             "date": 1679323759893,
             "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-03-20.log",
             "hash": "827818eb71a509d3d65672433cfbb80b25fed975940134a4a94d779cc6c3d355"
@@ -154,6 +149,11 @@
             "date": 1682605143009,
             "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-04-27.log",
             "hash": "0f8ac5ead7767bb678ef0ce435d6f5bcb95e5c78a613e733328a383c4bc4b4de"
+        },
+        {
+            "date": 1682714562218,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/debug/info-2023-04-28.log",
+            "hash": "e34b76a85ac5f56b3d6c49dc536a4785b0f7ea7de8e0a97267aff43cbcb9f540"
         }
     ],
     "hashType": "sha256"
