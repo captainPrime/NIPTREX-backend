@@ -40,3 +40,5 @@ Error: Channel closed
 2023-04-28 22:06:12 error: [POST] /bid/644c351c227483936ddf3efc >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
 2023-04-28 22:08:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-28 22:08:08 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-04-28 22:14:53 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:15:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

@@ -121,3 +121,15 @@
 2023-04-28 22:09:48 info: Connected to email server
 2023-04-28 22:09:49 info: Connected to Database Successfully...
 2023-04-28 22:10:02 info: [0mGET /profile [32m200[0m 1753.734 ms - 1010[0m
+2023-04-28 22:14:25 info: =================================
+2023-04-28 22:14:25 info: ======= ENV: development =======
+2023-04-28 22:14:25 info: 🚀 App listening on the port 3000
+2023-04-28 22:14:25 info: =================================
+2023-04-28 22:14:27 info: Connected to email server
+2023-04-28 22:14:32 info: Connected to Database Successfully...
+2023-04-28 22:14:42 info: [0mGET /reload_db [32m200[0m 3255.510 ms - 74[0m
+2023-04-28 22:14:53 error: [POST] /auth/register >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:14:53 info: [0mPOST /auth/register [32m200[0m 4219.337 ms - 439[0m
+2023-04-28 22:15:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:15:05 info: [0mPOST /auth/login [32m200[0m 495.985 ms - 587[0m
+2023-04-28 22:15:11 info: [0mPOST /profile/about [32m200[0m 1435.118 ms - 967[0m

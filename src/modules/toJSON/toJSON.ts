@@ -32,16 +32,12 @@ const toJSON = (schema: any) => {
         }
       });
 
-      // eslint-disable-next-line no-param-reassign
       ret.id = ret._id.toString();
-      // eslint-disable-next-line no-param-reassign
       delete ret._id;
-      // eslint-disable-next-line no-param-reassign
       delete ret.__v;
-      // eslint-disable-next-line no-param-reassign
       delete ret.createdAt;
-      // eslint-disable-next-line no-param-reassign
       delete ret.updatedAt;
+      delete ret?.password;
       if (transform) {
         return transform(doc, ret, options);
       }
