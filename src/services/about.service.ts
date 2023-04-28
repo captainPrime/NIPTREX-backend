@@ -40,7 +40,6 @@ class AboutService {
     const data = await this.about.findOne({ user_id: userId });
     if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
 
-    console.log(data.total_hours);
     return data;
   }
 

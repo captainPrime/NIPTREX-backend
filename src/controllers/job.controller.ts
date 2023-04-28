@@ -125,10 +125,7 @@ class JobController {
       const jobQueries: any = [];
 
       const about = await this.aboutService.getUserAbout(req.user.id);
-      if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
-
-      // const preference = await this.preferenceService.getUserPreference(req.user.id);
-      // if (!preference) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+      if (about) about?.skills.forEach((skill: string) => jobQueries.push(skill));
 
       const options: PaginationOptions = {
         sortBy: req.query.sortBy || 'name:desc',
@@ -136,8 +133,6 @@ class JobController {
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
       };
-
-      about.skills.forEach((skill: string) => jobQueries.push(skill));
 
       const data = await this.jobService.getUserJobBestMatches(jobQueries, req.user.id, req.query, options);
 

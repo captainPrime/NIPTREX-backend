@@ -10,3 +10,24 @@
 2023-04-28 21:46:34 info: =================================
 2023-04-28 21:46:37 info: Connected to email server
 2023-04-28 21:46:41 info: Connected to Database Successfully...
+2023-04-28 21:51:10 info: =================================
+2023-04-28 21:51:10 info: ======= ENV: development =======
+2023-04-28 21:51:10 info: 🚀 App listening on the port 3000
+2023-04-28 21:51:10 info: =================================
+2023-04-28 21:51:13 info: Connected to email server
+2023-04-28 21:51:18 info: Connected to Database Successfully...
+2023-04-28 21:51:40 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-28 21:51:40 info: [0mGET /job/getUserJobBestMatches [32m200[0m 442.041 ms - 79[0m
+2023-04-28 21:51:47 error: [Error] >> Channel closed
+2023-04-28 21:51:50 info: =================================
+2023-04-28 21:51:50 info: ======= ENV: development =======
+2023-04-28 21:51:50 info: 🚀 App listening on the port 3000
+2023-04-28 21:51:50 info: =================================
+2023-04-28 21:51:52 info: Connected to email server
+2023-04-28 21:51:52 info: Connected to Database Successfully...
+2023-04-28 21:51:56 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 21:51:56 info: [0mPOST /auth/login [32m200[0m 615.566 ms - 587[0m
+2023-04-28 21:52:01 info: [0mGET /job/getUserJobBestMatches [32m200[0m 954.662 ms - 80[0m
+2023-04-28 21:52:13 info: [0mGET /profile [32m200[0m 2150.515 ms - 826[0m
+2023-04-28 21:52:30 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-28 21:52:30 info: [0mPOST /profile/about [32m200[0m 647.541 ms - 76[0m
