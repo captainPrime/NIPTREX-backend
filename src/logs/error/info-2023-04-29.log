@@ -1,0 +1,5 @@
+2023-04-29 00:54:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 00:54:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 00:54:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 00:55:00 error: [POST] /bid/644c5cb559f937da2f783b2f >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-04-29 00:55:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

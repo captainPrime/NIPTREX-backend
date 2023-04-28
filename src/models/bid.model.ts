@@ -73,6 +73,10 @@ const BiddingSchema: Schema = new Schema({
     type: Number,
     required: true,
   },
+  date_applied: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const BiddingModel: Model<IBidding> = model<IBidding>('Bidding', BiddingSchema);

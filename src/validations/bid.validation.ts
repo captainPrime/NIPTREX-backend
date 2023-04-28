@@ -23,4 +23,5 @@ export const biddingSchemaValidation = Joi.object({
   service_fee: Joi.number().required(),
   amount_to_be_received: Joi.number().required(),
   bidding_amount: Joi.number().required(),
+  date_applied: Joi.date().default(Date.now),
 });
