@@ -23,7 +23,8 @@ class AboutController {
       }
 
       const about = await this.aboutService.getUserAbout(req.user.id);
-      if (about.length !== 0) throw new HttpException(400, 5002, 'ABOUT_ALREAD_ADDED');
+      console.log('ABOUT', about);
+      if (about) throw new HttpException(400, 5002, 'ABOUT_ALREADY_ADDED');
 
       const { first_name, last_name, email, country, id } = req.user;
 
@@ -60,6 +61,7 @@ class AboutController {
       }
 
       const data = await this.aboutService.getUserAbout(req.user.id);
+      if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

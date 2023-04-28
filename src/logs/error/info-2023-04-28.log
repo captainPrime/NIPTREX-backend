@@ -25,3 +25,18 @@ Error: Channel closed
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
 2023-04-28 21:51:56 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-04-28 21:52:30 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREAD_ADDED
+2023-04-28 21:53:56 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-04-28 21:59:45 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-04-28 22:00:46 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-04-28 22:01:32 error: [GET] /profile/about >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-04-28 22:01:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:02:24 error: [GET] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-28 22:02:46 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-28 22:03:01 error: [GET] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-28 22:05:00 error: [GET] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-04-28 22:05:11 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-04-28 22:05:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:05:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:06:12 error: [POST] /bid/644c351c227483936ddf3efc >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-04-28 22:08:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-28 22:08:08 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED

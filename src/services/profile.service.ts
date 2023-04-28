@@ -25,7 +25,7 @@ class ProfileService {
   public async getProfile(userId: string): Promise<any> {
     if (isEmpty(userId)) throw new HttpException(400, 2005, "You're not userData");
 
-    const about = await this.about.find({ user_id: userId });
+    const about = await this.about.findOne({ user_id: userId });
     const billing = await this.billing.find({ user_id: userId });
     const identity = await this.identity.find({ user_id: userId });
     const education = await this.education.find({ user_id: userId });
@@ -69,6 +69,7 @@ class ProfileService {
       billing: billing[0],
     };
 
+    console.log(about);
     const profile_percentage = calculateProfileCompletion(profile);
 
     return { profile_percentage, profile };
