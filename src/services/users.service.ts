@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-non-literal-regexp */
 import { hash } from 'bcryptjs';
 import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
@@ -16,9 +17,24 @@ class UserService {
     return users;
   }
 
-  public async findAllFreelancer(): Promise<any[]> {
-    const users: any[] = await this.about.find({ user: 'freelancer' });
-    return users;
+  public async findAllFreelancer(query: any): Promise<any[]> {
+    const users: any[] = await this.users.find({ user: 'freelancer' });
+    const abouts: any[] = [];
+
+    for (const user of users) {
+      const about = await this.about.findOne({ user_id: user._id, skills: { $in: new RegExp(query.skills, 'i') } });
+      if (about) {
+        const payload = {
+          personal_details: about.personal_details,
+          address: about.address,
+          social_links: about.social_links,
+          languages: about.languages,
+          skills: about.skills,
+        };
+        abouts.push(payload);
+      }
+    }
+    return abouts;
   }
 
   public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUserModel> {

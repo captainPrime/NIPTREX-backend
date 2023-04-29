@@ -18,7 +18,7 @@ class UsersController {
 
   public findAllFreelancer = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const findAllUsersData: any[] = await this.userService.findAllFreelancer();
+      const findAllUsersData: any[] = await this.userService.findAllFreelancer(req.query);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findAllUsersData });
     } catch (error) {
