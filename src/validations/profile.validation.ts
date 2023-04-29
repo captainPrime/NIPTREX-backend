@@ -16,6 +16,7 @@ export const experienceValidation = Joi.object({
       return value;
     }, 'MongoDB ObjectId')
     .required(),
+  id: Joi.string(),
   start_date: Joi.date().required(),
   end_date: Joi.date().greater(Joi.ref('start_date')).required(),
   company: Joi.string().required(),
@@ -44,6 +45,7 @@ export const educationHistorySchema = Joi.object({
 
 export const educationHistoryUpdateSchema = Joi.object({
   user_id: Joi.string(),
+  id: Joi.string(),
   institution: Joi.string(),
   field_of_study: Joi.string(),
   degree_level: Joi.string(),
@@ -69,6 +71,7 @@ export const certificationSchema = Joi.object({
 export const certificationUpdateSchema = Joi.object({
   user_id: Joi.string(),
   name: Joi.string(),
+  id: Joi.string(),
   organisation: Joi.string(),
   description: Joi.string(),
   certificate_url: Joi.string(),

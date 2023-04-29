@@ -101,3 +101,35 @@
 2023-04-29 01:33:01 info: [0mGET /users/getAllFreelancer [32m200[0m 911.801 ms - 792[0m
 2023-04-29 01:33:05 info: [0mGET /users/getAllFreelancer?skills=gra [32m200[0m 1012.532 ms - 81[0m
 2023-04-29 01:33:11 info: [0mGET /users/getAllFreelancer?skills=nod [32m200[0m 665.078 ms - 792[0m
+2023-04-29 13:24:49 info: =================================
+2023-04-29 13:24:49 info: ======= ENV: development =======
+2023-04-29 13:24:49 info: 🚀 App listening on the port 3000
+2023-04-29 13:24:49 info: =================================
+2023-04-29 13:24:51 info: Connected to email server
+2023-04-29 13:24:52 info: Connected to Database Successfully...
+2023-04-29 13:25:22 info: [0mGET /reload_db [32m200[0m 3005.283 ms - 74[0m
+2023-04-29 13:25:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 13:25:27 info: [0mPOST /auth/login [32m200[0m 751.429 ms - 587[0m
+2023-04-29 13:25:46 info: [0mPOST /profile/experience [32m200[0m 993.173 ms - 446[0m
+2023-04-29 13:26:20 info: [0mPUT /profile/experience/644d0cca36d18e546cb3b388 [32m200[0m 724.159 ms - 432[0m
+2023-04-29 13:26:38 info: [0mPOST /profile/certificate [32m200[0m 885.011 ms - 452[0m
+2023-04-29 13:26:49 error: [PUT] /profile/certificate/644ae4e30f6892eb1b1a35d8 >> StatusCode:: 400, Message:: CERTIFICATION_NOT_FOUND
+2023-04-29 13:26:49 info: [0mPUT /profile/certificate/644ae4e30f6892eb1b1a35d8 [32m200[0m 570.464 ms - 81[0m
+2023-04-29 13:26:58 info: [0mPUT /profile/certificate/644d0cfe36d18e546cb3b390 [32m200[0m 1058.683 ms - 435[0m
+2023-04-29 13:37:56 info: [0mPOST /profile/education [32m200[0m 891.217 ms - 321[0m
+2023-04-29 13:38:09 info: [0mPUT /profile/education/644d0fa436d18e546cb3b39a [32m200[0m 1047.924 ms - 317[0m
+2023-04-29 13:40:39 info: =================================
+2023-04-29 13:40:39 info: ======= ENV: development =======
+2023-04-29 13:40:39 info: 🚀 App listening on the port 3000
+2023-04-29 13:40:39 info: =================================
+2023-04-29 13:40:43 info: Connected to email server
+2023-04-29 13:40:43 info: Connected to Database Successfully...
+2023-04-29 13:40:57 error: [PUT] /profile/education/644d0fa436d18e546cb3b39a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-29 13:40:57 info: [0mPUT /profile/education/644d0fa436d18e546cb3b39a [32m200[0m 316.538 ms - 105[0m
+2023-04-29 13:41:35 info: =================================
+2023-04-29 13:41:35 info: ======= ENV: development =======
+2023-04-29 13:41:35 info: 🚀 App listening on the port 3000
+2023-04-29 13:41:35 info: =================================
+2023-04-29 13:41:37 info: Connected to email server
+2023-04-29 13:41:38 info: Connected to Database Successfully...
+2023-04-29 13:41:55 info: [0mPUT /profile/education/644d0fa436d18e546cb3b39a [32m200[0m 1029.644 ms - 317[0m

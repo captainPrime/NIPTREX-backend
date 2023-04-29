@@ -8,3 +8,6 @@
 2023-04-29 01:23:31 error: [GET] /users/getAllFreelancer >> StatusCode:: 400, Message:: query.map is not a function
 2023-04-29 01:31:33 error: [GET] /users/getAllFreelancer >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'personal_details')
 2023-04-29 01:32:17 error: [GET] /users/getAllFreelancer >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'personal_details')
+2023-04-29 13:25:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 13:26:49 error: [PUT] /profile/certificate/644ae4e30f6892eb1b1a35d8 >> StatusCode:: 400, Message:: CERTIFICATION_NOT_FOUND
+2023-04-29 13:40:57 error: [PUT] /profile/education/644d0fa436d18e546cb3b39a >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
