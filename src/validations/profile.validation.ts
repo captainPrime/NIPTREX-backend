@@ -183,7 +183,6 @@ export const aboutSchema = Joi.object({
     phone_number: Joi.string().required(),
     seniority: Joi.string().required(),
     gender: Joi.string().required(),
-    resume: Joi.array().items(Joi.string()),
   }).required(),
   address: Joi.object({
     line1: Joi.string().required(),
@@ -191,6 +190,12 @@ export const aboutSchema = Joi.object({
     city: Joi.string().required(),
     state: Joi.string().required(),
   }).required(),
+  resume: Joi.array().items(
+    Joi.object({
+      name: Joi.string(),
+      url: Joi.string(),
+    }),
+  ),
   social_links: Joi.object({
     personal_website: Joi.string(),
     linkedin: Joi.string(),
@@ -222,7 +227,6 @@ export const updateAboutSchema = Joi.object({
     phone_number: Joi.string(),
     seniority: Joi.string(),
     gender: Joi.string(),
-    resume: Joi.array().items(Joi.string()),
   }),
   address: Joi.object({
     line1: Joi.string(),
@@ -230,6 +234,12 @@ export const updateAboutSchema = Joi.object({
     city: Joi.string(),
     state: Joi.string(),
   }),
+  resume: Joi.array().items(
+    Joi.object({
+      name: Joi.string(),
+      url: Joi.string(),
+    }),
+  ),
   social_links: Joi.object({
     personal_website: Joi.string(),
     linkedin: Joi.string(),
@@ -242,4 +252,9 @@ export const updateAboutSchema = Joi.object({
   languages: Joi.array().items(Joi.string()),
   skills: Joi.array().items(Joi.string()),
   available_to_work: Joi.boolean(),
+}).min(1);
+
+export const updateResumeValidation = Joi.object({
+  name: Joi.string(),
+  url: Joi.string(),
 }).min(1);

@@ -103,6 +103,7 @@ class ProfileRoute implements Routes {
     this.router.get(`${this.path}/about`, authMiddleware(['freelancer', 'client']), this.aboutController.getUserAbout);
     this.router.put(`${this.path}/about`, authMiddleware(['freelancer', 'client']), this.aboutController.updateAbout);
     this.router.delete(`${this.path}/about/:id`, authMiddleware(['freelancer', 'client']), this.aboutController.deleteAbout);
+    this.router.put(`${this.path}/resume/:id`, authMiddleware(['freelancer', 'client']), this.aboutController.updateResumeById);
     this.router.get(`${this.path}/about/:id`, authMiddleware(['freelancer', 'client']), this.aboutController.getAboutById);
 
     /*

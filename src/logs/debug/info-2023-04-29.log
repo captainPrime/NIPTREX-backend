@@ -133,3 +133,39 @@
 2023-04-29 13:41:37 info: Connected to email server
 2023-04-29 13:41:38 info: Connected to Database Successfully...
 2023-04-29 13:41:55 info: [0mPUT /profile/education/644d0fa436d18e546cb3b39a [32m200[0m 1029.644 ms - 317[0m
+2023-04-29 13:54:59 info: =================================
+2023-04-29 13:54:59 info: ======= ENV: development =======
+2023-04-29 13:54:59 info: 🚀 App listening on the port 3000
+2023-04-29 13:54:59 info: =================================
+2023-04-29 13:55:02 info: Connected to email server
+2023-04-29 13:55:12 info: Connected to Database Successfully...
+2023-04-29 13:56:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 13:56:47 info: [0mPOST /auth/login [32m200[0m 678.771 ms - 587[0m
+2023-04-29 13:57:01 info: [0mGET /profile/about [32m200[0m 680.539 ms - 851[0m
+2023-04-29 13:57:20 info: [0mGET /reload_db [32m200[0m 3573.602 ms - 74[0m
+2023-04-29 13:57:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-04-29 13:57:26 info: [0mPOST /auth/login [32m200[0m 462.942 ms - 587[0m
+2023-04-29 13:57:34 error: [POST] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-29 13:57:34 info: [0mPOST /profile/about [32m200[0m 1021.477 ms - 126[0m
+2023-04-29 13:58:31 info: [0mPOST /profile/about [32m200[0m 1282.739 ms - 1011[0m
+2023-04-29 14:01:05 info: [0mGET /profile/about [32m200[0m 863.308 ms - 1011[0m
+2023-04-29 14:06:24 info: =================================
+2023-04-29 14:06:24 info: ======= ENV: development =======
+2023-04-29 14:06:24 info: 🚀 App listening on the port 3000
+2023-04-29 14:06:24 info: =================================
+2023-04-29 14:06:26 info: Connected to email server
+2023-04-29 14:06:26 info: Connected to Database Successfully...
+2023-04-29 14:07:04 error: [PUT] /profile/about >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-04-29 14:07:04 info: [0mPUT /profile/about [32m200[0m 309.308 ms - 126[0m
+2023-04-29 14:07:19 info: [0mPUT /profile/about [32m200[0m 880.455 ms - 975[0m
+2023-04-29 14:07:42 info: [0mGET /profile/about [32m200[0m 2778.649 ms - 975[0m
+2023-04-29 14:08:23 info: =================================
+2023-04-29 14:08:23 info: ======= ENV: development =======
+2023-04-29 14:08:23 info: 🚀 App listening on the port 3000
+2023-04-29 14:08:23 info: =================================
+2023-04-29 14:08:26 info: Connected to email server
+2023-04-29 14:08:26 info: Connected to Database Successfully...
+2023-04-29 14:08:32 info: [0mGET /profile/about [32m200[0m 891.593 ms - 975[0m
+2023-04-29 14:08:37 info: [0mPUT /profile/about [32m200[0m 829.896 ms - -[0m
+2023-04-29 14:08:45 info: [0mPUT /profile/about [32m200[0m 678.861 ms - -[0m
+2023-04-29 14:08:59 info: [0mPUT /profile/about [32m200[0m 702.303 ms - 1013[0m

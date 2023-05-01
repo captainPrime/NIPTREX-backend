@@ -1,0 +1,49 @@
+2023-05-01 09:24:23 info: =================================
+2023-05-01 09:24:23 info: ======= ENV: development =======
+2023-05-01 09:24:23 info: 🚀 App listening on the port 3000
+2023-05-01 09:24:23 info: =================================
+2023-05-01 09:24:36 info: Connected to email server
+2023-05-01 09:24:44 info: Connected to Database Successfully...
+2023-05-01 09:27:15 error: [GET] /profile/about >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-05-01 09:27:15 info: [0mGET /profile/about [32m200[0m 674.242 ms - 79[0m
+2023-05-01 09:27:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-01 09:27:28 info: [0mPOST /auth/login [32m200[0m 972.079 ms - 587[0m
+2023-05-01 09:27:34 info: [0mGET /profile/about [32m200[0m 773.433 ms - 957[0m
+2023-05-01 09:27:49 info: [0mGET /reload_db [32m200[0m 5777.785 ms - 74[0m
+2023-05-01 09:27:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-01 09:27:55 info: [0mPOST /auth/login [32m200[0m 535.847 ms - 587[0m
+2023-05-01 09:28:05 error: [GET] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-01 09:28:05 info: [0mGET /profile/about [32m200[0m 2085.748 ms - 73[0m
+2023-05-01 09:28:42 info: [0mPOST /profile/about [32m200[0m 7423.766 ms - -[0m
+2023-05-01 09:30:57 error: [PUT] /profile/resume/644f783901d791ded5fba3f0 >> StatusCode:: 400, Message:: PROFILE_VALIDATION_ERROR
+2023-05-01 09:30:57 info: [0mPUT /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 2692.154 ms - 107[0m
+2023-05-01 09:37:52 info: =================================
+2023-05-01 09:37:52 info: ======= ENV: development =======
+2023-05-01 09:37:52 info: 🚀 App listening on the port 3000
+2023-05-01 09:37:52 info: =================================
+2023-05-01 09:37:54 info: Connected to Database Successfully...
+2023-05-01 09:37:54 info: Connected to email server
+2023-05-01 09:38:12 error: [PUT] /profile/resume/644f783901d791ded5fba3f0 >> StatusCode:: 400, Message:: object is not iterable (cannot read property Symbol(Symbol.iterator))
+2023-05-01 09:38:12 info: [0mPUT /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 730.173 ms - 126[0m
+2023-05-01 09:43:07 info: =================================
+2023-05-01 09:43:07 info: ======= ENV: development =======
+2023-05-01 09:43:07 info: 🚀 App listening on the port 3000
+2023-05-01 09:43:07 info: =================================
+2023-05-01 09:43:30 info: Connected to Database Successfully...
+2023-05-01 09:43:40 info: Connected to email server
+2023-05-01 09:50:50 error: [PUT] /profile/resume/644f783901d791ded5fba3f0 >> StatusCode:: 400, Message:: object is not iterable (cannot read property Symbol(Symbol.iterator))
+2023-05-01 09:50:50 info: [0mPUT /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 1202.827 ms - 126[0m
+2023-05-01 09:52:20 info: =================================
+2023-05-01 09:52:20 info: ======= ENV: development =======
+2023-05-01 09:52:20 info: 🚀 App listening on the port 3000
+2023-05-01 09:52:20 info: =================================
+2023-05-01 09:52:46 info: Connected to Database Successfully...
+2023-05-01 09:52:48 info: Connected to email server
+2023-05-01 09:55:24 info: =================================
+2023-05-01 09:55:24 info: ======= ENV: development =======
+2023-05-01 09:55:24 info: 🚀 App listening on the port 3000
+2023-05-01 09:55:24 info: =================================
+2023-05-01 09:55:29 info: Connected to email server
+2023-05-01 09:55:31 info: Connected to Database Successfully...
+2023-05-01 09:56:33 info: [0mPUT /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 20991.484 ms - -[0m
+2023-05-01 09:57:02 info: [0mGET /profile/about [32m200[0m 5719.853 ms - -[0m

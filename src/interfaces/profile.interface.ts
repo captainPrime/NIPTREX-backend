@@ -140,7 +140,6 @@ export interface IPersonalDetails {
   role: string;
   seniority: string;
   gender: string;
-  resume?: string[];
 }
 
 export interface IAddress {
@@ -148,6 +147,11 @@ export interface IAddress {
   line2?: string;
   city: string;
   state: string;
+}
+
+export interface IResume {
+  name?: string;
+  url?: string;
 }
 
 export interface ISocialLink {
@@ -169,6 +173,7 @@ export interface IAbout extends Document {
   address: IAddress;
   social_details?: ISocialLink;
   languages?: string[];
+  resume?: IResume[];
   skills: string[];
   available_to_work: boolean;
 }
@@ -190,6 +195,7 @@ export interface IUpdateAbout {
   personal_details?: Partial<IPersonalDetails>;
   address?: Partial<IAddress>;
   social_details?: Partial<ISocialLink>;
+  resume?: Partial<IResume>;
   languages?: string[];
   skills?: string[];
   available_to_work?: boolean;

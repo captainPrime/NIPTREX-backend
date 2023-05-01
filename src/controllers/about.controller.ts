@@ -104,6 +104,24 @@ class AboutController {
 
   /*
   |--------------------------------------------------------------------------
+  | Update About
+  |--------------------------------------------------------------------------
+  */
+  public updateResumeById = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const body: any = req.body;
+      const { id } = req.params;
+
+      const data = await this.aboutService.updateResumeById(req.user.id, body, id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Delete About
   |--------------------------------------------------------------------------
   */

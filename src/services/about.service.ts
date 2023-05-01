@@ -1,10 +1,11 @@
+/* eslint-disable security/detect-object-injection */
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
 import { About } from '@/models/profile.model';
-import { IAbout, IUpdateAbout } from '@/interfaces/profile.interface';
-import { aboutSchema, updateAboutSchema } from '@/validations/profile.validation';
+import { IAbout, IResume, IUpdateAbout } from '@/interfaces/profile.interface';
+import { aboutSchema, updateAboutSchema, updateResumeValidation } from '@/validations/profile.validation';
 
 class AboutService {
   public about: any = About;
@@ -95,6 +96,37 @@ class AboutService {
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
 
     return updatedData;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Update About By Id
+  |--------------------------------------------------------------------------
+  */
+  public async updateResumeById(id: mongoose.Types.ObjectId | string, body: { name: string; url: string }, resumeId: string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const { error } = updateResumeValidation.validate(body);
+    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
+
+    const about = await this.about.findOne({ user_id: id });
+    if (!about) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
+
+    const resumeItem = about.resume.find((item: any) => item.id === resumeId);
+    if (!resumeItem) {
+      throw new HttpException(400, 2002, 'RESUME_ITEM_NOT_FOUND');
+    }
+
+    resumeItem.name = body.name;
+    resumeItem.url = body.url;
+
+    // Update the document with the updated payload
+    const updatedAbout = await this.about.findByIdAndUpdate(about._id, about, { new: true });
+
+    if (!updatedAbout) {
+      throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+    }
+    return updatedAbout;
   }
 
   /*
