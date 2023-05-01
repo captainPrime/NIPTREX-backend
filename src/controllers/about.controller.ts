@@ -122,6 +122,23 @@ class AboutController {
 
   /*
   |--------------------------------------------------------------------------
+  | Update About
+  |--------------------------------------------------------------------------
+  */
+  public deleteResumeById = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { id } = req.params;
+
+      const data = await this.aboutService.deleteResumeById(req.user.id, id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Delete About
   |--------------------------------------------------------------------------
   */

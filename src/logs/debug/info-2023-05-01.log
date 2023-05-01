@@ -47,3 +47,10 @@
 2023-05-01 09:55:31 info: Connected to Database Successfully...
 2023-05-01 09:56:33 info: [0mPUT /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 20991.484 ms - -[0m
 2023-05-01 09:57:02 info: [0mGET /profile/about [32m200[0m 5719.853 ms - -[0m
+2023-05-01 10:02:23 info: =================================
+2023-05-01 10:02:23 info: ======= ENV: development =======
+2023-05-01 10:02:23 info: 🚀 App listening on the port 3000
+2023-05-01 10:02:23 info: =================================
+2023-05-01 10:02:26 info: Connected to email server
+2023-05-01 10:02:27 info: Connected to Database Successfully...
+2023-05-01 10:02:37 info: [0mDELETE /profile/resume/644f783901d791ded5fba3f0 [32m200[0m 4809.945 ms - 1012[0m

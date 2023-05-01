@@ -129,6 +129,33 @@ class AboutService {
     return updatedAbout;
   }
 
+  public async deleteResumeById(id: mongoose.Types.ObjectId | string, resumeId: string): Promise<any> {
+    if (isEmpty(id)) {
+      throw new HttpException(400, 2001, 'id cannot be empty');
+    }
+
+    const about = await this.about.findOne({ user_id: id });
+    if (!about) {
+      throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
+    }
+
+    const resumeItemIndex = about.resume.findIndex((item: any) => item.id === resumeId);
+    if (resumeItemIndex === -1) {
+      throw new HttpException(400, 2002, 'RESUME_ITEM_NOT_FOUND');
+    }
+
+    about.resume.splice(resumeItemIndex, 1);
+
+    // Update the document with the updated payload
+    const updatedAbout = await this.about.findByIdAndUpdate(about._id, about, { new: true });
+
+    if (!updatedAbout) {
+      throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+    }
+
+    return updatedAbout;
+  }
+
   /*
   |--------------------------------------------------------------------------
   | Delete About
