@@ -48,3 +48,6 @@ TypeError: Cannot read properties of undefined (reading '_id')
     at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:42:52 error: Error connecting to Database: Error: querySrv EREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-05-02 21:44:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 21:45:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

@@ -168,3 +168,36 @@
 2023-05-02 21:14:53 info: Connected to email server
 2023-05-02 21:14:58 info: Connected to Database Successfully...
 2023-05-02 21:15:09 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1049.377 ms - -[0m
+2023-05-02 21:24:31 info: =================================
+2023-05-02 21:24:31 info: ======= ENV: development =======
+2023-05-02 21:24:31 info: 🚀 App listening on the port 3000
+2023-05-02 21:24:31 info: =================================
+2023-05-02 21:24:33 info: Connected to email server
+2023-05-02 21:24:34 info: Connected to Database Successfully...
+2023-05-02 21:24:39 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1097.957 ms - -[0m
+2023-05-02 21:25:30 info: =================================
+2023-05-02 21:25:30 info: ======= ENV: development =======
+2023-05-02 21:25:30 info: 🚀 App listening on the port 3000
+2023-05-02 21:25:30 info: =================================
+2023-05-02 21:25:32 info: Connected to email server
+2023-05-02 21:25:32 info: Connected to Database Successfully...
+2023-05-02 21:25:41 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1963.082 ms - -[0m
+2023-05-02 21:42:47 info: =================================
+2023-05-02 21:42:47 info: ======= ENV: development =======
+2023-05-02 21:42:47 info: 🚀 App listening on the port 3000
+2023-05-02 21:42:47 info: =================================
+2023-05-02 21:42:52 error: Error connecting to Database: Error: querySrv EREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-05-02 21:43:19 info: =================================
+2023-05-02 21:43:19 info: ======= ENV: development =======
+2023-05-02 21:43:19 info: 🚀 App listening on the port 3000
+2023-05-02 21:43:19 info: =================================
+2023-05-02 21:43:21 info: Connected to email server
+2023-05-02 21:43:21 info: Connected to Database Successfully...
+2023-05-02 21:43:28 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1215.441 ms - -[0m
+2023-05-02 21:43:51 info: [0mGET /profile [32m200[0m 1911.232 ms - 972[0m
+2023-05-02 21:44:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 21:44:40 info: [0mPOST /auth/login [32m200[0m 518.272 ms - 587[0m
+2023-05-02 21:45:18 info: [0mPOST /job [32m200[0m 676.562 ms - 951[0m
+2023-05-02 21:45:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 21:45:35 info: [0mPOST /auth/login [32m200[0m 542.936 ms - 587[0m
+2023-05-02 21:45:46 info: [0mGET /job/6451765ef5bfd313bbe2d125 [32m200[0m 1118.711 ms - -[0m

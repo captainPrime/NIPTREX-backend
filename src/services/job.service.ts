@@ -4,10 +4,12 @@ import mongoose from 'mongoose';
 import { isEmpty } from '@utils/util';
 import User from '@/models/users.model';
 import UserService from './users.service';
+import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 import { jobSchemaUpdateValidation, jobSchemaValidation } from '@/validations/job.validation';
+import { calculateMatchPercentage } from '@/utils/matchPercentage';
 
 class JobService {
   public hire: any = Hire;
@@ -15,6 +17,7 @@ class JobService {
   public job: any = JobModel;
   public saveJob: any = SavedJob;
   public userService = new UserService();
+  public aboutService = new AboutService();
 
   /*
   |--------------------------------------------------------------------------
@@ -193,11 +196,17 @@ class JobService {
 
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
+    const about = await this.aboutService.getUserAbout(userId);
+
+    console.log(about.skills);
+    console.log(data.jobs_tags);
+
     const savedJob = await this.saveJob.findOne({ user_id: userId, job: id });
 
     const updatedData = {
       ...data.toJSON(),
       is_saved: !!savedJob,
+      profile_matched: calculateMatchPercentage(about.skills, data.jobs_tags),
     };
 
     return updatedData;
