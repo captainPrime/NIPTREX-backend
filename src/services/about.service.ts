@@ -4,7 +4,7 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
 import { About } from '@/models/profile.model';
-import { IAbout, IResume, IUpdateAbout } from '@/interfaces/profile.interface';
+import { IAbout, IUpdateAbout } from '@/interfaces/profile.interface';
 import { aboutSchema, updateAboutSchema, updateResumeValidation } from '@/validations/profile.validation';
 
 class AboutService {
