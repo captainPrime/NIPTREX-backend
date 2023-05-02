@@ -5,13 +5,14 @@ import { isEmpty } from '@utils/util';
 import User from '@/models/users.model';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
-import { JobModel, SavedJob } from '@/models/job.model';
+import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 import { jobSchemaUpdateValidation, jobSchemaValidation } from '@/validations/job.validation';
 
 class JobService {
-  public job: any = JobModel;
+  public hire: any = Hire;
   public user: any = User;
+  public job: any = JobModel;
   public saveJob: any = SavedJob;
   public userService = new UserService();
 
@@ -171,7 +172,6 @@ class JobService {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.job.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     return data;
   }
@@ -237,6 +237,19 @@ class JobService {
 
     const data = await this.saveJob.find({ user_id: id });
     if (!data) throw new HttpException(400, 2002, 'SAVED_JOB_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Freelancer
+  |--------------------------------------------------------------------------
+  */
+  public async hireFreelancer(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.hire.create({ user_id: id });
 
     return data;
   }

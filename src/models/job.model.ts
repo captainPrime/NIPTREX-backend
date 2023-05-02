@@ -70,11 +70,23 @@ const SavedJobSchema: Schema = new Schema(
   },
 );
 
+const HireJobSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    job_id: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
+    client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
 JobSchema.plugin(toJSON);
 JobSchema.plugin(paginate);
 SavedJobSchema.plugin(toJSON);
 
 const JobModel = model<IJob>('Job', JobSchema);
 const SavedJob = model<any>('SavedJob', SavedJobSchema);
+const Hire = model<any>('SavedJob', HireJobSchema);
 
-export { JobModel, SavedJob };
+export { JobModel, SavedJob, Hire };

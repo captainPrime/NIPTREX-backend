@@ -260,6 +260,32 @@ class JobController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Freelancer
+  |--------------------------------------------------------------------------
+  */
+  public hireFreelancer = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+
+      const job = await this.jobService.getJobByJobId(id);
+      if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+      const payload = {
+        user_id: req.user.id,
+        job_id: job._id.toString(),
+        client_id: job.user_id.toString(),
+      };
+
+      const data = await this.jobService.savedJob(payload);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default JobController;
