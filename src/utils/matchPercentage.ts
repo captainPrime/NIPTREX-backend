@@ -2,7 +2,7 @@
 |--------------------------------------------------------------------------
 | The Jaccard similarity coefficient measures the similarity between 
 | two sets by calculating the size of their intersection divided by 
-| the size of their union. In the context of comparing two arrays
+| the size of their union. In the context of comparing two arrays.
 |--------------------------------------------------------------------------
 */
 
