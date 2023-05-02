@@ -88,6 +88,7 @@ class AboutService {
       languages: body.languages || data.languages, // Update the fields specified in the request body or use the existing value
       skills: body.skills || data.skills, // Update the fields specified in the request body or use the existing value
       available_to_work: body.available_to_work || data.available_to_work, // Update the fields specified in the request body or use the existing value
+      resume: body.resume || data.resume, // Update the fields specified in the request body or use the existing value
     };
 
     // Update the document with the updated payload

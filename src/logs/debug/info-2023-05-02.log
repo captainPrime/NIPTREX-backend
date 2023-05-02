@@ -201,3 +201,19 @@
 2023-05-02 21:45:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-02 21:45:35 info: [0mPOST /auth/login [32m200[0m 542.936 ms - 587[0m
 2023-05-02 21:45:46 info: [0mGET /job/6451765ef5bfd313bbe2d125 [32m200[0m 1118.711 ms - -[0m
+2023-05-02 22:10:09 info: =================================
+2023-05-02 22:10:09 info: ======= ENV: development =======
+2023-05-02 22:10:09 info: 🚀 App listening on the port 3000
+2023-05-02 22:10:09 info: =================================
+2023-05-02 22:10:09 error: Error connecting to Database: Error: querySrv EREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-05-02 22:10:09 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-05-02 22:10:31 info: =================================
+2023-05-02 22:10:31 info: ======= ENV: development =======
+2023-05-02 22:10:31 info: 🚀 App listening on the port 3000
+2023-05-02 22:10:31 info: =================================
+2023-05-02 22:10:33 info: Connected to email server
+2023-05-02 22:10:33 info: Connected to Database Successfully...
+2023-05-02 22:10:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 22:10:48 info: [0mPOST /auth/login [32m200[0m 893.593 ms - 587[0m
+2023-05-02 22:11:21 info: [0mGET /profile/about [32m200[0m 2960.863 ms - -[0m
+2023-05-02 22:12:33 info: [0mPUT /profile/about [32m200[0m 700.914 ms - 1012[0m

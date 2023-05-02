@@ -51,3 +51,5 @@ TypeError: Cannot read properties of undefined (reading '_id')
 2023-05-02 21:42:52 error: Error connecting to Database: Error: querySrv EREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-05-02 21:44:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-02 21:45:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 22:10:09 error: Error connecting to Database: Error: querySrv EREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-05-02 22:10:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
