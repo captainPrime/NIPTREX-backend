@@ -10,9 +10,9 @@ import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
 import { IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {
+  public jobService = new JobService();
   public userService = new UserService();
   public aboutService = new AboutService();
-  public jobService = new JobService();
   public preferenceService = new PreferenceService();
 
   /*
@@ -43,8 +43,6 @@ class JobController {
   */
   public updateJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // const user: any = await this.userService.findUserById(req.user.id);
-
       const body: IUpdateJob = req.body;
 
       const data = await this.jobService.updateJob(req.user.id, body);
