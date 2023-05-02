@@ -45,3 +45,28 @@
 2023-05-02 07:32:27 info: [0mPOST /profile/about [32m200[0m 1092.232 ms - -[0m
 2023-05-02 07:32:34 info: [0mPOST /bid/6450ae69d558c5652acd20ef [32m200[0m 2002.062 ms - -[0m
 2023-05-02 07:32:39 info: [0mGET /job/getAllJobs [32m200[0m 217.948 ms - 1020[0m
+2023-05-02 07:43:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 07:43:42 info: [0mPOST /auth/login [32m200[0m 538.061 ms - 587[0m
+2023-05-02 07:43:53 info: [0mGET /profile [32m200[0m 1763.684 ms - 216[0m
+2023-05-02 07:44:13 info: [0mPOST /profile/about [32m200[0m 1644.104 ms - -[0m
+2023-05-02 07:44:21 info: [0mGET /profile [32m200[0m 1789.284 ms - 969[0m
+2023-05-02 07:44:29 info: [0mGET /job/getAllJobs [32m200[0m 220.763 ms - 1020[0m
+2023-05-02 07:44:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 07:44:46 info: [0mPOST /auth/login [32m200[0m 480.629 ms - 587[0m
+2023-05-02 07:44:59 info: =================================
+2023-05-02 07:44:59 info: ======= ENV: development =======
+2023-05-02 07:44:59 info: 🚀 App listening on the port 3000
+2023-05-02 07:44:59 info: =================================
+2023-05-02 07:45:02 info: Connected to email server
+2023-05-02 07:45:12 info: Connected to Database Successfully...
+2023-05-02 07:47:21 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-02 07:47:21 info: [0mPOST /bid/hire/6450ae60d558c5652acd20e6 [32m200[0m 225.252 ms - 77[0m
+2023-05-02 07:48:41 info: =================================
+2023-05-02 07:48:41 info: ======= ENV: development =======
+2023-05-02 07:48:41 info: 🚀 App listening on the port 3000
+2023-05-02 07:48:41 info: =================================
+2023-05-02 07:48:43 info: Connected to email server
+2023-05-02 07:48:48 info: Connected to Database Successfully...
+2023-05-02 07:49:08 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-02 07:49:08 info: [0mPOST /bid/hire/6450ae60d558c5652acd20e6 [32m200[0m 249.696 ms - 77[0m
+2023-05-02 07:50:13 info: [0mPOST /bid/hire/6450ae60d558c5652acd20e6 [32m200[0m 699.847 ms - 310[0m

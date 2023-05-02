@@ -19,3 +19,7 @@ OverwriteModelError: Cannot overwrite `SavedJob` model once compiled.
 2023-05-02 07:29:32 error: [POST] /bid/6450adb95dde25331f73a922 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
 2023-05-02 07:32:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-02 07:32:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 07:43:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 07:44:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 07:47:21 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-02 07:49:08 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty

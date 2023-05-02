@@ -278,10 +278,10 @@ class JobService {
   | Hire Freelancer
   |--------------------------------------------------------------------------
   */
-  public async hireFreelancer(id: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+  public async hireFreelancer(payload: any): Promise<any> {
+    if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
 
-    const data = await this.hire.create({ user_id: id });
+    const data = await this.hire.create(payload);
 
     return data;
   }
