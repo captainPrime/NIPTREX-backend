@@ -198,15 +198,12 @@ class JobService {
 
     const about = await this.aboutService.getUserAbout(userId);
 
-    console.log(about.skills);
-    console.log(data.jobs_tags);
-
     const savedJob = await this.saveJob.findOne({ user_id: userId, job: id });
 
     const updatedData = {
       ...data.toJSON(),
       is_saved: !!savedJob,
-      profile_matched: calculateMatchPercentage(about.skills, data.jobs_tags),
+      profile_match: calculateMatchPercentage(about.skills, data.jobs_tags),
     };
 
     return updatedData;
