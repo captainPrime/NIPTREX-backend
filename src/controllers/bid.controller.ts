@@ -4,9 +4,11 @@ import BidService from '@/services/bid.service';
 import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
+import JobService from '@/services/job.service';
 
 class BidController {
   public bidService = new BidService();
+  public jobService = new JobService();
   public userService = new UserService();
   public aboutService = new AboutService();
 
@@ -18,15 +20,15 @@ class BidController {
   public bidJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userData = req.body;
-      const user: any = await this.userService.findUserById(req.user.id);
       const id: string = req.params.id;
+
+      const user: any = await this.userService.findUserById(req.user.id);
 
       if (!user.verified) {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
       const bidJob = await this.bidService.getBidById(id);
-      console.log('bid job user id', bidJob);
       if (bidJob && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
       const about = await this.aboutService.getUserAbout(req.user.id);
@@ -34,6 +36,9 @@ class BidController {
 
       const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
       await this.aboutService.updateAboutById(req.user.id, { nips: about.nips - userData.bidding_amount });
+
+      // update job
+      await this.jobService.updateJobById(id, { activities: { proposals: +1 } });
 
       res.status(200).json({ status: 200, response_code: 4000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {

@@ -87,6 +87,6 @@ SavedJobSchema.plugin(toJSON);
 
 const JobModel = model<IJob>('Job', JobSchema);
 const SavedJob = model<any>('SavedJob', SavedJobSchema);
-const Hire = model<any>('SavedJob', HireJobSchema);
+const Hire = model<any>('HireJob', HireJobSchema);
 
 export { JobModel, SavedJob, Hire };
