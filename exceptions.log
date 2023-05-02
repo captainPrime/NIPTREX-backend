@@ -748,3 +748,23 @@ OverwriteModelError: Cannot overwrite `SavedJob` model once compiled.
     at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-10614348297943099.js:71:20)
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1033:32)
+2023-05-02 21:12:11 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:12:11 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:13:57 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:13:57 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

@@ -23,3 +23,28 @@ OverwriteModelError: Cannot overwrite `SavedJob` model once compiled.
 2023-05-02 07:44:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-02 07:47:21 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
 2023-05-02 07:49:08 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-02 20:44:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 20:45:10 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 20:49:57 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: Cannot populate path `user_id.address` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-05-02 21:12:11 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 21:12:11 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:12:11 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:13:56 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 21:13:57 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-05-02 21:13:57 error: unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:202:40
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/model.js:4953:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

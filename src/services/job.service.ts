@@ -182,7 +182,15 @@ class JobService {
   public async getJobById(id: string, userId: string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id cannot be empty');
 
-    const data = await this.job.findOne({ _id: id });
+    const data = await this.job.findOne({ _id: id }).populate({
+      path: 'user_id',
+      select: 'first_name last_name email phone_number country createdAt', // fields to be returned from the referenced document
+      options: {
+        lean: true, // return plain JS objects instead of Mongoose documents
+      },
+      as: 'posted_by', // the name of the key to populate, defaults to the path
+    });
+
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     const savedJob = await this.saveJob.findOne({ user_id: userId, job: id });

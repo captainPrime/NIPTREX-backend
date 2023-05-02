@@ -70,3 +70,101 @@
 2023-05-02 07:49:08 error: [POST] /bid/hire/6450ae60d558c5652acd20e6 >> StatusCode:: 400, Message:: id can not be empty
 2023-05-02 07:49:08 info: [0mPOST /bid/hire/6450ae60d558c5652acd20e6 [32m200[0m 249.696 ms - 77[0m
 2023-05-02 07:50:13 info: [0mPOST /bid/hire/6450ae60d558c5652acd20e6 [32m200[0m 699.847 ms - 310[0m
+2023-05-02 20:43:42 info: =================================
+2023-05-02 20:43:42 info: ======= ENV: development =======
+2023-05-02 20:43:42 info: 🚀 App listening on the port 3000
+2023-05-02 20:43:42 info: =================================
+2023-05-02 20:43:44 info: Connected to email server
+2023-05-02 20:43:45 info: Connected to Database Successfully...
+2023-05-02 20:44:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-02 20:44:57 info: [0mPOST /auth/login [32m200[0m 684.514 ms - 587[0m
+2023-05-02 20:45:10 error: [GET] /job/643d35a8c469111a917df189 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 20:45:10 info: [0mGET /job/643d35a8c469111a917df189 [32m200[0m 550.125 ms - 71[0m
+2023-05-02 20:45:15 info: [0mGET /job/getAllJobs [32m200[0m 228.857 ms - -[0m
+2023-05-02 20:45:28 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 689.378 ms - 944[0m
+2023-05-02 20:46:29 info: =================================
+2023-05-02 20:46:29 info: ======= ENV: development =======
+2023-05-02 20:46:29 info: 🚀 App listening on the port 3000
+2023-05-02 20:46:29 info: =================================
+2023-05-02 20:46:32 info: Connected to email server
+2023-05-02 20:46:32 info: Connected to Database Successfully...
+2023-05-02 20:46:39 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1018.187 ms - -[0m
+2023-05-02 20:49:38 info: =================================
+2023-05-02 20:49:38 info: ======= ENV: development =======
+2023-05-02 20:49:38 info: 🚀 App listening on the port 3000
+2023-05-02 20:49:38 info: =================================
+2023-05-02 20:49:40 info: Connected to email server
+2023-05-02 20:49:40 info: Connected to Database Successfully...
+2023-05-02 20:49:57 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: Cannot populate path `user_id.address` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-05-02 20:49:57 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 966.047 ms - 183[0m
+2023-05-02 20:50:47 info: =================================
+2023-05-02 20:50:47 info: ======= ENV: development =======
+2023-05-02 20:50:47 info: 🚀 App listening on the port 3000
+2023-05-02 20:50:47 info: =================================
+2023-05-02 20:50:49 info: Connected to email server
+2023-05-02 20:50:59 info: Connected to Database Successfully...
+2023-05-02 20:51:05 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 945.973 ms - 980[0m
+2023-05-02 20:53:10 info: =================================
+2023-05-02 20:53:10 info: ======= ENV: development =======
+2023-05-02 20:53:10 info: 🚀 App listening on the port 3000
+2023-05-02 20:53:10 info: =================================
+2023-05-02 20:53:12 info: Connected to email server
+2023-05-02 20:53:12 info: Connected to Database Successfully...
+2023-05-02 20:53:33 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1505.311 ms - 1018[0m
+2023-05-02 20:56:58 info: =================================
+2023-05-02 20:56:58 info: ======= ENV: development =======
+2023-05-02 20:56:58 info: 🚀 App listening on the port 3000
+2023-05-02 20:56:58 info: =================================
+2023-05-02 20:57:00 info: Connected to email server
+2023-05-02 20:57:00 info: Connected to Database Successfully...
+2023-05-02 20:57:08 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 908.047 ms - -[0m
+2023-05-02 20:57:37 info: =================================
+2023-05-02 20:57:37 info: ======= ENV: development =======
+2023-05-02 20:57:37 info: 🚀 App listening on the port 3000
+2023-05-02 20:57:37 info: =================================
+2023-05-02 20:57:39 info: Connected to email server
+2023-05-02 20:57:40 info: Connected to Database Successfully...
+2023-05-02 20:57:51 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 902.592 ms - -[0m
+2023-05-02 20:58:17 info: =================================
+2023-05-02 20:58:17 info: ======= ENV: development =======
+2023-05-02 20:58:17 info: 🚀 App listening on the port 3000
+2023-05-02 20:58:17 info: =================================
+2023-05-02 20:58:19 info: Connected to email server
+2023-05-02 20:58:30 info: Connected to Database Successfully...
+2023-05-02 20:58:41 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 913.460 ms - -[0m
+2023-05-02 21:04:26 info: =================================
+2023-05-02 21:04:26 info: ======= ENV: development =======
+2023-05-02 21:04:26 info: 🚀 App listening on the port 3000
+2023-05-02 21:04:26 info: =================================
+2023-05-02 21:04:28 info: Connected to email server
+2023-05-02 21:04:38 info: Connected to Database Successfully...
+2023-05-02 21:04:43 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1367.574 ms - -[0m
+2023-05-02 21:11:48 info: =================================
+2023-05-02 21:11:48 info: ======= ENV: development =======
+2023-05-02 21:11:48 info: 🚀 App listening on the port 3000
+2023-05-02 21:11:48 info: =================================
+2023-05-02 21:11:50 info: Connected to email server
+2023-05-02 21:12:00 info: Connected to Database Successfully...
+2023-05-02 21:12:11 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 21:12:11 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 241.405 ms - 71[0m
+2023-05-02 21:12:11 error: [TypeError] >> Cannot read properties of undefined (reading '_id')
+2023-05-02 21:12:31 info: =================================
+2023-05-02 21:12:31 info: ======= ENV: development =======
+2023-05-02 21:12:31 info: 🚀 App listening on the port 3000
+2023-05-02 21:12:31 info: =================================
+2023-05-02 21:12:33 info: Connected to email server
+2023-05-02 21:12:34 info: Connected to Database Successfully...
+2023-05-02 21:13:56 error: [GET] /job/6450ae69d558c5652acd20ef >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-05-02 21:13:56 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 225.985 ms - 71[0m
+2023-05-02 21:13:57 error: [TypeError] >> Cannot read properties of undefined (reading '_id')
+2023-05-02 21:14:40 info: =================================
+2023-05-02 21:14:40 info: ======= ENV: development =======
+2023-05-02 21:14:40 info: 🚀 App listening on the port 3000
+2023-05-02 21:14:40 info: =================================
+2023-05-02 21:14:51 info: =================================
+2023-05-02 21:14:51 info: ======= ENV: development =======
+2023-05-02 21:14:51 info: 🚀 App listening on the port 3000
+2023-05-02 21:14:51 info: =================================
+2023-05-02 21:14:53 info: Connected to email server
+2023-05-02 21:14:58 info: Connected to Database Successfully...
+2023-05-02 21:15:09 info: [0mGET /job/6450ae69d558c5652acd20ef [32m200[0m 1049.377 ms - -[0m
