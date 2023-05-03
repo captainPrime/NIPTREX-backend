@@ -294,9 +294,7 @@ class JobService {
   */
   public async hireFreelancer(payload: any): Promise<any> {
     if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
-
     const data = await this.hire.create(payload);
-
     return data;
   }
 }
