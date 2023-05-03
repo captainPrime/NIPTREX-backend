@@ -270,7 +270,6 @@ class JobController {
 
       const job = await this.jobService.getJobByJobId(req.body.job_id);
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
-
       const payload = {
         user_id,
         job_id: job._id.toString(),
