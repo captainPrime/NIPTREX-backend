@@ -1,0 +1,8 @@
+2023-05-04 11:16:15 info: =================================
+2023-05-04 11:16:15 info: ======= ENV: development =======
+2023-05-04 11:16:15 info: 🚀 App listening on the port 3000
+2023-05-04 11:16:15 info: =================================
+2023-05-04 11:16:21 info: Connected to email server
+2023-05-04 11:16:36 info: Connected to Database Successfully...
+2023-05-04 11:17:01 error: [GET] /user/ >> StatusCode:: 404, Message:: The requested path /user/ not found!
+2023-05-04 11:17:01 info: [0mGET /user/ [32m200[0m 9.441 ms - 94[0m
