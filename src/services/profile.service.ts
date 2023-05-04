@@ -58,6 +58,7 @@ class ProfileService {
       personal_details: about?.personal_details,
       address: about?.address,
       skills: about?.skills,
+      resume: about?.resume,
       available_to_work: about?.available_to_work,
       social_links: about?.social_links,
       languages: about?.languages,
