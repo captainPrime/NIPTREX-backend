@@ -1,0 +1,16 @@
+2023-05-04 11:16:15 info: =================================
+2023-05-04 11:16:15 info: ======= ENV: development =======
+2023-05-04 11:16:15 info: 🚀 App listening on the port 3000
+2023-05-04 11:16:15 info: =================================
+2023-05-04 11:16:21 info: Connected to email server
+2023-05-04 11:16:36 info: Connected to Database Successfully...
+2023-05-04 11:17:01 error: [GET] /user/ >> StatusCode:: 404, Message:: The requested path /user/ not found!
+2023-05-04 11:17:01 info: [0mGET /user/ [32m200[0m 9.441 ms - 94[0m
+2023-05-04 11:28:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-04 11:28:14 info: [0mPOST /auth/login [32m200[0m 2549.580 ms - 587[0m
+2023-05-04 11:28:39 info: [0mGET /users/profile [32m200[0m 747.713 ms - 442[0m
+2023-05-04 11:28:59 error: [GET] /user/6452e2b563621e0ed268aa47 >> StatusCode:: 404, Message:: The requested path /user/6452e2b563621e0ed268aa47 not found!
+2023-05-04 11:28:59 info: [0mGET /user/6452e2b563621e0ed268aa47 [32m200[0m 2.742 ms - 118[0m
+2023-05-04 11:29:24 error: [GET] /users/6452e2b563621e0ed268aa47 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-05-04 11:29:24 info: [0mGET /users/6452e2b563621e0ed268aa47 [32m200[0m 1.646 ms - 86[0m
+2023-05-04 11:29:44 info: [0mGET /users/6452e2b563621e0ed268aa47 [32m200[0m 1283.646 ms - 442[0m
