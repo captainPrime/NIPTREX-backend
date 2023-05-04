@@ -1,1 +1,4 @@
 2023-05-04 11:17:01 error: [GET] /user/ >> StatusCode:: 404, Message:: The requested path /user/ not found!
+2023-05-04 11:28:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-04 11:28:59 error: [GET] /user/6452e2b563621e0ed268aa47 >> StatusCode:: 404, Message:: The requested path /user/6452e2b563621e0ed268aa47 not found!
+2023-05-04 11:29:24 error: [GET] /users/6452e2b563621e0ed268aa47 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
