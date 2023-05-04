@@ -7,7 +7,7 @@ import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
 import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
-import { IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
+import { IUpdateJob, JobStatus, PaginationOptions } from '@/interfaces/job.inteface';
 
 class JobController {
   public jobService = new JobService();
@@ -277,6 +277,9 @@ class JobController {
       };
 
       const data = await this.jobService.hireFreelancer(payload);
+
+      // update job
+      await this.jobService.updateJobById(job._id.toString(), { status: JobStatus.TAKEN });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

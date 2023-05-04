@@ -50,6 +50,7 @@ export type IUpdateJob = Partial<IJob>;
 
 export enum JobStatus {
   ACTIVE = 'active',
+  TAKEN = 'taken',
   INACTIVE = 'inactive',
   PENDING = 'pending',
 }

@@ -151,9 +151,15 @@
             "hash": "136a4f085fa9cec4e0e636cd4a21411738e7f306e3bbf917e2cdafbd56712e6e"
         },
         {
+<<<<<<< HEAD
+            "date": 1683197055418,
+            "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/error/info-2023-05-04.log",
+            "hash": "b1ca625e2c2c04cf22d2ee9a3e82f922acc8f4951c9c8355b88906ad15ae76eb"
+=======
             "date": 1683195372073,
             "name": "/Users/olashina/Documents/workspace/NIPTREX-backend/src/logs/error/info-2023-05-04.log",
             "hash": "0868b05b81bed102cd997640e61879104156a8822826dce94c004ab45bfa4763"
+>>>>>>> 93cb0cf432382b239977b89b3d25f63f69c5a955
         }
     ],
     "hashType": "sha256"

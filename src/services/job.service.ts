@@ -7,9 +7,9 @@ import UserService from './users.service';
 import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
+import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 import { jobSchemaUpdateValidation, jobSchemaValidation } from '@/validations/job.validation';
-import { calculateMatchPercentage } from '@/utils/matchPercentage';
 
 class JobService {
   public hire: any = Hire;

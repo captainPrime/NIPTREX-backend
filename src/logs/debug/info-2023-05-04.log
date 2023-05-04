@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+2023-05-04 11:44:21 info: =================================
+2023-05-04 11:44:21 info: ======= ENV: development =======
+2023-05-04 11:44:21 info: 🚀 App listening on the port 3000
+2023-05-04 11:44:21 info: =================================
+2023-05-04 11:44:25 info: Connected to email server
+2023-05-04 11:44:35 info: Connected to Database Successfully...
+2023-05-04 11:45:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-04 11:45:19 info: [0mPOST /auth/login [32m200[0m 1185.568 ms - 587[0m
+2023-05-04 11:45:30 info: [0mGET /profile [32m200[0m 2455.615 ms - 999[0m
+2023-05-04 11:46:34 info: [0mGET /job/getAllJobs [32m200[0m 2324.658 ms - -[0m
+=======
 2023-05-04 11:16:15 info: =================================
 2023-05-04 11:16:15 info: ======= ENV: development =======
 2023-05-04 11:16:15 info: 🚀 App listening on the port 3000
@@ -14,3 +26,4 @@
 2023-05-04 11:29:24 error: [GET] /users/6452e2b563621e0ed268aa47 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
 2023-05-04 11:29:24 info: [0mGET /users/6452e2b563621e0ed268aa47 [32m200[0m 1.646 ms - 86[0m
 2023-05-04 11:29:44 info: [0mGET /users/6452e2b563621e0ed268aa47 [32m200[0m 1283.646 ms - 442[0m
+>>>>>>> 93cb0cf432382b239977b89b3d25f63f69c5a955
