@@ -16,5 +16,5 @@ export const calculateMatchPercentage = (array1: any, array2: any) => {
   const similarityCoefficient = intersection.size / union.size;
   const matchPercentage = Math.round(similarityCoefficient * 100);
 
-  return `${matchPercentage}%`;
+  return matchPercentage;
 };
