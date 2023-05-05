@@ -224,6 +224,19 @@ class JobService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Job By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getJobByClientId(userId: string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.job.find({ user_id: userId });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Saved Job By Id
   |--------------------------------------------------------------------------
   */

@@ -186,6 +186,22 @@ class JobController {
 
   /*
   |--------------------------------------------------------------------------
+  | Get JOB By Id
+  |--------------------------------------------------------------------------
+  */
+  public getJobByClientId = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+      const data = await this.jobService.getJobByClientId(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   |getUserSavedJobs
   |--------------------------------------------------------------------------
   */
