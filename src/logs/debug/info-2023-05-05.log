@@ -1,0 +1,10 @@
+2023-05-05 17:30:44 info: =================================
+2023-05-05 17:30:44 info: ======= ENV: development =======
+2023-05-05 17:30:44 info: 🚀 App listening on the port 3000
+2023-05-05 17:30:44 info: =================================
+2023-05-05 17:30:46 info: Connected to email server
+2023-05-05 17:30:57 info: Connected to Database Successfully...
+2023-05-05 17:32:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-05 17:32:15 info: [0mPOST /auth/login [32m200[0m 807.688 ms - 587[0m
+2023-05-05 17:32:21 info: [0mGET /job/getAllJobs [32m200[0m 246.177 ms - -[0m
+2023-05-05 17:32:38 info: [0mGET /job/client/6454292463621e0ed268b23d [32m200[0m 1096.927 ms - -[0m
