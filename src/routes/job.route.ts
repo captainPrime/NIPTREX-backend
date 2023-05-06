@@ -19,6 +19,7 @@ class JobRoute implements Routes {
     this.router.put(`${this.path}/update`, authMiddleware(['client']), this.jobController.updateJob);
     this.router.get(`${this.path}/mostRecents`, authMiddleware(['freelancer']), this.jobController.getMostRecentJobs);
     this.router.get(`${this.path}/getUserJobBestMatches`, authMiddleware(['freelancer']), this.jobController.getUserJobBestMatches);
+    this.router.get(`${this.path}/getFreelancerContracts`, authMiddleware(['freelancer']), this.jobController.getFreelancerContracts);
 
     this.router.get(`${this.path}/skills`, this.jobController.getAllSkills);
     this.router.get(`${this.path}/softSkills`, this.jobController.getAllSoftSkills);

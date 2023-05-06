@@ -10,11 +10,13 @@ import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 import { jobSchemaUpdateValidation, jobSchemaValidation } from '@/validations/job.validation';
+import { BiddingModel } from '@/models/bid.model';
 
 class JobService {
   public hire: any = Hire;
   public user: any = User;
   public job: any = JobModel;
+  public bid: any = BiddingModel;
   public saveJob: any = SavedJob;
   public userService = new UserService();
   public aboutService = new AboutService();
@@ -308,6 +310,16 @@ class JobService {
   public async hireFreelancer(payload: any): Promise<any> {
     if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
     const data = await this.hire.create(payload);
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get All Freelance Contracts
+  |--------------------------------------------------------------------------
+  */
+  public async getFreelancerContracts(filter: any, options: PaginationOptions): Promise<any> {
+    const data = await this.bid.paginate(filter, options);
     return data;
   }
 }

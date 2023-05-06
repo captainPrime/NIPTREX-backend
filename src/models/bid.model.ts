@@ -1,3 +1,4 @@
+import { paginate } from '@/modules/paginate';
 import { Schema, Document, Model, model } from 'mongoose';
 
 interface BiddingStage {
@@ -16,6 +17,7 @@ interface IBidding extends Document {
   service_fee: number;
   amount_to_be_received: number;
   bidding_amount: number;
+  status: string;
 }
 
 const BiddingSchema: Schema = new Schema({
@@ -73,11 +75,18 @@ const BiddingSchema: Schema = new Schema({
     type: Number,
     required: true,
   },
+  status: {
+    type: String,
+    enum: ['cancelled', 'pending', 'paid', 'applied'],
+    default: 'applied',
+  },
   date_applied: {
     type: Date,
     default: Date.now,
   },
 });
+
+BiddingSchema.plugin(paginate);
 
 const BiddingModel: Model<IBidding> = model<IBidding>('Bidding', BiddingSchema);
 
