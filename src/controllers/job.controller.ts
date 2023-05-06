@@ -170,6 +170,35 @@ class JobController {
 
   /*
   |--------------------------------------------------------------------------
+  | get similar jobs
+  |--------------------------------------------------------------------------
+  */
+  public getSimilarJobs = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const jobQueries: any = [];
+      const jobId: any = req.params.id;
+
+      const jobs = await this.jobService.getJobByJobId(jobId);
+      console.log('JOBS', jobs);
+      if (jobs) jobs?.jobs_tags.forEach((tag: string) => jobQueries.push(tag));
+
+      // const options: PaginationOptions = {
+      //   sortBy: req.query.sortBy || 'name:desc',
+      //   limit: parseInt(req.query.limit as string, 10) || 5,
+      //   page: parseInt(req.query.page as string, 10) || 1,
+      //   projectBy: req.query.projectBy || 'name:hide, role:hide',
+      // };
+
+      const data = await this.jobService.getSimilarJobs(jobId, jobQueries);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Get JOB By Id
   |--------------------------------------------------------------------------
   */

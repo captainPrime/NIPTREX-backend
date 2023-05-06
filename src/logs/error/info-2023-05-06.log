@@ -1,0 +1,6 @@
+2023-05-06 14:22:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:22:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:23:36 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 404, Message:: The requested path /job/getSimilarJobs/645654ce29acae292d9b1c26 not found!
+2023-05-06 14:24:28 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 14:25:06 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+2023-05-06 14:26:01 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
