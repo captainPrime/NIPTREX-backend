@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-05-06 14:42:07 info: =================================
 2023-05-06 14:42:07 info: ======= ENV: development =======
 2023-05-06 14:42:07 info: 🚀 App listening on the port 3000
@@ -189,3 +190,68 @@
 2023-05-06 15:55:57 info: [0mGET /job/getFreelancerContracts [32m200[0m 701.389 ms - -[0m
 2023-05-06 15:56:10 info: [0mGET /job/getFreelancerContracts?status=pending [32m200[0m 650.936 ms - -[0m
 2023-05-06 15:56:22 info: [0mGET /job/getFreelancerContracts?status=cancelled [32m200[0m 650.741 ms - 171[0m
+=======
+2023-05-06 14:19:40 info: =================================
+2023-05-06 14:19:40 info: ======= ENV: development =======
+2023-05-06 14:19:40 info: 🚀 App listening on the port 3000
+2023-05-06 14:19:40 info: =================================
+2023-05-06 14:19:42 info: Connected to email server
+2023-05-06 14:19:52 info: Connected to Database Successfully...
+2023-05-06 14:22:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:22:22 info: [0mPOST /auth/login [32m200[0m 598.505 ms - 587[0m
+2023-05-06 14:22:26 info: [0mGET /job/getAllJobs [32m200[0m 238.634 ms - -[0m
+2023-05-06 14:22:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:22:48 info: [0mPOST /auth/login [32m200[0m 500.160 ms - 587[0m
+2023-05-06 14:23:07 info: [0mPOST /job [32m200[0m 686.132 ms - 952[0m
+2023-05-06 14:23:26 info: [0mPOST /job [32m200[0m 1170.512 ms - 927[0m
+2023-05-06 14:23:36 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 404, Message:: The requested path /job/getSimilarJobs/645654ce29acae292d9b1c26 not found!
+2023-05-06 14:23:36 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 1.939 ms - 132[0m
+2023-05-06 14:24:09 info: =================================
+2023-05-06 14:24:09 info: ======= ENV: development =======
+2023-05-06 14:24:09 info: 🚀 App listening on the port 3000
+2023-05-06 14:24:09 info: =================================
+2023-05-06 14:24:12 info: Connected to email server
+2023-05-06 14:24:22 info: Connected to Database Successfully...
+2023-05-06 14:24:28 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 14:24:28 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 584.780 ms - 75[0m
+2023-05-06 14:24:54 info: =================================
+2023-05-06 14:24:54 info: ======= ENV: development =======
+2023-05-06 14:24:54 info: 🚀 App listening on the port 3000
+2023-05-06 14:24:54 info: =================================
+2023-05-06 14:24:56 info: Connected to email server
+2023-05-06 14:25:01 info: Connected to Database Successfully...
+2023-05-06 14:25:06 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+2023-05-06 14:25:06 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 475.404 ms - 76[0m
+2023-05-06 14:25:44 info: =================================
+2023-05-06 14:25:44 info: ======= ENV: development =======
+2023-05-06 14:25:44 info: 🚀 App listening on the port 3000
+2023-05-06 14:25:44 info: =================================
+2023-05-06 14:25:46 info: Connected to email server
+2023-05-06 14:25:56 info: Connected to Database Successfully...
+2023-05-06 14:26:01 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+2023-05-06 14:26:01 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 532.073 ms - 76[0m
+2023-05-06 14:26:30 info: =================================
+2023-05-06 14:26:30 info: ======= ENV: development =======
+2023-05-06 14:26:30 info: 🚀 App listening on the port 3000
+2023-05-06 14:26:30 info: =================================
+2023-05-06 14:26:32 info: Connected to email server
+2023-05-06 14:26:37 info: Connected to Database Successfully...
+2023-05-06 14:26:43 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 652.825 ms - 80[0m
+2023-05-06 14:26:55 info: [0mGET /job/getAllJobs [32m200[0m 234.069 ms - -[0m
+2023-05-06 14:27:08 info: [0mGET /job/getSimilarJobs/64542dcfbd4d19cab924efce [32m200[0m 739.240 ms - 80[0m
+2023-05-06 14:27:59 info: =================================
+2023-05-06 14:27:59 info: ======= ENV: development =======
+2023-05-06 14:27:59 info: 🚀 App listening on the port 3000
+2023-05-06 14:27:59 info: =================================
+2023-05-06 14:28:01 info: Connected to email server
+2023-05-06 14:28:01 info: Connected to Database Successfully...
+2023-05-06 14:28:07 info: [0mGET /job/getSimilarJobs/64542dcfbd4d19cab924efce [32m200[0m 680.330 ms - 80[0m
+2023-05-06 14:29:03 info: =================================
+2023-05-06 14:29:03 info: ======= ENV: development =======
+2023-05-06 14:29:03 info: 🚀 App listening on the port 3000
+2023-05-06 14:29:03 info: =================================
+2023-05-06 14:29:05 info: Connected to email server
+2023-05-06 14:29:05 info: Connected to Database Successfully...
+2023-05-06 14:30:31 info: [0mGET /job/getSimilarJobs/64542dcfbd4d19cab924efce [32m200[0m 809.004 ms - -[0m
+2023-05-06 14:31:22 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 727.541 ms - 929[0m
+>>>>>>> 9de3b3b68ca2951aa632a0a7f7a26768685d2104

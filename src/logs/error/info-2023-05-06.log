@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-05-06 14:43:55 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-05-06 14:44:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-06 14:44:59 error: [POST] /bid/64542dcfbd4d19cab924efce >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
@@ -49,3 +50,11 @@ Error: Channel closed
 2023-05-06 15:34:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-06 15:54:10 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: this.bid.paginate is not a function
 2023-05-06 15:55:06 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: Parameter "filter" to find() must be an object, got Rest,NodeJS,Mobile,Responsive
+=======
+2023-05-06 14:22:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:22:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:23:36 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 404, Message:: The requested path /job/getSimilarJobs/645654ce29acae292d9b1c26 not found!
+2023-05-06 14:24:28 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 14:25:06 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+2023-05-06 14:26:01 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+>>>>>>> 9de3b3b68ca2951aa632a0a7f7a26768685d2104
