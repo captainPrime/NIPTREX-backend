@@ -1,6 +1,60 @@
+<<<<<<< HEAD
+2023-05-06 14:43:55 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 14:44:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:44:59 error: [POST] /bid/64542dcfbd4d19cab924efce >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-05-06 14:45:06 error: [POST] /bid/64542dcfbd4d19cab924efce >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-05-06 14:55:50 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-05-06 14:55:50 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-05-06 14:56:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:56:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 14:57:03 error: [POST] /bid/64565c84ae67d6138ffac5bd >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-05-06 15:20:16 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:20:34 error: [POST] /bid/hire/64565c5edc34709469cdb1f7 >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-05-06 15:23:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:25:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:26:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:26:34 error: [POST] /bid/hire/64565c5edc34709469cdb1f7 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 15:26:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:26:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:30:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:30:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:31:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:31:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:31:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:31:59 error: [POST] /bid/645664bacb65aa801c0dd5e6 >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-05-06 15:32:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:34:22 error: [POST] /bid/hire/645664b2cb65aa801c0dd5df >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-06 15:34:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:34:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-06 15:54:10 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: this.bid.paginate is not a function
+2023-05-06 15:55:06 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: Parameter "filter" to find() must be an object, got Rest,NodeJS,Mobile,Responsive
+=======
 2023-05-06 14:22:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-06 14:22:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-06 14:23:36 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 404, Message:: The requested path /job/getSimilarJobs/645654ce29acae292d9b1c26 not found!
 2023-05-06 14:24:28 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-05-06 14:25:06 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
 2023-05-06 14:26:01 error: [GET] /job/getSimilarJobs/645654ce29acae292d9b1c26 >> StatusCode:: 400, Message:: id cannot be empty
+>>>>>>> 9de3b3b68ca2951aa632a0a7f7a26768685d2104

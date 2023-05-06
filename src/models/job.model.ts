@@ -3,6 +3,7 @@ import { WorkOption } from '@/interfaces/profile.interface';
 import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';
 import { Query, Schema, UpdateQuery, model } from 'mongoose';
+import { BiddingModel } from './bid.model';
 
 const JobSchema: Schema = new Schema(
   {
@@ -58,6 +59,23 @@ JobSchema.pre<Query<any, any, any, any>>('findOneAndUpdate', function (next) {
     update.proposal_left = update.proposal_limit - update.activities.proposals;
   }
   next();
+});
+
+JobSchema.pre('findOneAndUpdate', async function (this: any, doc: any) {
+  const oldStatus = doc.status;
+  const newStatus = this._update.status;
+
+  if (oldStatus !== newStatus) {
+    let status: string;
+    switch (newStatus) {
+      case 'taken':
+        status = 'cancelled';
+        break;
+      default:
+        status = 'pending';
+    }
+    await BiddingModel.updateMany({ job_id: doc._id }, { $set: { status } });
+  }
 });
 
 const SavedJobSchema: Schema = new Schema(

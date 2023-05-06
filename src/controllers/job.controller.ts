@@ -334,6 +334,35 @@ class JobController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Freelancer
+  |--------------------------------------------------------------------------
+  */
+  public getFreelancerContracts = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const jobQueries: any = [];
+      const about = await this.aboutService.getUserAbout(req.user.id);
+      if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+
+      about.skills.forEach((skill: string) => jobQueries.push(skill));
+
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'createdAt:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
+      const job = await this.jobService.getFreelancerContracts(req.query, options);
+      console.log('JOB', job);
+      if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: job });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default JobController;
