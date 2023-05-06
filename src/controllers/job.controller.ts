@@ -295,7 +295,10 @@ class JobController {
       const data = await this.jobService.hireFreelancer(payload);
 
       // update job
-      await this.jobService.updateJobById(job._id.toString(), { status: JobStatus.TAKEN });
+      await this.jobService.updateJobById(job._id.toString(), {
+        status: JobStatus.TAKEN,
+        activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
+      });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
