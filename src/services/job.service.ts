@@ -211,6 +211,36 @@ class JobService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Similar Jobs
+  |--------------------------------------------------------------------------
+  */
+  public async getSimilarJobs(id: string, query: any): Promise<any> {
+    console.log('ID', id);
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id cannot be empty');
+    const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
+    const filter = {
+      jobs_tags: { $in: regexTags },
+    };
+
+    const data = await this.job.find(filter);
+
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    // const about = await this.aboutService.getUserAbout(userId);
+
+    // const savedJob = await this.saveJob.findOne({ user_id: userId, job: id });
+
+    // const updatedData = {
+    //   ...data.toJSON(),
+    //   is_saved: !!savedJob,
+    //   profile_match: calculateMatchPercentage(about.skills, data.jobs_tags),
+    // };
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Job By Id
   |--------------------------------------------------------------------------
   */
