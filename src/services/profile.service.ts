@@ -25,6 +25,12 @@ class ProfileService {
   public async getProfile(userId: string): Promise<any> {
     if (isEmpty(userId)) throw new HttpException(400, 2005, "You're not userData");
 
+    const findOneUserData: any = await this.userService.findUserById(userId);
+
+    if (findOneUserData.user === 'client') {
+      return findOneUserData;
+    }
+
     const about = await this.about.findOne({ user_id: userId });
     const billing = await this.billing.find({ user_id: userId });
     const identity = await this.identity.find({ user_id: userId });

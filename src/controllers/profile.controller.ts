@@ -11,7 +11,7 @@ class ProfileController {
 
   public getProfile = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const userId: string = req.user.id;
+      const userId: string = req.query.id ?? req.user.id;
       const findOneUserData = await this.profileService.getProfile(userId);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'PROFILE_REQUEST_SUCCESSFUL', data: findOneUserData });

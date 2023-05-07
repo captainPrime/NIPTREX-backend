@@ -1,0 +1,23 @@
+2023-05-07 08:12:09 info: =================================
+2023-05-07 08:12:09 info: ======= ENV: development =======
+2023-05-07 08:12:09 info: 🚀 App listening on the port 3000
+2023-05-07 08:12:09 info: =================================
+2023-05-07 08:12:12 info: Connected to email server
+2023-05-07 08:12:30 info: Connected to Database Successfully...
+2023-05-07 08:12:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-07 08:12:48 info: [0mPOST /auth/login [32m200[0m 701.997 ms - 587[0m
+2023-05-07 08:12:53 info: [0mGET /profile [32m200[0m 721.092 ms - 443[0m
+2023-05-07 08:13:29 info: =================================
+2023-05-07 08:13:29 info: ======= ENV: development =======
+2023-05-07 08:13:29 info: 🚀 App listening on the port 3000
+2023-05-07 08:13:29 info: =================================
+2023-05-07 08:13:59 info: Connected to email server
+2023-05-07 08:14:00 info: Connected to Database Successfully...
+2023-05-07 08:14:34 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-05-07 08:14:34 info: [0mPOST /profile/about [32m200[0m 3553.646 ms - 77[0m
+2023-05-07 08:15:32 info: [0mGET /profile [32m200[0m 51403.886 ms - -[0m
+2023-05-07 08:16:36 info: [0mGET /profile?id=645664b2cb65aa801c0dd5df [32m200[0m 17237.619 ms - -[0m
+2023-05-07 08:16:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-07 08:16:47 info: [0mPOST /auth/login [32m200[0m 3270.579 ms - 587[0m
+2023-05-07 08:16:56 info: [0mGET /profile [32m200[0m 3867.474 ms - 438[0m
+2023-05-07 08:17:13 info: [0mGET /profile?id=645664b2cb65aa801c0dd5dd [32m200[0m 5870.921 ms - 438[0m
