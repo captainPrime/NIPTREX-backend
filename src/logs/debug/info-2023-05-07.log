@@ -21,3 +21,33 @@
 2023-05-07 08:16:47 info: [0mPOST /auth/login [32m200[0m 3270.579 ms - 587[0m
 2023-05-07 08:16:56 info: [0mGET /profile [32m200[0m 3867.474 ms - 438[0m
 2023-05-07 08:17:13 info: [0mGET /profile?id=645664b2cb65aa801c0dd5dd [32m200[0m 5870.921 ms - 438[0m
+2023-05-07 08:31:18 info: =================================
+2023-05-07 08:31:18 info: ======= ENV: development =======
+2023-05-07 08:31:18 info: 🚀 App listening on the port 3000
+2023-05-07 08:31:18 info: =================================
+2023-05-07 08:31:21 info: Connected to email server
+2023-05-07 08:31:28 info: Connected to Database Successfully...
+2023-05-07 08:31:44 info: [0mPOST /profile/experience [32m200[0m 1241.904 ms - 446[0m
+2023-05-07 08:31:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-07 08:31:49 info: [0mPOST /auth/login [32m200[0m 715.590 ms - 587[0m
+2023-05-07 08:31:56 info: [0mGET /profile/experience [32m200[0m 668.898 ms - 448[0m
+2023-05-07 08:32:08 info: [0mGET /profile/experience/64566548683feacbd3d248a8 [32m200[0m 641.466 ms - 446[0m
+2023-05-07 08:32:16 info: [0mPOST /profile/experience [32m200[0m 1771.590 ms - 448[0m
+2023-05-07 08:32:24 info: [0mGET /profile/experience/645754001f172dbfb918778e [32m200[0m 496.602 ms - 448[0m
+2023-05-07 08:33:14 info: [0mPOST /profile/education [32m200[0m 1213.552 ms - 321[0m
+2023-05-07 08:33:24 info: [0mGET /profile/education/6457543a1f172dbfb9187795 [32m200[0m 456.632 ms - 321[0m
+2023-05-07 08:33:57 info: [0mGET /profile/billing [32m200[0m 705.019 ms - 84[0m
+2023-05-07 08:34:02 info: [0mPOST /profile/billing [32m200[0m 1401.229 ms - 212[0m
+2023-05-07 08:34:12 info: [0mGET /profile/billing/645754691f172dbfb91877a0 [32m200[0m 477.915 ms - 212[0m
+2023-05-07 08:34:44 info: [0mPOST /profile/certificate [32m200[0m 943.749 ms - 452[0m
+2023-05-07 08:34:55 info: [0mGET /profile/certificate/645754931f172dbfb91877a7 [32m200[0m 503.953 ms - 452[0m
+2023-05-07 08:35:03 info: [0mPOST /profile/identity [32m200[0m 1323.701 ms - 278[0m
+2023-05-07 08:35:39 info: [0mGET /profile/identity/645754a61f172dbfb91877af [32m200[0m 2726.411 ms - 278[0m
+2023-05-07 08:36:08 info: [0mGET /profile/about [32m200[0m 834.209 ms - -[0m
+2023-05-07 08:36:18 info: [0mGET /profile/about/645664eacb65aa801c0dd601 [32m200[0m 665.458 ms - -[0m
+2023-05-07 08:36:51 error: [POST] /profile/preference >> StatusCode:: 400, Message:: WORK_PREFERENCE_ALREAD_ADDED
+2023-05-07 08:36:51 info: [0mPOST /profile/preference [32m200[0m 689.221 ms - 86[0m
+2023-05-07 08:37:00 info: [0mGET /profile/preference [32m200[0m 2689.315 ms - 343[0m
+2023-05-07 08:37:11 info: [0mGET /profile/preference/6456654f683feacbd3d248ae [32m200[0m 680.402 ms - 341[0m
+2023-05-07 08:37:42 info: [0mPOST /profile/bio [32m200[0m 1317.175 ms - 332[0m
+2023-05-07 08:37:52 info: [0mGET /profile/bio/645755461f172dbfb91877c4 [32m200[0m 460.118 ms - 332[0m
