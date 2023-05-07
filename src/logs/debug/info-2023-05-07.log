@@ -51,3 +51,17 @@
 2023-05-07 08:37:11 info: [0mGET /profile/preference/6456654f683feacbd3d248ae [32m200[0m 680.402 ms - 341[0m
 2023-05-07 08:37:42 info: [0mPOST /profile/bio [32m200[0m 1317.175 ms - 332[0m
 2023-05-07 08:37:52 info: [0mGET /profile/bio/645755461f172dbfb91877c4 [32m200[0m 460.118 ms - 332[0m
+2023-05-07 08:43:16 info: =================================
+2023-05-07 08:43:16 info: ======= ENV: development =======
+2023-05-07 08:43:16 info: 🚀 App listening on the port 3000
+2023-05-07 08:43:16 info: =================================
+2023-05-07 08:43:20 info: Connected to email server
+2023-05-07 08:43:25 info: Connected to Database Successfully...
+2023-05-07 08:43:42 info: [0mGET /job/getSimilarJobs/645654ce29acae292d9b1c26 [32m200[0m 1134.564 ms - 80[0m
+2023-05-07 08:43:50 info: [0mGET /job/getAllJobs [32m200[0m 838.696 ms - -[0m
+2023-05-07 08:44:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-07 08:44:19 info: [0mPOST /auth/login [32m200[0m 2478.597 ms - 587[0m
+2023-05-07 08:44:37 info: [0mPOST /job [32m200[0m 2357.346 ms - 927[0m
+2023-05-07 08:44:50 info: [0mGET /job/getSimilarJobs/645756e57490d44832237ce0 [32m200[0m 892.246 ms - 80[0m
+2023-05-07 08:44:57 info: [0mGET /job/getAllJobs [32m200[0m 411.843 ms - -[0m
+2023-05-07 08:45:10 info: [0mGET /job/getSimilarJobs/645664bacb65aa801c0dd5e6 [32m200[0m 912.243 ms - -[0m

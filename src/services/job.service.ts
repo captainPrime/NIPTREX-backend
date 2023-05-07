@@ -217,11 +217,11 @@ class JobService {
   |--------------------------------------------------------------------------
   */
   public async getSimilarJobs(id: string, query: any): Promise<any> {
-    console.log('ID', id);
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id cannot be empty');
     const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
     const filter = {
       jobs_tags: { $in: regexTags },
+      _id: { $ne: id },
     };
 
     const data = await this.job.find(filter);
