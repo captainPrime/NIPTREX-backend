@@ -259,10 +259,15 @@ class JobService {
   | Get Job By Id
   |--------------------------------------------------------------------------
   */
-  public async getJobByClientId(userId: string): Promise<any> {
+  public async getJobByClientId(userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.job.find({ user_id: userId });
+    const filter = {
+      user_id: userId,
+      ...otherQuery,
+    };
+
+    const data = await this.job.paginate(filter, options);
 
     return data;
   }

@@ -4,6 +4,7 @@ import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { BiddingModel, IBidding } from '@/models/bid.model';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class BidService {
   public bid: any = BiddingModel;
@@ -35,6 +36,20 @@ class BidService {
     if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
 
     const data = await this.bid.find({ job_id: id }).sort({ bidding_amount: -1 }).limit(10).populate('user_id');
+    if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | getTopBidders
+  |--------------------------------------------------------------------------
+  */
+  public async getBidders(id: mongoose.Types.ObjectId | string, options: PaginationOptions): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
+
+    const data = await this.bid.paginate({ job_id: id }, options);
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
 
     return data;
