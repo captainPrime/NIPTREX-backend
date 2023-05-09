@@ -41,3 +41,44 @@
 2023-05-09 23:07:30 info: Connected to email server
 2023-05-09 23:07:35 info: Connected to Database Successfully...
 2023-05-09 23:07:43 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 851.966 ms - -[0m
+2023-05-09 23:10:42 info: [0mGET /job/client/6454292463621e0ed268b23d [32m200[0m 694.087 ms - 80[0m
+2023-05-09 23:11:00 info: =================================
+2023-05-09 23:11:00 info: ======= ENV: development =======
+2023-05-09 23:11:00 info: 🚀 App listening on the port 3000
+2023-05-09 23:11:00 info: =================================
+2023-05-09 23:11:03 info: Connected to email server
+2023-05-09 23:11:03 info: Connected to Database Successfully...
+2023-05-09 23:12:50 info: =================================
+2023-05-09 23:12:50 info: ======= ENV: development =======
+2023-05-09 23:12:50 info: 🚀 App listening on the port 3000
+2023-05-09 23:12:50 info: =================================
+2023-05-09 23:12:53 info: Connected to email server
+2023-05-09 23:12:53 info: Connected to Database Successfully...
+2023-05-09 23:13:01 info: [0mGET /job/client/6454292463621e0ed268b23d [32m200[0m 499.455 ms - 171[0m
+2023-05-09 23:13:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-09 23:13:11 info: [0mPOST /auth/login [32m200[0m 688.436 ms - 587[0m
+2023-05-09 23:13:18 info: [0mGET /users/profile [32m200[0m 449.643 ms - 434[0m
+2023-05-09 23:13:33 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd [32m200[0m 733.775 ms - -[0m
+2023-05-09 23:13:56 info: =================================
+2023-05-09 23:13:56 info: ======= ENV: development =======
+2023-05-09 23:13:56 info: 🚀 App listening on the port 3000
+2023-05-09 23:13:56 info: =================================
+2023-05-09 23:13:59 info: Connected to email server
+2023-05-09 23:13:59 info: Connected to Database Successfully...
+2023-05-09 23:14:24 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd [32m200[0m 509.981 ms - -[0m
+2023-05-09 23:15:11 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd?project_fixed=true [32m200[0m 699.329 ms - -[0m
+2023-05-09 23:15:25 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd?job_type=true [32m200[0m 484.673 ms - -[0m
+2023-05-09 23:15:38 info: =================================
+2023-05-09 23:15:38 info: ======= ENV: development =======
+2023-05-09 23:15:38 info: 🚀 App listening on the port 3000
+2023-05-09 23:15:38 info: =================================
+2023-05-09 23:15:43 info: Connected to email server
+2023-05-09 23:15:46 info: Connected to Database Successfully...
+2023-05-09 23:20:02 info: =================================
+2023-05-09 23:20:02 info: ======= ENV: development =======
+2023-05-09 23:20:02 info: 🚀 App listening on the port 3000
+2023-05-09 23:20:02 info: =================================
+2023-05-09 23:20:05 info: Connected to email server
+2023-05-09 23:20:16 info: Connected to Database Successfully...
+2023-05-09 23:20:25 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd?job_type=true [32m200[0m 464.026 ms - 171[0m
+2023-05-09 23:20:29 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd [32m200[0m 683.272 ms - -[0m
