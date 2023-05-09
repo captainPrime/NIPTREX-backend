@@ -16,6 +16,7 @@ class BidRoute implements Routes {
   }
 
   private initializeRoutes() {
+    this.router.get(`${this.path}/proposals/:id`, this.bidController.getBidders);
     this.router.get(`${this.path}/getTopBidders/:id`, this.bidController.getTopBidders);
     this.router.post(`${this.path}/:id`, authMiddleware(['freelancer']), this.bidController.bidJob);
     this.router.post(`${this.path}/hire/:id`, authMiddleware(['client']), this.jobController.hireFreelancer);

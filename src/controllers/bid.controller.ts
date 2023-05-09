@@ -5,6 +5,7 @@ import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import JobService from '@/services/job.service';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class BidController {
   public bidService = new BidService();
@@ -55,6 +56,31 @@ class BidController {
     try {
       const id: string = req.params.id;
       const data = await this.bidService.getTopBidders(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Bio By Id
+  |--------------------------------------------------------------------------
+  */
+  public getBidders = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'name:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        populate: 'user_id',
+      };
+
+      const data = await this.bidService.getBidders(id, options);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {

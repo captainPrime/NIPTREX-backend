@@ -1,0 +1,43 @@
+2023-05-09 22:57:03 info: =================================
+2023-05-09 22:57:03 info: ======= ENV: development =======
+2023-05-09 22:57:03 info: 🚀 App listening on the port 3000
+2023-05-09 22:57:03 info: =================================
+2023-05-09 22:57:05 info: Connected to Database Successfully...
+2023-05-09 22:57:06 info: Connected to email server
+2023-05-09 22:57:21 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 478.353 ms - -[0m
+2023-05-09 22:58:41 info: =================================
+2023-05-09 22:58:41 info: ======= ENV: development =======
+2023-05-09 22:58:41 info: 🚀 App listening on the port 3000
+2023-05-09 22:58:41 info: =================================
+2023-05-09 22:58:43 info: Connected to email server
+2023-05-09 22:58:49 info: Connected to Database Successfully...
+2023-05-09 22:58:55 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 676.163 ms - -[0m
+2023-05-09 23:02:09 info: =================================
+2023-05-09 23:02:09 info: ======= ENV: development =======
+2023-05-09 23:02:09 info: 🚀 App listening on the port 3000
+2023-05-09 23:02:09 info: =================================
+2023-05-09 23:02:12 info: Connected to email server
+2023-05-09 23:02:13 info: Connected to Database Successfully...
+2023-05-09 23:02:25 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 664.441 ms - -[0m
+2023-05-09 23:03:41 info: =================================
+2023-05-09 23:03:41 info: ======= ENV: development =======
+2023-05-09 23:03:41 info: 🚀 App listening on the port 3000
+2023-05-09 23:03:41 info: =================================
+2023-05-09 23:03:44 info: Connected to email server
+2023-05-09 23:03:49 info: Connected to Database Successfully...
+2023-05-09 23:03:53 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 516.352 ms - -[0m
+2023-05-09 23:04:32 info: =================================
+2023-05-09 23:04:32 info: ======= ENV: development =======
+2023-05-09 23:04:32 info: 🚀 App listening on the port 3000
+2023-05-09 23:04:32 info: =================================
+2023-05-09 23:04:35 info: Connected to email server
+2023-05-09 23:04:40 info: Connected to Database Successfully...
+2023-05-09 23:04:43 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: this.bid.paginate(...).populate is not a function
+2023-05-09 23:04:43 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 47.372 ms - 106[0m
+2023-05-09 23:07:26 info: =================================
+2023-05-09 23:07:26 info: ======= ENV: development =======
+2023-05-09 23:07:26 info: 🚀 App listening on the port 3000
+2023-05-09 23:07:26 info: =================================
+2023-05-09 23:07:30 info: Connected to email server
+2023-05-09 23:07:35 info: Connected to Database Successfully...
+2023-05-09 23:07:43 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 851.966 ms - -[0m
