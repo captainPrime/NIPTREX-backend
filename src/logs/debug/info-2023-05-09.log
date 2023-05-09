@@ -82,3 +82,4 @@
 2023-05-09 23:20:16 info: Connected to Database Successfully...
 2023-05-09 23:20:25 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd?job_type=true [32m200[0m 464.026 ms - 171[0m
 2023-05-09 23:20:29 info: [0mGET /job/client/645664b2cb65aa801c0dd5dd [32m200[0m 683.272 ms - -[0m
+2023-05-09 23:21:05 info: [0mGET /reload_db [32m200[0m 4283.183 ms - 74[0m
