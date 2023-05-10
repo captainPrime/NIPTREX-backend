@@ -918,3 +918,57 @@ Error: id can not be empty
     at Array.forEach (<anonymous>)
     at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:32:33 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:32:33 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:33:24 error: unhandledRejection: Cannot read properties of undefined (reading 'toString')
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:64
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:33:24 error: unhandledRejection: Cannot read properties of undefined (reading 'toString')
+TypeError: Cannot read properties of undefined (reading 'toString')
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:64
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:34:28 error: unhandledRejection: PROFILE_VALIDATION_ERROR
+Error: PROFILE_VALIDATION_ERROR
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:71:22)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:34:28 error: unhandledRejection: PROFILE_VALIDATION_ERROR
+Error: PROFILE_VALIDATION_ERROR
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:71:22)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:36:45 error: unhandledRejection: PROFILE_VALIDATION_ERROR
+Error: PROFILE_VALIDATION_ERROR
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:71:22)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:36:45 error: unhandledRejection: PROFILE_VALIDATION_ERROR
+Error: PROFILE_VALIDATION_ERROR
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:71:22)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

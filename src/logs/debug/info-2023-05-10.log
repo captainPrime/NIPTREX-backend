@@ -305,3 +305,42 @@
 2023-05-10 22:32:11 info: 🚀 App listening on the port 3000
 2023-05-10 22:32:11 info: =================================
 2023-05-10 22:32:13 info: Connected to email server
+2023-05-10 22:32:23 info: Connected to Database Successfully...
+2023-05-10 22:32:33 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 2942.775 ms - 310[0m
+2023-05-10 22:32:33 error: [Error] >> id can not be empty
+2023-05-10 22:33:14 info: =================================
+2023-05-10 22:33:14 info: ======= ENV: development =======
+2023-05-10 22:33:14 info: 🚀 App listening on the port 3000
+2023-05-10 22:33:14 info: =================================
+2023-05-10 22:33:16 info: Connected to email server
+2023-05-10 22:33:16 info: Connected to Database Successfully...
+2023-05-10 22:33:24 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 1798.528 ms - 310[0m
+2023-05-10 22:33:24 error: [TypeError] >> Cannot read properties of undefined (reading 'toString')
+2023-05-10 22:33:56 info: =================================
+2023-05-10 22:33:56 info: ======= ENV: development =======
+2023-05-10 22:33:56 info: 🚀 App listening on the port 3000
+2023-05-10 22:33:56 info: =================================
+2023-05-10 22:33:58 info: Connected to email server
+2023-05-10 22:34:12 info: =================================
+2023-05-10 22:34:12 info: ======= ENV: development =======
+2023-05-10 22:34:12 info: 🚀 App listening on the port 3000
+2023-05-10 22:34:12 info: =================================
+2023-05-10 22:34:14 info: Connected to email server
+2023-05-10 22:34:19 info: Connected to Database Successfully...
+2023-05-10 22:34:28 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 2020.231 ms - 310[0m
+2023-05-10 22:34:28 error: [Error] >> PROFILE_VALIDATION_ERROR
+2023-05-10 22:36:30 info: =================================
+2023-05-10 22:36:30 info: ======= ENV: development =======
+2023-05-10 22:36:30 info: 🚀 App listening on the port 3000
+2023-05-10 22:36:30 info: =================================
+2023-05-10 22:36:32 info: Connected to email server
+2023-05-10 22:36:39 info: Connected to Database Successfully...
+2023-05-10 22:36:45 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 1616.784 ms - 310[0m
+2023-05-10 22:36:45 error: [Error] >> PROFILE_VALIDATION_ERROR
+2023-05-10 22:37:09 info: =================================
+2023-05-10 22:37:09 info: ======= ENV: development =======
+2023-05-10 22:37:09 info: 🚀 App listening on the port 3000
+2023-05-10 22:37:09 info: =================================
+2023-05-10 22:37:11 info: Connected to email server
+2023-05-10 22:37:12 info: Connected to Database Successfully...
+2023-05-10 22:37:18 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 2021.383 ms - 310[0m
