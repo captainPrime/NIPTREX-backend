@@ -4,10 +4,11 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
-import { Experience, Education, Certification, Preference, Identity, Billing, About } from '@/models/profile.model';
+import { Experience, Education, Certification, Preference, Identity, Billing, About, Bio } from '@/models/profile.model';
 import { IEducationHistory, IExperience, IUpdateEducationHistory, IUpdateExperience } from '@/interfaces/profile.interface';
 
 class ProfileService {
+  public bio: any = Bio;
   public about: any = About;
   public billing: any = Billing;
   public identity: any = Identity;
@@ -31,6 +32,7 @@ class ProfileService {
       return findOneUserData;
     }
 
+    const bio = await this.bio.findOne({ user_id: userId });
     const about = await this.about.findOne({ user_id: userId });
     const billing = await this.billing.find({ user_id: userId });
     const identity = await this.identity.find({ user_id: userId });
@@ -68,6 +70,7 @@ class ProfileService {
       available_to_work: about?.available_to_work,
       social_links: about?.social_links,
       languages: about?.languages,
+      bio: bio,
       work_preferences: preference[0],
       education_history: education,
       experience,

@@ -234,3 +234,11 @@
 2023-05-10 22:08:09 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 217.065 ms - 171[0m
 2023-05-10 22:08:16 info: [0mGET /bid/getTopBidders/6446671bb75c302107beb742 [32m200[0m 1671.273 ms - 80[0m
 2023-05-10 22:08:41 info: [0mGET /bid/proposals/645c076fa3f9cb1968beaa46 [32m200[0m 449.607 ms - -[0m
+2023-05-10 22:11:34 info: =================================
+2023-05-10 22:11:34 info: ======= ENV: development =======
+2023-05-10 22:11:34 info: 🚀 App listening on the port 3000
+2023-05-10 22:11:34 info: =================================
+2023-05-10 22:11:36 info: Connected to email server
+2023-05-10 22:11:47 info: Connected to Database Successfully...
+2023-05-10 22:11:57 info: [0mGET /job/getFreelancerContracts?status=cancelled [32m200[0m 668.417 ms - 171[0m
+2023-05-10 22:12:02 info: [0mGET /job/getFreelancerContracts [32m200[0m 864.273 ms - -[0m
