@@ -202,3 +202,11 @@
 2023-05-10 22:03:26 info: [0mGET /job/getAllJobs [32m200[0m 219.279 ms - 171[0m
 2023-05-10 22:03:31 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
 2023-05-10 22:03:31 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 242.254 ms - 82[0m
+2023-05-10 22:04:45 info: =================================
+2023-05-10 22:04:45 info: ======= ENV: development =======
+2023-05-10 22:04:45 info: 🚀 App listening on the port 3000
+2023-05-10 22:04:45 info: =================================
+2023-05-10 22:04:48 info: Connected to email server
+2023-05-10 22:04:57 info: Connected to Database Successfully...
+2023-05-10 22:05:00 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 2961.194 ms - -[0m
+2023-05-10 22:05:18 info: [0mGET /reload_db [32m200[0m 4497.117 ms - 74[0m

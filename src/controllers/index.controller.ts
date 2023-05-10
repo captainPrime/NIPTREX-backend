@@ -1,4 +1,5 @@
 // import Profile from '@/models/profile.model';
+import { BiddingModel } from '@/models/bid.model';
 import { JobModel, SavedJob } from '@/models/job.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
 import User from '@/models/users.model';
@@ -6,6 +7,7 @@ import { NextFunction, Request, Response } from 'express';
 
 class IndexController {
   public users = User;
+  public bid: any = BiddingModel;
   public job: any = JobModel;
   public saveJob: any = SavedJob;
   public about: any = About;
@@ -41,6 +43,7 @@ class IndexController {
       await this.certification.deleteMany({});
       await this.job.deleteMany({});
       await this.saveJob.deleteMany({});
+      await this.bid.deleteMany({});
 
       const user = {
         first_name: 'John',
