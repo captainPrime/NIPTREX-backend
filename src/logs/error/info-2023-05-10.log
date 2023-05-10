@@ -73,3 +73,6 @@ Error: id can not be empty
 2023-05-10 21:57:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-10 22:01:52 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
 2023-05-10 22:03:31 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-10 22:06:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:06:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:07:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
