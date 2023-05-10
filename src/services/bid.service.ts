@@ -46,6 +46,20 @@ class BidService {
 
   /*
   |--------------------------------------------------------------------------
+  | getAllBidders
+  |--------------------------------------------------------------------------
+  */
+  public async getAllBidders(id: string | mongoose.Types.ObjectId): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 4004, 'id canhh not be empty');
+
+    const data = await this.bid.find({ job_id: id });
+    if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | getTopBidders
   |--------------------------------------------------------------------------
   */

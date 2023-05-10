@@ -76,3 +76,75 @@ Error: id can not be empty
 2023-05-10 22:06:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-10 22:06:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-10 22:07:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:25:45 error: [POST] /bid/hire/645c02c0dd12f16ccc0c6527 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-10 22:25:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:25:55 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:346:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:25:55 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:346:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:26:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:346:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:26:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:346:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:28:04 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:28:04 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:29:26 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:29:26 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:35
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:30:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:30:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:348:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

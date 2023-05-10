@@ -8,9 +8,11 @@ import { HttpException } from '@/exceptions/HttpException';
 import PreferenceService from '@/services/preference.service';
 import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
 import { IUpdateJob, JobStatus, PaginationOptions } from '@/interfaces/job.inteface';
+import BidService from '@/services/bid.service';
 
 class JobController {
   public jobService = new JobService();
+  public bidService = new BidService();
   public userService = new UserService();
   public aboutService = new AboutService();
   public preferenceService = new PreferenceService();
@@ -335,6 +337,15 @@ class JobController {
       await this.jobService.updateJobById(job._id.toString(), {
         status: JobStatus.TAKEN,
         activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
+      });
+
+      // return user nips
+      const bidders = await this.bidService.getAllBidders(job._id.toString());
+      const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== '123445').map((bidder: any) => bidder.user_id.toString());
+
+      console.log('USER IDS', userIds);
+      userIds.forEach(async (bidder: any) => {
+        await this.aboutService.updateAboutById(bidder.user_id, { nips: +job.bidding_amount });
       });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
