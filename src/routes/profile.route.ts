@@ -9,11 +9,13 @@ import EducationController from '@/controllers/education.controller';
 import PreferenceController from '@/controllers/preference.controller';
 import CertificationController from '@/controllers/certification.controller';
 import BioController from '@/controllers/bio.controller';
+import JobController from '@/controllers/job.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
   public bioController = new BioController();
+  public jobController = new JobController();
   public aboutController = new AboutController();
   public billingController = new BillingController();
   public profileController = new ProfileController();
@@ -117,6 +119,13 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/bio`, authMiddleware(['freelancer', 'client']), this.bioController.updateBio);
     this.router.delete(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.deleteBio);
     this.router.get(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.getBioById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Bio Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.get(`${this.path}/freelanceWorkHistory`, authMiddleware(['freelancer', 'client']), this.jobController.freelanceWorkHistory);
   }
 }
 

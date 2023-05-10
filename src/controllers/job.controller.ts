@@ -382,6 +382,31 @@ class JobController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Freelance Work History
+  |--------------------------------------------------------------------------
+  */
+  public freelanceWorkHistory = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.user.id;
+
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'name:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        populate: 'job_id',
+      };
+
+      const data = await this.jobService.freelanceWorkHistory(id, req.query, options);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default JobController;

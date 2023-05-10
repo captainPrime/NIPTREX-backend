@@ -202,3 +202,8 @@ Error: PROFILE_VALIDATION_ERROR
     at Array.forEach (<anonymous>)
     at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:347:15)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-10 22:46:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:47:52 error: [GET] /profile/freelanceWorkHistory >> StatusCode:: 400, Message:: this.hire.paginate is not a function
+2023-05-10 22:48:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:49:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:51:16 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

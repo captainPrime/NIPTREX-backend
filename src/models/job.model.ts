@@ -101,6 +101,7 @@ const HireJobSchema: Schema = new Schema(
 
 JobSchema.plugin(toJSON);
 JobSchema.plugin(paginate);
+HireJobSchema.plugin(paginate);
 SavedJobSchema.plugin(toJSON);
 
 const JobModel = model<IJob>('Job', JobSchema);

@@ -350,6 +350,23 @@ class JobService {
 
   /*
   |--------------------------------------------------------------------------
+  | Work History
+  |--------------------------------------------------------------------------
+  */
+  public async freelanceWorkHistory(userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'payload can not be empty');
+
+    const filter = {
+      user_id: userId,
+      ...otherQuery,
+    };
+
+    const data = await this.hire.paginate(filter, options);
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get All Freelance Contracts
   |--------------------------------------------------------------------------
   */

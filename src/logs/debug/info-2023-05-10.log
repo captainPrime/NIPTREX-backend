@@ -344,3 +344,109 @@
 2023-05-10 22:37:11 info: Connected to email server
 2023-05-10 22:37:12 info: Connected to Database Successfully...
 2023-05-10 22:37:18 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 2021.383 ms - 310[0m
+2023-05-10 22:46:16 info: =================================
+2023-05-10 22:46:16 info: ======= ENV: development =======
+2023-05-10 22:46:16 info: 🚀 App listening on the port 3000
+2023-05-10 22:46:16 info: =================================
+2023-05-10 22:46:19 info: Connected to email server
+2023-05-10 22:46:24 info: Connected to Database Successfully...
+2023-05-10 22:46:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:46:54 info: [0mPOST /auth/login [32m200[0m 657.521 ms - 587[0m
+2023-05-10 22:47:01 info: [0mGET /profile [32m200[0m 1026.716 ms - 440[0m
+2023-05-10 22:47:52 error: [GET] /profile/freelanceWorkHistory >> StatusCode:: 400, Message:: this.hire.paginate is not a function
+2023-05-10 22:47:52 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 553.403 ms - 93[0m
+2023-05-10 22:48:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:48:04 info: [0mPOST /auth/login [32m200[0m 641.094 ms - 587[0m
+2023-05-10 22:48:52 info: =================================
+2023-05-10 22:48:52 info: ======= ENV: development =======
+2023-05-10 22:48:52 info: 🚀 App listening on the port 3000
+2023-05-10 22:48:52 info: =================================
+2023-05-10 22:48:55 info: Connected to email server
+2023-05-10 22:49:00 info: Connected to Database Successfully...
+2023-05-10 22:49:07 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 459.424 ms - 171[0m
+2023-05-10 22:49:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:49:27 info: [0mPOST /auth/login [32m200[0m 596.498 ms - 587[0m
+2023-05-10 22:49:30 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 436.979 ms - 171[0m
+2023-05-10 22:50:39 info: [0mGET /profile/freelanceWorkHistory?id=645c075da3f9cb1968beaa3d [32m200[0m 427.936 ms - 171[0m
+2023-05-10 22:51:16 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:51:16 info: [0mPOST /auth/login [32m200[0m 496.464 ms - 587[0m
+2023-05-10 22:51:27 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 2827.612 ms - 310[0m
+2023-05-10 22:51:57 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 443.771 ms - 171[0m
+2023-05-10 22:52:15 info: =================================
+2023-05-10 22:52:15 info: ======= ENV: development =======
+2023-05-10 22:52:15 info: 🚀 App listening on the port 3000
+2023-05-10 22:52:15 info: =================================
+2023-05-10 22:52:18 info: Connected to email server
+2023-05-10 22:52:28 info: Connected to Database Successfully...
+2023-05-10 22:53:05 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 659.449 ms - 171[0m
+2023-05-10 22:54:22 info: =================================
+2023-05-10 22:54:22 info: ======= ENV: development =======
+2023-05-10 22:54:22 info: 🚀 App listening on the port 3000
+2023-05-10 22:54:22 info: =================================
+2023-05-10 22:54:24 info: Connected to email server
+2023-05-10 22:54:34 info: Connected to Database Successfully...
+2023-05-10 22:55:03 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 479.839 ms - 171[0m
+2023-05-10 22:56:15 info: =================================
+2023-05-10 22:56:15 info: ======= ENV: development =======
+2023-05-10 22:56:15 info: 🚀 App listening on the port 3000
+2023-05-10 22:56:15 info: =================================
+2023-05-10 22:56:18 info: Connected to email server
+2023-05-10 22:56:23 info: Connected to Database Successfully...
+2023-05-10 22:56:31 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 451.075 ms - 80[0m
+2023-05-10 22:57:19 info: [0mPOST /bid/hire/645c02c0dd12f16ccc0c6527 [32m200[0m 1731.053 ms - 310[0m
+2023-05-10 22:57:47 info: =================================
+2023-05-10 22:57:47 info: ======= ENV: development =======
+2023-05-10 22:57:47 info: 🚀 App listening on the port 3000
+2023-05-10 22:57:47 info: =================================
+2023-05-10 22:57:49 info: Connected to email server
+2023-05-10 22:57:49 info: Connected to Database Successfully...
+2023-05-10 22:57:59 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 466.665 ms - -[0m
+2023-05-10 22:58:55 info: =================================
+2023-05-10 22:58:55 info: ======= ENV: development =======
+2023-05-10 22:58:55 info: 🚀 App listening on the port 3000
+2023-05-10 22:58:55 info: =================================
+2023-05-10 22:58:57 info: Connected to email server
+2023-05-10 22:59:02 info: Connected to Database Successfully...
+2023-05-10 22:59:08 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 460.263 ms - -[0m
+2023-05-10 22:59:36 info: =================================
+2023-05-10 22:59:36 info: ======= ENV: development =======
+2023-05-10 22:59:36 info: 🚀 App listening on the port 3000
+2023-05-10 22:59:36 info: =================================
+2023-05-10 22:59:38 info: Connected to email server
+2023-05-10 22:59:39 info: Connected to Database Successfully...
+2023-05-10 22:59:50 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 753.329 ms - -[0m
+2023-05-10 23:00:23 info: =================================
+2023-05-10 23:00:23 info: ======= ENV: development =======
+2023-05-10 23:00:23 info: 🚀 App listening on the port 3000
+2023-05-10 23:00:23 info: =================================
+2023-05-10 23:00:25 info: Connected to email server
+2023-05-10 23:00:35 info: Connected to Database Successfully...
+2023-05-10 23:00:40 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 459.728 ms - 80[0m
+2023-05-10 23:01:19 info: =================================
+2023-05-10 23:01:19 info: ======= ENV: development =======
+2023-05-10 23:01:19 info: 🚀 App listening on the port 3000
+2023-05-10 23:01:19 info: =================================
+2023-05-10 23:01:20 info: Connected to email server
+2023-05-10 23:01:21 info: Connected to Database Successfully...
+2023-05-10 23:01:45 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 880.145 ms - -[0m
+2023-05-10 23:02:18 info: =================================
+2023-05-10 23:02:18 info: ======= ENV: development =======
+2023-05-10 23:02:18 info: 🚀 App listening on the port 3000
+2023-05-10 23:02:18 info: =================================
+2023-05-10 23:02:20 info: Connected to email server
+2023-05-10 23:02:30 info: Connected to Database Successfully...
+2023-05-10 23:02:51 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 705.105 ms - -[0m
+2023-05-10 23:04:48 info: =================================
+2023-05-10 23:04:48 info: ======= ENV: development =======
+2023-05-10 23:04:48 info: 🚀 App listening on the port 3000
+2023-05-10 23:04:48 info: =================================
+2023-05-10 23:04:51 info: Connected to email server
+2023-05-10 23:04:51 info: Connected to Database Successfully...
+2023-05-10 23:04:57 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 529.246 ms - 82[0m
+2023-05-10 23:05:54 info: =================================
+2023-05-10 23:05:54 info: ======= ENV: development =======
+2023-05-10 23:05:54 info: 🚀 App listening on the port 3000
+2023-05-10 23:05:54 info: =================================
+2023-05-10 23:05:56 info: Connected to email server
+2023-05-10 23:05:56 info: Connected to Database Successfully...
+2023-05-10 23:06:05 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 691.875 ms - 171[0m
