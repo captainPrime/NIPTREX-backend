@@ -57,3 +57,44 @@
 2023-05-10 21:35:07 info: ======= ENV: development =======
 2023-05-10 21:35:07 info: 🚀 App listening on the port 3000
 2023-05-10 21:35:07 info: =================================
+2023-05-10 21:35:09 info: Connected to email server
+2023-05-10 21:35:09 info: Connected to Database Successfully...
+2023-05-10 21:35:13 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 501.606 ms - 70[0m
+2023-05-10 21:35:13 error: [Error] >> id can not be empty
+2023-05-10 21:36:04 info: =================================
+2023-05-10 21:36:04 info: ======= ENV: development =======
+2023-05-10 21:36:04 info: 🚀 App listening on the port 3000
+2023-05-10 21:36:04 info: =================================
+2023-05-10 21:36:08 info: Connected to email server
+2023-05-10 21:36:12 info: Connected to Database Successfully...
+2023-05-10 21:36:16 error: [Error] >> id can not be empty
+2023-05-10 21:38:42 info: =================================
+2023-05-10 21:38:42 info: ======= ENV: development =======
+2023-05-10 21:38:42 info: 🚀 App listening on the port 3000
+2023-05-10 21:38:42 info: =================================
+2023-05-10 21:38:45 info: Connected to email server
+2023-05-10 21:39:00 info: Connected to Database Successfully...
+2023-05-10 21:39:11 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-10 21:39:11 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 468.553 ms - 77[0m
+2023-05-10 21:39:43 info: =================================
+2023-05-10 21:39:43 info: ======= ENV: development =======
+2023-05-10 21:39:43 info: 🚀 App listening on the port 3000
+2023-05-10 21:39:43 info: =================================
+2023-05-10 21:39:46 info: Connected to email server
+2023-05-10 21:39:46 info: Connected to Database Successfully...
+2023-05-10 21:40:09 info: =================================
+2023-05-10 21:40:09 info: ======= ENV: development =======
+2023-05-10 21:40:09 info: 🚀 App listening on the port 3000
+2023-05-10 21:40:09 info: =================================
+2023-05-10 21:40:18 info: Connected to Database Successfully...
+2023-05-10 21:40:23 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-10 21:40:23 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 547.197 ms - 77[0m
+2023-05-10 21:40:42 info: Connected to email server
+2023-05-10 21:41:14 info: =================================
+2023-05-10 21:41:14 info: ======= ENV: development =======
+2023-05-10 21:41:14 info: 🚀 App listening on the port 3000
+2023-05-10 21:41:14 info: =================================
+2023-05-10 21:41:18 info: Connected to email server
+2023-05-10 21:41:22 info: Connected to Database Successfully...
+2023-05-10 21:41:27 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-10 21:41:27 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 1075.815 ms - 77[0m

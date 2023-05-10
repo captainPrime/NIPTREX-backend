@@ -52,29 +52,19 @@ class BidService {
   public async getBidders(id: mongoose.Types.ObjectId | string, options: PaginationOptions): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
 
-    const pipeline = [
-      {
-        $match: { job_id: id },
-      },
-      {
-        $lookup: {
-          from: 'abouts',
-          localField: 'user_id',
-          foreignField: 'user_id',
-          as: 'about',
-        },
-      },
-    ];
     const data = await this.bid.paginate({ job_id: id }, options);
-    // const data = await this.bid.aggregate(pipeline);
+
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
 
-    data.results.forEach(async (job: any) => {
-      const about = await this.aboutService.getAboutById(job.user_id);
+    const results = await Promise.all(
+      data.results.map(async (job: any) => {
+        console.log('ID', job);
+        const about = await this.aboutService.getAboutById(job.user_id);
+        return { job, about };
+      }),
+    );
 
-      const updatedData = { job, about };
-      return updatedData;
-    });
+    return { ...data, results };
   }
 
   /*

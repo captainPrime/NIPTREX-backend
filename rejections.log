@@ -816,3 +816,35 @@ Error: Channel closed
     at Module.require (node:internal/modules/cjs/loader:1057:19)
     at require (node:internal/modules/cjs/helpers:103:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-05-10 21:35:13 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:35:13 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:36:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:36:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)

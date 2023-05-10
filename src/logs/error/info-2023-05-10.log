@@ -25,3 +25,38 @@ Error: Channel closed
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
 2023-05-10 21:27:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-10 21:28:19 error: [POST] /bid/645acd78b8969882155cb550 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-05-10 21:35:13 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:35:13 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:36:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:36:16 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.getAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:53:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:73:45
+    at Array.forEach (<anonymous>)
+    at BidService.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/bid.service.ts:72:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at BidController.getBidders (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/bid.controller.ts:83:20)
+2023-05-10 21:39:11 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-10 21:40:23 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-10 21:41:27 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
