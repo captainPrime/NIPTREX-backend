@@ -1,0 +1,59 @@
+2023-05-10 21:15:54 info: =================================
+2023-05-10 21:15:54 info: ======= ENV: development =======
+2023-05-10 21:15:54 info: 🚀 App listening on the port 3000
+2023-05-10 21:15:54 info: =================================
+2023-05-10 21:15:59 info: Connected to email server
+2023-05-10 21:16:09 info: Connected to Database Successfully...
+2023-05-10 21:16:16 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:16:16 info: [0mPOST /auth/login [32m200[0m 895.617 ms - 587[0m
+2023-05-10 21:16:22 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 1227.259 ms - 80[0m
+2023-05-10 21:16:32 info: [0mGET /job/getAllJobs [32m200[0m 228.636 ms - -[0m
+2023-05-10 21:17:02 info: =================================
+2023-05-10 21:17:02 info: ======= ENV: development =======
+2023-05-10 21:17:02 info: 🚀 App listening on the port 3000
+2023-05-10 21:17:02 info: =================================
+2023-05-10 21:17:04 info: Connected to email server
+2023-05-10 21:17:04 info: Connected to Database Successfully...
+2023-05-10 21:17:09 info: [0mGET /job/getAllJobs [32m200[0m 260.551 ms - -[0m
+2023-05-10 21:17:14 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 225.822 ms - 80[0m
+2023-05-10 21:25:08 error: [Error] >> Channel closed
+2023-05-10 21:25:22 info: =================================
+2023-05-10 21:25:22 info: ======= ENV: development =======
+2023-05-10 21:25:22 info: 🚀 App listening on the port 3000
+2023-05-10 21:25:22 info: =================================
+2023-05-10 21:25:25 info: Connected to email server
+2023-05-10 21:25:26 info: Connected to Database Successfully...
+2023-05-10 21:27:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:27:58 info: [0mPOST /auth/login [32m200[0m 567.587 ms - 587[0m
+2023-05-10 21:28:03 info: [0mGET /job/getAllJobs [32m200[0m 250.007 ms - -[0m
+2023-05-10 21:28:19 error: [POST] /bid/645acd78b8969882155cb550 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-05-10 21:28:19 info: [0mPOST /bid/645acd78b8969882155cb550 [32m200[0m 1442.251 ms - 75[0m
+2023-05-10 21:28:44 info: =================================
+2023-05-10 21:28:44 info: ======= ENV: development =======
+2023-05-10 21:28:44 info: 🚀 App listening on the port 3000
+2023-05-10 21:28:44 info: =================================
+2023-05-10 21:28:46 info: Connected to email server
+2023-05-10 21:28:52 info: Connected to Database Successfully...
+2023-05-10 21:29:50 info: =================================
+2023-05-10 21:29:50 info: ======= ENV: development =======
+2023-05-10 21:29:50 info: 🚀 App listening on the port 3000
+2023-05-10 21:29:50 info: =================================
+2023-05-10 21:29:53 info: Connected to email server
+2023-05-10 21:29:58 info: Connected to Database Successfully...
+2023-05-10 21:30:05 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 476.128 ms - -[0m
+2023-05-10 21:30:29 info: =================================
+2023-05-10 21:30:29 info: ======= ENV: development =======
+2023-05-10 21:30:29 info: 🚀 App listening on the port 3000
+2023-05-10 21:30:29 info: =================================
+2023-05-10 21:30:32 info: Connected to email server
+2023-05-10 21:30:41 info: Connected to Database Successfully...
+2023-05-10 21:30:46 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 513.927 ms - -[0m
+2023-05-10 21:34:41 info: =================================
+2023-05-10 21:34:41 info: ======= ENV: development =======
+2023-05-10 21:34:41 info: 🚀 App listening on the port 3000
+2023-05-10 21:34:41 info: =================================
+2023-05-10 21:34:43 info: Connected to email server
+2023-05-10 21:35:06 info: =================================
+2023-05-10 21:35:07 info: ======= ENV: development =======
+2023-05-10 21:35:07 info: 🚀 App listening on the port 3000
+2023-05-10 21:35:07 info: =================================

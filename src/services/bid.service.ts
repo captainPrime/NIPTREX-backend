@@ -6,10 +6,11 @@ import { BiddingModel, IBidding } from '@/models/bid.model';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { About } from '@/models/profile.model';
+import AboutService from './about.service';
 
 class BidService {
   public bid: any = BiddingModel;
-  public about: any = About;
+  public aboutService = new AboutService();
   public userService = new UserService();
 
   /*
@@ -64,15 +65,16 @@ class BidService {
         },
       },
     ];
-    // const data = await this.bid.paginate({ job_id: id }, options);
-    const data = await this.bid.aggregate(pipeline);
+    const data = await this.bid.paginate({ job_id: id }, options);
+    // const data = await this.bid.aggregate(pipeline);
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
 
-    // const updatedData = data.forEach(async (user: string) => {
-    //   const data = await this.about.paginate({ job_id: id }, options);
-    // });
+    data.results.forEach(async (job: any) => {
+      const about = await this.aboutService.getAboutById(job.user_id);
 
-    return data;
+      const updatedData = { job, about };
+      return updatedData;
+    });
   }
 
   /*
