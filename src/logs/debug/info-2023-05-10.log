@@ -450,3 +450,25 @@
 2023-05-10 23:05:56 info: Connected to email server
 2023-05-10 23:05:56 info: Connected to Database Successfully...
 2023-05-10 23:06:05 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 691.875 ms - 171[0m
+2023-05-10 23:08:47 info: =================================
+2023-05-10 23:08:47 info: ======= ENV: development =======
+2023-05-10 23:08:47 info: 🚀 App listening on the port 3000
+2023-05-10 23:08:47 info: =================================
+2023-05-10 23:08:49 info: Connected to email server
+2023-05-10 23:08:50 info: Connected to Database Successfully...
+2023-05-10 23:08:58 info: [0mGET /profile/freelanceWorkHistory?id=645c02c0dd12f16ccc0c6527 [32m200[0m 457.978 ms - 171[0m
+2023-05-10 23:09:02 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 440.773 ms - 171[0m
+2023-05-10 23:09:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 23:09:07 info: [0mPOST /auth/login [32m200[0m 778.335 ms - 587[0m
+2023-05-10 23:09:13 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 444.550 ms - 171[0m
+2023-05-10 23:09:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 23:09:18 info: [0mPOST /auth/login [32m200[0m 614.234 ms - 587[0m
+2023-05-10 23:09:24 info: [0mGET /profile [32m200[0m 3275.662 ms - -[0m
+2023-05-10 23:09:33 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 444.775 ms - 171[0m
+2023-05-10 23:09:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 23:09:39 info: [0mPOST /auth/login [32m200[0m 477.309 ms - 587[0m
+2023-05-10 23:10:04 info: [0mGET /bid/proposals/645c076fa3f9cb1968beaa46 [32m200[0m 522.531 ms - -[0m
+2023-05-10 23:10:19 info: [0mPOST /bid/hire/645c075da3f9cb1968beaa3f [32m200[0m 2702.509 ms - 310[0m
+2023-05-10 23:10:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 23:10:28 info: [0mPOST /auth/login [32m200[0m 590.617 ms - 587[0m
+2023-05-10 23:10:32 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 667.712 ms - -[0m

@@ -357,7 +357,7 @@ class JobService {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'payload can not be empty');
 
     const filter = {
-      user_id: userId,
+      user_id: userId.toString(),
       ...otherQuery,
     };
 
