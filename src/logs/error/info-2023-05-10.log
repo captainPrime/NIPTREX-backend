@@ -63,3 +63,13 @@ Error: id can not be empty
 2023-05-10 21:42:41 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
 2023-05-10 21:43:30 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: id can not be empty
 2023-05-10 21:44:08 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:46:37 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:47:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:47:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:49:03 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:49:08 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:49:47 error: [GET] /profile/about/645c02c0dd12f16ccc0c6527 >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:56:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:57:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 22:01:52 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-10 22:03:31 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty

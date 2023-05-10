@@ -30,13 +30,13 @@ class BidController {
       }
 
       const bidJob = await this.bidService.getBidById(id);
-      if (bidJob && bidJob.user_id.toString() === req.user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
+      if (bidJob && bidJob.user_id.toString() === user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
-      const about = await this.aboutService.getUserAbout(req.user.id);
+      const about = await this.aboutService.getUserAbout(user.id);
       if (about.nips < userData.bidding_amount) throw new HttpException(400, 4002, 'INSUFFICIENT_NIPS_TO_BID');
 
-      const data = await this.bidService.bidJob({ ...userData, user_id: req.user.id, job_id: id });
-      await this.aboutService.updateAboutById(req.user.id, { nips: about.nips - userData.bidding_amount });
+      const data = await this.bidService.bidJob({ ...userData, user_id: user.id, job_id: id });
+      await this.aboutService.updateAboutById(user.id, { nips: about.nips - userData.bidding_amount });
 
       // update job
       await this.jobService.updateJobById(id.toString(), { activities: { proposals: +1 } });

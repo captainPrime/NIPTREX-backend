@@ -126,3 +126,79 @@
 2023-05-10 21:45:24 info: ======= ENV: development =======
 2023-05-10 21:45:24 info: 🚀 App listening on the port 3000
 2023-05-10 21:45:24 info: =================================
+2023-05-10 21:45:31 info: Connected to Database Successfully...
+2023-05-10 21:45:37 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 553.435 ms - -[0m
+2023-05-10 21:45:57 info: Connected to email server
+2023-05-10 21:46:37 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:46:37 info: [0mGET /profile/about/644629db25cddbc7acdd4c8e [32m200[0m 464.895 ms - 73[0m
+2023-05-10 21:46:56 info: [0mGET /reload_db [32m200[0m 3210.585 ms - 74[0m
+2023-05-10 21:47:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:47:01 info: [0mPOST /auth/login [32m200[0m 568.153 ms - 587[0m
+2023-05-10 21:47:11 info: [0mPOST /job [32m200[0m 757.609 ms - 927[0m
+2023-05-10 21:47:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:47:21 info: [0mPOST /auth/login [32m200[0m 518.125 ms - 587[0m
+2023-05-10 21:47:33 info: [0mPOST /profile/about [32m200[0m 1935.209 ms - -[0m
+2023-05-10 21:47:49 info: [0mPOST /bid/645c02cedd12f16ccc0c652e [32m200[0m 3007.868 ms - -[0m
+2023-05-10 21:47:54 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 1196.623 ms - -[0m
+2023-05-10 21:48:13 info: [0mGET /job/getAllJobs [32m200[0m 224.672 ms - 1020[0m
+2023-05-10 21:49:03 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:49:03 info: [0mGET /profile/about/644629db25cddbc7acdd4c8e [32m200[0m 447.382 ms - 73[0m
+2023-05-10 21:49:08 error: [GET] /profile/about/644629db25cddbc7acdd4c8e >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:49:08 info: [0mGET /profile/about/644629db25cddbc7acdd4c8e [32m200[0m 436.390 ms - 73[0m
+2023-05-10 21:49:17 info: [0mGET /profile/about [32m200[0m 1092.075 ms - -[0m
+2023-05-10 21:49:37 info: [0mGET /profile [32m200[0m 2243.689 ms - -[0m
+2023-05-10 21:49:47 error: [GET] /profile/about/645c02c0dd12f16ccc0c6527 >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-05-10 21:49:47 info: [0mGET /profile/about/645c02c0dd12f16ccc0c6527 [32m200[0m 618.048 ms - 73[0m
+2023-05-10 21:50:22 info: [0mGET /profile/about/645c02e4dd12f16ccc0c6536 [32m200[0m 436.770 ms - -[0m
+2023-05-10 21:50:31 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 591.254 ms - -[0m
+2023-05-10 21:52:00 info: =================================
+2023-05-10 21:52:00 info: ======= ENV: development =======
+2023-05-10 21:52:00 info: 🚀 App listening on the port 3000
+2023-05-10 21:52:00 info: =================================
+2023-05-10 21:52:02 info: Connected to email server
+2023-05-10 21:52:15 info: Connected to Database Successfully...
+2023-05-10 21:52:20 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 1099.729 ms - -[0m
+2023-05-10 21:53:38 info: [0mGET /profile/about [32m200[0m 640.179 ms - -[0m
+2023-05-10 21:53:49 info: [0mGET /profile [32m200[0m 3375.841 ms - -[0m
+2023-05-10 21:54:26 info: =================================
+2023-05-10 21:54:26 info: ======= ENV: development =======
+2023-05-10 21:54:26 info: 🚀 App listening on the port 3000
+2023-05-10 21:54:26 info: =================================
+2023-05-10 21:54:28 info: Connected to email server
+2023-05-10 21:54:28 info: Connected to Database Successfully...
+2023-05-10 21:54:38 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 590.940 ms - -[0m
+2023-05-10 21:56:39 info: =================================
+2023-05-10 21:56:39 info: ======= ENV: development =======
+2023-05-10 21:56:39 info: 🚀 App listening on the port 3000
+2023-05-10 21:56:39 info: =================================
+2023-05-10 21:56:41 info: Connected to email server
+2023-05-10 21:56:42 info: Connected to Database Successfully...
+2023-05-10 21:56:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:56:57 info: [0mPOST /auth/login [32m200[0m 830.144 ms - 587[0m
+2023-05-10 21:57:12 info: [0mPOST /job [32m200[0m 686.891 ms - 935[0m
+2023-05-10 21:57:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-10 21:57:31 info: [0mPOST /auth/login [32m200[0m 619.853 ms - 587[0m
+2023-05-10 21:57:35 info: [0mGET /job/getAllJobs [32m200[0m 247.403 ms - -[0m
+2023-05-10 21:58:07 info: [0mGET /profile [32m200[0m 2801.709 ms - -[0m
+2023-05-10 21:58:20 info: [0mPOST /bid/645c05289e4593bfad51254a [32m200[0m 3281.687 ms - -[0m
+2023-05-10 21:58:30 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 849.810 ms - -[0m
+2023-05-10 22:00:26 info: =================================
+2023-05-10 22:00:26 info: ======= ENV: development =======
+2023-05-10 22:00:26 info: 🚀 App listening on the port 3000
+2023-05-10 22:00:26 info: =================================
+2023-05-10 22:00:28 info: Connected to email server
+2023-05-10 22:00:34 info: Connected to Database Successfully...
+2023-05-10 22:00:38 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 533.206 ms - -[0m
+2023-05-10 22:01:41 info: =================================
+2023-05-10 22:01:41 info: ======= ENV: development =======
+2023-05-10 22:01:41 info: 🚀 App listening on the port 3000
+2023-05-10 22:01:41 info: =================================
+2023-05-10 22:01:44 info: Connected to Database Successfully...
+2023-05-10 22:01:44 info: Connected to email server
+2023-05-10 22:01:52 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-10 22:01:52 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 251.242 ms - 82[0m
+2023-05-10 22:02:41 info: [0mGET /profile/about [32m200[0m 774.071 ms - -[0m
+2023-05-10 22:03:21 info: [0mGET /reload_db [32m200[0m 3965.451 ms - 74[0m
+2023-05-10 22:03:26 info: [0mGET /job/getAllJobs [32m200[0m 219.279 ms - 171[0m
+2023-05-10 22:03:31 error: [GET] /bid/proposals/6446671bb75c302107beb742 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-10 22:03:31 info: [0mGET /bid/proposals/6446671bb75c302107beb742 [32m200[0m 242.254 ms - 82[0m
