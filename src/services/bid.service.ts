@@ -58,8 +58,8 @@ class BidService {
 
     const results = await Promise.all(
       data.results.map(async (job: any) => {
-        console.log('ID', job);
-        const about = await this.aboutService.getAboutById(job.user_id);
+        console.log('ID', job.user_id);
+        const about = await this.aboutService.getUserAbout(job.user_id.toString());
         return { job, about };
       }),
     );
