@@ -5,9 +5,11 @@ import { HttpException } from '@exceptions/HttpException';
 import { BiddingModel, IBidding } from '@/models/bid.model';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
 import { PaginationOptions } from '@/interfaces/job.inteface';
+import { About } from '@/models/profile.model';
 
 class BidService {
   public bid: any = BiddingModel;
+  public about: any = About;
   public userService = new UserService();
 
   /*
@@ -49,8 +51,26 @@ class BidService {
   public async getBidders(id: mongoose.Types.ObjectId | string, options: PaginationOptions): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
 
-    const data = await this.bid.paginate({ job_id: id }, options);
+    const pipeline = [
+      {
+        $match: { job_id: id },
+      },
+      {
+        $lookup: {
+          from: 'abouts',
+          localField: 'user_id',
+          foreignField: 'user_id',
+          as: 'about',
+        },
+      },
+    ];
+    // const data = await this.bid.paginate({ job_id: id }, options);
+    const data = await this.bid.aggregate(pipeline);
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
+
+    // const updatedData = data.forEach(async (user: string) => {
+    //   const data = await this.about.paginate({ job_id: id }, options);
+    // });
 
     return data;
   }
