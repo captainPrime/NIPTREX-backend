@@ -372,6 +372,15 @@ class JobService {
   */
   public async getFreelancerContracts(filter: any, options: PaginationOptions): Promise<any> {
     const data = await this.bid.paginate(filter, options);
+
+    // const results = await Promise.all(
+    //   data.results.map(async (job: any) => {
+    //     const user = await this.userService.get(job.user_id.toString());
+    //     return { client_details: user, job_match };
+    //   }),
+    // );
+
+    // return { ...data, results };
     return data;
   }
 }

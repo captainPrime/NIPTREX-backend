@@ -1,0 +1,31 @@
+2023-05-12 00:33:50 info: =================================
+2023-05-12 00:33:50 info: ======= ENV: development =======
+2023-05-12 00:33:50 info: 🚀 App listening on the port 3000
+2023-05-12 00:33:50 info: =================================
+2023-05-12 00:33:53 info: Connected to email server
+2023-05-12 00:33:58 info: Connected to Database Successfully...
+2023-05-12 00:40:21 info: =================================
+2023-05-12 00:40:21 info: ======= ENV: development =======
+2023-05-12 00:40:21 info: 🚀 App listening on the port 3000
+2023-05-12 00:40:21 info: =================================
+2023-05-12 00:40:24 info: Connected to email server
+2023-05-12 00:40:28 info: Connected to Database Successfully...
+2023-05-12 00:40:43 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 00:40:43 info: [0mGET /job/getFreelancerContracts [32m200[0m 265.640 ms - 75[0m
+2023-05-12 00:40:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 00:40:50 info: [0mPOST /auth/login [32m200[0m 1227.403 ms - 587[0m
+2023-05-12 00:40:59 info: [0mGET /job/getFreelancerContracts [32m200[0m 916.419 ms - -[0m
+2023-05-12 00:42:36 info: =================================
+2023-05-12 00:42:36 info: ======= ENV: development =======
+2023-05-12 00:42:36 info: 🚀 App listening on the port 3000
+2023-05-12 00:42:36 info: =================================
+2023-05-12 00:42:39 info: Connected to email server
+2023-05-12 00:42:46 info: Connected to Database Successfully...
+2023-05-12 00:42:52 info: [0mGET /job/getFreelancerContracts [32m200[0m 932.303 ms - -[0m
+2023-05-12 00:44:06 info: =================================
+2023-05-12 00:44:06 info: ======= ENV: development =======
+2023-05-12 00:44:06 info: 🚀 App listening on the port 3000
+2023-05-12 00:44:06 info: =================================
+2023-05-12 00:44:09 info: Connected to email server
+2023-05-12 00:44:09 info: Connected to Database Successfully...
+2023-05-12 00:44:15 info: [0mGET /job/getFreelancerContracts [32m200[0m 969.857 ms - -[0m

@@ -372,7 +372,7 @@ class JobController {
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
-        populate: 'job_id',
+        populate: 'job_id,user_id',
       };
       const job = await this.jobService.getFreelancerContracts(req.query, options);
       console.log('JOB', job);
