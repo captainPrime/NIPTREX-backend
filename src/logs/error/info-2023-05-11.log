@@ -3,3 +3,6 @@
 2023-05-11 18:16:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-11 18:16:21 error: [POST] /bid/645d22d200ac6e6cd837406d >> StatusCode:: 400, Message:: INSUFFICIENT_NIPS_TO_BID
 2023-05-11 18:16:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:29:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:29:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:30:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
