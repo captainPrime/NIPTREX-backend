@@ -14,3 +14,22 @@
 2023-05-11 18:10:21 info: Connected to email server
 2023-05-11 18:10:22 info: Connected to Database Successfully...
 2023-05-11 18:11:05 info: [0mGET /bid/proposals/645c076fa3f9cb1968beaa46 [32m200[0m 958.894 ms - -[0m
+2023-05-11 18:14:56 info: =================================
+2023-05-11 18:14:56 info: ======= ENV: development =======
+2023-05-11 18:14:56 info: 🚀 App listening on the port 3000
+2023-05-11 18:14:56 info: =================================
+2023-05-11 18:14:58 info: Connected to email server
+2023-05-11 18:14:59 info: Connected to Database Successfully...
+2023-05-11 18:15:14 info: [0mGET /bid/proposals/645c076fa3f9cb1968beaa46 [32m200[0m 697.121 ms - -[0m
+2023-05-11 18:15:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:15:51 info: [0mPOST /auth/login [32m200[0m 888.383 ms - 587[0m
+2023-05-11 18:16:02 info: [0mPOST /job [32m200[0m 692.583 ms - 938[0m
+2023-05-11 18:16:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:16:13 info: [0mPOST /auth/login [32m200[0m 464.629 ms - 587[0m
+2023-05-11 18:16:21 error: [POST] /bid/645d22d200ac6e6cd837406d >> StatusCode:: 400, Message:: INSUFFICIENT_NIPS_TO_BID
+2023-05-11 18:16:21 info: [0mPOST /bid/645d22d200ac6e6cd837406d [32m200[0m 859.844 ms - 82[0m
+2023-05-11 18:16:31 info: [0mPOST /bid/645d22d200ac6e6cd837406d [32m200[0m 2313.503 ms - -[0m
+2023-05-11 18:16:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-11 18:16:39 info: [0mPOST /auth/login [32m200[0m 561.631 ms - 587[0m
+2023-05-11 18:16:45 info: [0mGET /bid/proposals/645c076fa3f9cb1968beaa46 [32m200[0m 665.509 ms - -[0m
+2023-05-11 18:17:32 info: [0mGET /bid/proposals/645d22d200ac6e6cd837406d [32m200[0m 681.136 ms - -[0m
