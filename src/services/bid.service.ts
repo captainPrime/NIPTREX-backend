@@ -7,11 +7,14 @@ import { biddingSchemaValidation } from '@/validations/bid.validation';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { About } from '@/models/profile.model';
 import AboutService from './about.service';
+import { calculateMatchPercentage } from '@/utils/matchPercentage';
+import JobService from './job.service';
 
 class BidService {
   public bid: any = BiddingModel;
   public aboutService = new AboutService();
   public userService = new UserService();
+  public jobService = new JobService();
 
   /*
   |--------------------------------------------------------------------------
@@ -72,9 +75,10 @@ class BidService {
 
     const results = await Promise.all(
       data.results.map(async (job: any) => {
-        console.log('ID', job);
         const about = await this.aboutService.getUserAbout(job.user_id.toString());
-        return { job, about };
+        const job_data = await this.jobService.getJobByJobId(job.job_id.toString());
+        const job_match = calculateMatchPercentage(about.skills, job_data.jobs_tags);
+        return { proposal: job, profile_details: about, job_match };
       }),
     );
 
