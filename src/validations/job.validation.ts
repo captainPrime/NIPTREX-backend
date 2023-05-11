@@ -14,6 +14,7 @@ const hourlyRateUpdateSchema = Joi.object({
 // Define the validation schema for the JobSchema
 export const jobSchemaValidation = Joi.object({
   user_id: Joi.string().required(),
+  freelancer_id: Joi.string().optional(),
   jobs_tags: Joi.array().items(Joi.string()).required(),
   job_title: Joi.string().required(),
   job_headline: Joi.string().required(),
@@ -50,6 +51,7 @@ export const jobSchemaValidation = Joi.object({
 
 export const jobSchemaUpdateValidation = Joi.object({
   user_id: Joi.string(),
+  freelancer_id: Joi.string(),
   jobs_tags: Joi.array().items(Joi.string()),
   job_title: Joi.string(),
   job_headline: Joi.string(),

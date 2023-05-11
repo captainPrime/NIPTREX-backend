@@ -8,6 +8,7 @@ import { BiddingModel } from './bid.model';
 const JobSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    freelancer_id: { type: Schema.Types.ObjectId, ref: 'User' },
     jobs_tags: [{ type: String, required: true }],
     job_title: { type: String, required: true },
     job_headline: { type: String, required: true },

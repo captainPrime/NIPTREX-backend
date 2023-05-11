@@ -10,6 +10,7 @@ export interface PaginationOptions {
 
 export interface IJob extends Document {
   user_id: Types.ObjectId;
+  freelancer_id: Types.ObjectId | string;
   jobs_tags: string[];
   job_title: string;
   job_headline: string;

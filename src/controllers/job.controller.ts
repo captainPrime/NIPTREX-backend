@@ -336,6 +336,7 @@ class JobController {
       // update job
       await this.jobService.updateJobById(job._id.toString(), {
         status: JobStatus.TAKEN,
+        freelancer_id: user_id,
         activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
       });
 
