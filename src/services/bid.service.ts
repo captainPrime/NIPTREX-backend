@@ -4,7 +4,7 @@ import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
-import { ArchiveProposalModel, BiddingModel, IBidding } from '@/models/bid.model';
+import { ArchiveProposalModel, BiddingModel, IBidding, ShortListProposalModel } from '@/models/bid.model';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
@@ -12,9 +12,10 @@ import { biddingSchemaValidation } from '@/validations/bid.validation';
 class BidService {
   public bid: any = BiddingModel;
   public archive: any = ArchiveProposalModel;
-  public aboutService = new AboutService();
-  public userService = new UserService();
+  public shortlist: any = ShortListProposalModel;
   public jobService = new JobService();
+  public userService = new UserService();
+  public aboutService = new AboutService();
 
   /*
   |--------------------------------------------------------------------------
@@ -163,6 +164,17 @@ class BidService {
   */
   public async archiveProposal(payload: any): Promise<any> {
     const data: any = await this.archive.create(payload);
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | ShortList Proposal
+  |--------------------------------------------------------------------------
+  */
+  public async shortListProposal(payload: any): Promise<any> {
+    const data: any = await this.shortlist.create(payload);
 
     return data;
   }

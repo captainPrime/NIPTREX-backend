@@ -235,3 +235,12 @@
 2023-05-12 15:00:22 info: Connected to email server
 2023-05-12 15:00:23 info: Connected to Database Successfully...
 2023-05-12 15:00:36 info: [0mGET /bid/proposals/archive [32m200[0m 2072.037 ms - -[0m
+2023-05-12 15:10:56 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 15:10:56 info: [0mGET /job/getFreelancerContracts [32m200[0m 350.688 ms - 75[0m
+2023-05-12 15:11:03 error: [Error] >> Channel closed
+2023-05-12 15:11:18 info: =================================
+2023-05-12 15:11:18 info: ======= ENV: development =======
+2023-05-12 15:11:18 info: 🚀 App listening on the port 3000
+2023-05-12 15:11:18 info: =================================
+2023-05-12 15:11:21 info: Connected to email server
+2023-05-12 15:11:21 info: Connected to Database Successfully...
