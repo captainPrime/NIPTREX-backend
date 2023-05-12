@@ -87,13 +87,27 @@ class BidService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Bid By Job
+  |--------------------------------------------------------------------------
+  */
+  public async getBidByJob(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.bid.findOne({ job_id: id });
+    // if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Bid By Id
   |--------------------------------------------------------------------------
   */
   public async getBidById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.bid.findOne({ job_id: id });
+    const data = await this.bid.findOne({ id: id });
     // if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     return data;
@@ -164,6 +178,29 @@ class BidService {
     const data = await this.archive.findOne({ proposal: id });
 
     return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Saved Job
+  |--------------------------------------------------------------------------
+  */
+  public async getUserArchivedProposals(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.archive.find({ client_id: id }).populate('proposal');
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    const savedJobIds = (await this.archive.find({ user_id: id })).map((job: { job: any }) => job.job.toString());
+
+    const updatedData = data.map((job: any) => {
+      return {
+        ...job.toJSON(),
+        is_saved: savedJobIds.includes(job.job.id.toString()),
+      };
+    });
+
+    return updatedData;
   }
 }
 

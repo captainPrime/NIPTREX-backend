@@ -140,3 +140,37 @@
 2023-05-12 11:17:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-12 11:17:41 info: [0mPOST /auth/login [32m200[0m 576.334 ms - 587[0m
 2023-05-12 11:17:52 info: [0mGET /profile/about [32m200[0m 972.302 ms - -[0m
+2023-05-12 13:02:49 info: =================================
+2023-05-12 13:02:49 info: ======= ENV: development =======
+2023-05-12 13:02:49 info: 🚀 App listening on the port 3000
+2023-05-12 13:02:49 info: =================================
+2023-05-12 13:02:51 info: Connected to email server
+2023-05-12 13:02:52 info: Connected to Database Successfully...
+2023-05-12 13:13:36 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:13:36 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 326.103 ms - 76[0m
+2023-05-12 13:13:41 error: [GET] /bid/proposals/645e0f281e72e3588e1d538d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 13:13:41 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 586.248 ms - 75[0m
+2023-05-12 13:13:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 13:13:50 info: [0mPOST /auth/login [32m200[0m 1035.491 ms - 587[0m
+2023-05-12 13:13:53 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:13:53 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 310.710 ms - 76[0m
+2023-05-12 13:13:58 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 2307.945 ms - -[0m
+2023-05-12 13:14:25 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:14:25 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 223.344 ms - 76[0m
+2023-05-12 13:16:23 info: =================================
+2023-05-12 13:16:23 info: ======= ENV: development =======
+2023-05-12 13:16:23 info: 🚀 App listening on the port 3000
+2023-05-12 13:16:23 info: =================================
+2023-05-12 13:16:26 info: Connected to email server
+2023-05-12 13:16:32 info: Connected to Database Successfully...
+2023-05-12 13:16:36 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 13:16:36 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 775.393 ms - 107[0m
+2023-05-12 13:17:02 info: =================================
+2023-05-12 13:17:02 info: ======= ENV: development =======
+2023-05-12 13:17:02 info: 🚀 App listening on the port 3000
+2023-05-12 13:17:02 info: =================================
+2023-05-12 13:17:06 info: Connected to Database Successfully...
+2023-05-12 13:17:06 info: Connected to email server
+2023-05-12 13:17:18 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-05-12 13:17:18 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 16.451 ms - 86[0m
+2023-05-12 13:17:26 info: [0mGET /bid/proposals/archive/645e0f561e72e3588e1d53a1 [32m200[0m 1016.432 ms - 312[0m

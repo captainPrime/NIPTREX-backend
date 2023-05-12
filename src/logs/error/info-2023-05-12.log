@@ -12,3 +12,22 @@
 2023-05-12 11:11:22 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_LIKED
 2023-05-12 11:13:44 error: [GET] /bid/proposals/dislike/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_DISLIKED
 2023-05-12 11:17:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 13:02:06 error: uncaughtException: Cannot overwrite `ArchiveProposal` model once compiled.
+OverwriteModelError: Cannot overwrite `ArchiveProposal` model once compiled.
+    at Mongoose.model (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/index.js:544:13)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/models/bid.model.ts:128:49)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-23404263038689033.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-23404263038689033.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-23404263038689033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+2023-05-12 13:13:36 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:13:41 error: [GET] /bid/proposals/645e0f281e72e3588e1d538d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 13:13:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 13:13:53 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:14:25 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-05-12 13:16:36 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 13:17:18 error: [GET] /bid/proposals/archive/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING

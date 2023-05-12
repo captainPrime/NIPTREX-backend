@@ -122,9 +122,11 @@ const ShortListProposalSchema: Schema = new Schema(
 );
 
 BiddingSchema.plugin(paginate);
+ArchiveProposalSchema.plugin(paginate);
+ShortListProposalSchema.plugin(paginate);
 
 const BiddingModel: Model<IBidding> = model<IBidding>('Bidding', BiddingSchema);
 const ArchiveProposalModel: Model<any> = model<any>('ArchiveProposal', ArchiveProposalSchema);
-const ShortListProposalModel: Model<any> = model<any>('ArchiveProposal', ShortListProposalSchema);
+const ShortListProposalModel: Model<any> = model<any>('ShortListProposal', ShortListProposalSchema);
 
 export { BiddingStage, IBidding, BiddingModel, ArchiveProposalModel, ShortListProposalModel };

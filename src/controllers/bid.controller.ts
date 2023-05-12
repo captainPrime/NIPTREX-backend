@@ -29,7 +29,7 @@ class BidController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const bidJob = await this.bidService.getBidById(id);
+      const bidJob = await this.bidService.getBidByJob(id);
       if (bidJob && bidJob.user_id.toString() === user.id) throw new HttpException(400, 4002, 'JOB_ALREAD_BIDDED');
 
       const about = await this.aboutService.getUserAbout(user.id);
