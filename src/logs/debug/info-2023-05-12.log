@@ -29,3 +29,12 @@
 2023-05-12 00:44:09 info: Connected to email server
 2023-05-12 00:44:09 info: Connected to Database Successfully...
 2023-05-12 00:44:15 info: [0mGET /job/getFreelancerContracts [32m200[0m 969.857 ms - -[0m
+2023-05-12 10:39:36 info: =================================
+2023-05-12 10:39:36 info: ======= ENV: development =======
+2023-05-12 10:39:36 info: 🚀 App listening on the port 3000
+2023-05-12 10:39:36 info: =================================
+2023-05-12 10:39:38 info: Connected to email server
+2023-05-12 10:39:38 info: Connected to Database Successfully...
+2023-05-12 10:40:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 10:40:36 info: [0mPOST /auth/login [32m200[0m 34068.455 ms - 587[0m
+2023-05-12 10:42:23 info: [0mGET /bid/proposals/645d26078d63aa03a9a619ec [32m200[0m 820.961 ms - -[0m

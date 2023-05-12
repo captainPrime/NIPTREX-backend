@@ -21,8 +21,8 @@ interface IBidding extends Document {
   bidding_amount: number;
   status: 'cancelled' | 'pending' | 'paid' | 'applied';
   date_applied: Date;
-  likes: Schema.Types.ObjectId[];
-  dislikes: Schema.Types.ObjectId[];
+  liked: boolean;
+  disliked: boolean;
 }
 
 const BiddingSchema: Schema = new Schema({
@@ -89,18 +89,14 @@ const BiddingSchema: Schema = new Schema({
     type: Date,
     default: Date.now,
   },
-  likes: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-  ],
-  dislikes: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-  ],
+  liked: {
+    type: Boolean,
+    default: false,
+  },
+  disliked: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 BiddingSchema.plugin(paginate);
