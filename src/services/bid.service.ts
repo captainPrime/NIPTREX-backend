@@ -103,17 +103,17 @@ class BidService {
   | Like Proposal
   |--------------------------------------------------------------------------
   */
-  public async likeProposal(proposalId: mongoose.Types.ObjectId | string, userId: mongoose.Types.ObjectId | string): Promise<any> {
+  public async likeProposal(proposalId: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(proposalId)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const proposal = await this.bid.findOne({ id: proposalId });
     if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
-    if (proposal.likes.includes(userId)) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_LIKED');
+    if (proposal.liked === true) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_LIKED');
 
-    if (proposal.dislikes.includes(userId)) proposal.dislikes.pull(userId);
+    if (proposal.disliked === true) proposal.disliked = false;
 
-    proposal.likes.push(userId);
+    proposal.liked = true;
     await proposal.save();
 
     return proposal;
@@ -124,17 +124,17 @@ class BidService {
   | DisLike Proposal
   |--------------------------------------------------------------------------
   */
-  public async dislikeProposal(proposalId: mongoose.Types.ObjectId | string, userId: mongoose.Types.ObjectId | string): Promise<any> {
+  public async dislikeProposal(proposalId: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(proposalId)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const proposal = await this.bid.findOne({ id: proposalId });
     if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
-    if (proposal.dislikes.includes(userId)) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_DISLIKED');
+    if (proposal.disliked === true) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_DISLIKED');
 
-    if (proposal.likes.includes(userId)) proposal.dislikes.pull(userId);
+    if (proposal.like === true) proposal.disliked = false;
 
-    proposal.dislikes.push(userId);
+    proposal.disliked = true;
     await proposal.save();
 
     return proposal;

@@ -38,3 +38,21 @@
 2023-05-12 10:40:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-12 10:40:36 info: [0mPOST /auth/login [32m200[0m 34068.455 ms - 587[0m
 2023-05-12 10:42:23 info: [0mGET /bid/proposals/645d26078d63aa03a9a619ec [32m200[0m 820.961 ms - -[0m
+2023-05-12 11:03:38 info: =================================
+2023-05-12 11:03:38 info: ======= ENV: development =======
+2023-05-12 11:03:38 info: 🚀 App listening on the port 3000
+2023-05-12 11:03:38 info: =================================
+2023-05-12 11:03:41 info: Connected to email server
+2023-05-12 11:03:41 info: Connected to Database Successfully...
+2023-05-12 11:04:02 info: [0mGET /reload_db [32m200[0m 6523.323 ms - 74[0m
+2023-05-12 11:04:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:04:08 info: [0mPOST /auth/login [32m200[0m 859.299 ms - 587[0m
+2023-05-12 11:04:11 info: [0mGET /bid/proposals/645d26078d63aa03a9a619ec [32m200[0m 228.542 ms - 171[0m
+2023-05-12 11:04:19 info: [0mGET /job/getAllJobs [32m200[0m 371.197 ms - 171[0m
+2023-05-12 11:04:25 info: [0mPOST /job [32m200[0m 798.007 ms - 938[0m
+2023-05-12 11:04:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:04:32 info: [0mPOST /auth/login [32m200[0m 536.267 ms - 587[0m
+2023-05-12 11:04:46 info: [0mPOST /profile/about [32m200[0m 1451.830 ms - -[0m
+2023-05-12 11:04:53 info: [0mGET /job/getAllJobs [32m200[0m 262.973 ms - -[0m
+2023-05-12 11:05:12 info: [0mPOST /bid/645e0f281e72e3588e1d538d [32m200[0m 2688.096 ms - -[0m
+2023-05-12 11:05:38 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 756.836 ms - -[0m

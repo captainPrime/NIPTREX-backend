@@ -97,7 +97,7 @@ class BidController {
       const proposalId: string = req.params.id;
       const userId: string = req.user.id;
 
-      const data = await this.bidService.likeProposal(proposalId, userId);
+      const data = await this.bidService.likeProposal(proposalId);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {
