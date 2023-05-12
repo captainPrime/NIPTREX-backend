@@ -89,7 +89,7 @@ class BidController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Bio By Id
+  | Like a proposal
   |--------------------------------------------------------------------------
   */
   public likeProposal = async (req: Request, res: Response, next: NextFunction) => {
@@ -107,7 +107,7 @@ class BidController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Bio By Id
+  | Like A Proposal
   |--------------------------------------------------------------------------
   */
   public dislikeProposal = async (req: Request, res: Response, next: NextFunction) => {
