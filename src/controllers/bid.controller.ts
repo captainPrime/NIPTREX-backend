@@ -122,6 +122,35 @@ class BidController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Archive Proposal
+  |--------------------------------------------------------------------------
+  */
+  public archiveProposal = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const proposalId: string = req.params.id;
+
+      const proposal = await this.bidService.getBidById(proposalId);
+      if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
+      const archive = await this.bidService.getArchiveProposalById(proposal._id.toString());
+      if (archive) throw new HttpException(400, 5002, 'PROPOSAL_ALREAD_ARCHIVED');
+
+      const payload = {
+        user_id: proposal.user_id,
+        client_id: req.user.id,
+        proposal: proposal._id.toString(),
+      };
+
+      const data = await this.bidService.archiveProposal(payload);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default BidController;

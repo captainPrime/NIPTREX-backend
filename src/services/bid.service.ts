@@ -4,13 +4,14 @@ import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
-import { BiddingModel, IBidding } from '@/models/bid.model';
+import { ArchiveProposalModel, BiddingModel, IBidding } from '@/models/bid.model';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
 
 class BidService {
   public bid: any = BiddingModel;
+  public archive: any = ArchiveProposalModel;
   public aboutService = new AboutService();
   public userService = new UserService();
   public jobService = new JobService();
@@ -139,6 +140,30 @@ class BidService {
     await proposal.save();
 
     return proposal;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Archive Proposal
+  |--------------------------------------------------------------------------
+  */
+  public async archiveProposal(payload: any): Promise<any> {
+    const data: any = await this.archive.create(payload);
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Archive Proposal By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getArchiveProposalById(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.archive.findOne({ proposal: id });
+
+    return data;
   }
 }
 
