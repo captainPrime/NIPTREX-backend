@@ -99,6 +99,28 @@ const BiddingSchema: Schema = new Schema({
   },
 });
 
+const ArchiveProposalSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    proposal: { type: Schema.Types.ObjectId, ref: 'Bidding', required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const ShortProposalSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    proposal: { type: Schema.Types.ObjectId, ref: 'Bidding', required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
 BiddingSchema.plugin(paginate);
 
 const BiddingModel: Model<IBidding> = model<IBidding>('Bidding', BiddingSchema);

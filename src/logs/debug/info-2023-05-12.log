@@ -131,3 +131,12 @@
 2023-05-12 11:14:25 info: Connected to email server
 2023-05-12 11:14:25 info: Connected to Database Successfully...
 2023-05-12 11:14:30 info: [0mGET /bid/proposals/dislike/645e0f561e72e3588e1d53a1 [32m200[0m 537.554 ms - -[0m
+2023-05-12 11:17:14 info: =================================
+2023-05-12 11:17:14 info: ======= ENV: development =======
+2023-05-12 11:17:14 info: 🚀 App listening on the port 3000
+2023-05-12 11:17:14 info: =================================
+2023-05-12 11:17:19 info: Connected to email server
+2023-05-12 11:17:22 info: Connected to Database Successfully...
+2023-05-12 11:17:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:17:41 info: [0mPOST /auth/login [32m200[0m 576.334 ms - 587[0m
+2023-05-12 11:17:52 info: [0mGET /profile/about [32m200[0m 972.302 ms - -[0m
