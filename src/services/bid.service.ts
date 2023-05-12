@@ -97,6 +97,48 @@ class BidService {
 
     return data;
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Like Proposal
+  |--------------------------------------------------------------------------
+  */
+  public async likeProposal(proposalId: mongoose.Types.ObjectId | string, userId: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(proposalId)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const proposal = await this.bid.findOne({ id: proposalId });
+    if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
+    if (proposal.likes.includes(userId)) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_LIKED');
+
+    if (proposal.dislikes.includes(userId)) proposal.dislikes.pull(userId);
+
+    proposal.likes.push(userId);
+    await proposal.save();
+
+    return proposal;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | DisLike Proposal
+  |--------------------------------------------------------------------------
+  */
+  public async dislikeProposal(proposalId: mongoose.Types.ObjectId | string, userId: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(proposalId)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const proposal = await this.bid.findOne({ id: proposalId });
+    if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
+    if (proposal.dislikes.includes(userId)) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_DISLIKED');
+
+    if (proposal.likes.includes(userId)) proposal.dislikes.pull(userId);
+
+    proposal.dislikes.push(userId);
+    await proposal.save();
+
+    return proposal;
+  }
 }
 
 export default BidService;

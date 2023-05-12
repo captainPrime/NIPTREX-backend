@@ -8,6 +8,8 @@ interface BiddingStage {
 }
 
 interface IBidding extends Document {
+  user_id: Schema.Types.ObjectId;
+  job_id: Schema.Types.ObjectId;
   payment_type: 'milestone' | 'outright';
   milestone_stage?: BiddingStage[];
   cover_letter: string;
@@ -17,7 +19,10 @@ interface IBidding extends Document {
   service_fee: number;
   amount_to_be_received: number;
   bidding_amount: number;
-  status: string;
+  status: 'cancelled' | 'pending' | 'paid' | 'applied';
+  date_applied: Date;
+  likes: Schema.Types.ObjectId[];
+  dislikes: Schema.Types.ObjectId[];
 }
 
 const BiddingSchema: Schema = new Schema({
@@ -84,6 +89,18 @@ const BiddingSchema: Schema = new Schema({
     type: Date,
     default: Date.now,
   },
+  likes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+    },
+  ],
+  dislikes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+    },
+  ],
 });
 
 BiddingSchema.plugin(paginate);
