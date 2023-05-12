@@ -104,6 +104,24 @@ class BidController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Bio By Id
+  |--------------------------------------------------------------------------
+  */
+  public dislikeProposal = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const proposalId: string = req.params.id;
+      // const userId: string = req.user.id;
+
+      const data = await this.bidService.dislikeProposal(proposalId);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default BidController;

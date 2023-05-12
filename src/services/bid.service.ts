@@ -133,7 +133,7 @@ class BidService {
 
     if (proposal.disliked === true) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_DISLIKED');
 
-    if (proposal.like === true) proposal.disliked = false;
+    if (proposal.liked === true) proposal.liked = false;
 
     proposal.disliked = true;
     await proposal.save();

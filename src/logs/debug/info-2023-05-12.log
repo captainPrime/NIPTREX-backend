@@ -93,3 +93,41 @@
 2023-05-12 11:10:04 info: Connected to Database Successfully...
 2023-05-12 11:10:12 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
 2023-05-12 11:10:12 info: [0mGET /bid/proposals/like/645e0f561e72e3588e1d53a1 [32m200[0m 10.282 ms - 107[0m
+2023-05-12 11:10:40 info: =================================
+2023-05-12 11:10:40 info: ======= ENV: development =======
+2023-05-12 11:10:40 info: 🚀 App listening on the port 3000
+2023-05-12 11:10:40 info: =================================
+2023-05-12 11:10:44 info: Connected to email server
+2023-05-12 11:10:44 info: Connected to Database Successfully...
+2023-05-12 11:10:48 info: [0mGET /bid/proposals/like/645e0f561e72e3588e1d53a1 [32m200[0m 953.952 ms - -[0m
+2023-05-12 11:11:22 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_LIKED
+2023-05-12 11:11:22 info: [0mGET /bid/proposals/like/645e0f561e72e3588e1d53a1 [32m200[0m 26166.750 ms - 80[0m
+2023-05-12 11:12:28 info: =================================
+2023-05-12 11:12:28 info: ======= ENV: development =======
+2023-05-12 11:12:28 info: 🚀 App listening on the port 3000
+2023-05-12 11:12:28 info: =================================
+2023-05-12 11:12:30 info: Connected to email server
+2023-05-12 11:12:30 info: Connected to Database Successfully...
+2023-05-12 11:12:56 info: [0mGET /bid/proposals/dislike/645e0f561e72e3588e1d53a1 [32m200[0m 488.734 ms - -[0m
+2023-05-12 11:13:37 info: =================================
+2023-05-12 11:13:37 info: ======= ENV: development =======
+2023-05-12 11:13:37 info: 🚀 App listening on the port 3000
+2023-05-12 11:13:37 info: =================================
+2023-05-12 11:13:39 info: Connected to email server
+2023-05-12 11:13:39 info: Connected to Database Successfully...
+2023-05-12 11:13:44 error: [GET] /bid/proposals/dislike/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_DISLIKED
+2023-05-12 11:13:44 info: [0mGET /bid/proposals/dislike/645e0f561e72e3588e1d53a1 [32m200[0m 251.296 ms - 83[0m
+2023-05-12 11:13:56 info: =================================
+2023-05-12 11:13:56 info: ======= ENV: development =======
+2023-05-12 11:13:56 info: 🚀 App listening on the port 3000
+2023-05-12 11:13:56 info: =================================
+2023-05-12 11:13:57 info: Connected to email server
+2023-05-12 11:13:58 info: Connected to Database Successfully...
+2023-05-12 11:14:04 info: [0mGET /bid/proposals/dislike/645e0f561e72e3588e1d53a1 [32m200[0m 750.946 ms - -[0m
+2023-05-12 11:14:23 info: =================================
+2023-05-12 11:14:23 info: ======= ENV: development =======
+2023-05-12 11:14:23 info: 🚀 App listening on the port 3000
+2023-05-12 11:14:23 info: =================================
+2023-05-12 11:14:25 info: Connected to email server
+2023-05-12 11:14:25 info: Connected to Database Successfully...
+2023-05-12 11:14:30 info: [0mGET /bid/proposals/dislike/645e0f561e72e3588e1d53a1 [32m200[0m 537.554 ms - -[0m

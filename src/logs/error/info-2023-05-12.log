@@ -9,3 +9,5 @@
 2023-05-12 11:08:15 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
 2023-05-12 11:09:27 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
 2023-05-12 11:10:12 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:11:22 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_LIKED
+2023-05-12 11:13:44 error: [GET] /bid/proposals/dislike/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: PROPOSAL_ALREADY_DISLIKED
