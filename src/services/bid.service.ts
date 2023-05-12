@@ -189,18 +189,18 @@ class BidService {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.archive.find({ client_id: id }).populate('proposal');
-    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+    if (!data) throw new HttpException(400, 2002, 'ARCHIVE_NOT_FOUND');
 
-    const savedJobIds = (await this.archive.find({ user_id: id })).map((job: { job: any }) => job.job.toString());
+    // const savedJobIds = (await this.archive.find({ user_id: id })).map((job: { job: any }) => job.job.toString());
 
-    const updatedData = data.map((job: any) => {
-      return {
-        ...job.toJSON(),
-        is_saved: savedJobIds.includes(job.job.id.toString()),
-      };
-    });
+    // const updatedData = data.map((job: any) => {
+    //   return {
+    //     ...job.toJSON(),
+    //     is_saved: savedJobIds.includes(job.job.id.toString()),
+    //   };
+    // });
 
-    return updatedData;
+    return data;
   }
 }
 
