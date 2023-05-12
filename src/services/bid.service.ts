@@ -188,19 +188,33 @@ class BidService {
   public async getUserArchivedProposals(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.archive.find({ client_id: id }).populate('proposal');
-    if (!data) throw new HttpException(400, 2002, 'ARCHIVE_NOT_FOUND');
+    try {
+      const archive = await this.archive.find({ client_id: id }).lean().populate({ path: 'proposal' });
+      if (!archive) throw new HttpException(400, 2002, 'ARCHIVE_NOT_FOUND');
 
-    // const savedJobIds = (await this.archive.find({ user_id: id })).map((job: { job: any }) => job.job.toString());
+      // const archivedIds = (await this.archive.find({ client_id: id }).lean().select('proposal')).map((proposal: { proposal: any }) =>
+      //   proposal.proposal.toString(),
+      // );
 
-    // const updatedData = data.map((job: any) => {
-    //   return {
-    //     ...job.toJSON(),
-    //     is_saved: savedJobIds.includes(job.job.id.toString()),
-    //   };
-    // });
+      const results = await Promise.all(
+        archive.map(async (archive: any) => {
+          const about = await this.aboutService.getUserAbout(archive.user_id.toString());
+          const job_data = await this.jobService.getJobByJobId(archive.proposal.job_id.toString());
+          const job_match = calculateMatchPercentage(about.skills, job_data.jobs_tags);
+          return {
+            proposal: archive.proposal,
+            profile_details: about,
+            job_match,
+            // is_archived: archivedIds.includes(archive.proposal.job_id.toString()),
+          };
+        }),
+      );
 
-    return data;
+      return results;
+    } catch (error) {
+      console.log(error);
+      throw new HttpException(500, 5000, 'Internal server error');
+    }
   }
 }
 
