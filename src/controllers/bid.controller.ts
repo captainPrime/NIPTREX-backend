@@ -95,7 +95,7 @@ class BidController {
   public likeProposal = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const proposalId: string = req.params.id;
-      const userId: string = req.user.id;
+      // const userId: string = req.user.id;
 
       const data = await this.bidService.likeProposal(proposalId);
 

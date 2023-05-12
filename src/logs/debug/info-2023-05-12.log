@@ -56,3 +56,40 @@
 2023-05-12 11:04:53 info: [0mGET /job/getAllJobs [32m200[0m 262.973 ms - -[0m
 2023-05-12 11:05:12 info: [0mPOST /bid/645e0f281e72e3588e1d538d [32m200[0m 2688.096 ms - -[0m
 2023-05-12 11:05:38 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 756.836 ms - -[0m
+2023-05-12 11:06:49 info: =================================
+2023-05-12 11:06:49 info: ======= ENV: development =======
+2023-05-12 11:06:49 info: 🚀 App listening on the port 3000
+2023-05-12 11:06:50 info: =================================
+2023-05-12 11:06:52 info: Connected to email server
+2023-05-12 11:06:52 info: Connected to Database Successfully...
+2023-05-12 11:06:56 error: [GET] /bid/proposals/645e0f281e72e3588e1d538d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 11:06:56 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 243.888 ms - 75[0m
+2023-05-12 11:07:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:07:02 info: [0mPOST /auth/login [32m200[0m 609.835 ms - 587[0m
+2023-05-12 11:07:07 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 865.914 ms - -[0m
+2023-05-12 11:07:39 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:07:39 info: [0mGET /bid/proposals/645e0f561e72e3588e1d53a1/like [32m200[0m 1.420 ms - 107[0m
+2023-05-12 11:08:08 info: =================================
+2023-05-12 11:08:08 info: ======= ENV: development =======
+2023-05-12 11:08:08 info: 🚀 App listening on the port 3000
+2023-05-12 11:08:08 info: =================================
+2023-05-12 11:08:10 info: Connected to email server
+2023-05-12 11:08:11 info: Connected to Database Successfully...
+2023-05-12 11:08:15 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:08:15 info: [0mGET /bid/proposals/645e0f561e72e3588e1d53a1/like [32m200[0m 10.492 ms - 107[0m
+2023-05-12 11:09:17 info: =================================
+2023-05-12 11:09:17 info: ======= ENV: development =======
+2023-05-12 11:09:17 info: 🚀 App listening on the port 3000
+2023-05-12 11:09:17 info: =================================
+2023-05-12 11:09:19 info: Connected to email server
+2023-05-12 11:09:19 info: Connected to Database Successfully...
+2023-05-12 11:09:27 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:09:27 info: [0mGET /bid/proposals/645e0f561e72e3588e1d53a1/like [32m200[0m 8.044 ms - 107[0m
+2023-05-12 11:10:02 info: =================================
+2023-05-12 11:10:02 info: ======= ENV: development =======
+2023-05-12 11:10:02 info: 🚀 App listening on the port 3000
+2023-05-12 11:10:02 info: =================================
+2023-05-12 11:10:04 info: Connected to email server
+2023-05-12 11:10:04 info: Connected to Database Successfully...
+2023-05-12 11:10:12 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:10:12 info: [0mGET /bid/proposals/like/645e0f561e72e3588e1d53a1 [32m200[0m 10.282 ms - 107[0m

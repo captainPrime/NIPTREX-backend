@@ -3,3 +3,9 @@
 2023-05-12 10:40:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-12 11:04:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-12 11:04:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:06:56 error: [GET] /bid/proposals/645e0f281e72e3588e1d538d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-12 11:07:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-12 11:07:39 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:08:15 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:09:27 error: [GET] /bid/proposals/645e0f561e72e3588e1d53a1/like >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-05-12 11:10:12 error: [GET] /bid/proposals/like/645e0f561e72e3588e1d53a1 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')

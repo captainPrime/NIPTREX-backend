@@ -107,6 +107,7 @@ class BidService {
     if (isEmpty(proposalId)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const proposal = await this.bid.findOne({ id: proposalId });
+    console.log(proposal);
     if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
     if (proposal.liked === true) throw new HttpException(400, 2002, 'PROPOSAL_ALREADY_LIKED');
