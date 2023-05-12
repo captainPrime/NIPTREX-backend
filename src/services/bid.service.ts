@@ -1,14 +1,13 @@
 import mongoose from 'mongoose';
 import { isEmpty } from '@utils/util';
+import JobService from './job.service';
 import UserService from './users.service';
+import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
 import { BiddingModel, IBidding } from '@/models/bid.model';
-import { biddingSchemaValidation } from '@/validations/bid.validation';
 import { PaginationOptions } from '@/interfaces/job.inteface';
-import { About } from '@/models/profile.model';
-import AboutService from './about.service';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
-import JobService from './job.service';
+import { biddingSchemaValidation } from '@/validations/bid.validation';
 
 class BidService {
   public bid: any = BiddingModel;
