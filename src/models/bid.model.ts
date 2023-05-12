@@ -110,7 +110,7 @@ const ArchiveProposalSchema: Schema = new Schema(
   },
 );
 
-const ShortProposalSchema: Schema = new Schema(
+const ShortListProposalSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
@@ -124,5 +124,7 @@ const ShortProposalSchema: Schema = new Schema(
 BiddingSchema.plugin(paginate);
 
 const BiddingModel: Model<IBidding> = model<IBidding>('Bidding', BiddingSchema);
+const ArchiveProposalModel: Model<any> = model<any>('ArchiveProposal', ArchiveProposalSchema);
+const ShortListProposalModel: Model<any> = model<any>('ArchiveProposal', ShortListProposalSchema);
 
-export { BiddingStage, IBidding, BiddingModel };
+export { BiddingStage, IBidding, BiddingModel, ArchiveProposalModel, ShortListProposalModel };
