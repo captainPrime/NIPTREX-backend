@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
 
 import BidService from '@/services/bid.service';
+import JobService from '@/services/job.service';
 import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
-import JobService from '@/services/job.service';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class BidController {
@@ -107,7 +107,7 @@ class BidController {
 
   /*
   |--------------------------------------------------------------------------
-  | Like A Proposal
+  | DisLike A Proposal
   |--------------------------------------------------------------------------
   */
   public dislikeProposal = async (req: Request, res: Response, next: NextFunction) => {
