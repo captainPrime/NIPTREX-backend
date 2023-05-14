@@ -391,7 +391,7 @@ class JobController {
   */
   public freelanceWorkHistory = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const id: string = req.user.id;
+      const id: string = req.query.id ?? req.user.id;
 
       const options: PaginationOptions = {
         sortBy: req.query.sortBy || 'name:desc',
