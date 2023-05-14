@@ -361,8 +361,10 @@ class JobController {
   */
   public getFreelancerContracts = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const userId: string = req.query.id ?? req.user.id;
+
       const jobQueries: any = [];
-      const about = await this.aboutService.getUserAbout(req.user.id);
+      const about = await this.aboutService.getUserAbout(userId);
       if (!about) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
 
       about.skills.forEach((skill: string) => jobQueries.push(skill));
@@ -374,8 +376,8 @@ class JobController {
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         populate: 'job_id,user_id',
       };
-      const job = await this.jobService.getFreelancerContracts(req.query, options);
-      console.log('JOB', job);
+
+      const job = await this.jobService.getFreelancerContracts(userId, req.query, options);
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: job });

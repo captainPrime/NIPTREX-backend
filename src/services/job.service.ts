@@ -370,7 +370,13 @@ class JobService {
   | Get All Freelance Contracts
   |--------------------------------------------------------------------------
   */
-  public async getFreelancerContracts(filter: any, options: PaginationOptions): Promise<any> {
+  public async getFreelancerContracts(userId: string, otherQuery: any, options: PaginationOptions): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'user id can not be empty');
+
+    const filter = {
+      user_id: userId.toString(),
+      ...otherQuery,
+    };
     const data = await this.bid.paginate(filter, options);
 
     // const results = await Promise.all(
