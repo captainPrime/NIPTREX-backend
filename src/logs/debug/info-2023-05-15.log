@@ -32,3 +32,21 @@
 2023-05-15 00:11:23 info: 🚀 App listening on the port 3000
 2023-05-15 00:11:23 info: =================================
 2023-05-15 00:11:25 info: Connected to email server
+2023-05-15 00:11:38 info: Connected to Database Successfully...
+2023-05-15 00:11:44 info: [0mGET /bid/proposals/6461690e2e503005d635bd50?sortBy=bidding_amount:desc [32m200[0m 539.835 ms - 171[0m
+2023-05-15 00:14:32 info: =================================
+2023-05-15 00:14:32 info: ======= ENV: development =======
+2023-05-15 00:14:32 info: 🚀 App listening on the port 3000
+2023-05-15 00:14:32 info: =================================
+2023-05-15 00:14:35 info: Connected to email server
+2023-05-15 00:14:40 info: Connected to Database Successfully...
+2023-05-15 00:15:00 info: [0mGET /bid/proposals/6461690e2e503005d635bd50 [32m200[0m 1074.499 ms - -[0m
+2023-05-15 00:15:11 info: [0mGET /bid/proposals/6461690e2e503005d635bd50?bidding_amount=20 [32m200[0m 1111.848 ms - -[0m
+2023-05-15 00:17:10 info: =================================
+2023-05-15 00:17:10 info: ======= ENV: development =======
+2023-05-15 00:17:10 info: 🚀 App listening on the port 3000
+2023-05-15 00:17:10 info: =================================
+2023-05-15 00:17:19 info: Connected to Database Successfully...
+2023-05-15 00:17:27 info: [0mGET /bid/proposals/6461690e2e503005d635bd50?bidding_amount=20 [32m200[0m 1234.843 ms - -[0m
+2023-05-15 00:17:34 info: [0mGET /bid/proposals/6461690e2e503005d635bd50 [32m200[0m 888.515 ms - -[0m
+2023-05-15 00:17:43 info: Connected to email server
