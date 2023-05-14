@@ -1,0 +1,34 @@
+2023-05-15 00:00:09 info: Connected to Database Successfully...
+2023-05-15 00:04:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 00:04:10 info: [0mPOST /auth/login [32m200[0m 1000.011 ms - 587[0m
+2023-05-15 00:04:15 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 457.312 ms - 171[0m
+2023-05-15 00:04:21 info: [0mGET /job/getAllJobs [32m200[0m 238.873 ms - -[0m
+2023-05-15 00:04:47 info: [0mPOST /job [32m200[0m 2669.918 ms - 938[0m
+2023-05-15 00:04:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 00:04:51 info: [0mPOST /auth/login [32m200[0m 469.466 ms - 587[0m
+2023-05-15 00:05:04 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
+2023-05-15 00:05:04 info: [0mPOST /profile/about [32m200[0m 1029.525 ms - 77[0m
+2023-05-15 00:05:31 info: [0mPOST /bid/6461690e2e503005d635bd50 [32m200[0m 2859.038 ms - -[0m
+2023-05-15 00:05:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 00:05:40 info: [0mPOST /auth/login [32m200[0m 589.734 ms - 587[0m
+2023-05-15 00:05:43 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 562.115 ms - 171[0m
+2023-05-15 00:06:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 00:06:05 info: [0mPOST /auth/login [32m200[0m 480.804 ms - 587[0m
+2023-05-15 00:06:19 info: [0mGET /job/getFreelancerContracts [32m200[0m 1352.889 ms - -[0m
+2023-05-15 00:08:37 info: =================================
+2023-05-15 00:08:37 info: ======= ENV: development =======
+2023-05-15 00:08:37 info: 🚀 App listening on the port 3000
+2023-05-15 00:08:37 info: =================================
+2023-05-15 00:08:39 info: Connected to email server
+2023-05-15 00:08:51 info: Connected to Database Successfully...
+2023-05-15 00:09:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 00:09:06 info: [0mPOST /auth/login [32m200[0m 893.502 ms - 587[0m
+2023-05-15 00:09:11 info: [0mGET /bid/proposals/645e0f281e72e3588e1d538d [32m200[0m 455.413 ms - 171[0m
+2023-05-15 00:09:18 info: [0mGET /job/getAllJobs [32m200[0m 231.456 ms - -[0m
+2023-05-15 00:09:39 info: [0mGET /bid/proposals/6461690e2e503005d635bd50 [32m200[0m 1096.493 ms - -[0m
+2023-05-15 00:10:25 info: [0mGET /bid/proposals/6461690e2e503005d635bd50?sortBy=bidding_amount:desc [32m200[0m 2013.660 ms - -[0m
+2023-05-15 00:11:23 info: =================================
+2023-05-15 00:11:23 info: ======= ENV: development =======
+2023-05-15 00:11:23 info: 🚀 App listening on the port 3000
+2023-05-15 00:11:23 info: =================================
+2023-05-15 00:11:25 info: Connected to email server
