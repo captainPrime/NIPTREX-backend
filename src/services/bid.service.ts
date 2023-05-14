@@ -4,10 +4,10 @@ import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
-import { ArchiveProposalModel, BiddingModel, IBidding, ShortListProposalModel } from '@/models/bid.model';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
+import { ArchiveProposalModel, BiddingModel, IBidding, ShortListProposalModel } from '@/models/bid.model';
 
 class BidService {
   public bid: any = BiddingModel;
