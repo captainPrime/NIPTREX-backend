@@ -228,6 +228,56 @@ class BidService {
       throw new HttpException(500, 5000, 'Internal server error');
     }
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Archive Proposal By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getShortListById(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.shortlist.findOne({ proposal: id });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Saved Job
+  |--------------------------------------------------------------------------
+  */
+  public async getUserShortLists(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    try {
+      const archive = await this.shortlist.find({ client_id: id }).lean().populate({ path: 'proposal' });
+      if (!archive) throw new HttpException(400, 2002, 'SHORTLIST_NOT_FOUND');
+
+      // const archivedIds = (await this.archive.find({ client_id: id }).lean().select('proposal')).map((proposal: { proposal: any }) =>
+      //   proposal.proposal.toString(),
+      // );
+
+      const results = await Promise.all(
+        archive.map(async (archive: any) => {
+          const about = await this.aboutService.getUserAbout(archive.user_id.toString());
+          const job_data = await this.jobService.getJobByJobId(archive.proposal.job_id.toString());
+          const job_match = calculateMatchPercentage(about.skills, job_data.jobs_tags);
+          return {
+            proposal: archive.proposal,
+            profile_details: about,
+            job_match,
+            // is_archived: archivedIds.includes(archive.proposal.job_id.toString()),
+          };
+        }),
+      );
+
+      return results;
+    } catch (error) {
+      console.log(error);
+      throw new HttpException(500, 5000, 'Internal server error');
+    }
+  }
 }
 
 export default BidService;
