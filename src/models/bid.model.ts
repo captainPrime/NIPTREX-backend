@@ -48,6 +48,12 @@ const BiddingSchema: Schema = new Schema({
           type: Number,
           required: true,
         },
+        attachments: {
+          type: [String],
+        },
+        links: {
+          type: [String],
+        },
       },
     ],
     required: function (this: IBidding) {
