@@ -342,10 +342,11 @@ class JobController {
 
       // return user nips
       const bidders = await this.bidService.getAllBidders(job._id.toString());
-      const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== '123445').map((bidder: any) => bidder.user_id.toString());
+      const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
 
       userIds.forEach(async (userId: any) => {
         await this.aboutService.updateAboutById(userId, { nips: +5 });
+        await this.bidService.(userId, { nips: +5 });
       });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });

@@ -7,7 +7,7 @@ import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation } from '@/validations/bid.validation';
-import { ArchiveProposalModel, BiddingModel, IBidding, ShortListProposalModel } from '@/models/bid.model';
+import { ArchiveProposalModel, BiddingModel, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
 
 class BidService {
   public bid: any = BiddingModel;
@@ -32,6 +32,38 @@ class BidService {
     const data: any = await this.bid.create(body);
 
     return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Create Job
+  |--------------------------------------------------------------------------
+  */
+  public async updateJob(selector: string, body: IUpdateBidding): Promise<any> {
+    if (isEmpty(body)) throw new HttpException(400, 2005, 'Request body cannot be empty');
+
+    const { error } = jobSchemaUpdateValidation.validate(body);
+    if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
+
+    const data = await this.bid.findOne({ user_id: selector });
+    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+    const updatedPayload = {
+      ...data.toObject(),
+      activities: {
+        ...data.activities.toObject(),
+        ...body.activities,
+      },
+      ...body,
+    };
+
+    const updatedData = await this.bid.findByIdAndUpdate(data._id, updatedPayload, {
+      new: true,
+    });
+
+    if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+
+    return updatedData;
   }
 
   /*

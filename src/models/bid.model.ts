@@ -5,6 +5,8 @@ interface BiddingStage {
   description: string;
   dueDate: Date;
   amount: number;
+  attachments?: string[];
+  links?: string[];
 }
 
 interface IBidding extends Document {
@@ -24,6 +26,8 @@ interface IBidding extends Document {
   liked: boolean;
   disliked: boolean;
 }
+
+export type IUpdateBidding = Partial<IBidding>;
 
 const BiddingSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },

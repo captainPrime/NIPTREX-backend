@@ -12,6 +12,8 @@ export const biddingSchemaValidation = Joi.object({
           description: Joi.string().required(),
           dueDate: Joi.date().required(),
           amount: Joi.number().required(),
+          attachments: Joi.array().items(Joi.string()),
+          links: Joi.array().items(Joi.string()),
         }),
       )
       .required(),
@@ -25,3 +27,29 @@ export const biddingSchemaValidation = Joi.object({
   bidding_amount: Joi.number().required(),
   date_applied: Joi.date().default(Date.now),
 });
+
+export const updateBiddingSchemaValidation = Joi.object({
+  user_id: Joi.string(),
+  job_id: Joi.string(),
+  payment_type: Joi.string().valid('milestone', 'outright'),
+  milestone_stage: Joi.when('paymentType', {
+    is: 'milestone',
+    then: Joi.array().items(
+      Joi.object({
+        description: Joi.string(),
+        dueDate: Joi.date(),
+        amount: Joi.number(),
+        attachments: Joi.array().items(Joi.string()),
+        links: Joi.array().items(Joi.string()),
+      }),
+    ),
+  }),
+  cover_letter: Joi.string(),
+  attachments: Joi.array().items(Joi.string()),
+  links: Joi.array().items(Joi.string()),
+  total_price_of_project: Joi.number(),
+  service_fee: Joi.number(),
+  amount_to_be_received: Joi.number(),
+  bidding_amount: Joi.number(),
+  date_applied: Joi.date().default(Date.now),
+}).min(1);
