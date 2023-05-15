@@ -70,7 +70,11 @@ class BidService {
   public async getBidders(id: mongoose.Types.ObjectId | string, options: PaginationOptions): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
 
-    const data = await this.bid.paginate({ bidding_amount: 2 }, options);
+    const filter = {
+      job_id: id,
+    };
+
+    const data = await this.bid.paginate(filter, options);
 
     console.log('BIDDERS', data);
 

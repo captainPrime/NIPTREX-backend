@@ -50,3 +50,22 @@
 2023-05-15 00:17:27 info: [0mGET /bid/proposals/6461690e2e503005d635bd50?bidding_amount=20 [32m200[0m 1234.843 ms - -[0m
 2023-05-15 00:17:34 info: [0mGET /bid/proposals/6461690e2e503005d635bd50 [32m200[0m 888.515 ms - -[0m
 2023-05-15 00:17:43 info: Connected to email server
+2023-05-15 18:43:55 info: =================================
+2023-05-15 18:43:55 info: ======= ENV: development =======
+2023-05-15 18:43:55 info: 🚀 App listening on the port 3000
+2023-05-15 18:43:55 info: =================================
+2023-05-15 18:43:57 info: Connected to email server
+2023-05-15 18:43:57 info: Connected to Database Successfully...
+2023-05-15 18:44:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 18:44:38 info: [0mPOST /auth/login [32m200[0m 610.613 ms - 587[0m
+2023-05-15 18:44:44 info: [0mGET /job/getAllJobs [32m200[0m 248.519 ms - -[0m
+2023-05-15 18:44:58 info: [0mGET /bid/proposals/64626cff0f075e8ad1cd47ed [32m200[0m 467.311 ms - 171[0m
+2023-05-15 18:45:14 info: [0mGET /bid/proposals/64626e750f075e8ad1cd4824 [32m200[0m 601.444 ms - 171[0m
+2023-05-15 18:45:49 info: =================================
+2023-05-15 18:45:49 info: ======= ENV: development =======
+2023-05-15 18:45:49 info: 🚀 App listening on the port 3000
+2023-05-15 18:45:49 info: =================================
+2023-05-15 18:45:51 info: Connected to email server
+2023-05-15 18:45:51 info: Connected to Database Successfully...
+2023-05-15 18:46:03 info: [0mGET /bid/proposals/64626e750f075e8ad1cd4824 [32m200[0m 683.928 ms - 171[0m
+2023-05-15 18:46:08 info: [0mGET /bid/proposals/64626cff0f075e8ad1cd47ed [32m200[0m 912.169 ms - -[0m
