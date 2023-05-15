@@ -25,7 +25,10 @@ export const biddingSchemaValidation = Joi.object({
   service_fee: Joi.number().required(),
   amount_to_be_received: Joi.number().required(),
   bidding_amount: Joi.number().required(),
+  status: Joi.string().valid('cancelled', 'pending', 'paid', 'applied').default('applied'),
   date_applied: Joi.date().default(Date.now),
+  liked: Joi.boolean().default(false),
+  disliked: Joi.boolean().default(false),
 });
 
 export const updateBiddingSchemaValidation = Joi.object({
@@ -51,5 +54,8 @@ export const updateBiddingSchemaValidation = Joi.object({
   service_fee: Joi.number(),
   amount_to_be_received: Joi.number(),
   bidding_amount: Joi.number(),
+  status: Joi.string().valid('cancelled', 'pending', 'paid', 'applied').default('applied'),
   date_applied: Joi.date().default(Date.now),
+  liked: Joi.boolean().default(false),
+  disliked: Joi.boolean().default(false),
 }).min(1);

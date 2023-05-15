@@ -6,7 +6,7 @@ import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
-import { biddingSchemaValidation } from '@/validations/bid.validation';
+import { biddingSchemaValidation, updateBiddingSchemaValidation } from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
 
 class BidService {
@@ -39,20 +39,20 @@ class BidService {
   | Create Job
   |--------------------------------------------------------------------------
   */
-  public async updateJob(selector: string, body: IUpdateBidding): Promise<any> {
+  public async updateBid(selector: string, body: IUpdateBidding): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 2005, 'Request body cannot be empty');
 
-    const { error } = jobSchemaUpdateValidation.validate(body);
-    if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
+    const { error } = updateBiddingSchemaValidation.validate(body);
+    if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.bid.findOne({ user_id: selector });
-    if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+    if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     const updatedPayload = {
       ...data.toObject(),
-      activities: {
-        ...data.activities.toObject(),
-        ...body.activities,
+      milestone_stage: {
+        ...data.milestone_stage.toObject(),
+        ...body.milestone_stage,
       },
       ...body,
     };
