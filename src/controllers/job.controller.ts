@@ -342,9 +342,7 @@ class JobController {
 
       // return user nips
       const bidders = await this.bidService.getAllBidders(job._id.toString());
-      const userIds = bidders
-        .filter((obj: any) => obj.user_id !== user_id) // Exclude the object with the specified user_id
-        .map((obj: any) => obj.user_id);
+      const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
 
       userIds.forEach(async (userId: any) => {
         await this.aboutService.updateAboutById(userId, { nips: +5 });

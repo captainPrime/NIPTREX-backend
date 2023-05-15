@@ -13,3 +13,17 @@
 2023-05-15 18:51:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-15 18:52:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-15 18:52:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-15 19:14:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:350:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-15 19:14:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:350:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

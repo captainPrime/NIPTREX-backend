@@ -1008,3 +1008,17 @@ Error: Channel closed
     at Module.require (node:internal/modules/cjs/loader:1057:19)
     at require (node:internal/modules/cjs/helpers:103:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-05-15 19:14:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:350:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-05-15 19:14:53 error: unhandledRejection: id can not be empty
+Error: id can not be empty
+    at AboutService.updateAboutById (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:68:28)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:350:33
+    at Array.forEach (<anonymous>)
+    at JobController.hireFreelancer (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/job.controller.ts:349:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
