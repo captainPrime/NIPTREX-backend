@@ -2,7 +2,7 @@
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-import express from 'express';
+import express, { Application, Request, Response, NextFunction } from 'express';
 import helmet from 'helmet';
 import hpp from 'hpp';
 import { connect, set } from 'mongoose';
@@ -11,18 +11,21 @@ import swaggerUi from 'swagger-ui-express';
 import ExpressMongoSanitize from 'express-mongo-sanitize';
 import tooBusy from 'toobusy-js';
 import xss from 'xss-clean';
+import { createServer, Server as HTTPServer } from 'http';
+import { Server, Socket } from 'socket.io';
 import { NODE_ENV, PORT, ORIGIN, HAS_CREDENTIALS } from '@config';
 import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import ErrorMiddleware from '@middlewares/error.middleware';
 import { logger, Logger } from '@utils/logger';
 import { NotFoundError, ServiceUnavailableError } from '@exceptions/HttpException';
-// import rateLimiter from '@utils/rateLimiter';
 
 class App {
-  public app: express.Application;
+  public app: Application;
   public env: string;
   public port: string | number;
+  private server: HTTPServer;
+  private io: Server;
 
   constructor(routes: Routes[]) {
     this.app = express();
@@ -34,10 +37,15 @@ class App {
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+
+    this.server = createServer(this.app);
+    this.io = new Server(this.server);
+
+    this.initializeSockets();
   }
 
   public listen() {
-    this.app.listen(this.port, () => {
+    this.server.listen(this.port, () => {
       logger.info(`=================================`);
       logger.info(`======= ENV: ${this.env} =======`);
       logger.info(`🚀 App listening on the port ${this.port}`);
@@ -45,7 +53,7 @@ class App {
     });
   }
 
-  public getServer() {
+  public getServer(): Application {
     return this.app;
   }
 
@@ -75,10 +83,9 @@ class App {
     this.app.use(express.json({ limit: '50kb' }));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(cookieParser());
-    // this.app.use(rateLimiter);
-    this.app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
+    this.app.use((req: Request, res: Response, next: NextFunction) => {
       if (tooBusy()) {
-        new ServiceUnavailableError('Server too busy!');
+        next(new ServiceUnavailableError('Server too busy!'));
       } else {
         next();
       }
@@ -122,8 +129,23 @@ class App {
   }
 
   private initializeErrorHandling() {
-    this.app.use((req: express.Request, res: express.Response, next: express.NextFunction) => next(new NotFoundError(req.path)));
+    this.app.use((req: Request, res: Response, next: NextFunction) => next(new NotFoundError(req.path)));
     this.app.use(ErrorMiddleware.handleError());
+  }
+
+  private initializeSockets() {
+    this.io.on('connection', (socket: Socket) => {
+      logger.info('New socket connection:', socket.id);
+
+      socket.on('chat message', (message: string) => {
+        console.log('Message:', message);
+        this.server.emit('chat message', message);
+      });
+
+      socket.on('disconnect', () => {
+        console.log('User disconnected:', socket.id);
+      });
+    });
   }
 }
 
