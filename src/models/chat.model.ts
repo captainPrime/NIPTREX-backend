@@ -1,7 +1,7 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import { Schema, Document, model } from 'mongoose';
 
 // Define the Message schema
-export interface Message extends Document {
+export interface IMessage extends Document {
   sender: string;
   receiver: string;
   content: string;
@@ -19,10 +19,10 @@ const messageSchema: Schema = new Schema(
 );
 
 // Define the Chat schema
-export interface Chat extends Document {
+export interface IChat extends Document {
   user1: string;
   user2: string;
-  messages: Message[];
+  messages: IMessage[];
 }
 
 const chatSchema: Schema = new Schema(
@@ -35,4 +35,7 @@ const chatSchema: Schema = new Schema(
 );
 
 // Create and export the Chat model
-export default mongoose.model<Chat>('Chat', chatSchema);
+const ChatModel = model<IChat>('Chat', chatSchema);
+const MessageModel = model<IMessage>('Message', messageSchema);
+
+export { ChatModel, MessageModel };
