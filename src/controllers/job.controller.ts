@@ -344,9 +344,10 @@ class JobController {
       const bidders = await this.bidService.getAllBidders(job._id.toString());
       const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
 
+      await this.bidService.updateBid(user_id, { status: 'in_progress' });
       userIds.forEach(async (userId: any) => {
         await this.aboutService.updateAboutById(userId, { nips: +5 });
-        await this.bidService.updateBid(userId, { status: 'cancelled' });
+        await this.bidService.updateBid(userId, { status: 'closed' });
       });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });

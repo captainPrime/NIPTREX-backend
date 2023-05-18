@@ -21,7 +21,7 @@ interface IBidding extends Document {
   service_fee: number;
   amount_to_be_received: number;
   bidding_amount: number;
-  status: 'cancelled' | 'pending' | 'paid' | 'applied';
+  status: 'closed' | 'in_progress' | 'paid' | 'applied' | 'completed';
   date_applied: Date;
   liked: boolean;
   disliked: boolean;
@@ -92,7 +92,7 @@ const BiddingSchema: Schema = new Schema({
   },
   status: {
     type: String,
-    enum: ['cancelled', 'pending', 'paid', 'applied'],
+    enum: ['closed', 'in_progress', 'paid', 'applied', 'completed'],
     default: 'applied',
   },
   date_applied: {
