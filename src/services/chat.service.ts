@@ -13,7 +13,7 @@ class ChatService {
   | Create Chat
   |--------------------------------------------------------------------------
   */
-  public async createChat(user1: string, user2: string): Promise<IChat> {
+  public async createChat(user1: Types.ObjectId | string, user2: Types.ObjectId | string): Promise<IChat> {
     if (isEmpty(user1) || isEmpty(user2)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
@@ -59,11 +59,7 @@ class ChatService {
       throw new HttpException(400, 2001, 'User id cannot be empty');
     }
 
-    const chats: IChat[] = await this.chat
-      .find({
-        $or: [{ user1: userId }, { user2: userId }],
-      })
-      .exec();
+    const chats: IChat[] = await this.chat.find({ user1: userId }).exec();
 
     return chats;
   }

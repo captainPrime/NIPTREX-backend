@@ -1,0 +1,105 @@
+2023-05-19 12:16:01 info: =================================
+2023-05-19 12:16:01 info: ======= ENV: development =======
+2023-05-19 12:16:01 info: 🚀 App listening on the port 3000
+2023-05-19 12:16:01 info: =================================
+2023-05-19 12:16:05 info: Connected to email server
+2023-05-19 12:16:07 info: Connected to Database Successfully...
+2023-05-19 12:16:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:16:18 info: [0mPOST /auth/login [32m200[0m 764.897 ms - 587[0m
+2023-05-19 12:16:40 error: [POST] /chat >> StatusCode:: 404, Message:: The requested path /chat not found!
+2023-05-19 12:16:40 info: [0mPOST /chat [32m200[0m 5.832 ms - 93[0m
+2023-05-19 12:17:54 info: =================================
+2023-05-19 12:17:54 info: ======= ENV: development =======
+2023-05-19 12:17:54 info: 🚀 App listening on the port 3000
+2023-05-19 12:17:54 info: =================================
+2023-05-19 12:17:59 info: Connected to email server
+2023-05-19 12:18:11 info: Connected to Database Successfully...
+2023-05-19 12:18:17 error: [POST] /chat >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-19 12:18:17 info: [0mPOST /chat [32m200[0m 528.830 ms - 75[0m
+2023-05-19 12:19:05 info: =================================
+2023-05-19 12:19:05 info: ======= ENV: development =======
+2023-05-19 12:19:05 info: 🚀 App listening on the port 3000
+2023-05-19 12:19:05 info: =================================
+2023-05-19 12:19:19 info: Connected to email server
+2023-05-19 12:19:30 info: Connected to Database Successfully...
+2023-05-19 12:19:51 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 12:19:51 info: [0mPOST /chat [32m200[0m 15986.287 ms - 93[0m
+2023-05-19 12:21:34 info: [0mGET /users/profile [32m200[0m 11377.379 ms - 437[0m
+2023-05-19 12:21:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:21:52 info: [0mPOST /auth/login [32m200[0m 1322.905 ms - 587[0m
+2023-05-19 12:21:56 info: [0mGET /users/profile [32m200[0m 1274.607 ms - 439[0m
+2023-05-19 12:22:07 info: [0mPOST /chat [32m200[0m 986.601 ms - 178[0m
+2023-05-19 12:23:35 info: =================================
+2023-05-19 12:23:35 info: ======= ENV: development =======
+2023-05-19 12:23:35 info: 🚀 App listening on the port 3000
+2023-05-19 12:23:35 info: =================================
+2023-05-19 12:23:38 info: Connected to email server
+2023-05-19 12:24:04 info: Connected to Database Successfully...
+2023-05-19 12:24:20 info: [0mPOST /chat [32m200[0m 3302.343 ms - 197[0m
+2023-05-19 12:25:08 info: [0mGET /chat/64675c6248ca3250fd9f23a7 [32m200[0m 3873.907 ms - 180[0m
+2023-05-19 12:26:05 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:26:05 info: [0mGET /chat/user [32m200[0m 824.108 ms - 148[0m
+2023-05-19 12:26:19 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:26:19 info: [0mGET /chat/user [32m200[0m 520.189 ms - 148[0m
+2023-05-19 12:29:11 info: =================================
+2023-05-19 12:29:11 info: ======= ENV: development =======
+2023-05-19 12:29:11 info: 🚀 App listening on the port 3000
+2023-05-19 12:29:11 info: =================================
+2023-05-19 12:29:16 info: Connected to email server
+2023-05-19 12:29:21 info: Connected to Database Successfully...
+2023-05-19 12:29:35 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:29:35 info: [0mGET /chat/user [32m200[0m 1291.621 ms - 148[0m
+2023-05-19 12:30:26 info: =================================
+2023-05-19 12:30:26 info: ======= ENV: development =======
+2023-05-19 12:30:26 info: 🚀 App listening on the port 3000
+2023-05-19 12:30:26 info: =================================
+2023-05-19 12:30:30 info: Connected to email server
+2023-05-19 12:30:40 info: Connected to Database Successfully...
+2023-05-19 12:30:47 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:30:47 info: [0mGET /chat/user [32m200[0m 294.046 ms - 148[0m
+2023-05-19 12:30:49 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:30:49 info: [0mGET /chat/user [32m200[0m 281.789 ms - 148[0m
+2023-05-19 12:49:43 info: =================================
+2023-05-19 12:49:43 info: ======= ENV: development =======
+2023-05-19 12:49:43 info: 🚀 App listening on the port 3000
+2023-05-19 12:49:43 info: =================================
+2023-05-19 12:49:45 info: Connected to email server
+2023-05-19 12:49:46 info: Connected to Database Successfully...
+2023-05-19 12:49:58 info: [0mGET /reload_db [32m200[0m 5560.251 ms - 74[0m
+2023-05-19 12:50:14 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-05-19 12:50:14 info: [0mGET /chat/user [32m200[0m 264.051 ms - 79[0m
+2023-05-19 12:50:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:50:51 info: [0mPOST /auth/login [32m200[0m 520.195 ms - 587[0m
+2023-05-19 12:50:55 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:50:55 info: [0mGET /chat/user [32m200[0m 222.753 ms - 148[0m
+2023-05-19 12:51:18 info: [0mPOST /chat [32m200[0m 575.765 ms - 196[0m
+2023-05-19 12:51:33 info: [0mGET /chat/646762b6622f07c445bd6744 [32m200[0m 430.117 ms - 179[0m
+2023-05-19 12:51:46 info: [0mGET /users/profile [32m200[0m 429.123 ms - 437[0m
+2023-05-19 12:52:20 info: =================================
+2023-05-19 12:52:20 info: ======= ENV: development =======
+2023-05-19 12:52:20 info: 🚀 App listening on the port 3000
+2023-05-19 12:52:20 info: =================================
+2023-05-19 12:52:23 info: Connected to email server
+2023-05-19 12:52:23 info: Connected to Database Successfully...
+2023-05-19 12:52:33 info: [0mGET /users/profile [32m200[0m 490.759 ms - 437[0m
+2023-05-19 12:52:38 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:52:38 info: [0mGET /chat/user [32m200[0m 336.505 ms - 148[0m
+2023-05-19 12:53:54 info: =================================
+2023-05-19 12:53:54 info: ======= ENV: development =======
+2023-05-19 12:53:54 info: 🚀 App listening on the port 3000
+2023-05-19 12:53:54 info: =================================
+2023-05-19 12:53:56 info: Connected to email server
+2023-05-19 12:53:57 info: Connected to Database Successfully...
+2023-05-19 12:54:03 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:54:03 info: [0mGET /chat/user [32m200[0m 268.273 ms - 148[0m
+2023-05-19 12:54:57 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:54:57 info: [0mGET /chat/user/ [32m200[0m 396.568 ms - 148[0m
+2023-05-19 12:55:40 info: =================================
+2023-05-19 12:55:40 info: ======= ENV: development =======
+2023-05-19 12:55:40 info: 🚀 App listening on the port 3000
+2023-05-19 12:55:40 info: =================================
+2023-05-19 12:55:43 info: Connected to email server
+2023-05-19 12:55:43 info: Connected to Database Successfully...
+2023-05-19 12:55:50 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:55:50 info: [0mGET /chat/user/ [32m200[0m 369.519 ms - 148[0m
+2023-05-19 12:57:38 info: [0mGET /reload_db [32m200[0m 3760.996 ms - 74[0m

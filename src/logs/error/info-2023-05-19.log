@@ -1,0 +1,17 @@
+2023-05-19 12:16:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:16:40 error: [POST] /chat >> StatusCode:: 404, Message:: The requested path /chat not found!
+2023-05-19 12:18:17 error: [POST] /chat >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-19 12:19:51 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 12:21:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:26:05 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:26:19 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:29:35 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:30:47 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:30:49 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:50:14 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-05-19 12:50:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:50:55 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:52:38 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:54:03 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:54:57 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-05-19 12:55:50 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"

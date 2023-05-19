@@ -1,4 +1,5 @@
 import { Schema, Document, model } from 'mongoose';
+import { toJSON } from '@/modules/toJSON';
 
 // Define the Message schema
 export interface IMessage extends Document {
@@ -33,6 +34,10 @@ const chatSchema: Schema = new Schema(
   },
   { versionKey: false },
 );
+
+// add plugin that converts mongoose to json
+chatSchema.plugin(toJSON);
+messageSchema.plugin(toJSON);
 
 // Create and export the Chat model
 const ChatModel = model<IChat>('Chat', chatSchema);

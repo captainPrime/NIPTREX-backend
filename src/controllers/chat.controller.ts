@@ -16,9 +16,9 @@ class ChatController {
     try {
       const { user1, user2 } = req.body;
 
-      const chat = await this.chatService.createChat(user1, user2);
+      const chat = await this.chatService.createChat(new Types.ObjectId(user1), new Types.ObjectId(user2));
 
-      res.status(200).json({ status: 200, message: 'Chat created successfully', data: chat });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chat });
     } catch (error) {
       next(error);
     }
@@ -48,7 +48,7 @@ class ChatController {
   */
   public getChatsByUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { userId } = req.user.id;
+      const userId = req.user.id;
 
       const chats = await this.chatService.getChatsByUser(userId);
 
