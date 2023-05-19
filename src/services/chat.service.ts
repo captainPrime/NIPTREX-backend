@@ -69,28 +69,35 @@ class ChatService {
   | Create Message
   |--------------------------------------------------------------------------
   */
-  public async createMessage(chatId: Types.ObjectId | string, sender: string, receiver: string, content: string): Promise<IMessage> {
-    if (isEmpty(chatId) || isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
+  public async createMessage(chat: Types.ObjectId | string, sender: string, receiver: string, content: string): Promise<IMessage> {
+    console.log(chat);
+    if (isEmpty(chat) || isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
-    const { error } = messageSchemaValidation.validate({ sender, receiver, content });
+    const { error } = messageSchemaValidation.validate({ chat, sender, receiver, content });
 
     if (error) {
       throw new HttpException(400, 2002, 'MESSAGE_VALIDATION_ERROR', [error.details[0].message]);
     }
 
-    const chat: IChat = await this.getChatById(chatId);
+    const chatData: any = await this.getChatById(chat);
 
-    const message: IMessage = new this.message({
-      chat: chat._id,
+    const payload = {
+      chat: chatData.id,
       sender,
       receiver,
       content,
       createdAt: new Date(),
-    });
+    };
+
+    const message: IMessage = new this.message(payload);
 
     await message.save();
+
+    chatData.messages.push(payload);
+
+    chatData.save();
 
     return message;
   }

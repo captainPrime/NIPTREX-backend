@@ -3,6 +3,7 @@ import { toJSON } from '@/modules/toJSON';
 
 // Define the Message schema
 export interface IMessage extends Document {
+  chat: string;
   sender: string;
   receiver: string;
   content: string;
@@ -13,6 +14,7 @@ const messageSchema: Schema = new Schema(
   {
     sender: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     receiver: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    chat: { type: Schema.Types.ObjectId, ref: 'Chat', required: true },
     content: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
   },

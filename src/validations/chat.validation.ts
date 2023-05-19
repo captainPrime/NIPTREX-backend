@@ -8,6 +8,7 @@ export const chatSchemaValidation = Joi.object({
 
 // Message Validation Schema
 export const messageSchemaValidation = Joi.object({
+  chat: Joi.string().required(),
   sender: Joi.string().required().label('Sender'),
   receiver: Joi.string().required().label('Receiver'),
   content: Joi.string().required().label('Content'),

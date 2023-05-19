@@ -103,3 +103,109 @@
 2023-05-19 12:55:50 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
 2023-05-19 12:55:50 info: [0mGET /chat/user/ [32m200[0m 369.519 ms - 148[0m
 2023-05-19 12:57:38 info: [0mGET /reload_db [32m200[0m 3760.996 ms - 74[0m
+2023-05-19 12:59:34 info: =================================
+2023-05-19 12:59:34 info: ======= ENV: development =======
+2023-05-19 12:59:34 info: 🚀 App listening on the port 3000
+2023-05-19 12:59:34 info: =================================
+2023-05-19 12:59:37 info: Connected to email server
+2023-05-19 12:59:37 info: Connected to Database Successfully...
+2023-05-19 12:59:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 12:59:48 info: [0mPOST /auth/login [32m200[0m 875.083 ms - 587[0m
+2023-05-19 12:59:52 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 12:59:52 info: [0mPOST /chat [32m200[0m 222.090 ms - 93[0m
+2023-05-19 13:04:21 info: =================================
+2023-05-19 13:04:21 info: ======= ENV: development =======
+2023-05-19 13:04:21 info: 🚀 App listening on the port 3000
+2023-05-19 13:04:21 info: =================================
+2023-05-19 13:04:23 info: Connected to email server
+2023-05-19 13:04:23 info: Connected to Database Successfully...
+2023-05-19 13:04:32 info: [0mPOST /chat [32m200[0m 976.377 ms - 196[0m
+2023-05-19 13:04:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:04:41 info: [0mPOST /auth/login [32m200[0m 621.988 ms - 587[0m
+2023-05-19 13:04:45 info: [0mGET /users/profile [32m200[0m 567.635 ms - 437[0m
+2023-05-19 13:04:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:04:57 info: [0mPOST /auth/login [32m200[0m 574.327 ms - 587[0m
+2023-05-19 13:05:00 info: [0mGET /users/profile [32m200[0m 453.268 ms - 444[0m
+2023-05-19 13:05:12 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:05:12 info: [0mPOST /auth/login [32m200[0m 472.294 ms - 587[0m
+2023-05-19 13:05:19 info: [0mPOST /chat [32m200[0m 475.783 ms - 196[0m
+2023-05-19 13:07:28 info: [0mPOST /chat/message [32m200[0m 1281.360 ms - 209[0m
+2023-05-19 13:07:48 info: [0mGET /chat/646765feaa56422a9191ff29 [32m200[0m 600.839 ms - 179[0m
+2023-05-19 13:14:55 info: =================================
+2023-05-19 13:14:55 info: ======= ENV: development =======
+2023-05-19 13:14:55 info: 🚀 App listening on the port 3000
+2023-05-19 13:14:55 info: =================================
+2023-05-19 13:14:58 info: Connected to email server
+2023-05-19 13:14:58 info: Connected to Database Successfully...
+2023-05-19 13:15:17 error: [POST] /chat/message >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 13:15:17 info: [0mPOST /chat/message [32m200[0m 272.327 ms - 93[0m
+2023-05-19 13:16:06 info: =================================
+2023-05-19 13:16:06 info: ======= ENV: development =======
+2023-05-19 13:16:06 info: 🚀 App listening on the port 3000
+2023-05-19 13:16:06 info: =================================
+2023-05-19 13:16:09 info: Connected to email server
+2023-05-19 13:16:19 info: Connected to Database Successfully...
+2023-05-19 13:16:34 info: [0mGET /reload_db [32m200[0m 6402.733 ms - 74[0m
+2023-05-19 13:16:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:16:41 info: [0mPOST /auth/login [32m200[0m 953.031 ms - 587[0m
+2023-05-19 13:16:45 info: [0mGET /users/profile [32m200[0m 856.207 ms - 437[0m
+2023-05-19 13:16:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:16:58 info: [0mPOST /auth/login [32m200[0m 906.531 ms - 587[0m
+2023-05-19 13:17:04 info: [0mGET /users/profile [32m200[0m 628.730 ms - 444[0m
+2023-05-19 13:17:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-19 13:17:18 info: [0mPOST /auth/login [32m200[0m 645.941 ms - 587[0m
+2023-05-19 13:17:21 info: [0mPOST /chat [32m200[0m 466.103 ms - 196[0m
+2023-05-19 13:17:49 error: [POST] /chat/message >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 13:17:49 info: [0mPOST /chat/message [32m200[0m 252.541 ms - 93[0m
+2023-05-19 13:18:44 info: =================================
+2023-05-19 13:18:44 info: ======= ENV: development =======
+2023-05-19 13:18:44 info: 🚀 App listening on the port 3000
+2023-05-19 13:18:44 info: =================================
+2023-05-19 13:18:46 info: Connected to email server
+2023-05-19 13:18:46 info: Connected to Database Successfully...
+2023-05-19 13:18:54 error: [POST] /chat/message >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-19 13:18:54 info: [0mPOST /chat/message [32m200[0m 354.610 ms - 93[0m
+2023-05-19 13:19:33 info: =================================
+2023-05-19 13:19:33 info: ======= ENV: development =======
+2023-05-19 13:19:33 info: 🚀 App listening on the port 3000
+2023-05-19 13:19:33 info: =================================
+2023-05-19 13:19:36 info: Connected to email server
+2023-05-19 13:19:42 info: Connected to Database Successfully...
+2023-05-19 13:19:47 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-05-19 13:19:47 info: [0mPOST /chat/message [32m200[0m 291.853 ms - 104[0m
+2023-05-19 13:20:22 info: =================================
+2023-05-19 13:20:22 info: ======= ENV: development =======
+2023-05-19 13:20:22 info: 🚀 App listening on the port 3000
+2023-05-19 13:20:22 info: =================================
+2023-05-19 13:20:26 info: Connected to email server
+2023-05-19 13:20:27 info: Connected to Database Successfully...
+2023-05-19 13:20:32 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-05-19 13:20:32 info: [0mPOST /chat/message [32m200[0m 346.666 ms - 104[0m
+2023-05-19 13:22:10 info: =================================
+2023-05-19 13:22:10 info: ======= ENV: development =======
+2023-05-19 13:22:10 info: 🚀 App listening on the port 3000
+2023-05-19 13:22:10 info: =================================
+2023-05-19 13:22:24 info: Connected to Database Successfully...
+2023-05-19 13:22:33 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-05-19 13:22:33 info: [0mPOST /chat/message [32m200[0m 398.563 ms - 104[0m
+2023-05-19 13:22:36 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-05-19 13:22:36 info: [0mPOST /chat/message [32m200[0m 493.216 ms - 104[0m
+2023-05-19 13:22:46 info: Connected to email server
+2023-05-19 13:23:42 info: =================================
+2023-05-19 13:23:42 info: ======= ENV: development =======
+2023-05-19 13:23:42 info: 🚀 App listening on the port 3000
+2023-05-19 13:23:42 info: =================================
+2023-05-19 13:23:44 info: Connected to email server
+2023-05-19 13:23:50 info: Connected to Database Successfully...
+2023-05-19 13:23:58 info: [0mPOST /chat/message [32m200[0m 1104.672 ms - 243[0m
+2023-05-19 13:24:19 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 447.672 ms - 179[0m
+2023-05-19 13:25:01 info: =================================
+2023-05-19 13:25:01 info: ======= ENV: development =======
+2023-05-19 13:25:01 info: 🚀 App listening on the port 3000
+2023-05-19 13:25:01 info: =================================
+2023-05-19 13:25:03 info: Connected to email server
+2023-05-19 13:25:04 info: Connected to Database Successfully...
+2023-05-19 13:25:11 info: [0mPOST /chat/message [32m200[0m 719.035 ms - 243[0m
+2023-05-19 13:25:16 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 477.628 ms - 359[0m
+2023-05-19 13:25:35 info: [0mPOST /chat/message [32m200[0m 821.144 ms - 235[0m
+2023-05-19 13:25:40 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 431.985 ms - 532[0m
