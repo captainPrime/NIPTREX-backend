@@ -2,7 +2,7 @@
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express from 'express';
 import helmet from 'helmet';
 import hpp from 'hpp';
 import { connect, set } from 'mongoose';
@@ -11,7 +11,7 @@ import swaggerUi from 'swagger-ui-express';
 import ExpressMongoSanitize from 'express-mongo-sanitize';
 import tooBusy from 'toobusy-js';
 import xss from 'xss-clean';
-import { createServer, Server as HTTPServer } from 'http';
+import { createServer } from 'http';
 import { Server, Socket } from 'socket.io';
 import { NODE_ENV, PORT, ORIGIN, HAS_CREDENTIALS } from '@config';
 import { dbConnection } from '@databases';
@@ -21,11 +21,11 @@ import { logger, Logger } from '@utils/logger';
 import { NotFoundError, ServiceUnavailableError } from '@exceptions/HttpException';
 
 class App {
-  public app: Application;
+  public app: express.Application;
   public env: string;
   public port: string | number;
-  private server: HTTPServer;
-  private io: Server;
+  private server: any;
+  private io: any;
 
   constructor(routes: Routes[]) {
     this.app = express();
@@ -53,7 +53,7 @@ class App {
     });
   }
 
-  public getServer(): Application {
+  public getServer() {
     return this.app;
   }
 
@@ -83,9 +83,9 @@ class App {
     this.app.use(express.json({ limit: '50kb' }));
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(cookieParser());
-    this.app.use((req: Request, res: Response, next: NextFunction) => {
+    this.app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
       if (tooBusy()) {
-        next(new ServiceUnavailableError('Server too busy!'));
+        new ServiceUnavailableError('Server too busy!');
       } else {
         next();
       }
@@ -129,7 +129,7 @@ class App {
   }
 
   private initializeErrorHandling() {
-    this.app.use((req: Request, res: Response, next: NextFunction) => next(new NotFoundError(req.path)));
+    this.app.use((req: express.Request, res: express.Response, next: express.NextFunction) => next(new NotFoundError(req.path)));
     this.app.use(ErrorMiddleware.handleError());
   }
 
@@ -138,8 +138,8 @@ class App {
       logger.info('New socket connection:', socket.id);
 
       socket.on('chat message', (message: string) => {
-        console.log('Message:', message);
-        this.server.emit('chat message', message);
+        logger.info('Message:', message);
+        this.io.emit('chat message', message);
       });
 
       socket.on('disconnect', () => {

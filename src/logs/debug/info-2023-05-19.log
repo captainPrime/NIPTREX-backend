@@ -210,3 +210,57 @@
 2023-05-19 13:25:35 info: [0mPOST /chat/message [32m200[0m 821.144 ms - 235[0m
 2023-05-19 13:25:40 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 431.985 ms - 532[0m
 2023-05-19 13:26:32 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 556.987 ms - 532[0m
+2023-05-19 15:40:20 info: =================================
+2023-05-19 15:40:20 info: ======= ENV: development =======
+2023-05-19 15:40:20 info: 🚀 App listening on the port 3000
+2023-05-19 15:40:21 info: =================================
+2023-05-19 15:40:23 info: Connected to email server
+2023-05-19 15:40:24 info: Connected to Database Successfully...
+2023-05-19 15:45:08 info: =================================
+2023-05-19 15:45:08 info: ======= ENV: development =======
+2023-05-19 15:45:08 info: 🚀 App listening on the port 3000
+2023-05-19 15:45:08 info: =================================
+2023-05-19 15:45:11 info: Connected to email server
+2023-05-19 15:45:11 info: Connected to Database Successfully...
+2023-05-19 15:48:45 info: =================================
+2023-05-19 15:48:45 info: ======= ENV: development =======
+2023-05-19 15:48:45 info: 🚀 App listening on the port 3000
+2023-05-19 15:48:45 info: =================================
+2023-05-19 15:48:47 info: Connected to email server
+2023-05-19 15:48:48 info: Connected to Database Successfully...
+2023-05-19 15:49:15 info: [0mGET / [32m200[0m 5.975 ms - 115[0m
+2023-05-19 15:49:18 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-05-19 15:49:18 info: [0mGET /favicon.ico [32m200[0m 5.070 ms - 100[0m
+2023-05-19 16:40:07 info: =================================
+2023-05-19 16:40:07 info: ======= ENV: development =======
+2023-05-19 16:40:07 info: 🚀 App listening on the port 3000
+2023-05-19 16:40:07 info: =================================
+2023-05-19 16:40:11 info: Connected to email server
+2023-05-19 16:40:11 info: Connected to Database Successfully...
+2023-05-19 16:47:23 info: =================================
+2023-05-19 16:47:23 info: ======= ENV: development =======
+2023-05-19 16:47:23 info: 🚀 App listening on the port 3000
+2023-05-19 16:47:23 info: =================================
+2023-05-19 16:47:26 info: Connected to email server
+2023-05-19 16:47:26 info: Connected to Database Successfully...
+2023-05-19 16:51:09 info: Connecting Socket...
+2023-05-19 16:51:09 info: =================================
+2023-05-19 16:51:09 info: ======= ENV: development =======
+2023-05-19 16:51:09 info: 🚀 App listening on the port 3000
+2023-05-19 16:51:09 info: =================================
+2023-05-19 16:51:16 info: Connected to email server
+2023-05-19 16:51:23 info: Connected to Database Successfully...
+2023-05-19 16:58:20 info: Connecting DB...
+2023-05-19 16:58:20 info: Connecting Socket...
+2023-05-19 16:58:20 info: =================================
+2023-05-19 16:58:20 info: ======= ENV: development =======
+2023-05-19 16:58:20 info: 🚀 App listening on the port 3000
+2023-05-19 16:58:20 info: =================================
+2023-05-19 16:58:24 info: Connected to email server
+2023-05-19 16:58:25 info: Connected to Database Successfully...
+2023-05-19 17:20:30 info: =================================
+2023-05-19 17:20:30 info: ======= ENV: development =======
+2023-05-19 17:20:30 info: 🚀 App listening on the port 3000
+2023-05-19 17:20:30 info: =================================
+2023-05-19 17:20:37 info: Connected to email server
+2023-05-19 17:20:38 info: Connected to Database Successfully...
