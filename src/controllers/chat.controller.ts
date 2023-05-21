@@ -91,6 +91,23 @@ class ChatController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Messages By Chat
+  |--------------------------------------------------------------------------
+  */
+  public getMessagesByMilestone = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { chatId } = req.params;
+
+      const messages = await this.chatService.getMessagesByMilestone(chatId);
+
+      res.status(200).json({ status: 200, message: 'Messages retrieved successfully', data: messages });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default ChatController;

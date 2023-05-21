@@ -25,6 +25,7 @@ const messageSchema: Schema = new Schema(
 export interface IChat extends Document {
   user1: string;
   user2: string;
+  milestone: string;
   messages: IMessage[];
 }
 
@@ -32,6 +33,7 @@ const chatSchema: Schema = new Schema(
   {
     user1: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     user2: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    milestone: { type: Schema.Types.ObjectId, ref: 'Bid', required: true },
     messages: [messageSchema],
   },
   { versionKey: false },
