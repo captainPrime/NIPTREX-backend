@@ -24,7 +24,7 @@ class ChatService {
       throw new HttpException(400, 2002, 'CHAT_VALIDATION_ERROR', [error.details[0].message]);
     }
 
-    const chat: IChat = new this.chat({ user1, user2 });
+    const chat: IChat = new this.chat({ user1, user2, milestone });
     await chat.save();
 
     return chat;

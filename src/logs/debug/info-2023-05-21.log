@@ -27,3 +27,15 @@
 2023-05-21 07:27:06 info: Connected to Database Successfully...
 2023-05-21 07:27:12 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_VALIDATION_ERROR
 2023-05-21 07:27:12 info: [0mPOST /chat [32m200[0m 1603.476 ms - 106[0m
+2023-05-21 07:29:20 info: =================================
+2023-05-21 07:29:20 info: ======= ENV: development =======
+2023-05-21 07:29:20 info: 🚀 App listening on the port 3000
+2023-05-21 07:29:20 info: =================================
+2023-05-21 07:29:26 info: Connected to email server
+2023-05-21 07:29:32 info: Connected to Database Successfully...
+2023-05-21 07:29:41 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.
+2023-05-21 07:29:41 info: [0mPOST /chat [32m200[0m 408.202 ms - 121[0m
+2023-05-21 07:30:51 info: =================================
+2023-05-21 07:30:51 info: ======= ENV: development =======
+2023-05-21 07:30:51 info: 🚀 App listening on the port 3000
+2023-05-21 07:30:51 info: =================================

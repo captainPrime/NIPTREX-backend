@@ -4,3 +4,4 @@
 2023-05-21 07:25:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-21 07:26:06 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.
 2023-05-21 07:27:12 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_VALIDATION_ERROR
+2023-05-21 07:29:41 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.
