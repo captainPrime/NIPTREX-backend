@@ -94,6 +94,7 @@ class ChatService {
       sender,
       receiver,
       content,
+      milestone,
       createdAt: new Date(),
     };
 
