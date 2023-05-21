@@ -35,7 +35,7 @@ class ChatController {
 
       const chat = await this.chatService.getChatById(id);
 
-      res.status(200).json({ status: 200, message: 'Chat retrieved successfully', data: chat });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chat });
     } catch (error) {
       next(error);
     }
@@ -52,7 +52,7 @@ class ChatController {
 
       const chats = await this.chatService.getChatsByUser(userId);
 
-      res.status(200).json({ status: 200, message: 'Chats retrieved successfully', data: chats });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chats });
     } catch (error) {
       next(error);
     }
@@ -69,7 +69,7 @@ class ChatController {
 
       const message = await this.chatService.createMessage(chat, sender, receiver, content, milestone);
 
-      res.status(200).json({ status: 200, message: 'Message created successfully', data: message });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: message });
     } catch (error) {
       next(error);
     }
@@ -86,7 +86,7 @@ class ChatController {
 
       const messages = await this.chatService.getMessagesByChat(chatId);
 
-      res.status(200).json({ status: 200, message: 'Messages retrieved successfully', data: messages });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
     } catch (error) {
       next(error);
     }
@@ -103,7 +103,7 @@ class ChatController {
 
       const messages = await this.chatService.getMessagesByMilestone(chatId);
 
-      res.status(200).json({ status: 200, message: 'Messages retrieved successfully', data: messages });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
     } catch (error) {
       next(error);
     }
