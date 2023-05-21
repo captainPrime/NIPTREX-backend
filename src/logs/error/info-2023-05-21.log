@@ -1,0 +1,5 @@
+2023-05-21 07:21:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:22:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:23:02 error: [POST] /bid/6469b8821d48527e24fc9ef7 >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-05-21 07:25:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:26:06 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.

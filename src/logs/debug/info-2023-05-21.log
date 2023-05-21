@@ -1,0 +1,21 @@
+2023-05-21 07:20:43 info: =================================
+2023-05-21 07:20:43 info: ======= ENV: development =======
+2023-05-21 07:20:43 info: 🚀 App listening on the port 3000
+2023-05-21 07:20:43 info: =================================
+2023-05-21 07:21:01 info: Connected to Database Successfully...
+2023-05-21 07:21:17 info: Connected to email server
+2023-05-21 07:21:27 info: [0mGET /reload_db [32m200[0m 9740.549 ms - 74[0m
+2023-05-21 07:21:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:21:46 info: [0mPOST /auth/login [32m200[0m 1741.331 ms - 587[0m
+2023-05-21 07:21:55 info: [0mPOST /job [32m200[0m 2715.988 ms - 938[0m
+2023-05-21 07:22:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:22:08 info: [0mPOST /auth/login [32m200[0m 1233.221 ms - 587[0m
+2023-05-21 07:23:02 error: [POST] /bid/6469b8821d48527e24fc9ef7 >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-05-21 07:23:02 info: [0mPOST /bid/6469b8821d48527e24fc9ef7 [32m200[0m 29780.587 ms - 104[0m
+2023-05-21 07:24:10 info: [0mPOST /profile/about [32m200[0m 8875.188 ms - -[0m
+2023-05-21 07:24:19 info: [0mPOST /bid/6469b8821d48527e24fc9ef7 [32m200[0m 3604.677 ms - -[0m
+2023-05-21 07:25:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-21 07:25:36 info: [0mPOST /auth/login [32m200[0m 24270.989 ms - 587[0m
+2023-05-21 07:25:49 info: [0mGET /users/profile [32m200[0m 855.955 ms - 437[0m
+2023-05-21 07:26:06 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.
+2023-05-21 07:26:06 info: [0mPOST /chat [32m200[0m 529.541 ms - 121[0m
