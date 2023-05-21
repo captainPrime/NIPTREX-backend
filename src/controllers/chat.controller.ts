@@ -99,7 +99,7 @@ class ChatController {
   */
   public getMessagesByMilestone = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { chatId } = req.params;
+      const chatId = req.params.id;
 
       const messages = await this.chatService.getMessagesByMilestone(chatId);
 

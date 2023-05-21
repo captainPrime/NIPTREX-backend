@@ -59,3 +59,8 @@
 2023-05-21 07:36:23 info: 🚀 App listening on the port 3000
 2023-05-21 07:36:23 info: =================================
 2023-05-21 07:36:29 info: Connected to email server
+2023-05-21 07:36:38 info: Connected to Database Successfully...
+2023-05-21 07:36:42 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 794.305 ms - 58[0m
+2023-05-21 07:36:55 info: [0mGET /chat/646768d1eaadaccccc4644cb [32m200[0m 1470.069 ms - 532[0m
+2023-05-21 07:37:37 info: [0mGET /chat/6469bab96663726e55c61264 [32m200[0m 1133.016 ms - 429[0m
+2023-05-21 07:37:49 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 1197.864 ms - 58[0m
