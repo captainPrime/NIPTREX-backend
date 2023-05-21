@@ -126,9 +126,9 @@ class ChatService {
   |--------------------------------------------------------------------------
   */
   public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<IMessage[]> {
-    const chat: IChat | any = await this.chat.find({ milestone: chatId });
+    const chat: IChat | any = await this.message.find({ milestone: chatId });
 
-    return chat.messages;
+    return chat;
   }
 }
 
