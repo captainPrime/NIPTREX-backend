@@ -1,8 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { Types } from 'mongoose';
-
 import ChatService from '@/services/chat.service';
-import { HttpException } from '@/exceptions/HttpException';
 
 class ChatController {
   public chatService = new ChatService();
