@@ -19,3 +19,8 @@
 2023-05-21 07:25:49 info: [0mGET /users/profile [32m200[0m 855.955 ms - 437[0m
 2023-05-21 07:26:06 error: [POST] /chat >> StatusCode:: 400, Message:: Chat validation failed: milestone: Path `milestone` is required.
 2023-05-21 07:26:06 info: [0mPOST /chat [32m200[0m 529.541 ms - 121[0m
+2023-05-21 07:26:51 info: =================================
+2023-05-21 07:26:51 info: ======= ENV: development =======
+2023-05-21 07:26:51 info: 🚀 App listening on the port 3000
+2023-05-21 07:26:51 info: =================================
+2023-05-21 07:26:57 info: Connected to email server
