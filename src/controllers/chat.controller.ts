@@ -14,9 +14,9 @@ class ChatController {
   */
   public createChat = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { user1, user2 } = req.body;
+      const { user1, user2, milestone } = req.body;
 
-      const chat = await this.chatService.createChat(user1, user2);
+      const chat = await this.chatService.createChat(user1, user2, milestone);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chat });
     } catch (error) {
@@ -65,9 +65,9 @@ class ChatController {
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { chat, sender, receiver, content } = req.body;
+      const { chat, sender, receiver, content, milestone } = req.body;
 
-      const message = await this.chatService.createMessage(chat, sender, receiver, content);
+      const message = await this.chatService.createMessage(chat, sender, receiver, content, milestone);
 
       res.status(200).json({ status: 200, message: 'Message created successfully', data: message });
     } catch (error) {

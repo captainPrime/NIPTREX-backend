@@ -13,12 +13,12 @@ class ChatService {
   | Create Chat
   |--------------------------------------------------------------------------
   */
-  public async createChat(user1: Types.ObjectId | string, user2: Types.ObjectId | string): Promise<IChat> {
+  public async createChat(user1: Types.ObjectId | string, user2: Types.ObjectId | string, milestone: Types.ObjectId | string): Promise<IChat> {
     if (isEmpty(user1) || isEmpty(user2)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
-    const { error } = chatSchemaValidation.validate({ user1, user2 });
+    const { error } = chatSchemaValidation.validate({ user1, user2, milestone });
 
     if (error) {
       throw new HttpException(400, 2002, 'CHAT_VALIDATION_ERROR', [error.details[0].message]);
@@ -69,13 +69,19 @@ class ChatService {
   | Create Message
   |--------------------------------------------------------------------------
   */
-  public async createMessage(chat: Types.ObjectId | string, sender: string, receiver: string, content: string): Promise<IMessage> {
+  public async createMessage(
+    chat: Types.ObjectId | string,
+    sender: string,
+    receiver: string,
+    content: string,
+    milestone: Types.ObjectId | string,
+  ): Promise<IMessage> {
     console.log(chat);
     if (isEmpty(chat) || isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
-    const { error } = messageSchemaValidation.validate({ chat, sender, receiver, content });
+    const { error } = messageSchemaValidation.validate({ chat, sender, receiver, content, milestone });
 
     if (error) {
       throw new HttpException(400, 2002, 'MESSAGE_VALIDATION_ERROR', [error.details[0].message]);
