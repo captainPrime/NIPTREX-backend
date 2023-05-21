@@ -39,7 +39,7 @@ class BidController {
       await this.aboutService.updateAboutById(user.id, { nips: about.nips - userData.bidding_amount });
 
       // update job
-      await this.jobService.updateJobById(id.toString(), { activities: { proposals: +1 } });
+      await this.jobService.updateJobById(id, { activities: { proposals: +1 } });
 
       res.status(200).json({ status: 200, response_code: 4000, message: 'BID_REQUEST_SUCCESSFUL', data });
     } catch (error) {
