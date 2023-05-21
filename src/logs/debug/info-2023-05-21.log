@@ -78,3 +78,38 @@
 2023-05-21 07:39:41 info: Connected to email server
 2023-05-21 07:39:42 info: Connected to Database Successfully...
 2023-05-21 07:40:35 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 815.228 ms - 279[0m
+2023-05-21 07:43:06 info: =================================
+2023-05-21 07:43:06 info: ======= ENV: development =======
+2023-05-21 07:43:06 info: 🚀 App listening on the port 3000
+2023-05-21 07:43:06 info: =================================
+2023-05-21 07:43:22 info: Connected to Database Successfully...
+2023-05-21 07:43:41 info: Connected to email server
+2023-05-21 07:44:54 info: [0mPOST /chat [32m200[0m 1049.589 ms - 235[0m
+2023-05-21 07:45:42 info: [0mPOST /chat/message [32m200[0m 4250.007 ms - 297[0m
+2023-05-21 07:46:12 error: [POST] /chat/message >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-05-21 07:46:12 info: [0mPOST /chat/message [32m200[0m 306.145 ms - 93[0m
+2023-05-21 07:46:49 info: =================================
+2023-05-21 07:46:49 info: ======= ENV: development =======
+2023-05-21 07:46:49 info: 🚀 App listening on the port 3000
+2023-05-21 07:46:49 info: =================================
+2023-05-21 07:47:01 info: Connected to email server
+2023-05-21 07:47:08 info: Connected to Database Successfully...
+2023-05-21 07:47:21 error: [POST] /chat/message >> StatusCode:: 400, Message:: Chat id cannot be empty
+2023-05-21 07:47:21 info: [0mPOST /chat/message [32m200[0m 5427.627 ms - 81[0m
+2023-05-21 07:49:53 info: =================================
+2023-05-21 07:49:53 info: ======= ENV: development =======
+2023-05-21 07:49:53 info: 🚀 App listening on the port 3000
+2023-05-21 07:49:53 info: =================================
+2023-05-21 07:50:01 info: Connected to email server
+2023-05-21 07:50:17 info: Connected to Database Successfully...
+2023-05-21 07:51:53 info: =================================
+2023-05-21 07:51:54 info: ======= ENV: development =======
+2023-05-21 07:51:54 info: 🚀 App listening on the port 3000
+2023-05-21 07:51:54 info: =================================
+2023-05-21 07:51:57 info: Connected to email server
+2023-05-21 07:52:03 info: Connected to Database Successfully...
+2023-05-21 07:52:45 info: [0mPOST /chat [32m200[0m 5171.170 ms - 235[0m
+2023-05-21 07:53:21 info: [0mPOST /chat/message [32m200[0m 4396.490 ms - 303[0m
+2023-05-21 07:53:55 info: [0mPOST /chat/message [32m200[0m 2078.444 ms - 269[0m
+2023-05-21 07:54:29 info: [0mPOST /chat/message [32m200[0m 1534.004 ms - 251[0m
+2023-05-21 07:54:45 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 2793.518 ms - -[0m

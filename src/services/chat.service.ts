@@ -77,7 +77,7 @@ class ChatService {
     milestone: Types.ObjectId | string,
   ): Promise<IMessage> {
     console.log(chat);
-    if (isEmpty(chat) || isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
+    if (isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
@@ -87,10 +87,8 @@ class ChatService {
       throw new HttpException(400, 2002, 'MESSAGE_VALIDATION_ERROR', [error.details[0].message]);
     }
 
-    const chatData: any = await this.getChatById(chat);
-
     const payload = {
-      chat: chatData.id,
+      chat: chat,
       sender,
       receiver,
       content,
@@ -98,13 +96,15 @@ class ChatService {
       createdAt: new Date(),
     };
 
+    if (chat) {
+      const chatData: any = await this.getChatById(chat);
+      chatData?.messages.push(payload);
+      chatData?.save();
+    }
+
     const message: IMessage = new this.message(payload);
 
     await message.save();
-
-    chatData.messages.push(payload);
-
-    chatData.save();
 
     return message;
   }
