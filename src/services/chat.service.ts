@@ -112,6 +112,17 @@ class ChatService {
 
     return chat.messages;
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Messages By Chat
+  |--------------------------------------------------------------------------
+  */
+  public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<IMessage[]> {
+    const chat: IChat | any = await this.chat.find({ milestone: chatId });
+
+    return chat.messages;
+  }
 }
 
 export default ChatService;
