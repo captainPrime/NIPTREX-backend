@@ -126,6 +126,19 @@ class BidService {
 
   /*
   |--------------------------------------------------------------------------
+  | getTopBidders
+  |--------------------------------------------------------------------------
+  */
+  public async getProposalById(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 4004, 'id can not be empty');
+
+    const data = await this.bid.findOne({ id });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Bid By Job
   |--------------------------------------------------------------------------
   */
