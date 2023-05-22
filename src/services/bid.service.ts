@@ -49,7 +49,7 @@ class BidService {
     const data = await this.bid.findOne({ user_id: selector });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
-    const updatedPayload: Partial<IUpdateBidding> = {
+    const updatedPayload: IUpdateBidding = {
       ...data.toObject(),
       ...body,
     };

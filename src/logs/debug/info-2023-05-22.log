@@ -45,3 +45,21 @@
 2023-05-22 14:27:31 info: =================================
 2023-05-22 14:27:34 info: Connected to email server
 2023-05-22 14:27:34 info: Connected to Database Successfully...
+2023-05-22 14:28:27 info: =================================
+2023-05-22 14:28:27 info: ======= ENV: development =======
+2023-05-22 14:28:27 info: 🚀 App listening on the port 3000
+2023-05-22 14:28:27 info: =================================
+2023-05-22 14:28:29 info: Connected to email server
+2023-05-22 14:28:34 info: Connected to Database Successfully...
+2023-05-22 14:28:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:28:51 info: [0mPOST /auth/login [32m200[0m 883.885 ms - 587[0m
+2023-05-22 14:29:00 info: [0mPOST /job [32m200[0m 783.175 ms - 940[0m
+2023-05-22 14:29:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:29:08 info: [0mPOST /auth/login [32m200[0m 482.107 ms - 587[0m
+2023-05-22 14:29:18 info: [0mPOST /bid/646b6e1cb6a5b03b228df3c1 [32m200[0m 2402.942 ms - -[0m
+2023-05-22 14:29:33 error: [POST] /bid/hire/646b6b8b0400dc0bd7de4a24 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-22 14:29:33 info: [0mPOST /bid/hire/646b6b8b0400dc0bd7de4a24 [32m200[0m 239.234 ms - 75[0m
+2023-05-22 14:29:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:29:38 info: [0mPOST /auth/login [32m200[0m 644.012 ms - 587[0m
+2023-05-22 14:29:44 info: [0mPOST /bid/hire/646b6b8b0400dc0bd7de4a24 [32m200[0m 2092.160 ms - 310[0m
+2023-05-22 14:29:52 info: [0mGET /bid/proposals/646b6e1cb6a5b03b228df3c1 [32m200[0m 1079.671 ms - -[0m
