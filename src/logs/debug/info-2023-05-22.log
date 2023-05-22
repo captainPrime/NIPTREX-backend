@@ -31,3 +31,11 @@
 2023-05-22 14:21:26 info: Connected to Database Successfully...
 2023-05-22 14:21:42 error: [POST] /bid/646b6bac0400dc0bd7de4a2f >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
 2023-05-22 14:21:42 info: [0mPOST /bid/646b6bac0400dc0bd7de4a2f [32m200[0m 1615.921 ms - 79[0m
+2023-05-22 14:22:01 info: [0mPOST /profile/about [32m200[0m 1243.171 ms - -[0m
+2023-05-22 14:22:14 info: [0mPOST /bid/646b6bac0400dc0bd7de4a2f [32m200[0m 3580.253 ms - -[0m
+2023-05-22 14:22:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:22:47 info: [0mPOST /auth/login [32m200[0m 539.233 ms - 587[0m
+2023-05-22 14:22:59 info: [0mGET /bid/proposals/646aa2eae5718c62fc9b0a44 [32m200[0m 515.993 ms - 171[0m
+2023-05-22 14:24:01 info: [0mGET /bid/proposals/646b6bac0400dc0bd7de4a2f [32m200[0m 44708.642 ms - -[0m
+2023-05-22 14:24:27 info: [0mPOST /bid/hire/646b6b8b0400dc0bd7de4a24 [32m200[0m 2211.152 ms - 310[0m
+2023-05-22 14:24:33 info: [0mGET /bid/proposals/646b6bac0400dc0bd7de4a2f [32m200[0m 1047.466 ms - -[0m

@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 import mongoose from 'mongoose';
 import { isEmpty } from '@utils/util';
 import JobService from './job.service';
@@ -48,18 +49,19 @@ class BidService {
     const data = await this.bid.findOne({ user_id: selector });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
-    const updatedPayload = {
+    const updatedPayload: Partial<IBidding> = {
       ...data.toObject(),
-      milestone_stage: {
-        ...data.milestone_stage.toObject(),
-        ...body.milestone_stage,
-      },
       ...body,
     };
 
-    const updatedData = await this.bid.findByIdAndUpdate(data._id, updatedPayload, {
-      new: true,
-    });
+    if (body.milestone_stage) {
+      updatedPayload.milestone_stage = body.milestone_stage.map((milestone, index) => ({
+        ...data.milestone_stage[index].toObject(),
+        ...milestone,
+      }));
+    }
+
+    const updatedData = await this.bid.findByIdAndUpdate(data._id, updatedPayload, { new: true });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
 
