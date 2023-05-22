@@ -48,7 +48,8 @@ const paginate = (schema: Schema) => {
    * @returns {Promise<QueryResult>}
    */
   schema.static('paginate', async function (filter: Record<string, any>, options: IOptions): Promise<QueryResult> {
-    let sort = '';
+    let sort = '-createdAt'; // Sort by newest created item by default
+
     if (options.sortBy) {
       const sortingCriteria: any = [];
       options.sortBy.split(',').forEach((sortOption: string) => {
@@ -56,8 +57,6 @@ const paginate = (schema: Schema) => {
         sortingCriteria.push((order === 'desc' ? '-' : '') + key);
       });
       sort = sortingCriteria.join(' ');
-    } else {
-      sort = 'createdAt';
     }
 
     let select = '';
