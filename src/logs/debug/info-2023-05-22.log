@@ -63,3 +63,44 @@
 2023-05-22 14:29:38 info: [0mPOST /auth/login [32m200[0m 644.012 ms - 587[0m
 2023-05-22 14:29:44 info: [0mPOST /bid/hire/646b6b8b0400dc0bd7de4a24 [32m200[0m 2092.160 ms - 310[0m
 2023-05-22 14:29:52 info: [0mGET /bid/proposals/646b6e1cb6a5b03b228df3c1 [32m200[0m 1079.671 ms - -[0m
+2023-05-22 14:31:14 info: =================================
+2023-05-22 14:31:14 info: ======= ENV: development =======
+2023-05-22 14:31:14 info: 🚀 App listening on the port 3000
+2023-05-22 14:31:14 info: =================================
+2023-05-22 14:31:17 info: Connected to email server
+2023-05-22 14:31:18 info: Connected to Database Successfully...
+2023-05-22 14:31:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:31:49 info: [0mPOST /auth/login [32m200[0m 728.345 ms - 587[0m
+2023-05-22 14:32:02 error: [POST] /bid/646b6e1cb6a5b03b228df3c1 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-22 14:32:02 info: [0mPOST /bid/646b6e1cb6a5b03b228df3c1 [32m200[0m 967.140 ms - 79[0m
+2023-05-22 14:32:10 info: [0mPOST /profile/about [32m200[0m 1280.383 ms - -[0m
+2023-05-22 14:32:37 info: [0mPOST /bid/646b6e1cb6a5b03b228df3c1 [32m200[0m 2531.085 ms - -[0m
+2023-05-22 14:33:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:33:07 info: [0mPOST /auth/login [32m200[0m 499.419 ms - 587[0m
+2023-05-22 14:33:13 info: [0mGET /bid/proposals/646b6e1cb6a5b03b228df3c1 [32m200[0m 919.727 ms - -[0m
+2023-05-22 14:33:31 info: [0mPOST /bid/hire/646b6b8c0400dc0bd7de4a26 [32m200[0m 1757.514 ms - 310[0m
+2023-05-22 14:33:37 info: [0mGET /bid/proposals/646b6e1cb6a5b03b228df3c1 [32m200[0m 903.408 ms - -[0m
+2023-05-22 14:34:06 info: [0mGET /reload_db [32m200[0m 4599.555 ms - 74[0m
+2023-05-22 14:35:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:35:00 info: [0mPOST /auth/login [32m200[0m 470.636 ms - 587[0m
+2023-05-22 14:35:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:35:04 info: [0mPOST /auth/login [32m200[0m 470.854 ms - 587[0m
+2023-05-22 14:35:12 info: [0mGET /job/getAllJobs [32m200[0m 277.679 ms - 171[0m
+2023-05-22 14:35:20 info: [0mPOST /job [32m200[0m 710.529 ms - 940[0m
+2023-05-22 14:36:04 info: [0mGET /job/getAllJobs [32m200[0m 239.137 ms - -[0m
+2023-05-22 14:36:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:36:17 info: [0mPOST /auth/login [32m200[0m 546.284 ms - 587[0m
+2023-05-22 14:36:28 error: [POST] /bid/646b6f986622ef175a254e29 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-22 14:36:28 info: [0mPOST /bid/646b6f986622ef175a254e29 [32m200[0m 891.492 ms - 79[0m
+2023-05-22 14:36:34 info: [0mPOST /profile/about [32m200[0m 1183.709 ms - -[0m
+2023-05-22 14:36:45 info: [0mPOST /bid/646b6f986622ef175a254e29 [32m200[0m 2172.857 ms - -[0m
+2023-05-22 14:36:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:36:49 info: [0mPOST /auth/login [32m200[0m 575.034 ms - 587[0m
+2023-05-22 14:36:59 info: [0mPOST /profile/about [32m200[0m 1237.105 ms - -[0m
+2023-05-22 14:37:11 info: [0mPOST /bid/646b6f986622ef175a254e29 [32m200[0m 2154.851 ms - -[0m
+2023-05-22 14:37:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:37:35 info: [0mPOST /auth/login [32m200[0m 495.850 ms - 587[0m
+2023-05-22 14:37:39 info: [0mGET /bid/proposals/646b6e1cb6a5b03b228df3c1 [32m200[0m 648.725 ms - 171[0m
+2023-05-22 14:37:56 info: [0mGET /bid/proposals/646b6f986622ef175a254e29 [32m200[0m 1254.612 ms - -[0m
+2023-05-22 14:38:47 info: [0mPOST /bid/hire/646b6f4e6622ef175a254e1d [32m200[0m 1878.707 ms - 310[0m
+2023-05-22 14:38:53 info: [0mGET /bid/proposals/646b6f986622ef175a254e29 [32m200[0m 924.139 ms - -[0m

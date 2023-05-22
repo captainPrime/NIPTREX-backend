@@ -8,3 +8,12 @@
 2023-05-22 14:29:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-22 14:29:33 error: [POST] /bid/hire/646b6b8b0400dc0bd7de4a24 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-05-22 14:29:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:31:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:32:02 error: [POST] /bid/646b6e1cb6a5b03b228df3c1 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-22 14:33:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:35:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:35:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:36:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:36:28 error: [POST] /bid/646b6f986622ef175a254e29 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-22 14:36:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:37:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
