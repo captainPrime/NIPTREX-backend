@@ -78,10 +78,10 @@ class BidController {
       const id: string = req.params.id;
 
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'status:desc,bidding_amount:desc,-createdAt',
+        sortBy: 'createdAt:asc',
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
-        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        // projectBy: req.query.projectBy || 'name:hide, role:hide',
       };
 
       const data = await this.bidService.getBidders(id, options);

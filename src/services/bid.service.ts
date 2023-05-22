@@ -109,7 +109,7 @@ class BidService {
     };
 
     const data = await this.bid.paginate(filter, options);
-
+    return data;
     console.log('BIDDERS', data);
 
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
