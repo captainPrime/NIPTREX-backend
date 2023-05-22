@@ -8,3 +8,26 @@
 2023-05-22 14:02:37 info: [0mPOST /auth/login [32m200[0m 800.623 ms - 587[0m
 2023-05-22 14:02:45 info: [0mGET /bid/proposals/646aa2eae5718c62fc9b0a44 [32m200[0m 2125.345 ms - -[0m
 2023-05-22 14:03:03 info: [0mGET /bid/getProposalById/646aa335e5718c62fc9b0a4d [32m200[0m 860.968 ms - 874[0m
+2023-05-22 14:16:32 info: =================================
+2023-05-22 14:16:32 info: ======= ENV: development =======
+2023-05-22 14:16:32 info: 🚀 App listening on the port 3000
+2023-05-22 14:16:32 info: =================================
+2023-05-22 14:16:44 info: Connected to Database Successfully...
+2023-05-22 14:17:16 info: Connected to email server
+2023-05-22 14:18:04 info: [0mGET /reload_db [32m200[0m 11478.555 ms - 74[0m
+2023-05-22 14:18:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:18:10 info: [0mPOST /auth/login [32m200[0m 604.553 ms - 587[0m
+2023-05-22 14:18:19 info: [0mGET /job/getAllJobs [32m200[0m 552.439 ms - 171[0m
+2023-05-22 14:18:37 info: [0mPOST /job [32m200[0m 7145.690 ms - 940[0m
+2023-05-22 14:18:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-22 14:18:51 info: [0mPOST /auth/login [32m200[0m 586.132 ms - 587[0m
+2023-05-22 14:19:43 error: [POST] /bid/646b6bac0400dc0bd7de4a2f >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'nips')
+2023-05-22 14:19:43 info: [0mPOST /bid/646b6bac0400dc0bd7de4a2f [32m200[0m 1040.533 ms - 104[0m
+2023-05-22 14:21:23 info: =================================
+2023-05-22 14:21:23 info: ======= ENV: development =======
+2023-05-22 14:21:23 info: 🚀 App listening on the port 3000
+2023-05-22 14:21:23 info: =================================
+2023-05-22 14:21:26 info: Connected to email server
+2023-05-22 14:21:26 info: Connected to Database Successfully...
+2023-05-22 14:21:42 error: [POST] /bid/646b6bac0400dc0bd7de4a2f >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-22 14:21:42 info: [0mPOST /bid/646b6bac0400dc0bd7de4a2f [32m200[0m 1615.921 ms - 79[0m

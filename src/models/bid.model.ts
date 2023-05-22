@@ -2,9 +2,9 @@ import { paginate } from '@/modules/paginate';
 import { Schema, Document, Model, model } from 'mongoose';
 
 interface BiddingStage {
-  description: string;
-  dueDate: Date;
-  amount: number;
+  description?: string;
+  dueDate?: Date;
+  amount?: number;
   attachments?: string[];
   links?: string[];
 }
@@ -27,7 +27,9 @@ interface IBidding extends Document {
   disliked: boolean;
 }
 
-export type IUpdateBidding = Partial<IBidding>;
+export interface IUpdateBidding extends Partial<IBidding> {
+  milestone_stage?: Partial<BiddingStage>[];
+}
 
 const BiddingSchema: Schema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
