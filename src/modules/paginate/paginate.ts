@@ -68,7 +68,7 @@ const paginate = (schema: Schema) => {
       });
       select = selectionCriteria.join(' ');
     } else {
-      select = '-password -createdAt -updatedAt';
+      select = '-password -updatedAt';
     }
 
     const skipValue = (options.skip && parseInt(options.skip.toString(), 10)) ?? 1;

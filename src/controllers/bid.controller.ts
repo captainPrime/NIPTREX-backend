@@ -78,7 +78,7 @@ class BidController {
       const id: string = req.params.id;
 
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'status:desc,bidding_amount:desc',
+        sortBy: req.query.sortBy || 'status:desc,bidding_amount:desc,-createdAt',
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
