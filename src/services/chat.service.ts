@@ -69,19 +69,13 @@ class ChatService {
   | Create Message
   |--------------------------------------------------------------------------
   */
-  public async createMessage(
-    chat: Types.ObjectId | string,
-    sender: string,
-    receiver: string,
-    content: string,
-    milestone: Types.ObjectId | string,
-  ): Promise<IMessage> {
+  public async createMessage(chat: Types.ObjectId | string, sender: string, content: string, milestone: Types.ObjectId | string): Promise<IMessage> {
     console.log(chat);
-    if (isEmpty(sender) || isEmpty(receiver) || isEmpty(content)) {
+    if (isEmpty(sender) || isEmpty(content)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
-    const { error } = messageSchemaValidation.validate({ chat, sender, receiver, content, milestone });
+    const { error } = messageSchemaValidation.validate({ chat, sender, content, milestone });
 
     if (error) {
       throw new HttpException(400, 2002, 'MESSAGE_VALIDATION_ERROR', [error.details[0].message]);
@@ -90,7 +84,6 @@ class ChatService {
     const payload = {
       chat: chat,
       sender,
-      receiver,
       content,
       milestone,
       createdAt: new Date(),
