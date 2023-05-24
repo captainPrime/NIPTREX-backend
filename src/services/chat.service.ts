@@ -118,7 +118,7 @@ class ChatService {
   /*
   |--------------------------------------------------------------------------
   | Get Messages By Chat
-  |--------------------------------------------------------------------------
+  |-----------------------------------pro---------------------------------------
   */
   public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<any[]> {
     const chat: IMessage[] = await this.message.find({ milestone: chatId });
