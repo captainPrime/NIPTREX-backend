@@ -1054,3 +1054,19 @@ src/services/chat.service.ts(118,3): error TS1128: Declaration or statement expe
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1033:32)
     at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-05-24 22:03:13 error: unhandledRejection: User id can not be empty
+Error: User id can not be empty
+    at AboutService.getUserAbout (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:39:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:135:45
+    at Array.map (<anonymous>)
+    at ChatService.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:133:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at ChatController.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/chat.controller.ts:101:24)
+2023-05-24 22:03:13 error: unhandledRejection: User id can not be empty
+Error: User id can not be empty
+    at AboutService.getUserAbout (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:39:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:135:45
+    at Array.map (<anonymous>)
+    at ChatService.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:133:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at ChatController.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/chat.controller.ts:101:24)

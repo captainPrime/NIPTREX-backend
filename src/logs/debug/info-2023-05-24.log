@@ -1,0 +1,107 @@
+2023-05-24 21:43:22 info: =================================
+2023-05-24 21:43:22 info: ======= ENV: development =======
+2023-05-24 21:43:22 info: 🚀 App listening on the port 3000
+2023-05-24 21:43:22 info: =================================
+2023-05-24 21:43:25 info: Connected to email server
+2023-05-24 21:43:25 info: Connected to Database Successfully...
+2023-05-24 21:45:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:45:05 info: [0mPOST /auth/login [32m200[0m 538.061 ms - 587[0m
+2023-05-24 21:45:14 info: [0mPOST /chat/message [32m200[0m 431.799 ms - 213[0m
+2023-05-24 21:45:34 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:45:34 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 417.599 ms - 82[0m
+2023-05-24 21:46:16 info: [0mGET /users/profile [32m200[0m 421.307 ms - 444[0m
+2023-05-24 21:46:29 info: [0mPOST /chat/message [32m200[0m 437.071 ms - 213[0m
+2023-05-24 21:46:36 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:46:36 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 449.170 ms - 82[0m
+2023-05-24 21:46:43 info: [0mPOST /chat/message [32m200[0m 422.455 ms - 213[0m
+2023-05-24 21:46:58 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:46:58 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 428.721 ms - 82[0m
+2023-05-24 21:47:27 info: =================================
+2023-05-24 21:47:27 info: ======= ENV: development =======
+2023-05-24 21:47:27 info: 🚀 App listening on the port 3000
+2023-05-24 21:47:27 info: =================================
+2023-05-24 21:47:29 info: Connected to email server
+2023-05-24 21:47:29 info: Connected to Database Successfully...
+2023-05-24 21:47:47 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-05-24 21:47:47 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 501.124 ms - 113[0m
+2023-05-24 21:48:06 info: =================================
+2023-05-24 21:48:06 info: ======= ENV: development =======
+2023-05-24 21:48:06 info: 🚀 App listening on the port 3000
+2023-05-24 21:48:06 info: =================================
+2023-05-24 21:48:08 info: Connected to email server
+2023-05-24 21:48:11 info: Connected to Database Successfully...
+2023-05-24 21:50:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:50:03 info: [0mPOST /auth/login [32m200[0m 563.416 ms - 587[0m
+2023-05-24 21:50:10 info: [0mPOST /job [32m200[0m 834.945 ms - 940[0m
+2023-05-24 21:50:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:50:22 info: [0mPOST /auth/login [32m200[0m 484.080 ms - 587[0m
+2023-05-24 21:50:36 error: [POST] /bid/646e7881e8bf99fac0783739 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-24 21:50:36 info: [0mPOST /bid/646e7881e8bf99fac0783739 [32m200[0m 1092.815 ms - 79[0m
+2023-05-24 21:50:49 info: [0mPOST /profile/about [32m200[0m 1120.719 ms - -[0m
+2023-05-24 21:50:58 info: [0mPOST /bid/646e7881e8bf99fac0783739 [32m200[0m 2103.512 ms - -[0m
+2023-05-24 21:51:22 error: [POST] /bid/hire/646e7745913ce5662542c2e9 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-24 21:51:22 info: [0mPOST /bid/hire/646e7745913ce5662542c2e9 [32m200[0m 237.046 ms - 75[0m
+2023-05-24 21:51:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:51:39 info: [0mPOST /auth/login [32m200[0m 637.197 ms - 587[0m
+2023-05-24 21:52:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:52:07 info: [0mPOST /auth/login [32m200[0m 610.812 ms - 587[0m
+2023-05-24 21:52:13 info: [0mPOST /bid/hire/646e7745913ce5662542c2e9 [32m200[0m 2167.200 ms - 310[0m
+2023-05-24 21:53:00 info: [0mPOST /chat/message [32m200[0m 613.443 ms - 213[0m
+2023-05-24 21:53:10 info: [0mPOST /chat/message [32m200[0m 448.421 ms - 216[0m
+2023-05-24 21:53:20 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:53:20 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 447.866 ms - 82[0m
+2023-05-24 21:53:58 info: =================================
+2023-05-24 21:53:58 info: ======= ENV: development =======
+2023-05-24 21:53:58 info: 🚀 App listening on the port 3000
+2023-05-24 21:53:58 info: =================================
+2023-05-24 21:54:01 info: Connected to email server
+2023-05-24 21:54:12 info: Connected to Database Successfully...
+2023-05-24 21:54:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:54:30 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 546.299 ms - 82[0m
+2023-05-24 21:59:13 info: =================================
+2023-05-24 21:59:13 info: ======= ENV: development =======
+2023-05-24 21:59:13 info: 🚀 App listening on the port 3000
+2023-05-24 21:59:13 info: =================================
+2023-05-24 21:59:15 info: Connected to email server
+2023-05-24 21:59:15 info: Connected to Database Successfully...
+2023-05-24 21:59:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:59:30 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 502.690 ms - 82[0m
+2023-05-24 22:00:17 info: =================================
+2023-05-24 22:00:17 info: ======= ENV: development =======
+2023-05-24 22:00:17 info: 🚀 App listening on the port 3000
+2023-05-24 22:00:17 info: =================================
+2023-05-24 22:00:19 info: Connected to email server
+2023-05-24 22:00:19 info: Connected to Database Successfully...
+2023-05-24 22:00:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 22:00:30 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 500.359 ms - 82[0m
+2023-05-24 22:01:06 info: =================================
+2023-05-24 22:01:06 info: ======= ENV: development =======
+2023-05-24 22:01:06 info: 🚀 App listening on the port 3000
+2023-05-24 22:01:06 info: =================================
+2023-05-24 22:01:08 info: Connected to email server
+2023-05-24 22:01:08 info: Connected to Database Successfully...
+2023-05-24 22:01:26 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 22:01:26 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 450.820 ms - 82[0m
+2023-05-24 22:02:04 info: =================================
+2023-05-24 22:02:04 info: ======= ENV: development =======
+2023-05-24 22:02:04 info: 🚀 App listening on the port 3000
+2023-05-24 22:02:04 info: =================================
+2023-05-24 22:02:07 info: Connected to email server
+2023-05-24 22:02:18 info: Connected to Database Successfully...
+2023-05-24 22:02:28 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: about is not defined
+2023-05-24 22:02:28 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 467.045 ms - 77[0m
+2023-05-24 22:02:58 info: =================================
+2023-05-24 22:02:58 info: ======= ENV: development =======
+2023-05-24 22:02:58 info: 🚀 App listening on the port 3000
+2023-05-24 22:02:58 info: =================================
+2023-05-24 22:03:02 info: Connected to email server
+2023-05-24 22:03:05 info: Connected to Database Successfully...
+2023-05-24 22:03:13 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 1277.153 ms - 71[0m
+2023-05-24 22:03:13 error: [Error] >> User id can not be empty
+2023-05-24 22:06:20 info: =================================
+2023-05-24 22:06:20 info: ======= ENV: development =======
+2023-05-24 22:06:20 info: 🚀 App listening on the port 3000
+2023-05-24 22:06:20 info: =================================
+2023-05-24 22:06:22 info: Connected to email server
+2023-05-24 22:06:22 info: Connected to Database Successfully...
+2023-05-24 22:06:38 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 885.861 ms - 551[0m

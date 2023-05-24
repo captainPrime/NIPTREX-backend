@@ -1,0 +1,33 @@
+2023-05-24 21:45:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:45:34 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:46:36 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:46:58 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:47:47 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-05-24 21:50:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:50:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:50:36 error: [POST] /bid/646e7881e8bf99fac0783739 >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-05-24 21:51:22 error: [POST] /bid/hire/646e7745913ce5662542c2e9 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-24 21:51:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:52:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-24 21:53:20 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:54:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 21:59:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 22:00:30 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 22:01:26 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: User id can not be empty
+2023-05-24 22:02:28 error: [GET] /chat/milestone/646e78b1e8bf99fac0783750 >> StatusCode:: 400, Message:: about is not defined
+2023-05-24 22:03:13 error: unhandledRejection: User id can not be empty
+Error: User id can not be empty
+    at AboutService.getUserAbout (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:39:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:135:45
+    at Array.map (<anonymous>)
+    at ChatService.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:133:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at ChatController.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/chat.controller.ts:101:24)
+2023-05-24 22:03:13 error: unhandledRejection: User id can not be empty
+Error: User id can not be empty
+    at AboutService.getUserAbout (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/about.service.ts:39:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:135:45
+    at Array.map (<anonymous>)
+    at ChatService.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:133:10)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at ChatController.getMessagesByMilestone (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/chat.controller.ts:101:24)

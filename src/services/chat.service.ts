@@ -3,10 +3,12 @@ import { isEmpty } from '@utils/util';
 import { Types } from 'mongoose';
 import { ChatModel, IChat, IMessage, MessageModel } from '@/models/chat.model';
 import { chatSchemaValidation, messageSchemaValidation } from '@/validations/chat.validation';
+import AboutService from './about.service';
 
 class ChatService {
   public chat = ChatModel;
   public message = MessageModel;
+  public aboutService = new AboutService();
 
   /*
   |--------------------------------------------------------------------------
@@ -118,10 +120,22 @@ class ChatService {
   | Get Messages By Chat
   |--------------------------------------------------------------------------
   */
-  public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<IMessage[]> {
-    const chat: IChat | any = await this.message.find({ milestone: chatId });
+  public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<any[]> {
+    const chat: IMessage[] = await this.message.find({ milestone: chatId });
 
-    return chat;
+    const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
+      async (chatItem: IMessage) => {
+        const about = await this.aboutService.getUserAbout(chatItem.sender.toString());
+        return {
+          chat: chatItem,
+          first_name: about?.personal_details?.first_name,
+          last_name: about?.personal_details?.last_name,
+          profile_picture: about?.personal_details?.profile_picture,
+        };
+      },
+    );
+
+    return Promise.all(updatedChat);
   }
 }
 
