@@ -205,7 +205,7 @@ class JobService {
     const updatedData = {
       ...data.toJSON(),
       is_saved: !!savedJob,
-      profile_match: calculateMatchPercentage(about.skills, data.jobs_tags),
+      profile_match: calculateMatchPercentage(about?.skills, data.jobs_tags),
     };
 
     return updatedData;
