@@ -58,7 +58,7 @@ const BiddingSchema: Schema = new Schema({
   payment_type: {
     type: String,
     required: true,
-    enum: ['milestone', 'outright'],
+    enum: Object.values(PaymentType),
   },
   milestone_stage: {
     type: [
@@ -70,7 +70,8 @@ const BiddingSchema: Schema = new Schema({
         status: {
           type: String,
           required: true,
-          default: 'pending',
+          enum: Object.values(MilestoneStatus),
+          default: MilestoneStatus.PENDING,
         },
         dueDate: {
           type: Date,
@@ -89,7 +90,7 @@ const BiddingSchema: Schema = new Schema({
       },
     ],
     required: function (this: IBidding) {
-      return this.payment_type === 'milestone';
+      return this.payment_type === PaymentType.MILESTONE;
     },
   },
   cover_letter: {
@@ -120,8 +121,8 @@ const BiddingSchema: Schema = new Schema({
   },
   status: {
     type: String,
-    enum: ['closed', 'in_progress', 'paid', 'applied', 'completed'],
-    default: 'applied',
+    enum: Object.values(BiddingStatus),
+    default: BiddingStatus.APPLIED,
   },
   date_applied: {
     type: Date,
