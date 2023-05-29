@@ -117,10 +117,33 @@ class ChatService {
   /*
   |--------------------------------------------------------------------------
   | Get Messages By Chat
-  |-----------------------------------pro---------------------------------------
+  |--------------------------------------------------------------------------
   */
   public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<any[]> {
     const chat: IMessage[] = await this.message.find({ milestone: chatId });
+
+    const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
+      async (chatItem: IMessage) => {
+        const about = await this.aboutService.getUserAbout(chatItem.sender.toString());
+        return {
+          chat: chatItem,
+          first_name: about?.personal_details?.first_name,
+          last_name: about?.personal_details?.last_name,
+          profile_picture: about?.personal_details?.profile_picture,
+        };
+      },
+    );
+
+    return Promise.all(updatedChat);
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Files By Milestone
+  |--------------------------------------------------------------------------
+  */
+  public async getFilesByMilestone(chatId: Types.ObjectId | string): Promise<any[]> {
+    const chat: IMessage[] = await this.message.find({ milestone: chatId, is_file: true });
 
     const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
       async (chatItem: IMessage) => {

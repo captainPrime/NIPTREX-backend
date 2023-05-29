@@ -62,8 +62,6 @@ class ChatController {
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { is_file, sender, content, milestone } = req.body;
-
       const message = await this.chatService.createMessage(req.body);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: message });
@@ -99,6 +97,23 @@ class ChatController {
       const chatId = req.params.id;
 
       const messages = await this.chatService.getMessagesByMilestone(chatId);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Files By Milestone
+  |--------------------------------------------------------------------------
+  */
+  public getFilesByMilestone = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const chatId = req.params.id;
+
+      const messages = await this.chatService.getFilesByMilestone(chatId);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
     } catch (error) {

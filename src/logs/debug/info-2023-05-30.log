@@ -6,3 +6,11 @@
 2023-05-30 00:02:37 info: Connected to Database Successfully...
 2023-05-30 00:02:45 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
 2023-05-30 00:02:45 info: [0mPOST /chat/message [32m200[0m 847.479 ms - 119[0m
+2023-05-30 00:03:11 info: [0mPOST /chat/message [32m200[0m 434.638 ms - 225[0m
+2023-05-30 00:06:03 info: =================================
+2023-05-30 00:06:03 info: ======= ENV: development =======
+2023-05-30 00:06:03 info: 🚀 App listening on the port 3000
+2023-05-30 00:06:03 info: =================================
+2023-05-30 00:06:06 info: Connected to email server
+2023-05-30 00:06:07 info: Connected to Database Successfully...
+2023-05-30 00:06:10 info: [0mGET /chat/getFilesByMilestone/646e78b1e8bf99fac0783750 [32m200[0m 1455.111 ms - 424[0m
