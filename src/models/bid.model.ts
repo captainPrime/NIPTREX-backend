@@ -3,16 +3,37 @@ import { Schema, Document, Model, model } from 'mongoose';
 
 interface BiddingStage {
   description?: string;
+  status?: MilestoneStatus;
   dueDate?: Date;
   amount?: number;
   attachments?: string[];
   links?: string[];
 }
 
+enum MilestoneStatus {
+  PENDING = 'pending',
+  IN_PROGRESS = 'in_progress',
+  COMPLETED = 'completed',
+  PAID = 'paid',
+}
+
+enum BiddingStatus {
+  CLOSED = 'closed',
+  IN_PROGRESS = 'in_progress',
+  PAID = 'paid',
+  APPLIED = 'applied',
+  COMPLETED = 'completed',
+}
+
+enum PaymentType {
+  MILESTONE = 'milestone',
+  OUTRIGHT = 'outright',
+}
+
 interface IBidding extends Document {
   user_id: Schema.Types.ObjectId;
   job_id: Schema.Types.ObjectId;
-  payment_type: 'milestone' | 'outright';
+  payment_type: PaymentType;
   milestone_stage?: BiddingStage[];
   cover_letter: string;
   attachments?: string[];
@@ -21,7 +42,7 @@ interface IBidding extends Document {
   service_fee: number;
   amount_to_be_received: number;
   bidding_amount: number;
-  status: 'closed' | 'in_progress' | 'paid' | 'applied' | 'completed';
+  status: BiddingStatus;
   date_applied: Date;
   liked: boolean;
   disliked: boolean;
@@ -45,6 +66,11 @@ const BiddingSchema: Schema = new Schema({
         description: {
           type: String,
           required: true,
+        },
+        status: {
+          type: String,
+          required: true,
+          default: 'pending',
         },
         dueDate: {
           type: Date,
