@@ -68,6 +68,27 @@ class BidService {
     return updatedData;
   }
 
+  public async updateMilestoneById(selector: string, milestoneId: string, milestoneData: IUpdateBidding): Promise<any> {
+    const data = await this.bid.findOne({ user_id: selector });
+    if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    const updatedMilestones = data.milestone_stage.map((milestone: any) => {
+      if (milestone._id === milestoneId) {
+        return {
+          ...milestone,
+          ...milestoneData,
+        };
+      }
+      return milestone;
+    });
+
+    const updatedData = await this.bid.findByIdAndUpdate(data._id, { milestone_stage: updatedMilestones }, { new: true });
+
+    if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+
+    return updatedData;
+  }
+
   /*
   |--------------------------------------------------------------------------
   | getTopBidders
