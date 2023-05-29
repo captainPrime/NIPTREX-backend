@@ -10,14 +10,14 @@ interface BiddingStage {
   links?: string[];
 }
 
-enum MilestoneStatus {
+export enum MilestoneStatus {
   PENDING = 'pending',
   IN_PROGRESS = 'in_progress',
   COMPLETED = 'completed',
   PAID = 'paid',
 }
 
-enum BiddingStatus {
+export enum BiddingStatus {
   CLOSED = 'closed',
   IN_PROGRESS = 'in_progress',
   PAID = 'paid',
@@ -25,7 +25,7 @@ enum BiddingStatus {
   COMPLETED = 'completed',
 }
 
-enum PaymentType {
+export enum PaymentType {
   MILESTONE = 'milestone',
   OUTRIGHT = 'outright',
 }
