@@ -9,8 +9,20 @@ export const chatSchemaValidation = Joi.object({
 
 // Message Validation Schema
 export const messageSchemaValidation = Joi.object({
-  chat: Joi.string().optional(),
+  sender: Joi.string().required(),
   milestone: Joi.string().required(),
-  sender: Joi.string().required().label('Sender'),
-  content: Joi.string().required().label('Content'),
+  content: Joi.string().when('is_file', {
+    is: false,
+    then: Joi.string().required(),
+    otherwise: Joi.string().allow('').optional(),
+  }),
+  is_file: Joi.boolean().required(),
+  files: Joi.array()
+    .items(Joi.string())
+    .when('is_file', {
+      is: true,
+      then: Joi.array().items(Joi.string().required().min(1)),
+      otherwise: Joi.array().items(Joi.string().allow('').optional()),
+    }),
+  createdAt: Joi.date().default(Date.now),
 });
