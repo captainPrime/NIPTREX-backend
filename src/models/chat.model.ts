@@ -3,19 +3,21 @@ import { toJSON } from '@/modules/toJSON';
 
 // Define the Message schema
 export interface IMessage extends Document {
-  chat?: string;
   sender: string;
-  content: string;
+  content?: string;
   milestone: string;
+  is_file: boolean;
+  files?: string[]; // Updated to an array of strings for storing multiple files
   createdAt: Date;
 }
 
 const messageSchema: Schema = new Schema(
   {
     sender: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    chat: { type: Schema.Types.ObjectId, ref: 'Chat', required: false },
     milestone: { type: Schema.Types.ObjectId, ref: 'Bid', required: true },
-    content: { type: String, required: true },
+    content: { type: String }, // Removed the "required" constraint for content
+    is_file: { type: Boolean, required: true, default: false },
+    files: [{ type: String }], // Updated to an array of strings for storing multiple files
     createdAt: { type: Date, default: Date.now },
   },
   { versionKey: false },
