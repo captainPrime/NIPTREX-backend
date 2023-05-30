@@ -326,10 +326,15 @@ class JobController {
 
       const job = await this.jobService.getJobByJobId(req.body.job_id);
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
+      const proposal = await this.bidService.getProposalById(req.body.proposal);
+      if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
       const payload = {
         user_id,
         job_id: job._id.toString(),
         client_id: job.user_id.toString(),
+        proposal: req.body.proposal,
       };
 
       const data = await this.jobService.hireFreelancer(payload);
@@ -403,7 +408,7 @@ class JobController {
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
-        populate: 'job_id',
+        populate: 'job_id,proposal',
       };
 
       const data = await this.jobService.freelanceWorkHistory(id, req.query, options);

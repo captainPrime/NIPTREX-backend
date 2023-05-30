@@ -93,6 +93,7 @@ const HireJobSchema: Schema = new Schema(
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     job_id: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
     client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    proposal: { type: Schema.Types.ObjectId, ref: 'Bid', required: true },
   },
   {
     timestamps: true,
