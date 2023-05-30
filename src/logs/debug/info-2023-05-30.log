@@ -137,3 +137,57 @@
 2023-05-30 01:14:24 info: Connected to email server
 2023-05-30 01:14:24 info: Connected to Database Successfully...
 2023-05-30 01:14:29 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 [32m200[0m 732.967 ms - -[0m
+2023-05-30 19:43:44 info: =================================
+2023-05-30 19:43:44 info: ======= ENV: development =======
+2023-05-30 19:43:44 info: 🚀 App listening on the port 3000
+2023-05-30 19:43:44 info: =================================
+2023-05-30 19:43:46 info: Connected to email server
+2023-05-30 19:43:51 info: Connected to Database Successfully...
+2023-05-30 19:46:06 info: [0mGET /reload_db [32m200[0m 4546.346 ms - 74[0m
+2023-05-30 19:46:16 error: [POST] /job >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-05-30 19:46:16 info: [0mPOST /job [32m200[0m 308.422 ms - 79[0m
+2023-05-30 19:46:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:46:21 info: [0mPOST /auth/login [32m200[0m 982.276 ms - 587[0m
+2023-05-30 19:46:25 info: [0mPOST /job [32m200[0m 714.585 ms - 940[0m
+2023-05-30 19:46:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:46:33 info: [0mPOST /auth/login [32m200[0m 533.309 ms - 587[0m
+2023-05-30 19:46:38 info: [0mPOST /profile/about [32m200[0m 1583.327 ms - -[0m
+2023-05-30 19:46:52 info: [0mPOST /bid/64764481d61038c020f21f9a [32m200[0m 2193.903 ms - -[0m
+2023-05-30 19:47:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:47:10 info: [0mPOST /auth/login [32m200[0m 522.963 ms - 587[0m
+2023-05-30 19:47:13 error: [POST] /bid/hire/6476446ed61038c020f21f90 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-30 19:47:13 info: [0mPOST /bid/hire/6476446ed61038c020f21f90 [32m200[0m 451.421 ms - 77[0m
+2023-05-30 19:47:55 info: [0mPOST /bid/hire/6476446ed61038c020f21f90 [32m200[0m 2609.640 ms - 348[0m
+2023-05-30 19:48:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:48:03 info: [0mPOST /auth/login [32m200[0m 608.247 ms - 587[0m
+2023-05-30 19:48:07 error: [GET] /profile/freelanceWorkHistory >> StatusCode:: 400, Message:: Schema hasn't been registered for model "Bid".
+Use mongoose.model(name, schema)
+2023-05-30 19:48:07 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 488.008 ms - 139[0m
+2023-05-30 19:49:48 info: =================================
+2023-05-30 19:49:48 info: ======= ENV: development =======
+2023-05-30 19:49:48 info: 🚀 App listening on the port 3000
+2023-05-30 19:49:48 info: =================================
+2023-05-30 19:49:51 info: Connected to Database Successfully...
+2023-05-30 19:49:51 info: Connected to email server
+2023-05-30 19:50:34 info: =================================
+2023-05-30 19:50:34 info: ======= ENV: development =======
+2023-05-30 19:50:34 info: 🚀 App listening on the port 3000
+2023-05-30 19:50:34 info: =================================
+2023-05-30 19:50:39 info: Connected to email server
+2023-05-30 19:50:44 info: Connected to Database Successfully...
+2023-05-30 19:51:03 info: [0mGET /reload_db [32m200[0m 4470.507 ms - 74[0m
+2023-05-30 19:51:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:51:07 info: [0mPOST /auth/login [32m200[0m 820.197 ms - 587[0m
+2023-05-30 19:51:13 info: [0mPOST /job [32m200[0m 808.152 ms - 940[0m
+2023-05-30 19:51:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:51:20 info: [0mPOST /auth/login [32m200[0m 489.739 ms - 587[0m
+2023-05-30 19:51:29 info: [0mPOST /profile/about [32m200[0m 1108.871 ms - -[0m
+2023-05-30 19:51:39 info: [0mPOST /bid/647645a15d17174aa99c942d [32m200[0m 2831.178 ms - -[0m
+2023-05-30 19:52:03 error: [POST] /bid/hire/647645975d17174aa99c9424 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-30 19:52:04 info: [0mPOST /bid/hire/647645975d17174aa99c9424 [32m200[0m 348.068 ms - 75[0m
+2023-05-30 19:52:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:52:09 info: [0mPOST /auth/login [32m200[0m 494.872 ms - 587[0m
+2023-05-30 19:52:15 info: [0mPOST /bid/hire/647645975d17174aa99c9424 [32m200[0m 3357.395 ms - 348[0m
+2023-05-30 19:52:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:52:19 info: [0mPOST /auth/login [32m200[0m 546.507 ms - 587[0m
+2023-05-30 19:52:24 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 703.605 ms - -[0m

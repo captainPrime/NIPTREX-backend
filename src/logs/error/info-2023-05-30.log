@@ -2,3 +2,16 @@
 2023-05-30 00:47:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-30 00:48:15 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
 2023-05-30 01:13:20 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 404, Message:: The requested path /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 not found!
+2023-05-30 19:46:16 error: [POST] /job >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-05-30 19:46:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:46:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:47:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:47:13 error: [POST] /bid/hire/6476446ed61038c020f21f90 >> StatusCode:: 400, Message:: id can not be empty
+2023-05-30 19:48:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:48:07 error: [GET] /profile/freelanceWorkHistory >> StatusCode:: 400, Message:: Schema hasn't been registered for model "Bid".
+Use mongoose.model(name, schema)
+2023-05-30 19:51:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:51:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:52:03 error: [POST] /bid/hire/647645975d17174aa99c9424 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-05-30 19:52:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 19:52:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
