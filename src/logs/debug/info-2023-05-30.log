@@ -14,3 +14,105 @@
 2023-05-30 00:06:06 info: Connected to email server
 2023-05-30 00:06:07 info: Connected to Database Successfully...
 2023-05-30 00:06:10 info: [0mGET /chat/getFilesByMilestone/646e78b1e8bf99fac0783750 [32m200[0m 1455.111 ms - 424[0m
+2023-05-30 00:46:14 info: =================================
+2023-05-30 00:46:14 info: ======= ENV: development =======
+2023-05-30 00:46:14 info: 🚀 App listening on the port 3000
+2023-05-30 00:46:14 info: =================================
+2023-05-30 00:46:16 info: Connected to email server
+2023-05-30 00:46:17 info: Connected to Database Successfully...
+2023-05-30 00:46:37 info: =================================
+2023-05-30 00:46:37 info: ======= ENV: development =======
+2023-05-30 00:46:37 info: 🚀 App listening on the port 3000
+2023-05-30 00:46:37 info: =================================
+2023-05-30 00:46:40 info: Connected to Database Successfully...
+2023-05-30 00:46:40 info: Connected to email server
+2023-05-30 00:47:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-05-30 00:47:33 info: [0mPOST /auth/login [32m200[0m 830.926 ms - 587[0m
+2023-05-30 00:47:40 info: [0mGET /bid/proposals/646e7881e8bf99fac0783739 [32m200[0m 933.698 ms - -[0m
+2023-05-30 00:48:08 info: =================================
+2023-05-30 00:48:08 info: ======= ENV: development =======
+2023-05-30 00:48:08 info: 🚀 App listening on the port 3000
+2023-05-30 00:48:08 info: =================================
+2023-05-30 00:48:11 info: Connected to Database Successfully...
+2023-05-30 00:48:15 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-05-30 00:48:15 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 10.819 ms - 86[0m
+2023-05-30 00:48:23 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 899.084 ms - -[0m
+2023-05-30 00:48:40 info: Connected to email server
+2023-05-30 00:48:56 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 700.166 ms - -[0m
+2023-05-30 00:49:34 info: =================================
+2023-05-30 00:49:34 info: ======= ENV: development =======
+2023-05-30 00:49:34 info: 🚀 App listening on the port 3000
+2023-05-30 00:49:34 info: =================================
+2023-05-30 00:49:52 info: Connected to Database Successfully...
+2023-05-30 00:49:57 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 724.902 ms - -[0m
+2023-05-30 00:50:06 info: Connected to email server
+2023-05-30 00:50:15 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 644.413 ms - -[0m
+2023-05-30 00:51:05 info: =================================
+2023-05-30 00:51:05 info: ======= ENV: development =======
+2023-05-30 00:51:05 info: 🚀 App listening on the port 3000
+2023-05-30 00:51:05 info: =================================
+2023-05-30 00:51:08 info: Connected to email server
+2023-05-30 00:51:18 info: Connected to Database Successfully...
+2023-05-30 00:51:23 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 1225.314 ms - -[0m
+2023-05-30 00:52:51 info: =================================
+2023-05-30 00:52:51 info: ======= ENV: development =======
+2023-05-30 00:52:51 info: 🚀 App listening on the port 3000
+2023-05-30 00:52:51 info: =================================
+2023-05-30 00:52:53 info: Connected to email server
+2023-05-30 00:53:03 info: Connected to Database Successfully...
+2023-05-30 00:53:15 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 748.480 ms - -[0m
+2023-05-30 00:54:43 info: =================================
+2023-05-30 00:54:43 info: ======= ENV: development =======
+2023-05-30 00:54:43 info: 🚀 App listening on the port 3000
+2023-05-30 00:54:43 info: =================================
+2023-05-30 00:54:46 info: Connected to email server
+2023-05-30 00:54:46 info: Connected to Database Successfully...
+2023-05-30 00:54:52 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 864.287 ms - -[0m
+2023-05-30 00:55:48 info: [0mGET /bid/proposals/646e7881e8bf99fac0783739 [32m200[0m 897.069 ms - -[0m
+2023-05-30 00:57:09 info: =================================
+2023-05-30 00:57:09 info: ======= ENV: development =======
+2023-05-30 00:57:09 info: 🚀 App listening on the port 3000
+2023-05-30 00:57:09 info: =================================
+2023-05-30 00:57:12 info: Connected to email server
+2023-05-30 00:57:21 info: =================================
+2023-05-30 00:57:21 info: ======= ENV: development =======
+2023-05-30 00:57:21 info: 🚀 App listening on the port 3000
+2023-05-30 00:57:21 info: =================================
+2023-05-30 00:57:23 info: Connected to email server
+2023-05-30 00:57:30 info: Connected to Database Successfully...
+2023-05-30 00:57:40 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 790.770 ms - -[0m
+2023-05-30 00:58:37 info: =================================
+2023-05-30 00:58:37 info: ======= ENV: development =======
+2023-05-30 00:58:37 info: 🚀 App listening on the port 3000
+2023-05-30 00:58:37 info: =================================
+2023-05-30 00:58:39 info: Connected to email server
+2023-05-30 00:58:39 info: Connected to Database Successfully...
+2023-05-30 00:58:48 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 817.823 ms - -[0m
+2023-05-30 00:59:38 info: =================================
+2023-05-30 00:59:38 info: ======= ENV: development =======
+2023-05-30 00:59:38 info: 🚀 App listening on the port 3000
+2023-05-30 00:59:38 info: =================================
+2023-05-30 00:59:40 info: Connected to email server
+2023-05-30 00:59:40 info: Connected to Database Successfully...
+2023-05-30 00:59:47 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 917.820 ms - -[0m
+2023-05-30 01:00:28 info: =================================
+2023-05-30 01:00:28 info: ======= ENV: development =======
+2023-05-30 01:00:28 info: 🚀 App listening on the port 3000
+2023-05-30 01:00:28 info: =================================
+2023-05-30 01:00:30 info: Connected to email server
+2023-05-30 01:00:31 info: Connected to Database Successfully...
+2023-05-30 01:00:37 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 813.052 ms - -[0m
+2023-05-30 01:03:01 info: =================================
+2023-05-30 01:03:01 info: ======= ENV: development =======
+2023-05-30 01:03:01 info: 🚀 App listening on the port 3000
+2023-05-30 01:03:01 info: =================================
+2023-05-30 01:03:03 info: Connected to email server
+2023-05-30 01:03:04 info: Connected to Database Successfully...
+2023-05-30 01:03:09 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 737.387 ms - -[0m
+2023-05-30 01:03:51 info: =================================
+2023-05-30 01:03:51 info: ======= ENV: development =======
+2023-05-30 01:03:51 info: 🚀 App listening on the port 3000
+2023-05-30 01:03:51 info: =================================
+2023-05-30 01:03:53 info: Connected to email server
+2023-05-30 01:03:59 info: Connected to Database Successfully...
+2023-05-30 01:04:11 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 865.533 ms - -[0m

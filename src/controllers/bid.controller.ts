@@ -97,6 +97,23 @@ class BidController {
   | Get Bio By Id
   |--------------------------------------------------------------------------
   */
+  public updateMilestone = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const proposalId: string = req.params.id;
+
+      const data = await this.bidService.updateMilestoneById(proposalId, req.body);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Bio By Id
+  |--------------------------------------------------------------------------
+  */
   public getProposalById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
