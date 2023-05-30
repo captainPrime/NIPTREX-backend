@@ -40,13 +40,13 @@ class BidService {
   | Create Job
   |--------------------------------------------------------------------------
   */
-  public async updateBid(selector: string, body: IUpdateBidding): Promise<any> {
+  public async updateBid(selector: string, job_id: string, body: IUpdateBidding): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 2005, 'Request body cannot be empty');
 
     const { error } = updateBiddingSchemaValidation.validate(body);
     if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.bid.findOne({ user_id: selector });
+    const data = await this.bid.findOne({ user_id: selector, job_id });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     const updatedPayload: IUpdateBidding = {
@@ -63,7 +63,7 @@ class BidService {
 
     const updatedData = await this.bid.findByIdAndUpdate(data._id, updatedPayload, { new: true });
 
-    if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+    if (!updatedData) throw new HttpException(400, 2009, 'BID_REQUEST_ERROR');
 
     return updatedData;
   }

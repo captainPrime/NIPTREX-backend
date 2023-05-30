@@ -191,3 +191,9 @@ Use mongoose.model(name, schema)
 2023-05-30 19:52:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-05-30 19:52:19 info: [0mPOST /auth/login [32m200[0m 546.507 ms - 587[0m
 2023-05-30 19:52:24 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 703.605 ms - -[0m
+2023-05-30 21:56:54 info: =================================
+2023-05-30 21:56:54 info: ======= ENV: development =======
+2023-05-30 21:56:54 info: 🚀 App listening on the port 3000
+2023-05-30 21:56:54 info: =================================
+2023-05-30 21:56:56 info: Connected to email server
+2023-05-30 21:56:57 info: Connected to Database Successfully...
