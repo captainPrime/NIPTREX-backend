@@ -7,7 +7,7 @@ import AboutService from './about.service';
 import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
-import { biddingSchemaValidation, updateBiddingSchemaValidation } from '@/validations/bid.validation';
+import { biddingSchemaValidation, updateBiddingSchemaValidation, updateMilestoneStageSchema } from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
 
 class BidService {
@@ -68,13 +68,15 @@ class BidService {
     return updatedData;
   }
 
-  public async updateMilestoneById(selector: string, milestoneData: Partial<BiddingStage>): Promise<any> {
+  public async updateMilestoneById(selector: string, milestoneId: string, milestoneData: Partial<BiddingStage>): Promise<any> {
+    const { error } = updateMilestoneStageSchema.validate(milestoneData);
+    if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
+
     const data = await this.bid.findOne({ id: selector });
-    console.log('DATA', data.id);
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     const updatedMilestones = data.milestone_stage.map((milestone: any) => {
-      if (milestone._id.toString() === milestoneData.id) {
+      if (milestone._id.toString() === milestoneId) {
         return {
           ...milestone.toObject(),
           ...milestoneData,

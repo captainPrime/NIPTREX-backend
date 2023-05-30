@@ -116,3 +116,24 @@
 2023-05-30 01:03:53 info: Connected to email server
 2023-05-30 01:03:59 info: Connected to Database Successfully...
 2023-05-30 01:04:11 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f [32m200[0m 865.533 ms - -[0m
+2023-05-30 01:12:07 info: =================================
+2023-05-30 01:12:07 info: ======= ENV: development =======
+2023-05-30 01:12:07 info: 🚀 App listening on the port 3000
+2023-05-30 01:12:07 info: =================================
+2023-05-30 01:12:09 info: Connected to email server
+2023-05-30 01:12:09 info: Connected to Database Successfully...
+2023-05-30 01:12:45 info: =================================
+2023-05-30 01:12:45 info: ======= ENV: development =======
+2023-05-30 01:12:45 info: 🚀 App listening on the port 3000
+2023-05-30 01:12:45 info: =================================
+2023-05-30 01:12:48 info: Connected to email server
+2023-05-30 01:12:49 info: Connected to Database Successfully...
+2023-05-30 01:13:20 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 404, Message:: The requested path /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 not found!
+2023-05-30 01:13:20 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 [32m200[0m 42.719 ms - 158[0m
+2023-05-30 01:14:22 info: =================================
+2023-05-30 01:14:22 info: ======= ENV: development =======
+2023-05-30 01:14:22 info: 🚀 App listening on the port 3000
+2023-05-30 01:14:22 info: =================================
+2023-05-30 01:14:24 info: Connected to email server
+2023-05-30 01:14:24 info: Connected to Database Successfully...
+2023-05-30 01:14:29 info: [0mPUT /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 [32m200[0m 732.967 ms - -[0m

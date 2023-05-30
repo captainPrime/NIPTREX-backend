@@ -73,3 +73,14 @@ export const updateBiddingSchemaValidation = Joi.object({
   liked: Joi.boolean().default(false),
   disliked: Joi.boolean().default(false),
 }).min(1);
+
+export const updateMilestoneStageSchema = Joi.object({
+  description: Joi.string().optional(),
+  status: Joi.string()
+    .valid(...Object.values(MilestoneStatus))
+    .optional(),
+  dueDate: Joi.date().optional(),
+  amount: Joi.number().optional(),
+  attachments: Joi.array().items(Joi.string()).optional(),
+  links: Joi.array().items(Joi.string()).optional(),
+}).min(1);
