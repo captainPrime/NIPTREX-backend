@@ -9,6 +9,7 @@ import PreferenceService from '@/services/preference.service';
 import { skills, skillsWithOutSection, softSkills } from '@/utils/skills';
 import { IUpdateJob, JobStatus, PaginationOptions } from '@/interfaces/job.inteface';
 import BidService from '@/services/bid.service';
+import { BiddingStatus } from '@/models/bid.model';
 
 class JobController {
   public jobService = new JobService();
@@ -344,10 +345,10 @@ class JobController {
       const bidders = await this.bidService.getAllBidders(job._id.toString());
       const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
 
-      await this.bidService.updateBid(user_id, { status: 'in_progress' });
+      await this.bidService.updateBid(user_id, { status: BiddingStatus.IN_PROGRESS });
       userIds.forEach(async (userId: any) => {
         await this.aboutService.updateAboutById(userId, { nips: +5 });
-        await this.bidService.updateBid(userId, { status: 'closed' });
+        await this.bidService.updateBid(userId, { status: BiddingStatus.CLOSED });
       });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
