@@ -100,14 +100,11 @@ class BidService {
     const data = await this.bid.findOne({ id: proposalId });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
+    console.log('PROPOSAL', data);
+
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
-    const milestoneData = data.milestone_stage.map((milestone: any) => {
-      if (milestone._id.toString() === milestoneId) {
-        return milestone;
-      }
-      return milestone;
-    });
+    const milestoneData = data.milestone_stage.filter((item: any) => item._id.toString() === milestoneId);
 
     const user: any = await this.userService.findUserById(clientId);
     if (!user) throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
@@ -115,7 +112,7 @@ class BidService {
     console.log('UPDATED', milestoneData);
 
     const payload = {
-      milestoneDescription: milestoneData.description,
+      milestoneDescription: milestoneData[0].description,
     };
 
     await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);

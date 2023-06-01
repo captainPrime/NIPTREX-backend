@@ -1,0 +1,96 @@
+2023-06-01 12:32:24 info: =================================
+2023-06-01 12:32:24 info: ======= ENV: development =======
+2023-06-01 12:32:24 info: 🚀 App listening on the port 3000
+2023-06-01 12:32:24 info: =================================
+2023-06-01 12:32:26 info: Connected to email server
+2023-06-01 12:32:26 info: Connected to email server
+2023-06-01 12:32:26 info: Connected to email server
+2023-06-01 12:32:26 info: Connected to email server
+2023-06-01 12:32:37 info: Connected to Database Successfully...
+2023-06-01 12:32:56 info: Connected to email server
+2023-06-01 12:35:51 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-06-01 12:35:51 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 290.089 ms - 79[0m
+2023-06-01 12:36:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-01 12:36:14 info: [0mPOST /auth/login [32m200[0m 928.250 ms - 587[0m
+2023-06-01 12:36:36 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 5662.072 ms - 70[0m
+2023-06-01 12:38:38 info: =================================
+2023-06-01 12:38:38 info: ======= ENV: development =======
+2023-06-01 12:38:38 info: 🚀 App listening on the port 3000
+2023-06-01 12:38:38 info: =================================
+2023-06-01 12:38:40 info: Connected to email server
+2023-06-01 12:38:40 info: Connected to email server
+2023-06-01 12:38:40 info: Connected to email server
+2023-06-01 12:38:41 info: Connected to email server
+2023-06-01 12:38:41 info: Connected to email server
+2023-06-01 12:39:09 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-06-01 12:39:09 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 10071.341 ms - 79[0m
+2023-06-01 12:39:21 info: Connected to Database Successfully...
+2023-06-01 12:39:28 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 6752.227 ms - 70[0m
+2023-06-01 12:40:21 info: =================================
+2023-06-01 12:40:21 info: ======= ENV: development =======
+2023-06-01 12:40:21 info: 🚀 App listening on the port 3000
+2023-06-01 12:40:21 info: =================================
+2023-06-01 12:40:23 info: Connected to email server
+2023-06-01 12:40:23 info: Connected to email server
+2023-06-01 12:40:23 info: Connected to email server
+2023-06-01 12:40:23 info: Connected to email server
+2023-06-01 12:40:24 info: Connected to email server
+2023-06-01 12:40:34 info: Connected to Database Successfully...
+2023-06-01 12:40:41 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 9145.609 ms - 70[0m
+2023-06-01 12:44:20 info: =================================
+2023-06-01 12:44:20 info: ======= ENV: development =======
+2023-06-01 12:44:20 info: 🚀 App listening on the port 3000
+2023-06-01 12:44:20 info: =================================
+2023-06-01 12:44:22 info: Connected to email server
+2023-06-01 12:44:22 info: Connected to email server
+2023-06-01 12:44:22 info: Connected to email server
+2023-06-01 12:44:22 info: Connected to email server
+2023-06-01 12:44:22 info: Connected to email server
+2023-06-01 12:44:28 info: Connected to Database Successfully...
+2023-06-01 12:44:35 info: [0mGET /profile/freelanceWorkHistory [32m200[0m 782.243 ms - -[0m
+2023-06-01 12:44:39 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: data.filter is not a function
+2023-06-01 12:44:39 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 569.344 ms - 86[0m
+2023-06-01 12:45:13 info: =================================
+2023-06-01 12:45:13 info: ======= ENV: development =======
+2023-06-01 12:45:13 info: 🚀 App listening on the port 3000
+2023-06-01 12:45:13 info: =================================
+2023-06-01 12:45:15 info: Connected to email server
+2023-06-01 12:45:15 info: Connected to email server
+2023-06-01 12:45:15 info: Connected to email server
+2023-06-01 12:45:15 info: Connected to email server
+2023-06-01 12:45:16 info: Connected to email server
+2023-06-01 12:45:20 info: Connected to Database Successfully...
+2023-06-01 12:47:05 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4305.960 ms - 70[0m
+2023-06-01 12:47:46 info: =================================
+2023-06-01 12:47:46 info: ======= ENV: development =======
+2023-06-01 12:47:46 info: 🚀 App listening on the port 3000
+2023-06-01 12:47:46 info: =================================
+2023-06-01 12:47:48 info: Connected to email server
+2023-06-01 12:47:48 info: Connected to email server
+2023-06-01 12:47:48 info: Connected to email server
+2023-06-01 12:47:48 info: Connected to email server
+2023-06-01 12:47:48 info: Connected to email server
+2023-06-01 12:47:49 info: Connected to Database Successfully...
+2023-06-01 12:47:59 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 3934.112 ms - 70[0m
+2023-06-01 12:48:31 info: =================================
+2023-06-01 12:48:31 info: ======= ENV: development =======
+2023-06-01 12:48:31 info: 🚀 App listening on the port 3000
+2023-06-01 12:48:31 info: =================================
+2023-06-01 12:48:33 info: Connected to email server
+2023-06-01 12:48:33 info: Connected to email server
+2023-06-01 12:48:33 info: Connected to email server
+2023-06-01 12:48:33 info: Connected to email server
+2023-06-01 12:48:33 info: Connected to email server
+2023-06-01 12:48:43 info: Connected to Database Successfully...
+2023-06-01 12:48:55 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4460.592 ms - 70[0m
+2023-06-01 12:49:22 info: =================================
+2023-06-01 12:49:22 info: ======= ENV: development =======
+2023-06-01 12:49:22 info: 🚀 App listening on the port 3000
+2023-06-01 12:49:22 info: =================================
+2023-06-01 12:49:25 info: Connected to email server
+2023-06-01 12:49:25 info: Connected to email server
+2023-06-01 12:49:25 info: Connected to email server
+2023-06-01 12:49:25 info: Connected to email server
+2023-06-01 12:49:25 info: Connected to Database Successfully...
+2023-06-01 12:49:25 info: Connected to email server
+2023-06-01 12:49:33 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4151.478 ms - 70[0m
