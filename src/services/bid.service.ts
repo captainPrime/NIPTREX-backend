@@ -96,7 +96,7 @@ class BidService {
     return updatedData;
   }
 
-  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string): Promise<any> {
+  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string): Promise<void> {
     const data = await this.bid.findOne({ id: proposalId });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
@@ -114,11 +114,9 @@ class BidService {
 
     const payload = {
       milestoneDescription: milestoneData.description,
-      job
-    }
-    await this.emailService.sendMilestoneReviewEmail(user.email, verifyEmailToken, user.first_name);
+    };
 
-    return updatedData;
+    await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
   }
 
   /*
