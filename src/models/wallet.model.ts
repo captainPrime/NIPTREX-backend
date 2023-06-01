@@ -5,6 +5,7 @@ import { toJSON } from '@/modules/toJSON';
 export interface IWallet extends Document {
   userId: string;
   balance: number;
+  currency: string;
   transactions: ITransaction[];
 }
 
@@ -23,6 +24,8 @@ walletSchema.plugin(toJSON);
 // Define the Transaction schema
 export interface ITransaction extends Document {
   userId: string;
+  name: string;
+  remark: string;
   amount: number;
   type: 'deposit' | 'withdrawal' | 'transfer';
   timestamp: Date;
@@ -31,7 +34,9 @@ export interface ITransaction extends Document {
 const transactionSchema: Schema = new Schema(
   {
     userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    name: { type: String, required: true },
     amount: { type: Number, required: true },
+    remark: { type: String, required: true },
     type: { type: String, enum: ['deposit', 'withdrawal', 'transfer'], required: true },
     timestamp: { type: Date, default: Date.now },
   },
