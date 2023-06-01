@@ -1,5 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import ChatService from '@/services/chat.service';
+import { containsBadWords } from '@/utils/wordChecker';
+import { HttpException } from '@/exceptions/HttpException';
 
 class ChatController {
   public chatService = new ChatService();
@@ -62,6 +64,8 @@ class ChatController {
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      if (containsBadWords(req.body.content)) throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
+
       const message = await this.chatService.createMessage(req.body);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: message });

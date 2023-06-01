@@ -2,3 +2,5 @@
 2023-06-01 12:36:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-01 12:39:09 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
 2023-06-01 12:44:39 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: data.filter is not a function
+2023-06-01 13:17:56 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED
+2023-06-01 13:18:10 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED

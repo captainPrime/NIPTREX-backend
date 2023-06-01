@@ -105,3 +105,18 @@
 2023-06-01 12:50:19 info: Connected to email server
 2023-06-01 12:50:29 info: Connected to Database Successfully...
 2023-06-01 12:50:44 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 3716.191 ms - 80[0m
+2023-06-01 13:10:06 info: =================================
+2023-06-01 13:10:06 info: ======= ENV: development =======
+2023-06-01 13:10:06 info: 🚀 App listening on the port 3000
+2023-06-01 13:10:06 info: =================================
+2023-06-01 13:10:08 info: Connected to email server
+2023-06-01 13:10:08 info: Connected to email server
+2023-06-01 13:10:08 info: Connected to email server
+2023-06-01 13:10:08 info: Connected to email server
+2023-06-01 13:10:08 info: Connected to email server
+2023-06-01 13:10:19 info: Connected to Database Successfully...
+2023-06-01 13:17:56 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED
+2023-06-01 13:17:56 info: [0mPOST /chat/message [32m200[0m 262.103 ms - 79[0m
+2023-06-01 13:18:03 info: [0mPOST /chat/message [32m200[0m 521.305 ms - 233[0m
+2023-06-01 13:18:10 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED
+2023-06-01 13:18:10 info: [0mPOST /chat/message [32m200[0m 248.435 ms - 79[0m
