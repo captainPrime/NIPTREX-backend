@@ -82,7 +82,7 @@ class WalletService {
   public async deleteWallet(walletId: string): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6000, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await WalletModel.findByIdAndDelete(walletId).exec();
+    const wallet: IWallet | any = await WalletModel.findByIdAndDelete(walletId).exec();
 
     return wallet;
   }
