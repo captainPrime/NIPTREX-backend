@@ -56,7 +56,7 @@ class WalletService {
   public async addTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await WalletModel.findByIdAndUpdate(walletId, { $push: { transactions: transactionId } }, { new: true }).exec();
+    const wallet: IWallet | any = await WalletModel.findByIdAndUpdate(walletId, { $push: { transactions: transactionId } }, { new: true }).exec();
 
     return wallet;
   }
@@ -69,7 +69,7 @@ class WalletService {
   public async removeTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await WalletModel.findByIdAndUpdate(walletId, { $pull: { transactions: transactionId } }, { new: true }).exec();
+    const wallet: IWallet | any = await WalletModel.findByIdAndUpdate(walletId, { $pull: { transactions: transactionId } }, { new: true }).exec();
 
     return wallet;
   }
