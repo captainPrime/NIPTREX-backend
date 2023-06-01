@@ -96,9 +96,11 @@ class BidService {
     return updatedData;
   }
 
-  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string): Promise<void> {
+  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string, userId: string): Promise<void> {
     const data = await this.bid.findOne({ id: proposalId });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
     const milestoneData = data.milestone_stage.map((milestone: any) => {
       if (milestone._id.toString() === milestoneId) {
