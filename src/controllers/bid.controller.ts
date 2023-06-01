@@ -250,6 +250,24 @@ class BidController {
       next(error);
     }
   };
+
+    /*
+  |--------------------------------------------------------------------------
+  | Get Bio By Id
+  |--------------------------------------------------------------------------
+  */
+  public requestMilestoneReview = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const proposalId: string = req.params.proposalId;
+      const milestoneId: string = req.params.milestoneId;
+
+      const data = await this.bidService.updateMilestoneById(proposalId, milestoneId, req.body);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default BidController;

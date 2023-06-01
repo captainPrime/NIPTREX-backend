@@ -9,6 +9,7 @@ import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation, updateBiddingSchemaValidation, updateMilestoneStageSchema } from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
+import EmailService from '@/modules/email/email.service';
 
 class BidService {
   public bid: any = BiddingModel;
@@ -17,6 +18,7 @@ class BidService {
   public jobService = new JobService();
   public userService = new UserService();
   public aboutService = new AboutService();
+  public emailService = new EmailService();
 
   /*
   |--------------------------------------------------------------------------
@@ -90,6 +92,31 @@ class BidService {
     const updatedData = await this.bid.findByIdAndUpdate(data._id, { milestone_stage: updatedMilestones }, { new: true });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+
+    return updatedData;
+  }
+
+  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string): Promise<any> {
+    const data = await this.bid.findOne({ id: proposalId });
+    if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    const milestoneData = data.milestone_stage.map((milestone: any) => {
+      if (milestone._id.toString() === milestoneId) {
+        return milestone;
+      }
+      return milestone;
+    });
+
+    const user: any = await this.userService.findUserById(clientId);
+    if (!user) throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
+
+    console.log('UPDATED', milestoneData);
+
+    const payload = {
+      milestoneDescription: milestoneData.description,
+      job
+    }
+    await this.emailService.sendMilestoneReviewEmail(user.email, verifyEmailToken, user.first_name);
 
     return updatedData;
   }
