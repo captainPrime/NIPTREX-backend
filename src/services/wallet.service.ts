@@ -14,7 +14,7 @@ class WalletService {
 
     const wallet: IWallet = await this.wallet.create(body);
 
-    return createdWallet;
+    return wallet;
   }
 
   /*
@@ -25,7 +25,7 @@ class WalletService {
   public async getWalletByUserId(userId: string): Promise<IWallet | null> {
     if (isEmpty(userId)) throw new HttpException(400, 6002, 'User ID cannot be empty');
 
-    const wallet: IWallet | null = await WalletModel.findOne({ userId }).exec();
+    const wallet: IWallet | null = await this.wallet.findOne({ userId }).exec();
 
     return wallet;
   }
@@ -38,7 +38,7 @@ class WalletService {
   public async updateWalletBalance(walletId: string, amount: number): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await WalletModel.findByIdAndUpdate(walletId, { $inc: { balance: amount } }, { new: true }).exec();
+    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, { $inc: { balance: amount } }, { new: true }).exec();
 
     return wallet;
   }
