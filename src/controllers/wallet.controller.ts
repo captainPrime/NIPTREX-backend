@@ -69,7 +69,7 @@ class WalletController {
   | Update Bio
   |--------------------------------------------------------------------------
   */
-  public updateBio = async (req: Request, res: Response, next: NextFunction) => {
+  public updateWallet = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body: IUpdateWallet = req.body;
       const data = await this.walletService.updateWallet(req.params.id, body);
