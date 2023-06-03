@@ -189,3 +189,169 @@
 2023-06-03 08:37:11 info: Connected to email server
 2023-06-03 08:37:17 info: Connected to Database Successfully...
 2023-06-03 08:37:21 info: [0mGET /wallet/getWalletById/647aeceaa05aa8c5ab9dc608 [32m200[0m 493.881 ms - 369[0m
+2023-06-03 09:07:46 info: =================================
+2023-06-03 09:07:46 info: ======= ENV: development =======
+2023-06-03 09:07:46 info: 🚀 App listening on the port 3000
+2023-06-03 09:07:46 info: =================================
+2023-06-03 09:07:48 info: Connected to email server
+2023-06-03 09:07:49 info: Connected to email server
+2023-06-03 09:07:49 info: Connected to email server
+2023-06-03 09:07:49 info: Connected to email server
+2023-06-03 09:07:49 info: Connected to email server
+2023-06-03 09:07:59 info: Connected to Database Successfully...
+2023-06-03 09:08:30 info: [0mGET /wallet/getWalletById/647aeceaa05aa8c5ab9dc608 [32m200[0m 467.052 ms - 369[0m
+2023-06-03 09:08:33 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 09:08:33 info: [0mPOST /wallet [32m200[0m 714.151 ms - 79[0m
+2023-06-03 09:08:57 info: =================================
+2023-06-03 09:08:57 info: ======= ENV: development =======
+2023-06-03 09:08:57 info: 🚀 App listening on the port 3000
+2023-06-03 09:08:57 info: =================================
+2023-06-03 09:08:59 info: Connected to email server
+2023-06-03 09:08:59 info: Connected to email server
+2023-06-03 09:08:59 info: Connected to email server
+2023-06-03 09:08:59 info: Connected to email server
+2023-06-03 09:08:59 info: Connected to email server
+2023-06-03 09:09:09 info: Connected to Database Successfully...
+2023-06-03 09:09:14 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 09:09:14 info: [0mPOST /wallet [32m200[0m 1223.335 ms - 79[0m
+2023-06-03 09:21:12 info: =================================
+2023-06-03 09:21:12 info: ======= ENV: development =======
+2023-06-03 09:21:12 info: 🚀 App listening on the port 3000
+2023-06-03 09:21:12 info: =================================
+2023-06-03 09:21:14 info: Connected to email server
+2023-06-03 09:21:14 info: Connected to email server
+2023-06-03 09:21:14 info: Connected to email server
+2023-06-03 09:21:14 info: Connected to email server
+2023-06-03 09:21:14 info: Connected to email server
+2023-06-03 09:21:24 info: Connected to Database Successfully...
+2023-06-03 09:21:43 info: [0mGET /reload_db [32m200[0m 3528.374 ms - 74[0m
+2023-06-03 09:21:47 error: [POST] /wallet >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-06-03 09:21:47 info: [0mPOST /wallet [32m200[0m 269.470 ms - 79[0m
+2023-06-03 09:21:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-03 09:21:51 info: [0mPOST /auth/login [32m200[0m 522.942 ms - 587[0m
+2023-06-03 09:21:55 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_bank" is required
+2023-06-03 09:21:55 info: [0mPOST /wallet [32m200[0m 676.960 ms - 85[0m
+2023-06-03 09:24:31 info: =================================
+2023-06-03 09:24:31 info: ======= ENV: development =======
+2023-06-03 09:24:31 info: 🚀 App listening on the port 3000
+2023-06-03 09:24:31 info: =================================
+2023-06-03 09:24:33 info: Connected to email server
+2023-06-03 09:24:33 info: Connected to email server
+2023-06-03 09:24:33 info: Connected to email server
+2023-06-03 09:24:33 info: Connected to email server
+2023-06-03 09:24:33 info: Connected to email server
+2023-06-03 09:24:34 info: Connected to Database Successfully...
+2023-06-03 09:24:41 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_bank" length must be 3 characters long
+2023-06-03 09:24:41 info: [0mPOST /wallet [32m200[0m 826.130 ms - 106[0m
+2023-06-03 09:25:08 info: =================================
+2023-06-03 09:25:08 info: ======= ENV: development =======
+2023-06-03 09:25:08 info: 🚀 App listening on the port 3000
+2023-06-03 09:25:08 info: =================================
+2023-06-03 09:25:10 info: Connected to email server
+2023-06-03 09:25:10 info: Connected to email server
+2023-06-03 09:25:10 info: Connected to email server
+2023-06-03 09:25:10 info: Connected to email server
+2023-06-03 09:25:11 info: Connected to email server
+2023-06-03 09:25:11 info: Connected to Database Successfully...
+2023-06-03 09:25:22 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_number" is required
+2023-06-03 09:25:22 info: [0mPOST /wallet [32m200[0m 770.329 ms - 87[0m
+2023-06-03 09:30:15 info: =================================
+2023-06-03 09:30:15 info: ======= ENV: development =======
+2023-06-03 09:30:15 info: 🚀 App listening on the port 3000
+2023-06-03 09:30:15 info: =================================
+2023-06-03 09:30:17 info: Connected to email server
+2023-06-03 09:30:17 info: Connected to email server
+2023-06-03 09:30:17 info: Connected to email server
+2023-06-03 09:30:17 info: Connected to email server
+2023-06-03 09:30:17 info: Connected to email server
+2023-06-03 09:30:17 info: Connected to Database Successfully...
+2023-06-03 09:30:41 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_number" is required
+2023-06-03 09:30:41 info: [0mPOST /wallet [32m200[0m 747.538 ms - 87[0m
+2023-06-03 09:31:14 info: =================================
+2023-06-03 09:31:14 info: ======= ENV: development =======
+2023-06-03 09:31:14 info: 🚀 App listening on the port 3000
+2023-06-03 09:31:14 info: =================================
+2023-06-03 09:31:16 info: Connected to Database Successfully...
+2023-06-03 09:31:16 info: Connected to email server
+2023-06-03 09:31:16 info: Connected to email server
+2023-06-03 09:31:16 info: Connected to email server
+2023-06-03 09:31:16 info: Connected to email server
+2023-06-03 09:31:16 info: Connected to email server
+2023-06-03 09:31:33 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_number" is required
+2023-06-03 09:31:33 info: [0mPOST /wallet [32m200[0m 750.655 ms - 87[0m
+2023-06-03 09:32:57 info: =================================
+2023-06-03 09:32:57 info: ======= ENV: development =======
+2023-06-03 09:32:57 info: 🚀 App listening on the port 3000
+2023-06-03 09:32:57 info: =================================
+2023-06-03 09:32:59 info: Connected to email server
+2023-06-03 09:32:59 info: Connected to email server
+2023-06-03 09:32:59 info: Connected to email server
+2023-06-03 09:32:59 info: Connected to email server
+2023-06-03 09:32:59 info: Connected to email server
+2023-06-03 09:32:59 info: Connected to Database Successfully...
+2023-06-03 09:33:03 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_number" is required
+2023-06-03 09:33:03 info: [0mPOST /wallet [32m200[0m 775.030 ms - 87[0m
+2023-06-03 09:47:49 info: =================================
+2023-06-03 09:47:49 info: ======= ENV: development =======
+2023-06-03 09:47:49 info: 🚀 App listening on the port 3000
+2023-06-03 09:47:49 info: =================================
+2023-06-03 09:47:51 info: Connected to email server
+2023-06-03 09:47:51 info: Connected to email server
+2023-06-03 09:47:51 info: Connected to email server
+2023-06-03 09:47:51 info: Connected to email server
+2023-06-03 09:47:51 info: Connected to email server
+2023-06-03 09:48:03 info: Connected to Database Successfully...
+2023-06-03 09:48:09 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_bank" is required
+2023-06-03 09:48:09 info: [0mPOST /wallet [32m200[0m 1051.259 ms - 85[0m
+2023-06-03 09:48:49 info: =================================
+2023-06-03 09:48:49 info: ======= ENV: development =======
+2023-06-03 09:48:49 info: 🚀 App listening on the port 3000
+2023-06-03 09:48:49 info: =================================
+2023-06-03 09:48:51 info: Connected to Database Successfully...
+2023-06-03 09:48:52 info: Connected to email server
+2023-06-03 09:48:52 info: Connected to email server
+2023-06-03 09:48:52 info: Connected to email server
+2023-06-03 09:48:52 info: Connected to email server
+2023-06-03 09:48:52 info: Connected to email server
+2023-06-03 09:48:57 error: [POST] /wallet >> StatusCode:: 400, Message:: "account_bank" is required
+2023-06-03 09:48:57 info: [0mPOST /wallet [32m200[0m 756.397 ms - 85[0m
+2023-06-03 09:49:27 info: =================================
+2023-06-03 09:49:27 info: ======= ENV: development =======
+2023-06-03 09:49:27 info: 🚀 App listening on the port 3000
+2023-06-03 09:49:27 info: =================================
+2023-06-03 09:49:30 info: Connected to email server
+2023-06-03 09:49:30 info: Connected to email server
+2023-06-03 09:49:30 info: Connected to email server
+2023-06-03 09:49:30 info: Connected to email server
+2023-06-03 09:49:30 info: Connected to email server
+2023-06-03 09:49:40 info: Connected to Database Successfully...
+2023-06-03 09:49:46 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 09:49:46 info: [0mPOST /wallet [32m200[0m 1515.438 ms - 92[0m
+2023-06-03 09:50:24 info: =================================
+2023-06-03 09:50:24 info: ======= ENV: development =======
+2023-06-03 09:50:24 info: 🚀 App listening on the port 3000
+2023-06-03 09:50:24 info: =================================
+2023-06-03 09:50:26 info: Connected to email server
+2023-06-03 09:50:26 info: Connected to email server
+2023-06-03 09:50:26 info: Connected to email server
+2023-06-03 09:50:26 info: Connected to email server
+2023-06-03 09:50:26 info: Connected to Database Successfully...
+2023-06-03 09:50:26 info: Connected to email server
+2023-06-03 09:50:34 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 09:50:34 info: [0mPOST /wallet [32m200[0m 1875.540 ms - 92[0m
+2023-06-03 09:53:39 info: =================================
+2023-06-03 09:53:39 info: ======= ENV: development =======
+2023-06-03 09:53:39 info: 🚀 App listening on the port 3000
+2023-06-03 09:53:39 info: =================================
+2023-06-03 09:53:42 info: Connected to email server
+2023-06-03 09:53:42 info: Connected to email server
+2023-06-03 09:53:42 info: Connected to email server
+2023-06-03 09:53:42 info: Connected to email server
+2023-06-03 09:53:42 info: Connected to email server
+2023-06-03 09:53:42 info: Connected to Database Successfully...
+2023-06-03 09:53:48 info: [0mPOST /wallet [32m200[0m 2177.829 ms - 92[0m
+2023-06-03 09:53:48 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 10:27:58 info: =================================
+2023-06-03 10:27:58 info: ======= ENV: development =======
+2023-06-03 10:27:58 info: 🚀 App listening on the port 3000
+2023-06-03 10:27:58 info: =================================
