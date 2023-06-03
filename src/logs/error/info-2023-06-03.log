@@ -2,3 +2,5 @@
 2023-06-03 06:43:43 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
 2023-06-03 06:49:01 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
 2023-06-03 06:49:21 error: [POST] /wallet >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-06-03 06:50:14 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-06-03 06:51:03 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms

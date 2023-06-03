@@ -34,3 +34,20 @@
 2023-06-03 06:49:01 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
 2023-06-03 06:49:21 error: [POST] /wallet >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
 2023-06-03 06:49:21 info: [0mPOST /wallet [32m200[0m 38.158 ms - 86[0m
+2023-06-03 06:49:44 info: =================================
+2023-06-03 06:49:44 info: ======= ENV: development =======
+2023-06-03 06:49:44 info: 🚀 App listening on the port 3000
+2023-06-03 06:49:44 info: =================================
+2023-06-03 06:49:46 info: Connected to email server
+2023-06-03 06:49:46 info: Connected to email server
+2023-06-03 06:50:14 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-06-03 06:50:33 info: =================================
+2023-06-03 06:50:33 info: ======= ENV: development =======
+2023-06-03 06:50:33 info: 🚀 App listening on the port 3000
+2023-06-03 06:50:33 info: =================================
+2023-06-03 06:50:35 info: Connected to email server
+2023-06-03 06:50:35 info: Connected to email server
+2023-06-03 06:50:35 info: Connected to email server
+2023-06-03 06:51:03 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-06-03 06:51:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-03 06:51:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
