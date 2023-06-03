@@ -1,3 +1,4 @@
+import { FLW_PUBLIC_KEY, FLW_SECRET_KEY } from '@/config';
 import Flutterwave from 'flutterwave-node-v3';
 
-export const flw = new Flutterwave(process.env.FLW_PUBLIC_KEY, process.env.FLW_SECRET_KEY);
+export const flw = new Flutterwave(FLW_PUBLIC_KEY, FLW_SECRET_KEY);
