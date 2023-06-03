@@ -133,6 +133,24 @@ class WalletController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Create Bio
+  |--------------------------------------------------------------------------
+  */
+  public createTransaction = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const payloadData = req.body;
+
+      const data = await this.walletService.createTransaction(payloadData);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
 }
 
 export default WalletController;
