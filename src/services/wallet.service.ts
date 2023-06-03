@@ -1,9 +1,11 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
-import { IUpdateWallet, IWallet, WalletModel } from '@/models/wallet.model';
+import { ITransaction, IUpdateWallet, IWallet, TransactionModel, WalletModel } from '@/models/wallet.model';
 
 class WalletService {
   public wallet: any = WalletModel;
+  public transaction: any = TransactionModel;
+
   /*
   |--------------------------------------------------------------------------
   | Create Wallet
@@ -61,38 +63,12 @@ class WalletService {
   | Add Transaction to Wallet
   |--------------------------------------------------------------------------
   */
-  public async createTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
-    if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
+  public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
+    if (isEmpty(body)) throw new HttpException(400, 6002, 'bodycannot be empty');
 
-    const wallet: IWallet | any = await WalletModel.findByIdAndUpdate(walletId, { $push: { transactions: transactionId } }, { new: true }).exec();
+    const transaction: ITransaction | any = await this.transaction.create(body).exec();
 
-    return wallet;
-  }
-
-  /*
-  |--------------------------------------------------------------------------
-  | Remove Transaction from Wallet
-  |--------------------------------------------------------------------------
-  */
-  public async removeTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
-    if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
-
-    const wallet: IWallet | any = await WalletModel.findByIdAndUpdate(walletId, { $pull: { transactions: transactionId } }, { new: true }).exec();
-
-    return wallet;
-  }
-
-  /*
-  |--------------------------------------------------------------------------
-  | Delete Wallet
-  |--------------------------------------------------------------------------
-  */
-  public async deleteWallet(walletId: string): Promise<IWallet | null> {
-    if (isEmpty(walletId)) throw new HttpException(400, 6000, 'Wallet ID cannot be empty');
-
-    const wallet: IWallet | any = await WalletModel.findByIdAndDelete(walletId).exec();
-
-    return wallet;
+    return transaction;
   }
 }
 
