@@ -45,6 +45,8 @@ const transactionSchema: Schema = new Schema(
 
 transactionSchema.plugin(toJSON);
 
+export type IUpdateWallet = Partial<IWallet>;
+
 // Create and export the Wallet and Transaction models
 export const WalletModel = model<IWallet>('Wallet', walletSchema);
 export const TransactionModel = model<ITransaction>('Transaction', transactionSchema);

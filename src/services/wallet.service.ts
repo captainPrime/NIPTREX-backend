@@ -1,6 +1,6 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
-import { IWallet, WalletModel } from '@/models/wallet.model';
+import { IUpdateWallet, IWallet, WalletModel } from '@/models/wallet.model';
 
 class WalletService {
   public wallet: any = WalletModel;
@@ -35,10 +35,10 @@ class WalletService {
   | Update Wallet Balance
   |--------------------------------------------------------------------------
   */
-  public async updateWalletBalance(walletId: string, amount: number): Promise<IWallet | null> {
+  public async updateWallet(walletId: string, data: IUpdateWallet): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, { $inc: { balance: amount } }, { new: true }).exec();
+    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, data, { new: true }).exec();
 
     return wallet;
   }
