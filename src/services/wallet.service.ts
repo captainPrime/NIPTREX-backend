@@ -3,21 +3,16 @@ import { isEmpty } from '@utils/util';
 import { IWallet, WalletModel } from '@/models/wallet.model';
 
 class WalletService {
+  public wallet: any = WalletModel;
   /*
   |--------------------------------------------------------------------------
   | Create Wallet
   |--------------------------------------------------------------------------
   */
-  public async createWallet(userId: string): Promise<IWallet> {
-    if (isEmpty(userId)) throw new HttpException(400, 6002, 'User ID cannot be empty');
+  public async createWallet(body: IWallet): Promise<IWallet> {
+    if (isEmpty(body)) throw new HttpException(400, 6002, 'All fields cannot be empty');
 
-    const wallet: IWallet = new WalletModel({
-      userId,
-      balance: 0,
-      transactions: [],
-    });
-
-    const createdWallet: IWallet = await wallet.save();
+    const wallet: IWallet = await this.wallet.create(body);
 
     return createdWallet;
   }

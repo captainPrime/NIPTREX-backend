@@ -3,18 +3,16 @@ import { toJSON } from '@/modules/toJSON';
 
 // Define the Wallet schema
 export interface IWallet extends Document {
-  userId: string;
+  user_id: string;
   balance: number;
   currency: string;
-  transactions: ITransaction[];
 }
 
 const walletSchema: Schema = new Schema(
   {
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     currency: { type: String, required: true },
     balance: { type: Number, required: true },
-    transactions: [{ type: Schema.Types.ObjectId, ref: 'Transaction' }],
   },
   { versionKey: false },
 );
@@ -23,7 +21,8 @@ walletSchema.plugin(toJSON);
 
 // Define the Transaction schema
 export interface ITransaction extends Document {
-  userId: string;
+  user_id: string;
+  wallet_id: string;
   name: string;
   remark: string;
   amount: number;
@@ -34,6 +33,7 @@ export interface ITransaction extends Document {
 const transactionSchema: Schema = new Schema(
   {
     userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    wallet_id: { type: Schema.Types.ObjectId, ref: 'Wallet', required: true },
     name: { type: String, required: true },
     amount: { type: Number, required: true },
     remark: { type: String, required: true },
