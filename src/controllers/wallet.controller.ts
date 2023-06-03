@@ -5,7 +5,6 @@ import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateAlphaNumeric, generateUUID } from '@/utils/matchPercentage';
-import { FLW_SECRET_KEY, SECRET_KEY } from '@/config';
 import axios from 'axios';
 
 class WalletController {
