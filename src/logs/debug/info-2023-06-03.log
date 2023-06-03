@@ -1,0 +1,36 @@
+2023-06-03 06:42:03 info: =================================
+2023-06-03 06:42:03 info: ======= ENV: development =======
+2023-06-03 06:42:03 info: 🚀 App listening on the port 3000
+2023-06-03 06:42:03 info: =================================
+2023-06-03 06:42:05 info: Connected to email server
+2023-06-03 06:42:05 info: Connected to email server
+2023-06-03 06:42:33 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-06-03 06:43:12 info: =================================
+2023-06-03 06:43:12 info: ======= ENV: development =======
+2023-06-03 06:43:12 info: 🚀 App listening on the port 3000
+2023-06-03 06:43:12 info: =================================
+2023-06-03 06:43:14 info: Connected to email server
+2023-06-03 06:43:14 info: Connected to email server
+2023-06-03 06:43:14 info: Connected to email server
+2023-06-03 06:43:14 info: Connected to email server
+2023-06-03 06:43:14 info: Connected to email server
+2023-06-03 06:43:43 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-06-03 06:47:58 info: =================================
+2023-06-03 06:47:58 info: ======= ENV: development =======
+2023-06-03 06:47:58 info: 🚀 App listening on the port 3000
+2023-06-03 06:47:58 info: =================================
+2023-06-03 06:48:00 info: Connected to email server
+2023-06-03 06:48:00 info: Connected to email server
+2023-06-03 06:48:00 info: Connected to email server
+2023-06-03 06:48:01 info: Connected to Database Successfully...
+2023-06-03 06:48:31 info: =================================
+2023-06-03 06:48:31 info: ======= ENV: development =======
+2023-06-03 06:48:31 info: 🚀 App listening on the port 3000
+2023-06-03 06:48:31 info: =================================
+2023-06-03 06:48:33 info: Connected to email server
+2023-06-03 06:48:33 info: Connected to email server
+2023-06-03 06:48:33 info: Connected to email server
+2023-06-03 06:48:33 info: Connected to email server
+2023-06-03 06:49:01 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-06-03 06:49:21 error: [POST] /wallet >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-06-03 06:49:21 info: [0mPOST /wallet [32m200[0m 38.158 ms - 86[0m

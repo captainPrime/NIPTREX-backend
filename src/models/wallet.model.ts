@@ -12,7 +12,7 @@ const walletSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     currency: { type: String, required: true },
-    balance: { type: Number, required: true },
+    balance: { type: Number, required: false, default: 0 },
   },
   { versionKey: false },
 );
