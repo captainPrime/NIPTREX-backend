@@ -66,3 +66,5 @@ Error: Public Key required
 2023-06-03 11:02:35 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
 2023-06-03 11:04:03 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
 2023-06-03 11:06:43 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:08:52 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:10:09 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400

@@ -22,35 +22,36 @@ class WalletController {
       const userData = req.body;
       const user: any = await this.userService.findUserById(req.user.id);
 
+      console.log('USER', user);
+
       if (!user.verified) {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
-      console.log('FLW', flw.Subaccount.create);
 
       const wallet = await this.walletService.getWalletByUserId(req.user.id);
       if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
 
-      const headers = {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        Authorization: `Bearer ${FLW_SECRET_KEY}`,
-      };
+      //   const headers = {
+      //     'Content-Type': 'application/json',
+      //     Accept: 'application/json',
+      //     Authorization: `Bearer ${FLW_SECRET_KEY}`,
+      //   };
 
-      const response = await axios.post(
-        'https://api.flutterwave.com/v3/payout-subaccounts',
-        {
-          account_reference: generateAlphaNumeric(20),
-          email: user.email,
-          mobilenumber: user.phone_number,
-          country: user.country,
-          account_name: `${user.first_name} ${user.last_name}`,
-          bank_code: 232,
-          barter_id: '00874000',
-        },
-        { headers },
-      );
+      //   const response = await axios.post(
+      //     'https://api.flutterwave.com/v3/payout-subaccounts',
+      //     {
+      //       account_reference: generateAlphaNumeric(20),
+      //       email: user.email,
+      //       mobilenumber: user.phone_number,
+      //       country: 'NG',
+      //       account_name: `${user.first_name} ${user.last_name}`,
+      //       bank_code: 232,
+      //       barter_id: '00874000',
+      //     },
+      //     { headers },
+      //   );
 
-      console.log('SUB_ACCOUNT', response);
+      //   console.log('SUB_ACCOUNT', response);
 
       const result = await flw.VirtualAcct.create({
         tx_ref: generateUUID(),
