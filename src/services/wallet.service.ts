@@ -1,7 +1,6 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import { IUpdateWallet, IWallet, WalletModel } from '@/models/wallet.model';
-import { flw } from '@/modules/flutterwave';
 
 class WalletService {
   public wallet: any = WalletModel;
@@ -62,7 +61,7 @@ class WalletService {
   | Add Transaction to Wallet
   |--------------------------------------------------------------------------
   */
-  public async addTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
+  public async createTransaction(walletId: string, transactionId: string): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
     const wallet: IWallet | any = await WalletModel.findByIdAndUpdate(walletId, { $push: { transactions: transactionId } }, { new: true }).exec();
