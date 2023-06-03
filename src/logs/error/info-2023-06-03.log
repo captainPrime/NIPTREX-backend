@@ -59,3 +59,10 @@ Error: Public Key required
 2023-06-03 10:37:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-03 10:38:42 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
 2023-06-03 10:38:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-03 10:55:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-03 10:55:56 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 10:56:52 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 10:59:51 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 11:02:35 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:04:03 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:06:43 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400

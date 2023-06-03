@@ -404,3 +404,87 @@
 2023-06-03 10:38:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-03 10:38:59 info: [0mPOST /auth/login [32m200[0m 644.277 ms - 587[0m
 2023-06-03 10:39:04 info: [0mPOST /wallet [32m200[0m 2344.037 ms - 367[0m
+2023-06-03 10:55:21 info: =================================
+2023-06-03 10:55:21 info: ======= ENV: development =======
+2023-06-03 10:55:21 info: 🚀 App listening on the port 3000
+2023-06-03 10:55:21 info: =================================
+2023-06-03 10:55:23 info: Connected to email server
+2023-06-03 10:55:24 info: Connected to email server
+2023-06-03 10:55:24 info: Connected to email server
+2023-06-03 10:55:24 info: Connected to email server
+2023-06-03 10:55:24 info: Connected to email server
+2023-06-03 10:55:24 info: Connected to Database Successfully...
+2023-06-03 10:55:40 info: [0mGET /reload_db [32m200[0m 5954.219 ms - 74[0m
+2023-06-03 10:55:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-03 10:55:50 info: [0mPOST /auth/login [32m200[0m 912.931 ms - 587[0m
+2023-06-03 10:55:56 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 10:55:56 info: [0mPOST /wallet [32m200[0m 910.595 ms - 84[0m
+2023-06-03 10:56:36 info: =================================
+2023-06-03 10:56:36 info: ======= ENV: development =======
+2023-06-03 10:56:36 info: 🚀 App listening on the port 3000
+2023-06-03 10:56:37 info: =================================
+2023-06-03 10:56:40 info: Connected to email server
+2023-06-03 10:56:41 info: Connected to email server
+2023-06-03 10:56:41 info: Connected to email server
+2023-06-03 10:56:41 info: Connected to email server
+2023-06-03 10:56:41 info: Connected to email server
+2023-06-03 10:56:43 info: Connected to Database Successfully...
+2023-06-03 10:56:52 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 10:56:52 info: [0mPOST /wallet [32m200[0m 2196.762 ms - 84[0m
+2023-06-03 10:59:31 info: =================================
+2023-06-03 10:59:31 info: ======= ENV: development =======
+2023-06-03 10:59:31 info: 🚀 App listening on the port 3000
+2023-06-03 10:59:31 info: =================================
+2023-06-03 10:59:34 info: Connected to email server
+2023-06-03 10:59:34 info: Connected to email server
+2023-06-03 10:59:34 info: Connected to email server
+2023-06-03 10:59:34 info: Connected to email server
+2023-06-03 10:59:35 info: Connected to email server
+2023-06-03 10:59:43 info: Connected to Database Successfully...
+2023-06-03 10:59:51 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 10:59:51 info: [0mPOST /wallet [32m200[0m 2642.248 ms - 92[0m
+2023-06-03 11:02:23 info: =================================
+2023-06-03 11:02:23 info: ======= ENV: development =======
+2023-06-03 11:02:23 info: 🚀 App listening on the port 3000
+2023-06-03 11:02:23 info: =================================
+2023-06-03 11:02:26 info: Connected to email server
+2023-06-03 11:02:26 info: Connected to email server
+2023-06-03 11:02:26 info: Connected to email server
+2023-06-03 11:02:27 info: Connected to email server
+2023-06-03 11:02:27 info: Connected to email server
+2023-06-03 11:02:27 info: Connected to Database Successfully...
+2023-06-03 11:02:35 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:02:35 info: [0mPOST /wallet [32m200[0m 2718.292 ms - 92[0m
+2023-06-03 11:03:45 info: =================================
+2023-06-03 11:03:45 info: ======= ENV: development =======
+2023-06-03 11:03:45 info: 🚀 App listening on the port 3000
+2023-06-03 11:03:45 info: =================================
+2023-06-03 11:03:48 info: Connected to email server
+2023-06-03 11:03:48 info: Connected to email server
+2023-06-03 11:03:48 info: Connected to email server
+2023-06-03 11:03:48 info: Connected to email server
+2023-06-03 11:03:48 info: Connected to email server
+2023-06-03 11:03:53 info: Connected to Database Successfully...
+2023-06-03 11:04:03 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:04:03 info: [0mPOST /wallet [32m200[0m 2210.699 ms - 92[0m
+2023-06-03 11:06:26 info: =================================
+2023-06-03 11:06:26 info: ======= ENV: development =======
+2023-06-03 11:06:26 info: 🚀 App listening on the port 3000
+2023-06-03 11:06:26 info: =================================
+2023-06-03 11:06:29 info: Connected to email server
+2023-06-03 11:06:29 info: Connected to email server
+2023-06-03 11:06:29 info: Connected to email server
+2023-06-03 11:06:29 info: Connected to email server
+2023-06-03 11:06:29 info: Connected to email server
+2023-06-03 11:06:35 info: Connected to Database Successfully...
+2023-06-03 11:06:43 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 400
+2023-06-03 11:06:43 info: [0mPOST /wallet [32m200[0m 3332.483 ms - 92[0m
+2023-06-03 11:07:15 info: =================================
+2023-06-03 11:07:15 info: ======= ENV: development =======
+2023-06-03 11:07:15 info: 🚀 App listening on the port 3000
+2023-06-03 11:07:15 info: =================================
+2023-06-03 11:07:32 info: Connected to email server
+2023-06-03 11:07:32 info: Connected to email server
+2023-06-03 11:07:34 info: Connected to email server
+2023-06-03 11:07:45 info: Connected to email server
+2023-06-03 11:08:09 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
