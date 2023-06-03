@@ -25,15 +25,15 @@ class WalletController {
       }
 
       const wallet = await this.walletService.getWalletByUserId(req.user.id);
-      if (!wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
+      if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
 
       const result = await flw.VirtualAcct.create({
         tx_ref: generateUUID(),
         email: user.email,
-        currency: 'USD',
+        bvn: '19218268983',
         is_permanent: true,
-        firstname: user.first_name,
-        lastname: user.last_name,
+        // firstname: user.first_name,
+        // lastname: user.last_name,
         narration: 'Niptrix Wallet',
       });
 

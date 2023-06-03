@@ -1082,3 +1082,15 @@ Error: Public Key required
     at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
     at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-4760260900089759.js:114:20)
     at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-4760260900089759.js:71:20)
+2023-06-03 07:23:39 error: uncaughtException: Public Key required
+Error: Public Key required
+    at Object.RaveUtils.emptyCheck (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/flutterwave-node-v3/utils/rave.utils.js:8:9)
+    at new RaveBase (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/flutterwave-node-v3/lib/rave.base.js:7:13)
+    at new Rave (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/flutterwave-node-v3/index.js:23:20)
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/modules/flutterwave.ts:4:20)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8542522200680307.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8542522200680307.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8542522200680307.js:71:20)

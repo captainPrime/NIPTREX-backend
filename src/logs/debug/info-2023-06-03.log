@@ -51,3 +51,102 @@
 2023-06-03 06:51:03 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
 2023-06-03 06:51:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-06-03 06:51:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-03 08:15:24 info: =================================
+2023-06-03 08:15:24 info: ======= ENV: development =======
+2023-06-03 08:15:24 info: 🚀 App listening on the port 3000
+2023-06-03 08:15:24 info: =================================
+2023-06-03 08:15:29 info: Connected to email server
+2023-06-03 08:15:29 info: Connected to email server
+2023-06-03 08:15:29 info: Connected to email server
+2023-06-03 08:15:29 info: Connected to email server
+2023-06-03 08:15:29 info: Connected to email server
+2023-06-03 08:15:29 info: Connected to Database Successfully...
+2023-06-03 08:15:41 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 08:15:41 info: [0mPOST /wallet [32m200[0m 813.469 ms - 79[0m
+2023-06-03 08:16:42 info: =================================
+2023-06-03 08:16:42 info: ======= ENV: development =======
+2023-06-03 08:16:42 info: 🚀 App listening on the port 3000
+2023-06-03 08:16:42 info: =================================
+2023-06-03 08:16:45 info: Connected to email server
+2023-06-03 08:16:45 info: Connected to email server
+2023-06-03 08:16:45 info: Connected to email server
+2023-06-03 08:16:45 info: Connected to email server
+2023-06-03 08:16:45 info: Connected to email server
+2023-06-03 08:16:45 info: Connected to Database Successfully...
+2023-06-03 08:16:53 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 08:16:53 info: [0mPOST /wallet [32m200[0m 741.795 ms - 79[0m
+2023-06-03 08:17:32 info: =================================
+2023-06-03 08:17:32 info: ======= ENV: development =======
+2023-06-03 08:17:32 info: 🚀 App listening on the port 3000
+2023-06-03 08:17:32 info: =================================
+2023-06-03 08:17:34 info: Connected to email server
+2023-06-03 08:17:35 info: Connected to email server
+2023-06-03 08:17:35 info: Connected to email server
+2023-06-03 08:17:35 info: Connected to email server
+2023-06-03 08:17:35 info: Connected to email server
+2023-06-03 08:17:35 info: Connected to Database Successfully...
+2023-06-03 08:17:43 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 08:17:43 info: [0mPOST /wallet [32m200[0m 1205.361 ms - 79[0m
+2023-06-03 08:18:13 info: =================================
+2023-06-03 08:18:13 info: ======= ENV: development =======
+2023-06-03 08:18:13 info: 🚀 App listening on the port 3000
+2023-06-03 08:18:13 info: =================================
+2023-06-03 08:18:15 info: Connected to email server
+2023-06-03 08:18:15 info: Connected to email server
+2023-06-03 08:18:15 info: Connected to email server
+2023-06-03 08:18:15 info: Connected to email server
+2023-06-03 08:18:15 info: Connected to email server
+2023-06-03 08:18:26 info: Connected to Database Successfully...
+2023-06-03 08:19:33 error: [POST] /wallet >> StatusCode:: 400, Message:: "bvn" is required
+2023-06-03 08:19:33 info: [0mPOST /wallet [32m200[0m 1090.921 ms - 76[0m
+2023-06-03 08:20:50 info: =================================
+2023-06-03 08:20:50 info: ======= ENV: development =======
+2023-06-03 08:20:50 info: 🚀 App listening on the port 3000
+2023-06-03 08:20:50 info: =================================
+2023-06-03 08:20:52 info: Connected to email server
+2023-06-03 08:20:53 info: Connected to email server
+2023-06-03 08:20:53 info: Connected to email server
+2023-06-03 08:20:53 info: Connected to email server
+2023-06-03 08:20:53 info: Connected to email server
+2023-06-03 08:20:58 info: Connected to Database Successfully...
+2023-06-03 08:21:03 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 08:21:03 info: [0mPOST /wallet [32m200[0m 766.020 ms - 84[0m
+2023-06-03 08:21:13 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 08:21:13 info: [0mPOST /wallet [32m200[0m 698.568 ms - 84[0m
+2023-06-03 08:21:16 error: [POST] /wallet >> StatusCode:: 400, Message:: "currency" is not allowed
+2023-06-03 08:21:16 info: [0mPOST /wallet [32m200[0m 685.881 ms - 84[0m
+2023-06-03 08:21:50 info: =================================
+2023-06-03 08:21:50 info: ======= ENV: development =======
+2023-06-03 08:21:50 info: 🚀 App listening on the port 3000
+2023-06-03 08:21:50 info: =================================
+2023-06-03 08:21:52 info: Connected to email server
+2023-06-03 08:21:52 info: Connected to Database Successfully...
+2023-06-03 08:21:52 info: Connected to email server
+2023-06-03 08:21:52 info: Connected to email server
+2023-06-03 08:21:52 info: Connected to email server
+2023-06-03 08:21:52 info: Connected to email server
+2023-06-03 08:22:37 error: [POST] /wallet >> StatusCode:: 400, Message:: "firstname" is not allowed
+2023-06-03 08:22:37 info: [0mPOST /wallet [32m200[0m 768.195 ms - 85[0m
+2023-06-03 08:22:58 info: =================================
+2023-06-03 08:22:58 info: ======= ENV: development =======
+2023-06-03 08:22:58 info: 🚀 App listening on the port 3000
+2023-06-03 08:22:58 info: =================================
+2023-06-03 08:23:00 info: Connected to email server
+2023-06-03 08:23:00 info: Connected to email server
+2023-06-03 08:23:00 info: Connected to email server
+2023-06-03 08:23:00 info: Connected to email server
+2023-06-03 08:23:00 info: Connected to email server
+2023-06-03 08:23:11 info: Connected to Database Successfully...
+2023-06-03 08:23:16 error: [POST] /wallet >> StatusCode:: 400, Message:: "lastname" is not allowed
+2023-06-03 08:23:16 info: [0mPOST /wallet [32m200[0m 806.889 ms - 84[0m
+2023-06-03 08:23:35 info: =================================
+2023-06-03 08:23:35 info: ======= ENV: development =======
+2023-06-03 08:23:35 info: 🚀 App listening on the port 3000
+2023-06-03 08:23:35 info: =================================
+2023-06-03 08:23:37 info: Connected to email server
+2023-06-03 08:23:37 info: Connected to email server
+2023-06-03 08:23:37 info: Connected to email server
+2023-06-03 08:23:37 info: Connected to email server
+2023-06-03 08:23:37 info: Connected to email server
+2023-06-03 08:23:37 info: Connected to Database Successfully...
+2023-06-03 08:23:45 info: [0mPOST /wallet [32m200[0m 2478.481 ms - 179[0m

@@ -26,7 +26,7 @@ class WalletService {
   public async getWalletByUserId(userId: string): Promise<IWallet | null> {
     if (isEmpty(userId)) throw new HttpException(400, 6002, 'User ID cannot be empty');
 
-    const wallet: IWallet | null = await this.wallet.findOne({ userId }).exec();
+    const wallet: IWallet | null = await this.wallet.findOne({ user_id: userId }).exec();
 
     return wallet;
   }
