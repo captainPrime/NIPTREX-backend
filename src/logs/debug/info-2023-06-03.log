@@ -355,3 +355,30 @@
 2023-06-03 10:27:58 info: ======= ENV: development =======
 2023-06-03 10:27:58 info: 🚀 App listening on the port 3000
 2023-06-03 10:27:58 info: =================================
+2023-06-03 10:29:13 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-03 10:31:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-03 10:31:32 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-03 10:31:32 info: Connected to email server
+2023-06-03 10:31:32 info: Connected to email server
+2023-06-03 10:31:33 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-03 10:33:37 info: =================================
+2023-06-03 10:33:37 info: ======= ENV: development =======
+2023-06-03 10:33:37 info: 🚀 App listening on the port 3000
+2023-06-03 10:33:37 info: =================================
+2023-06-03 10:33:41 info: Connected to email server
+2023-06-03 10:33:42 info: Connected to email server
+2023-06-03 10:33:42 info: Connected to email server
+2023-06-03 10:33:48 info: Connected to email server
+2023-06-03 10:33:50 info: Connected to email server
+2023-06-03 10:33:54 info: Connected to Database Successfully...
+2023-06-03 10:34:03 info: [0mPOST /wallet [32m200[0m 3287.928 ms - 369[0m
+2023-06-03 10:35:25 info: =================================
+2023-06-03 10:35:25 info: ======= ENV: development =======
+2023-06-03 10:35:25 info: 🚀 App listening on the port 3000
+2023-06-03 10:35:25 info: =================================
+2023-06-03 10:35:27 info: Connected to email server
+2023-06-03 10:35:27 info: Connected to email server
+2023-06-03 10:35:27 info: Connected to email server
+2023-06-03 10:35:28 info: Connected to email server
+2023-06-03 10:35:28 info: Connected to email server
+2023-06-03 10:35:28 info: Connected to Database Successfully...

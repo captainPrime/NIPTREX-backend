@@ -73,7 +73,7 @@ class WalletController {
         bank_name: result.data.bank_name,
         order_ref: result.data.order_ref,
         flw_ref: result.data.flw_ref,
-        amount: result.data.amount,
+        amount: result.data.amount === 'Nan' ? '0' : result.data.amount,
       };
       const data = await this.walletService.createWallet(payload);
 

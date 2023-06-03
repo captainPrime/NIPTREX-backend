@@ -54,3 +54,4 @@ Error: Public Key required
 2023-06-03 09:49:46 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
 2023-06-03 09:50:34 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
 2023-06-03 09:53:48 error: [POST] /wallet >> StatusCode:: 400, Message:: Request failed with status code 401
+2023-06-03 10:29:13 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
