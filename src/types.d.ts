@@ -12,3 +12,5 @@ declare module 'xss-clean' {
 
   export default value;
 }
+
+declare module 'flutterwave-node-v3';

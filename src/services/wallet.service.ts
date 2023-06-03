@@ -1,6 +1,7 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import { IUpdateWallet, IWallet, WalletModel } from '@/models/wallet.model';
+import { flw } from '@/modules/flutterwave';
 
 class WalletService {
   public wallet: any = WalletModel;

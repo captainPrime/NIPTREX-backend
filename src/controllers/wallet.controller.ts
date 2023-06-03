@@ -3,6 +3,8 @@ import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet } from '@/models/wallet.model';
+import { flw } from '@/modules/flutterwave';
+import { generateUUID } from '@/utils/matchPercentage';
 
 class WalletController {
   public userService = new UserService();
@@ -24,6 +26,20 @@ class WalletController {
 
       const wallet = await this.walletService.getWalletByUserId(req.user.id);
       if (!wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
+
+      const result = await flw.VirtualAcct.create({
+        tx_ref: generateUUID(),
+        email: user.email,
+        currency: 'USD',
+        is_permanent: true,
+        firstname: user.first_name,
+        lastname: user.last_name,
+        narration: 'Niptrix Wallet',
+      });
+
+      console.log(result);
+
+      if (result.status !== 'success' && result.data.response_code !== '02') throw new HttpException(400, 6002, 'ERROR_CREATING_WALLET');
 
       const data = await this.walletService.createWallet({ ...userData, user_id: req.user.id });
 
