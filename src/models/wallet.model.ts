@@ -4,15 +4,27 @@ import { toJSON } from '@/modules/toJSON';
 // Define the Wallet schema
 export interface IWallet extends Document {
   user_id: string;
-  balance: number;
+  amount: string;
   currency: string;
+  account_number: string;
+  account_status: string;
+  bank_name: string;
+  order_ref: string;
+  flw_ref: string;
+  expiry_date: string | number;
 }
 
 const walletSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     currency: { type: String, required: true },
-    balance: { type: Number, required: false, default: 0 },
+    expiry_date: { type: String, required: true },
+    account_number: { type: String, required: true },
+    account_status: { type: String, required: true },
+    bank_name: { type: String, required: true },
+    order_ref: { type: String, required: true },
+    flw_ref: { type: String, required: true },
+    amount: { type: String, required: false, default: '0' },
   },
   { versionKey: false },
 );

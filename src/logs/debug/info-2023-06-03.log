@@ -150,3 +150,19 @@
 2023-06-03 08:23:37 info: Connected to email server
 2023-06-03 08:23:37 info: Connected to Database Successfully...
 2023-06-03 08:23:45 info: [0mPOST /wallet [32m200[0m 2478.481 ms - 179[0m
+2023-06-03 08:33:01 info: =================================
+2023-06-03 08:33:01 info: ======= ENV: development =======
+2023-06-03 08:33:01 info: 🚀 App listening on the port 3000
+2023-06-03 08:33:01 info: =================================
+2023-06-03 08:33:04 info: Connected to email server
+2023-06-03 08:33:04 info: Connected to email server
+2023-06-03 08:33:04 info: Connected to email server
+2023-06-03 08:33:04 info: Connected to email server
+2023-06-03 08:33:04 info: Connected to email server
+2023-06-03 08:33:14 info: Connected to Database Successfully...
+2023-06-03 08:33:22 error: [POST] /wallet >> StatusCode:: 400, Message:: WALLET_ALREAD_CREATED
+2023-06-03 08:33:22 info: [0mPOST /wallet [32m200[0m 786.250 ms - 79[0m
+2023-06-03 08:33:35 info: [0mGET /reload_db [32m200[0m 3874.480 ms - 74[0m
+2023-06-03 08:33:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-03 08:33:57 info: [0mPOST /auth/login [32m200[0m 546.607 ms - 587[0m
+2023-06-03 08:34:02 info: [0mPOST /wallet [32m200[0m 3358.711 ms - 369[0m

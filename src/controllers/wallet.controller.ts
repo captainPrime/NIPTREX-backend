@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
-import { IUpdateWallet } from '@/models/wallet.model';
+import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateUUID } from '@/utils/matchPercentage';
 
@@ -41,7 +41,18 @@ class WalletController {
 
       if (result.status !== 'success' && result.data.response_code !== '02') throw new HttpException(400, 6002, 'ERROR_CREATING_WALLET');
 
-      const data = await this.walletService.createWallet({ ...userData, user_id: req.user.id });
+      const payload: IWallet | any = {
+        user_id: req.user.id,
+        currency: req.body.currency,
+        expiry_date: result.data.expiry_date,
+        account_number: result.data.account_number,
+        account_status: result.data.account_status,
+        bank_name: result.data.bank_name,
+        order_ref: result.data.order_ref,
+        flw_ref: result.data.flw_ref,
+        amount: result.data.amount,
+      };
+      const data = await this.walletService.createWallet(payload);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
     } catch (error) {
