@@ -33,6 +33,19 @@ class WalletService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Wallet by User ID
+  |--------------------------------------------------------------------------
+  */
+  public async getWalletById(id: string): Promise<IWallet | []> {
+    if (isEmpty(id)) throw new HttpException(400, 6002, 'ID cannot be empty');
+
+    const wallet: IWallet | [] = await this.wallet.findOne({ _id: id }).exec();
+
+    return wallet;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Update Wallet Balance
   |--------------------------------------------------------------------------
   */

@@ -166,3 +166,26 @@
 2023-06-03 08:33:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-03 08:33:57 info: [0mPOST /auth/login [32m200[0m 546.607 ms - 587[0m
 2023-06-03 08:34:02 info: [0mPOST /wallet [32m200[0m 3358.711 ms - 369[0m
+2023-06-03 08:35:00 info: [0mGET /wallet/getUserWallet [32m200[0m 541.121 ms - 369[0m
+2023-06-03 08:35:36 info: [0mGET /wallet/getWalletById/647aeceaa05aa8c5ab9dc608 [32m200[0m 614.924 ms - 85[0m
+2023-06-03 08:36:50 info: =================================
+2023-06-03 08:36:50 info: ======= ENV: development =======
+2023-06-03 08:36:50 info: 🚀 App listening on the port 3000
+2023-06-03 08:36:50 info: =================================
+2023-06-03 08:36:52 info: Connected to email server
+2023-06-03 08:36:52 info: Connected to email server
+2023-06-03 08:36:52 info: Connected to email server
+2023-06-03 08:36:52 info: Connected to email server
+2023-06-03 08:36:52 info: Connected to email server
+2023-06-03 08:36:53 info: Connected to Database Successfully...
+2023-06-03 08:37:09 info: =================================
+2023-06-03 08:37:09 info: ======= ENV: development =======
+2023-06-03 08:37:09 info: 🚀 App listening on the port 3000
+2023-06-03 08:37:09 info: =================================
+2023-06-03 08:37:11 info: Connected to email server
+2023-06-03 08:37:11 info: Connected to email server
+2023-06-03 08:37:11 info: Connected to email server
+2023-06-03 08:37:11 info: Connected to email server
+2023-06-03 08:37:11 info: Connected to email server
+2023-06-03 08:37:17 info: Connected to Database Successfully...
+2023-06-03 08:37:21 info: [0mGET /wallet/getWalletById/647aeceaa05aa8c5ab9dc608 [32m200[0m 493.881 ms - 369[0m

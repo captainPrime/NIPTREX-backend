@@ -83,7 +83,7 @@ class WalletController {
   public getWalletById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.walletService.getWalletByUserId(id);
+      const data = await this.walletService.getWalletById(id);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
     } catch (error) {
