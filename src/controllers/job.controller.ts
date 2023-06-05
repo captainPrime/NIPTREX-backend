@@ -378,7 +378,7 @@ class JobController {
       about.skills.forEach((skill: string) => jobQueries.push(skill));
 
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'createdAt:desc',
+        sortBy: req.query.sortBy || 'date_applied:desc',
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',

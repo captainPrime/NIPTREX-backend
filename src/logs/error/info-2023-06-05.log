@@ -25,3 +25,4 @@
 2023-06-05 14:06:37 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
 2023-06-05 14:31:27 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: this.bid.paginate(...).exec is not a function
 2023-06-05 14:33:12 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: data.sort is not a function
+2023-06-05 14:46:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
