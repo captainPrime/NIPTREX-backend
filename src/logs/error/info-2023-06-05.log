@@ -3,3 +3,5 @@
 2023-06-05 12:52:35 error: [GET] /bid/proposals/6476576d44dda25f3ba2d9a4 >> StatusCode:: 400, Message:: $meta is the only expression supported by $sort right now
 2023-06-05 12:54:36 error: [GET] /bid/proposals/6476576d44dda25f3ba2d9a4 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
 2023-06-05 12:56:04 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 12:57:42 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 12:59:02 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
