@@ -75,3 +75,265 @@
 2023-06-05 12:59:05 info: Connected to email server
 2023-06-05 12:59:07 info: Connected to email server
 2023-06-05 12:59:08 info: Connected to email server
+2023-06-05 12:59:55 info: [0mGET /reload_db [32m200[0m 11809.051 ms - 74[0m
+2023-06-05 13:00:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:00:04 info: [0mPOST /auth/login [32m200[0m 1837.810 ms - 587[0m
+2023-06-05 13:00:12 info: [0mPOST /job [32m200[0m 2252.971 ms - 940[0m
+2023-06-05 13:00:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:00:25 info: [0mPOST /auth/login [32m200[0m 2025.422 ms - 587[0m
+2023-06-05 13:00:37 info: [0mPOST /profile/about [32m200[0m 6290.091 ms - -[0m
+2023-06-05 13:00:52 info: [0mPOST /bid/647dce4c5fab941b6eff3957 [32m200[0m 10155.111 ms - -[0m
+2023-06-05 13:01:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:01:04 info: [0mPOST /auth/login [32m200[0m 2055.226 ms - 587[0m
+2023-06-05 13:01:20 info: [0mPOST /profile/about [32m200[0m 3656.078 ms - -[0m
+2023-06-05 13:01:47 info: [0mPOST /bid/647dce4c5fab941b6eff3957 [32m200[0m 8074.339 ms - -[0m
+2023-06-05 13:01:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:01:55 info: [0mPOST /auth/login [32m200[0m 1225.926 ms - 587[0m
+2023-06-05 13:02:01 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:02:01 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 1031.597 ms - 108[0m
+2023-06-05 13:02:49 info: =================================
+2023-06-05 13:02:49 info: ======= ENV: development =======
+2023-06-05 13:02:49 info: 🚀 App listening on the port 3000
+2023-06-05 13:02:49 info: =================================
+2023-06-05 13:02:55 info: Connected to email server
+2023-06-05 13:02:55 info: Connected to email server
+2023-06-05 13:02:55 info: Connected to email server
+2023-06-05 13:02:55 info: Connected to email server
+2023-06-05 13:02:55 info: Connected to email server
+2023-06-05 13:03:04 info: Connected to Database Successfully...
+2023-06-05 13:03:55 info: [0mPOST /bid/hire/647dce3a5fab941b6eff394e [32m200[0m 6256.058 ms - 348[0m
+2023-06-05 13:04:09 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:04:09 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 636.295 ms - 104[0m
+2023-06-05 13:04:44 info: =================================
+2023-06-05 13:04:44 info: ======= ENV: development =======
+2023-06-05 13:04:44 info: 🚀 App listening on the port 3000
+2023-06-05 13:04:44 info: =================================
+2023-06-05 13:04:49 info: Connected to email server
+2023-06-05 13:04:49 info: Connected to email server
+2023-06-05 13:04:49 info: Connected to email server
+2023-06-05 13:04:49 info: Connected to email server
+2023-06-05 13:04:50 info: Connected to email server
+2023-06-05 13:04:54 info: Connected to Database Successfully...
+2023-06-05 13:06:53 info: =================================
+2023-06-05 13:06:53 info: ======= ENV: development =======
+2023-06-05 13:06:53 info: 🚀 App listening on the port 3000
+2023-06-05 13:06:53 info: =================================
+2023-06-05 13:06:59 info: Connected to email server
+2023-06-05 13:06:59 info: Connected to email server
+2023-06-05 13:07:00 info: Connected to email server
+2023-06-05 13:07:00 info: Connected to email server
+2023-06-05 13:07:00 info: Connected to Database Successfully...
+2023-06-05 13:07:00 info: Connected to email server
+2023-06-05 13:07:10 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:07:10 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 6562.712 ms - 108[0m
+2023-06-05 13:08:09 info: =================================
+2023-06-05 13:08:09 info: ======= ENV: development =======
+2023-06-05 13:08:09 info: 🚀 App listening on the port 3000
+2023-06-05 13:08:09 info: =================================
+2023-06-05 13:08:15 info: Connected to email server
+2023-06-05 13:08:15 info: Connected to email server
+2023-06-05 13:08:15 info: Connected to email server
+2023-06-05 13:08:15 info: Connected to email server
+2023-06-05 13:08:15 info: Connected to email server
+2023-06-05 13:08:26 info: Connected to Database Successfully...
+2023-06-05 13:10:27 info: =================================
+2023-06-05 13:10:27 info: ======= ENV: development =======
+2023-06-05 13:10:27 info: 🚀 App listening on the port 3000
+2023-06-05 13:10:27 info: =================================
+2023-06-05 13:10:30 info: Connected to email server
+2023-06-05 13:10:30 info: Connected to email server
+2023-06-05 13:10:30 info: Connected to email server
+2023-06-05 13:10:30 info: Connected to email server
+2023-06-05 13:10:30 info: Connected to Database Successfully...
+2023-06-05 13:10:31 info: Connected to email server
+2023-06-05 13:10:34 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:10:34 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 295.305 ms - 104[0m
+2023-06-05 13:14:27 info: =================================
+2023-06-05 13:14:27 info: ======= ENV: development =======
+2023-06-05 13:14:27 info: 🚀 App listening on the port 3000
+2023-06-05 13:14:27 info: =================================
+2023-06-05 13:14:41 info: Connected to Database Successfully...
+2023-06-05 13:14:47 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:14:47 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 328.958 ms - 104[0m
+2023-06-05 13:15:01 info: Connected to email server
+2023-06-05 13:15:01 info: Connected to email server
+2023-06-05 13:15:01 info: Connected to email server
+2023-06-05 13:15:01 info: Connected to email server
+2023-06-05 13:15:01 info: Connected to email server
+2023-06-05 13:17:47 info: =================================
+2023-06-05 13:17:47 info: ======= ENV: development =======
+2023-06-05 13:17:47 info: 🚀 App listening on the port 3000
+2023-06-05 13:17:47 info: =================================
+2023-06-05 13:17:50 info: Connected to email server
+2023-06-05 13:17:50 info: Connected to email server
+2023-06-05 13:17:50 info: Connected to email server
+2023-06-05 13:17:50 info: Connected to email server
+2023-06-05 13:17:50 info: Connected to email server
+2023-06-05 13:17:52 info: Connected to Database Successfully...
+2023-06-05 13:17:57 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: [ bidding_amount, - ]
+2023-06-05 13:17:57 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 411.883 ms - 98[0m
+2023-06-05 13:18:20 info: =================================
+2023-06-05 13:18:20 info: ======= ENV: development =======
+2023-06-05 13:18:20 info: 🚀 App listening on the port 3000
+2023-06-05 13:18:20 info: =================================
+2023-06-05 13:18:25 info: Connected to email server
+2023-06-05 13:18:27 info: Connected to email server
+2023-06-05 13:18:27 info: Connected to Database Successfully...
+2023-06-05 13:18:28 info: Connected to email server
+2023-06-05 13:18:28 info: Connected to email server
+2023-06-05 13:18:32 info: Connected to email server
+2023-06-05 13:18:39 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:18:39 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 8121.003 ms - 108[0m
+2023-06-05 13:47:45 info: =================================
+2023-06-05 13:47:45 info: ======= ENV: development =======
+2023-06-05 13:47:45 info: 🚀 App listening on the port 3000
+2023-06-05 13:47:45 info: =================================
+2023-06-05 13:47:49 info: Connected to email server
+2023-06-05 13:47:49 info: Connected to email server
+2023-06-05 13:47:49 info: Connected to email server
+2023-06-05 13:47:49 info: Connected to email server
+2023-06-05 13:47:49 info: Connected to email server
+2023-06-05 13:47:50 info: Connected to Database Successfully...
+2023-06-05 13:48:02 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:48:02 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 605.265 ms - 108[0m
+2023-06-05 13:48:59 info: =================================
+2023-06-05 13:48:59 info: ======= ENV: development =======
+2023-06-05 13:48:59 info: 🚀 App listening on the port 3000
+2023-06-05 13:48:59 info: =================================
+2023-06-05 13:49:14 info: Connected to email server
+2023-06-05 13:49:14 info: Connected to email server
+2023-06-05 13:49:14 info: Connected to email server
+2023-06-05 13:49:14 info: Connected to email server
+2023-06-05 13:49:14 info: Connected to email server
+2023-06-05 13:49:20 info: Connected to Database Successfully...
+2023-06-05 13:49:29 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: [ status, -closed ]
+2023-06-05 13:49:29 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 326.752 ms - 96[0m
+2023-06-05 13:54:43 info: =================================
+2023-06-05 13:54:43 info: ======= ENV: development =======
+2023-06-05 13:54:43 info: 🚀 App listening on the port 3000
+2023-06-05 13:54:43 info: =================================
+2023-06-05 13:54:49 info: Connected to email server
+2023-06-05 13:54:49 info: Connected to email server
+2023-06-05 13:54:49 info: Connected to email server
+2023-06-05 13:54:49 info: Connected to Database Successfully...
+2023-06-05 13:54:50 info: Connected to email server
+2023-06-05 13:54:51 info: Connected to email server
+2023-06-05 13:54:56 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: $meta is the only expression supported by $sort right now
+2023-06-05 13:54:56 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 3154.177 ms - 114[0m
+2023-06-05 13:56:30 info: =================================
+2023-06-05 13:56:30 info: ======= ENV: development =======
+2023-06-05 13:56:30 info: 🚀 App listening on the port 3000
+2023-06-05 13:56:30 info: =================================
+2023-06-05 13:56:35 info: Connected to email server
+2023-06-05 13:56:37 info: Connected to Database Successfully...
+2023-06-05 13:56:37 info: Connected to email server
+2023-06-05 13:56:37 info: Connected to email server
+2023-06-05 13:56:37 info: Connected to email server
+2023-06-05 13:56:42 info: Connected to email server
+2023-06-05 13:56:51 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:56:51 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 1683.754 ms - 108[0m
+2023-06-05 13:58:23 info: =================================
+2023-06-05 13:58:23 info: ======= ENV: development =======
+2023-06-05 13:58:23 info: 🚀 App listening on the port 3000
+2023-06-05 13:58:23 info: =================================
+2023-06-05 13:58:29 info: Connected to email server
+2023-06-05 13:58:29 info: Connected to email server
+2023-06-05 13:58:29 info: Connected to email server
+2023-06-05 13:58:29 info: Connected to email server
+2023-06-05 13:58:30 info: Connected to Database Successfully...
+2023-06-05 13:58:30 info: Connected to email server
+2023-06-05 13:58:55 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:58:55 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 2301.347 ms - 108[0m
+2023-06-05 13:59:35 info: =================================
+2023-06-05 13:59:35 info: ======= ENV: development =======
+2023-06-05 13:59:35 info: 🚀 App listening on the port 3000
+2023-06-05 13:59:35 info: =================================
+2023-06-05 13:59:38 info: Connected to email server
+2023-06-05 13:59:38 info: Connected to email server
+2023-06-05 13:59:39 info: Connected to Database Successfully...
+2023-06-05 13:59:39 info: Connected to email server
+2023-06-05 13:59:40 info: Connected to email server
+2023-06-05 13:59:40 info: Connected to email server
+2023-06-05 14:01:31 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [0m-[0m - ms - -[0m
+2023-06-05 14:01:34 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 14:01:34 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 1719.539 ms - 108[0m
+2023-06-05 14:06:24 info: =================================
+2023-06-05 14:06:24 info: ======= ENV: development =======
+2023-06-05 14:06:24 info: 🚀 App listening on the port 3000
+2023-06-05 14:06:24 info: =================================
+2023-06-05 14:06:30 info: Connected to email server
+2023-06-05 14:06:31 info: Connected to email server
+2023-06-05 14:06:31 info: Connected to email server
+2023-06-05 14:06:31 info: Connected to email server
+2023-06-05 14:06:31 info: Connected to Database Successfully...
+2023-06-05 14:06:31 info: Connected to email server
+2023-06-05 14:06:37 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 14:06:37 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 857.347 ms - 108[0m
+2023-06-05 14:07:58 info: =================================
+2023-06-05 14:07:58 info: ======= ENV: development =======
+2023-06-05 14:07:58 info: 🚀 App listening on the port 3000
+2023-06-05 14:07:58 info: =================================
+2023-06-05 14:08:00 info: Connected to email server
+2023-06-05 14:08:00 info: Connected to email server
+2023-06-05 14:08:00 info: Connected to email server
+2023-06-05 14:08:00 info: Connected to email server
+2023-06-05 14:08:01 info: Connected to email server
+2023-06-05 14:08:01 info: Connected to Database Successfully...
+2023-06-05 14:08:05 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 1084.781 ms - -[0m
+2023-06-05 14:09:06 info: =================================
+2023-06-05 14:09:06 info: ======= ENV: development =======
+2023-06-05 14:09:06 info: 🚀 App listening on the port 3000
+2023-06-05 14:09:06 info: =================================
+2023-06-05 14:09:11 info: Connected to Database Successfully...
+2023-06-05 14:09:11 info: Connected to email server
+2023-06-05 14:09:11 info: Connected to email server
+2023-06-05 14:09:11 info: Connected to email server
+2023-06-05 14:09:11 info: Connected to email server
+2023-06-05 14:09:12 info: Connected to email server
+2023-06-05 14:09:24 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 6504.541 ms - -[0m
+2023-06-05 14:10:50 info: =================================
+2023-06-05 14:10:50 info: ======= ENV: development =======
+2023-06-05 14:10:50 info: 🚀 App listening on the port 3000
+2023-06-05 14:10:50 info: =================================
+2023-06-05 14:10:55 info: Connected to email server
+2023-06-05 14:10:55 info: Connected to email server
+2023-06-05 14:10:55 info: Connected to email server
+2023-06-05 14:10:56 info: Connected to email server
+2023-06-05 14:10:59 info: Connected to email server
+2023-06-05 14:11:01 info: Connected to Database Successfully...
+2023-06-05 14:31:27 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: this.bid.paginate(...).exec is not a function
+2023-06-05 14:31:27 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 354.575 ms - 102[0m
+2023-06-05 14:32:07 info: =================================
+2023-06-05 14:32:07 info: ======= ENV: development =======
+2023-06-05 14:32:07 info: 🚀 App listening on the port 3000
+2023-06-05 14:32:07 info: =================================
+2023-06-05 14:32:11 info: Connected to email server
+2023-06-05 14:32:11 info: Connected to email server
+2023-06-05 14:32:11 info: Connected to email server
+2023-06-05 14:32:12 info: Connected to email server
+2023-06-05 14:32:12 info: Connected to email server
+2023-06-05 14:32:12 info: Connected to Database Successfully...
+2023-06-05 14:32:26 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 2452.544 ms - -[0m
+2023-06-05 14:32:59 info: =================================
+2023-06-05 14:32:59 info: ======= ENV: development =======
+2023-06-05 14:32:59 info: 🚀 App listening on the port 3000
+2023-06-05 14:32:59 info: =================================
+2023-06-05 14:33:02 info: Connected to email server
+2023-06-05 14:33:02 info: Connected to email server
+2023-06-05 14:33:02 info: Connected to email server
+2023-06-05 14:33:02 info: Connected to email server
+2023-06-05 14:33:02 info: Connected to Database Successfully...
+2023-06-05 14:33:02 info: Connected to email server
+2023-06-05 14:33:12 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: data.sort is not a function
+2023-06-05 14:33:12 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 794.156 ms - 84[0m
+2023-06-05 14:33:59 info: =================================
+2023-06-05 14:33:59 info: ======= ENV: development =======
+2023-06-05 14:33:59 info: 🚀 App listening on the port 3000
+2023-06-05 14:33:59 info: =================================
+2023-06-05 14:34:05 info: Connected to email server
+2023-06-05 14:34:06 info: Connected to email server
+2023-06-05 14:34:07 info: Connected to email server
+2023-06-05 14:34:07 info: Connected to email server
+2023-06-05 14:34:08 info: Connected to email server
+2023-06-05 14:34:13 info: Connected to Database Successfully...
+2023-06-05 14:34:21 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 4151.768 ms - -[0m

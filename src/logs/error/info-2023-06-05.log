@@ -5,3 +5,23 @@
 2023-06-05 12:56:04 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
 2023-06-05 12:57:42 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
 2023-06-05 12:59:02 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:00:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:00:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:01:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:01:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 13:02:01 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:04:09 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:07:10 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:10:34 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:14:47 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 13:17:57 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: [ bidding_amount, - ]
+2023-06-05 13:18:39 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:48:02 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:49:29 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Invalid sort value: [ status, -closed ]
+2023-06-05 13:54:56 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: $meta is the only expression supported by $sort right now
+2023-06-05 13:56:51 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 13:58:55 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 14:01:34 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 14:06:37 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 14:31:27 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: this.bid.paginate(...).exec is not a function
+2023-06-05 14:33:12 error: [GET] /bid/proposals/647dce4c5fab941b6eff3957 >> StatusCode:: 400, Message:: data.sort is not a function

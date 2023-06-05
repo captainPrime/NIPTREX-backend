@@ -158,9 +158,22 @@ class BidService {
       job_id: id,
     };
 
-    const data = await this.bid.find(filter).sort({
-      bidding_amount: -1,
+    // const inProgressBids = await this.bid.find({ ...filter, status: { $ne: 'closed' } }).exec();
+
+    const data = await this.bid.paginate(filter, options);
+
+    data.results.sort((a: any, b: any) => {
+      if (a.status === 'closed' && b.status !== 'closed') {
+        return 1; // Move 'closed' status to the end
+      } else if (a.status !== 'closed' && b.status === 'closed') {
+        return -1; // Move 'closed' status to the end
+      } else {
+        // Sort by bidding_amount in descending order
+        return b.bidding_amount - a.bidding_amount;
+      }
     });
+
+    // const data = inProgressBids.concat(otherBids);
 
     console.log('BIDDERS', data);
 
