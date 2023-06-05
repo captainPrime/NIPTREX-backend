@@ -159,7 +159,7 @@ class BidService {
     };
 
     const data = await this.bid.find(filter).sort({
-      status: -1,
+      status: { $ne: 'closed' },
       bidding_amount: -1,
     });
 

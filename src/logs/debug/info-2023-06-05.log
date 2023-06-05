@@ -1,0 +1,53 @@
+2023-06-05 12:49:37 info: =================================
+2023-06-05 12:49:37 info: ======= ENV: development =======
+2023-06-05 12:49:37 info: 🚀 App listening on the port 3000
+2023-06-05 12:49:37 info: =================================
+2023-06-05 12:49:40 info: Connected to email server
+2023-06-05 12:49:40 info: Connected to email server
+2023-06-05 12:49:40 info: Connected to email server
+2023-06-05 12:49:40 info: Connected to email server
+2023-06-05 12:49:40 info: Connected to email server
+2023-06-05 12:49:40 info: Connected to Database Successfully...
+2023-06-05 12:49:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-05 12:49:57 info: [0mPOST /auth/login [32m200[0m 1229.162 ms - 587[0m
+2023-06-05 12:50:03 error: [GET] /bid/proposals/6476576d44dda25f3ba2d9a4 >> StatusCode:: 400, Message:: Invalid sort value: { status: [object Object] }
+2023-06-05 12:50:03 info: [0mGET /bid/proposals/6476576d44dda25f3ba2d9a4 [32m200[0m 573.215 ms - 104[0m
+2023-06-05 12:51:59 info: =================================
+2023-06-05 12:51:59 info: ======= ENV: development =======
+2023-06-05 12:51:59 info: 🚀 App listening on the port 3000
+2023-06-05 12:51:59 info: =================================
+2023-06-05 12:52:05 info: Connected to email server
+2023-06-05 12:52:06 info: Connected to email server
+2023-06-05 12:52:07 info: Connected to email server
+2023-06-05 12:52:10 info: Connected to email server
+2023-06-05 12:52:15 info: Connected to email server
+2023-06-05 12:52:28 info: Connected to Database Successfully...
+2023-06-05 12:52:35 error: [GET] /bid/proposals/6476576d44dda25f3ba2d9a4 >> StatusCode:: 400, Message:: $meta is the only expression supported by $sort right now
+2023-06-05 12:52:35 info: [0mGET /bid/proposals/6476576d44dda25f3ba2d9a4 [32m200[0m 2034.143 ms - 114[0m
+2023-06-05 12:54:05 info: =================================
+2023-06-05 12:54:05 info: ======= ENV: development =======
+2023-06-05 12:54:05 info: 🚀 App listening on the port 3000
+2023-06-05 12:54:05 info: =================================
+2023-06-05 12:54:10 info: Connected to email server
+2023-06-05 12:54:10 info: Connected to email server
+2023-06-05 12:54:10 info: Connected to email server
+2023-06-05 12:54:10 info: Connected to email server
+2023-06-05 12:54:10 info: Connected to email server
+2023-06-05 12:54:28 info: Connected to Database Successfully...
+2023-06-05 12:54:36 error: [GET] /bid/proposals/6476576d44dda25f3ba2d9a4 >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 12:54:36 info: [0mGET /bid/proposals/6476576d44dda25f3ba2d9a4 [32m200[0m 3741.344 ms - 108[0m
+2023-06-05 12:54:52 info: [0mGET /bid/getTopBidders/64626cff0f075e8ad1cd47ed [32m200[0m 523.619 ms - 80[0m
+2023-06-05 12:55:02 info: [0mGET /job/getAllJobs [32m200[0m 532.715 ms - -[0m
+2023-06-05 12:55:19 info: [0mGET /bid/getTopBidders/647b3dbcac1413e71e7ef4ec [32m200[0m 2134.334 ms - -[0m
+2023-06-05 12:56:04 error: [GET] /bid/proposals/647b3dbcac1413e71e7ef4ec >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-06-05 12:56:04 info: [0mGET /bid/proposals/647b3dbcac1413e71e7ef4ec [32m200[0m 737.497 ms - 108[0m
+2023-06-05 12:56:58 info: =================================
+2023-06-05 12:56:58 info: ======= ENV: development =======
+2023-06-05 12:56:58 info: 🚀 App listening on the port 3000
+2023-06-05 12:56:58 info: =================================
+2023-06-05 12:57:00 info: Connected to email server
+2023-06-05 12:57:00 info: Connected to email server
+2023-06-05 12:57:00 info: Connected to email server
+2023-06-05 12:57:00 info: Connected to email server
+2023-06-05 12:57:00 info: Connected to email server
+2023-06-05 12:57:00 info: Connected to Database Successfully...
