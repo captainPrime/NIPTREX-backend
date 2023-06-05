@@ -158,7 +158,12 @@ class BidService {
       job_id: id,
     };
 
-    const data = await this.bid.paginate(filter, options);
+    const data = await this.bid.find(filter).sort({
+      status: -1,
+      bidding_amount: -1,
+    });
+
+    console.log('BIDDERS', data);
 
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
 
