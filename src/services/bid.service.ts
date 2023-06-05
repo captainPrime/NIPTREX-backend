@@ -158,8 +158,6 @@ class BidService {
       job_id: id,
     };
 
-    // const inProgressBids = await this.bid.find({ ...filter, status: { $ne: 'closed' } }).exec();
-
     const data = await this.bid.paginate(filter, options);
 
     data.results.sort((a: any, b: any) => {
@@ -172,10 +170,6 @@ class BidService {
         return b.bidding_amount - a.bidding_amount;
       }
     });
-
-    // const data = inProgressBids.concat(otherBids);
-
-    console.log('BIDDERS', data);
 
     if (!data) throw new HttpException(400, 4003, 'BIDDERS_NOT_FOUND');
 
