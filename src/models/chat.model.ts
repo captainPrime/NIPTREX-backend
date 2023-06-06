@@ -8,7 +8,7 @@ export interface IMessage extends Document {
   content?: string;
   is_file: boolean;
   files?: string[];
-  createdAt: Date;
+  created_at: Date;
 }
 
 const messageSchema: Schema = new Schema(
@@ -30,7 +30,7 @@ const messageSchema: Schema = new Schema(
         },
       },
     ],
-    createdAt: { type: Date, default: Date.now },
+    created_at: { type: Date, default: Date.now },
   },
   { versionKey: false },
 );
@@ -55,7 +55,7 @@ const chatSchema: Schema = new Schema(
 
 // add plugin that converts mongoose to json
 chatSchema.plugin(toJSON);
-messageSchema.plugin(toJSON);
+// messageSchema.plugin(toJSON);
 
 // Create and export the Chat model
 const ChatModel = model<IChat>('Chat', chatSchema);
