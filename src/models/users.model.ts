@@ -41,6 +41,10 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
       type: String,
       required: true,
     },
+    profile_picture: {
+      type: String,
+      required: true,
+    },
     verified: {
       type: Boolean,
       default: false,
