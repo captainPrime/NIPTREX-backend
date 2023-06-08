@@ -2,7 +2,7 @@
 import { hash } from 'bcryptjs';
 import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
-import { IUser, IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
+import { IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';

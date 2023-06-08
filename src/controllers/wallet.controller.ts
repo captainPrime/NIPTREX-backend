@@ -4,8 +4,7 @@ import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
-import { generateAlphaNumeric, generateUUID } from '@/utils/matchPercentage';
-import axios from 'axios';
+import { generateUUID } from '@/utils/matchPercentage';
 
 class WalletController {
   public userService = new UserService();
