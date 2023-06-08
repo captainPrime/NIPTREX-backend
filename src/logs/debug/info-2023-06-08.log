@@ -66,3 +66,40 @@
 2023-06-08 14:02:36 info: Connected to email server
 2023-06-08 14:02:37 info: Connected to email server
 2023-06-08 14:02:43 info: [0mPUT /profile/about [32m200[0m 2754.044 ms - 472[0m
+2023-06-08 14:05:12 info: =================================
+2023-06-08 14:05:12 info: ======= ENV: development =======
+2023-06-08 14:05:12 info: 🚀 App listening on the port 3000
+2023-06-08 14:05:12 info: =================================
+2023-06-08 14:05:17 info: Connected to email server
+2023-06-08 14:05:17 info: Connected to email server
+2023-06-08 14:05:17 info: Connected to email server
+2023-06-08 14:05:17 info: Connected to email server
+2023-06-08 14:05:18 info: Connected to Database Successfully...
+2023-06-08 14:05:20 info: Connected to email server
+2023-06-08 14:08:52 info: [0mGET /chat/getFilesByMilestone/646e78b1e8bf99fac0783750 [32m200[0m 3365.813 ms - 974[0m
+2023-06-08 14:09:11 info: [0mGET /chat/milestone/646e78b1e8bf99fac0783750 [32m200[0m 6146.011 ms - -[0m
+2023-06-08 14:09:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 14:09:50 info: [0mPOST /auth/login [32m200[0m 4791.782 ms - 587[0m
+2023-06-08 14:09:55 info: [0mGET /users/profile [32m200[0m 2167.360 ms - 469[0m
+2023-06-08 14:10:47 info: [0mPOST /chat/message [32m200[0m 797.221 ms - 277[0m
+2023-06-08 14:11:21 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-06-08 14:11:21 info: [0mGET /chat/647dce395fab941b6eff394c [32m200[0m 651.524 ms - 72[0m
+2023-06-08 14:11:29 info: [0mGET /chat/milestone/647dce395fab941b6eff394c [32m200[0m 1729.569 ms - 358[0m
+2023-06-08 14:11:48 info: [0mGET /chat/getFilesByMilestone/647dce395fab941b6eff394c [32m200[0m 2205.609 ms - 81[0m
+2023-06-08 14:12:07 info: [0mPOST /chat/message [32m200[0m 2431.992 ms - 265[0m
+2023-06-08 14:12:13 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-06-08 14:12:13 info: [0mGET /chat/647dce395fab941b6eff394c [32m200[0m 1642.564 ms - 72[0m
+2023-06-08 14:12:33 info: [0mGET /chat/getFilesByMilestone/647dce395fab941b6eff394c [32m200[0m 10256.754 ms - 276[0m
+2023-06-08 14:14:17 info: =================================
+2023-06-08 14:14:17 info: ======= ENV: development =======
+2023-06-08 14:14:17 info: 🚀 App listening on the port 3000
+2023-06-08 14:14:17 info: =================================
+2023-06-08 14:14:37 info: Connected to email server
+2023-06-08 14:14:39 info: Connected to email server
+2023-06-08 14:14:39 info: Connected to Database Successfully...
+2023-06-08 14:14:41 info: Connected to email server
+2023-06-08 14:14:43 info: Connected to email server
+2023-06-08 14:14:44 info: Connected to email server
+2023-06-08 14:15:07 info: [0mGET /chat/getFilesByMilestone/647dce395fab941b6eff394c [32m200[0m 3118.720 ms - 346[0m
+2023-06-08 14:15:24 info: [0mPOST /chat/message [32m200[0m 2245.853 ms - 274[0m
+2023-06-08 14:15:31 info: [0mGET /chat/milestone/647dce395fab941b6eff394c [32m200[0m 3676.499 ms - 899[0m

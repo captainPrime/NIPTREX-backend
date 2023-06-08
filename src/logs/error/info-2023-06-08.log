@@ -4,3 +4,6 @@
 2023-06-08 13:45:54 error: [POST] /chat/message >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toLowerCase')
 2023-06-08 13:51:07 error: [POST] /chat/message >> StatusCode:: 400, Message:: CANT_SEND_BOTH_FILES_AND_MESSAGE
 2023-06-08 14:01:10 error: [PUT] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-06-08 14:09:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 14:11:21 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-06-08 14:12:13 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND

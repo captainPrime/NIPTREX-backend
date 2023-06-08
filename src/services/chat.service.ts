@@ -4,10 +4,12 @@ import { Types } from 'mongoose';
 import { ChatModel, IChat, IMessage, MessageModel } from '@/models/chat.model';
 import { chatSchemaValidation, messageSchemaValidation } from '@/validations/chat.validation';
 import AboutService from './about.service';
+import UserService from './users.service';
 
 class ChatService {
   public chat = ChatModel;
   public message = MessageModel;
+  public userService = new UserService();
   public aboutService = new AboutService();
 
   /*
@@ -124,12 +126,12 @@ class ChatService {
 
     const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
       async (chatItem: IMessage) => {
-        const about = await this.aboutService.getUserAbout(chatItem.sender.toString());
+        const about = await this.userService.findUserById(chatItem.sender.toString());
         return {
           chat: chatItem,
-          first_name: about?.personal_details?.first_name,
-          last_name: about?.personal_details?.last_name,
-          profile_picture: about?.personal_details?.profile_picture,
+          first_name: about?.first_name,
+          last_name: about?.last_name,
+          profile_picture: about?.profile_picture,
         };
       },
     );
@@ -147,12 +149,12 @@ class ChatService {
 
     const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
       async (chatItem: IMessage) => {
-        const about = await this.aboutService.getUserAbout(chatItem.sender.toString());
+        const about = await this.userService.findUserById(chatItem.sender.toString());
         return {
           chat: chatItem,
-          first_name: about?.personal_details?.first_name,
-          last_name: about?.personal_details?.last_name,
-          profile_picture: about?.personal_details?.profile_picture,
+          first_name: about?.first_name,
+          last_name: about?.last_name,
+          profile_picture: about?.profile_picture,
         };
       },
     );
