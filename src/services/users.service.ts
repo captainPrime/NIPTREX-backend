@@ -40,7 +40,7 @@ class UserService {
   public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUser | null> {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
 
-    const findUser: IUserModel | null = await this.users.findOne({ _id: userId });
+    const findUser: IUser | null = await this.users.findOne({ _id: userId });
 
     return findUser;
   }
