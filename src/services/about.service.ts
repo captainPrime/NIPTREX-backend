@@ -67,6 +67,13 @@ class AboutService {
   public async updateAboutById(id: mongoose.Types.ObjectId | string, body: IUpdateAbout): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
+    const user = await this.userService.findUserById(id);
+    if (!user) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+
+    if (body.personal_details?.profile_picture && user.user === 'client') {
+      await this.userService.updateUser(id, { profile_picture: body.personal_details?.profile_picture });
+    }
+
     const { error } = updateAboutSchema.validate(body);
     if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
@@ -94,6 +101,7 @@ class AboutService {
 
     // Update the document with the updated payload
     const updatedData = await this.about.findByIdAndUpdate(data._id, updatedPayload, { new: true });
+    await this.userService.updateUser(id, { profile_picture: body.personal_details?.profile_picture });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
 

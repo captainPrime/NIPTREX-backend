@@ -2,7 +2,7 @@
 import { hash } from 'bcryptjs';
 import { CreateUserDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
-import { IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
+import { IUser, IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
@@ -37,11 +37,10 @@ class UserService {
     return abouts;
   }
 
-  public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUserModel> {
+  public async findUserById(userId: mongoose.Types.ObjectId | string): Promise<IUser | null> {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
 
     const findUser: IUserModel | null = await this.users.findOne({ _id: userId });
-    if (!findUser) throw new HttpException(400, 2002, 'User with this credentials does not exist');
 
     return findUser;
   }
