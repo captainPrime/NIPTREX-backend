@@ -150,6 +150,50 @@ class WalletController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Create Bio
+  |--------------------------------------------------------------------------
+  */
+  public chargeCard = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const payload = req.body;
+
+      const response = await flw.Charge.card(payload);
+      console.log(response);
+
+      if (response.meta.authorization.mode === 'pin') {
+        const payload2 = {
+          ...payload,
+          authorization: {
+            mode: 'pin',
+            fields: ['pin'],
+            pin: 3310,
+          },
+        };
+
+        const reCallCharge = await flw.Charge.card(payload2);
+        const callValidate = await flw.Charge.validate({
+          otp: '12345',
+          flw_ref: reCallCharge.data.flw_ref,
+        });
+
+        console.log(callValidate); // uncomment for debugging purposes
+      }
+
+      if (response.meta.authorization.mode === 'redirect') {
+        const url = response.meta.authorization.redirect;
+        open(url);
+      }
+      console.log(response); // uncomment for debugging purposes
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
 }
 
 export default WalletController;

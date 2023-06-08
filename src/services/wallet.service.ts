@@ -102,7 +102,7 @@ class WalletService {
           flw_ref: reCallCharge.data.flw_ref,
         });
 
-        // console.log(callValidate); // uncomment for debugging purposes
+        console.log(callValidate); // uncomment for debugging purposes
       }
 
       if (response.meta.authorization.mode === 'redirect') {
