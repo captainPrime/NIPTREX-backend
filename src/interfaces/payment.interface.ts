@@ -1,4 +1,4 @@
-export interface Payload {
+export interface IChargeCard {
   card_number: string;
   cvv: string;
   expiry_month: string;

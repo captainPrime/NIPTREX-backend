@@ -1,6 +1,9 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import { ITransaction, IUpdateWallet, IWallet, TransactionModel, WalletModel } from '@/models/wallet.model';
+import { IChargeCard } from '@/interfaces/payment.interface';
+import { flw } from '@/modules/flutterwave';
+import { open } from 'fs';
 
 class WalletService {
   public wallet: any = WalletModel;
@@ -76,8 +79,8 @@ class WalletService {
   | Add Transaction to Wallet
   |--------------------------------------------------------------------------
   */
-  public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
-    if (isEmpty(body)) throw new HttpException(400, 6002, 'bodycannot be empty');
+  public async chargeCard(payload: IChargeCard): Promise<ITransaction | null> {
+    if (isEmpty(payload)) throw new HttpException(400, 6002, 'bodycannot be empty');
 
     try {
       const response = await flw.Charge.card(payload);
