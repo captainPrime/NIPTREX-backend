@@ -79,21 +79,6 @@ class WalletService {
   public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
     if (isEmpty(body)) throw new HttpException(400, 6002, 'bodycannot be empty');
 
-    const payload = {
-      card_number: '5531886652142950',
-      cvv: '564',
-      expiry_month: '09',
-      expiry_year: '21',
-      currency: 'ZMW',
-      amount: '100',
-      redirect_url: 'https://www.google.com',
-      fullname: 'Gift Banda',
-      email: 'bandagift42@gmail.com',
-      phone_number: '0977560054',
-      enckey: process.env.ENCRYPTION_KEY,
-      tx_ref: 'MC-32444ee--4eerye4euee3rerds4423e43e',
-    };
-
     try {
       const response = await flw.Charge.card(payload);
       console.log(response);
