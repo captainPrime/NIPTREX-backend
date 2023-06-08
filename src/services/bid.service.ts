@@ -4,21 +4,21 @@ import { isEmpty } from '@utils/util';
 import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
+import EmailService from '@/modules/email/email.service';
 import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation, updateBiddingSchemaValidation, updateMilestoneStageSchema } from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
-import EmailService from '@/modules/email/email.service';
 
 class BidService {
   public bid: any = BiddingModel;
-  public archive: any = ArchiveProposalModel;
-  public shortlist: any = ShortListProposalModel;
   public jobService = new JobService();
   public userService = new UserService();
-  public aboutService = new AboutService();
   public emailService = new EmailService();
+  public aboutService = new AboutService();
+  public archive: any = ArchiveProposalModel;
+  public shortlist: any = ShortListProposalModel;
 
   /*
   |--------------------------------------------------------------------------
@@ -74,8 +74,11 @@ class BidService {
     const { error } = updateMilestoneStageSchema.validate(milestoneData);
     if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.bid.findOne({ id: selector });
+    const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(selector) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
+    if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
 
     const updatedMilestones = data.milestone_stage.map((milestone: any) => {
       if (milestone._id.toString() === milestoneId) {
@@ -97,22 +100,25 @@ class BidService {
   }
 
   public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string, userId: string): Promise<void> {
-    const data = await this.bid.findOne({ id: proposalId });
+    const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(proposalId) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     console.log('PROPOSAL', data);
 
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
-    const milestoneData = data.milestone_stage.filter((item: any) => item._id.toString() === milestoneId);
+    const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
+    if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
+
+    const milestoneData = data.milestone_stage[milestoneIndex];
 
     const user: any = await this.userService.findUserById(clientId);
-    if (!user) throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
+    if (!user || user.user !== 'client') throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
 
     console.log('UPDATED', milestoneData);
 
     const payload = {
-      milestoneDescription: milestoneData[0].description,
+      milestoneDescription: milestoneData.description,
     };
 
     await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);

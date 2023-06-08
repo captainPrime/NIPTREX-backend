@@ -4,7 +4,7 @@ import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
-import { generateAlphaNumeric, generateUUID } from '@/utils/matchPercentage';
+import { generateUUID } from '@/utils/matchPercentage';
 
 class WalletController {
   public userService = new UserService();
@@ -17,7 +17,7 @@ class WalletController {
   */
   public createWallet = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const userData = req.body;
+      // const userData = req.body;
       const user: any = await this.userService.findUserById(req.user.id);
 
       console.log('USER', user);

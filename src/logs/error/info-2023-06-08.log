@@ -7,3 +7,23 @@
 2023-06-08 14:09:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-08 14:11:21 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
 2023-06-08 14:12:13 error: [GET] /chat/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-06-08 22:21:57 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 22:22:03 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: UNAUTHORIZE_USER
+2023-06-08 22:23:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 22:24:07 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:24:16 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:24:32 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:25:36 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: CLIENT_NOT_FOUND
+2023-06-08 22:25:44 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce6f5fab941b6eff396" (type string) at path "_id" for model "Bidding"
+2023-06-08 22:26:10 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-06-08 22:26:30 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: CLIENT_NOT_FOUND
+2023-06-08 22:28:11 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'description')
+2023-06-08 22:37:43 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:37:59 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce6f5fab941b6ef3969" (type string) at path "_id" for model "Bidding"
+2023-06-08 22:41:41 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-08 22:41:51 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:48:06 error: [PUT] /bid/adminUpdateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-06-08 22:48:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 22:48:43 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-06-08 22:48:59 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:49:29 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff3963 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
