@@ -17,7 +17,7 @@ class WalletController {
   */
   public createWallet = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const userData = req.body;
+      // const userData = req.body;
       const user: any = await this.userService.findUserById(req.user.id);
 
       console.log('USER', user);
