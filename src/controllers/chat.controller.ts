@@ -64,29 +64,24 @@ class ChatController {
   |--------------------------------------------------------------------------
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
-    const { milestone, sender, content, files }: any = req.body;
     try {
-      if (req.body.content && req.body.files) throw new HttpException(400, 1004, 'CANT_SEND_BOTH_FILES_AND_MESSAGE');
+      const { milestone, sender, content, files }: any = req.body;
 
-      if (req.body.content && containsBadWords(req.body.content)) throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
-
-      let payload: any;
-
-      if (req.body.files) {
-        payload = {
-          milestone,
-          sender,
-          files,
-          is_file: true,
-        };
-      } else {
-        payload = {
-          milestone,
-          sender,
-          content,
-          is_file: false,
-        };
+      if (content && files) {
+        throw new HttpException(400, 1004, 'CANT_SEND_BOTH_FILES_AND_MESSAGE');
       }
+
+      if (content && containsBadWords(content)) {
+        throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
+      }
+
+      const payload: any = {
+        milestone,
+        sender,
+        is_file: files ? true : false,
+        ...(files ? { files } : { content }),
+      };
+
       const message = await this.chatService.createMessage(payload);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: message });
