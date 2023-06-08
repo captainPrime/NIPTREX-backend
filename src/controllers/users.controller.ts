@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { CreateUserDto } from '@dtos/users.dto';
-import { IUserDoc, IUserModel } from '@interfaces/users.interface';
+import { IUser, IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import userService from '@services/users.service';
 
 class UsersController {
@@ -29,7 +29,7 @@ class UsersController {
   public getUserById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.params.id;
-      const findOneUserData: IUserModel = await this.userService.findUserById(userId);
+      const findOneUserData: IUser | null = await this.userService.findUserById(userId);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findOneUserData });
     } catch (error) {
@@ -51,7 +51,7 @@ class UsersController {
   public getProfile = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.user.id;
-      const findOneUserData: IUserModel = await this.userService.findUserById(userId);
+      const findOneUserData: IUser | null = await this.userService.findUserById(userId);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: findOneUserData });
     } catch (error) {
@@ -62,7 +62,7 @@ class UsersController {
   public updateUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.params.id;
-      const userData: CreateUserDto = req.body;
+      const userData: UpdateUserBody = req.body;
       const updateUserData: IUserDoc = await this.userService.updateUser(userId, userData);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: updateUserData });
