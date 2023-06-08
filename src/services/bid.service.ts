@@ -104,10 +104,13 @@ class BidService {
 
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
+    const milestone = data.milestone_stage.filter((item: any) => item._id.toString() !== milestoneId);
+    if (milestone) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
+
     const milestoneData = data.milestone_stage.filter((item: any) => item._id.toString() === milestoneId);
 
     const user: any = await this.userService.findUserById(clientId);
-    if (!user) throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
+    if (!user || user.user !== 'client') throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
 
     console.log('UPDATED', milestoneData);
 
