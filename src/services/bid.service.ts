@@ -13,12 +13,12 @@ import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidd
 
 class BidService {
   public bid: any = BiddingModel;
-  public archive: any = ArchiveProposalModel;
-  public shortlist: any = ShortListProposalModel;
   public jobService = new JobService();
   public userService = new UserService();
-  public aboutService = new AboutService();
   public emailService = new EmailService();
+  public aboutService = new AboutService();
+  public archive: any = ArchiveProposalModel;
+  public shortlist: any = ShortListProposalModel;
 
   /*
   |--------------------------------------------------------------------------
