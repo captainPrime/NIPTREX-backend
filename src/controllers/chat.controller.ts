@@ -64,7 +64,7 @@ class ChatController {
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      if (containsBadWords(req.body.content)) throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
+      if (req.body.content && containsBadWords(req.body.content)) throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
 
       const message = await this.chatService.createMessage(req.body);
 

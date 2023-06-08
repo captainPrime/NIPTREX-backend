@@ -1,0 +1,4 @@
+2023-06-08 13:44:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 13:45:05 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED
+2023-06-08 13:45:45 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-06-08 13:45:54 error: [POST] /chat/message >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toLowerCase')
