@@ -2,3 +2,4 @@
 2023-06-08 13:45:05 error: [POST] /chat/message >> StatusCode:: 400, Message:: BAD_WORDS_NOT_ALLOWED
 2023-06-08 13:45:45 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
 2023-06-08 13:45:54 error: [POST] /chat/message >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toLowerCase')
+2023-06-08 13:51:07 error: [POST] /chat/message >> StatusCode:: 400, Message:: CANT_SEND_BOTH_FILES_AND_MESSAGE

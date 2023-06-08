@@ -8,7 +8,7 @@ export interface IMessage extends Document {
   content?: string;
   is_file: boolean;
   files?: string[];
-  created_at: Date;
+  created_at?: Date;
 }
 
 const messageSchema: Schema = new Schema(

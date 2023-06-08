@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import ChatService from '@/services/chat.service';
 import { containsBadWords } from '@/utils/wordChecker';
 import { HttpException } from '@/exceptions/HttpException';
+import { IMessage } from '@/models/chat.model';
 
 class ChatController {
   public chatService = new ChatService();
@@ -63,10 +64,30 @@ class ChatController {
   |--------------------------------------------------------------------------
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
+    const { milestone, sender, content, files }: any = req.body;
     try {
+      if (req.body.content && req.body.files) throw new HttpException(400, 1004, 'CANT_SEND_BOTH_FILES_AND_MESSAGE');
+
       if (req.body.content && containsBadWords(req.body.content)) throw new HttpException(400, 1004, 'BAD_WORDS_NOT_ALLOWED');
 
-      const message = await this.chatService.createMessage(req.body);
+      let payload: any;
+
+      if (req.body.files) {
+        payload = {
+          milestone,
+          sender,
+          files,
+          is_file: true,
+        };
+      } else {
+        payload = {
+          milestone,
+          sender,
+          content,
+          is_file: false,
+        };
+      }
+      const message = await this.chatService.createMessage(payload);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: message });
     } catch (error) {

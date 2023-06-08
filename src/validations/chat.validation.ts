@@ -25,14 +25,4 @@ export const messageSchemaValidation = Joi.object({
       otherwise: Joi.array().items(Joi.string().allow('').optional()),
     }),
   createdAt: Joi.date().default(Date.now),
-}).custom((value, helpers) => {
-  const { content, files } = value;
-
-  if (content && files && files.length > 0) {
-    return helpers.error('any.invalid', {
-      message: 'Sending both content and files together is not allowed',
-    });
-  }
-
-  return value;
 });
