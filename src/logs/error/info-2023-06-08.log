@@ -22,3 +22,8 @@
 2023-06-08 22:37:59 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce6f5fab941b6ef3969" (type string) at path "_id" for model "Bidding"
 2023-06-08 22:41:41 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
 2023-06-08 22:41:51 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:48:06 error: [PUT] /bid/adminUpdateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-06-08 22:48:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-08 22:48:43 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-06-08 22:48:59 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:49:29 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff3963 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND

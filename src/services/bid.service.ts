@@ -74,8 +74,11 @@ class BidService {
     const { error } = updateMilestoneStageSchema.validate(milestoneData);
     if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.bid.findOne({ id: selector });
+    const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(selector) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
+    if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
 
     const updatedMilestones = data.milestone_stage.map((milestone: any) => {
       if (milestone._id.toString() === milestoneId) {
