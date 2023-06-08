@@ -70,6 +70,66 @@ class WalletService {
 
     return transaction;
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Add Transaction to Wallet
+  |--------------------------------------------------------------------------
+  */
+  public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
+    if (isEmpty(body)) throw new HttpException(400, 6002, 'bodycannot be empty');
+
+    const payload = {
+      card_number: '5531886652142950',
+      cvv: '564',
+      expiry_month: '09',
+      expiry_year: '21',
+      currency: 'ZMW',
+      amount: '100',
+      redirect_url: 'https://www.google.com',
+      fullname: 'Gift Banda',
+      email: 'bandagift42@gmail.com',
+      phone_number: '0977560054',
+      enckey: process.env.ENCRYPTION_KEY,
+      tx_ref: 'MC-32444ee--4eerye4euee3rerds4423e43e',
+    };
+
+    try {
+      const response = await flw.Charge.card(payload);
+      console.log(response);
+
+      if (response.meta.authorization.mode === 'pin') {
+        const payload2 = {
+          ...payload,
+          authorization: {
+            mode: 'pin',
+            fields: ['pin'],
+            pin: 3310,
+          },
+        };
+
+        const reCallCharge = await flw.Charge.card(payload2);
+        const callValidate = await flw.Charge.validate({
+          otp: '12345',
+          flw_ref: reCallCharge.data.flw_ref,
+        });
+
+        // console.log(callValidate); // uncomment for debugging purposes
+      }
+
+      if (response.meta.authorization.mode === 'redirect') {
+        const url = response.meta.authorization.redirect;
+        open(url);
+      }
+
+      res.status(200).json(response);
+      // console.log(response); // uncomment for debugging purposes
+    } catch (error) {
+      console.log(error);
+    }
+
+    return transaction;
+  }
 }
 
 export default WalletService;
