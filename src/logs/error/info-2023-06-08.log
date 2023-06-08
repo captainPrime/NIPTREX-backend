@@ -27,3 +27,5 @@
 2023-06-08 22:48:43 error: [PUT] /bid/updateMilestone/646e78b1e8bf99fac078374f/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: BID_NOT_FOUND
 2023-06-08 22:48:59 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/646e78b1e8bf99fac0783751 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
 2023-06-08 22:49:29 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff3963 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 23:37:51 error: [POST] /payment/card >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-06-08 23:37:59 error: [POST] /payment/card >> StatusCode:: 400, Message:: Invalid Triple-DES key size: 376

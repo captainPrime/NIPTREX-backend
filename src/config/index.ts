@@ -28,4 +28,5 @@ export const {
   JWT_VERIFY_EMAIL_EXPIRATION_MINUTES,
   FLW_PUBLIC_KEY,
   FLW_SECRET_KEY,
+  ENCRYPTION_KEY,
 } = process.env;

@@ -5,6 +5,7 @@ import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateUUID } from '@/utils/matchPercentage';
+import { ENCRYPTION_KEY } from '@/config';
 
 class WalletController {
   public userService = new UserService();
@@ -157,7 +158,21 @@ class WalletController {
   */
   public chargeCard = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const payload = req.body;
+      const { card_number, cvv, expiry_month, expiry_year, currency, amount } = req.body;
+      const payload = {
+        card_number,
+        cvv,
+        expiry_month,
+        expiry_year,
+        currency,
+        amount,
+        redirect_url: 'https://www.google.com',
+        fullname: `${req.user.first_name} ${req.user.last_name}`,
+        email: req.user.email,
+        phone_number: req.user.phone_number,
+        enckey: ENCRYPTION_KEY,
+        tx_ref: generateUUID(),
+      };
 
       const response = await flw.Charge.card(payload);
       console.log('RESPONSE', response);

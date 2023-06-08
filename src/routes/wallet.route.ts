@@ -5,7 +5,7 @@ import authMiddleware from '@/middlewares/auth.middleware';
 import WalletController from '@/controllers/wallet.controller';
 
 class WalletRoute implements Routes {
-  public path = '/wallet';
+  public path = '/payment';
   public router = Router();
   public walletController = new WalletController();
 
