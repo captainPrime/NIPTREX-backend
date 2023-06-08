@@ -160,7 +160,7 @@ class WalletController {
       const payload = req.body;
 
       const response = await flw.Charge.card(payload);
-      console.log(response);
+      console.log('RESPONSE', response);
 
       if (response.meta.authorization.mode === 'pin') {
         const payload2 = {
@@ -183,7 +183,8 @@ class WalletController {
 
       if (response.meta.authorization.mode === 'redirect') {
         const url = response.meta.authorization.redirect;
-        open(url);
+        console.log(url);
+        // open(url);
       }
       console.log(response); // uncomment for debugging purposes
 
