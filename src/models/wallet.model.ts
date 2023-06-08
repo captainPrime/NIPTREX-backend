@@ -44,8 +44,8 @@ export interface ITransaction extends Document {
 
 const transactionSchema: Schema = new Schema(
   {
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    wallet_id: { type: Schema.Types.ObjectId, ref: 'Wallet', required: true },
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    job_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     name: { type: String, required: true },
     amount: { type: Number, required: true },
     remark: { type: String, required: true },
