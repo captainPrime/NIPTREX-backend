@@ -2,7 +2,6 @@ import { NextFunction, Request, Response } from 'express';
 import ChatService from '@/services/chat.service';
 import { containsBadWords } from '@/utils/wordChecker';
 import { HttpException } from '@/exceptions/HttpException';
-import { IMessage } from '@/models/chat.model';
 
 class ChatController {
   public chatService = new ChatService();
