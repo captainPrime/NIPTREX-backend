@@ -5,7 +5,6 @@ import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateAlphaNumeric, generateUUID } from '@/utils/matchPercentage';
-import axios from 'axios';
 
 class WalletController {
   public userService = new UserService();
@@ -153,7 +152,7 @@ class WalletController {
 
   /*
   |--------------------------------------------------------------------------
-  | Create Bio
+  | Charge Card
   |--------------------------------------------------------------------------
   */
   public chargeCard = async (req: Request, res: Response, next: NextFunction) => {
