@@ -53,3 +53,16 @@
 2023-06-08 13:56:54 info: Connected to email server
 2023-06-08 13:57:02 info: [0mPOST /chat/message [32m200[0m 1790.026 ms - 264[0m
 2023-06-08 13:57:12 info: [0mPOST /chat/message [32m200[0m 946.842 ms - 277[0m
+2023-06-08 14:01:10 error: [PUT] /profile/about >> StatusCode:: 400, Message:: ABOUT_NOT_FOUND
+2023-06-08 14:01:10 info: [0mPUT /profile/about [32m200[0m 3310.797 ms - 73[0m
+2023-06-08 14:02:30 info: =================================
+2023-06-08 14:02:30 info: ======= ENV: development =======
+2023-06-08 14:02:30 info: 🚀 App listening on the port 3000
+2023-06-08 14:02:30 info: =================================
+2023-06-08 14:02:35 info: Connected to email server
+2023-06-08 14:02:35 info: Connected to email server
+2023-06-08 14:02:35 info: Connected to email server
+2023-06-08 14:02:36 info: Connected to Database Successfully...
+2023-06-08 14:02:36 info: Connected to email server
+2023-06-08 14:02:37 info: Connected to email server
+2023-06-08 14:02:43 info: [0mPUT /profile/about [32m200[0m 2754.044 ms - 472[0m

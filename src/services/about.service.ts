@@ -70,38 +70,40 @@ class AboutService {
     const user = await this.userService.findUserById(id);
     if (!user) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
 
+    let updatedData;
+
     if (body.personal_details?.profile_picture && user.user === 'client') {
+      updatedData = await this.userService.updateUser(id, { profile_picture: body.personal_details?.profile_picture });
+    } else {
+      const { error } = updateAboutSchema.validate(body);
+      if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
+
+      const data = await this.about.findOne({ user_id: id });
+      if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
+
+      // Update the desired fields dynamically from the request body
+      const updatedPayload = {
+        ...data.toObject(),
+        personal_details: {
+          ...data.personal_details.toObject(),
+          ...body.personal_details, // Update the fields specified in the request body
+        },
+        address: { ...data.address.toObject(), ...body.address }, // Update the fields specified in the request body
+        total_earnings: body.total_earnings || data.total_earnings,
+        total_jobs: body.total_jobs || data.total_jobs,
+        available: body.available || data.available,
+        nips: body.nips || data.nips,
+        social_links: { ...data.social_links.toObject(), ...body.social_details }, // Update the fields specified in the request body
+        languages: body.languages || data.languages, // Update the fields specified in the request body or use the existing value
+        skills: body.skills || data.skills, // Update the fields specified in the request body or use the existing value
+        available_to_work: body.available_to_work || data.available_to_work, // Update the fields specified in the request body or use the existing value
+        resume: body.resume || data.resume, // Update the fields specified in the request body or use the existing value
+      };
+
+      // Update the document with the updated payload
+      updatedData = await this.about.findByIdAndUpdate(data._id, updatedPayload, { new: true });
       await this.userService.updateUser(id, { profile_picture: body.personal_details?.profile_picture });
     }
-
-    const { error } = updateAboutSchema.validate(body);
-    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
-
-    const data = await this.about.findOne({ user_id: id });
-    if (!data) throw new HttpException(400, 2002, 'ABOUT_NOT_FOUND');
-
-    // Update the desired fields dynamically from the request body
-    const updatedPayload = {
-      ...data.toObject(),
-      personal_details: {
-        ...data.personal_details.toObject(),
-        ...body.personal_details, // Update the fields specified in the request body
-      },
-      address: { ...data.address.toObject(), ...body.address }, // Update the fields specified in the request body
-      total_earnings: body.total_earnings || data.total_earnings,
-      total_jobs: body.total_jobs || data.total_jobs,
-      available: body.available || data.available,
-      nips: body.nips || data.nips,
-      social_links: { ...data.social_links.toObject(), ...body.social_details }, // Update the fields specified in the request body
-      languages: body.languages || data.languages, // Update the fields specified in the request body or use the existing value
-      skills: body.skills || data.skills, // Update the fields specified in the request body or use the existing value
-      available_to_work: body.available_to_work || data.available_to_work, // Update the fields specified in the request body or use the existing value
-      resume: body.resume || data.resume, // Update the fields specified in the request body or use the existing value
-    };
-
-    // Update the document with the updated payload
-    const updatedData = await this.about.findByIdAndUpdate(data._id, updatedPayload, { new: true });
-    await this.userService.updateUser(id, { profile_picture: body.personal_details?.profile_picture });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
 
