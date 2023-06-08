@@ -18,3 +18,7 @@
 2023-06-08 22:26:10 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: BID_NOT_FOUND
 2023-06-08 22:26:30 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: CLIENT_NOT_FOUND
 2023-06-08 22:28:11 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'description')
+2023-06-08 22:37:43 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
+2023-06-08 22:37:59 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce6f5fab941b6ef3969" (type string) at path "_id" for model "Bidding"
+2023-06-08 22:41:41 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-08 22:41:51 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND

@@ -97,7 +97,7 @@ class BidService {
   }
 
   public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string, userId: string): Promise<void> {
-    const data = await this.bid.findOne({ _id: proposalId });
+    const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(proposalId) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     console.log('PROPOSAL', data);
