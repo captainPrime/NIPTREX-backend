@@ -115,7 +115,7 @@ class BidService {
     console.log('UPDATED', milestoneData);
 
     const payload = {
-      milestoneDescription: milestoneData[0].description,
+      milestoneDescription: milestoneData.description,
     };
 
     await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);

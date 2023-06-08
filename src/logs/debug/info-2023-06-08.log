@@ -149,3 +149,13 @@
 2023-06-08 22:26:59 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 5268.189 ms - 80[0m
 2023-06-08 22:28:11 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'description')
 2023-06-08 22:28:11 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 1014.321 ms - 116[0m
+2023-06-08 22:36:49 info: =================================
+2023-06-08 22:36:49 info: ======= ENV: development =======
+2023-06-08 22:36:49 info: 🚀 App listening on the port 3000
+2023-06-08 22:36:49 info: =================================
+2023-06-08 22:36:51 info: Connected to email server
+2023-06-08 22:36:51 info: Connected to email server
+2023-06-08 22:36:52 info: Connected to email server
+2023-06-08 22:36:52 info: Connected to email server
+2023-06-08 22:36:52 info: Connected to email server
+2023-06-08 22:36:52 info: Connected to Database Successfully...
