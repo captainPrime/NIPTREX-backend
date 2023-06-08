@@ -97,17 +97,17 @@ class BidService {
   }
 
   public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string, userId: string): Promise<void> {
-    const data = await this.bid.findOne({ id: proposalId });
+    const data = await this.bid.findOne({ _id: proposalId });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
     console.log('PROPOSAL', data);
 
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
-    const milestone = data.milestone_stage.filter((item: any) => item._id.toString() !== milestoneId);
-    if (milestone) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
+    const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
+    if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
 
-    const milestoneData = data.milestone_stage.filter((item: any) => item._id.toString() === milestoneId);
+    const milestoneData = data.milestone_stage[milestoneIndex];
 
     const user: any = await this.userService.findUserById(clientId);
     if (!user || user.user !== 'client') throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
