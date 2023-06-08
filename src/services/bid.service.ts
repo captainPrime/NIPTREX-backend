@@ -4,12 +4,12 @@ import { isEmpty } from '@utils/util';
 import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
+import EmailService from '@/modules/email/email.service';
 import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
 import { biddingSchemaValidation, updateBiddingSchemaValidation, updateMilestoneStageSchema } from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
-import EmailService from '@/modules/email/email.service';
 
 class BidService {
   public bid: any = BiddingModel;
