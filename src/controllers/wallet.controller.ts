@@ -2,7 +2,7 @@ import { NextFunction, Request, Response, response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
-import { ITransaction, IUpdateWallet, IWallet } from '@/models/wallet.model';
+import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
 import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
