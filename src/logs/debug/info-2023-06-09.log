@@ -67,3 +67,41 @@
 2023-06-09 12:04:23 info: [0mPOST /payment/transaction [32m200[0m 305.428 ms - 133[0m
 2023-06-09 12:05:51 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: this.transaction.create(...).exec is not a function
 2023-06-09 12:05:51 info: [0mPOST /payment/transaction [32m200[0m 262.398 ms - 108[0m
+2023-06-09 12:06:33 info: =================================
+2023-06-09 12:06:33 info: ======= ENV: development =======
+2023-06-09 12:06:33 info: 🚀 App listening on the port 3000
+2023-06-09 12:06:33 info: =================================
+2023-06-09 12:06:51 info: Connected to Database Successfully...
+2023-06-09 12:06:56 info: [0mPOST /payment/transaction [32m200[0m 677.585 ms - 501[0m
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:09:25 info: =================================
+2023-06-09 12:09:25 info: ======= ENV: development =======
+2023-06-09 12:09:25 info: 🚀 App listening on the port 3000
+2023-06-09 12:09:25 info: =================================
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:28 info: Connected to Database Successfully...
+2023-06-09 12:09:34 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:09:34 info: [0mPOST /payment/transaction [32m200[0m 303.689 ms - 133[0m
+2023-06-09 12:10:51 info: =================================
+2023-06-09 12:10:51 info: ======= ENV: development =======
+2023-06-09 12:10:51 info: 🚀 App listening on the port 3000
+2023-06-09 12:10:51 info: =================================
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:11:04 info: Connected to Database Successfully...
+2023-06-09 12:11:16 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:11:16 info: [0mPOST /payment/transaction [32m200[0m 325.631 ms - 133[0m

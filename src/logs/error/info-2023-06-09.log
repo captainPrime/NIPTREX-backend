@@ -9,3 +9,5 @@
     --- property '_httpMessage' closes the circle
 2023-06-09 12:04:23 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-09 12:05:51 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: this.transaction.create(...).exec is not a function
+2023-06-09 12:09:34 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:11:16 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
