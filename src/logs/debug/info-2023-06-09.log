@@ -105,3 +105,40 @@
 2023-06-09 12:11:04 info: Connected to Database Successfully...
 2023-06-09 12:11:16 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-09 12:11:16 info: [0mPOST /payment/transaction [32m200[0m 325.631 ms - 133[0m
+2023-06-09 12:16:00 info: =================================
+2023-06-09 12:16:00 info: ======= ENV: development =======
+2023-06-09 12:16:00 info: 🚀 App listening on the port 3000
+2023-06-09 12:16:00 info: =================================
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to Database Successfully...
+2023-06-09 12:18:15 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:18:15 info: [0mPOST /payment/transaction [32m200[0m 551.859 ms - 133[0m
+2023-06-09 12:21:37 info: =================================
+2023-06-09 12:21:37 info: ======= ENV: development =======
+2023-06-09 12:21:37 info: 🚀 App listening on the port 3000
+2023-06-09 12:21:37 info: =================================
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:58 info: Connected to Database Successfully...
+2023-06-09 12:22:04 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:22:04 info: [0mPOST /payment/transaction [32m200[0m 803.081 ms - 133[0m
+2023-06-09 12:25:48 info: =================================
+2023-06-09 12:25:48 info: ======= ENV: development =======
+2023-06-09 12:25:48 info: 🚀 App listening on the port 3000
+2023-06-09 12:25:48 info: =================================
+2023-06-09 12:25:48 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
