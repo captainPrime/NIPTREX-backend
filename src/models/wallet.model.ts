@@ -53,7 +53,6 @@ export interface ITransaction extends Document {
   card_country?: string;
   card_type?: string;
   card_expiry?: string;
-  timestamp: Date;
 }
 
 const transactionSchema: Schema<ITransaction> = new Schema(
@@ -118,7 +117,6 @@ const transactionSchema: Schema<ITransaction> = new Schema(
         return this.payment_type === 'card';
       },
     },
-    timestamp: { type: Date, default: Date.now },
   },
   { versionKey: false },
 );

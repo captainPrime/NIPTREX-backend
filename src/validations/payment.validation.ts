@@ -14,3 +14,27 @@ export const chargeCardSchemaValidation = Joi.object({
   phone_number: Joi.string().required(),
   tx_ref: Joi.string().required(),
 });
+
+export const transactionValidationSchema = Joi.object({
+  user_id: Joi.string().required(),
+  proposal_id: Joi.string().required(),
+  tx_ref: Joi.string().required(),
+  flw_ref: Joi.string().required(),
+  amount: Joi.number().required(),
+  currency: Joi.string().required(),
+  status: Joi.string().required(),
+  payment_type: Joi.string().valid('bank', 'card').required(),
+  created_at: Joi.date().required(),
+  customer_id: Joi.number().required(),
+  customer_name: Joi.string().required(),
+  customer_email: Joi.string().email().required(),
+  nuban: Joi.string().when('payment_type', { is: 'bank', then: Joi.required() }),
+  bank: Joi.string().when('payment_type', { is: 'bank', then: Joi.required() }),
+  card_first_6digits: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  card_last_4digits: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  card_issuer: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  card_country: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  card_type: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  card_expiry: Joi.string().when('payment_type', { is: 'card', then: Joi.required() }),
+  timestamp: Joi.date().default(Date.now),
+});

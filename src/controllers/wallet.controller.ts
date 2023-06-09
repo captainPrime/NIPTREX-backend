@@ -2,7 +2,7 @@ import { NextFunction, Request, Response, response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
-import { IUpdateWallet, IWallet } from '@/models/wallet.model';
+import { ITransaction, IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
 import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
@@ -269,7 +269,7 @@ class WalletController {
         }
       }
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+      // res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
     } catch (error) {
       console.log(error);
       next(error);
@@ -292,7 +292,32 @@ class WalletController {
       }
       const payload = req.body;
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+      const transactionData: any = {
+        user_id: payload.data.customer.id,
+        proposal_id: payload.data.tx_ref,
+        tx_ref: payload.data.tx_ref,
+        flw_ref: payload.data.flw_ref,
+        amount: payload.data.amount,
+        currency: payload.data.currency,
+        status: payload.data.status,
+        payment_type: payload.data.payment_type,
+        created_at: new Date(payload.data.created_at),
+        customer_id: payload.data.customer?.id,
+        customer_name: payload.data.customer?.name,
+        customer_email: payload.data.customer?.email,
+        nuban: payload.data.account?.nuban,
+        bank: payload.data.account?.bank,
+        card_first_6digits: payload.data.card?.first_6digits,
+        card_last_4digits: payload.data.card?.last_4digits,
+        card_issuer: payload.data.card?.issuer,
+        card_country: payload.data.card?.country,
+        card_type: payload.data.card?.type,
+        card_expiry: payload.data.card?.expiry,
+      };
+
+      const transaction = await this.walletService.createTransaction(transactionData);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
     } catch (error) {
       console.log(error);
       next(error);

@@ -1,6 +1,7 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import { ITransaction, IUpdateWallet, IWallet, TransactionModel, WalletModel } from '@/models/wallet.model';
+import { transactionValidationSchema } from '@/validations/payment.validation';
 
 class WalletService {
   public wallet: any = WalletModel;
@@ -65,6 +66,9 @@ class WalletService {
   */
   public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
     if (isEmpty(body)) throw new HttpException(400, 6002, 'body cannot be empty');
+
+    const { error } = transactionValidationSchema.validate(body);
+    if (error) throw new HttpException(400, 2002, 'PAYMENT_VALIDATION_ERROR', [error.details[0].message]);
 
     const transaction: ITransaction | any = await this.transaction.create(body).exec();
 
