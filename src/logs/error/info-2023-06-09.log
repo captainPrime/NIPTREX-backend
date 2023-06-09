@@ -1,1 +1,9 @@
 2023-06-09 10:33:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-09 10:35:35 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-06-09 10:37:02 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle

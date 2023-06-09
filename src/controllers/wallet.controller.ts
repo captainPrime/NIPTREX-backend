@@ -241,7 +241,7 @@ class WalletController {
         },
       });
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response.data.data });
     } catch (error) {
       console.log(error);
       next(error);

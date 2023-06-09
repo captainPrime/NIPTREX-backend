@@ -11,3 +11,44 @@
 2023-06-09 10:33:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-09 10:33:24 info: [0mPOST /auth/login [32m200[0m 759.330 ms - 587[0m
 2023-06-09 10:33:30 info: [0mPOST /payment [32m200[0m 2611.481 ms - 368[0m
+2023-06-09 10:35:04 info: =================================
+2023-06-09 10:35:04 info: ======= ENV: development =======
+2023-06-09 10:35:04 info: 🚀 App listening on the port 3000
+2023-06-09 10:35:04 info: =================================
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:12 info: Connected to Database Successfully...
+2023-06-09 10:35:35 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-06-09 10:35:35 info: [0mPOST /payment [32m200[0m 3982.742 ms - 274[0m
+2023-06-09 10:36:23 info: =================================
+2023-06-09 10:36:23 info: ======= ENV: development =======
+2023-06-09 10:36:23 info: 🚀 App listening on the port 3000
+2023-06-09 10:36:23 info: =================================
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to Database Successfully...
+2023-06-09 10:37:02 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-06-09 10:37:02 info: [0mPOST /payment [32m200[0m 1803.330 ms - 274[0m
+2023-06-09 10:37:53 info: =================================
+2023-06-09 10:37:53 info: ======= ENV: development =======
+2023-06-09 10:37:53 info: 🚀 App listening on the port 3000
+2023-06-09 10:37:53 info: =================================
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to Database Successfully...
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:57 info: Connected to email server
+2023-06-09 10:38:07 info: [0mPOST /payment [32m200[0m 1639.143 ms - 162[0m
