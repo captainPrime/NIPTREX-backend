@@ -284,7 +284,7 @@ class WalletController {
   public paymentWebhook = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // If you specified a secret hash, check for the signature
-      const secretHash = FLW_SECRET_HASH;
+      const secretHash = 'niptrex-webhook';
       const signature = req.headers['verif-hash'];
       if (!signature || signature !== secretHash) {
         // This request isn't from Flutterwave; discard
