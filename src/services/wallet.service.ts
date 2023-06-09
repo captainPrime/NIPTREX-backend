@@ -22,39 +22,26 @@ class WalletService {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Wallet by User ID
+  | Get Transaction by User ID
   |--------------------------------------------------------------------------
   */
-  public async getWalletByUserId(userId: string): Promise<IWallet | null> {
+  public async getTransactionByUserId(userId: string): Promise<ITransaction | null> {
     if (isEmpty(userId)) throw new HttpException(400, 6002, 'User ID cannot be empty');
 
-    const wallet: IWallet | null = await this.wallet.findOne({ user_id: userId }).exec();
+    const transaction: ITransaction | null = await this.transaction.findOne({ user_id: userId });
 
-    return wallet;
+    return transaction;
   }
 
   /*
   |--------------------------------------------------------------------------
-  | Get Wallet by User ID
+  | Get Transaction by User ID
   |--------------------------------------------------------------------------
   */
-  public async getWalletById(id: string): Promise<IWallet | []> {
+  public async getTransactionById(id: string): Promise<IWallet | []> {
     if (isEmpty(id)) throw new HttpException(400, 6002, 'ID cannot be empty');
 
-    const wallet: IWallet | [] = await this.wallet.findOne({ _id: id }).exec();
-
-    return wallet;
-  }
-
-  /*
-  |--------------------------------------------------------------------------
-  | Update Wallet Balance
-  |--------------------------------------------------------------------------
-  */
-  public async updateWallet(walletId: string, data: IUpdateWallet): Promise<IWallet | null> {
-    if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
-
-    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, data, { new: true });
+    const wallet: IWallet | [] = await this.transaction.findOne({ _id: id });
 
     return wallet;
   }
@@ -73,6 +60,19 @@ class WalletService {
     const transaction: ITransaction | any = await this.transaction.create(body);
 
     return transaction;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Update Wallet Balance
+  |--------------------------------------------------------------------------
+  */
+  public async updateWallet(walletId: string, data: IUpdateWallet): Promise<IWallet | null> {
+    if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
+
+    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, data, { new: true });
+
+    return wallet;
   }
 
   /*

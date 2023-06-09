@@ -166,3 +166,9 @@
 2023-06-09 12:30:01 info: Connected to Database Successfully...
 2023-06-09 12:30:21 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-09 12:30:21 info: [0mPOST /payment/transaction [32m200[0m 309.623 ms - 133[0m
+2023-06-09 15:45:08 info: =================================
+2023-06-09 15:45:08 info: ======= ENV: development =======
+2023-06-09 15:45:08 info: 🚀 App listening on the port 3000
+2023-06-09 15:45:08 info: =================================
+2023-06-09 15:46:16 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:46:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
