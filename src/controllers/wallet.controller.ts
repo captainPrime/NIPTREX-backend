@@ -218,24 +218,20 @@ class WalletController {
   */
   public makePayment = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const FLW_SECRET_KEY = process.env.FLW_SECRET_KEY;
+      const { amount, currency } = req.body;
       const paymentData = {
-        tx_ref: 'hooli-tx-1920bbtytty',
-        amount: '100',
-        currency: 'NGN',
+        tx_ref: generateUUID(),
+        amount,
+        currency,
         redirect_url: 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
         meta: {
-          consumer_id: 23,
-          consumer_mac: '92a3-912ba-1192a',
+          consumer_id: req.user.id,
+          consumer_mac: generateTripleDESKey(),
         },
         customer: {
-          email: 'user@gmail.com',
-          phonenumber: '080****4528',
-          name: 'Yemi Desola',
-        },
-        customizations: {
-          title: 'Pied Piper Payments',
-          logo: 'http://www.piedpiper.com/app/themes/joystick-v27/images/logo.png',
+          email: req.user.email,
+          phonenumber: req.user.phone_number,
+          name: `${req.user.first_name} ${req.user.last_name}`,
         },
       };
 
