@@ -5,7 +5,8 @@ import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
-import { ENCRYPTION_KEY } from '@/config';
+import { ENCRYPTION_KEY, FLW_SECRET_KEY } from '@/config';
+import axios from 'axios';
 
 class WalletController {
   public userService = new UserService();
@@ -202,6 +203,47 @@ class WalletController {
         // open(url);
       }
       console.log(response); // uncomment for debugging purposes
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public makePayment = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const FLW_SECRET_KEY = process.env.FLW_SECRET_KEY;
+      const paymentData = {
+        tx_ref: 'hooli-tx-1920bbtytty',
+        amount: '100',
+        currency: 'NGN',
+        redirect_url: 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
+        meta: {
+          consumer_id: 23,
+          consumer_mac: '92a3-912ba-1192a',
+        },
+        customer: {
+          email: 'user@gmail.com',
+          phonenumber: '080****4528',
+          name: 'Yemi Desola',
+        },
+        customizations: {
+          title: 'Pied Piper Payments',
+          logo: 'http://www.piedpiper.com/app/themes/joystick-v27/images/logo.png',
+        },
+      };
+
+      const response = await axios.post('https://api.flutterwave.com/v3/payments', paymentData, {
+        headers: {
+          Authorization: `Bearer ${FLW_SECRET_KEY}`,
+        },
+      });
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response });
     } catch (error) {
