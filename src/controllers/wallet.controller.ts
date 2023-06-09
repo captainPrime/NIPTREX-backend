@@ -30,8 +30,8 @@ class WalletController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const wallet = await this.walletService.getWalletByUserId(req.user.id);
-      if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
+      // const wallet = await this.walletService.getWalletByUserId(req.user.id);
+      // if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
 
       //   const headers = {
       //     'Content-Type': 'application/json',
@@ -94,11 +94,11 @@ class WalletController {
   | Get User Bio
   |--------------------------------------------------------------------------
   */
-  public getUserWallet = async (req: Request, res: Response, next: NextFunction) => {
+  public getUserTransaction = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data = await this.walletService.getWalletByUserId(req.user.id);
+      const data = await this.walletService.getTransactionByUserId(req.user.id);
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -109,12 +109,12 @@ class WalletController {
   | Get Bio By Id
   |--------------------------------------------------------------------------
   */
-  public getWalletById = async (req: Request, res: Response, next: NextFunction) => {
+  public getTransactionById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.walletService.getWalletById(id);
+      const data = await this.walletService.getTransactionById(id);
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }

@@ -172,3 +172,24 @@
 2023-06-09 15:45:08 info: =================================
 2023-06-09 15:46:16 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-06-09 15:46:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:52:55 info: =================================
+2023-06-09 15:52:55 info: ======= ENV: development =======
+2023-06-09 15:52:55 info: 🚀 App listening on the port 3000
+2023-06-09 15:52:55 info: =================================
+2023-06-09 15:53:58 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:53:58 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:54:32 info: =================================
+2023-06-09 15:54:32 info: ======= ENV: development =======
+2023-06-09 15:54:32 info: 🚀 App listening on the port 3000
+2023-06-09 15:54:32 info: =================================
+2023-06-09 15:54:38 info: Connected to email server
+2023-06-09 15:54:42 info: Connected to Database Successfully...
+2023-06-09 15:55:07 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:10 info: Connected to email server
+2023-06-09 15:56:16 error: [GET] /wallet/getUserTransaction >> StatusCode:: 404, Message:: The requested path /wallet/getUserTransaction not found!
+2023-06-09 15:56:16 info: [0mGET /wallet/getUserTransaction [32m200[0m 9.759 ms - 114[0m
+2023-06-09 15:56:25 info: [0mGET /payment/getUserTransaction [32m200[0m 1189.682 ms - 85[0m
+2023-06-09 15:56:55 info: [0mGET /payment/getTransactionById/647aeceaa05aa8c5ab9dc608 [32m200[0m 1015.655 ms - 86[0m
