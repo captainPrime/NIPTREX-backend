@@ -4,7 +4,7 @@ import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
-import { generateUUID } from '@/utils/matchPercentage';
+import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
 import { ENCRYPTION_KEY } from '@/config';
 
 class WalletController {
@@ -171,7 +171,7 @@ class WalletController {
         email: req.user.email,
         phone_number: req.user.phone_number,
         enckey: ENCRYPTION_KEY,
-        tx_ref: generateUUID(),
+        tx_ref: generateTripleDESKey(),
       };
 
       const response = await flw.Charge.card(payload);
