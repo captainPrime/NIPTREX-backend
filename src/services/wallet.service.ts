@@ -64,7 +64,7 @@ class WalletService {
   |--------------------------------------------------------------------------
   */
   public async createTransaction(body: ITransaction): Promise<ITransaction | null> {
-    if (isEmpty(body)) throw new HttpException(400, 6002, 'bodycannot be empty');
+    if (isEmpty(body)) throw new HttpException(400, 6002, 'body cannot be empty');
 
     const transaction: ITransaction | any = await this.transaction.create(body).exec();
 

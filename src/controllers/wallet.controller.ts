@@ -263,7 +263,7 @@ class WalletController {
         const response = await flw.Transaction.verify({ id: transaction_id });
         if (response.data.status === 'successful' && response.data.amount === transactionDetails.amount && response.data.currency === 'NGN') {
           // Success! Confirm the customer's payment
-          return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+          // return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
         } else {
           // Inform the customer their payment was unsuccessful
         }
