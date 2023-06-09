@@ -33,24 +33,90 @@ walletSchema.plugin(toJSON);
 
 // Define the Transaction schema
 export interface ITransaction extends Document {
-  user_id: string;
-  wallet_id: string;
-  name: string;
-  remark: string;
+  user_id: string | Schema.Types.ObjectId;
+  proposal_id: string | Schema.Types.ObjectId;
+  tx_ref: string;
+  flw_ref: string;
   amount: number;
-  type: 'deposit' | 'withdrawal' | 'transfer';
-  timestamp: Date;
+  currency: string;
+  status: string;
+  payment_type: string;
+  created_at: Date;
+  customer_id: number;
+  customer_name: string;
+  customer_email: string;
+  nuban?: string;
+  bank?: string;
+  card_first_6digits?: string;
+  card_last_4digits?: string;
+  card_issuer?: string;
+  card_country?: string;
+  card_type?: string;
+  card_expiry?: string;
 }
 
-const transactionSchema: Schema = new Schema(
+const transactionSchema: Schema<ITransaction> = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    job_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    name: { type: String, required: true },
+    proposal_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    tx_ref: { type: String, required: true },
+    flw_ref: { type: String, required: true },
     amount: { type: Number, required: true },
-    remark: { type: String, required: true },
-    type: { type: String, enum: ['deposit', 'withdrawal', 'transfer'], required: true },
-    timestamp: { type: Date, default: Date.now },
+    currency: { type: String, required: true },
+    status: { type: String, required: true },
+    payment_type: { type: String, required: true },
+    created_at: { type: Date, required: true },
+    customer_id: { type: Number, required: true },
+    customer_name: { type: String, required: true },
+    customer_email: { type: String, required: true },
+    nuban: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'bank';
+      },
+    },
+    bank: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'bank';
+      },
+    },
+    card_first_6digits: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
+    card_last_4digits: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
+    card_issuer: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
+    card_country: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
+    card_type: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
+    card_expiry: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'card';
+      },
+    },
   },
   { versionKey: false },
 );

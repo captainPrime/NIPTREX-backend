@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 /*
 |--------------------------------------------------------------------------
 | The Jaccard similarity coefficient measures the similarity between 
@@ -5,7 +7,6 @@
 | the size of their union. In the context of comparing two arrays.
 |--------------------------------------------------------------------------
 */
-
 export const calculateMatchPercentage = (array1: any, array2: any) => {
   const set1 = new Set(array1);
   const set2 = new Set(array2);
@@ -35,4 +36,13 @@ export const generateAlphaNumeric = (length: number) => {
     result += characters.charAt(randomIndex);
   }
   return result;
+};
+
+export const generateTripleDESKey = () => {
+  const keySizeBits = 376;
+  const keySizeBytes = keySizeBits / 8;
+
+  const key = crypto.randomBytes(keySizeBytes);
+
+  return key.toString('hex');
 };

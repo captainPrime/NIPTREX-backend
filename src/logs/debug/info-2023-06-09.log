@@ -1,0 +1,220 @@
+2023-06-09 10:32:44 info: =================================
+2023-06-09 10:32:44 info: ======= ENV: development =======
+2023-06-09 10:32:44 info: 🚀 App listening on the port 3000
+2023-06-09 10:32:44 info: =================================
+2023-06-09 10:32:47 info: Connected to email server
+2023-06-09 10:32:47 info: Connected to email server
+2023-06-09 10:32:47 info: Connected to email server
+2023-06-09 10:32:47 info: Connected to email server
+2023-06-09 10:32:47 info: Connected to email server
+2023-06-09 10:32:52 info: Connected to Database Successfully...
+2023-06-09 10:33:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-09 10:33:24 info: [0mPOST /auth/login [32m200[0m 759.330 ms - 587[0m
+2023-06-09 10:33:30 info: [0mPOST /payment [32m200[0m 2611.481 ms - 368[0m
+2023-06-09 10:35:04 info: =================================
+2023-06-09 10:35:04 info: ======= ENV: development =======
+2023-06-09 10:35:04 info: 🚀 App listening on the port 3000
+2023-06-09 10:35:04 info: =================================
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:09 info: Connected to email server
+2023-06-09 10:35:12 info: Connected to Database Successfully...
+2023-06-09 10:35:35 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-06-09 10:35:35 info: [0mPOST /payment [32m200[0m 3982.742 ms - 274[0m
+2023-06-09 10:36:23 info: =================================
+2023-06-09 10:36:23 info: ======= ENV: development =======
+2023-06-09 10:36:23 info: 🚀 App listening on the port 3000
+2023-06-09 10:36:23 info: =================================
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to email server
+2023-06-09 10:36:26 info: Connected to Database Successfully...
+2023-06-09 10:37:02 error: [POST] /payment >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-06-09 10:37:02 info: [0mPOST /payment [32m200[0m 1803.330 ms - 274[0m
+2023-06-09 10:37:53 info: =================================
+2023-06-09 10:37:53 info: ======= ENV: development =======
+2023-06-09 10:37:53 info: 🚀 App listening on the port 3000
+2023-06-09 10:37:53 info: =================================
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:56 info: Connected to Database Successfully...
+2023-06-09 10:37:56 info: Connected to email server
+2023-06-09 10:37:57 info: Connected to email server
+2023-06-09 10:38:07 info: [0mPOST /payment [32m200[0m 1639.143 ms - 162[0m
+2023-06-09 12:04:13 info: =================================
+2023-06-09 12:04:13 info: ======= ENV: development =======
+2023-06-09 12:04:13 info: 🚀 App listening on the port 3000
+2023-06-09 12:04:13 info: =================================
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to email server
+2023-06-09 12:04:16 info: Connected to Database Successfully...
+2023-06-09 12:04:23 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:04:23 info: [0mPOST /payment/transaction [32m200[0m 305.428 ms - 133[0m
+2023-06-09 12:05:51 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: this.transaction.create(...).exec is not a function
+2023-06-09 12:05:51 info: [0mPOST /payment/transaction [32m200[0m 262.398 ms - 108[0m
+2023-06-09 12:06:33 info: =================================
+2023-06-09 12:06:33 info: ======= ENV: development =======
+2023-06-09 12:06:33 info: 🚀 App listening on the port 3000
+2023-06-09 12:06:33 info: =================================
+2023-06-09 12:06:51 info: Connected to Database Successfully...
+2023-06-09 12:06:56 info: [0mPOST /payment/transaction [32m200[0m 677.585 ms - 501[0m
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:07:06 info: Connected to email server
+2023-06-09 12:09:25 info: =================================
+2023-06-09 12:09:25 info: ======= ENV: development =======
+2023-06-09 12:09:25 info: 🚀 App listening on the port 3000
+2023-06-09 12:09:25 info: =================================
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:27 info: Connected to email server
+2023-06-09 12:09:28 info: Connected to Database Successfully...
+2023-06-09 12:09:34 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:09:34 info: [0mPOST /payment/transaction [32m200[0m 303.689 ms - 133[0m
+2023-06-09 12:10:51 info: =================================
+2023-06-09 12:10:51 info: ======= ENV: development =======
+2023-06-09 12:10:51 info: 🚀 App listening on the port 3000
+2023-06-09 12:10:51 info: =================================
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:10:53 info: Connected to email server
+2023-06-09 12:11:04 info: Connected to Database Successfully...
+2023-06-09 12:11:16 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:11:16 info: [0mPOST /payment/transaction [32m200[0m 325.631 ms - 133[0m
+2023-06-09 12:16:00 info: =================================
+2023-06-09 12:16:00 info: ======= ENV: development =======
+2023-06-09 12:16:00 info: 🚀 App listening on the port 3000
+2023-06-09 12:16:00 info: =================================
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:04 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to email server
+2023-06-09 12:16:05 info: Connected to Database Successfully...
+2023-06-09 12:18:15 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:18:15 info: [0mPOST /payment/transaction [32m200[0m 551.859 ms - 133[0m
+2023-06-09 12:21:37 info: =================================
+2023-06-09 12:21:37 info: ======= ENV: development =======
+2023-06-09 12:21:37 info: 🚀 App listening on the port 3000
+2023-06-09 12:21:37 info: =================================
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:40 info: Connected to email server
+2023-06-09 12:21:58 info: Connected to Database Successfully...
+2023-06-09 12:22:04 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:22:04 info: [0mPOST /payment/transaction [32m200[0m 803.081 ms - 133[0m
+2023-06-09 12:25:48 info: =================================
+2023-06-09 12:25:48 info: ======= ENV: development =======
+2023-06-09 12:25:48 info: 🚀 App listening on the port 3000
+2023-06-09 12:25:48 info: =================================
+2023-06-09 12:25:48 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 info: =================================
+2023-06-09 12:26:19 info: ======= ENV: development =======
+2023-06-09 12:26:19 info: 🚀 App listening on the port 3000
+2023-06-09 12:26:19 info: =================================
+2023-06-09 12:26:19 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:29:58 info: =================================
+2023-06-09 12:29:58 info: ======= ENV: development =======
+2023-06-09 12:29:58 info: 🚀 App listening on the port 3000
+2023-06-09 12:29:58 info: =================================
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to Database Successfully...
+2023-06-09 12:30:21 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:30:21 info: [0mPOST /payment/transaction [32m200[0m 309.623 ms - 133[0m
+2023-06-09 15:45:08 info: =================================
+2023-06-09 15:45:08 info: ======= ENV: development =======
+2023-06-09 15:45:08 info: 🚀 App listening on the port 3000
+2023-06-09 15:45:08 info: =================================
+2023-06-09 15:46:16 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:46:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:52:55 info: =================================
+2023-06-09 15:52:55 info: ======= ENV: development =======
+2023-06-09 15:52:55 info: 🚀 App listening on the port 3000
+2023-06-09 15:52:55 info: =================================
+2023-06-09 15:53:58 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:53:58 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 15:54:32 info: =================================
+2023-06-09 15:54:32 info: ======= ENV: development =======
+2023-06-09 15:54:32 info: 🚀 App listening on the port 3000
+2023-06-09 15:54:32 info: =================================
+2023-06-09 15:54:38 info: Connected to email server
+2023-06-09 15:54:42 info: Connected to Database Successfully...
+2023-06-09 15:55:07 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:09 info: Connected to email server
+2023-06-09 15:55:10 info: Connected to email server
+2023-06-09 15:56:16 error: [GET] /wallet/getUserTransaction >> StatusCode:: 404, Message:: The requested path /wallet/getUserTransaction not found!
+2023-06-09 15:56:16 info: [0mGET /wallet/getUserTransaction [32m200[0m 9.759 ms - 114[0m
+2023-06-09 15:56:25 info: [0mGET /payment/getUserTransaction [32m200[0m 1189.682 ms - 85[0m
+2023-06-09 15:56:55 info: [0mGET /payment/getTransactionById/647aeceaa05aa8c5ab9dc608 [32m200[0m 1015.655 ms - 86[0m
+2023-06-09 17:12:29 info: =================================
+2023-06-09 17:12:29 info: ======= ENV: development =======
+2023-06-09 17:12:29 info: 🚀 App listening on the port 3000
+2023-06-09 17:12:29 info: =================================
+2023-06-09 17:12:34 info: Connected to email server
+2023-06-09 17:12:34 info: Connected to email server
+2023-06-09 17:12:35 info: Connected to email server
+2023-06-09 17:12:35 info: Connected to email server
+2023-06-09 17:12:35 info: Connected to email server
+2023-06-09 17:12:35 info: Connected to Database Successfully...
+2023-06-09 17:12:35 info: Connected to email server
+2023-06-09 17:13:05 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-06-09 17:13:05 info: [0mPOST /chat/message [32m200[0m 610.299 ms - 136[0m
+2023-06-09 17:15:03 info: =================================
+2023-06-09 17:15:03 info: ======= ENV: development =======
+2023-06-09 17:15:03 info: 🚀 App listening on the port 3000
+2023-06-09 17:15:03 info: =================================
+2023-06-09 17:15:28 info: Connected to Database Successfully...
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:17:16 info: [0mPOST /chat/message [32m200[0m 1322.872 ms - 391[0m

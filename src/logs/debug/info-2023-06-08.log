@@ -208,3 +208,66 @@
 2023-06-08 22:49:17 info: [0mPUT /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff396a [32m200[0m 740.161 ms - -[0m
 2023-06-08 22:49:29 error: [PUT] /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff3963 >> StatusCode:: 400, Message:: MILESTONE_NOT_FOUND
 2023-06-08 22:49:29 info: [0mPUT /bid/updateMilestone/647dce6f5fab941b6eff3969/647dce6f5fab941b6eff3963 [32m200[0m 794.576 ms - 77[0m
+2023-06-08 23:29:27 info: =================================
+2023-06-08 23:29:27 info: ======= ENV: development =======
+2023-06-08 23:29:27 info: 🚀 App listening on the port 3000
+2023-06-08 23:29:27 info: =================================
+2023-06-08 23:29:29 info: Connected to email server
+2023-06-08 23:29:29 info: Connected to email server
+2023-06-08 23:29:29 info: Connected to email server
+2023-06-08 23:29:29 info: Connected to email server
+2023-06-08 23:29:29 info: Connected to Database Successfully...
+2023-06-08 23:29:30 info: Connected to email server
+2023-06-08 23:37:17 info: =================================
+2023-06-08 23:37:17 info: ======= ENV: development =======
+2023-06-08 23:37:17 info: 🚀 App listening on the port 3000
+2023-06-08 23:37:17 info: =================================
+2023-06-08 23:37:19 info: Connected to email server
+2023-06-08 23:37:19 info: Connected to email server
+2023-06-08 23:37:19 info: Connected to email server
+2023-06-08 23:37:19 info: Connected to email server
+2023-06-08 23:37:20 info: Connected to email server
+2023-06-08 23:37:21 info: Connected to Database Successfully...
+2023-06-08 23:37:51 error: [POST] /payment/card >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-06-08 23:37:51 info: [0mPOST /payment/card [32m200[0m 37.369 ms - 86[0m
+2023-06-08 23:37:59 error: [POST] /payment/card >> StatusCode:: 400, Message:: Invalid Triple-DES key size: 376
+2023-06-08 23:37:59 info: [0mPOST /payment/card [32m200[0m 530.809 ms - 89[0m
+2023-06-08 23:40:42 info: =================================
+2023-06-08 23:40:42 info: ======= ENV: development =======
+2023-06-08 23:40:42 info: 🚀 App listening on the port 3000
+2023-06-08 23:40:42 info: =================================
+2023-06-08 23:40:44 info: Connected to email server
+2023-06-08 23:40:44 info: Connected to email server
+2023-06-08 23:40:44 info: Connected to email server
+2023-06-08 23:40:44 info: Connected to email server
+2023-06-08 23:40:44 info: Connected to email server
+2023-06-08 23:40:45 info: Connected to Database Successfully...
+2023-06-08 23:41:17 error: [Error] >> Channel closed
+2023-06-08 23:41:21 info: =================================
+2023-06-08 23:41:21 info: ======= ENV: development =======
+2023-06-08 23:41:21 info: 🚀 App listening on the port 3000
+2023-06-08 23:41:21 info: =================================
+2023-06-08 23:41:30 info: =================================
+2023-06-08 23:41:30 info: ======= ENV: development =======
+2023-06-08 23:41:30 info: 🚀 App listening on the port 3000
+2023-06-08 23:41:30 info: =================================
+2023-06-08 23:41:33 info: Connected to email server
+2023-06-08 23:41:33 info: Connected to email server
+2023-06-08 23:41:33 info: Connected to Database Successfully...
+2023-06-08 23:41:33 info: Connected to email server
+2023-06-08 23:41:33 info: Connected to email server
+2023-06-08 23:41:33 info: Connected to email server
+2023-06-08 23:41:42 error: [POST] /payment/card >> StatusCode:: 400, Message:: Invalid Triple-DES key size: 376
+2023-06-08 23:41:42 info: [0mPOST /payment/card [32m200[0m 283.161 ms - 89[0m
+2023-06-08 23:42:36 info: =================================
+2023-06-08 23:42:36 info: ======= ENV: development =======
+2023-06-08 23:42:36 info: 🚀 App listening on the port 3000
+2023-06-08 23:42:36 info: =================================
+2023-06-08 23:42:38 info: Connected to email server
+2023-06-08 23:42:38 info: Connected to email server
+2023-06-08 23:42:38 info: Connected to email server
+2023-06-08 23:42:38 info: Connected to email server
+2023-06-08 23:42:38 info: Connected to email server
+2023-06-08 23:42:48 info: Connected to Database Successfully...
+2023-06-08 23:44:12 error: [POST] /payment/card >> StatusCode:: 400, Message:: "tx_ref" is required
+2023-06-08 23:44:12 info: [0mPOST /payment/card [32m200[0m 457.751 ms - 79[0m

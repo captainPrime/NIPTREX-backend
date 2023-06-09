@@ -1,13 +1,17 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Request, Response, response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
-import { generateUUID } from '@/utils/matchPercentage';
+import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
+import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
+import axios from 'axios';
+import EmailService from '@/modules/email/email.service';
 
 class WalletController {
   public userService = new UserService();
+  public emailService = new EmailService();
   public walletService = new WalletService();
 
   /*
@@ -26,8 +30,8 @@ class WalletController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const wallet = await this.walletService.getWalletByUserId(req.user.id);
-      if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
+      // const wallet = await this.walletService.getWalletByUserId(req.user.id);
+      // if (wallet) throw new HttpException(400, 6002, 'WALLET_ALREAD_CREATED');
 
       //   const headers = {
       //     'Content-Type': 'application/json',
@@ -90,11 +94,11 @@ class WalletController {
   | Get User Bio
   |--------------------------------------------------------------------------
   */
-  public getUserWallet = async (req: Request, res: Response, next: NextFunction) => {
+  public getUserTransaction = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data = await this.walletService.getWalletByUserId(req.user.id);
+      const data = await this.walletService.getTransactionByUserId(req.user.id);
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -105,12 +109,12 @@ class WalletController {
   | Get Bio By Id
   |--------------------------------------------------------------------------
   */
-  public getWalletById = async (req: Request, res: Response, next: NextFunction) => {
+  public getTransactionById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.walletService.getWalletById(id);
+      const data = await this.walletService.getTransactionById(id);
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -144,6 +148,176 @@ class WalletController {
       const data = await this.walletService.createTransaction(payloadData);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public chargeCard = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { card_number, cvv, expiry_month, expiry_year, currency, amount } = req.body;
+      const payload = {
+        card_number,
+        cvv,
+        expiry_month,
+        expiry_year,
+        currency,
+        amount,
+        redirect_url: 'https://www.google.com',
+        fullname: `${req.user.first_name} ${req.user.last_name}`,
+        email: req.user.email,
+        phone_number: req.user.phone_number,
+        enckey: ENCRYPTION_KEY,
+        tx_ref: generateTripleDESKey(),
+      };
+
+      const response = await flw.Charge.card(payload);
+      console.log('RESPONSE', response);
+
+      if (response.meta.authorization.mode === 'pin') {
+        const payload2 = {
+          ...payload,
+          authorization: {
+            mode: 'pin',
+            fields: ['pin'],
+            pin: 3310,
+          },
+        };
+
+        const reCallCharge = await flw.Charge.card(payload2);
+        const callValidate = await flw.Charge.validate({
+          otp: '12345',
+          flw_ref: reCallCharge.data.flw_ref,
+        });
+
+        console.log(callValidate); // uncomment for debugging purposes
+      }
+
+      if (response.meta.authorization.mode === 'redirect') {
+        const url = response.meta.authorization.redirect;
+        console.log(url);
+        // open(url);
+      }
+      console.log(response); // uncomment for debugging purposes
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public makePayment = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { amount, currency } = req.body;
+      const paymentData = {
+        tx_ref: generateUUID(),
+        amount,
+        currency,
+        redirect_url: 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
+        meta: {
+          consumer_id: req.user.id,
+          consumer_mac: generateTripleDESKey(),
+        },
+        customer: {
+          email: req.user.email,
+          phonenumber: req.user.phone_number,
+          name: `${req.user.first_name} ${req.user.last_name}`,
+        },
+      };
+
+      const response = await axios.post('https://api.flutterwave.com/v3/payments', paymentData, {
+        headers: {
+          Authorization: `Bearer ${FLW_SECRET_KEY}`,
+        },
+      });
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { status, transaction_id, tx_ref } = req.body;
+      if (status === 'successful') {
+        const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
+        const response = await flw.Transaction.verify({ id: transaction_id });
+        if (response.data.status === 'successful' && response.data.amount === transactionDetails.amount && response.data.currency === 'NGN') {
+          // Success! Confirm the customer's payment
+          // return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+        } else {
+          // Inform the customer their payment was unsuccessful
+        }
+      }
+
+      // res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public paymentWebhook = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      // If you specified a secret hash, check for the signature
+      const secretHash = FLW_SECRET_HASH;
+      const signature = req.headers['verif-hash'];
+      if (!signature || signature !== secretHash) {
+        // This request isn't from Flutterwave; discard
+        res.status(200).json({ status: 400, response_code: 6000, message: 'PAYMENT_REQUEST_ERROR', data: [] });
+      }
+      const payload = req.body;
+
+      const transactionData: any = {
+        user_id: payload.data.customer.id,
+        proposal_id: payload.data.tx_ref,
+        tx_ref: payload.data.tx_ref,
+        flw_ref: payload.data.flw_ref,
+        amount: payload.data.amount,
+        currency: payload.data.currency,
+        status: payload.data.status,
+        payment_type: payload.data.payment_type,
+        created_at: new Date(payload.data.created_at),
+        customer_id: payload.data.customer?.id,
+        customer_name: payload.data.customer?.name,
+        customer_email: payload.data.customer?.email,
+        nuban: payload.data.account?.nuban,
+        bank: payload.data.account?.bank,
+        card_first_6digits: payload.data.card?.first_6digits,
+        card_last_4digits: payload.data.card?.last_4digits,
+        card_issuer: payload.data.card?.issuer,
+        card_country: payload.data.card?.country,
+        card_type: payload.data.card?.type,
+        card_expiry: payload.data.card?.expiry,
+      };
+
+      const transaction = await this.walletService.createTransaction(transactionData);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
     } catch (error) {
       console.log(error);
       next(error);

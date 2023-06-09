@@ -17,12 +17,18 @@ export const messageSchemaValidation = Joi.object({
     otherwise: Joi.string().allow('').optional(),
   }),
   is_file: Joi.boolean().optional().default(false),
-  files: Joi.array()
-    .items(Joi.string())
-    .when('is_file', {
-      is: true,
-      then: Joi.array().items(Joi.string().required().min(1)),
-      otherwise: Joi.array().items(Joi.string().allow('').optional()),
-    }),
+  files: Joi.when('is_file', {
+    is: true,
+    then: Joi.array()
+      .items(
+        Joi.object({
+          name: Joi.string().required(),
+          url: Joi.string().required(),
+        }),
+      )
+      .min(1)
+      .required(),
+    otherwise: Joi.array().max(0).required(),
+  }),
   createdAt: Joi.date().default(Date.now),
 });
