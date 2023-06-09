@@ -1,9 +1,6 @@
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import { ITransaction, IUpdateWallet, IWallet, TransactionModel, WalletModel } from '@/models/wallet.model';
-import { IChargeCard } from '@/interfaces/payment.interface';
-import { flw } from '@/modules/flutterwave';
-import { open } from 'fs';
 
 class WalletService {
   public wallet: any = WalletModel;
@@ -79,45 +76,45 @@ class WalletService {
   | Add Transaction to Wallet
   |--------------------------------------------------------------------------
   */
-  public async chargeCard(payload: IChargeCard): Promise<ITransaction | null> {
-    if (isEmpty(payload)) throw new HttpException(400, 6002, 'bodycannot be empty');
+  // public async chargeCard(payload: IChargeCard): Promise<ITransaction | null> {
+  //   if (isEmpty(payload)) throw new HttpException(400, 6002, 'bodycannot be empty');
 
-    try {
-      const response = await flw.Charge.card(payload);
-      console.log(response);
+  //   try {
+  //     const response = await flw.Charge.card(payload);
+  //     console.log(response);
 
-      if (response.meta.authorization.mode === 'pin') {
-        const payload2 = {
-          ...payload,
-          authorization: {
-            mode: 'pin',
-            fields: ['pin'],
-            pin: 3310,
-          },
-        };
+  //     if (response.meta.authorization.mode === 'pin') {
+  //       const payload2 = {
+  //         ...payload,
+  //         authorization: {
+  //           mode: 'pin',
+  //           fields: ['pin'],
+  //           pin: 3310,
+  //         },
+  //       };
 
-        const reCallCharge = await flw.Charge.card(payload2);
-        const callValidate = await flw.Charge.validate({
-          otp: '12345',
-          flw_ref: reCallCharge.data.flw_ref,
-        });
+  //       const reCallCharge = await flw.Charge.card(payload2);
+  //       const callValidate = await flw.Charge.validate({
+  //         otp: '12345',
+  //         flw_ref: reCallCharge.data.flw_ref,
+  //       });
 
-        console.log(callValidate); // uncomment for debugging purposes
-      }
+  //       console.log(callValidate); // uncomment for debugging purposes
+  //     }
 
-      if (response.meta.authorization.mode === 'redirect') {
-        const url = response.meta.authorization.redirect;
-        open(url);
-      }
+  //     if (response.meta.authorization.mode === 'redirect') {
+  //       const url = response.meta.authorization.redirect;
+  //       open(url);
+  //     }
 
-      res.status(200).json(response);
-      // console.log(response); // uncomment for debugging purposes
-    } catch (error) {
-      console.log(error);
-    }
+  //     res.status(200).json(response);
+  //     // console.log(response); // uncomment for debugging purposes
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
 
-    return transaction;
-  }
+  //   return transaction;
+  // }
 }
 
 export default WalletService;
