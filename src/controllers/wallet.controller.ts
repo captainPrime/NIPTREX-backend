@@ -283,7 +283,6 @@ class WalletController {
   */
   public paymentWebhook = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { status, transaction_id, tx_ref } = req.body;
       // If you specified a secret hash, check for the signature
       const secretHash = FLW_SECRET_HASH;
       const signature = req.headers['verif-hash'];
