@@ -5,7 +5,7 @@ import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
-import { ENCRYPTION_KEY, FLW_SECRET_KEY } from '@/config';
+import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
 import axios from 'axios';
 import EmailService from '@/modules/email/email.service';
 
@@ -268,6 +268,30 @@ class WalletController {
           // Inform the customer their payment was unsuccessful
         }
       }
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public paymentWebhook = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { status, transaction_id, tx_ref } = req.body;
+      // If you specified a secret hash, check for the signature
+      const secretHash = FLW_SECRET_HASH;
+      const signature = req.headers['verif-hash'];
+      if (!signature || signature !== secretHash) {
+        // This request isn't from Flutterwave; discard
+        res.status(200).json({ status: 400, response_code: 6000, message: 'PAYMENT_REQUEST_ERROR', data: [] });
+      }
+      const payload = req.body;
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
     } catch (error) {

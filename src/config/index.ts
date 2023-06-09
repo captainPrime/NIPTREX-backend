@@ -29,4 +29,5 @@ export const {
   FLW_PUBLIC_KEY,
   FLW_SECRET_KEY,
   ENCRYPTION_KEY,
+  FLW_SECRET_HASH,
 } = process.env;
