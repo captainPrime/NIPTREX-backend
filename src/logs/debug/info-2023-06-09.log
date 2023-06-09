@@ -206,3 +206,15 @@
 2023-06-09 17:12:35 info: Connected to email server
 2023-06-09 17:13:05 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
 2023-06-09 17:13:05 info: [0mPOST /chat/message [32m200[0m 610.299 ms - 136[0m
+2023-06-09 17:15:03 info: =================================
+2023-06-09 17:15:03 info: ======= ENV: development =======
+2023-06-09 17:15:03 info: 🚀 App listening on the port 3000
+2023-06-09 17:15:03 info: =================================
+2023-06-09 17:15:28 info: Connected to Database Successfully...
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:38 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:15:39 info: Connected to email server
+2023-06-09 17:17:16 info: [0mPOST /chat/message [32m200[0m 1322.872 ms - 391[0m
