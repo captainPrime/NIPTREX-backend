@@ -2,12 +2,17 @@ import { Schema, Document, model } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
 
 // Define the Message schema
+
+export interface IFiles {
+  name?: string;
+  url?: string;
+}
 export interface IMessage extends Document {
   sender: Schema.Types.ObjectId;
   milestone: Schema.Types.ObjectId;
   content?: string;
   is_file: boolean;
-  files?: string[];
+  files?: IFiles[];
   created_at?: Date;
 }
 
@@ -24,9 +29,17 @@ const messageSchema: Schema = new Schema(
     is_file: { type: Boolean, required: true, default: false },
     files: [
       {
-        type: String,
-        required: function (this: IMessage) {
-          return this.is_file;
+        name: {
+          type: String,
+          required: function (this: IMessage) {
+            return this.is_file;
+          },
+        },
+        url: {
+          type: String,
+          required: function (this: IMessage) {
+            return this.is_file;
+          },
         },
       },
     ],

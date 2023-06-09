@@ -17,3 +17,4 @@
 2023-06-09 12:26:19 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-06-09 12:30:21 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-09 15:56:16 error: [GET] /wallet/getUserTransaction >> StatusCode:: 404, Message:: The requested path /wallet/getUserTransaction not found!
+2023-06-09 17:13:05 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
