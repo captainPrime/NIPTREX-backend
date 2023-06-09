@@ -38,6 +38,17 @@ class WalletService {
   | Get Transaction by User ID
   |--------------------------------------------------------------------------
   */
+  public async getTransactions(): Promise<ITransaction[] | null> {
+    const transaction: ITransaction[] | null = await this.transaction.find({});
+
+    return transaction;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Transaction by User ID
+  |--------------------------------------------------------------------------
+  */
   public async getTransactionById(id: string): Promise<ITransaction | null> {
     if (isEmpty(id)) throw new HttpException(400, 6002, 'ID cannot be empty');
 

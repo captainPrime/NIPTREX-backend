@@ -106,6 +106,21 @@ class WalletController {
 
   /*
   |--------------------------------------------------------------------------
+  | Get User Bio
+  |--------------------------------------------------------------------------
+  */
+  public getTransactions = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const data = await this.walletService.getTransactions();
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Bio By Id
   |--------------------------------------------------------------------------
   */

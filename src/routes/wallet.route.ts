@@ -18,6 +18,7 @@ class WalletRoute implements Routes {
     this.router.post(`${this.path}`, authMiddleware(['freelancer', 'client']), this.walletController.makePayment);
     this.router.post(`${this.path}/webhook`, authMiddleware(['freelancer', 'client']), this.walletController.paymentWebhook);
     this.router.post(`${this.path}/transaction`, authMiddleware(['freelancer', 'client']), this.walletController.createTransaction);
+    this.router.post(`${this.path}/getTransactions`, authMiddleware(['freelancer', 'client']), this.walletController.getTransactions);
     this.router.get(`${this.path}/getUserTransaction`, authMiddleware(['freelancer', 'client']), this.walletController.getUserTransaction);
     this.router.get(`${this.path}/getTransactionById/:id`, authMiddleware(['freelancer', 'client']), this.walletController.getTransactionById);
     this.router.put(`${this.path}/updateWallet/:id`, authMiddleware(['freelancer', 'client']), this.walletController.updateWallet);
