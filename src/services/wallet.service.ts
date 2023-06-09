@@ -54,7 +54,7 @@ class WalletService {
   public async updateWallet(walletId: string, data: IUpdateWallet): Promise<IWallet | null> {
     if (isEmpty(walletId)) throw new HttpException(400, 6002, 'Wallet ID cannot be empty');
 
-    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, data, { new: true }).exec();
+    const wallet: IWallet | null = await this.wallet.findByIdAndUpdate(walletId, data, { new: true });
 
     return wallet;
   }
@@ -70,7 +70,7 @@ class WalletService {
     const { error } = transactionValidationSchema.validate(body);
     if (error) throw new HttpException(400, 2002, 'PAYMENT_VALIDATION_ERROR', [error.details[0].message]);
 
-    const transaction: ITransaction | any = await this.transaction.create(body).exec();
+    const transaction: ITransaction | any = await this.transaction.create(body);
 
     return transaction;
   }

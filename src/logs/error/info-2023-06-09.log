@@ -7,3 +7,5 @@
     --> starting at object with constructor 'ClientRequest'
     |     property 'socket' -> object with constructor 'TLSSocket'
     --- property '_httpMessage' closes the circle
+2023-06-09 12:04:23 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:05:51 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: this.transaction.create(...).exec is not a function
