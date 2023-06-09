@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Request, Response, response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
@@ -7,9 +7,11 @@ import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
 import { ENCRYPTION_KEY, FLW_SECRET_KEY } from '@/config';
 import axios from 'axios';
+import EmailService from '@/modules/email/email.service';
 
 class WalletController {
   public userService = new UserService();
+  public emailService = new EmailService();
   public walletService = new WalletService();
 
   /*
@@ -241,7 +243,33 @@ class WalletController {
         },
       });
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'WALLET_REQUEST_SUCCESSFUL', data: response.data.data });
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { status, transaction_id, tx_ref } = req.body;
+      if (status === 'successful') {
+        const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
+        const response = await flw.Transaction.verify({ id: transaction_id });
+        if (response.data.status === 'successful' && response.data.amount === transactionDetails.amount && response.data.currency === 'NGN') {
+          // Success! Confirm the customer's payment
+          return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+        } else {
+          // Inform the customer their payment was unsuccessful
+        }
+      }
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
     } catch (error) {
       console.log(error);
       next(error);
