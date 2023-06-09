@@ -142,3 +142,27 @@
 2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-06-09 12:25:48 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 info: =================================
+2023-06-09 12:26:19 info: ======= ENV: development =======
+2023-06-09 12:26:19 info: 🚀 App listening on the port 3000
+2023-06-09 12:26:19 info: =================================
+2023-06-09 12:26:19 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:26:19 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-09 12:29:58 info: =================================
+2023-06-09 12:29:58 info: ======= ENV: development =======
+2023-06-09 12:29:58 info: 🚀 App listening on the port 3000
+2023-06-09 12:29:58 info: =================================
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:00 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to email server
+2023-06-09 12:30:01 info: Connected to Database Successfully...
+2023-06-09 12:30:21 error: [POST] /payment/transaction >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-09 12:30:21 info: [0mPOST /payment/transaction [32m200[0m 309.623 ms - 133[0m
