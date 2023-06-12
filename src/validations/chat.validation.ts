@@ -13,7 +13,7 @@ export const messageSchemaValidation = Joi.object({
   milestone: Joi.string().required(),
   content: Joi.string().when('is_file', {
     is: false,
-    then: Joi.string().required(),
+    then: Joi.string().optional(),
     otherwise: Joi.string().allow('').optional(),
   }),
   is_file: Joi.boolean().optional().default(false),
@@ -27,7 +27,7 @@ export const messageSchemaValidation = Joi.object({
         }),
       )
       .min(1)
-      .required(),
+      .optional(),
     otherwise: Joi.array().max(0).required(),
   }),
   createdAt: Joi.date().default(Date.now),

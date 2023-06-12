@@ -279,6 +279,31 @@ class WalletController {
         if (response.data.status === 'successful' && response.data.amount === transactionDetails.amount && response.data.currency === 'NGN') {
           // Success! Confirm the customer's payment
           // return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+          // const job = await this.jobService.getJobByJobId(req.body.job_id);
+          // if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+          // const proposal = await this.bidService.getProposalById(req.body.proposal);
+          // if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+          // const payload = {
+          //   user_id,
+          //   job_id: job._id.toString(),
+          //   client_id: job.user_id.toString(),
+          //   proposal: req.body.proposal,
+          // };
+          // const data = await this.jobService.hireFreelancer(payload);
+          // // update job
+          // await this.jobService.updateJobById(job._id.toString(), {
+          //   status: JobStatus.TAKEN,
+          //   freelancer_id: user_id,
+          //   activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
+          // });
+          // // return user nips
+          // const bidders = await this.bidService.getAllBidders(job._id.toString());
+          // const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
+          // await this.bidService.updateBid(user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
+          // userIds.forEach(async (userId: any) => {
+          //   await this.aboutService.updateAboutById(userId, { nips: +5 });
+          //   await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
+          // });
         } else {
           // Inform the customer their payment was unsuccessful
         }
