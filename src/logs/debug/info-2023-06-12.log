@@ -1,0 +1,27 @@
+2023-06-12 10:55:11 info: =================================
+2023-06-12 10:55:11 info: ======= ENV: development =======
+2023-06-12 10:55:11 info: 🚀 App listening on the port 3000
+2023-06-12 10:55:11 info: =================================
+2023-06-12 10:55:22 info: Connected to email server
+2023-06-12 10:55:29 info: Connected to email server
+2023-06-12 10:55:32 info: Connected to email server
+2023-06-12 10:55:34 info: Connected to email server
+2023-06-12 10:55:43 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-12 10:55:45 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-06-12 10:56:26 info: =================================
+2023-06-12 10:56:26 info: ======= ENV: development =======
+2023-06-12 10:56:26 info: 🚀 App listening on the port 3000
+2023-06-12 10:56:26 info: =================================
+2023-06-12 10:56:35 info: Connected to email server
+2023-06-12 10:56:35 info: Connected to email server
+2023-06-12 10:56:35 info: Connected to email server
+2023-06-12 10:56:36 info: Connected to email server
+2023-06-12 10:56:43 info: Connected to Database Successfully...
+2023-06-12 10:57:01 info: Connected to email server
+2023-06-12 10:57:01 info: Connected to email server
+2023-06-12 10:57:12 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-12 10:57:12 info: [0mPOST /auth/login [32m200[0m 1475.427 ms - 587[0m
+2023-06-12 10:57:16 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-06-12 10:57:16 info: [0mPOST /chat/message [32m200[0m 540.843 ms - 105[0m
+2023-06-12 10:57:18 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-06-12 10:57:18 info: [0mPOST /chat/message [32m200[0m 279.099 ms - 105[0m

@@ -22,13 +22,13 @@ export const messageSchemaValidation = Joi.object({
     then: Joi.array()
       .items(
         Joi.object({
-          name: Joi.string().required(),
-          url: Joi.string().required(),
+          name: Joi.string().optional(),
+          url: Joi.string().optional(),
         }),
       )
       .min(1)
       .optional(),
-    otherwise: Joi.array().max(0).required(),
+    otherwise: Joi.array().max(0).optional(),
   }),
   createdAt: Joi.date().default(Date.now),
 });
