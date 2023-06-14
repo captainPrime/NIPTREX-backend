@@ -5,7 +5,7 @@ export interface IService extends Document {
   user_id: string | Types.ObjectId | any;
   image: string[];
   name: string;
-  level: number;
+  level: string;
   location: string;
   description: string;
   price: string;
@@ -16,7 +16,7 @@ const serviceSchema: Schema<IService> = new Schema(
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     image: [{ type: String, required: true }],
     name: { type: String, required: true },
-    level: { type: Number, required: true },
+    level: { type: String, required: true },
     location: { type: String, required: true },
     description: { type: String, required: true },
     price: { type: String, required: true },

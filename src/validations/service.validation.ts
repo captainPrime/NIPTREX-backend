@@ -3,7 +3,7 @@ import Joi from 'joi';
 export const serviceValidationSchema = Joi.object({
   image: Joi.array().items(Joi.string()).required(),
   name: Joi.string().required(),
-  level: Joi.number().required(),
+  level: Joi.string().required(),
   location: Joi.string().required(),
   description: Joi.string().required(),
   price: Joi.string().required(),
@@ -12,7 +12,7 @@ export const serviceValidationSchema = Joi.object({
 export const serviceUpdateValidationSchema = Joi.object({
   image: Joi.array().items(Joi.string()),
   name: Joi.string(),
-  level: Joi.number(),
+  level: Joi.string(),
   location: Joi.string(),
   description: Joi.string(),
   price: Joi.string(),
