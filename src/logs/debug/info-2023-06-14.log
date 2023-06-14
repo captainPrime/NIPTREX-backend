@@ -103,3 +103,29 @@
 2023-06-14 03:52:04 info: Connected to Database Successfully...
 2023-06-14 03:52:17 info: [0mPOST /payment/callback [32m200[0m 1589.532 ms - 651[0m
 2023-06-14 03:52:30 info: [0mGET /payment/getUserTransaction [32m200[0m 435.826 ms - 651[0m
+2023-06-14 03:53:13 info: =================================
+2023-06-14 03:53:13 info: ======= ENV: development =======
+2023-06-14 03:53:13 info: 🚀 App listening on the port 3000
+2023-06-14 03:53:13 info: =================================
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to email server
+2023-06-14 03:53:16 info: Connected to Database Successfully...
+2023-06-14 03:53:25 info: [0mGET /payment/getUserTransaction [32m200[0m 569.789 ms - 653[0m
+2023-06-14 03:53:40 info: [0mPOST /payment [32m200[0m 1102.442 ms - 163[0m
+2023-06-14 03:55:38 info: =================================
+2023-06-14 03:55:38 info: ======= ENV: development =======
+2023-06-14 03:55:38 info: 🚀 App listening on the port 3000
+2023-06-14 03:55:38 info: =================================
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:40 info: Connected to email server
+2023-06-14 03:55:41 info: Connected to Database Successfully...
+2023-06-14 03:55:53 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-14 03:55:53 info: [0mPOST /payment/callback [32m200[0m 1213.269 ms - 128[0m

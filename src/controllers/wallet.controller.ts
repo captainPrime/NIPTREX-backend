@@ -274,7 +274,7 @@ class WalletController {
   public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { status, transaction_id, tx_ref } = req.body;
-      if (status === 'successful') {
+      if (status === 'successful' || status === 'completed') {
         // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
         const response = await flw.Transaction.verify({ id: transaction_id });
         // console.log('TRANSACTION_DETAILS', transactionDetails);
