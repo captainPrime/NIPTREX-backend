@@ -25,3 +25,18 @@
 2023-06-12 10:57:16 info: [0mPOST /chat/message [32m200[0m 540.843 ms - 105[0m
 2023-06-12 10:57:18 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
 2023-06-12 10:57:18 info: [0mPOST /chat/message [32m200[0m 279.099 ms - 105[0m
+2023-06-12 10:58:02 info: =================================
+2023-06-12 10:58:02 info: ======= ENV: development =======
+2023-06-12 10:58:02 info: 🚀 App listening on the port 3000
+2023-06-12 10:58:02 info: =================================
+2023-06-12 10:58:07 info: Connected to email server
+2023-06-12 10:58:07 info: Connected to email server
+2023-06-12 10:58:07 info: Connected to email server
+2023-06-12 10:58:07 info: Connected to email server
+2023-06-12 10:58:07 info: Connected to email server
+2023-06-12 10:58:08 info: Connected to email server
+2023-06-12 10:58:35 info: Connected to Database Successfully...
+2023-06-12 10:58:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-12 10:58:43 info: [0mPOST /auth/login [32m200[0m 3174.429 ms - 587[0m
+2023-06-12 10:58:48 info: [0mPOST /chat/message [32m200[0m 1425.076 ms - 274[0m
+2023-06-12 10:58:57 info: [0mPOST /chat/message [32m200[0m 731.608 ms - 391[0m
