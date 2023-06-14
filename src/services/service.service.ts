@@ -1,4 +1,5 @@
 import { IService, ServiceModel } from '@/models/service.models';
+import { serviceValidationSchema } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
@@ -13,6 +14,10 @@ class ServiceService {
   */
   public async createService(body: IService): Promise<IService> {
     if (isEmpty(body)) throw new HttpException(400, 2005, 'All required fields cannot be empty');
+
+    const { error } = serviceValidationSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'SERVICE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: IService = await this.service.create(body);
 

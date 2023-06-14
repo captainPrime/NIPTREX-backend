@@ -12,7 +12,7 @@ class ServiceController {
   */
   public createService = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const serviceData: IService = req.body;
+      const serviceData: any = req.body;
       const user_id: any = req.user.id;
 
       const data: any = await this.serviceService.createService({ ...serviceData, user_id });
