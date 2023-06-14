@@ -47,6 +47,23 @@ class ServiceController {
   */
   public getServiceByUserId = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const id: string = req.params.id;
+
+      const data: IService[] | null = await this.serviceService.getServiceByUserId(id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Service
+  |--------------------------------------------------------------------------
+  */
+  public getUserService = async (req: Request, res: Response, next: NextFunction) => {
+    try {
       const id: string = req.user.id;
 
       const data: IService[] | null = await this.serviceService.getServiceByUserId(id);

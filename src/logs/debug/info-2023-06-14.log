@@ -538,3 +538,33 @@
 2023-06-14 05:43:13 info: Connected to email server
 2023-06-14 05:43:13 info: Connected to email server
 2023-06-14 05:43:13 info: Connected to Database Successfully...
+2023-06-14 05:47:50 info: =================================
+2023-06-14 05:47:50 info: ======= ENV: development =======
+2023-06-14 05:47:50 info: 🚀 App listening on the port 3000
+2023-06-14 05:47:50 info: =================================
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to email server
+2023-06-14 05:47:52 info: Connected to Database Successfully...
+2023-06-14 05:49:23 info: [0mGET /users/profile [32m200[0m 444.338 ms - 625[0m
+2023-06-14 05:49:32 error: [GET] /getServiceByUserId/647dce3a5fab941b6eff394e >> StatusCode:: 404, Message:: The requested path /getServiceByUserId/647dce3a5fab941b6eff394e not found!
+2023-06-14 05:49:32 info: [0mGET /getServiceByUserId/647dce3a5fab941b6eff394e [32m200[0m 30.061 ms - 132[0m
+2023-06-14 05:49:43 info: [0mGET /service/getServiceByUserId/647dce3a5fab941b6eff394e [32m200[0m 421.087 ms - 321[0m
+2023-06-14 05:51:58 info: =================================
+2023-06-14 05:51:58 info: ======= ENV: development =======
+2023-06-14 05:51:58 info: 🚀 App listening on the port 3000
+2023-06-14 05:51:58 info: =================================
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:00 info: Connected to email server
+2023-06-14 05:52:01 info: Connected to Database Successfully...
+2023-06-14 05:52:04 error: [GET] /service/getUserService >> StatusCode:: 404, Message:: The requested path /service/getUserService not found!
+2023-06-14 05:52:04 info: [0mGET /service/getUserService [32m200[0m 33.374 ms - 111[0m

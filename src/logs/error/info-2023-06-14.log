@@ -26,3 +26,5 @@
 2023-06-14 05:40:31 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-06-14 05:40:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-14 05:40:46 error: [POST] /service >> StatusCode:: 400, Message:: Service validation failed: user_id: Path `user_id` is required.
+2023-06-14 05:49:32 error: [GET] /getServiceByUserId/647dce3a5fab941b6eff394e >> StatusCode:: 404, Message:: The requested path /getServiceByUserId/647dce3a5fab941b6eff394e not found!
+2023-06-14 05:52:04 error: [GET] /service/getUserService >> StatusCode:: 404, Message:: The requested path /service/getUserService not found!
