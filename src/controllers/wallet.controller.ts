@@ -328,34 +328,41 @@ class WalletController {
           };
 
           const transaction = await this.walletService.createTransaction(transactionData);
-          // this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
-          const payload = {
-            user_id: proposal.user_id,
-            job_id: job._id.toString(),
-            client_id: job.user_id.toString(),
-            proposal: proposal.id,
+          const emailPayload = {
+            proposalId: proposal.id,
+            jobTitle: job.job_title,
           };
+          this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
-          const data = await this.jobService.hireFreelancer(payload);
+          if (job.status === JobStatus.ACTIVE) {
+            const payload = {
+              user_id: proposal.user_id,
+              job_id: job._id.toString(),
+              client_id: job.user_id.toString(),
+              proposal: proposal.id,
+            };
 
-          // update job
-          await this.jobService.updateJobById(job._id.toString(), {
-            status: JobStatus.TAKEN,
-            freelancer_id: proposal.user_id,
-            activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
-          });
-          // return user nips
-          const bidders = await this.bidService.getAllBidders(job._id.toString());
-          const userIds = bidders
-            .filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id)
-            .map((bidder: any) => bidder.user_id.toString());
+            const data = await this.jobService.hireFreelancer(payload);
 
-          await this.bidService.updateBid(proposal.user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
+            // update job
+            await this.jobService.updateJobById(job._id.toString(), {
+              status: JobStatus.TAKEN,
+              freelancer_id: proposal.user_id,
+              activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
+            });
+            // return user nips
+            const bidders = await this.bidService.getAllBidders(job._id.toString());
+            const userIds = bidders
+              .filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id)
+              .map((bidder: any) => bidder.user_id.toString());
 
-          userIds.forEach(async (userId: any) => {
-            await this.aboutService.updateAboutById(userId, { nips: +5 });
-            await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
-          });
+            await this.bidService.updateBid(proposal.user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
+
+            userIds.forEach(async (userId: any) => {
+              await this.aboutService.updateAboutById(userId, { nips: +5 });
+              await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
+            });
+          }
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
         } else {
