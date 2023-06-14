@@ -293,7 +293,7 @@ class WalletController {
 
           const transactionData: any = {
             user_id: user.id,
-            proposal_id: user.id,
+            proposal_id: response.data.meta?.consumer_mac,
             tx_ref: response.data.tx_ref,
             flw_ref: response.data.flw_ref,
             amount: response.data.amount,

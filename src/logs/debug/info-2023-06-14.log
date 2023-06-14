@@ -228,3 +228,18 @@
 2023-06-14 04:14:28 info: [0mGET /job/getAllJobs [32m200[0m 232.587 ms - -[0m
 2023-06-14 04:14:41 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 899.759 ms - -[0m
 2023-06-14 04:14:52 info: [0mPOST /payment [32m200[0m 1289.094 ms - 163[0m
+2023-06-14 04:15:43 info: [0mPOST /payment/callback [32m200[0m 1327.189 ms - 555[0m
+2023-06-14 04:16:43 info: =================================
+2023-06-14 04:16:43 info: ======= ENV: development =======
+2023-06-14 04:16:43 info: 🚀 App listening on the port 3000
+2023-06-14 04:16:43 info: =================================
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:45 info: Connected to email server
+2023-06-14 04:16:47 info: Connected to Database Successfully...
+2023-06-14 04:16:52 info: [0mPOST /payment/callback [32m200[0m 1467.549 ms - 555[0m
+2023-06-14 04:17:01 info: [0mGET /payment/getUserTransaction [32m200[0m 468.136 ms - -[0m
