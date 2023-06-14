@@ -333,6 +333,7 @@ class WalletController {
             proposalId: proposal.id,
             jobTitle: job.job_title,
           };
+
           this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
           if (job.status === JobStatus.ACTIVE) {
