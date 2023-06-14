@@ -1,0 +1,27 @@
+2023-06-14 03:29:05 info: =================================
+2023-06-14 03:29:05 info: ======= ENV: development =======
+2023-06-14 03:29:05 info: 🚀 App listening on the port 3000
+2023-06-14 03:29:05 info: =================================
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to email server
+2023-06-14 03:29:07 info: Connected to Database Successfully...
+2023-06-14 03:29:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-14 03:29:21 info: [0mPOST /auth/login [32m200[0m 544.561 ms - 587[0m
+2023-06-14 03:29:27 info: [0mPOST /payment [32m200[0m 1063.168 ms - 163[0m
+2023-06-14 03:32:45 error: [POST] /payment/callback >> StatusCode:: 400, Message:: flutterwave_1.flw.Transaction.find is not a function
+2023-06-14 03:32:45 info: [0mPOST /payment/callback [32m200[0m 11.276 ms - 109[0m
+2023-06-14 03:34:04 info: =================================
+2023-06-14 03:34:04 info: ======= ENV: development =======
+2023-06-14 03:34:04 info: 🚀 App listening on the port 3000
+2023-06-14 03:34:04 info: =================================
+2023-06-14 03:34:05 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to email server
+2023-06-14 03:34:06 info: Connected to Database Successfully...

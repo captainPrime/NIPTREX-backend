@@ -274,11 +274,39 @@ class WalletController {
     try {
       const { status, transaction_id, tx_ref } = req.body;
       if (status === 'successful') {
-        const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
+        // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
         const response = await flw.Transaction.verify({ id: transaction_id });
-        if (response.data.status === 'successful' && response.data.amount === transactionDetails.amount && response.data.currency === 'NGN') {
+        // console.log('TRANSACTION_DETAILS', transactionDetails);
+        console.log('TRANSACTION_VERIFY', response);
+        if (response.data.status === 'successful') {
           // Success! Confirm the customer's payment
-          // return this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+          const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
+
+          const transactionData: any = {
+            user_id: user.id,
+            proposal_id: response.data.tx_ref,
+            tx_ref: response.data.tx_ref,
+            flw_ref: response.data.flw_ref,
+            amount: response.data.amount,
+            currency: response.data.currency,
+            status: response.data.status,
+            payment_type: response.data.payment_type,
+            created_at: new Date(response.data.created_at),
+            customer_id: response.data.customer?.id,
+            customer_name: response.data.customer?.name,
+            customer_email: response.data.customer?.email,
+            nuban: response.data.account?.nuban,
+            bank: response.data.account?.bank,
+            card_first_6digits: response.data.card?.first_6digits,
+            card_last_4digits: response.data.card?.last_4digits,
+            card_issuer: response.data.card?.issuer,
+            card_country: response.data.card?.country,
+            card_type: response.data.card?.type,
+            card_expiry: response.data.card?.expiry,
+          };
+
+          const transaction = await this.walletService.createTransaction(transactionData);
+          // this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
           // const job = await this.jobService.getJobByJobId(req.body.job_id);
           // if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
           // const proposal = await this.bidService.getProposalById(req.body.proposal);
@@ -304,12 +332,12 @@ class WalletController {
           //   await this.aboutService.updateAboutById(userId, { nips: +5 });
           //   await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
           // });
+
+          res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
         } else {
-          // Inform the customer their payment was unsuccessful
+          res.status(200).json({ status: 400, response_code: 6000, message: 'PAYMENT_REQUEST_ERROR', data: [] });
         }
       }
-
-      // res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: response.data.data });
     } catch (error) {
       console.log(error);
       next(error);
