@@ -10,10 +10,16 @@ import axios from 'axios';
 import EmailService from '@/modules/email/email.service';
 import mongoose from 'mongoose';
 import BidService from '@/services/bid.service';
+import JobService from '@/services/job.service';
+import { JobStatus } from '@/interfaces/job.inteface';
+import { BiddingStatus } from '@/models/bid.model';
+import AboutService from '@/services/about.service';
 
 class WalletController {
   public bidService = new BidService();
+  public jobService = new JobService();
   public userService = new UserService();
+  public aboutService = new AboutService();
   public emailService = new EmailService();
   public walletService = new WalletService();
 
@@ -291,6 +297,12 @@ class WalletController {
           // Success! Confirm the customer's payment
           const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
 
+          const proposal = await this.bidService.getBidById(response.data.meta?.consumer_mac);
+          if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
+          const job = await this.jobService.getJobByJobId(proposal.job_id);
+          if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
+
           const transactionData: any = {
             user_id: user.id,
             proposal_id: response.data.meta?.consumer_mac,
@@ -317,31 +329,33 @@ class WalletController {
 
           const transaction = await this.walletService.createTransaction(transactionData);
           // this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
-          // const job = await this.jobService.getJobByJobId(req.body.job_id);
-          // if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
-          // const proposal = await this.bidService.getProposalById(req.body.proposal);
-          // if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
-          // const payload = {
-          //   user_id,
-          //   job_id: job._id.toString(),
-          //   client_id: job.user_id.toString(),
-          //   proposal: req.body.proposal,
-          // };
-          // const data = await this.jobService.hireFreelancer(payload);
-          // // update job
-          // await this.jobService.updateJobById(job._id.toString(), {
-          //   status: JobStatus.TAKEN,
-          //   freelancer_id: user_id,
-          //   activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
-          // });
-          // // return user nips
-          // const bidders = await this.bidService.getAllBidders(job._id.toString());
-          // const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== user_id).map((bidder: any) => bidder.user_id.toString());
-          // await this.bidService.updateBid(user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
-          // userIds.forEach(async (userId: any) => {
-          //   await this.aboutService.updateAboutById(userId, { nips: +5 });
-          //   await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
-          // });
+          const payload = {
+            user_id: proposal.user_id,
+            job_id: job._id.toString(),
+            client_id: job.user_id.toString(),
+            proposal: proposal.id,
+          };
+
+          const data = await this.jobService.hireFreelancer(payload);
+
+          // update job
+          await this.jobService.updateJobById(job._id.toString(), {
+            status: JobStatus.TAKEN,
+            freelancer_id: proposal.user_id,
+            activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
+          });
+          // return user nips
+          const bidders = await this.bidService.getAllBidders(job._id.toString());
+          const userIds = bidders
+            .filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id)
+            .map((bidder: any) => bidder.user_id.toString());
+
+          await this.bidService.updateBid(proposal.user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
+
+          userIds.forEach(async (userId: any) => {
+            await this.aboutService.updateAboutById(userId, { nips: +5 });
+            await this.bidService.updateBid(userId, job._id.toString(), { status: BiddingStatus.CLOSED });
+          });
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
         } else {
