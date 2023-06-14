@@ -495,3 +495,34 @@
 2023-06-14 05:08:59 info: Connected to Database Successfully...
 2023-06-14 05:09:09 error: [POST] /payment >> StatusCode:: 400, Message:: AMOUNT_LESS_THAN_PROPOSAL_AMOUNT
 2023-06-14 05:09:09 info: [0mPOST /payment [32m200[0m 572.042 ms - 90[0m
+2023-06-14 05:39:30 info: =================================
+2023-06-14 05:39:30 info: ======= ENV: development =======
+2023-06-14 05:39:30 info: 🚀 App listening on the port 3000
+2023-06-14 05:39:30 info: =================================
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:32 info: Connected to email server
+2023-06-14 05:39:33 info: Connected to email server
+2023-06-14 05:39:33 info: Connected to Database Successfully...
+2023-06-14 05:40:31 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-06-14 05:40:31 info: [0mPOST /service [32m200[0m 275.693 ms - 75[0m
+2023-06-14 05:40:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-14 05:40:42 info: [0mPOST /auth/login [32m200[0m 522.433 ms - 587[0m
+2023-06-14 05:40:46 error: [POST] /service >> StatusCode:: 400, Message:: Service validation failed: user_id: Path `user_id` is required.
+2023-06-14 05:40:46 info: [0mPOST /service [32m200[0m 235.728 ms - 120[0m
+2023-06-14 05:41:53 info: =================================
+2023-06-14 05:41:53 info: ======= ENV: development =======
+2023-06-14 05:41:53 info: 🚀 App listening on the port 3000
+2023-06-14 05:41:53 info: =================================
+2023-06-14 05:41:55 info: Connected to email server
+2023-06-14 05:41:55 info: Connected to email server
+2023-06-14 05:41:55 info: Connected to email server
+2023-06-14 05:41:55 info: Connected to email server
+2023-06-14 05:41:55 info: Connected to email server
+2023-06-14 05:41:56 info: Connected to email server
+2023-06-14 05:41:56 info: Connected to email server
+2023-06-14 05:41:56 info: Connected to Database Successfully...
+2023-06-14 05:42:01 info: [0mPOST /service [32m200[0m 532.483 ms - 319[0m
