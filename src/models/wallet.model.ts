@@ -72,13 +72,13 @@ const transactionSchema: Schema<ITransaction> = new Schema(
     nuban: {
       type: String,
       required: function (this: ITransaction) {
-        return this.payment_type === 'bank';
+        return this.payment_type === 'bank_transfer';
       },
     },
     bank: {
       type: String,
       required: function (this: ITransaction) {
-        return this.payment_type === 'bank';
+        return this.payment_type === 'bank_transfer';
       },
     },
     card_first_6digits: {
