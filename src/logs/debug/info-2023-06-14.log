@@ -142,3 +142,16 @@
 2023-06-14 03:57:50 info: Connected to Database Successfully...
 2023-06-14 03:57:57 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-14 03:57:57 info: [0mPOST /payment/callback [32m200[0m 1152.156 ms - 105[0m
+2023-06-14 03:59:56 info: =================================
+2023-06-14 03:59:56 info: ======= ENV: development =======
+2023-06-14 03:59:56 info: 🚀 App listening on the port 3000
+2023-06-14 03:59:56 info: =================================
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:58 info: Connected to email server
+2023-06-14 03:59:59 info: Connected to Database Successfully...
+2023-06-14 04:00:13 info: [0mPOST /payment/callback [32m200[0m 2831.087 ms - 555[0m
+2023-06-14 04:00:29 info: [0mGET /payment/getUserTransaction [32m200[0m 667.981 ms - -[0m

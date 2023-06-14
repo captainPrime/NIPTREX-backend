@@ -30,6 +30,7 @@ export const transactionValidationSchema = Joi.object({
   customer_email: Joi.string().email().required(),
   nuban: Joi.string().when('payment_type', { is: 'bank_transfer', then: Joi.required().empty().allow('') }),
   bank: Joi.string().when('payment_type', { is: 'bank_transfer', then: Joi.required().empty().allow('') }),
+  bank_name: Joi.string().when('payment_type', { is: 'bank_transfer', then: Joi.required().empty().allow('') }),
   card_first_6digits: Joi.string().when('payment_type', { is: 'card', then: Joi.required().empty().allow('') }),
   card_last_4digits: Joi.string().when('payment_type', { is: 'card', then: Joi.required().empty().allow('') }),
   card_issuer: Joi.string().when('payment_type', { is: 'card', then: Joi.required().empty().allow('') }),

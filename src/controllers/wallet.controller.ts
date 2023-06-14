@@ -236,7 +236,7 @@ class WalletController {
   */
   public makePayment = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { amount, currency } = req.body;
+      const { amount, currency, proposal_id } = req.body;
       const paymentData = {
         tx_ref: generateUUID(),
         amount,
@@ -244,7 +244,7 @@ class WalletController {
         redirect_url: 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
         meta: {
           consumer_id: req.user.id,
-          consumer_mac: generateTripleDESKey(),
+          consumer_mac: proposal_id,
         },
         customer: {
           email: req.user.email,
