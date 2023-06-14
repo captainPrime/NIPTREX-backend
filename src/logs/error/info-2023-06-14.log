@@ -22,3 +22,4 @@
 2023-06-14 04:57:08 error: [GET] /client/dashboard >> StatusCode:: 404, Message:: The requested path /client/dashboard not found!
 2023-06-14 04:57:09 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
 2023-06-14 04:57:32 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-14 05:09:09 error: [POST] /payment >> StatusCode:: 400, Message:: AMOUNT_LESS_THAN_PROPOSAL_AMOUNT

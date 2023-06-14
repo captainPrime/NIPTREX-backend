@@ -475,3 +475,23 @@
 2023-06-14 05:01:36 info: =================================
 2023-06-14 05:01:38 info: Connected to email server
 2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:38 info: Connected to email server
+2023-06-14 05:01:39 info: Connected to Database Successfully...
+2023-06-14 05:08:56 info: =================================
+2023-06-14 05:08:56 info: ======= ENV: development =======
+2023-06-14 05:08:56 info: 🚀 App listening on the port 3000
+2023-06-14 05:08:56 info: =================================
+2023-06-14 05:08:58 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to email server
+2023-06-14 05:08:59 info: Connected to Database Successfully...
+2023-06-14 05:09:09 error: [POST] /payment >> StatusCode:: 400, Message:: AMOUNT_LESS_THAN_PROPOSAL_AMOUNT
+2023-06-14 05:09:09 info: [0mPOST /payment [32m200[0m 572.042 ms - 90[0m
