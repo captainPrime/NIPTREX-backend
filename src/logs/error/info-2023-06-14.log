@@ -9,3 +9,11 @@
 2023-06-14 03:57:57 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-14 04:14:13 error: [POST] /payment >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce395fab9416eff394c" (type string) at path "_id" for model "Bidding"
 2023-06-14 04:14:18 error: [POST] /payment >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-06-14 04:35:46 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:37:30 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:38:19 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:39:36 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:40:25 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:41:14 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:43:22 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty
+2023-06-14 04:44:51 error: [POST] /payment/callback >> StatusCode:: 400, Message:: id can not be empty

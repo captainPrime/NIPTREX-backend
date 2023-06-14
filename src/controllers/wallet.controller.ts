@@ -297,7 +297,7 @@ class WalletController {
           // Success! Confirm the customer's payment
           const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
 
-          const proposal = await this.bidService.getBidById(response.data.meta?.consumer_mac);
+          const proposal = await this.bidService.getBidById(response.data.meta.consumer_mac.toString());
           if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
           const job = await this.jobService.getJobByJobId(proposal.job_id);

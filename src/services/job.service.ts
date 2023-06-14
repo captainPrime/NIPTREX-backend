@@ -247,7 +247,7 @@ class JobService {
   |--------------------------------------------------------------------------
   */
   public async getJobByJobId(id: string): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'job id can not be empty');
 
     const data = await this.job.findOne({ _id: id });
 
