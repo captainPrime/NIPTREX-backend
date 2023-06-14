@@ -1,5 +1,5 @@
 import { IService, ServiceModel } from '@/models/service.models';
-import { serviceValidationSchema } from '@/validations/service.validation';
+import { serviceUpdateValidationSchema, serviceValidationSchema } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
