@@ -285,9 +285,9 @@ class WalletController {
 
           const transactionData: any = {
             user_id: user.id,
-            proposal_id: new mongoose.Types.ObjectId(user.id),
-            tx_ref: new mongoose.Types.ObjectId(response.data.tx_ref),
-            flw_ref: new mongoose.Types.ObjectId(response.data.flw_ref),
+            proposal_id: user.id,
+            tx_ref: response.data.tx_ref,
+            flw_ref: response.data.flw_ref,
             amount: response.data.amount,
             currency: response.data.currency,
             status: response.data.status,

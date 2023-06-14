@@ -64,3 +64,42 @@
 2023-06-14 03:48:30 info: Connected to Database Successfully...
 2023-06-14 03:48:35 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
 2023-06-14 03:48:35 info: [0mPOST /payment/callback [32m200[0m 1231.273 ms - 151[0m
+2023-06-14 03:49:35 info: =================================
+2023-06-14 03:49:35 info: ======= ENV: development =======
+2023-06-14 03:49:35 info: 🚀 App listening on the port 3000
+2023-06-14 03:49:35 info: =================================
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:37 info: Connected to email server
+2023-06-14 03:49:47 info: Connected to Database Successfully...
+2023-06-14 03:49:54 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-14 03:49:54 info: [0mPOST /payment/callback [32m200[0m 1160.254 ms - 151[0m
+2023-06-14 03:51:05 info: =================================
+2023-06-14 03:51:05 info: ======= ENV: development =======
+2023-06-14 03:51:05 info: 🚀 App listening on the port 3000
+2023-06-14 03:51:05 info: =================================
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:07 info: Connected to email server
+2023-06-14 03:51:17 info: Connected to Database Successfully...
+2023-06-14 03:51:22 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-14 03:51:22 info: [0mPOST /payment/callback [32m200[0m 1190.668 ms - 116[0m
+2023-06-14 03:52:01 info: =================================
+2023-06-14 03:52:01 info: ======= ENV: development =======
+2023-06-14 03:52:01 info: 🚀 App listening on the port 3000
+2023-06-14 03:52:01 info: =================================
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:03 info: Connected to email server
+2023-06-14 03:52:04 info: Connected to Database Successfully...
+2023-06-14 03:52:17 info: [0mPOST /payment/callback [32m200[0m 1589.532 ms - 651[0m
+2023-06-14 03:52:30 info: [0mGET /payment/getUserTransaction [32m200[0m 435.826 ms - 651[0m

@@ -3,3 +3,5 @@
 2023-06-14 03:44:49 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Transaction validation failed: proposal_id: Cast to ObjectId failed for value "5f5d7974-1ac0-4718-b419-378ac245584f" (type string) at path "proposal_id" because of "BSONTypeError"
 2023-06-14 03:45:54 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Transaction validation failed: proposal_id: Cast to ObjectId failed for value "5f5d7974-1ac0-4718-b419-378ac245584f" (type string) at path "proposal_id" because of "BSONTypeError"
 2023-06-14 03:48:35 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-14 03:49:54 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-14 03:51:22 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
