@@ -380,3 +380,31 @@
 2023-06-14 04:45:41 info: Connected to email server
 2023-06-14 04:45:41 info: Connected to email server
 2023-06-14 04:45:42 info: Connected to Database Successfully...
+2023-06-14 04:45:52 error: [POST] /payment/callback >> StatusCode:: 400, Message:: job id can not be empty
+2023-06-14 04:45:52 info: [0mPOST /payment/callback [32m200[0m 1357.590 ms - 81[0m
+2023-06-14 04:46:41 info: =================================
+2023-06-14 04:46:41 info: ======= ENV: development =======
+2023-06-14 04:46:41 info: 🚀 App listening on the port 3000
+2023-06-14 04:46:41 info: =================================
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to email server
+2023-06-14 04:46:43 info: Connected to Database Successfully...
+2023-06-14 04:46:49 error: [POST] /payment/callback >> StatusCode:: 400, Message:: job id can not be empty
+2023-06-14 04:46:49 info: [0mPOST /payment/callback [32m200[0m 1680.136 ms - 81[0m
+2023-06-14 04:47:29 info: =================================
+2023-06-14 04:47:29 info: ======= ENV: development =======
+2023-06-14 04:47:29 info: 🚀 App listening on the port 3000
+2023-06-14 04:47:29 info: =================================
+2023-06-14 04:47:30 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to email server
+2023-06-14 04:47:31 info: Connected to Database Successfully...

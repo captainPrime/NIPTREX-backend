@@ -300,7 +300,8 @@ class WalletController {
           const proposal = await this.bidService.getBidById(response.data.meta.consumer_mac.toString());
           if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
-          const job = await this.jobService.getJobByJobId(proposal.job_id);
+          console.log('PROPOSAL', proposal);
+          const job = await this.jobService.getJobByJobId(proposal.job_id.toString());
           if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
           const transactionData: any = {
