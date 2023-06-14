@@ -568,3 +568,33 @@
 2023-06-14 05:52:01 info: Connected to Database Successfully...
 2023-06-14 05:52:04 error: [GET] /service/getUserService >> StatusCode:: 404, Message:: The requested path /service/getUserService not found!
 2023-06-14 05:52:04 info: [0mGET /service/getUserService [32m200[0m 33.374 ms - 111[0m
+2023-06-14 05:52:40 info: =================================
+2023-06-14 05:52:40 info: ======= ENV: development =======
+2023-06-14 05:52:40 info: 🚀 App listening on the port 3000
+2023-06-14 05:52:40 info: =================================
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:42 info: Connected to email server
+2023-06-14 05:52:48 info: Connected to Database Successfully...
+2023-06-14 05:52:54 info: [0mGET /service/getUserService [32m200[0m 516.959 ms - 321[0m
+2023-06-14 05:53:41 info: [0mGET /service/getServiceById/648945191faa5a73986b357e [32m200[0m 465.215 ms - 319[0m
+2023-06-14 05:54:11 info: =================================
+2023-06-14 05:54:11 info: ======= ENV: development =======
+2023-06-14 05:54:11 info: 🚀 App listening on the port 3000
+2023-06-14 05:54:11 info: =================================
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to email server
+2023-06-14 05:54:13 info: Connected to Database Successfully...
+2023-06-14 05:54:26 info: [0mGET /service [32m200[0m 491.319 ms - 321[0m
+2023-06-14 05:55:15 error: [GET] /service/updateServiceById/648945191faa5a73986b357e >> StatusCode:: 404, Message:: The requested path /service/updateServiceById/648945191faa5a73986b357e not found!
+2023-06-14 05:55:15 info: [0mGET /service/updateServiceById/648945191faa5a73986b357e [32m200[0m 4.524 ms - 139[0m
+2023-06-14 05:55:27 info: [0mPUT /service/updateServiceById/648945191faa5a73986b357e [32m200[0m 691.992 ms - 327[0m
