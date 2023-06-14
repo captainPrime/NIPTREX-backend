@@ -9,8 +9,10 @@ import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
 import axios from 'axios';
 import EmailService from '@/modules/email/email.service';
 import mongoose from 'mongoose';
+import BidService from '@/services/bid.service';
 
 class WalletController {
+  public bidService = new BidService();
   public userService = new UserService();
   public emailService = new EmailService();
   public walletService = new WalletService();
@@ -237,6 +239,12 @@ class WalletController {
   public makePayment = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { amount, currency, proposal_id } = req.body;
+
+      const data = await this.bidService.getBidById(proposal_id);
+      if (!data) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
+      console.log(data);
+
       const paymentData = {
         tx_ref: generateUUID(),
         amount,

@@ -7,3 +7,5 @@
 2023-06-14 03:51:22 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-14 03:55:53 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-14 03:57:57 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-14 04:14:13 error: [POST] /payment >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce395fab9416eff394c" (type string) at path "_id" for model "Bidding"
+2023-06-14 04:14:18 error: [POST] /payment >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND

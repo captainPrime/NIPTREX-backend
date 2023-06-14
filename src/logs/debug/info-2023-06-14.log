@@ -155,3 +155,76 @@
 2023-06-14 03:59:59 info: Connected to Database Successfully...
 2023-06-14 04:00:13 info: [0mPOST /payment/callback [32m200[0m 2831.087 ms - 555[0m
 2023-06-14 04:00:29 info: [0mGET /payment/getUserTransaction [32m200[0m 667.981 ms - -[0m
+2023-06-14 04:03:42 info: =================================
+2023-06-14 04:03:42 info: ======= ENV: development =======
+2023-06-14 04:03:42 info: 🚀 App listening on the port 3000
+2023-06-14 04:03:42 info: =================================
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to email server
+2023-06-14 04:03:44 info: Connected to Database Successfully...
+2023-06-14 04:03:57 info: [0mPOST /payment [32m200[0m 1533.560 ms - 163[0m
+2023-06-14 04:04:18 info: =================================
+2023-06-14 04:04:18 info: ======= ENV: development =======
+2023-06-14 04:04:18 info: 🚀 App listening on the port 3000
+2023-06-14 04:04:18 info: =================================
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:20 info: Connected to email server
+2023-06-14 04:04:26 info: Connected to Database Successfully...
+2023-06-14 04:04:37 info: [0mPOST /payment [32m200[0m 1571.705 ms - 163[0m
+2023-06-14 04:04:44 info: [0mPOST /payment [32m200[0m 1165.285 ms - 163[0m
+2023-06-14 04:05:30 info: =================================
+2023-06-14 04:05:30 info: ======= ENV: development =======
+2023-06-14 04:05:30 info: 🚀 App listening on the port 3000
+2023-06-14 04:05:30 info: =================================
+2023-06-14 04:05:32 info: Connected to email server
+2023-06-14 04:05:32 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to email server
+2023-06-14 04:05:33 info: Connected to Database Successfully...
+2023-06-14 04:05:46 info: [0mPOST /payment [32m200[0m 1418.241 ms - 163[0m
+2023-06-14 04:12:09 info: =================================
+2023-06-14 04:12:09 info: ======= ENV: development =======
+2023-06-14 04:12:09 info: 🚀 App listening on the port 3000
+2023-06-14 04:12:09 info: =================================
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:13 info: Connected to Database Successfully...
+2023-06-14 04:12:13 info: Connected to email server
+2023-06-14 04:12:19 info: [0mPOST /payment [32m200[0m 2255.071 ms - 163[0m
+2023-06-14 04:13:09 info: [0mPOST /payment [32m200[0m 1126.683 ms - 163[0m
+2023-06-14 04:14:04 info: =================================
+2023-06-14 04:14:04 info: ======= ENV: development =======
+2023-06-14 04:14:04 info: 🚀 App listening on the port 3000
+2023-06-14 04:14:04 info: =================================
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:06 info: Connected to email server
+2023-06-14 04:14:07 info: Connected to Database Successfully...
+2023-06-14 04:14:13 error: [POST] /payment >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "647dce395fab9416eff394c" (type string) at path "_id" for model "Bidding"
+2023-06-14 04:14:13 info: [0mPOST /payment [32m200[0m 294.401 ms - 170[0m
+2023-06-14 04:14:18 error: [POST] /payment >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-06-14 04:14:18 info: [0mPOST /payment [32m200[0m 457.843 ms - 76[0m
+2023-06-14 04:14:28 info: [0mGET /job/getAllJobs [32m200[0m 232.587 ms - -[0m
+2023-06-14 04:14:41 info: [0mGET /bid/proposals/647dce4c5fab941b6eff3957 [32m200[0m 899.759 ms - -[0m
+2023-06-14 04:14:52 info: [0mPOST /payment [32m200[0m 1289.094 ms - 163[0m
