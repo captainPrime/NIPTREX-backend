@@ -8,3 +8,12 @@ export const serviceValidationSchema = Joi.object({
   description: Joi.string().required(),
   price: Joi.string().required(),
 });
+
+export const serviceUpdateValidationSchema = Joi.object({
+  image: Joi.array().items(Joi.string()),
+  name: Joi.string(),
+  level: Joi.number(),
+  location: Joi.string(),
+  description: Joi.string(),
+  price: Joi.string(),
+}).min(1);
