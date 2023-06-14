@@ -47,6 +47,7 @@ export interface ITransaction extends Document {
   customer_email: string;
   nuban?: string;
   bank?: string;
+  bank_name?: string;
   card_first_6digits?: string;
   card_last_4digits?: string;
   card_issuer?: string;
@@ -76,6 +77,12 @@ const transactionSchema: Schema<ITransaction> = new Schema(
       },
     },
     bank: {
+      type: String,
+      required: function (this: ITransaction) {
+        return this.payment_type === 'bank_transfer';
+      },
+    },
+    bank_name: {
       type: String,
       required: function (this: ITransaction) {
         return this.payment_type === 'bank_transfer';

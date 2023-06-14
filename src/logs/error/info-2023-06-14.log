@@ -6,3 +6,4 @@
 2023-06-14 03:49:54 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
 2023-06-14 03:51:22 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
 2023-06-14 03:55:53 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-06-14 03:57:57 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
