@@ -9,6 +9,7 @@ import ErrorMiddleware from '@middlewares/error.middleware';
 import ProfileRoute from './routes/profile.route';
 import BidRoute from './routes/bid.route';
 import WalletRoute from './routes/wallet.route';
+import ServiceRoute from './routes/service.route';
 
 validateEnv();
 
@@ -21,6 +22,7 @@ const app = new App([
   new BidRoute(),
   new ChatRoute(),
   new WalletRoute(),
+  new ServiceRoute(),
 ]);
 
 app.listen();
