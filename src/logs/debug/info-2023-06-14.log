@@ -25,3 +25,42 @@
 2023-06-14 03:34:06 info: Connected to email server
 2023-06-14 03:34:06 info: Connected to email server
 2023-06-14 03:34:06 info: Connected to Database Successfully...
+2023-06-14 03:44:23 info: =================================
+2023-06-14 03:44:23 info: ======= ENV: development =======
+2023-06-14 03:44:23 info: 🚀 App listening on the port 3000
+2023-06-14 03:44:23 info: =================================
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:25 info: Connected to email server
+2023-06-14 03:44:36 info: Connected to Database Successfully...
+2023-06-14 03:44:49 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Transaction validation failed: proposal_id: Cast to ObjectId failed for value "5f5d7974-1ac0-4718-b419-378ac245584f" (type string) at path "proposal_id" because of "BSONTypeError"
+2023-06-14 03:44:49 info: [0mPOST /payment/callback [32m200[0m 1323.365 ms - 242[0m
+2023-06-14 03:45:42 info: =================================
+2023-06-14 03:45:42 info: ======= ENV: development =======
+2023-06-14 03:45:42 info: 🚀 App listening on the port 3000
+2023-06-14 03:45:42 info: =================================
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to email server
+2023-06-14 03:45:44 info: Connected to Database Successfully...
+2023-06-14 03:45:54 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Transaction validation failed: proposal_id: Cast to ObjectId failed for value "5f5d7974-1ac0-4718-b419-378ac245584f" (type string) at path "proposal_id" because of "BSONTypeError"
+2023-06-14 03:45:54 info: [0mPOST /payment/callback [32m200[0m 1420.857 ms - 242[0m
+2023-06-14 03:48:27 info: =================================
+2023-06-14 03:48:27 info: ======= ENV: development =======
+2023-06-14 03:48:27 info: 🚀 App listening on the port 3000
+2023-06-14 03:48:27 info: =================================
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:29 info: Connected to email server
+2023-06-14 03:48:30 info: Connected to Database Successfully...
+2023-06-14 03:48:35 error: [POST] /payment/callback >> StatusCode:: 400, Message:: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+2023-06-14 03:48:35 info: [0mPOST /payment/callback [32m200[0m 1231.273 ms - 151[0m

@@ -8,6 +8,7 @@ import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
 import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
 import axios from 'axios';
 import EmailService from '@/modules/email/email.service';
+import mongoose from 'mongoose';
 
 class WalletController {
   public userService = new UserService();
@@ -284,9 +285,9 @@ class WalletController {
 
           const transactionData: any = {
             user_id: user.id,
-            proposal_id: response.data.tx_ref,
-            tx_ref: response.data.tx_ref,
-            flw_ref: response.data.flw_ref,
+            proposal_id: new mongoose.Types.ObjectId(user.id),
+            tx_ref: new mongoose.Types.ObjectId(response.data.tx_ref),
+            flw_ref: new mongoose.Types.ObjectId(response.data.flw_ref),
             amount: response.data.amount,
             currency: response.data.currency,
             status: response.data.status,
