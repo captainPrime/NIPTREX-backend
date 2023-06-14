@@ -255,7 +255,7 @@ class WalletController {
         tx_ref: generateUUID(),
         amount,
         currency,
-        redirect_url: 'https://webhook.site/9d0b00ba-9a69-44fa-a43d-a82c33c36fdc',
+        redirect_url: 'http://localhost:3000/client/dashboard',
         meta: {
           consumer_id: req.user.id,
           consumer_mac: proposal_id,

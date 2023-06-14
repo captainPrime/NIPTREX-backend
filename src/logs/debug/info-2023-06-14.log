@@ -422,3 +422,16 @@
 2023-06-14 04:49:41 info: Connected to email server
 2023-06-14 04:49:42 info: Connected to Database Successfully...
 2023-06-14 04:49:50 info: [0mPOST /payment/callback [32m200[0m 2053.465 ms - 555[0m
+2023-06-14 04:53:16 info: =================================
+2023-06-14 04:53:16 info: ======= ENV: development =======
+2023-06-14 04:53:16 info: 🚀 App listening on the port 3000
+2023-06-14 04:53:16 info: =================================
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:19 info: Connected to email server
+2023-06-14 04:53:29 info: Connected to Database Successfully...
+2023-06-14 04:53:36 info: [0mPOST /payment/callback [32m200[0m 1958.382 ms - 555[0m
