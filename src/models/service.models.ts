@@ -28,4 +28,4 @@ serviceSchema.plugin(toJSON);
 
 export type IUpdateService = Partial<IService>;
 
-export const TransactionModel = model<IService>('Service', serviceSchema);
+export const ServiceModel = model<IService>('Service', serviceSchema);
