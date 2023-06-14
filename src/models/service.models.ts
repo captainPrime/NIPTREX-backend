@@ -2,7 +2,7 @@ import { Schema, Document, model, Types } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
 
 export interface IService extends Document {
-  user_id: Types.ObjectId | any;
+  user_id: string | Types.ObjectId | any;
   image: string[];
   name: string;
   level: number;

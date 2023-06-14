@@ -13,8 +13,9 @@ class ServiceController {
   public createService = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const serviceData: IService = req.body;
+      const user_id: any = req.user.id;
 
-      const data: IService = await this.serviceService.createService({ ...serviceData, user_id: req.user.id });
+      const data: any = await this.serviceService.createService({ ...serviceData, user_id });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
