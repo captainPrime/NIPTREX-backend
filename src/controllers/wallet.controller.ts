@@ -1,14 +1,13 @@
-import { NextFunction, Request, Response, response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import WalletService from '@/services/wallet.service';
 import { IUpdateWallet, IWallet } from '@/models/wallet.model';
 import { flw } from '@/modules/flutterwave';
 import { generateTripleDESKey, generateUUID } from '@/utils/matchPercentage';
-import { ENCRYPTION_KEY, FLW_SECRET_HASH, FLW_SECRET_KEY } from '@/config';
+import { ENCRYPTION_KEY, FLW_SECRET_KEY } from '@/config';
 import axios from 'axios';
 import EmailService from '@/modules/email/email.service';
-import mongoose from 'mongoose';
 import BidService from '@/services/bid.service';
 import JobService from '@/services/job.service';
 import { JobStatus } from '@/interfaces/job.inteface';
@@ -289,7 +288,7 @@ class WalletController {
   */
   public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { status, transaction_id, tx_ref } = req.body;
+      const { status, transaction_id } = req.body;
       if (status === 'successful' || status === 'completed') {
         // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
         const response = await flw.Transaction.verify({ id: transaction_id });
