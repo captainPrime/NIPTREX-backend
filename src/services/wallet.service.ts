@@ -28,7 +28,7 @@ class WalletService {
   public async getTransactionByUserId(userId: string): Promise<ITransaction | null> {
     if (isEmpty(userId)) throw new HttpException(400, 6002, 'User ID cannot be empty');
 
-    const transaction: ITransaction | null = await this.transaction.findOne({ user_id: userId });
+    const transaction: ITransaction | null = await this.transaction.find({ user_id: userId });
 
     return transaction;
   }
