@@ -23,7 +23,7 @@ export const transactionValidationSchema = Joi.object({
   amount: Joi.number().required(),
   currency: Joi.string().required(),
   status: Joi.string().required(),
-  payment_type: Joi.string().valid('bank_transfer', 'card').required(),
+  payment_type: Joi.string().valid('bank_transfer', 'card', 'account', 'ussd').required(),
   created_at: Joi.date().required(),
   customer_id: Joi.number().required(),
   customer_name: Joi.string().required(),
