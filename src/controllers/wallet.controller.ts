@@ -350,7 +350,7 @@ class WalletController {
             // update job
             await this.jobService.updateJobById(job._id.toString(), {
               status: JobStatus.TAKEN,
-              freelancer_id: proposal.user_id,
+              freelancer_id: proposal.user_id.toString(),
               activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
             });
             // return user nips
