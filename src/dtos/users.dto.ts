@@ -26,6 +26,10 @@ export class CreateUserDto {
   @MaxLength(32)
   public phone_number?: string;
 
+  @IsOptional()
+  @IsString()
+  public profile_picture?: string;
+
   @IsString()
   public user!: string;
 
