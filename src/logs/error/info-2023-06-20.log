@@ -1,0 +1,1 @@
+2023-06-20 17:54:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

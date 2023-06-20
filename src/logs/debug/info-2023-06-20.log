@@ -1,0 +1,28 @@
+2023-06-20 17:53:29 info: =================================
+2023-06-20 17:53:29 info: ======= ENV: development =======
+2023-06-20 17:53:29 info: 🚀 App listening on the port 3000
+2023-06-20 17:53:29 info: =================================
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:32 info: Connected to email server
+2023-06-20 17:53:33 info: Connected to email server
+2023-06-20 17:53:34 info: Connected to Database Successfully...
+2023-06-20 17:54:05 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-20 17:54:05 info: [0mPOST /auth/login [32m200[0m 659.907 ms - 587[0m
+2023-06-20 17:54:38 info: [0mGET /job/technicalTools [32m200[0m 5.493 ms - -[0m
+2023-06-20 17:55:15 info: =================================
+2023-06-20 17:55:15 info: ======= ENV: development =======
+2023-06-20 17:55:15 info: 🚀 App listening on the port 3000
+2023-06-20 17:55:15 info: =================================
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:17 info: Connected to email server
+2023-06-20 17:55:18 info: Connected to email server
+2023-06-20 17:55:23 info: Connected to Database Successfully...
+2023-06-20 17:55:27 info: [0mGET /job/technicalTools [32m200[0m 7.493 ms - 313[0m

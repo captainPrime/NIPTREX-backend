@@ -261,3 +261,26 @@ export const softSkills = [
   'Integrity',
   'Work ethic',
 ];
+
+export const technicalTools = [
+  'Git',
+  'Visual Studio Code',
+  'Postman',
+  'Docker',
+  'Selenium',
+  'Jenkins',
+  'Kubernetes',
+  'Wireshark',
+  'Fiddler',
+  'Apache Kafka',
+  'Elasticsearch',
+  'Kibana',
+  'Grafana',
+  'Prometheus',
+  'Nagios',
+  'Ansible',
+  'Terraform',
+  'Pulumi',
+  'AWS CLI',
+  'Google Cloud SDK',
+];
