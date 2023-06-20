@@ -345,7 +345,7 @@ class WalletController {
               proposal: proposal.id,
             };
 
-            const data = await this.jobService.hireFreelancer(payload);
+            await this.jobService.hireFreelancer(payload);
 
             // update job
             await this.jobService.updateJobById(job._id.toString(), {
