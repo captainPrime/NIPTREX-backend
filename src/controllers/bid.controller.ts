@@ -38,7 +38,7 @@ class BidController {
         throw new HttpException(400, 1005, 'PROFILE_NOT_COMPLETED');
       }
 
-      if (about.nips < userData.bidding_amount) throw new HttpException(400, 4002, 'INSUFFICIENT_NIPS_TO_BID');
+      if (about.nips < userData.bidding_amount) throw new HttpException(400, 4003, 'INSUFFICIENT_NIPS_TO_BID');
 
       const data = await this.bidService.bidJob({ ...userData, user_id: user.id, job_id: id });
       await this.aboutService.updateAboutById(user.id, { nips: about.nips - userData.bidding_amount });
