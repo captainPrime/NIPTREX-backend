@@ -39,3 +39,29 @@
 2023-06-22 03:32:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-22 03:32:10 info: [0mPOST /auth/login [32m200[0m 539.835 ms - 587[0m
 2023-06-22 03:32:13 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 688.685 ms - 221[0m
+2023-06-22 03:36:23 info: =================================
+2023-06-22 03:36:23 info: ======= ENV: development =======
+2023-06-22 03:36:23 info: 🚀 App listening on the port 3000
+2023-06-22 03:36:23 info: =================================
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:25 info: Connected to email server
+2023-06-22 03:36:35 info: Connected to Database Successfully...
+2023-06-22 03:37:15 info: [0mGET /job/getAllJobs [32m200[0m 247.482 ms - -[0m
+2023-06-22 03:41:12 info: =================================
+2023-06-22 03:41:12 info: ======= ENV: development =======
+2023-06-22 03:41:12 info: 🚀 App listening on the port 3000
+2023-06-22 03:41:12 info: =================================
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:15 info: Connected to email server
+2023-06-22 03:41:16 info: Connected to Database Successfully...
+2023-06-22 03:41:24 info: [0mGET /job/getAllJobs [32m200[0m 467.601 ms - -[0m
