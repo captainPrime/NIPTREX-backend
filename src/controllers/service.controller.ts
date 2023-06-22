@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import ServiceService from '@/services/service.service';
 import { IService } from '@/models/service.models';
+import { HttpException } from '@/exceptions/HttpException';
 
 class ServiceController {
   public serviceService = new ServiceService();
@@ -119,6 +120,32 @@ class ServiceController {
       const data: IService = await this.serviceService.deleteService(id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Freelancer
+  |--------------------------------------------------------------------------
+  */
+  public hireFreelancerService = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const user_id: string = req.params.id;
+
+      const service = await this.serviceService.getServiceById(req.body.service);
+      if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
+
+      const payload = {
+        user_id,
+        service: service._id.toString(),
+        client: req.user.id,
+      };
+
+      const data = await this.serviceService.hireFreelancerService(payload);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }

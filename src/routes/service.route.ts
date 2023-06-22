@@ -21,6 +21,7 @@ class ServiceRoute implements Routes {
     this.router.get(`${this.path}`, authMiddleware(['freelancer', 'client']), this.serviceController.getAllServices);
     this.router.put(`${this.path}/updateServiceById/:id`, authMiddleware(['freelancer']), this.serviceController.updateServiceById);
     this.router.delete(`${this.path}/deleteService/:id`, authMiddleware(['freelancer']), this.serviceController.deleteService);
+    this.router.post(`${this.path}/hireFreelancerService/:id`, authMiddleware(['client']), this.serviceController.hireFreelancerService);
   }
 }
 

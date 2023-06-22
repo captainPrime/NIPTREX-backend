@@ -1,4 +1,4 @@
-import { IService, ServiceModel } from '@/models/service.models';
+import { HireServiceModel, IService, ServiceModel } from '@/models/service.models';
 import { serviceUpdateValidationSchema, serviceValidationSchema } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 
 class ServiceService {
   public service: any = ServiceModel;
+  public hireService: any = HireServiceModel;
 
   /*
   |--------------------------------------------------------------------------
@@ -98,6 +99,17 @@ class ServiceService {
     const data: IService | null = await this.service.findByIdAndDelete(id);
     if (!data) throw new HttpException(400, 2009, 'SERVICE_REQUEST_ERROR');
 
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Service
+  |--------------------------------------------------------------------------
+  */
+  public async hireFreelancerService(payload: any): Promise<any> {
+    if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
+    const data = await this.hireService.create(payload);
     return data;
   }
 }
