@@ -145,7 +145,7 @@ class ServiceController {
 
       const data = await this.serviceService.hireFreelancerService(payload);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }

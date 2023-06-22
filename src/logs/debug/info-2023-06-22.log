@@ -18,3 +18,24 @@
 2023-06-22 03:02:13 info: [0mGET /service/getServiceByUserId [32m200[0m 4.302 ms - 115[0m
 2023-06-22 03:02:53 info: [0mPUT /service/updateServiceById/6493ab72d916a3719ee18e38 [32m200[0m 702.128 ms - 574[0m
 2023-06-22 03:03:02 info: [0mGET /service/getUserService [32m200[0m 434.040 ms - 576[0m
+2023-06-22 03:26:48 info: =================================
+2023-06-22 03:26:48 info: ======= ENV: development =======
+2023-06-22 03:26:48 info: 🚀 App listening on the port 3000
+2023-06-22 03:26:48 info: =================================
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to email server
+2023-06-22 03:26:50 info: Connected to Database Successfully...
+2023-06-22 03:31:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-22 03:31:26 info: [0mPOST /auth/login [32m200[0m 595.647 ms - 587[0m
+2023-06-22 03:31:34 error: [GET] /service/getServiceByUserId/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-06-22 03:31:34 info: [0mGET /service/getServiceByUserId/647dce3a5fab941b6eff394e [32m200[0m 262.924 ms - 75[0m
+2023-06-22 03:31:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-22 03:31:40 info: [0mPOST /auth/login [32m200[0m 731.187 ms - 587[0m
+2023-06-22 03:32:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-22 03:32:10 info: [0mPOST /auth/login [32m200[0m 539.835 ms - 587[0m
+2023-06-22 03:32:13 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 688.685 ms - 221[0m
