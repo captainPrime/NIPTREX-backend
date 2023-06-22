@@ -1,0 +1,2 @@
+2023-06-22 03:01:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-22 03:02:13 error: [GET] /service/getServiceByUserId >> StatusCode:: 404, Message:: The requested path /service/getServiceByUserId not found!
