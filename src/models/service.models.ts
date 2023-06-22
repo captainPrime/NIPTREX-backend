@@ -59,7 +59,7 @@ const serviceSchema: Schema<IService> = new Schema(
 const HireServiceSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    service: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
+    service: { type: Schema.Types.ObjectId, ref: 'Service', required: true },
     client: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   },
   {
