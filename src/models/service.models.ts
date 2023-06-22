@@ -56,8 +56,23 @@ const serviceSchema: Schema<IService> = new Schema(
   { versionKey: false },
 );
 
+const HireServiceSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    service: { type: Schema.Types.ObjectId, ref: 'Job', required: true },
+    client: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
 serviceSchema.plugin(toJSON);
+HireServiceSchema.plugin(toJSON);
 
 export type IUpdateService = Partial<IService>;
 
-export const ServiceModel = model<IService>('Service', serviceSchema);
+const ServiceModel = model<IService>('Service', serviceSchema);
+const HireServiceModel = model<any>('HireService', HireServiceSchema);
+
+export { ServiceModel, HireServiceModel };
