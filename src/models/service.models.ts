@@ -8,6 +8,7 @@ export interface IService extends Document {
   description: string;
   projects: string[];
   services: string[];
+  tools: string[];
   price: {
     basic: {
       rate: string;
@@ -35,6 +36,7 @@ const serviceSchema: Schema<IService> = new Schema(
     description: { type: String, required: true },
     projects: [{ type: String, required: true }],
     services: [{ type: String, required: false }],
+    tools: [{ type: String, required: false }],
     price: {
       basic: {
         rate: { type: String },
