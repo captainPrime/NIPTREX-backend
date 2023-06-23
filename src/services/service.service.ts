@@ -79,7 +79,16 @@ class ServiceService {
     const data: IService | null = await this.service.findOne({ _id: id });
     if (!data) throw new HttpException(400, 2002, 'SERVICE_NOT_FOUND');
 
-    const updatedData: IService | null = await this.service.findByIdAndUpdate(id, body, {
+    const updatedPayload = {
+      ...data.toObject(),
+      price: {
+        ...data.price,
+        ...body.price,
+      },
+      ...body,
+    };
+
+    const updatedData: IService | null = await this.service.findByIdAndUpdate(id, updatedPayload, {
       new: true,
     });
 
