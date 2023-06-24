@@ -12,6 +12,7 @@ export const serviceValidationSchema = Joi.object({
     }),
   ),
   services: Joi.array().items(Joi.string().optional()),
+  category: Joi.array().items(Joi.string().optional()),
   tools: Joi.array().items(Joi.string().optional()),
   price: Joi.object({
     basic: Joi.object({
@@ -43,6 +44,7 @@ export const serviceUpdateValidationSchema = Joi.object({
     }),
   ),
   services: Joi.array().items(Joi.string().optional()),
+  category: Joi.array().items(Joi.string().optional()),
   tools: Joi.array().items(Joi.string().optional()),
   price: Joi.object({
     basic: Joi.object({
