@@ -31,7 +31,14 @@ class ServiceService {
   |--------------------------------------------------------------------------
   */
   public async getAllService(): Promise<IService[]> {
-    const data: IService[] = await this.service.paginage({});
+    // const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
+    // const filter = {
+    //   jobs_tags: { $in: regexTags },
+    //   ...otherQuery,
+    // };
+
+    // const data = await this.job.paginate(filter, options);
+    const data: IService[] = await this.service.find({});
 
     return data;
   }
