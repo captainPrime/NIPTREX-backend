@@ -2,6 +2,7 @@
 import { BiddingModel } from '@/models/bid.model';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
+import { ServiceModel } from '@/models/service.models';
 import User from '@/models/users.model';
 import { NextFunction, Request, Response } from 'express';
 
@@ -18,6 +19,7 @@ class IndexController {
   public experience: any = Experience;
   public preference: any = Preference;
   public certification: any = Certification;
+  public service: any = ServiceModel;
 
   public index = (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -46,6 +48,7 @@ class IndexController {
       await this.saveJob.deleteMany({});
       await this.bid.deleteMany({});
       await this.hire.deleteMany({});
+      await this.service.deleteMany({});
 
       const user = {
         first_name: 'John',
