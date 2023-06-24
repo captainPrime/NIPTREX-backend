@@ -31,7 +31,7 @@ class ServiceService {
   |--------------------------------------------------------------------------
   */
   public async getAllService(): Promise<IService[]> {
-    const data: IService[] = await this.service.find({});
+    const data: IService[] = await this.service.paginage({});
 
     return data;
   }

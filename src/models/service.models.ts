@@ -1,5 +1,6 @@
 import { Schema, Document, model, Types } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
+import { paginate } from '@/modules/paginate';
 
 interface IServiceProject {
   name: string;
@@ -74,6 +75,7 @@ const HireServiceSchema: Schema = new Schema(
 );
 
 serviceSchema.plugin(toJSON);
+serviceSchema.plugin(paginate);
 HireServiceSchema.plugin(toJSON);
 
 export type IUpdateService = Partial<IService>;
