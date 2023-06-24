@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import ServiceService from '@/services/service.service';
 import { IService } from '@/models/service.models';
 import { HttpException } from '@/exceptions/HttpException';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class ServiceController {
   public serviceService = new ServiceService();
@@ -82,7 +83,14 @@ class ServiceController {
   */
   public getAllServices = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const data: IService[] | null = await this.serviceService.getAllService();
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'date_posted:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
+
+      const data: any[] | null = await this.serviceService.getAllService(req.query, options);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

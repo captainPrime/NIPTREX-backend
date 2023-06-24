@@ -1,3 +1,4 @@
+import { PaginationOptions } from '@/interfaces/job.inteface';
 import { HireServiceModel, IService, ServiceModel } from '@/models/service.models';
 import { serviceUpdateValidationSchema, serviceValidationSchema } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
@@ -30,15 +31,8 @@ class ServiceService {
   | Get All Service
   |--------------------------------------------------------------------------
   */
-  public async getAllService(): Promise<IService[]> {
-    // const regexTags = query.map((tag: string | RegExp) => new RegExp(tag, 'i'));
-    // const filter = {
-    //   jobs_tags: { $in: regexTags },
-    //   ...otherQuery,
-    // };
-
-    // const data = await this.job.paginate(filter, options);
-    const data: IService[] = await this.service.find({});
+  public async getAllService(filter: any, options: PaginationOptions): Promise<any[]> {
+    const data = await this.service.paginate(filter, options);
 
     return data;
   }

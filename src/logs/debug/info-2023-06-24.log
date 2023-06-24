@@ -27,3 +27,16 @@
 2023-06-24 15:41:22 info: [0mPOST /service [32m200[0m 523.979 ms - 736[0m
 2023-06-24 15:41:43 info: [0mGET /service [32m200[0m 1503.091 ms - -[0m
 2023-06-24 15:42:16 info: [0mGET /service?tools=Tool%201 [32m200[0m 469.599 ms - -[0m
+2023-06-24 15:54:01 info: =================================
+2023-06-24 15:54:01 info: ======= ENV: development =======
+2023-06-24 15:54:01 info: 🚀 App listening on the port 3000
+2023-06-24 15:54:01 info: =================================
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:03 info: Connected to email server
+2023-06-24 15:54:09 info: Connected to Database Successfully...
+2023-06-24 15:54:21 info: [0mGET /service?tools=Tool%201 [32m200[0m 752.622 ms - 829[0m
