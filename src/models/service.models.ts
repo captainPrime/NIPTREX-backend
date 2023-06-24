@@ -1,30 +1,29 @@
 import { Schema, Document, model, Types } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
 
+interface IServiceProject {
+  name: string;
+  url: string;
+}
+
+interface IServicePrice {
+  rate: number;
+  duration: number;
+  services: string[];
+}
+
 export interface IService extends Document {
-  user_id: string | Types.ObjectId | any;
+  user_id: Schema.Types.ObjectId;
   title: string;
   headline: string;
   description: string;
-  projects: string[];
+  projects: IServiceProject[];
   services: string[];
   tools: string[];
   price: {
-    basic: {
-      rate: string;
-      duration: string;
-      services: string[];
-    };
-    standard: {
-      rate: string;
-      duration: string;
-      services: string[];
-    };
-    premium: {
-      rate: string;
-      duration: string;
-      services: string[];
-    };
+    basic: IServicePrice;
+    standard: IServicePrice;
+    premium: IServicePrice;
   };
 }
 
@@ -34,23 +33,28 @@ const serviceSchema: Schema<IService> = new Schema(
     title: { type: String, required: true },
     headline: { type: String, required: true },
     description: { type: String, required: true },
-    projects: [{ type: String, required: true }],
+    projects: [
+      {
+        name: { type: String },
+        url: { type: String },
+      },
+    ],
     services: [{ type: String, required: false }],
     tools: [{ type: String, required: false }],
     price: {
       basic: {
-        rate: { type: String },
-        duration: { type: String },
+        rate: { type: Number },
+        duration: { type: Number },
         services: [{ type: String }],
       },
       standard: {
-        rate: { type: String },
-        duration: { type: String },
+        rate: { type: Number },
+        duration: { type: Number },
         services: [{ type: String }],
       },
       premium: {
-        rate: { type: String },
-        duration: { type: String },
+        rate: { type: Number },
+        duration: { type: Number },
         services: [{ type: String }],
       },
     },
