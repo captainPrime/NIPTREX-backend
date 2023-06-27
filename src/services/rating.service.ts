@@ -3,7 +3,7 @@ import { isEmpty } from '@utils/util';
 import { HttpException } from '@exceptions/HttpException';
 import { IRating, RatingModel } from '@/models/rating.model';
 import { PaginationOptions } from '@/interfaces/job.inteface';
-import ratingValidationSchema from '@/validations/rating.validation';
+import { ratingValidationSchema, ratingUpdateValidationSchema } from '@/validations/rating.validation';
 
 class ServiceService {
   public rating: any = RatingModel;
@@ -71,6 +71,10 @@ class ServiceService {
   */
   public async unRateEntity(id: mongoose.Types.ObjectId | string, body: Partial<IRating>): Promise<IRating> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'ID cannot be empty');
+
+    const { error } = ratingUpdateValidationSchema.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'SERVICE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: IRating | null = await this.rating.findByIdAndDelete(id);
     if (!data) throw new HttpException(400, 2009, 'RATING_REQUEST_ERROR');
