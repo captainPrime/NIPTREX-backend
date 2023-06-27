@@ -5,7 +5,7 @@ import { IRating, RatingModel } from '@/models/rating.model';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { ratingValidationSchema, ratingUpdateValidationSchema } from '@/validations/rating.validation';
 
-class ServiceService {
+class RatingService {
   public rating: any = RatingModel;
 
   /*
@@ -89,4 +89,4 @@ class ServiceService {
   }
 }
 
-export default ServiceService;
+export default RatingService;
