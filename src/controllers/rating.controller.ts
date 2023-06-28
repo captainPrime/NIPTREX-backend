@@ -2,23 +2,25 @@ import { NextFunction, Request, Response } from 'express';
 import { HttpException } from '@/exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import RatingService from '@/services/rating.service';
+import { IRating } from '@/models/rating.model';
 
 class RatingController {
   public ratingService = new RatingService();
 
   /*
   |--------------------------------------------------------------------------
-  | Create Service
+  | Rate Entity
   |--------------------------------------------------------------------------
   */
-  public createService = async (req: Request, res: Response, next: NextFunction) => {
+  public rateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const serviceData: any = req.body;
+      const ratingData: IRating | any = req.body;
       const user_id: any = req.user.id;
+      const entity_id: any = req.params.id;
 
-      const data: any = await this.ratingService.rateEntity({ ...serviceData, user_id });
+      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id });
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -26,16 +28,16 @@ class RatingController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Service by ID
+  | Get Rating by ID
   |--------------------------------------------------------------------------
   */
-  public getServiceById = async (req: Request, res: Response, next: NextFunction) => {
+  public getRatingById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
 
-      const data: IService | null = await this.ratingService.getServiceById(id);
+      const data: IRating | null = await this.ratingService.getRatingById(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
