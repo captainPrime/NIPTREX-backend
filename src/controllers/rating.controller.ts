@@ -63,7 +63,7 @@ class RatingController {
   | Get User Rating
   |--------------------------------------------------------------------------
   */
-  public getUserService = async (req: Request, res: Response, next: NextFunction) => {
+  public getUserRating = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.user.id;
 
