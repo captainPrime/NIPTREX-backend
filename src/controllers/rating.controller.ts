@@ -45,16 +45,16 @@ class RatingController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Service by user ID
+  | Get Rating by user ID
   |--------------------------------------------------------------------------
   */
-  public getServiceByUserId = async (req: Request, res: Response, next: NextFunction) => {
+  public getRatingByUserId = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
 
-      const data: IService[] | null = await this.ratingService.getServiceByUserId(id);
+      const data: IRating[] | null = await this.ratingService.getRatingByUserId(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
