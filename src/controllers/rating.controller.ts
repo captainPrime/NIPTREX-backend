@@ -107,9 +107,9 @@ class RatingController {
   public unRateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const body: Partial<IService> = req.body;
+      const body: Partial<IRating> = req.body;
 
-      const data: IService = await this.serviceService.updateServiceById(id, body);
+      const data: IRating = await this.ratingService.unRateEntity(id, { ...body, rating_value: -1 });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
