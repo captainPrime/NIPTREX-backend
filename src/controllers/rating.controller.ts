@@ -1,8 +1,7 @@
-import { NextFunction, Request, Response } from 'express';
-import { HttpException } from '@/exceptions/HttpException';
-import { PaginationOptions } from '@/interfaces/job.inteface';
-import RatingService from '@/services/rating.service';
 import { IRating } from '@/models/rating.model';
+import RatingService from '@/services/rating.service';
+import { NextFunction, Request, Response } from 'express';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class RatingController {
   public ratingService = new RatingService();
@@ -15,7 +14,7 @@ class RatingController {
   public rateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const ratingData: IRating | any = req.body;
-    //   const user_id: any = req.user.id;
+      //   const user_id: any = req.user.id;
       const entity_id: any = req.params.id;
 
       const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id, rating_value: +1 });
