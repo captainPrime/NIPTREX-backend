@@ -10,6 +10,7 @@ import ProfileRoute from './routes/profile.route';
 import BidRoute from './routes/bid.route';
 import WalletRoute from './routes/wallet.route';
 import ServiceRoute from './routes/service.route';
+import RatingRoute from './routes/rating.route';
 
 validateEnv();
 
@@ -23,6 +24,7 @@ const app = new App([
   new ChatRoute(),
   new WalletRoute(),
   new ServiceRoute(),
+  new RatingRoute(),
 ]);
 
 app.listen();
