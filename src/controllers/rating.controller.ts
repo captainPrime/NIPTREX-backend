@@ -14,7 +14,6 @@ class RatingController {
   public rateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const ratingData: IRating | any = req.body;
-      //   const user_id: any = req.user.id;
       const entity_id: any = req.params.id;
 
       const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id, rating_value: +1 });
