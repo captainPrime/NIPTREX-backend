@@ -15,10 +15,10 @@ class RatingController {
   public rateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const ratingData: IRating | any = req.body;
-      const user_id: any = req.user.id;
+    //   const user_id: any = req.user.id;
       const entity_id: any = req.params.id;
 
-      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id });
+      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id, rating_value: +1 });
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -93,7 +93,7 @@ class RatingController {
 
       const data: any[] | null = await this.ratingService.getAllRating(req.query, options);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -101,7 +101,7 @@ class RatingController {
 
   /*
   |--------------------------------------------------------------------------
-  | Update Service by ID
+  | UnRate Entity
   |--------------------------------------------------------------------------
   */
   public unRateEntity = async (req: Request, res: Response, next: NextFunction) => {
@@ -111,50 +111,7 @@ class RatingController {
 
       const data: IRating = await this.ratingService.unRateEntity(id, { ...body, rating_value: -1 });
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /*
-  |--------------------------------------------------------------------------
-  | Delete Service by ID
-  |--------------------------------------------------------------------------
-  */
-  public deleteService = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const id: string = req.params.id;
-
-      const data: IService = await this.serviceService.deleteService(id);
-
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /*
-  |--------------------------------------------------------------------------
-  | Hire Freelancer
-  |--------------------------------------------------------------------------
-  */
-  public hireFreelancerService = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const user_id: string = req.params.id;
-
-      const service = await this.serviceService.getServiceById(req.body.service);
-      if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
-
-      const payload = {
-        user_id,
-        service: service._id.toString(),
-        client: req.user.id,
-      };
-
-      const data = await this.serviceService.hireFreelancerService(payload);
-
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
