@@ -44,6 +44,7 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
     rating: {
       type: Number,
       required: false,
+      default: 0,
     },
     profile_picture: {
       type: String,

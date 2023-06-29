@@ -124,3 +124,25 @@
 2023-06-29 11:39:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 11:39:24 info: [0mPOST /auth/login [32m200[0m 1096.690 ms - 587[0m
 2023-06-29 11:39:27 info: [0mGET /users/profile [32m200[0m 501.000 ms - 636[0m
+2023-06-29 11:42:01 info: =================================
+2023-06-29 11:42:01 info: ======= ENV: development =======
+2023-06-29 11:42:01 info: 🚀 App listening on the port 3000
+2023-06-29 11:42:01 info: =================================
+2023-06-29 11:42:04 info: Connected to email server
+2023-06-29 11:42:05 info: Connected to email server
+2023-06-29 11:42:06 info: Connected to email server
+2023-06-29 11:42:06 info: Connected to email server
+2023-06-29 11:42:07 info: Connected to email server
+2023-06-29 11:42:09 info: Connected to email server
+2023-06-29 11:42:11 info: Connected to Database Successfully...
+2023-06-29 11:42:34 info: Connected to email server
+2023-06-29 11:42:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:42:34 info: [0mPOST /auth/login [32m200[0m 1220.857 ms - 587[0m
+2023-06-29 11:42:39 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 1159.394 ms - 226[0m
+2023-06-29 11:42:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:42:46 info: [0mPOST /auth/login [32m200[0m 580.136 ms - 587[0m
+2023-06-29 11:42:49 info: [0mGET /users/profile [32m200[0m 550.431 ms - 625[0m
+2023-06-29 11:43:21 info: [0mGET /reload_db [32m200[0m 8529.389 ms - 74[0m
+2023-06-29 11:43:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:43:32 info: [0mPOST /auth/login [32m200[0m 582.204 ms - 587[0m
+2023-06-29 11:43:37 info: [0mGET /users/profile [32m200[0m 965.087 ms - 437[0m
