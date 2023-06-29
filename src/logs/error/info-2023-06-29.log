@@ -5,3 +5,23 @@
 2023-06-29 09:51:19 error: [POST] /rate/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
 2023-06-29 11:31:13 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
 2023-06-29 11:32:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:36:05 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/rating.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-10635328395293175.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-10635328395293175.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-10635328395293175.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-06-29 11:36:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:37:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:38:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:39:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

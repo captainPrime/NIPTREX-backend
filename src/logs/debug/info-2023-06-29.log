@@ -84,3 +84,43 @@
 2023-06-29 11:33:27 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 1340.127 ms - 226[0m
 2023-06-29 11:33:35 info: [0mGET /users/profile [32m200[0m 3434.609 ms - 636[0m
 2023-06-29 11:33:37 info: Connected to email server
+2023-06-29 11:36:28 info: =================================
+2023-06-29 11:36:28 info: ======= ENV: development =======
+2023-06-29 11:36:28 info: 🚀 App listening on the port 3000
+2023-06-29 11:36:28 info: =================================
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:31 info: Connected to email server
+2023-06-29 11:36:34 info: Connected to Database Successfully...
+2023-06-29 11:36:38 info: [0mGET /users/profile [32m200[0m 564.621 ms - 636[0m
+2023-06-29 11:36:41 info: [0mGET /users/profile [32m200[0m 510.981 ms - 636[0m
+2023-06-29 11:36:53 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:36:53 info: [0mPOST /auth/login [32m200[0m 1145.592 ms - 587[0m
+2023-06-29 11:37:01 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 1229.508 ms - 226[0m
+2023-06-29 11:37:04 info: Connected to email server
+2023-06-29 11:37:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:37:08 info: [0mPOST /auth/login [32m200[0m 1564.019 ms - 587[0m
+2023-06-29 11:37:12 info: [0mGET /users/profile [32m200[0m 716.039 ms - 636[0m
+2023-06-29 11:38:18 info: =================================
+2023-06-29 11:38:18 info: ======= ENV: development =======
+2023-06-29 11:38:18 info: 🚀 App listening on the port 3000
+2023-06-29 11:38:18 info: =================================
+2023-06-29 11:38:21 info: Connected to email server
+2023-06-29 11:38:21 info: Connected to email server
+2023-06-29 11:38:21 info: Connected to email server
+2023-06-29 11:38:22 info: Connected to email server
+2023-06-29 11:38:22 info: Connected to email server
+2023-06-29 11:38:23 info: Connected to email server
+2023-06-29 11:38:24 info: Connected to email server
+2023-06-29 11:38:26 info: Connected to Database Successfully...
+2023-06-29 11:38:33 info: [0mGET /users/profile [32m200[0m 531.158 ms - 636[0m
+2023-06-29 11:38:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:38:41 info: [0mPOST /auth/login [32m200[0m 1163.922 ms - 587[0m
+2023-06-29 11:38:48 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 2531.520 ms - 226[0m
+2023-06-29 11:39:17 info: [0mGET /users/profile [32m200[0m 968.811 ms - 563[0m
+2023-06-29 11:39:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:39:24 info: [0mPOST /auth/login [32m200[0m 1096.690 ms - 587[0m
+2023-06-29 11:39:27 info: [0mGET /users/profile [32m200[0m 501.000 ms - 636[0m
