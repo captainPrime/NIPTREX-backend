@@ -14,3 +14,38 @@
 2023-06-29 09:44:55 info: [0mPOST /rate [32m200[0m 9.995 ms - 86[0m
 2023-06-29 09:45:03 error: [POST] /rate >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
 2023-06-29 09:45:03 info: [0mPOST /rate [32m200[0m 634.046 ms - 105[0m
+2023-06-29 09:48:04 info: =================================
+2023-06-29 09:48:04 info: ======= ENV: development =======
+2023-06-29 09:48:04 info: 🚀 App listening on the port 3000
+2023-06-29 09:48:04 info: =================================
+2023-06-29 09:48:07 info: Connected to email server
+2023-06-29 09:48:07 info: Connected to email server
+2023-06-29 09:48:08 info: Connected to email server
+2023-06-29 09:48:08 info: Connected to email server
+2023-06-29 09:48:09 info: Connected to email server
+2023-06-29 09:48:09 info: Connected to email server
+2023-06-29 09:48:09 info: Connected to email server
+2023-06-29 09:48:11 info: Connected to Database Successfully...
+2023-06-29 09:48:15 error: [POST] /rate >> StatusCode:: 404, Message:: The requested path /rate not found!
+2023-06-29 09:48:15 info: [0mPOST /rate [32m200[0m 50.788 ms - 93[0m
+2023-06-29 09:48:43 info: [0mGET /users/profile [32m200[0m 685.303 ms - 625[0m
+2023-06-29 09:49:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 09:49:01 info: [0mPOST /auth/login [32m200[0m 1791.934 ms - 587[0m
+2023-06-29 09:49:06 info: [0mGET /users/profile [32m200[0m 588.872 ms - 552[0m
+2023-06-29 09:49:34 info: [0mPOST /rate/647dce3a5fab941b6eff394e [0m-[0m - ms - -[0m
+2023-06-29 09:49:51 info: =================================
+2023-06-29 09:49:51 info: ======= ENV: development =======
+2023-06-29 09:49:51 info: 🚀 App listening on the port 3000
+2023-06-29 09:49:51 info: =================================
+2023-06-29 09:50:55 info: Connected to Database Successfully...
+2023-06-29 09:51:19 error: [POST] /rate/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-06-29 09:51:19 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 999.767 ms - 110[0m
+2023-06-29 09:51:31 info: Connected to email server
+2023-06-29 09:51:31 info: Connected to email server
+2023-06-29 09:51:31 info: Connected to email server
+2023-06-29 09:51:31 info: Connected to email server
+2023-06-29 09:51:32 info: Connected to email server
+2023-06-29 09:51:34 info: Connected to email server
+2023-06-29 09:51:43 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 1751.016 ms - 226[0m
+2023-06-29 09:53:26 info: Connected to email server
+2023-06-29 10:43:46 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 2668.610 ms - 226[0m

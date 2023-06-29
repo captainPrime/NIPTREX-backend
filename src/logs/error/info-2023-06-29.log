@@ -1,2 +1,5 @@
 2023-06-29 09:44:55 error: [POST] /rate >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
 2023-06-29 09:45:03 error: [POST] /rate >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-06-29 09:48:15 error: [POST] /rate >> StatusCode:: 404, Message:: The requested path /rate not found!
+2023-06-29 09:49:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 09:51:19 error: [POST] /rate/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
