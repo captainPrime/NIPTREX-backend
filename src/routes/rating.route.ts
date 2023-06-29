@@ -14,7 +14,7 @@ class RatingRoute implements Routes {
   }
 
   private initializeRoutes() {
-    this.router.post(`${this.path}`, authMiddleware(['freelancer', 'client']), this.ratingController.rateEntity);
+    this.router.post(`${this.path}/:id`, authMiddleware(['freelancer', 'client']), this.ratingController.rateEntity);
     this.router.get(`${this.path}/getRatingById/:id`, authMiddleware(['freelancer', 'client']), this.ratingController.getRatingById);
     this.router.get(`${this.path}/getRatingByUserId/:id`, authMiddleware(['freelancer', 'client']), this.ratingController.getRatingByUserId);
     this.router.get(`${this.path}/getUserRating`, authMiddleware(['freelancer', 'client']), this.ratingController.getUserRating);

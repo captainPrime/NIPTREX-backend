@@ -14,9 +14,9 @@ class RatingController {
   public rateEntity = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const ratingData: IRating | any = req.body;
-      const entity_id: any = req.params.id;
+      const entity: any = req.params.id;
 
-      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity_id, rating_value: +1 });
+      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
