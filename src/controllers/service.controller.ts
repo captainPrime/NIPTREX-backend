@@ -88,6 +88,7 @@ class ServiceController {
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
+        populate: 'user_id',
       };
 
       const data: any[] | null = await this.serviceService.getAllService(req.query, options);

@@ -393,3 +393,39 @@
 2023-06-29 14:06:48 info: [0mGET /job/getAllJobs [32m200[0m 285.288 ms - -[0m
 2023-06-29 14:07:07 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 3381.920 ms - 225[0m
 2023-06-29 14:07:15 info: [0mGET /job/getAllJobs [32m200[0m 308.937 ms - -[0m
+2023-06-29 14:13:26 info: =================================
+2023-06-29 14:13:26 info: ======= ENV: development =======
+2023-06-29 14:13:26 info: 🚀 App listening on the port 3000
+2023-06-29 14:13:26 info: =================================
+2023-06-29 14:13:29 info: Connected to email server
+2023-06-29 14:13:29 info: Connected to email server
+2023-06-29 14:13:30 info: Connected to email server
+2023-06-29 14:13:30 info: Connected to email server
+2023-06-29 14:13:31 info: Connected to email server
+2023-06-29 14:13:31 info: Connected to email server
+2023-06-29 14:13:32 info: Connected to email server
+2023-06-29 14:13:42 info: Connected to Database Successfully...
+2023-06-29 14:14:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:14:04 info: [0mPOST /auth/login [32m200[0m 730.533 ms - 587[0m
+2023-06-29 14:14:14 info: [0mGET /service?tools=Tool%201 [32m200[0m 3069.211 ms - 175[0m
+2023-06-29 14:14:19 info: [0mGET /service [32m200[0m 1434.956 ms - 175[0m
+2023-06-29 14:14:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:14:24 info: [0mPOST /auth/login [32m200[0m 702.185 ms - 587[0m
+2023-06-29 14:14:28 info: [0mPOST /service [32m200[0m 1316.432 ms - 786[0m
+2023-06-29 14:14:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:14:43 info: [0mPOST /auth/login [32m200[0m 596.386 ms - 587[0m
+2023-06-29 14:14:56 info: [0mGET /service [32m200[0m 5533.615 ms - -[0m
+2023-06-29 14:16:18 info: =================================
+2023-06-29 14:16:18 info: ======= ENV: development =======
+2023-06-29 14:16:18 info: 🚀 App listening on the port 3000
+2023-06-29 14:16:18 info: =================================
+2023-06-29 14:16:21 info: Connected to email server
+2023-06-29 14:16:21 info: Connected to email server
+2023-06-29 14:16:22 info: Connected to email server
+2023-06-29 14:16:22 info: Connected to email server
+2023-06-29 14:16:22 info: Connected to email server
+2023-06-29 14:16:22 info: Connected to email server
+2023-06-29 14:16:37 info: Connected to Database Successfully...
+2023-06-29 14:16:43 info: [0mGET /service [32m200[0m 1277.630 ms - -[0m
+2023-06-29 14:16:49 info: [0mGET /service [32m200[0m 704.852 ms - -[0m
+2023-06-29 14:16:53 info: Connected to email server
