@@ -23,9 +23,6 @@ class RatingController {
 
       const ratings = await this.ratingService.getRatingByUserId(entity);
 
-      console.log('RATINGS', ratings);
-
-      console.log('RATINGS LENGTH', calculateAverageRating(ratings?.length as number));
       await this.userService.updateUser(req.params.id, { rating: ratings?.length });
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
