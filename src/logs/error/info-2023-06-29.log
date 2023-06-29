@@ -48,3 +48,14 @@ src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
 2023-06-29 13:58:02 error: [POST] /rate/649d7f244ef42487f7f97459 >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
 2023-06-29 14:00:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 14:00:11 error: [POST] /job >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-06-29 14:01:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:01:34 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 14:03:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:03:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:03:58 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-06-29 14:04:19 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 14:04:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:05:33 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: YOU_CANT_RATE_YOURSELF
+2023-06-29 14:05:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:06:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:06:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

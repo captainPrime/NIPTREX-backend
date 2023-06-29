@@ -31,11 +31,11 @@ class RatingController {
 
       console.log('RATES', ratings);
 
-      const hasRating = ratings?.some(rating => {
-        return rating.reviewer == req.user.id && rating.entity.toString() == entity;
-      });
+      // const hasRating = ratings?.some(rating => {
+      //   return rating.reviewer == req.user.id && rating.entity.toString() == entity;
+      // });
 
-      if (hasRating) throw new HttpException(400, 8003, 'ENTITY_ALREADY_RATED');
+      // if (hasRating) throw new HttpException(400, 8003, 'ENTITY_ALREADY_RATED');
 
       const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
 

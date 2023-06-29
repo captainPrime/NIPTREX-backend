@@ -335,3 +335,61 @@
 2023-06-29 14:00:06 info: [0mGET /job/getAllJobs [32m200[0m 959.930 ms - 171[0m
 2023-06-29 14:00:11 error: [POST] /job >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
 2023-06-29 14:00:11 info: [0mPOST /job [32m200[0m 1836.462 ms - 102[0m
+2023-06-29 14:01:01 info: =================================
+2023-06-29 14:01:01 info: ======= ENV: development =======
+2023-06-29 14:01:01 info: 🚀 App listening on the port 3000
+2023-06-29 14:01:01 info: =================================
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to Database Successfully...
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:04 info: Connected to email server
+2023-06-29 14:01:13 info: [0mPOST /job [32m200[0m 1846.819 ms - 936[0m
+2023-06-29 14:01:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:01:22 info: [0mPOST /auth/login [32m200[0m 545.682 ms - 587[0m
+2023-06-29 14:01:31 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 1778.818 ms - 225[0m
+2023-06-29 14:01:34 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 14:01:34 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 460.767 ms - 78[0m
+2023-06-29 14:01:52 info: [0mGET /job/getAllJobs [32m200[0m 797.129 ms - -[0m
+2023-06-29 14:02:33 info: [0mGET /job/getAllJobs [32m200[0m 427.669 ms - -[0m
+2023-06-29 14:03:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:03:36 info: [0mPOST /auth/login [32m200[0m 1350.385 ms - 587[0m
+2023-06-29 14:03:40 info: [0mGET /users/profile [32m200[0m 1272.061 ms - 455[0m
+2023-06-29 14:03:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:03:49 info: [0mPOST /auth/login [32m200[0m 557.478 ms - 587[0m
+2023-06-29 14:03:58 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-06-29 14:03:58 info: [0mPOST /rate/649d803f8b814d386d033956 [32m200[0m 3741.431 ms - 71[0m
+2023-06-29 14:04:19 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 14:04:19 info: [0mPOST /rate/649d803f8b814d386d033956 [32m200[0m 6348.030 ms - 78[0m
+2023-06-29 14:04:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:04:32 info: [0mPOST /auth/login [32m200[0m 682.131 ms - 587[0m
+2023-06-29 14:04:38 info: [0mGET /users/profile [32m200[0m 2676.542 ms - 455[0m
+2023-06-29 14:05:16 info: =================================
+2023-06-29 14:05:16 info: ======= ENV: development =======
+2023-06-29 14:05:16 info: 🚀 App listening on the port 3000
+2023-06-29 14:05:16 info: =================================
+2023-06-29 14:05:20 info: Connected to email server
+2023-06-29 14:05:20 info: Connected to email server
+2023-06-29 14:05:20 info: Connected to email server
+2023-06-29 14:05:20 info: Connected to email server
+2023-06-29 14:05:20 info: Connected to Database Successfully...
+2023-06-29 14:05:21 info: Connected to email server
+2023-06-29 14:05:23 info: Connected to email server
+2023-06-29 14:05:33 error: [POST] /rate/649d803f8b814d386d033956 >> StatusCode:: 400, Message:: YOU_CANT_RATE_YOURSELF
+2023-06-29 14:05:33 info: [0mPOST /rate/649d803f8b814d386d033956 [32m200[0m 793.755 ms - 80[0m
+2023-06-29 14:05:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:05:43 info: [0mPOST /auth/login [32m200[0m 2308.754 ms - 587[0m
+2023-06-29 14:05:49 info: Connected to email server
+2023-06-29 14:05:49 info: [0mGET /users/profile [32m200[0m 785.389 ms - 455[0m
+2023-06-29 14:06:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:06:04 info: [0mPOST /auth/login [32m200[0m 1493.599 ms - 587[0m
+2023-06-29 14:06:10 info: [0mPOST /rate/649d803f8b814d386d033956 [32m200[0m 1028.616 ms - 226[0m
+2023-06-29 14:06:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:06:24 info: [0mPOST /auth/login [32m200[0m 1196.754 ms - 587[0m
+2023-06-29 14:06:27 info: [0mGET /users/profile [32m200[0m 692.246 ms - 455[0m
+2023-06-29 14:06:48 info: [0mGET /job/getAllJobs [32m200[0m 285.288 ms - -[0m
+2023-06-29 14:07:07 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 3381.920 ms - 225[0m
+2023-06-29 14:07:15 info: [0mGET /job/getAllJobs [32m200[0m 308.937 ms - -[0m
