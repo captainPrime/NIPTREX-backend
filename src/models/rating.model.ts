@@ -1,5 +1,5 @@
-import { paginate } from '@/modules/paginate';
 import { toJSON } from '@/modules/toJSON';
+import { paginate } from '@/modules/paginate';
 import { Document, Schema, model, Model } from 'mongoose';
 
 export enum EntityName {
