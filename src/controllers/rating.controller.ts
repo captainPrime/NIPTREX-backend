@@ -19,13 +19,11 @@ class RatingController {
       const ratingData: IRating | any = req.body;
       const entity: any = req.params.id;
 
-      const entityData = await this.userService.findUserById(req.user.id);
-
       const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
 
-      const ratings = this.ratingService.getRatingByUserId(entity);
+      const ratings = await this.ratingService.getRatingByUserId(entity);
 
-      entityData.rating = calculateAverageRating(ratings.length);
+      await this.userService.updateUser(req.user.id, rating: ratings?.length);
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {

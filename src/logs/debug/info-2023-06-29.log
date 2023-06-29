@@ -54,3 +54,33 @@
 2023-06-29 11:29:58 info: 🚀 App listening on the port 3000
 2023-06-29 11:29:58 info: =================================
 2023-06-29 11:31:13 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-06-29 11:31:44 info: =================================
+2023-06-29 11:31:44 info: ======= ENV: development =======
+2023-06-29 11:31:44 info: 🚀 App listening on the port 3000
+2023-06-29 11:31:44 info: =================================
+2023-06-29 11:31:49 info: Connected to email server
+2023-06-29 11:31:49 info: Connected to email server
+2023-06-29 11:31:49 info: Connected to email server
+2023-06-29 11:31:49 info: Connected to email server
+2023-06-29 11:31:50 info: Connected to email server
+2023-06-29 11:31:50 info: Connected to email server
+2023-06-29 11:31:51 info: Connected to email server
+2023-06-29 11:32:02 info: Connected to Database Successfully...
+2023-06-29 11:32:08 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 965.920 ms - 226[0m
+2023-06-29 11:32:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 11:32:15 info: [0mPOST /auth/login [32m200[0m 660.737 ms - 587[0m
+2023-06-29 11:32:19 info: [0mGET /users/profile [32m200[0m 460.245 ms - 636[0m
+2023-06-29 11:33:02 info: =================================
+2023-06-29 11:33:02 info: ======= ENV: development =======
+2023-06-29 11:33:02 info: 🚀 App listening on the port 3000
+2023-06-29 11:33:02 info: =================================
+2023-06-29 11:33:05 info: Connected to email server
+2023-06-29 11:33:05 info: Connected to email server
+2023-06-29 11:33:05 info: Connected to email server
+2023-06-29 11:33:05 info: Connected to email server
+2023-06-29 11:33:06 info: Connected to email server
+2023-06-29 11:33:08 info: Connected to email server
+2023-06-29 11:33:18 info: Connected to Database Successfully...
+2023-06-29 11:33:27 info: [0mPOST /rate/647dce3a5fab941b6eff394e [32m200[0m 1340.127 ms - 226[0m
+2023-06-29 11:33:35 info: [0mGET /users/profile [32m200[0m 3434.609 ms - 636[0m
+2023-06-29 11:33:37 info: Connected to email server
