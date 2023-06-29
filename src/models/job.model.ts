@@ -32,7 +32,6 @@ const JobSchema: Schema = new Schema(
       unanswered_invites: { type: Number, default: 0 },
     },
     verified: { type: Boolean, required: true, default: true },
-    rating: { type: String, required: true },
     status: { type: String, enum: Object.values(JobStatus), default: JobStatus.ACTIVE },
     work_location: { type: String, required: true },
     job_type: { type: String, enum: Object.values(WorkOption), required: true },
@@ -42,6 +41,11 @@ const JobSchema: Schema = new Schema(
     project_type: { type: String, required: true },
     soft_skills: [{ type: String }],
     languages: [{ type: String }],
+    rating: {
+      type: Number,
+      required: false,
+      default: 0,
+    },
     date_posted: {
       type: Date,
       default: Date.now,

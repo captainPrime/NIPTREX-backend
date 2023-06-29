@@ -35,7 +35,7 @@ export interface IJob extends Document {
     unanswered_invites?: number;
   };
   verified?: boolean;
-  rating?: string;
+  rating?: number;
   status?: string;
   work_location?: string;
   job_type?: string;
