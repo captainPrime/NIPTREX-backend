@@ -1,10 +1,11 @@
 import Joi from 'joi';
 
 export const ratingValidationSchema = Joi.object({
-  entity_type: Joi.string().required(),
-  entity_id: Joi.string().required(),
+  entity: Joi.string().required(),
+  reviewer: Joi.string().required(),
   rating_value: Joi.number().required().min(0),
-  comment: Joi.string().allow('').optional(),
+  comment: Joi.string().allow(''),
+  entity_name: Joi.string().valid('User', 'Job', 'Service').required(),
 });
 
 export const ratingUpdateValidationSchema = Joi.object({
