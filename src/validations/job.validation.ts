@@ -73,7 +73,7 @@ export const jobSchemaUpdateValidation = Joi.object({
     unanswered_invites: Joi.number().default(0),
   }),
   verified: Joi.boolean().default(true),
-  rating: Joi.string(),
+  rating: Joi.number(),
   status: Joi.string().valid('active', 'inactive', 'taken', 'pending').default('active'),
   work_location: Joi.string(),
   job_type: Joi.string().valid('Remote', 'Hybrid', 'Onsite'),
