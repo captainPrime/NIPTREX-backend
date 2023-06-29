@@ -2,9 +2,12 @@ import { IRating } from '@/models/rating.model';
 import RatingService from '@/services/rating.service';
 import { NextFunction, Request, Response } from 'express';
 import { PaginationOptions } from '@/interfaces/job.inteface';
+import UserService from '@/services/users.service';
+import { calculateAverageRating } from '@/utils/matchPercentage';
 
 class RatingController {
   public ratingService = new RatingService();
+  public userService = new UserService();
 
   /*
   |--------------------------------------------------------------------------
@@ -16,7 +19,13 @@ class RatingController {
       const ratingData: IRating | any = req.body;
       const entity: any = req.params.id;
 
+      const entityData = await this.userService.findUserById(req.user.id);
+
       const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
+
+      const ratings = this.ratingService.getRatingByUserId(entity);
+
+      entityData.rating = calculateAverageRating(ratings.length);
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {

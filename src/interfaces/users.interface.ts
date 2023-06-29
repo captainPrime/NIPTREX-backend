@@ -10,6 +10,7 @@ export interface IUser {
   profile_picture: string;
   password: string;
   user: string;
+  rating: number;
   country: string;
   verified: boolean;
   has_profile: boolean;
