@@ -46,3 +46,10 @@ export const generateTripleDESKey = () => {
 
   return key.toString('hex');
 };
+
+export const calculateAverageRating = (ratingValue: number): number => {
+  const maxScore = 5; // Assuming a 5-star rating system
+  const normalizedRating = (ratingValue / maxScore) * maxScore;
+  const averageRating = Math.round(normalizedRating * 10) / 10; // Round to one decimal place
+  return averageRating;
+};
