@@ -44,3 +44,7 @@ src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
 2023-06-29 13:54:56 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 13:55:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 13:55:42 error: [POST] /rate/649d7f244ef42487f7f97459 >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-06-29 13:56:51 error: [POST] /rate/649d7f244ef42487f7f97459 >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 13:58:02 error: [POST] /rate/649d7f244ef42487f7f97459 >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED
+2023-06-29 14:00:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 14:00:11 error: [POST] /job >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR

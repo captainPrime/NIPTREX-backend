@@ -29,6 +29,8 @@ class RatingController {
 
       const ratings = await this.ratingService.getRatingByUserId(entity);
 
+      console.log('RATES', ratings);
+
       const hasRating = ratings?.some(rating => {
         return rating.reviewer == req.user.id && rating.entity.toString() == entity;
       });
