@@ -1,13 +1,19 @@
+/* eslint-disable security/detect-object-injection */
 import { IRating } from '@/models/rating.model';
 import RatingService from '@/services/rating.service';
 import { NextFunction, Request, Response } from 'express';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import UserService from '@/services/users.service';
 import { calculateAverageRating } from '@/utils/matchPercentage';
+import { HttpException } from '@/exceptions/HttpException';
+import JobService from '@/services/job.service';
+import ServiceService from '@/services/service.service';
 
 class RatingController {
   public ratingService = new RatingService();
   public userService = new UserService();
+  public jobService = new JobService();
+  public serviceService = new ServiceService();
 
   /*
   |--------------------------------------------------------------------------
@@ -19,11 +25,25 @@ class RatingController {
       const ratingData: IRating | any = req.body;
       const entity: any = req.params.id;
 
-      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
+      if (entity == req.user.id) throw new HttpException(400, 8003, 'YOU_CANT_RATE_YOURSELF');
 
       const ratings = await this.ratingService.getRatingByUserId(entity);
 
-      await this.userService.updateUser(req.params.id, { rating: ratings?.length });
+      const hasRating = ratings?.some(rating => {
+        return rating.reviewer == req.user.id && rating.entity.toString() == entity;
+      });
+
+      if (hasRating) throw new HttpException(400, 8003, 'ENTITY_ALREADY_RATED');
+
+      const data: any = await this.ratingService.rateEntity({ ...ratingData, entity, reviewer: req.user.id, rating_value: +1 });
+
+      if (req.body.entity_name === 'User') {
+        await this.userService.updateUser(req.params.id, { rating: ratings?.length });
+      } else if (req.body.entity_name === 'Job') {
+        await this.jobService.updateJobById(req.params.id, { rating: ratings?.length });
+      } else {
+        await this.serviceService.updateServiceById(req.params.id, { rating: ratings?.length });
+      }
 
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {

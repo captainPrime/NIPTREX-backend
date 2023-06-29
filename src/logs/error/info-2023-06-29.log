@@ -37,3 +37,7 @@ src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
 2023-06-29 11:47:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 11:48:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-06-29 11:49:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 12:08:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-06-29 12:10:12 error: [POST] /rate/649d60a4f52b2a785e5d896a >> StatusCode:: 400, Message:: YOU_CANT_RATE_YOURSELF
+2023-06-29 12:13:21 error: Error connecting to Database: MongoNetworkTimeoutError: connection timed out
+2023-06-29 13:39:33 error: [POST] /rate/649d60a4f52b2a785e5d896c >> StatusCode:: 400, Message:: ENTITY_ALREADY_RATED

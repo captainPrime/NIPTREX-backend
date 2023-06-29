@@ -17,7 +17,7 @@ export interface IRating extends Document {
 }
 
 const ratingSchema = new Schema<IRating>({
-  entity: { type: Schema.Types.ObjectId, required: true, refPath: 'entityModel' }, // Updated field with refPath
+  entity: { type: Schema.Types.ObjectId, required: true, refPath: 'entityModel' }, // Updated field with refPath (id of what is rated)
   reviewer: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
   rating_value: { type: Number, required: true, default: 0 },
   comment: { type: String },
