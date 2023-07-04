@@ -71,6 +71,20 @@ const billingSchema: Schema = new Schema(
     per_annum: { type: Number, required: true },
     hourly_rate: { type: Number, required: true }, // Updated to Number type
     payment_method: { type: String, enum: ['USD', 'NGN'], required: true }, // Updated to enum of USD and NGN
+    bank_info: {
+      bank_name: {
+        type: String,
+        required: true,
+      },
+      account_name: {
+        type: String,
+        required: true,
+      },
+      account_number: {
+        type: Number,
+        required: true,
+      },
+    },
   },
   {
     timestamps: true,
