@@ -258,3 +258,23 @@ export const updateResumeValidation = Joi.object({
   name: Joi.string(),
   url: Joi.string(),
 }).min(1);
+
+/*
+|--------------------------------------------------------------------------
+| Bank Validation
+|--------------------------------------------------------------------------
+*/
+export const bankInfoSchemaValidation = Joi.object({
+  user_id: Joi.string().required(),
+  bank_name: Joi.string().required(),
+  account_number: Joi.string().required(),
+  account_name: Joi.string().required(),
+  currency: Joi.string(),
+});
+
+export const bankInfoSchemaUpdateValidation = Joi.object({
+  bank_name: Joi.string(),
+  account_number: Joi.string(),
+  account_name: Joi.string(),
+  currency: Joi.string(),
+}).min(1);
