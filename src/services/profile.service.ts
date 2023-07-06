@@ -4,12 +4,13 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
-import { Experience, Education, Certification, Preference, Identity, Billing, About, Bio } from '@/models/profile.model';
+import { Experience, Education, Certification, Preference, Identity, Billing, About, Bio, BankInfo } from '@/models/profile.model';
 import { IEducationHistory, IExperience, IUpdateEducationHistory, IUpdateExperience } from '@/interfaces/profile.interface';
 
 class ProfileService {
   public bio: any = Bio;
   public about: any = About;
+  public bank: any = BankInfo;
   public billing: any = Billing;
   public identity: any = Identity;
   public education: any = Education;
@@ -33,6 +34,7 @@ class ProfileService {
     }
 
     const bio = await this.bio.findOne({ user_id: userId });
+    const bank = await this.bank.findOne({ user_id: userId });
     const about = await this.about.findOne({ user_id: userId });
     const billing = await this.billing.find({ user_id: userId });
     const identity = await this.identity.find({ user_id: userId });
@@ -77,6 +79,7 @@ class ProfileService {
       certification,
       proof_of_identity: identity[0],
       billing: billing[0],
+      bank: bank,
     };
 
     console.log(about);
