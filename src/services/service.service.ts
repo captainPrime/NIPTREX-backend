@@ -45,7 +45,7 @@ class ServiceService {
   public async getServiceById(id: mongoose.Types.ObjectId | string): Promise<IService> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'ID cannot be empty');
 
-    const data: IService | null = await this.service.findOne({ _id: id });
+    const data: IService | null = await this.service.findOne({ _id: id }).populate('user_id');
     if (!data) throw new HttpException(400, 2002, 'SERVICE_NOT_FOUND');
 
     return data;

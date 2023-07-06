@@ -142,7 +142,7 @@ const aboutSchema: Schema = new Schema(
       last_name: { type: String, required: true },
       email: { type: String, required: true },
       country: { type: String, required: true },
-      profile_picture: { type: String, required: true },
+      profile_picture: { type: String, required: false, default: '' },
       dob: { type: String, required: true },
       role: { type: String, required: true },
       phone_number: { type: String, required: true },

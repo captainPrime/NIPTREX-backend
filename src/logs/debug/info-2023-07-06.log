@@ -1,0 +1,94 @@
+2023-07-06 02:32:15 info: =================================
+2023-07-06 02:32:15 info: ======= ENV: development =======
+2023-07-06 02:32:15 info: 🚀 App listening on the port 3000
+2023-07-06 02:32:15 info: =================================
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:17 info: Connected to email server
+2023-07-06 02:32:18 info: Connected to Database Successfully...
+2023-07-06 02:33:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-06 02:33:01 info: [0mPOST /auth/login [32m200[0m 940.639 ms - 587[0m
+2023-07-06 02:33:11 info: [0mGET /profile [32m200[0m 3326.560 ms - -[0m
+2023-07-06 02:33:30 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-07-06 02:34:04 info: [0mGET /service [32m200[0m 477.712 ms - -[0m
+2023-07-06 02:36:35 info: [0mGET /users/profile [32m200[0m 663.070 ms - 448[0m
+2023-07-06 02:36:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-06 02:36:48 info: [0mPOST /auth/login [32m200[0m 681.924 ms - 587[0m
+2023-07-06 02:36:53 info: [0mGET /users/profile [32m200[0m 885.619 ms - 448[0m
+2023-07-06 02:37:43 info: =================================
+2023-07-06 02:37:43 info: ======= ENV: development =======
+2023-07-06 02:37:43 info: 🚀 App listening on the port 3000
+2023-07-06 02:37:43 info: =================================
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:46 info: Connected to email server
+2023-07-06 02:37:47 info: Connected to email server
+2023-07-06 02:37:57 info: Connected to Database Successfully...
+2023-07-06 02:38:06 info: [0mGET /users/profile [32m200[0m 498.368 ms - 469[0m
+2023-07-06 02:40:00 info: =================================
+2023-07-06 02:40:00 info: ======= ENV: development =======
+2023-07-06 02:40:00 info: 🚀 App listening on the port 3000
+2023-07-06 02:40:00 info: =================================
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:02 info: Connected to email server
+2023-07-06 02:40:07 info: Connected to Database Successfully...
+2023-07-06 02:41:15 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-07-06 02:42:26 info: =================================
+2023-07-06 02:42:26 info: ======= ENV: development =======
+2023-07-06 02:42:26 info: 🚀 App listening on the port 3000
+2023-07-06 02:42:26 info: =================================
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:28 info: Connected to email server
+2023-07-06 02:42:38 info: Connected to Database Successfully...
+2023-07-06 02:43:27 error: [GET] /service/getUserService >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-06 02:43:27 info: [0mGET /service/getUserService [32m200[0m 312.621 ms - 75[0m
+2023-07-06 02:43:34 info: [0mGET /service [32m200[0m 591.927 ms - -[0m
+2023-07-06 02:44:38 error: [GET] /chat/user/ >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-06 02:44:38 info: [0mGET /chat/user/ [32m200[0m 243.869 ms - 148[0m
+2023-07-06 02:44:44 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-06 02:44:44 info: [0mGET /chat/user [32m200[0m 747.028 ms - 148[0m
+2023-07-06 02:45:33 info: =================================
+2023-07-06 02:45:33 info: ======= ENV: development =======
+2023-07-06 02:45:33 info: 🚀 App listening on the port 3000
+2023-07-06 02:45:33 info: =================================
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:35 info: Connected to email server
+2023-07-06 02:45:36 info: Connected to email server
+2023-07-06 02:45:47 info: Connected to Database Successfully...
+2023-07-06 02:45:53 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-06 02:45:53 info: [0mGET /chat/user [32m200[0m 280.862 ms - 148[0m
+2023-07-06 02:45:55 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-06 02:45:55 info: [0mGET /chat/user [32m200[0m 249.653 ms - 148[0m
+2023-07-06 02:48:18 info: [0mGET /service/getServiceById/649d83b311a070581e3e503b [32m200[0m 315.726 ms - 786[0m
+2023-07-06 02:49:38 info: =================================
+2023-07-06 02:49:38 info: ======= ENV: development =======
+2023-07-06 02:49:38 info: 🚀 App listening on the port 3000
+2023-07-06 02:49:38 info: =================================
+2023-07-06 02:49:40 info: Connected to email server
+2023-07-06 02:49:40 info: Connected to email server
+2023-07-06 02:49:40 info: Connected to email server
+2023-07-06 02:49:40 info: Connected to email server
+2023-07-06 02:49:41 info: Connected to email server
+2023-07-06 02:49:41 info: Connected to email server
+2023-07-06 02:49:41 info: Connected to email server
+2023-07-06 02:49:42 info: Connected to Database Successfully...
+2023-07-06 02:50:12 info: [0mGET /service/getServiceById/649d83b311a070581e3e503b [32m200[0m 558.197 ms - -[0m

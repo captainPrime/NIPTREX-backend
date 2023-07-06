@@ -81,6 +81,8 @@ class ProfileService {
       proof_of_identity: identity[0],
       billing: billing[0],
       bank: bank,
+      created_at: findOneUserData.createdAt,
+      updated_at: findOneUserData.updatedAt,
     };
 
     console.log(about);

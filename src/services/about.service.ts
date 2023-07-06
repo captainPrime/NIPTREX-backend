@@ -25,7 +25,7 @@ class AboutService {
 
     const data: any = await this.about.create(body);
 
-    await this.userService.updateUser(data.user_id, { has_profile: true, has_about: true });
+    await this.userService.updateUser(data.user_id, { has_profile: true, has_about: true, profile_picture: body?.personal_details?.profile_picture });
 
     return data;
   }

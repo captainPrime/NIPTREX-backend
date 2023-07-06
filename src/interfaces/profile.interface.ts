@@ -135,7 +135,7 @@ export interface IDocument {
 }
 
 export interface IPersonalDetails {
-  profile_picture: string;
+  profile_picture?: string;
   dob: Date;
   role: string;
   seniority: string;

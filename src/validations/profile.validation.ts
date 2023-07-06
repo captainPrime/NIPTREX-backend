@@ -177,7 +177,7 @@ export const aboutSchema = Joi.object({
     last_name: Joi.string().required(),
     email: Joi.string().email().required(),
     country: Joi.string().required(),
-    profile_picture: Joi.string().required(),
+    profile_picture: Joi.string().optional(),
     dob: Joi.string().required(),
     role: Joi.string().required(),
     phone_number: Joi.string().required(),
