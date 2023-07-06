@@ -4,7 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { BankInfo } from '@/models/profile.model';
 import { IBankInfo, IUpdateBio } from '@/interfaces/profile.interface';
-import { bankInfoSchemaValidation, bioSchemaUpdateValidation } from '@/validations/profile.validation';
+import { bankInfoSchemaUpdateValidation, bankInfoSchemaValidation } from '@/validations/profile.validation';
 
 class BankService {
   public bank: any = BankInfo;
@@ -60,12 +60,12 @@ class BankService {
   | Update Bio By Id
   |--------------------------------------------------------------------------
   */
-  public async bankInfoSchemaUpdateValidation(id: mongoose.Types.ObjectId | string, body: IUpdateBio): Promise<any> {
+  public async updateBankInfo(id: mongoose.Types.ObjectId | string, body: IUpdateBio): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
-    const { error } = bioSchemaUpdateValidation.validate(body);
+    const { error } = bankInfoSchemaUpdateValidation.validate(body);
 
-    if (error) throw new HttpException(400, 9002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 9002, 'BANK_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.bank.findOne({ user_id: id });
     if (!data) throw new HttpException(400, 9003, 'BANK_NOT_FOUND');
@@ -74,7 +74,7 @@ class BankService {
       new: true,
     });
 
-    if (!updatedData) throw new HttpException(400, 9009, 'PROFILE_REQUEST_ERROR');
+    if (!updatedData) throw new HttpException(400, 9009, 'BANK_REQUEST_ERROR');
 
     return updatedData;
   }
