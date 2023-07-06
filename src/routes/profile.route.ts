@@ -10,12 +10,14 @@ import PreferenceController from '@/controllers/preference.controller';
 import CertificationController from '@/controllers/certification.controller';
 import BioController from '@/controllers/bio.controller';
 import JobController from '@/controllers/job.controller';
+import BankController from '@/controllers/bank.controller';
 
 class ProfileRoute implements Routes {
   public path = '/profile';
   public router = Router();
   public bioController = new BioController();
   public jobController = new JobController();
+  public bankController = new BankController();
   public aboutController = new AboutController();
   public billingController = new BillingController();
   public profileController = new ProfileController();
@@ -119,6 +121,17 @@ class ProfileRoute implements Routes {
     this.router.put(`${this.path}/bio`, authMiddleware(['freelancer', 'client']), this.bioController.updateBio);
     this.router.delete(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.deleteBio);
     this.router.get(`${this.path}/bio/:id`, authMiddleware(['freelancer', 'client']), this.bioController.getBioById);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Bank Route
+    |--------------------------------------------------------------------------
+    */
+    this.router.post(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.createBank);
+    this.router.get(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.getUserBank);
+    this.router.put(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.updateBankInfo);
+    this.router.delete(`${this.path}/bank/:id`, authMiddleware(['freelancer', 'client']), this.bankController.deleteBankInfo);
+    this.router.get(`${this.path}/bank/:id`, authMiddleware(['freelancer', 'client']), this.bankController.getBankById);
 
     /*
     |--------------------------------------------------------------------------

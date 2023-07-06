@@ -53,7 +53,7 @@ class BankController {
   | Get Bank By Id
   |--------------------------------------------------------------------------
   */
-  public getBioById = async (req: Request, res: Response, next: NextFunction) => {
+  public getBankById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
       const data = await this.bankService.getBankById(id);
@@ -66,10 +66,10 @@ class BankController {
 
   /*
   |--------------------------------------------------------------------------
-  | Update Bio
+  | Update Bank Info
   |--------------------------------------------------------------------------
   */
-  public updateBio = async (req: Request, res: Response, next: NextFunction) => {
+  public updateBankInfo = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body: IUpdateBio = req.body;
       const data = await this.bankService.updateBankInfo(req.user.id, body);
@@ -82,10 +82,10 @@ class BankController {
 
   /*
   |--------------------------------------------------------------------------
-  | Delete Bio
+  | Delete Bank Info
   |--------------------------------------------------------------------------
   */
-  public deleteBio = async (req: Request, res: Response, next: NextFunction) => {
+  public deleteBankInfo = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
       const data = await this.bankService.deleteBank(id);
