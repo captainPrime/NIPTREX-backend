@@ -72,6 +72,7 @@ class ProfileService {
       available_to_work: about?.available_to_work,
       social_links: about?.social_links,
       languages: about?.languages,
+      rating: findOneUserData.rating,
       bio: bio,
       work_preferences: preference[0],
       education_history: education,
