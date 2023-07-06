@@ -1,6 +1,7 @@
 import {
   EmploymentType,
   IAbout,
+  IBankInfo,
   IBilling,
   IBio,
   ICertification,
@@ -71,20 +72,6 @@ const billingSchema: Schema = new Schema(
     per_annum: { type: Number, required: true },
     hourly_rate: { type: Number, required: true }, // Updated to Number type
     payment_method: { type: String, enum: ['USD', 'NGN'], required: true }, // Updated to enum of USD and NGN
-    bank_info: {
-      bank_name: {
-        type: String,
-        required: true,
-      },
-      account_name: {
-        type: String,
-        required: true,
-      },
-      account_number: {
-        type: Number,
-        required: true,
-      },
-    },
   },
   {
     timestamps: true,
@@ -96,6 +83,19 @@ const identitySchema: Schema = new Schema(
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     proof_of_identity: { type: String, required: true },
     proof_of_address: { type: String, required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
+const bankInfoSchema: Schema = new Schema(
+  {
+    user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    bank_name: { type: String, required: true },
+    account_number: { type: String, required: true },
+    account_name: { type: String, required: true },
+    currency: { type: String, required: false },
   },
   {
     timestamps: true,
@@ -198,6 +198,7 @@ certificationSchema.plugin(toJSON);
 billingSchema.plugin(toJSON);
 identitySchema.plugin(toJSON);
 workPreference.plugin(toJSON);
+bankInfoSchema.plugin(toJSON);
 
 // Define a virtual for total_hours
 aboutSchema.virtual('total_hours').get(function (this: IAbout) {
@@ -222,5 +223,6 @@ const Billing = model<IBilling>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
 const Bio = model<IBio>('Bio', bioSchema);
+const BankInfo = model<IBankInfo>('Bank', bankInfoSchema);
 
-export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio };
+export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio, BankInfo };

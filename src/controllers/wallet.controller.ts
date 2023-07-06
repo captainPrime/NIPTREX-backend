@@ -353,11 +353,11 @@ class WalletController {
               freelancer_id: proposal.user_id.toString(),
               activities: { invites_sent: +1, interviewing: +1, unanswered_invites: +1 },
             });
+
             // return user nips
             const bidders = await this.bidService.getAllBidders(job._id.toString());
-            const userIds = bidders
-              .filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id)
-              .map((bidder: any) => bidder.user_id.toString());
+            // eslint-disable-next-line prettier/prettier
+            const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id.toString()).map((bidder: any) => bidder.user_id.toString());
 
             await this.bidService.updateBid(proposal.user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
 

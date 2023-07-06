@@ -1,5 +1,5 @@
 import { ITokenDoc } from '@/modules/token/token.interfaces';
-import { Document } from 'mongoose';
+import { Document, Schema } from 'mongoose';
 
 export enum EmploymentType {
   FullTime = 'Full Time',
@@ -207,6 +207,14 @@ export interface IBio {
   description: string;
 }
 
+export interface IBankInfo {
+  user_id: Schema.Types.ObjectId | string;
+  bank_name: string;
+  account_number: string;
+  account_name: string;
+  currency?: string;
+}
+
 export type IUpdateExperience = Partial<IExperience>;
 export type IUpdateEducationHistory = Partial<IEducationHistory>;
 export type IUpdateCertification = Partial<ICertification>;
@@ -214,3 +222,4 @@ export type IUpdateBilling = Partial<IBilling>;
 export type IUpdateDocument = Partial<IDocument>;
 export type IUpdatePreference = Partial<IPreferences>;
 export type IUpdateBio = Partial<IBio>;
+export type IUpdateBankInfo = Partial<IBankInfo>;
