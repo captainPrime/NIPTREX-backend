@@ -58,7 +58,7 @@ class RatingService {
   public async getRatingByUserId(id: mongoose.Types.ObjectId | string): Promise<IRating[] | null> {
     if (isEmpty(id)) throw new HttpException(400, 8001, 'ID cannot be empty');
 
-    const data: IRating[] | null = await this.rating.find({ entity: id });
+    const data: IRating[] | null = await this.rating.find({ user_id: id });
     if (!data) throw new HttpException(400, 8002, 'RATING_NOT_FOUND');
 
     return data;

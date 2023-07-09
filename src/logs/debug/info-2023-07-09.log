@@ -215,3 +215,55 @@
 2023-07-09 14:34:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 175
 2023-07-09 14:34:02 info: [0mPOST /profile/billing [32m200[0m 29.165 ms - 99[0m
 2023-07-09 14:34:10 info: [0mPOST /profile/billing [32m200[0m 1314.177 ms - 285[0m
+2023-07-09 14:43:15 info: =================================
+2023-07-09 14:43:15 info: ======= ENV: development =======
+2023-07-09 14:43:15 info: 🚀 App listening on the port 3000
+2023-07-09 14:43:15 info: =================================
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to email server
+2023-07-09 14:43:17 info: Connected to Database Successfully...
+2023-07-09 14:43:48 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-07-09 14:43:48 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 415.672 ms - 111[0m
+2023-07-09 14:44:02 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-07-09 14:44:02 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 399.917 ms - 106[0m
+2023-07-09 14:44:16 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 583.472 ms - 227[0m
+2023-07-09 14:46:08 info: =================================
+2023-07-09 14:46:08 info: ======= ENV: development =======
+2023-07-09 14:46:08 info: 🚀 App listening on the port 3000
+2023-07-09 14:46:08 info: =================================
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to email server
+2023-07-09 14:46:10 info: Connected to Database Successfully...
+2023-07-09 14:46:19 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: USER_NOT_FOUND
+2023-07-09 14:46:19 info: [0mPOST /rate/649d8098710df4ac8c134d0e [32m200[0m 482.400 ms - 72[0m
+2023-07-09 14:46:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:46:40 info: [0mPOST /auth/login [32m200[0m 816.890 ms - 587[0m
+2023-07-09 14:46:44 info: [0mGET /users/profile [32m200[0m 432.113 ms - 505[0m
+2023-07-09 14:47:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:47:00 info: [0mPOST /auth/login [32m200[0m 673.380 ms - 587[0m
+2023-07-09 14:47:08 info: [0mPOST /rate/64aaadcbc177231fa41a85d2 [32m200[0m 660.387 ms - 227[0m
+2023-07-09 14:48:41 info: =================================
+2023-07-09 14:48:41 info: ======= ENV: development =======
+2023-07-09 14:48:41 info: 🚀 App listening on the port 3000
+2023-07-09 14:48:41 info: =================================
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to email server
+2023-07-09 14:48:43 info: Connected to Database Successfully...
+2023-07-09 14:48:57 error: [GET] /rate/64aaadcbc177231fa41a85d2 >> StatusCode:: 404, Message:: The requested path /rate/64aaadcbc177231fa41a85d2 not found!
+2023-07-09 14:48:57 info: [0mGET /rate/64aaadcbc177231fa41a85d2 [32m200[0m 20.059 ms - 118[0m
+2023-07-09 14:49:14 info: Connected to email server
+2023-07-09 14:49:21 info: [0mGET /rate/getRatingByUserId/64aaadcbc177231fa41a85d2 [32m200[0m 486.589 ms - 229[0m

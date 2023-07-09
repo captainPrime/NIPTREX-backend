@@ -2,39 +2,22 @@ import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';
 import { Document, Schema, model, Model } from 'mongoose';
 
-export enum EntityName {
-  User = 'User',
-  Job = 'Job',
-  Service = 'Service',
-}
-
 export interface IRating extends Document {
-  entity: Schema.Types.ObjectId | string; // Updated field name
+  user_id: Schema.Types.ObjectId | string;
   reviewer: Schema.Types.ObjectId | string;
   rating_value: number;
-  comment?: string;
-  entity_name: EntityName; // Updated field type
+  comment: string;
 }
 
 const ratingSchema = new Schema<IRating>({
-  entity: { type: Schema.Types.ObjectId, required: true, refPath: 'entityModel' }, // Updated field with refPath (id of what is rated)
+  user_id: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
   reviewer: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
   rating_value: { type: Number, required: true, default: 0 },
-  comment: { type: String },
-  entity_name: { type: String, required: true, enum: Object.values(EntityName) }, // Updated field with enum
+  comment: { type: String, required: true },
 });
 
 ratingSchema.plugin(toJSON);
 ratingSchema.plugin(paginate);
-
-ratingSchema.virtual('entityModel', {
-  ref: function (this: IRating) {
-    return this.entity_name; // Virtual field for dynamic reference based on entity_name
-  },
-  localField: 'entity',
-  foreignField: '_id',
-  justOne: true,
-});
 
 const RatingModel: Model<IRating> = model<IRating>('Rating', ratingSchema);
 

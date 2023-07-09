@@ -19,3 +19,9 @@
 2023-07-09 14:17:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 14:18:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 14:34:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 175
+2023-07-09 14:43:48 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-07-09 14:44:02 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: RATING_VALIDATION_ERROR
+2023-07-09 14:46:19 error: [POST] /rate/649d8098710df4ac8c134d0e >> StatusCode:: 400, Message:: USER_NOT_FOUND
+2023-07-09 14:46:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:47:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:48:57 error: [GET] /rate/64aaadcbc177231fa41a85d2 >> StatusCode:: 404, Message:: The requested path /rate/64aaadcbc177231fa41a85d2 not found!
