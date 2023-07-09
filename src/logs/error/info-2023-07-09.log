@@ -25,3 +25,8 @@
 2023-07-09 14:46:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 14:47:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 14:48:57 error: [GET] /rate/64aaadcbc177231fa41a85d2 >> StatusCode:: 404, Message:: The requested path /rate/64aaadcbc177231fa41a85d2 not found!
+2023-07-09 15:33:19 error: [POST] /service/proposal/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-09 15:33:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 15:33:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 15:33:56 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 15:36:18 error: [POST] /service/proposal/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND

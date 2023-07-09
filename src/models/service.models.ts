@@ -1,6 +1,7 @@
 import { Schema, Document, model } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';
+import { object } from 'joi';
 
 interface IServiceProject {
   name: string;
@@ -11,6 +12,15 @@ interface IServicePrice {
   rate: number;
   duration: number;
   services: string[];
+}
+
+export enum ServiceProposalStatus {
+  NULL = 'null',
+  PAID = 'paid',
+  CLOSED = 'closed',
+  APPLIED = 'applied',
+  COMPLETED = 'completed',
+  IN_PROGRESS = 'in_progress',
 }
 
 export interface IService extends Document {
@@ -28,6 +38,16 @@ export interface IService extends Document {
     standard: IServicePrice;
     premium: IServicePrice;
   };
+}
+
+export interface IServiceProposal extends Document {
+  amount: number;
+  delivery_date: Date;
+  package_type: string;
+  id: string;
+  service_id: string;
+  status: 'ongoing';
+  client_id: string;
 }
 
 const serviceSchema: Schema<IService> = new Schema(
@@ -71,6 +91,20 @@ const serviceSchema: Schema<IService> = new Schema(
   { versionKey: false },
 );
 
+const serviceProposalSchema: Schema = new Schema(
+  {
+    amount: { type: Number, required: true },
+    delivery_date: { type: Date, required: true },
+    package_type: { type: String, required: true },
+    service_id: { type: Schema.Types.ObjectId, ref: 'Service', required: true },
+    status: { type: String, enum: Object.values(ServiceProposalStatus), default: ServiceProposalStatus.APPLIED, required: true },
+    client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  },
+  {
+    timestamps: true,
+  },
+);
+
 const HireServiceSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
@@ -85,10 +119,12 @@ const HireServiceSchema: Schema = new Schema(
 serviceSchema.plugin(toJSON);
 serviceSchema.plugin(paginate);
 HireServiceSchema.plugin(toJSON);
+serviceProposalSchema.plugin(toJSON);
 
 export type IUpdateService = Partial<IService>;
 
 const ServiceModel = model<IService>('Service', serviceSchema);
 const HireServiceModel = model<any>('HireService', HireServiceSchema);
+const ServiceProposalModel = model<IServiceProposal>('ServiceProposal', serviceProposalSchema);
 
-export { ServiceModel, HireServiceModel };
+export { ServiceModel, HireServiceModel, ServiceProposalModel };

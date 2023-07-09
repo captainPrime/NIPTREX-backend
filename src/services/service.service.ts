@@ -1,5 +1,5 @@
 import { PaginationOptions } from '@/interfaces/job.inteface';
-import { HireServiceModel, IService, ServiceModel } from '@/models/service.models';
+import { HireServiceModel, IService, ServiceModel, ServiceProposalModel } from '@/models/service.models';
 import { serviceUpdateValidationSchema, serviceValidationSchema } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
@@ -8,6 +8,7 @@ import mongoose from 'mongoose';
 class ServiceService {
   public service: any = ServiceModel;
   public hireService: any = HireServiceModel;
+  public serviceProposal: any = ServiceProposalModel;
 
   /*
   |--------------------------------------------------------------------------
@@ -120,6 +121,30 @@ class ServiceService {
   public async hireFreelancerService(payload: any): Promise<any> {
     if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
     const data = await this.hireService.create(payload);
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Service
+  |--------------------------------------------------------------------------
+  */
+  public async createServiceProposal(payload: any): Promise<any> {
+    if (isEmpty(payload)) throw new HttpException(400, 2001, 'payload can not be empty');
+    const data = await this.serviceProposal.create(payload);
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Bid By Job
+  |--------------------------------------------------------------------------
+  */
+  public async getServiceProposalById(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.serviceProposal.findOne({ service_id: id });
+
     return data;
   }
 }

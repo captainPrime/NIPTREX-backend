@@ -159,6 +159,39 @@ class ServiceController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hire Freelancer
+  |--------------------------------------------------------------------------
+  */
+  public serviceProposal = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const service_id: string = req.params.id;
+
+      const { amount, package_type, delivery_date } = req.body;
+
+      const serviceData = await this.serviceService.getServiceById(service_id);
+      if (!serviceData) throw new HttpException(400, 7006, 'SERVICE_NOT_FOUND');
+
+      const service = await this.serviceService.getServiceProposalById(service_id);
+      if (service && service.client_id.toString() === req.user.id) throw new HttpException(400, 7008, 'SERVICE_ALREADY_PROPOSED');
+
+      const payload = {
+        client_id: req.user.id,
+        service_id,
+        amount,
+        delivery_date,
+        package_type,
+      };
+
+      const data = await this.serviceService.createServiceProposal(payload);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default ServiceController;
