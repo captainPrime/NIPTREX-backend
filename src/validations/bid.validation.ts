@@ -35,6 +35,7 @@ export const biddingSchemaValidation = Joi.object({
   status: Joi.string()
     .valid(...Object.values(BiddingStatus))
     .default(BiddingStatus.APPLIED),
+  outright_status: Joi.string().valid(...Object.values(BiddingStatus)),
   date_applied: Joi.date().default(Date.now),
   liked: Joi.boolean().default(false),
   disliked: Joi.boolean().default(false),

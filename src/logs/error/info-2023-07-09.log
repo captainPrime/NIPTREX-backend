@@ -1,1 +1,17 @@
 2023-07-09 11:48:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:46:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:46:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:52:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:53:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:55:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:55:21 error: [POST] /bid/64aaac296bdc9c669af6200b >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-07-09 13:55:45 error: [POST] /bid/64aaac296bdc9c669af6200b >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-07-09 13:57:55 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-07-09 13:58:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:58:14 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-07-09 13:58:31 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: Bidding validation failed: outright_status: Path `outright_status` is required.
+2023-07-09 14:03:23 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-09 14:03:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:03:39 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-07-09 14:03:51 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-07-09 14:03:59 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: Cast to string failed for value "{ outright_status: 'completed' }" (type Object) at path "outright_status"

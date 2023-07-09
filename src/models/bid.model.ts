@@ -97,7 +97,8 @@ const BiddingSchema: Schema = new Schema({
   },
   outright_status: {
     type: String,
-    require: true,
+    required: true,
+    enum: Object.values(BiddingStatus),
   },
   cover_letter: {
     type: String,

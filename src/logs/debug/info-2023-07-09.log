@@ -27,3 +27,104 @@
 2023-07-09 12:09:00 info: Connected to email server
 2023-07-09 12:09:01 info: Connected to Database Successfully...
 2023-07-09 12:09:09 info: [0mGET /bid/proposals/64a60cb821a20c178c54e9b1 [32m200[0m 1372.378 ms - -[0m
+2023-07-09 13:45:46 info: =================================
+2023-07-09 13:45:46 info: ======= ENV: development =======
+2023-07-09 13:45:46 info: 🚀 App listening on the port 3000
+2023-07-09 13:45:46 info: =================================
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:45:48 info: Connected to email server
+2023-07-09 13:46:01 info: Connected to Database Successfully...
+2023-07-09 13:46:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:46:28 info: [0mPOST /auth/login [32m200[0m 795.396 ms - 587[0m
+2023-07-09 13:46:34 info: [0mPOST /job [32m200[0m 948.657 ms - 927[0m
+2023-07-09 13:46:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:46:49 info: [0mPOST /auth/login [32m200[0m 568.147 ms - 587[0m
+2023-07-09 13:47:20 info: [0mPOST /bid/64aaac296bdc9c669af6200b [32m200[0m 3212.481 ms - 807[0m
+2023-07-09 13:52:24 info: =================================
+2023-07-09 13:52:24 info: ======= ENV: development =======
+2023-07-09 13:52:24 info: 🚀 App listening on the port 3000
+2023-07-09 13:52:24 info: =================================
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to email server
+2023-07-09 13:52:26 info: Connected to Database Successfully...
+2023-07-09 13:52:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:52:43 info: [0mPOST /auth/login [32m200[0m 701.579 ms - 587[0m
+2023-07-09 13:52:52 info: [0mPOST /bid/64aaac296bdc9c669af6200b [32m200[0m 3442.117 ms - 807[0m
+2023-07-09 13:53:32 info: [0mGET /reload_db [32m200[0m 4366.638 ms - 74[0m
+2023-07-09 13:53:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:53:46 info: [0mPOST /auth/login [32m200[0m 546.301 ms - 587[0m
+2023-07-09 13:54:25 info: [0mPOST /job [32m200[0m 1900.713 ms - 927[0m
+2023-07-09 13:55:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:55:14 info: [0mPOST /auth/login [32m200[0m 548.372 ms - 587[0m
+2023-07-09 13:55:21 error: [POST] /bid/64aaac296bdc9c669af6200b >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-07-09 13:55:21 info: [0mPOST /bid/64aaac296bdc9c669af6200b [32m200[0m 891.630 ms - 79[0m
+2023-07-09 13:55:39 info: [0mPOST /profile/about [32m200[0m 2280.461 ms - -[0m
+2023-07-09 13:55:45 error: [POST] /bid/64aaac296bdc9c669af6200b >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2023-07-09 13:55:45 info: [0mPOST /bid/64aaac296bdc9c669af6200b [32m200[0m 4040.647 ms - 71[0m
+2023-07-09 13:55:54 info: [0mPOST /bid/64aaadffc177231fa41a85db [32m200[0m 3177.156 ms - 807[0m
+2023-07-09 13:57:45 info: =================================
+2023-07-09 13:57:45 info: ======= ENV: development =======
+2023-07-09 13:57:45 info: 🚀 App listening on the port 3000
+2023-07-09 13:57:45 info: =================================
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to email server
+2023-07-09 13:57:48 info: Connected to Database Successfully...
+2023-07-09 13:57:55 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-07-09 13:57:55 info: [0mPOST /bid/64aaadffc177231fa41a85db [32m200[0m 992.332 ms - 75[0m
+2023-07-09 13:58:03 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 13:58:03 info: [0mPOST /auth/login [32m200[0m 963.066 ms - 587[0m
+2023-07-09 13:58:14 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: PROFILE_NOT_COMPLETED
+2023-07-09 13:58:14 info: [0mPOST /bid/64aaadffc177231fa41a85db [32m200[0m 3105.414 ms - 79[0m
+2023-07-09 13:58:21 info: [0mPOST /profile/about [32m200[0m 1686.012 ms - -[0m
+2023-07-09 13:58:31 error: [POST] /bid/64aaadffc177231fa41a85db >> StatusCode:: 400, Message:: Bidding validation failed: outright_status: Path `outright_status` is required.
+2023-07-09 13:58:31 info: [0mPOST /bid/64aaadffc177231fa41a85db [32m200[0m 1269.988 ms - 136[0m
+2023-07-09 14:01:07 info: =================================
+2023-07-09 14:01:07 info: ======= ENV: development =======
+2023-07-09 14:01:07 info: 🚀 App listening on the port 3000
+2023-07-09 14:01:08 info: =================================
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to email server
+2023-07-09 14:01:10 info: Connected to Database Successfully...
+2023-07-09 14:01:20 info: [0mPOST /bid/64aaadffc177231fa41a85db [32m200[0m 3102.836 ms - 835[0m
+2023-07-09 14:03:01 info: =================================
+2023-07-09 14:03:01 info: ======= ENV: development =======
+2023-07-09 14:03:01 info: 🚀 App listening on the port 3000
+2023-07-09 14:03:01 info: =================================
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to email server
+2023-07-09 14:03:03 info: Connected to Database Successfully...
+2023-07-09 14:03:23 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-09 14:03:23 info: [0mPUT /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d [32m200[0m 295.353 ms - 75[0m
+2023-07-09 14:03:33 info: Connected to email server
+2023-07-09 14:03:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:03:34 info: [0mPOST /auth/login [32m200[0m 559.938 ms - 587[0m
+2023-07-09 14:03:39 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-07-09 14:03:39 info: [0mPUT /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d [32m200[0m 365.501 ms - 105[0m
+2023-07-09 14:03:51 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
+2023-07-09 14:03:51 info: [0mPUT /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d [32m200[0m 1678.341 ms - 154[0m
+2023-07-09 14:03:59 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: Cast to string failed for value "{ outright_status: 'completed' }" (type Object) at path "outright_status"
+2023-07-09 14:03:59 info: [0mPUT /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d [32m200[0m 519.521 ms - 167[0m

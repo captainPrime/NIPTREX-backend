@@ -111,7 +111,7 @@ class BidService {
     const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(selector) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
-    const updatedData = await this.bid.findByIdAndUpdate(data._id, { outright_status: milestoneData }, { new: true });
+    const updatedData = await this.bid.findByIdAndUpdate(data._id, { outright_status: milestoneData.outright_status }, { new: true });
 
     if (!updatedData) throw new HttpException(400, 2009, 'BID_REQUEST_ERROR');
 

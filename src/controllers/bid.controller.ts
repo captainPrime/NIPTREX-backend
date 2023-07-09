@@ -6,6 +6,7 @@ import UserService from '@/services/users.service';
 import AboutService from '@/services/about.service';
 import { HttpException } from '@/exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
+import { BiddingStatus, PaymentType } from '@/models/bid.model';
 
 class BidController {
   public bidService = new BidService();
@@ -40,7 +41,12 @@ class BidController {
 
       if (about.nips < userData.bidding_amount) throw new HttpException(400, 4003, 'INSUFFICIENT_NIPS_TO_BID');
 
-      const data = await this.bidService.bidJob({ ...userData, user_id: user.id, job_id: id });
+      const data = await this.bidService.bidJob({
+        ...userData,
+        user_id: user.id,
+        job_id: id,
+        outright_status: req.body.payment_type === PaymentType.OUTRIGHT ? BiddingStatus.APPLIED : BiddingStatus.NULL,
+      });
       await this.aboutService.updateAboutById(user.id, { nips: about.nips - userData.bidding_amount });
 
       // update job

@@ -24,6 +24,7 @@ class BidRoute implements Routes {
     this.router.get(`${this.path}/proposals/dislike/:id`, this.bidController.dislikeProposal);
     this.router.get(`${this.path}/proposals/:id`, authMiddleware(['client']), this.bidController.getBidders);
     this.router.put(`${this.path}/updateMilestone/:proposalId/:milestoneId`, authMiddleware(['client']), this.bidController.updateMilestone);
+    this.router.put(`${this.path}/updateOutrightStatus/:proposalId`, authMiddleware(['client']), this.bidController.updateOutrightStatus);
     this.router.put(`${this.path}/adminUpdateMilestone/:proposalId/:milestoneId`, authMiddleware(['admin']), this.bidController.updateMilestone);
     this.router.post(`${this.path}/requestMilestoneReview`, authMiddleware(['freelancer', 'client']), this.bidController.requestMilestoneReview);
     this.router.get(`${this.path}/getProposalById/:id`, authMiddleware(['client']), this.bidController.getProposalById);
