@@ -44,9 +44,8 @@ export interface IServiceProposal extends Document {
   amount: number;
   delivery_date: Date;
   package_type: string;
-  id: string;
   service_id: string;
-  status: 'ongoing';
+  status: ServiceProposalStatus;
   client_id: string;
 }
 

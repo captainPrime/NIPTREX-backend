@@ -318,3 +318,148 @@
 2023-07-09 15:36:18 error: [POST] /service/proposal/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
 2023-07-09 15:36:18 info: [0mPOST /service/proposal/647dce3a5fab941b6eff394e [32m200[0m 581.722 ms - 75[0m
 2023-07-09 15:36:26 info: [0mPOST /service/proposal/64aac54cc073a28e1d44ec93 [32m200[0m 2328.325 ms - 294[0m
+2023-07-09 15:43:32 info: =================================
+2023-07-09 15:43:32 info: ======= ENV: development =======
+2023-07-09 15:43:32 info: 🚀 App listening on the port 3000
+2023-07-09 15:43:32 info: =================================
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:34 info: Connected to email server
+2023-07-09 15:43:35 info: Connected to Database Successfully...
+2023-07-09 15:43:46 error: [GET] /service/proposals >> StatusCode:: 400, Message:: id can not be empty
+2023-07-09 15:43:46 info: [0mGET /service/proposals [32m200[0m 555.183 ms - 77[0m
+2023-07-09 15:43:53 error: [GET] /service/proposals/ >> StatusCode:: 400, Message:: id can not be empty
+2023-07-09 15:43:53 info: [0mGET /service/proposals/ [32m200[0m 285.200 ms - 77[0m
+2023-07-09 15:44:03 error: [GET] /service/proposals/64aac54cc073a28e1d44ec93 >> StatusCode:: 404, Message:: The requested path /service/proposals/64aac54cc073a28e1d44ec93 not found!
+2023-07-09 15:44:03 info: [0mGET /service/proposals/64aac54cc073a28e1d44ec93 [32m200[0m 1.424 ms - 131[0m
+2023-07-09 15:44:36 info: =================================
+2023-07-09 15:44:36 info: ======= ENV: development =======
+2023-07-09 15:44:36 info: 🚀 App listening on the port 3000
+2023-07-09 15:44:36 info: =================================
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:38 info: Connected to email server
+2023-07-09 15:44:39 info: Connected to Database Successfully...
+2023-07-09 15:44:43 info: [0mGET /service/proposals/64aac54cc073a28e1d44ec93 [32m200[0m 498.311 ms - 296[0m
+2023-07-09 15:58:36 info: =================================
+2023-07-09 15:58:36 info: ======= ENV: development =======
+2023-07-09 15:58:36 info: 🚀 App listening on the port 3000
+2023-07-09 15:58:36 info: =================================
+2023-07-09 15:58:38 info: Connected to email server
+2023-07-09 15:58:38 info: Connected to email server
+2023-07-09 15:58:39 info: Connected to email server
+2023-07-09 15:58:39 info: Connected to email server
+2023-07-09 15:58:39 info: Connected to email server
+2023-07-09 15:58:39 info: Connected to email server
+2023-07-09 15:58:39 info: Connected to email server
+2023-07-09 15:58:40 info: Connected to Database Successfully...
+2023-07-09 15:59:21 error: [PUT] /service/proposal/64aac54cc073a28e1d44ec93 >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-07-09 15:59:21 info: [0mPUT /service/proposal/64aac54cc073a28e1d44ec93 [32m200[0m 391.451 ms - 109[0m
+2023-07-09 16:00:53 info: =================================
+2023-07-09 16:00:53 info: ======= ENV: development =======
+2023-07-09 16:00:53 info: 🚀 App listening on the port 3000
+2023-07-09 16:00:53 info: =================================
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to email server
+2023-07-09 16:00:55 info: Connected to Database Successfully...
+2023-07-09 16:01:08 info: =================================
+2023-07-09 16:01:08 info: ======= ENV: development =======
+2023-07-09 16:01:08 info: 🚀 App listening on the port 3000
+2023-07-09 16:01:08 info: =================================
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to email server
+2023-07-09 16:01:11 info: Connected to Database Successfully...
+2023-07-09 16:01:54 error: [PUT] /service/proposal/64aac54cc073a28e1d44ec93 >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:01:54 info: [0mPUT /service/proposal/64aac54cc073a28e1d44ec93 [32m200[0m 564.785 ms - 84[0m
+2023-07-09 16:02:23 info: [0mPUT /service/proposal/64aac5ea18004353252e08fd [32m200[0m 1443.045 ms - 291[0m
+2023-07-09 16:17:51 info: =================================
+2023-07-09 16:17:51 info: ======= ENV: development =======
+2023-07-09 16:17:51 info: 🚀 App listening on the port 3000
+2023-07-09 16:17:51 info: =================================
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:53 info: Connected to email server
+2023-07-09 16:17:55 info: Connected to Database Successfully...
+2023-07-09 16:18:24 info: Connected to email server
+2023-07-09 16:18:24 info: Connected to email server
+2023-07-09 16:18:50 info: =================================
+2023-07-09 16:18:50 info: ======= ENV: development =======
+2023-07-09 16:18:50 info: 🚀 App listening on the port 3000
+2023-07-09 16:18:50 info: =================================
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:52 info: Connected to email server
+2023-07-09 16:18:57 info: Connected to Database Successfully...
+2023-07-09 16:20:05 info: =================================
+2023-07-09 16:20:05 info: ======= ENV: development =======
+2023-07-09 16:20:05 info: 🚀 App listening on the port 3000
+2023-07-09 16:20:05 info: =================================
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:07 info: Connected to email server
+2023-07-09 16:20:11 info: Connected to Database Successfully...
+2023-07-09 16:20:17 error: [POST] /service/payment >> StatusCode:: 404, Message:: The requested path /service/payment not found!
+2023-07-09 16:20:17 info: [0mPOST /service/payment [32m200[0m 32.270 ms - 104[0m
+2023-07-09 16:20:42 info: =================================
+2023-07-09 16:20:42 info: ======= ENV: development =======
+2023-07-09 16:20:42 info: 🚀 App listening on the port 3000
+2023-07-09 16:20:42 info: =================================
+2023-07-09 16:20:44 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to email server
+2023-07-09 16:20:45 info: Connected to Database Successfully...
+2023-07-09 16:21:19 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:21:19 info: [0mPOST /service/payment [32m200[0m 580.180 ms - 84[0m
+2023-07-09 16:21:32 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:21:32 info: [0mPOST /service/payment [32m200[0m 451.134 ms - 84[0m
+2023-07-09 16:23:17 info: =================================
+2023-07-09 16:23:17 info: ======= ENV: development =======
+2023-07-09 16:23:17 info: 🚀 App listening on the port 3000
+2023-07-09 16:23:17 info: =================================
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to email server
+2023-07-09 16:23:19 info: Connected to Database Successfully...
+2023-07-09 16:23:26 error: [POST] /service/payment >> StatusCode:: 400, Message:: AMOUNT_LESS_THAN_PROPOSAL_AMOUNT
+2023-07-09 16:23:26 info: [0mPOST /service/payment [32m200[0m 2257.602 ms - 90[0m
+2023-07-09 16:23:40 info: [0mPOST /service/payment [32m200[0m 1989.576 ms - 163[0m

@@ -1,3 +1,4 @@
+import { ServiceProposalStatus } from '@/models/service.models';
 import Joi from 'joi';
 
 export const serviceValidationSchema = Joi.object({
@@ -63,4 +64,10 @@ export const serviceUpdateValidationSchema = Joi.object({
       services: Joi.array().items(Joi.string()),
     }),
   }),
+}).min(1);
+
+export const updateServiceProposalStatusValidation = Joi.object({
+  status: Joi.string()
+    .valid(...Object.values(ServiceProposalStatus))
+    .optional(),
 }).min(1);

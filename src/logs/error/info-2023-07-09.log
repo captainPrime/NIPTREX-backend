@@ -30,3 +30,12 @@
 2023-07-09 15:33:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 15:33:56 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 15:36:18 error: [POST] /service/proposal/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-07-09 15:43:46 error: [GET] /service/proposals >> StatusCode:: 400, Message:: id can not be empty
+2023-07-09 15:43:53 error: [GET] /service/proposals/ >> StatusCode:: 400, Message:: id can not be empty
+2023-07-09 15:44:03 error: [GET] /service/proposals/64aac54cc073a28e1d44ec93 >> StatusCode:: 404, Message:: The requested path /service/proposals/64aac54cc073a28e1d44ec93 not found!
+2023-07-09 15:59:21 error: [PUT] /service/proposal/64aac54cc073a28e1d44ec93 >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-07-09 16:01:54 error: [PUT] /service/proposal/64aac54cc073a28e1d44ec93 >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:20:17 error: [POST] /service/payment >> StatusCode:: 404, Message:: The requested path /service/payment not found!
+2023-07-09 16:21:19 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:21:32 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-09 16:23:26 error: [POST] /service/payment >> StatusCode:: 400, Message:: AMOUNT_LESS_THAN_PROPOSAL_AMOUNT
