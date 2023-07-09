@@ -118,29 +118,42 @@ class BidService {
     return updatedData;
   }
 
-  public async requestMilestoneReview(proposalId: string, milestoneId: string, clientId: string, userId: string): Promise<void> {
+  public async requestMilestoneReview(
+    proposalId: string,
+    milestoneId: string,
+    clientId: string,
+    userId: string,
+    proposal_type: string,
+  ): Promise<void> {
+    if (isEmpty(proposalId) || isEmpty(clientId) || isEmpty(proposal_type)) {
+      throw new HttpException(400, 4004, 'proposal_id, client_id and proposal_type are required.');
+    }
     const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(proposalId) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
-    console.log('PROPOSAL', data);
+    console.log('PROPOSAL', proposal_type);
 
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
-
-    const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
-    if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
-
-    const milestoneData = data.milestone_stage[milestoneIndex];
 
     const user: any = await this.userService.findUserById(clientId);
     if (!user || user.user !== 'client') throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
 
-    console.log('UPDATED', milestoneData);
+    if (proposal_type == 'outright') {
+      await this.emailService.sendOutrightReviewEmail(user.email, { proposalType: proposal_type }, user.first_name);
+    } else {
+      const milestoneIndex = data.milestone_stage.findIndex((item: any) => item._id.toString() === milestoneId);
+      if (milestoneIndex === -1) throw new HttpException(400, 2002, 'MILESTONE_NOT_FOUND');
 
-    const payload = {
-      milestoneDescription: milestoneData.description,
-    };
+      const milestoneData = data.milestone_stage[milestoneIndex];
 
-    await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+      console.log('UPDATED', milestoneData);
+
+      const payload = {
+        milestoneDescription: milestoneData.description,
+      };
+
+      await this.emailService.sendMilestoneReviewEmail(user.email, payload, user.first_name);
+    }
   }
 
   /*

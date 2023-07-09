@@ -15,3 +15,6 @@
 2023-07-09 14:03:39 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
 2023-07-09 14:03:51 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: BID_VALIDATION_ERROR
 2023-07-09 14:03:59 error: [PUT] /bid/updateOutrightStatus/64aaaf9fd885e6cec5da624d >> StatusCode:: 400, Message:: Cast to string failed for value "{ outright_status: 'completed' }" (type Object) at path "outright_status"
+2023-07-09 14:17:02 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: BID_NOT_FOUND
+2023-07-09 14:17:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:18:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

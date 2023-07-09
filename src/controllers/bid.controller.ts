@@ -283,7 +283,7 @@ class BidController {
     try {
       const { proposal_id, milestone_id, client_id, proposal_type } = req.body;
 
-      await this.bidService.requestMilestoneReview(proposal_id, milestone_id, client_id, req.user.id);
+      await this.bidService.requestMilestoneReview(proposal_id, milestone_id, client_id, req.user.id, proposal_type);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'BID_REQUEST_SUCCESSFUL', data: [] });
     } catch (error) {
