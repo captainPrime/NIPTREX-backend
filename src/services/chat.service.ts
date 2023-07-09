@@ -141,6 +141,30 @@ class ChatService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Messages By Chat
+  |--------------------------------------------------------------------------
+  */
+  public async getuserMessages(userId: Types.ObjectId | string): Promise<any[]> {
+    const chat: IMessage[] = await this.message.find({ sender: userId });
+
+    const updatedChat: Promise<{ chat: any; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
+      async (chatItem: IMessage) => {
+        const about = await this.userService.findUserById(chatItem.sender.toString());
+        const chat = await this.message.find({ milestone: chatItem.milestone.toString() });
+        return {
+          chat: chat,
+          first_name: about?.first_name,
+          last_name: about?.last_name,
+          profile_picture: about?.profile_picture,
+        };
+      },
+    );
+
+    return Promise.all(updatedChat);
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Files By Milestone
   |--------------------------------------------------------------------------
   */

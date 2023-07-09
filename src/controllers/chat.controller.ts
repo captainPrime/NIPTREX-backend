@@ -125,6 +125,23 @@ class ChatController {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Messages By Chat
+  |--------------------------------------------------------------------------
+  */
+  public getUserMessages = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId = req.user.id;
+
+      const messages = await this.chatService.getuserMessages(userId);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Files By Milestone
   |--------------------------------------------------------------------------
   */

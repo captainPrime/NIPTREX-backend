@@ -1,0 +1,29 @@
+2023-07-09 11:48:28 info: =================================
+2023-07-09 11:48:28 info: ======= ENV: development =======
+2023-07-09 11:48:28 info: 🚀 App listening on the port 3000
+2023-07-09 11:48:28 info: =================================
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:31 info: Connected to email server
+2023-07-09 11:48:33 info: Connected to Database Successfully...
+2023-07-09 11:48:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 11:48:45 info: [0mPOST /auth/login [32m200[0m 927.129 ms - 587[0m
+2023-07-09 11:49:15 info: [0mGET /chat [32m200[0m 17239.410 ms - -[0m
+2023-07-09 11:54:24 info: [0mGET /bid/proposals/64a60cb821a20c178c54e9b1 [32m200[0m 1035.480 ms - -[0m
+2023-07-09 12:08:58 info: =================================
+2023-07-09 12:08:58 info: ======= ENV: development =======
+2023-07-09 12:08:58 info: 🚀 App listening on the port 3000
+2023-07-09 12:08:58 info: =================================
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:00 info: Connected to email server
+2023-07-09 12:09:01 info: Connected to Database Successfully...
+2023-07-09 12:09:09 info: [0mGET /bid/proposals/64a60cb821a20c178c54e9b1 [32m200[0m 1372.378 ms - -[0m

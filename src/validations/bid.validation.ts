@@ -84,3 +84,10 @@ export const updateMilestoneStageSchema = Joi.object({
   attachments: Joi.array().items(Joi.string()).optional(),
   links: Joi.array().items(Joi.string()).optional(),
 }).min(1);
+
+export const updateOutrightStatusValidation = Joi.object({
+  description: Joi.string().optional(),
+  outright_status: Joi.string()
+    .valid(...Object.values(MilestoneStatus))
+    .optional(),
+}).min(1);

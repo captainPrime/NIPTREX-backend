@@ -18,16 +18,17 @@ export enum MilestoneStatus {
 }
 
 export enum BiddingStatus {
-  CLOSED = 'closed',
-  IN_PROGRESS = 'in_progress',
+  NULL = 'null',
   PAID = 'paid',
+  CLOSED = 'closed',
   APPLIED = 'applied',
   COMPLETED = 'completed',
+  IN_PROGRESS = 'in_progress',
 }
 
 export enum PaymentType {
-  MILESTONE = 'milestone',
   OUTRIGHT = 'outright',
+  MILESTONE = 'milestone',
 }
 
 interface IBidding extends Document {
@@ -46,6 +47,7 @@ interface IBidding extends Document {
   date_applied: Date;
   liked: boolean;
   disliked: boolean;
+  outright_status: BiddingStatus;
 }
 
 export interface IUpdateBidding extends Partial<IBidding> {
@@ -92,6 +94,10 @@ const BiddingSchema: Schema = new Schema({
     required: function (this: IBidding) {
       return this.payment_type === PaymentType.MILESTONE;
     },
+  },
+  outright_status: {
+    type: String,
+    require: true,
   },
   cover_letter: {
     type: String,

@@ -356,8 +356,10 @@ class WalletController {
 
             // return user nips
             const bidders = await this.bidService.getAllBidders(job._id.toString());
-            // eslint-disable-next-line prettier/prettier
-            const userIds = bidders.filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id.toString()).map((bidder: any) => bidder.user_id.toString());
+
+            const userIds = bidders
+              .filter((bidder: any) => bidder.user_id.toString() !== proposal.user_id.toString())
+              .map((bidder: any) => bidder.user_id.toString());
 
             await this.bidService.updateBid(proposal.user_id, job._id.toString(), { status: BiddingStatus.IN_PROGRESS });
 
@@ -419,6 +421,32 @@ class WalletController {
 
       const transaction = await this.walletService.createTransaction(transactionData);
 
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public payFreelancer = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { amount, currency, narration, account_number } = req.body;
+      const details = {
+        account_bank: '044',
+        account_number,
+        amount,
+        narration,
+        currency,
+        reference: generateUUID(),
+        callback_url: 'https://webhook.site/b3e505b0-fe02-430e-a538-22bbbce8ce0d',
+        debit_currency: 'NGN',
+      };
+      flw.Transfer.initiate(details).then(console.log).catch(console.log);
       res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
     } catch (error) {
       console.log(error);

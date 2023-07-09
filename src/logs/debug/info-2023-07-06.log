@@ -92,3 +92,11 @@
 2023-07-06 02:49:41 info: Connected to email server
 2023-07-06 02:49:42 info: Connected to Database Successfully...
 2023-07-06 02:50:12 info: [0mGET /service/getServiceById/649d83b311a070581e3e503b [32m200[0m 558.197 ms - -[0m
+2023-07-06 02:51:08 info: [0mGET /job/getAllJobs [32m200[0m 334.499 ms - -[0m
+2023-07-06 02:52:02 info: [0mPOST /job [32m200[0m 1820.091 ms - 927[0m
+2023-07-06 02:52:11 info: [0mGET /job/getAllJobs [32m200[0m 232.472 ms - -[0m
+2023-07-06 02:52:25 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-06 02:52:25 info: [0mGET /job/getUserJobBestMatches [32m200[0m 213.269 ms - 75[0m
+2023-07-06 02:52:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-06 02:52:32 info: [0mPOST /auth/login [32m200[0m 648.358 ms - 587[0m
+2023-07-06 02:52:37 info: [0mGET /job/getUserJobBestMatches [32m200[0m 1135.153 ms - -[0m

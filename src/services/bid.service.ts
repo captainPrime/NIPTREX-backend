@@ -8,7 +8,12 @@ import EmailService from '@/modules/email/email.service';
 import { HttpException } from '@exceptions/HttpException';
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { calculateMatchPercentage } from '@/utils/matchPercentage';
-import { biddingSchemaValidation, updateBiddingSchemaValidation, updateMilestoneStageSchema } from '@/validations/bid.validation';
+import {
+  biddingSchemaValidation,
+  updateBiddingSchemaValidation,
+  updateMilestoneStageSchema,
+  updateOutrightStatusValidation,
+} from '@/validations/bid.validation';
 import { ArchiveProposalModel, BiddingModel, BiddingStage, IBidding, IUpdateBidding, ShortListProposalModel } from '@/models/bid.model';
 
 class BidService {
@@ -95,6 +100,20 @@ class BidService {
     const updatedData = await this.bid.findByIdAndUpdate(data._id, { milestone_stage: updatedMilestones }, { new: true });
 
     if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+
+    return updatedData;
+  }
+
+  public async updateOutrightStatus(selector: string, milestoneData: Partial<IBidding>): Promise<any> {
+    const { error } = updateOutrightStatusValidation.validate(milestoneData);
+    if (error) throw new HttpException(400, 2002, 'BID_VALIDATION_ERROR', [error.details[0].message]);
+
+    const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(selector) });
+    if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
+
+    const updatedData = await this.bid.findByIdAndUpdate(data._id, { outright_status: milestoneData }, { new: true });
+
+    if (!updatedData) throw new HttpException(400, 2009, 'BID_REQUEST_ERROR');
 
     return updatedData;
   }
