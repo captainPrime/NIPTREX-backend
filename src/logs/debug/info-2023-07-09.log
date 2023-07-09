@@ -200,3 +200,18 @@
 2023-07-09 14:22:34 info: Connected to Database Successfully...
 2023-07-09 14:22:34 info: Connected to email server
 2023-07-09 14:22:42 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4958.474 ms - 80[0m
+2023-07-09 14:32:37 info: =================================
+2023-07-09 14:32:37 info: ======= ENV: development =======
+2023-07-09 14:32:37 info: 🚀 App listening on the port 3000
+2023-07-09 14:32:37 info: =================================
+2023-07-09 14:32:39 info: Connected to email server
+2023-07-09 14:32:39 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to email server
+2023-07-09 14:32:40 info: Connected to Database Successfully...
+2023-07-09 14:34:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 175
+2023-07-09 14:34:02 info: [0mPOST /profile/billing [32m200[0m 29.165 ms - 99[0m
+2023-07-09 14:34:10 info: [0mPOST /profile/billing [32m200[0m 1314.177 ms - 285[0m

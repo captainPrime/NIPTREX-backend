@@ -18,3 +18,4 @@
 2023-07-09 14:17:02 error: [POST] /bid/requestMilestoneReview >> StatusCode:: 400, Message:: BID_NOT_FOUND
 2023-07-09 14:17:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-09 14:18:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-09 14:34:02 error: [POST] /profile/billing >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 175

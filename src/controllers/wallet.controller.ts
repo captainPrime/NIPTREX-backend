@@ -447,7 +447,7 @@ class WalletController {
         debit_currency: 'NGN',
       };
       flw.Transfer.initiate(details).then(console.log).catch(console.log);
-      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
+      // res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
     } catch (error) {
       console.log(error);
       next(error);

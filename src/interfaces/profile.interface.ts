@@ -119,6 +119,9 @@ export interface IBilling {
   per_annum: number;
   hourly_rate: number;
   payment_method: EPaymentMethod;
+  bank_name: string;
+  account_number: number;
+  account_name: string;
 }
 
 export interface IPreferences {

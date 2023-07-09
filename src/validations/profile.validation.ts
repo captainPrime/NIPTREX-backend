@@ -91,6 +91,9 @@ export const billingSchema = Joi.object({
   payment_method: Joi.string()
     .valid(...Object.values(EPaymentMethod))
     .required(),
+  bank_name: Joi.string().required(),
+  account_number: Joi.number().required(),
+  account_name: Joi.string().required(),
 });
 
 export const billingUpdateSchema = Joi.object({
@@ -98,6 +101,9 @@ export const billingUpdateSchema = Joi.object({
   per_annum: Joi.number(),
   hourly_rate: Joi.number(),
   payment_method: Joi.string().valid(...Object.values(EPaymentMethod)),
+  bank_name: Joi.string(),
+  account_number: Joi.number(),
+  account_name: Joi.string(),
 }).min(1);
 
 /*
