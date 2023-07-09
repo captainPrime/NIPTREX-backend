@@ -131,8 +131,6 @@ class BidService {
     const data = await this.bid.findOne({ _id: new mongoose.Types.ObjectId(proposalId) });
     if (!data) throw new HttpException(400, 2002, 'BID_NOT_FOUND');
 
-    console.log('PROPOSAL', proposal_type);
-
     if (data.user_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
 
     const user: any = await this.userService.findUserById(clientId);

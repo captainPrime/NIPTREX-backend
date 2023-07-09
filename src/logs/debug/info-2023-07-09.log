@@ -187,3 +187,16 @@
 2023-07-09 14:21:21 info: Connected to email server
 2023-07-09 14:21:31 info: Connected to Database Successfully...
 2023-07-09 14:21:41 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 3985.288 ms - 80[0m
+2023-07-09 14:22:31 info: =================================
+2023-07-09 14:22:31 info: ======= ENV: development =======
+2023-07-09 14:22:31 info: 🚀 App listening on the port 3000
+2023-07-09 14:22:31 info: =================================
+2023-07-09 14:22:33 info: Connected to email server
+2023-07-09 14:22:33 info: Connected to email server
+2023-07-09 14:22:33 info: Connected to email server
+2023-07-09 14:22:33 info: Connected to email server
+2023-07-09 14:22:33 info: Connected to email server
+2023-07-09 14:22:34 info: Connected to email server
+2023-07-09 14:22:34 info: Connected to Database Successfully...
+2023-07-09 14:22:34 info: Connected to email server
+2023-07-09 14:22:42 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4958.474 ms - 80[0m
