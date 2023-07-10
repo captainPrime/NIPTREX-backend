@@ -185,9 +185,6 @@ class ServiceController {
       const serviceData = await this.serviceService.getServiceById(service_id);
       if (!serviceData) throw new HttpException(400, 7006, 'SERVICE_NOT_FOUND');
 
-      const service = await this.serviceService.getServiceProposalByServiceId(service_id);
-      if (service && service.client_id.toString() === req.user.id) throw new HttpException(400, 7008, 'SERVICE_ALREADY_PROPOSED');
-
       const payload = {
         client_id: req.user.id,
         service_id,
