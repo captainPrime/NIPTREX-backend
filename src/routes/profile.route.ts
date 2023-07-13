@@ -127,11 +127,11 @@ class ProfileRoute implements Routes {
     | Bank Route
     |--------------------------------------------------------------------------
     */
-    this.router.post(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.createBank);
-    this.router.get(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.getUserBank);
-    this.router.put(`${this.path}/bank`, authMiddleware(['freelancer', 'client']), this.bankController.updateBankInfo);
-    this.router.delete(`${this.path}/bank/:id`, authMiddleware(['freelancer', 'client']), this.bankController.deleteBankInfo);
-    this.router.get(`${this.path}/bank/:id`, authMiddleware(['freelancer', 'client']), this.bankController.getBankById);
+    this.router.post(`${this.path}/billingAddress`, authMiddleware(['freelancer', 'client']), this.bankController.createBank);
+    this.router.get(`${this.path}/billingAddress`, authMiddleware(['freelancer', 'client']), this.bankController.getUserBank);
+    this.router.put(`${this.path}/billingAddress`, authMiddleware(['freelancer', 'client']), this.bankController.updateBankInfo);
+    this.router.delete(`${this.path}/billingAddress/:id`, authMiddleware(['freelancer', 'client']), this.bankController.deleteBankInfo);
+    this.router.get(`${this.path}/billingAddress/:id`, authMiddleware(['freelancer', 'client']), this.bankController.getBankById);
 
     /*
     |--------------------------------------------------------------------------
