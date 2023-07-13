@@ -106,7 +106,7 @@ class ChatController {
       const dataWithUserInfo = await Promise.all(
         messages.map(async data => {
           const user = await this.userService.findUserById(data.sender.toString());
-          return { data, first_name: user.first_name, last_name: user.last_name, profile_picture: user.profile_picture };
+          return { ...data.toObject(), first_name: user.first_name, last_name: user.last_name, profile_picture: user.profile_picture };
         }),
       );
 
@@ -127,12 +127,12 @@ class ChatController {
 
       const messages = await this.chatService.getMessagesByMilestone(milestoneId);
       console.log(messages);
-      if (messages.length === 0) {
+      if (!messages || messages?.length === 0) {
         return res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: [] });
       }
 
       const dataWithUserInfo = await Promise.all(
-        messages.map(async data => {
+        messages?.map(async (data: any) => {
           const user = await this.userService.findUserById(data.sender.toString());
           return { ...data.toObject(), first_name: user.first_name, last_name: user.last_name, profile_picture: user.profile_picture };
         }),

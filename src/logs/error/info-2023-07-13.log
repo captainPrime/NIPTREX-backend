@@ -115,3 +115,4 @@ ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is req
 2023-07-13 06:16:31 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
 2023-07-13 06:17:48 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
 2023-07-13 06:19:20 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
+2023-07-13 06:20:20 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')

@@ -602,3 +602,19 @@
 2023-07-13 06:20:11 info: Connected to email server
 2023-07-13 06:20:11 info: Connected to email server
 2023-07-13 06:20:11 info: Connected to Database Successfully...
+2023-07-13 06:20:20 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
+2023-07-13 06:20:20 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 568.795 ms - 111[0m
+2023-07-13 06:22:21 info: =================================
+2023-07-13 06:22:21 info: ======= ENV: development =======
+2023-07-13 06:22:21 info: 🚀 App listening on the port 3000
+2023-07-13 06:22:21 info: =================================
+2023-07-13 06:22:23 info: Connected to email server
+2023-07-13 06:22:23 info: Connected to email server
+2023-07-13 06:22:23 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to email server
+2023-07-13 06:22:24 info: Connected to Database Successfully...
+2023-07-13 06:22:30 info: [0mGET /chat/milestone/6469b9101d48527e24fc9f0e [32m200[0m 819.736 ms - 590[0m
