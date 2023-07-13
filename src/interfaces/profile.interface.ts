@@ -210,7 +210,7 @@ export interface IBio {
   description: string;
 }
 
-export interface IBankInfo {
+export interface IBillingAddress {
   user_id: Schema.Types.ObjectId | string;
   bank_name: string;
   account_number: string;
@@ -225,4 +225,4 @@ export type IUpdateBilling = Partial<IBilling>;
 export type IUpdateDocument = Partial<IDocument>;
 export type IUpdatePreference = Partial<IPreferences>;
 export type IUpdateBio = Partial<IBio>;
-export type IUpdateBankInfo = Partial<IBankInfo>;
+export type IUpdateBillingAddress = Partial<IBillingAddress>;

@@ -3,7 +3,7 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
 import { BankInfo } from '@/models/profile.model';
-import { IBankInfo, IUpdateBio } from '@/interfaces/profile.interface';
+import { IBillingAddress, IUpdateBio } from '@/interfaces/profile.interface';
 import { bankInfoSchemaUpdateValidation, bankInfoSchemaValidation } from '@/validations/profile.validation';
 
 class BankService {
@@ -15,7 +15,7 @@ class BankService {
   | Add bank Info
   |--------------------------------------------------------------------------
   */
-  public async addBankInfo(body: IBankInfo): Promise<any> {
+  public async addBankInfo(body: IBillingAddress): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 9005, 'All required fields cannot be empty');
 
     const { error } = bankInfoSchemaValidation.validate(body);

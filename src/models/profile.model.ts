@@ -1,7 +1,7 @@
 import {
   EmploymentType,
   IAbout,
-  IBankInfo,
+  IBillingAddress,
   IBilling,
   IBio,
   ICertification,
@@ -92,7 +92,7 @@ const identitySchema: Schema = new Schema(
   },
 );
 
-const bankInfoSchema: Schema = new Schema(
+const billingAddressSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     bank_name: { type: String, required: true },
@@ -201,7 +201,7 @@ certificationSchema.plugin(toJSON);
 billingSchema.plugin(toJSON);
 identitySchema.plugin(toJSON);
 workPreference.plugin(toJSON);
-bankInfoSchema.plugin(toJSON);
+billingAddressSchema.plugin(toJSON);
 
 // Define a virtual for total_hours
 aboutSchema.virtual('total_hours').get(function (this: IAbout) {
@@ -226,6 +226,6 @@ const Billing = model<IBilling>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
 const Bio = model<IBio>('Bio', bioSchema);
-const BankInfo = model<IBankInfo>('Bank', bankInfoSchema);
+const BankInfo = model<IBillingAddress>('Bank', billingAddressSchema);
 
 export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio, BankInfo };
