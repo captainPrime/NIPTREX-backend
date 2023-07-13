@@ -51,6 +51,7 @@ class ChatController {
     try {
       const userId = req.user.id;
 
+      console.log(userId, 'CONTROLLER');
       const chats = await this.chatService.getChatsByUser(userId);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chats });

@@ -63,7 +63,8 @@ class ChatService {
       throw new HttpException(400, 2001, 'User id cannot be empty');
     }
 
-    const chats: IChat[] = await this.chat.find({ participants: { $elemMatch: { $eq: userId } } }).lean();
+    console.log(userId);
+    const chats: IChat[] = await this.chat.find({ participants: { $in: userId } }).lean();
 
     return chats;
   }

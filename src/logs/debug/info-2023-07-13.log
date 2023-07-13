@@ -398,3 +398,90 @@
 2023-07-13 05:41:30 info: Connected to email server
 2023-07-13 05:41:31 info: Connected to Database Successfully...
 2023-07-13 05:41:36 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 530.763 ms - 627[0m
+2023-07-13 05:44:28 info: =================================
+2023-07-13 05:44:28 info: ======= ENV: development =======
+2023-07-13 05:44:28 info: 🚀 App listening on the port 3000
+2023-07-13 05:44:28 info: =================================
+2023-07-13 05:44:31 info: Connected to email server
+2023-07-13 05:44:31 info: Connected to email server
+2023-07-13 05:44:31 info: Connected to email server
+2023-07-13 05:44:32 info: Connected to email server
+2023-07-13 05:44:32 info: Connected to email server
+2023-07-13 05:44:32 info: Connected to email server
+2023-07-13 05:44:32 info: Connected to email server
+2023-07-13 05:44:32 info: Connected to email server
+2023-07-13 05:44:42 info: Connected to Database Successfully...
+2023-07-13 05:44:53 info: [0mGET /chat [32m200[0m 711.691 ms - 81[0m
+2023-07-13 05:57:22 info: =================================
+2023-07-13 05:57:22 info: ======= ENV: development =======
+2023-07-13 05:57:22 info: 🚀 App listening on the port 3000
+2023-07-13 05:57:22 info: =================================
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to email server
+2023-07-13 05:57:25 info: Connected to Database Successfully...
+2023-07-13 05:57:33 info: [0mGET /chat [32m200[0m 525.253 ms - 81[0m
+2023-07-13 05:58:22 info: =================================
+2023-07-13 05:58:22 info: ======= ENV: development =======
+2023-07-13 05:58:22 info: 🚀 App listening on the port 3000
+2023-07-13 05:58:22 info: =================================
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to email server
+2023-07-13 05:58:25 info: Connected to Database Successfully...
+2023-07-13 05:58:37 info: [0mGET /chat [32m200[0m 529.924 ms - 81[0m
+2023-07-13 05:59:51 info: =================================
+2023-07-13 05:59:51 info: ======= ENV: development =======
+2023-07-13 05:59:51 info: 🚀 App listening on the port 3000
+2023-07-13 05:59:51 info: =================================
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:53 info: Connected to email server
+2023-07-13 05:59:54 info: Connected to Database Successfully...
+2023-07-13 06:00:03 info: [0mGET /chat [32m200[0m 524.925 ms - 81[0m
+2023-07-13 06:00:24 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-13 06:00:24 info: [0mGET /chat/user [32m200[0m 237.570 ms - 148[0m
+2023-07-13 06:01:36 info: =================================
+2023-07-13 06:01:36 info: ======= ENV: development =======
+2023-07-13 06:01:36 info: 🚀 App listening on the port 3000
+2023-07-13 06:01:36 info: =================================
+2023-07-13 06:01:38 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:39 info: Connected to email server
+2023-07-13 06:01:50 info: Connected to Database Successfully...
+2023-07-13 06:01:54 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-13 06:01:54 info: [0mGET /chat/user [32m200[0m 277.919 ms - 148[0m
+2023-07-13 06:02:54 info: =================================
+2023-07-13 06:02:54 info: ======= ENV: development =======
+2023-07-13 06:02:54 info: 🚀 App listening on the port 3000
+2023-07-13 06:02:54 info: =================================
+2023-07-13 06:02:56 info: Connected to email server
+2023-07-13 06:02:56 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:02:57 info: Connected to email server
+2023-07-13 06:03:07 info: Connected to Database Successfully...
+2023-07-13 06:03:26 info: [0mGET /chat/user [32m200[0m 614.575 ms - 630[0m

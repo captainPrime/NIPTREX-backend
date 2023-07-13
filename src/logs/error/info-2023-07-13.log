@@ -108,3 +108,5 @@ ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is req
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 06:00:24 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-13 06:01:54 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
