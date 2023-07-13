@@ -270,17 +270,23 @@ export const updateResumeValidation = Joi.object({
 | Bank Validation
 |--------------------------------------------------------------------------
 */
-export const bankInfoSchemaValidation = Joi.object({
+export const billingAddressSchemaValidation = Joi.object({
   user_id: Joi.string().required(),
-  bank_name: Joi.string().required(),
-  account_number: Joi.string().required(),
-  account_name: Joi.string().required(),
-  currency: Joi.string(),
+  full_name: Joi.string().required(),
+  company: Joi.string().required(),
+  state: Joi.string().required(),
+  address: Joi.string().required(),
+  city: Joi.string().required(),
+  vat_number: Joi.number().required(),
+  postal_number: Joi.number().required(),
 });
 
-export const bankInfoSchemaUpdateValidation = Joi.object({
-  bank_name: Joi.string(),
-  account_number: Joi.string(),
-  account_name: Joi.string(),
-  currency: Joi.string(),
+export const billingAddressUpdateValidation = Joi.object({
+  full_name: Joi.string(),
+  company: Joi.string(),
+  state: Joi.string(),
+  address: Joi.string(),
+  city: Joi.string(),
+  vat_number: Joi.number(),
+  postal_number: Joi.number(),
 }).min(1);
