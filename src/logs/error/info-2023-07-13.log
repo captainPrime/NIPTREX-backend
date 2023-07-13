@@ -60,3 +60,51 @@ ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is req
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:57:50 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:57:50 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:58:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 04:58:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 05:01:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 05:02:19 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-07-13 05:05:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/controllers/chat.controller.ts(16,28): error TS1005: ',' expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/controllers/chat.controller.ts(16,28): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/controllers/chat.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8695978938131519.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8695978938131519.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-8695978938131519.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-07-13 05:06:36 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 05:06:36 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

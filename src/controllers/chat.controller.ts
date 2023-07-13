@@ -13,9 +13,9 @@ class ChatController {
   */
   public createChat = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { user1, user2, milestone } = req.body;
+      const { participants, milestone } = req.body;
 
-      const chat = await this.chatService.createChat(user1, user2, milestone);
+      const chat = await this.chatService.createChat(participants, milestone);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chat });
     } catch (error) {

@@ -17,18 +17,18 @@ class ChatService {
   | Create Chat
   |--------------------------------------------------------------------------
   */
-  public async createChat(user1: Types.ObjectId | string, user2: Types.ObjectId | string, milestone: Types.ObjectId | string): Promise<IChat> {
-    if (isEmpty(user1) || isEmpty(user2)) {
+  public async createChat(participants: Types.ObjectId | string, milestone: Types.ObjectId | string): Promise<IChat> {
+    if (isEmpty(participants)) {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
-    const { error } = chatSchemaValidation.validate({ user1, user2, milestone });
+    const { error } = chatSchemaValidation.validate({ participants, milestone });
 
     if (error) {
       throw new HttpException(400, 2002, 'CHAT_VALIDATION_ERROR', [error.details[0].message]);
     }
 
-    const chat: IChat = new this.chat({ user1, user2, milestone });
+    const chat: IChat = await this.chat.create({ participants, milestone });
     await chat.save();
 
     return chat;
@@ -86,7 +86,7 @@ class ChatService {
     }
 
     const payload = {
-      chat: data.chatId,
+      chatId: data.chatId,
       sender: data.sender,
       content: data?.content,
     };

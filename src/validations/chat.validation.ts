@@ -2,8 +2,7 @@ import Joi from 'joi';
 
 // Chat Validation Schema
 export const chatSchemaValidation = Joi.object({
-  user1: Joi.string().required().label('User 1'),
-  user2: Joi.string().required().label('User 2'),
+  participants: Joi.array().items(Joi.string()).required(),
   milestone: Joi.string().required(),
 });
 

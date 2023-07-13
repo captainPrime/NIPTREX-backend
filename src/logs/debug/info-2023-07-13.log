@@ -200,3 +200,72 @@
 2023-07-13 04:57:32 info: Connected to email server
 2023-07-13 04:57:32 info: Connected to email server
 2023-07-13 04:57:43 info: Connected to Database Successfully...
+2023-07-13 04:57:50 error: [ValidationError] >> Chat validation failed: messages.0.chatId: Path `chatId` is required.
+2023-07-13 04:58:24 info: =================================
+2023-07-13 04:58:24 info: ======= ENV: development =======
+2023-07-13 04:58:24 info: 🚀 App listening on the port 3000
+2023-07-13 04:58:24 info: =================================
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to email server
+2023-07-13 04:58:26 info: Connected to Database Successfully...
+2023-07-13 04:58:39 info: [0mGET /reload_db [32m200[0m 4659.863 ms - 74[0m
+2023-07-13 04:58:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 04:58:45 info: [0mPOST /auth/login [32m200[0m 581.471 ms - 587[0m
+2023-07-13 04:58:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 04:58:54 info: [0mPOST /auth/login [32m200[0m 494.060 ms - 587[0m
+2023-07-13 05:01:03 info: =================================
+2023-07-13 05:01:03 info: ======= ENV: development =======
+2023-07-13 05:01:03 info: 🚀 App listening on the port 3000
+2023-07-13 05:01:03 info: =================================
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:06 info: Connected to email server
+2023-07-13 05:01:12 info: Connected to Database Successfully...
+2023-07-13 05:01:29 info: [0mGET /users/profile [32m200[0m 477.030 ms - 469[0m
+2023-07-13 05:01:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 05:01:52 info: [0mPOST /auth/login [32m200[0m 666.024 ms - 587[0m
+2023-07-13 05:01:58 info: [0mGET /users/profile [32m200[0m 651.190 ms - 476[0m
+2023-07-13 05:02:19 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2023-07-13 05:02:19 info: [0mPOST /chat [32m200[0m 315.562 ms - 93[0m
+2023-07-13 05:05:44 info: =================================
+2023-07-13 05:05:44 info: ======= ENV: development =======
+2023-07-13 05:05:44 info: 🚀 App listening on the port 3000
+2023-07-13 05:05:44 info: =================================
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:46 info: Connected to email server
+2023-07-13 05:05:47 info: Connected to Database Successfully...
+2023-07-13 05:06:02 info: [0mPOST /chat [32m200[0m 1146.666 ms - 236[0m
+2023-07-13 05:06:36 error: [ValidationError] >> Chat validation failed: messages.0.chatId: Path `chatId` is required.
+2023-07-13 05:07:48 info: =================================
+2023-07-13 05:07:48 info: ======= ENV: development =======
+2023-07-13 05:07:48 info: 🚀 App listening on the port 3000
+2023-07-13 05:07:48 info: =================================
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to email server
+2023-07-13 05:07:51 info: Connected to Database Successfully...
+2023-07-13 05:07:58 info: [0mPOST /chat/message [32m200[0m 1574.437 ms - 271[0m
+2023-07-13 05:08:21 info: Connected to email server
+2023-07-13 05:08:22 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 597.200 ms - 428[0m
+2023-07-13 05:08:48 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 487.608 ms - 428[0m
