@@ -63,7 +63,7 @@ class ChatService {
       throw new HttpException(400, 2001, 'User id cannot be empty');
     }
 
-    const chats: IChat[] = await this.chat.find({ user1: userId }).exec();
+    const chats: IChat[] = await this.chat.find({ participants: { $elemMatch: { $eq: userId } } }).lean();
 
     return chats;
   }
@@ -110,6 +110,8 @@ class ChatService {
   public async getMessagesByChat(chatId: Types.ObjectId | string): Promise<IMessage[]> {
     const chat: IChat = await this.getChatById(chatId);
 
+    console.log(chat);
+
     return chat.messages;
   }
 
@@ -118,10 +120,10 @@ class ChatService {
   | Get Messages By Chat
   |--------------------------------------------------------------------------
   */
-  public async getMessagesByMilestone(chatId: Types.ObjectId | string): Promise<any[]> {
-    const chat: IMessage[] = await this.message.find({ milestone: chatId });
+  public async getMessagesByMilestone(milestoneId: Types.ObjectId | string): Promise<any[]> {
+    const chat: IChat[] = await this.chat.find({ milestone: milestoneId });
 
-    const updatedChat: Promise<{ chat: IMessage; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
+    const updatedChat: Promise<{ chat: IChat; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat?.messages.map(
       async (chatItem: IMessage) => {
         const about = await this.userService.findUserById(chatItem.sender.toString());
         return {

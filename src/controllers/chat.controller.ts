@@ -2,8 +2,10 @@ import { NextFunction, Request, Response } from 'express';
 import ChatService from '@/services/chat.service';
 import { containsBadWords } from '@/utils/wordChecker';
 import { HttpException } from '@/exceptions/HttpException';
+import UserService from '@/services/users.service';
 
 class ChatController {
+  public userService = new UserService();
   public chatService = new ChatService();
 
   /*
@@ -100,7 +102,14 @@ class ChatController {
 
       const messages = await this.chatService.getMessagesByChat(chatId);
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
+      const dataWithUserInfo = await Promise.all(
+        messages.map(async data => {
+          const user = await this.userService.findUserById(data.sender.toString());
+          return { data, first_name: user.first_name, last_name: user.last_name, profile_picture: user.profile_picture };
+        }),
+      );
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: dataWithUserInfo });
     } catch (error) {
       next(error);
     }

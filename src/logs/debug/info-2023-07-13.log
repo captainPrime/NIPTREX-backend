@@ -269,3 +269,132 @@
 2023-07-13 05:08:21 info: Connected to email server
 2023-07-13 05:08:22 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 597.200 ms - 428[0m
 2023-07-13 05:08:48 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 487.608 ms - 428[0m
+2023-07-13 05:10:15 info: =================================
+2023-07-13 05:10:15 info: ======= ENV: development =======
+2023-07-13 05:10:15 info: 🚀 App listening on the port 3000
+2023-07-13 05:10:15 info: =================================
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to email server
+2023-07-13 05:10:18 info: Connected to Database Successfully...
+2023-07-13 05:10:50 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 605.052 ms - 428[0m
+2023-07-13 05:12:00 info: =================================
+2023-07-13 05:12:00 info: ======= ENV: development =======
+2023-07-13 05:12:00 info: 🚀 App listening on the port 3000
+2023-07-13 05:12:00 info: =================================
+2023-07-13 05:12:02 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to email server
+2023-07-13 05:12:03 info: Connected to Database Successfully...
+2023-07-13 05:12:09 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 591.464 ms - 428[0m
+2023-07-13 05:13:12 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 650.426 ms - 273[0m
+2023-07-13 05:13:27 info: [0mPOST /chat/message [32m200[0m 1256.487 ms - 277[0m
+2023-07-13 05:13:39 info: [0mGET /chat/milestone/647dce395fab941b6eff394c [32m200[0m 744.983 ms - 869[0m
+2023-07-13 05:13:58 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 474.130 ms - 472[0m
+2023-07-13 05:21:25 info: =================================
+2023-07-13 05:21:25 info: ======= ENV: development =======
+2023-07-13 05:21:26 info: 🚀 App listening on the port 3000
+2023-07-13 05:21:26 info: =================================
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to email server
+2023-07-13 05:21:28 info: Connected to Database Successfully...
+2023-07-13 05:29:30 info: =================================
+2023-07-13 05:29:30 info: ======= ENV: development =======
+2023-07-13 05:29:30 info: 🚀 App listening on the port 3000
+2023-07-13 05:29:30 info: =================================
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to email server
+2023-07-13 05:29:33 info: Connected to Database Successfully...
+2023-07-13 05:30:01 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 538.289 ms - 86[0m
+2023-07-13 05:32:50 info: =================================
+2023-07-13 05:32:50 info: ======= ENV: development =======
+2023-07-13 05:32:50 info: 🚀 App listening on the port 3000
+2023-07-13 05:32:50 info: =================================
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:52 info: Connected to email server
+2023-07-13 05:32:53 info: Connected to Database Successfully...
+2023-07-13 05:33:17 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 702.297 ms - 86[0m
+2023-07-13 05:35:29 info: =================================
+2023-07-13 05:35:29 info: ======= ENV: development =======
+2023-07-13 05:35:29 info: 🚀 App listening on the port 3000
+2023-07-13 05:35:29 info: =================================
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:31 info: Connected to email server
+2023-07-13 05:35:43 info: Connected to Database Successfully...
+2023-07-13 05:36:05 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 763.489 ms - -[0m
+2023-07-13 05:37:45 info: =================================
+2023-07-13 05:37:45 info: ======= ENV: development =======
+2023-07-13 05:37:45 info: 🚀 App listening on the port 3000
+2023-07-13 05:37:45 info: =================================
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:47 info: Connected to email server
+2023-07-13 05:37:48 info: Connected to Database Successfully...
+2023-07-13 05:37:55 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 788.219 ms - 608[0m
+2023-07-13 05:39:17 info: Connected to email server
+2023-07-13 05:40:20 info: =================================
+2023-07-13 05:40:20 info: ======= ENV: development =======
+2023-07-13 05:40:20 info: 🚀 App listening on the port 3000
+2023-07-13 05:40:20 info: =================================
+2023-07-13 05:40:22 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to email server
+2023-07-13 05:40:23 info: Connected to Database Successfully...
+2023-07-13 05:40:30 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 829.922 ms - 608[0m
+2023-07-13 05:41:27 info: =================================
+2023-07-13 05:41:27 info: ======= ENV: development =======
+2023-07-13 05:41:27 info: 🚀 App listening on the port 3000
+2023-07-13 05:41:27 info: =================================
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:30 info: Connected to email server
+2023-07-13 05:41:31 info: Connected to Database Successfully...
+2023-07-13 05:41:36 info: [0mGET /chat/64af782993bdfbeb42b039eb [32m200[0m 530.763 ms - 627[0m
