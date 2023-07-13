@@ -212,10 +212,13 @@ export interface IBio {
 
 export interface IBillingAddress {
   user_id: Schema.Types.ObjectId | string;
-  bank_name: string;
-  account_number: string;
-  account_name: string;
-  currency?: string;
+  full_name: string;
+  company: string;
+  state: string;
+  address: string;
+  city: string;
+  vat_number: number;
+  postal_number: number;
 }
 
 export type IUpdateExperience = Partial<IExperience>;

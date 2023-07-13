@@ -95,10 +95,13 @@ const identitySchema: Schema = new Schema(
 const billingAddressSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    bank_name: { type: String, required: true },
-    account_number: { type: String, required: true },
-    account_name: { type: String, required: true },
-    currency: { type: String, required: false },
+    full_name: { type: String, required: true },
+    company: { type: String, required: true },
+    state: { type: String, required: true },
+    address: { type: String, required: false },
+    city: { type: String, required: false },
+    vat_number: { type: Number, required: false },
+    postal_number: { type: Number, required: false },
   },
   {
     timestamps: true,
@@ -226,6 +229,6 @@ const Billing = model<IBilling>('Billing', billingSchema);
 const Identity = model<IDocument>('Identity', identitySchema);
 const Preference = model<IPreferences>('Preference', workPreference);
 const Bio = model<IBio>('Bio', bioSchema);
-const BankInfo = model<IBillingAddress>('Bank', billingAddressSchema);
+const BillingAddress = model<IBillingAddress>('Bank', billingAddressSchema);
 
-export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio, BankInfo };
+export { About, Experience, Education, Certification, Billing, Identity, Preference, Bio, BillingAddress };
