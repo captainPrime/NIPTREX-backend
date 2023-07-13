@@ -1134,3 +1134,59 @@ src/controllers/rating.controller.ts(26,60): error TS1005: ',' expected.
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1033:32)
     at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-07-13 04:48:29 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:48:29 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:48:59 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:48:59 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:52:34 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:52:34 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:55:46 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-13 04:55:46 error: unhandledRejection: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

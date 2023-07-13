@@ -9,7 +9,7 @@ export interface IFiles {
 }
 export interface IMessage extends Document {
   sender: Schema.Types.ObjectId;
-  milestone: Schema.Types.ObjectId;
+  chatId: Schema.Types.ObjectId;
   content?: string;
   is_file: boolean;
   files?: IFiles[];
@@ -19,7 +19,7 @@ export interface IMessage extends Document {
 const messageSchema: Schema = new Schema(
   {
     sender: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-    milestone: { type: Schema.Types.ObjectId, ref: 'Bid', required: true },
+    chatId: { type: Schema.Types.ObjectId, ref: 'Chat', required: true },
     content: {
       type: String,
       required: function (this: IMessage) {

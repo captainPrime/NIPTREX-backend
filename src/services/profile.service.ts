@@ -80,7 +80,7 @@ class ProfileService {
       certification,
       proof_of_identity: identity[0],
       billing: billing[0],
-      bank: bank,
+      billing_address: bank,
       created_at: findOneUserData.createdAt,
       updated_at: findOneUserData.updatedAt,
     };

@@ -10,7 +10,7 @@ export const chatSchemaValidation = Joi.object({
 // Message Validation Schema
 export const messageSchemaValidation = Joi.object({
   sender: Joi.string().required(),
-  milestone: Joi.string().required(),
+  chatId: Joi.string().required(),
   content: Joi.string().when('is_file', {
     is: false,
     then: Joi.string().optional(),

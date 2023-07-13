@@ -78,27 +78,24 @@ class ChatService {
       throw new HttpException(400, 2005, 'All required fields cannot be empty');
     }
 
+    console.log(data);
     const { error } = messageSchemaValidation.validate(data);
 
     if (error) {
       throw new HttpException(400, 2002, 'MESSAGE_VALIDATION_ERROR', [error.details[0].message]);
     }
 
-    // const payload = {
-    //   chat: chat,
-    //   sender,
-    //   content,
-    //   milestone,
-    //   createdAt: new Date(),
-    // };
+    const payload = {
+      chat: data.chatId,
+      sender: data.sender,
+      content: data?.content,
+    };
 
-    // if (chat) {
-    //   const chatData: any = await this.getChatById(chat);
-    //   chatData?.messages.push(payload);
-    //   chatData?.save();
-    // }
+    const chatData: any = await this.getChatById(data.chatId.toString());
+    chatData?.messages.push(payload);
+    chatData?.save();
 
-    const message: IMessage = new this.message(data);
+    const message: IMessage = await this.message.create(data);
 
     await message.save();
 
@@ -150,7 +147,7 @@ class ChatService {
     const updatedChat: Promise<{ chat: any; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat.map(
       async (chatItem: IMessage) => {
         const about = await this.userService.findUserById(chatItem.sender.toString());
-        const chat = await this.message.find({ milestone: chatItem.milestone.toString() });
+        const chat = await this.message.find({ milestone: chatItem.chatId.toString() });
         return {
           chat: chat,
           first_name: about?.first_name,

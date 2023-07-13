@@ -64,7 +64,7 @@ class ChatController {
   */
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { milestone, sender, content, files }: any = req.body;
+      const { chatId, sender, content, files }: any = req.body;
 
       if (content && files) {
         throw new HttpException(400, 1004, 'CANT_SEND_BOTH_FILES_AND_MESSAGE');
@@ -75,7 +75,7 @@ class ChatController {
       }
 
       const payload: any = {
-        milestone,
+        chatId,
         sender,
         is_file: files ? true : false,
         ...(files ? { files } : { content }),

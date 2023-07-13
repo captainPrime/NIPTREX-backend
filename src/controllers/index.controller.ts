@@ -1,5 +1,6 @@
 // import Profile from '@/models/profile.model';
 import { BiddingModel } from '@/models/bid.model';
+import { ChatModel, MessageModel } from '@/models/chat.model';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
 import { ServiceModel } from '@/models/service.models';
@@ -10,6 +11,8 @@ class IndexController {
   public users = User;
   public bid: any = BiddingModel;
   public job: any = JobModel;
+  public chat: any = ChatModel;
+  public message: any = MessageModel;
   public hire: any = Hire;
   public saveJob: any = SavedJob;
   public about: any = About;
@@ -49,6 +52,8 @@ class IndexController {
       await this.bid.deleteMany({});
       await this.hire.deleteMany({});
       await this.service.deleteMany({});
+      await this.chat.deleteMany({});
+      await this.message.deleteMany({});
 
       const user = {
         first_name: 'John',
