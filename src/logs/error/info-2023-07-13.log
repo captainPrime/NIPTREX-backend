@@ -110,3 +110,8 @@ ValidationError: Chat validation failed: messages.0.chatId: Path `chatId` is req
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
 2023-07-13 06:00:24 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
 2023-07-13 06:01:54 error: [GET] /chat/user >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "user" (type string) at path "_id" for model "Chat"
+2023-07-13 06:11:29 error: [GET] /chat/milestone/647dce395fab941b6eff394c >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'map')
+2023-07-13 06:15:03 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
+2023-07-13 06:16:31 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
+2023-07-13 06:17:48 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')
+2023-07-13 06:19:20 error: [GET] /chat/milestone/6469b9101d48527e24fc9f0e >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'length')

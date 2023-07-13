@@ -63,10 +63,15 @@ class ChatService {
       throw new HttpException(400, 2001, 'User id cannot be empty');
     }
 
-    console.log(userId);
     const chats: IChat[] = await this.chat.find({ participants: { $in: userId } }).lean();
 
-    return chats;
+    // Loop through each chat and keep only the last message
+    const chatsWithLastMessage: IChat[] | any = chats.map(chat => {
+      const lastMessage = chat.messages[chat.messages.length - 1];
+      return { ...chat, messages: [lastMessage] };
+    });
+
+    return chatsWithLastMessage;
   }
 
   /*
@@ -121,22 +126,10 @@ class ChatService {
   | Get Messages By Chat
   |--------------------------------------------------------------------------
   */
-  public async getMessagesByMilestone(milestoneId: Types.ObjectId | string): Promise<any[]> {
-    const chat: IChat[] = await this.chat.find({ milestone: milestoneId });
-
-    const updatedChat: Promise<{ chat: IChat; first_name?: string; last_name?: string; profile_picture?: string }>[] = chat?.messages.map(
-      async (chatItem: IMessage) => {
-        const about = await this.userService.findUserById(chatItem.sender.toString());
-        return {
-          chat: chatItem,
-          first_name: about?.first_name,
-          last_name: about?.last_name,
-          profile_picture: about?.profile_picture,
-        };
-      },
-    );
-
-    return Promise.all(updatedChat);
+  public async getMessagesByMilestone(milestoneId: Types.ObjectId | string): Promise<IMessage[]> {
+    const chat: IChat | any = await this.chat.find({ milestone: milestoneId });
+    console.log('CHAT', chat.messages);
+    return chat.messages;
   }
 
   /*

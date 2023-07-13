@@ -123,11 +123,22 @@ class ChatController {
   */
   public getMessagesByMilestone = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const chatId = req.params.id;
+      const milestoneId = req.params.id;
 
-      const messages = await this.chatService.getMessagesByMilestone(chatId);
+      const messages = await this.chatService.getMessagesByMilestone(milestoneId);
+      console.log(messages);
+      if (messages.length === 0) {
+        return res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: [] });
+      }
 
-      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: messages });
+      const dataWithUserInfo = await Promise.all(
+        messages.map(async data => {
+          const user = await this.userService.findUserById(data.sender.toString());
+          return { ...data.toObject(), first_name: user.first_name, last_name: user.last_name, profile_picture: user.profile_picture };
+        }),
+      );
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: dataWithUserInfo });
     } catch (error) {
       next(error);
     }
