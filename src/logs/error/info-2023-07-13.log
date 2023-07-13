@@ -1,0 +1,2 @@
+2023-07-13 04:24:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 04:24:19 error: [POST] /profile/billingAddress >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'find')

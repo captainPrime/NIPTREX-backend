@@ -4,13 +4,13 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import { HttpException } from '@exceptions/HttpException';
 import { educationHistorySchema, experienceValidation } from '@/validations/profile.validation';
-import { Experience, Education, Certification, Preference, Identity, Billing, About, Bio, BankInfo } from '@/models/profile.model';
+import { Experience, Education, Certification, Preference, Identity, Billing, About, Bio, BillingAddress } from '@/models/profile.model';
 import { IEducationHistory, IExperience, IUpdateEducationHistory, IUpdateExperience } from '@/interfaces/profile.interface';
 
 class ProfileService {
   public bio: any = Bio;
   public about: any = About;
-  public bank: any = BankInfo;
+  public bank: any = BillingAddress;
   public billing: any = Billing;
   public identity: any = Identity;
   public education: any = Education;

@@ -1,0 +1,41 @@
+2023-07-13 04:23:20 info: =================================
+2023-07-13 04:23:20 info: ======= ENV: development =======
+2023-07-13 04:23:20 info: 🚀 App listening on the port 3000
+2023-07-13 04:23:20 info: =================================
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:22 info: Connected to email server
+2023-07-13 04:23:23 info: Connected to Database Successfully...
+2023-07-13 04:23:53 info: Connected to email server
+2023-07-13 04:24:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-13 04:24:09 info: [0mPOST /auth/login [32m200[0m 892.921 ms - 587[0m
+2023-07-13 04:24:19 error: [POST] /profile/billingAddress >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'find')
+2023-07-13 04:24:19 info: [0mPOST /profile/billingAddress [32m200[0m 552.199 ms - 109[0m
+2023-07-13 04:26:06 info: =================================
+2023-07-13 04:26:06 info: ======= ENV: development =======
+2023-07-13 04:26:06 info: 🚀 App listening on the port 3000
+2023-07-13 04:26:06 info: =================================
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:08 info: Connected to email server
+2023-07-13 04:26:09 info: Connected to Database Successfully...
+2023-07-13 04:26:15 info: [0mPOST /profile/billingAddress [32m200[0m 2015.850 ms - 312[0m
+2023-07-13 04:26:39 info: Connected to email server
+2023-07-13 04:27:26 info: =================================
+2023-07-13 04:27:26 info: ======= ENV: development =======
+2023-07-13 04:27:26 info: 🚀 App listening on the port 3000
+2023-07-13 04:27:26 info: =================================
+2023-07-13 04:27:28 info: Connected to email server
+2023-07-13 04:27:28 info: Connected to email server
+2023-07-13 04:27:28 info: Connected to email server
+2023-07-13 04:27:28 info: Connected to email server
+2023-07-13 04:27:28 info: Connected to email server
+2023-07-13 04:27:28 info: Connected to email server

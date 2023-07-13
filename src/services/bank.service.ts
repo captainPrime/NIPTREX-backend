@@ -2,12 +2,12 @@ import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { BankInfo } from '@/models/profile.model';
+import { BillingAddress } from '@/models/profile.model';
 import { IBillingAddress, IUpdateBio } from '@/interfaces/profile.interface';
 import { billingAddressUpdateValidation, billingAddressSchemaValidation } from '@/validations/profile.validation';
 
 class BankService {
-  public bank: any = BankInfo;
+  public bank: any = BillingAddress;
   public userService = new UserService();
 
   /*
@@ -20,7 +20,7 @@ class BankService {
 
     const { error } = billingAddressSchemaValidation.validate(body);
 
-    if (error) throw new HttpException(400, 9002, 'BANK_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 9002, 'BILLING_ADDRESS_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: any = await this.bank.create(body);
 
@@ -36,7 +36,7 @@ class BankService {
     if (isEmpty(userId)) throw new HttpException(400, 9001, 'User id can not be empty');
 
     const data = await this.bank.find({ user_id: userId });
-    if (!data) throw new HttpException(400, 9003, 'BANK_NOT_FOUND');
+    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
 
     return data;
   }
@@ -50,7 +50,7 @@ class BankService {
     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
     const data = await this.bank.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 9003, 'BANK_NOT_FOUND');
+    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
 
     return data;
   }
@@ -65,16 +65,16 @@ class BankService {
 
     const { error } = billingAddressUpdateValidation.validate(body);
 
-    if (error) throw new HttpException(400, 9002, 'BANK_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 9002, 'BILLING_ADDRESS_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.bank.findOne({ user_id: id });
-    if (!data) throw new HttpException(400, 9003, 'BANK_NOT_FOUND');
+    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
 
     const updatedData = await this.bank.findByIdAndUpdate(data._id, body, {
       new: true,
     });
 
-    if (!updatedData) throw new HttpException(400, 9009, 'BANK_REQUEST_ERROR');
+    if (!updatedData) throw new HttpException(400, 9009, 'BILLING_ADDRESS_REQUEST_ERROR');
 
     return updatedData;
   }
@@ -88,7 +88,7 @@ class BankService {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
     const data = await this.bank.findByIdAndDelete(id);
-    if (!data) throw new HttpException(400, 9009, 'BANK_REQUEST_ERROR');
+    if (!data) throw new HttpException(400, 9009, 'BILLING_ADDRESS_REQUEST_ERROR');
 
     return data;
   }

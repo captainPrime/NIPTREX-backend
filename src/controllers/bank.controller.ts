@@ -27,7 +27,7 @@ class BankController {
 
       const data = await this.bankService.addBankInfo({ ...userData, user_id: req.user.id });
 
-      res.status(200).json({ status: 200, response_code: 9000, message: 'BANK_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'BILLING_ADDRESS_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -42,7 +42,7 @@ class BankController {
     try {
       const data = await this.bankService.getUserBank(req.user.id);
 
-      res.status(200).json({ status: 200, response_code: 9000, message: 'BANK_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'BILLING_ADDRESS_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -58,7 +58,7 @@ class BankController {
       const id: string = req.params.id;
       const data = await this.bankService.getBankById(id);
 
-      res.status(200).json({ status: 200, response_code: 9000, message: 'BANK_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'BILLING_ADDRESS_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -74,7 +74,7 @@ class BankController {
       const body: IUpdateBio = req.body;
       const data = await this.bankService.updateBankInfo(req.user.id, body);
 
-      res.status(200).json({ status: 200, response_code: 9000, message: 'BANK_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'BILLING_ADDRESS_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -90,7 +90,7 @@ class BankController {
       const id: string = req.params.id;
       const data = await this.bankService.deleteBank(id);
 
-      res.status(200).json({ status: 200, response_code: 9000, message: 'BANK_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'BILLING_ADDRESS_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
