@@ -249,3 +249,51 @@
 2023-07-15 16:57:56 info: [0mPOST /chat [32m200[0m 235.625 ms - 174[0m
 2023-07-15 16:58:10 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
 2023-07-15 16:58:10 info: [0mPOST /chat [32m200[0m 459.943 ms - 77[0m
+2023-07-15 16:58:59 info: =================================
+2023-07-15 16:58:59 info: ======= ENV: development =======
+2023-07-15 16:58:59 info: 🚀 App listening on the port 3000
+2023-07-15 16:58:59 info: =================================
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:02 info: Connected to email server
+2023-07-15 16:59:13 info: Connected to Database Successfully...
+2023-07-15 16:59:20 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 16:59:20 info: [0mPOST /chat [32m200[0m 516.408 ms - 77[0m
+2023-07-15 16:59:54 info: =================================
+2023-07-15 16:59:54 info: ======= ENV: development =======
+2023-07-15 16:59:54 info: 🚀 App listening on the port 3000
+2023-07-15 16:59:54 info: =================================
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:56 info: Connected to email server
+2023-07-15 16:59:57 info: Connected to Database Successfully...
+2023-07-15 16:59:57 info: Connected to email server
+2023-07-15 17:00:06 error: [POST] /chat >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 17:00:06 info: [0mPOST /chat [32m200[0m 1022.498 ms - 113[0m
+2023-07-15 17:00:50 info: =================================
+2023-07-15 17:00:50 info: ======= ENV: development =======
+2023-07-15 17:00:50 info: 🚀 App listening on the port 3000
+2023-07-15 17:00:50 info: =================================
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:52 info: Connected to email server
+2023-07-15 17:00:53 info: Connected to email server
+2023-07-15 17:00:53 info: Connected to Database Successfully...
+2023-07-15 17:00:58 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 17:00:58 info: [0mPOST /chat [32m200[0m 568.038 ms - 77[0m
+2023-07-15 17:01:06 info: [0mPOST /chat [32m200[0m 935.319 ms - 236[0m
+2023-07-15 17:01:10 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 17:01:10 info: [0mPOST /chat [32m200[0m 464.724 ms - 77[0m

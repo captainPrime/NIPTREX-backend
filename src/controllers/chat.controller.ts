@@ -19,7 +19,7 @@ class ChatController {
 
       const data = await this.chatService.getChatByMilestone(milestone);
 
-      if (!data) throw new HttpException(400, 6004, 'CHAT_ALREADY_EXISTS');
+      if (data) throw new HttpException(400, 6004, 'CHAT_ALREADY_EXISTS');
 
       const chat = await this.chatService.createChat(participants, milestone);
 
