@@ -173,6 +173,31 @@ class ServiceController {
 
   /*
   |--------------------------------------------------------------------------
+  | getAppliedServices
+  |--------------------------------------------------------------------------
+  */
+  public getAppliedServices = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId: string = req.user.id;
+
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'date_applied:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        populate: 'service,user_id',
+      };
+
+      const data = await this.serviceService.hireFreelancerService(userId);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
   | Hire Freelancer
   |--------------------------------------------------------------------------
   */

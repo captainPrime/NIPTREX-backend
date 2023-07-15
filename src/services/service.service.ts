@@ -126,6 +126,22 @@ class ServiceService {
 
   /*
   |--------------------------------------------------------------------------
+  | getAppliedServices
+  |--------------------------------------------------------------------------
+  */
+  public async getAppliedServices(userId: string, options: PaginationOptions): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'payload can not be empty');
+
+    const filter = {
+      user_id: userId.toString(),
+    };
+
+    const data = await this.hireService.paginate(filter, options);
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Hire Service
   |--------------------------------------------------------------------------
   */

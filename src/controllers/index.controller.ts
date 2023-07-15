@@ -3,7 +3,7 @@ import { BiddingModel } from '@/models/bid.model';
 import { ChatModel, MessageModel } from '@/models/chat.model';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
-import { ServiceModel } from '@/models/service.models';
+import { ServiceModel, ServiceProposalModel } from '@/models/service.models';
 import User from '@/models/users.model';
 import { NextFunction, Request, Response } from 'express';
 
@@ -23,6 +23,7 @@ class IndexController {
   public preference: any = Preference;
   public certification: any = Certification;
   public service: any = ServiceModel;
+  public serviceProposal: any = ServiceProposalModel;
 
   public index = (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -53,6 +54,7 @@ class IndexController {
       await this.hire.deleteMany({});
       await this.service.deleteMany({});
       await this.chat.deleteMany({});
+      await this.serviceProposal.deleteMany({});
       await this.message.deleteMany({});
 
       const user = {
