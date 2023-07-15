@@ -13,3 +13,7 @@ ReferenceError: ServiceProposalModel is not defined
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
 2023-07-15 11:00:04 error: [GET] /service/getAppliedServices >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-07-15 11:00:37 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
+2023-07-15 11:02:34 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
+2023-07-15 11:03:20 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
+2023-07-15 11:04:30 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
+2023-07-15 11:05:38 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND

@@ -29,6 +29,10 @@ class ProfileService {
 
     const findOneUserData: any = await this.userService.findUserById(userId);
 
+    if (!findOneUserData) throw new HttpException(400, 2002, 'PROFILE_NOT_FOUND');
+
+    console.log('USER', findOneUserData);
+
     if (findOneUserData.user === 'client') {
       return findOneUserData;
     }
