@@ -17,3 +17,5 @@ ReferenceError: ServiceProposalModel is not defined
 2023-07-15 11:03:20 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
 2023-07-15 11:04:30 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
 2023-07-15 11:05:38 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2023-07-15 11:24:20 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:26:11 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')

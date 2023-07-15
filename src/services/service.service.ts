@@ -33,7 +33,7 @@ class ServiceService {
   |--------------------------------------------------------------------------
   */
   public async getAllService(filter: any, options: PaginationOptions): Promise<any[]> {
-    const data = await this.service.paginate(filter, options);
+    const data = await this.service.paginate({}, options);
 
     return data;
   }
