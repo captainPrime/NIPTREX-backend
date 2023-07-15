@@ -17,6 +17,10 @@ class ChatController {
     try {
       const { participants, milestone } = req.body;
 
+      const data = await this.chatService.getChatByMilestone(milestone);
+
+      if (!data) throw new HttpException(400, 6004, 'CHAT_ALREADY_EXISTS');
+
       const chat = await this.chatService.createChat(participants, milestone);
 
       res.status(200).json({ status: 200, response_code: 6000, message: 'CHAT_REQUEST_SUCCESSFUL', data: chat });

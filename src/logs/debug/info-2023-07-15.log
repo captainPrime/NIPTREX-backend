@@ -230,3 +230,22 @@
 2023-07-15 11:41:27 info: [0mGET /profile [32m200[0m 718.823 ms - 588[0m
 2023-07-15 11:41:53 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
 2023-07-15 11:41:53 info: [0mGET /profile/getProfileByUserId?id=64af766ed704ab63b3af876b [32m200[0m 11059.457 ms - 113[0m
+2023-07-15 16:56:59 info: =================================
+2023-07-15 16:56:59 info: ======= ENV: development =======
+2023-07-15 16:56:59 info: 🚀 App listening on the port 3000
+2023-07-15 16:56:59 info: =================================
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:01 info: Connected to email server
+2023-07-15 16:57:12 info: Connected to Database Successfully...
+2023-07-15 16:57:46 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 16:57:46 info: [0mPOST /chat [32m200[0m 539.466 ms - 77[0m
+2023-07-15 16:57:56 error: [POST] /chat >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "6469b9101d48527e24fc9f0u" (type string) at path "milestone" for model "Chat"
+2023-07-15 16:57:56 info: [0mPOST /chat [32m200[0m 235.625 ms - 174[0m
+2023-07-15 16:58:10 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 16:58:10 info: [0mPOST /chat [32m200[0m 459.943 ms - 77[0m

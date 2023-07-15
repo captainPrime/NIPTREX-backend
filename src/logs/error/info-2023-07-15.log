@@ -27,3 +27,6 @@ ReferenceError: ServiceProposalModel is not defined
 2023-07-15 11:40:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-15 11:40:43 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
 2023-07-15 11:41:53 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 16:57:46 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2023-07-15 16:57:56 error: [POST] /chat >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "6469b9101d48527e24fc9f0u" (type string) at path "milestone" for model "Chat"
+2023-07-15 16:58:10 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS

@@ -55,6 +55,23 @@ class ChatService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Chat By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getChatByMilestone(milestoneId: Types.ObjectId | string): Promise<any> {
+    if (isEmpty(milestoneId)) {
+      throw new HttpException(400, 2001, 'Chat id cannot be empty');
+    }
+
+    const chat: IChat | null = await this.chat.findOne({ milestone: milestoneId });
+
+    console.log(chat);
+
+    return chat;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Chats By User
   |--------------------------------------------------------------------------
   */
