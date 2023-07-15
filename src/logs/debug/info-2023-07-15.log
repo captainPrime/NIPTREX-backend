@@ -41,3 +41,33 @@
 2023-07-15 10:49:53 info: Connected to email server
 2023-07-15 10:50:19 info: Connected to Database Successfully...
 2023-07-15 10:51:21 info: [0mGET /reload_db [32m200[0m 47700.960 ms - 74[0m
+2023-07-15 10:59:33 info: =================================
+2023-07-15 10:59:33 info: ======= ENV: development =======
+2023-07-15 10:59:33 info: 🚀 App listening on the port 3000
+2023-07-15 10:59:33 info: =================================
+2023-07-15 10:59:35 info: Connected to email server
+2023-07-15 10:59:35 info: Connected to email server
+2023-07-15 10:59:35 info: Connected to email server
+2023-07-15 10:59:35 info: Connected to email server
+2023-07-15 10:59:35 info: Connected to email server
+2023-07-15 10:59:36 info: Connected to email server
+2023-07-15 10:59:36 info: Connected to email server
+2023-07-15 10:59:37 info: Connected to Database Successfully...
+2023-07-15 11:00:04 error: [GET] /service/getAppliedServices >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-15 11:00:04 info: [0mGET /service/getAppliedServices [32m200[0m 297.346 ms - 75[0m
+2023-07-15 11:00:05 info: Connected to email server
+2023-07-15 11:00:37 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
+2023-07-15 11:00:37 info: [0mGET /profile/getProfileByUserId?id=647645965d17174aa99c9422 [32m200[0m 222.314 ms - 104[0m
+2023-07-15 11:01:07 info: =================================
+2023-07-15 11:01:07 info: ======= ENV: development =======
+2023-07-15 11:01:07 info: 🚀 App listening on the port 3000
+2023-07-15 11:01:07 info: =================================
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:09 info: Connected to email server
+2023-07-15 11:01:10 info: Connected to email server
+2023-07-15 11:01:20 info: Connected to Database Successfully...

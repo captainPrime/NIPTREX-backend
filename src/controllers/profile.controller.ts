@@ -20,6 +20,17 @@ class ProfileController {
     }
   };
 
+  public getProfileByUserId = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId: any = req.query.id;
+      const findOneUserData = await this.profileService.getProfile(userId);
+
+      res.status(200).json({ status: 200, response_code: 2000, message: 'PROFILE_REQUEST_SUCCESSFUL', data: findOneUserData });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   /*
   |--------------------------------------------------------------------------
   | Create Experience

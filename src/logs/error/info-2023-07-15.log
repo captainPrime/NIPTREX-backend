@@ -11,3 +11,5 @@ ReferenceError: ServiceProposalModel is not defined
     at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-1136922582885318.js:114:20)
     at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-1136922582885318.js:71:20)
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2023-07-15 11:00:04 error: [GET] /service/getAppliedServices >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-15 11:00:37 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'user')
