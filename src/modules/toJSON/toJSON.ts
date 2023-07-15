@@ -33,9 +33,9 @@ const toJSON = (schema: any) => {
       });
 
       ret.id = ret._id.toString();
+      ret.created_at = ret.createdAt.toString();
       delete ret._id;
       delete ret.__v;
-      delete ret.createdAt;
       delete ret.updatedAt;
       delete ret?.password;
       if (transform) {
