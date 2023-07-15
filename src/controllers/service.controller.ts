@@ -95,11 +95,10 @@ class ServiceController {
   public getAllServices = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'date_posted:desc',
+        sortBy: req.query.sortBy || 'created_at:desc',
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
-        // populate: 'user_id',
       };
 
       const data: any[] | null = await this.serviceService.getAllService(req.query, options);

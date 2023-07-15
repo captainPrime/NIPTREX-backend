@@ -19,3 +19,11 @@ ReferenceError: ServiceProposalModel is not defined
 2023-07-15 11:05:38 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
 2023-07-15 11:24:20 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
 2023-07-15 11:26:11 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:28:31 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:31:43 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:37:03 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:38:32 error: [GET] /service >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:39:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-15 11:40:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-15 11:40:43 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
+2023-07-15 11:41:53 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'toString')
