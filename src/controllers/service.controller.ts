@@ -203,13 +203,29 @@ class ServiceController {
 
   /*
   |--------------------------------------------------------------------------
-  | Hire Freelancer
+  | Get all Service Proposal by service id
   |--------------------------------------------------------------------------
   */
   public getAllServiceProposal = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const service_id: string = req.params.id;
       const data = await this.serviceService.getAllServiceProposal(service_id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | getServiceProposalById
+  |--------------------------------------------------------------------------
+  */
+  public getServiceProposalById = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const serviceProposalId: string = req.params.id;
+      const data = await this.serviceService.getServiceProposalById(serviceProposalId);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
