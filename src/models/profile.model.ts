@@ -99,6 +99,7 @@ const billingAddressSchema: Schema = new Schema(
     company: { type: String, required: true },
     state: { type: String, required: true },
     address: { type: String, required: false },
+    country: { type: String, required: false },
     city: { type: String, required: false },
     vat_number: { type: Number, required: false },
     postal_number: { type: Number, required: false },
