@@ -1,0 +1,30 @@
+2023-07-17 12:19:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-17 12:20:32 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2023-07-17 12:22:19 error: unhandledRejection: Chat validation failed: messages.3.content: Path `content` is required.
+ValidationError: Chat validation failed: messages.3.content: Path `content` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-17 12:22:19 error: unhandledRejection: Chat validation failed: messages.3.content: Path `content` is required.
+ValidationError: Chat validation failed: messages.3.content: Path `content` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-17 12:23:49 error: unhandledRejection: Chat validation failed: messages.3.content: Path `content` is required.
+ValidationError: Chat validation failed: messages.3.content: Path `content` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-07-17 12:23:49 error: unhandledRejection: Chat validation failed: messages.3.content: Path `content` is required.
+ValidationError: Chat validation failed: messages.3.content: Path `content` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at EmbeddedDocument.Subdocument.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/types/subdocument.js:213:12)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

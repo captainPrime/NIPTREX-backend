@@ -112,6 +112,7 @@ class ChatService {
       chatId: data.chatId,
       sender: data.sender,
       content: data?.content,
+      files: data?.files,
     };
 
     const chatData: any = await this.getChatById(data.chatId.toString());

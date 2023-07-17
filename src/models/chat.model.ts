@@ -22,9 +22,7 @@ const messageSchema: Schema = new Schema(
     chatId: { type: Schema.Types.ObjectId, ref: 'Chat', required: true },
     content: {
       type: String,
-      required: function (this: IMessage) {
-        return !this.is_file;
-      },
+      required: false,
     },
     is_file: { type: Boolean, required: true, default: false },
     files: [
@@ -72,7 +70,7 @@ const chatSchema: Schema = new Schema(
 
 // add plugin that converts mongoose to json
 chatSchema.plugin(toJSON);
-// messageSchema.plugin(toJSON);
+messageSchema.plugin(toJSON);
 
 // Create and export the Chat model
 const ChatModel = model<IChat>('Chat', chatSchema);
