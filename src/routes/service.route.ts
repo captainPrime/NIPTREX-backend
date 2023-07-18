@@ -15,14 +15,14 @@ class ServiceRoute implements Routes {
 
   private initializeRoutes() {
     this.router.post(`${this.path}`, authMiddleware(['freelancer']), this.serviceController.createService);
+    this.router.get(`${this.path}`, this.serviceController.getAllServices);
+    this.router.get(`${this.path}/getAppliedServices`, authMiddleware(['client']), this.serviceController.getAppliedServices);
     this.router.get(`${this.path}/getServiceById/:id`, this.serviceController.getServiceById);
     this.router.get(`${this.path}/getServiceByUserId/:id`, this.serviceController.getServiceByUserId);
     this.router.get(`${this.path}/getUserService`, authMiddleware(['freelancer']), this.serviceController.getUserService);
-    this.router.get(`${this.path}`, this.serviceController.getAllServices);
     this.router.put(`${this.path}/updateServiceById/:id`, authMiddleware(['freelancer']), this.serviceController.updateServiceById);
     this.router.delete(`${this.path}/deleteService/:id`, authMiddleware(['freelancer']), this.serviceController.deleteService);
     this.router.post(`${this.path}/hireFreelancerService/:id`, authMiddleware(['client']), this.serviceController.hireFreelancerService);
-    this.router.get(`${this.path}/getAppliedServices`, authMiddleware(['client']), this.serviceController.getAppliedServices);
     this.router.post(`${this.path}/proposal/:id`, authMiddleware(['client', 'freelancer']), this.serviceController.serviceProposal);
     this.router.get(`${this.path}/proposals/:id`, authMiddleware(['client', 'freelancer']), this.serviceController.getAllServiceProposal);
     this.router.get(
