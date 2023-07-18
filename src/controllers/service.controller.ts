@@ -2,10 +2,9 @@ import { NextFunction, Request, Response } from 'express';
 import ServiceService from '@/services/service.service';
 import { IService, IServiceProposal, ServiceProposalStatus } from '@/models/service.models';
 import { HttpException } from '@/exceptions/HttpException';
-import { JobStatus, PaginationOptions } from '@/interfaces/job.inteface';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 import { generateUUID } from '@/utils/matchPercentage';
 import { FLW_SECRET_KEY } from '@/config';
-import { BiddingStatus } from '@/models/bid.model';
 import { flw } from '@/modules/flutterwave';
 import axios from 'axios';
 import UserService from '@/services/users.service';
@@ -179,13 +178,13 @@ class ServiceController {
     try {
       const userId: string = req.user.id;
 
-      const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'date_applied:desc',
-        limit: parseInt(req.query.limit as string, 10) || 5,
-        page: parseInt(req.query.page as string, 10) || 1,
-        projectBy: req.query.projectBy || 'name:hide, role:hide',
-        populate: 'service,user_id',
-      };
+      // const options: PaginationOptions = {
+      //   sortBy: req.query.sortBy || 'date_applied:desc',
+      //   limit: parseInt(req.query.limit as string, 10) || 5,
+      //   page: parseInt(req.query.page as string, 10) || 1,
+      //   projectBy: req.query.projectBy || 'name:hide, role:hide',
+      //   populate: 'service,user_id',
+      // };
 
       const data = await this.serviceService.hireFreelancerService(userId);
 
