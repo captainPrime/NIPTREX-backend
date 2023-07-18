@@ -374,17 +374,15 @@ class ServiceController {
 
           this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
-          if (service) {
-            const payload = {
-              user_id: service.user_id.toString(),
-              service: service._id.toString(),
-              client: req.user.id,
-            };
+          const payload = {
+            user_id: service.user_id.toString(),
+            service: service._id.toString(),
+            client: req.user.id,
+          };
 
-            await this.serviceService.hireFreelancerService(payload);
+          await this.serviceService.hireFreelancerService(payload);
 
-            await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
-          }
+          await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
         } else {

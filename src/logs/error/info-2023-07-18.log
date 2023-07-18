@@ -1,0 +1,16 @@
+2023-07-18 07:20:14 error: [POST] /payment/disburse >> StatusCode:: 404, Message:: The requested path /payment/disburse not found!
+2023-07-18 07:21:46 error: [POST] /payment/disburse >> StatusCode:: 404, Message:: The requested path /payment/disburse not found!
+2023-07-18 07:22:35 error: [POST] /payment/disburse >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-18 07:22:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-18 07:22:53 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+2023-07-18 07:37:48 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:38:54 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:40:04 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:41:14 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:43:10 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:44:04 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:45:06 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-18 07:46:56 error: [POST] /payment/disburse >> StatusCode:: 400, Message:: Transaction validation failed: customer_id: Cast to Number failed for value "64af766ed704ab63b3af876b" (type string) at path "customer_id"

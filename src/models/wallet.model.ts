@@ -42,7 +42,7 @@ export interface ITransaction extends Document {
   status: string;
   payment_type: string;
   created_at: Date;
-  customer_id: number;
+  customer_id: string;
   customer_name: string;
   customer_email: string;
   nuban?: string;
@@ -67,7 +67,7 @@ const transactionSchema: Schema<ITransaction> = new Schema(
     status: { type: String, required: true },
     payment_type: { type: String, required: true },
     created_at: { type: Date, required: true },
-    customer_id: { type: Number, required: true },
+    customer_id: { type: String, required: true },
     customer_name: { type: String, required: true },
     customer_email: { type: String, required: true },
     nuban: {

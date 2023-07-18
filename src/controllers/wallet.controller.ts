@@ -433,12 +433,13 @@ class WalletController {
   | Charge Card
   |--------------------------------------------------------------------------
   */
-  public payFreelancer = async (req: Request, res: Response, next: NextFunction) => {
+  public disbursePayment = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { amount, currency, narration, account_number } = req.body;
-      const details = {
+      const { amount, currency, narration, account_number, user_id, proposal_id } = req.body;
+      const payload = {
         account_bank: '044',
         account_number,
+        user_id,
         amount,
         narration,
         currency,
@@ -446,8 +447,39 @@ class WalletController {
         callback_url: 'https://webhook.site/b3e505b0-fe02-430e-a538-22bbbce8ce0d',
         debit_currency: 'NGN',
       };
-      flw.Transfer.initiate(details).then(console.log).catch(console.log);
-      // res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
+
+      const user: any = await this.userService.findUserById(user_id);
+      if (!user) throw new HttpException(400, 2002, 'USER_NOT_FOUND');
+
+      const response = await axios.post('https://api.flutterwave.com/v3/transfers', payload, {
+        headers: {
+          Authorization: `Bearer ${FLW_SECRET_KEY}`,
+        },
+      });
+
+      console.log(response.data);
+
+      const transactionData: any = {
+        user_id: req.user.id,
+        proposal_id,
+        tx_ref: generateUUID(),
+        flw_ref: generateUUID(),
+        amount: amount,
+        currency: currency,
+        status: response.data.status,
+        payment_type: 'bank_transfer',
+        created_at: new Date(),
+        customer_id: user_id,
+        customer_name: `${user.first_name} ${user.last_name}`,
+        customer_email: user.email,
+        nuban: account_number,
+        bank: response.data.data.bank_name,
+        bank_name: response.data.data.full_name,
+      };
+
+      const transaction = await this.walletService.createTransaction(transactionData);
+
+      res.status(200).json({ status: 200, response_code: 6000, message: 'PAYMENT_REQUEST_SUCCESSFUL', data: transaction });
     } catch (error) {
       console.log(error);
       next(error);

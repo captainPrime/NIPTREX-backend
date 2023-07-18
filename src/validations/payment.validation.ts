@@ -25,7 +25,7 @@ export const transactionValidationSchema = Joi.object({
   status: Joi.string().required(),
   payment_type: Joi.string().valid('bank_transfer', 'card', 'account', 'ussd').required(),
   created_at: Joi.date().required(),
-  customer_id: Joi.number().required(),
+  customer_id: Joi.string().required(),
   customer_name: Joi.string().required(),
   customer_email: Joi.string().email().required(),
   nuban: Joi.string().when('payment_type', { is: 'bank_transfer', then: Joi.required().empty().allow('') }),
