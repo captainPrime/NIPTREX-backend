@@ -35,6 +35,9 @@ export class CreateUserDto {
 
   @IsString()
   public country!: string;
+
+  @IsString()
+  public referral_code!: string;
 }
 
 export class UserLoginDto {

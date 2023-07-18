@@ -2,9 +2,12 @@ import { NextFunction, Request, Response } from 'express';
 import { CreateUserDto } from '@dtos/users.dto';
 import { IUser, IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import userService from '@services/users.service';
+import { HttpException } from '@/exceptions/HttpException';
+import AboutService from '@/services/about.service';
 
 class UsersController {
   public userService = new userService();
+  public aboutService = new AboutService();
 
   public getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -41,6 +44,13 @@ class UsersController {
     try {
       const userData: CreateUserDto = req.body;
       const createUserData: IUserModel = await this.userService.createUser(userData);
+
+      if (userData.referral_code) {
+        const referredUser = await this.userService.findUserByReferralCode(userData.referral_code);
+        if (!referredUser) throw new HttpException(400, 2004, 'USER_NOT_FOUND');
+
+        await this.aboutService.updateAboutById(referredUser.id, { nips: +10 });
+      }
 
       res.status(201).json({ status: 200, response_code: 2000, message: 'USER_REQUEST_SUCCESSFUL', data: createUserData });
     } catch (error) {

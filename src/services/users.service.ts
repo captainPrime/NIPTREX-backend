@@ -7,6 +7,7 @@ import User from '@models/users.model';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
 import { About } from '@/models/profile.model';
+import { generateReferralCode } from '@/utils/matchPercentage';
 
 class UserService {
   public users = User;
@@ -54,6 +55,14 @@ class UserService {
     return findUser;
   }
 
+  public async findUserByReferralCode(referral_code: string): Promise<IUserDoc | null> {
+    if (isEmpty(referral_code)) throw new HttpException(400, 2003, 'Email should not be empty');
+
+    const findUser: IUserDoc | null = await this.users.findOne({ referral_code });
+
+    return findUser;
+  }
+
   public async createUser(userData: CreateUserDto): Promise<IUserModel> {
     if (isEmpty(userData)) throw new HttpException(400, 2005, "You're not userData");
 
@@ -61,7 +70,11 @@ class UserService {
     if (findUser) throw new HttpException(400, 2006, `You're email ${userData.email} already exists`);
 
     const hashedPassword = await hash(userData.password, 10);
-    const createUserData: IUserModel = (await this.users.create({ ...userData, password: hashedPassword })) as unknown as IUserModel;
+    const createUserData: IUserModel = (await this.users.create({
+      ...userData,
+      password: hashedPassword,
+      referral_code: generateReferralCode(8),
+    })) as unknown as IUserModel;
 
     return createUserData;
   }

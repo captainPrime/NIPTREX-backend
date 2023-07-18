@@ -12,6 +12,7 @@ export interface IUser {
   user: string;
   rating: number;
   country: string;
+  referral_code: string;
   verified: boolean;
   has_profile: boolean;
   has_about: boolean;

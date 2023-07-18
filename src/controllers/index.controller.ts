@@ -5,6 +5,7 @@ import { Hire, JobModel, SavedJob } from '@/models/job.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
 import { ServiceModel, ServiceProposalModel } from '@/models/service.models';
 import User from '@/models/users.model';
+import { generateReferralCode } from '@/utils/matchPercentage';
 import { NextFunction, Request, Response } from 'express';
 
 class IndexController {
@@ -66,6 +67,7 @@ class IndexController {
         verified: true,
         has_profile: false,
         country: 'Nigeria',
+        referral_code: generateReferralCode(8),
       };
       const user2 = {
         first_name: 'John',
@@ -76,6 +78,7 @@ class IndexController {
         verified: true,
         has_profile: false,
         country: 'Nigeria',
+        referral_code: generateReferralCode(8),
       };
       const user3 = {
         first_name: 'Freeman',
@@ -86,6 +89,7 @@ class IndexController {
         verified: true,
         has_profile: false,
         country: 'Nigeria',
+        referral_code: generateReferralCode(8),
       };
 
       await this.users.create(user);
