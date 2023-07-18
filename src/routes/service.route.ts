@@ -16,7 +16,7 @@ class ServiceRoute implements Routes {
   private initializeRoutes() {
     this.router.post(`${this.path}`, authMiddleware(['freelancer']), this.serviceController.createService);
     this.router.get(`${this.path}`, this.serviceController.getAllServices);
-    this.router.get(`${this.path}/getAppliedServices`, authMiddleware(['client']), this.serviceController.getAppliedServices);
+    this.router.get(`${this.path}/getAppliedServices`, authMiddleware(['client', 'freelancer']), this.serviceController.getAppliedServices);
     this.router.get(`${this.path}/getServiceById/:id`, this.serviceController.getServiceById);
     this.router.get(`${this.path}/getServiceByUserId/:id`, this.serviceController.getServiceByUserId);
     this.router.get(`${this.path}/getUserService`, authMiddleware(['freelancer']), this.serviceController.getUserService);
