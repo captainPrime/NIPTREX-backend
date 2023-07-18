@@ -4,7 +4,7 @@ interface IPackage {
   package: string[];
 }
 
-interface IInvoice extends Document {
+export interface IInvoice extends Document {
   title: string;
   package: IPackage;
   promo_code?: string;
@@ -27,6 +27,8 @@ const invoiceSchema = new Schema<IInvoice>({
   VAT: { type: Number, required: true },
 });
 
+export type IUpdateInvoice = Partial<IInvoice>;
+
 const Invoice = model<IInvoice>('Invoice', invoiceSchema);
 
-export default Invoice;
+export { Invoice };
