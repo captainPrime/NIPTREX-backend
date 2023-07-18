@@ -159,7 +159,10 @@ class ServiceService {
   public async getServiceProposalById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.serviceProposal.findOne({ _id: id });
+    const data = await this.serviceProposal.findOne({ _id: id }).populate({
+      path: 'client_id',
+      select: 'first_name last_name profile_picture',
+    });
 
     return data;
   }
@@ -172,7 +175,10 @@ class ServiceService {
   public async getServiceProposalByServiceId(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.serviceProposal.findOne({ service_id: id });
+    const data = await this.serviceProposal.findOne({ service_id: id }).populate({
+      path: 'client_id',
+      select: 'first_name last_name profile_picture',
+    });
 
     return data;
   }
@@ -185,7 +191,10 @@ class ServiceService {
   public async getAllServiceProposal(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.serviceProposal.find({ service_id: id });
+    const data = await this.serviceProposal.find({ service_id: id }).populate({
+      path: 'client_id',
+      select: 'first_name last_name profile_picture',
+    });
 
     return data;
   }
