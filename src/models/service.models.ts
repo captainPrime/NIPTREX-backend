@@ -1,7 +1,6 @@
 import { Schema, Document, model } from 'mongoose';
 import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';
-import { object } from 'joi';
 
 interface IServiceProject {
   name: string;
