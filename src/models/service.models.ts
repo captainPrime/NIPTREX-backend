@@ -116,6 +116,7 @@ const HireServiceSchema: Schema = new Schema(
 
 serviceSchema.plugin(toJSON);
 serviceSchema.plugin(paginate);
+HireServiceSchema.plugin(paginate);
 HireServiceSchema.plugin(toJSON);
 serviceProposalSchema.plugin(toJSON);
 
