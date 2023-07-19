@@ -256,7 +256,7 @@ class WalletController {
         tx_ref: generateUUID(),
         amount,
         currency,
-        redirect_url: 'http://localhost:3000/client/dashboard',
+        redirect_url: 'http://localhost:3000/verify-payment',
         meta: {
           consumer_id: req.user.id,
           consumer_mac: proposal_id,
