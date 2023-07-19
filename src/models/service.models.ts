@@ -119,6 +119,7 @@ serviceSchema.plugin(paginate);
 HireServiceSchema.plugin(paginate);
 HireServiceSchema.plugin(toJSON);
 serviceProposalSchema.plugin(toJSON);
+serviceProposalSchema.plugin(paginate);
 
 export type IUpdateService = Partial<IService>;
 
