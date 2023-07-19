@@ -58,3 +58,5 @@ Error: Channel closed
 2023-07-19 16:14:54 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-07-19 16:15:33 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-07-19 16:16:26 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:53:17 error: [PUT] /service/approveService/64b26d6ee74e3b9b5fc9cc69 >> StatusCode:: 400, Message:: UNAUTHORIZE_USER
+2023-07-19 16:53:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

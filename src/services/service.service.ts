@@ -253,6 +253,32 @@ class ServiceService {
 
     await this.emailService.sendServiceReviewEmail(client.email, { serviceName: service.title }, client.first_name);
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Approve Service
+  |--------------------------------------------------------------------------
+  */
+  public async approveService(id: mongoose.Types.ObjectId | string, userId: string, body: Partial<IServiceProposal>): Promise<IServiceProposal> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'ID cannot be empty');
+
+    const { error } = updateServiceProposalStatusValidation.validate(body);
+
+    if (error) throw new HttpException(400, 2002, 'SERVICE_VALIDATION_ERROR', [error.details[0].message]);
+
+    const data: IServiceProposal | null = await this.serviceProposal.findOne({ _id: id });
+    if (!data) throw new HttpException(400, 7002, 'SERVICE_PROPOSAL_NOT_FOUND');
+
+    if (data.client_id != userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
+
+    const updatedData: IServiceProposal | null = await this.serviceProposal.findByIdAndUpdate(id, body, {
+      new: true,
+    });
+
+    if (!updatedData) throw new HttpException(400, 2009, 'SERVICE_REQUEST_ERROR');
+
+    return updatedData;
+  }
 }
 
 export default ServiceService;

@@ -410,6 +410,24 @@ class ServiceController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Approve Service
+  |--------------------------------------------------------------------------
+  */
+  public approveService = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const id: string = req.params.id;
+      const body: Partial<IServiceProposal> = req.body;
+
+      const data: IServiceProposal | null = await this.serviceService.approveService(id, req.user.id, body);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default ServiceController;
