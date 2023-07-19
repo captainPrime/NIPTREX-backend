@@ -179,7 +179,7 @@ class ServiceController {
       const userId: string = req.user.id;
 
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'created_at:desc',
+        sortBy: 'created_at:desc',
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
@@ -376,7 +376,7 @@ class ServiceController {
           const payload = {
             user_id: service.user_id,
             service: service._id.toString(),
-            client: req.user.id,
+            client: proposal.id.toString(),
           };
 
           await this.serviceService.hireFreelancerService(payload);

@@ -60,3 +60,6 @@ Error: Channel closed
 2023-07-19 16:16:26 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-07-19 16:53:17 error: [PUT] /service/approveService/64b26d6ee74e3b9b5fc9cc69 >> StatusCode:: 400, Message:: UNAUTHORIZE_USER
 2023-07-19 16:53:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 16:55:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 16:59:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 17:11:10 error: [GET] /service/getAppliedServices >> StatusCode:: 400, Message:: Cannot populate path `services` because it is not in your schema. Set the `strictPopulate` option to false to override.
