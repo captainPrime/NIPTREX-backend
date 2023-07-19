@@ -33,6 +33,7 @@ class ServiceRoute implements Routes {
     );
     this.router.put(`${this.path}/proposal/:id`, authMiddleware(['client', 'freelancer']), this.serviceController.updateServiceProposalById);
     this.router.post(`${this.path}/payment`, authMiddleware(['client', 'freelancer']), this.serviceController.makePayment);
+    this.router.post(`${this.path}/paymentCallback`, authMiddleware(['client', 'freelancer']), this.serviceController.paymentCallback);
   }
 }
 

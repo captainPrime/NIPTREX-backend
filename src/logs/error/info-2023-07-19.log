@@ -1,0 +1,53 @@
+2023-07-19 01:51:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 01:58:39 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-07-19 01:58:39 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-07-19 02:01:47 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-19 02:04:44 error: [GET] /client/dashboard >> StatusCode:: 404, Message:: The requested path /client/dashboard not found!
+2023-07-19 02:04:46 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-07-19 02:05:09 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-07-19 02:07:11 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: user_id: Cast to ObjectId failed for value "{\n' +
+  '  _id: new ObjectId("64af766ed704ab63b3af876b"),\n' +
+  "  first_name: 'John',\n" +
+  "  last_name: 'Doe',\n" +
+  "  email: 'freelancer@gmail.com',\n" +
+  "  password: '$2a$08$7unNERCwz3zrBvOBqc9CVON3ZiVfycBu1HI0uZtcxhSKA.GPn1g4O',\n" +
+  "  user: 'freelancer',\n" +
+  "  country: 'Nigeria',\n" +
+  '  rating: 0,\n' +
+  "  profile_picture: 'https://example.com/johndoe.jpg',\n" +
+  '  verified: true,\n' +
+  '  has_profile: true,\n' +
+  '  has_about: true,\n' +
+  '  has_experience: true,\n' +
+  '  has_education: true,\n' +
+  '  has_certification: true,\n' +
+  '  has_billing: false,\n' +
+  '  has_identity: false,\n' +
+  '  has_work_preference: false,\n' +
+  '  is_profile_completed: false,\n' +
+  '  createdAt: 2023-07-13T03:58:38.875Z,\n' +
+  '  updatedAt: 2023-07-17T10:27:20.926Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "user_id" because of "BSONTypeError"

@@ -351,7 +351,7 @@ class ServiceController {
             status: response.data.status,
             payment_type: response.data.payment_type,
             created_at: new Date(response.data.created_at),
-            customer_id: response.data.customer?.id,
+            customer_id: response.data.customer?.id.toString(),
             customer_name: response.data.customer?.name,
             customer_email: response.data.customer?.email,
             nuban: response.data.meta?.originatoraccountnumber,
@@ -374,7 +374,7 @@ class ServiceController {
           this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
           const payload = {
-            user_id: service.user_id.toString(),
+            user_id: service.user_id,
             service: service._id.toString(),
             client: req.user.id,
           };
