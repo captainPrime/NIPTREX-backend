@@ -1,21 +1,21 @@
-import { NextFunction, Request, Response } from 'express';
-import ServiceService from '@/services/service.service';
-import { IService, IServiceProposal, ServiceProposalStatus } from '@/models/service.models';
-import { HttpException } from '@/exceptions/HttpException';
-import { PaginationOptions } from '@/interfaces/job.inteface';
-import { generateUUID } from '@/utils/matchPercentage';
+import axios from 'axios';
 import { FLW_SECRET_KEY } from '@/config';
 import { flw } from '@/modules/flutterwave';
-import axios from 'axios';
 import UserService from '@/services/users.service';
-import EmailService from '@/modules/email/email.service';
 import WalletService from '@/services/wallet.service';
+import { generateUUID } from '@/utils/matchPercentage';
+import ServiceService from '@/services/service.service';
+import EmailService from '@/modules/email/email.service';
+import { NextFunction, Request, Response } from 'express';
+import { HttpException } from '@/exceptions/HttpException';
+import { PaginationOptions } from '@/interfaces/job.inteface';
+import { IService, IServiceProposal, ServiceProposalStatus } from '@/models/service.models';
 
 class ServiceController {
-  public serviceService = new ServiceService();
   public userService = new UserService();
   public emailService = new EmailService();
   public walletService = new WalletService();
+  public serviceService = new ServiceService();
 
   /*
   |--------------------------------------------------------------------------
