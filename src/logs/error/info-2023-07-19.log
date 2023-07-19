@@ -51,3 +51,5 @@ Error: Channel closed
   '  updatedAt: 2023-07-17T10:27:20.926Z,\n' +
   '  __v: 0\n' +
   '}" (type string) at path "user_id" because of "BSONTypeError"
+2023-07-19 15:18:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 15:21:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

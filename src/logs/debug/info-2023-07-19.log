@@ -107,3 +107,98 @@
 2023-07-19 02:11:11 info: Connected to email server
 2023-07-19 02:11:12 info: Connected to Database Successfully...
 2023-07-19 02:11:20 info: [0mPOST /service/paymentCallback [32m200[0m 3660.282 ms - 615[0m
+2023-07-19 15:18:32 info: =================================
+2023-07-19 15:18:32 info: ======= ENV: development =======
+2023-07-19 15:18:32 info: 🚀 App listening on the port 3000
+2023-07-19 15:18:32 info: =================================
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to email server
+2023-07-19 15:18:35 info: Connected to Database Successfully...
+2023-07-19 15:18:36 info: Connected to email server
+2023-07-19 15:18:36 info: Connected to email server
+2023-07-19 15:18:42 info: [0mGET /reload_db [32m200[0m 781.642 ms - 74[0m
+2023-07-19 15:18:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 15:18:51 info: [0mPOST /auth/login [32m200[0m 571.578 ms - 587[0m
+2023-07-19 15:19:00 info: [0mGET /users/profile [32m200[0m 487.796 ms - 581[0m
+2023-07-19 15:21:12 info: =================================
+2023-07-19 15:21:12 info: ======= ENV: development =======
+2023-07-19 15:21:12 info: 🚀 App listening on the port 3000
+2023-07-19 15:21:12 info: =================================
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:17 info: Connected to email server
+2023-07-19 15:21:28 info: Connected to Database Successfully...
+2023-07-19 15:21:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 15:21:41 info: [0mPOST /auth/login [32m200[0m 596.342 ms - 587[0m
+2023-07-19 15:21:51 info: [0mGET /rate/getRatingByUserId/64af766ed704ab63b3af876b [32m200[0m 647.864 ms - 83[0m
+2023-07-19 15:22:06 info: [0mPOST /rate/64af766ed704ab63b3af876b [32m200[0m 2025.632 ms - 306[0m
+2023-07-19 15:22:42 info: =================================
+2023-07-19 15:22:42 info: ======= ENV: development =======
+2023-07-19 15:22:42 info: 🚀 App listening on the port 3000
+2023-07-19 15:22:42 info: =================================
+2023-07-19 15:22:45 info: Connected to email server
+2023-07-19 15:22:45 info: Connected to email server
+2023-07-19 15:22:45 info: Connected to email server
+2023-07-19 15:22:45 info: Connected to email server
+2023-07-19 15:22:45 info: Connected to email server
+2023-07-19 15:22:46 info: Connected to email server
+2023-07-19 15:22:46 info: Connected to email server
+2023-07-19 15:22:47 info: Connected to Database Successfully...
+2023-07-19 15:23:12 info: [0mGET /reload_db [32m200[0m 765.166 ms - 74[0m
+2023-07-19 15:23:14 info: Connected to email server
+2023-07-19 15:23:20 info: [0mGET /rate/getRatingByUserId/64af766ed704ab63b3af876b [32m200[0m 1287.891 ms - 83[0m
+2023-07-19 15:23:25 info: [0mPOST /rate/64af766ed704ab63b3af876b [32m200[0m 1101.527 ms - 227[0m
+2023-07-19 15:23:38 info: [0mGET /rate/getRatingByUserId/64af766ed704ab63b3af876b [32m200[0m 1125.238 ms - 395[0m
+2023-07-19 15:24:26 info: =================================
+2023-07-19 15:24:26 info: ======= ENV: development =======
+2023-07-19 15:24:26 info: 🚀 App listening on the port 3000
+2023-07-19 15:24:26 info: =================================
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:30 info: Connected to Database Successfully...
+2023-07-19 15:24:30 info: Connected to email server
+2023-07-19 15:24:36 info: [0mGET /reload_db [32m200[0m 980.656 ms - 74[0m
+2023-07-19 15:24:41 info: [0mGET /rate/getRatingByUserId/64af766ed704ab63b3af876b [32m200[0m 780.447 ms - 83[0m
+2023-07-19 15:24:48 info: [0mPOST /rate/64af766ed704ab63b3af876b [32m200[0m 1106.654 ms - 306[0m
+2023-07-19 15:25:57 info: =================================
+2023-07-19 15:25:57 info: ======= ENV: development =======
+2023-07-19 15:25:57 info: 🚀 App listening on the port 3000
+2023-07-19 15:25:57 info: =================================
+2023-07-19 15:26:12 info: Connected to Database Successfully...
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:29 info: Connected to email server
+2023-07-19 15:26:30 info: Connected to email server
+2023-07-19 15:26:30 info: Connected to email server
+2023-07-19 15:32:54 info: =================================
+2023-07-19 15:32:54 info: ======= ENV: development =======
+2023-07-19 15:32:54 info: 🚀 App listening on the port 3000
+2023-07-19 15:32:54 info: =================================
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:32:58 info: Connected to email server
+2023-07-19 15:33:19 info: Connected to Database Successfully...
+2023-07-19 15:33:42 info: [0mGET /reload_db [32m200[0m 1147.294 ms - 74[0m
+2023-07-19 15:33:48 info: [0mPOST /rate/64af766ed704ab63b3af876b [32m200[0m 928.137 ms - 297[0m

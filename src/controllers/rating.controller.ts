@@ -30,7 +30,12 @@ class RatingController {
       const user = await this.userService.findUserById(userId);
       if (!user) throw new HttpException(400, 8003, 'USER_NOT_FOUND');
 
-      const data: any = await this.ratingService.rateEntity({ ...ratingData, user_id: userId, reviewer: req.user.id });
+      const data: any = await this.ratingService.rateEntity({
+        ...ratingData,
+        user_id: userId,
+        reviewer: req.user.id,
+        reviewer_location: req.user.country,
+      });
 
       // if (req.body.entity_name === 'User') {
       //   await this.userService.updateUser(req.params.id, { rating: ratings?.length });
