@@ -133,10 +133,10 @@ class ServiceService {
     if (isEmpty(userId)) throw new HttpException(400, 2001, 'payload can not be empty');
 
     const filter = {
-      client_id: userId.toString(),
+      user_id: userId.toString(),
     };
 
-    const data = await this.serviceProposal.paginate(filter, options);
+    const data = await this.hireService.paginate(filter, options);
     return data;
   }
 
