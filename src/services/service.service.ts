@@ -1,12 +1,16 @@
 import { PaginationOptions } from '@/interfaces/job.inteface';
 import { HireServiceModel, IService, IServiceProposal, ServiceModel, ServiceProposalModel } from '@/models/service.models';
+import EmailService from '@/modules/email/email.service';
 import { serviceUpdateValidationSchema, serviceValidationSchema, updateServiceProposalStatusValidation } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import mongoose from 'mongoose';
+import UserService from './users.service';
 
 class ServiceService {
   public service: any = ServiceModel;
+  public userService = new UserService();
+  public emailService = new EmailService();
   public hireService: any = HireServiceModel;
   public serviceProposal: any = ServiceProposalModel;
 
@@ -221,6 +225,33 @@ class ServiceService {
     if (!updatedData) throw new HttpException(400, 2009, 'SERVICE_REQUEST_ERROR');
 
     return updatedData;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Request Service Review
+  |--------------------------------------------------------------------------
+  */
+  public async requestServiceReview(proposalId: string, clientId: string, userId: string): Promise<any> {
+    if (isEmpty(proposalId) || isEmpty(clientId)) {
+      throw new HttpException(400, 4004, 'proposal_id, client_id and proposal_type are required.');
+    }
+
+    // find service proposal
+    const serviceProposal = await this.serviceProposal.findOne({ _id: new mongoose.Types.ObjectId(proposalId) });
+    if (!serviceProposal) throw new HttpException(400, 2002, 'SERVICE_PROPOSAL_NOT_FOUND');
+
+    // find service
+    const service = await this.service.findOne({ _id: new mongoose.Types.ObjectId(serviceProposal.service_id) });
+    if (!service) throw new HttpException(400, 2002, 'SERVICE_NOT_FOUND');
+
+    console.log(serviceProposal);
+    if (serviceProposal.client_id != clientId || serviceProposal.client_id === userId) throw new HttpException(400, 2002, 'UNAUTHORIZE_USER');
+
+    const client: any = await this.userService.findUserById(clientId);
+    if (!client) throw new HttpException(400, 2002, 'CLIENT_NOT_FOUND');
+
+    await this.emailService.sendServiceReviewEmail(client.email, { serviceName: service.title }, client.first_name);
   }
 }
 

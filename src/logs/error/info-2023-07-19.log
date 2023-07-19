@@ -53,3 +53,8 @@ Error: Channel closed
   '}" (type string) at path "user_id" because of "BSONTypeError"
 2023-07-19 15:18:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-19 15:21:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-19 16:12:37 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:13:22 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:14:54 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:15:33 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:16:26 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER

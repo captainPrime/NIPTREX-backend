@@ -87,6 +87,19 @@ class EmailService {
     await this.sendEmail(to, subject, text, html);
   }
 
+  public async sendServiceReviewEmail(to: string, payload: any, name: string): Promise<void> {
+    const subject = 'Service Review';
+    // replace this url with the link to the email verification page of your front-end app
+    // const verificationEmailUrl = `http://${CLIENT_URL}/verify-email?token=${token}`;
+    const text = `Hi ${name},
+    Service with: ${payload.serviceName}
+      is ready for review`;
+    const html = `<div style="margin:30px; padding:30px; border:1px solid black; border-radius: 20px 10px;"><h4><strong>Hi ${name},</strong></h4>
+      <p>Service with: ${payload.serviceName}</p>
+      <p>is ready for review.</p></div>`;
+    await this.sendEmail(to, subject, text, html);
+  }
+
   public async sendPaymentConfirmationEmail(to: string, payload: any, name: string): Promise<void> {
     const subject = 'Payment Confirmation';
     // replace this url with the link to the email verification page of your front-end app

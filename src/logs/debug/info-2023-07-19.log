@@ -202,3 +202,124 @@
 2023-07-19 15:33:19 info: Connected to Database Successfully...
 2023-07-19 15:33:42 info: [0mGET /reload_db [32m200[0m 1147.294 ms - 74[0m
 2023-07-19 15:33:48 info: [0mPOST /rate/64af766ed704ab63b3af876b [32m200[0m 928.137 ms - 297[0m
+2023-07-19 16:11:37 info: =================================
+2023-07-19 16:11:37 info: ======= ENV: development =======
+2023-07-19 16:11:37 info: 🚀 App listening on the port 3000
+2023-07-19 16:11:37 info: =================================
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:43 info: Connected to email server
+2023-07-19 16:11:44 info: Connected to email server
+2023-07-19 16:11:45 info: Connected to email server
+2023-07-19 16:11:46 info: Connected to Database Successfully...
+2023-07-19 16:12:07 info: [0mGET /service/proposals/64b0a5c514d977cdba9bb72a [32m200[0m 900.239 ms - -[0m
+2023-07-19 16:12:11 info: Connected to email server
+2023-07-19 16:12:12 info: Connected to email server
+2023-07-19 16:12:37 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:12:37 info: [0mPOST /service/requestServiceReview [32m200[0m 285.776 ms - 75[0m
+2023-07-19 16:13:12 info: =================================
+2023-07-19 16:13:12 info: ======= ENV: development =======
+2023-07-19 16:13:12 info: 🚀 App listening on the port 3000
+2023-07-19 16:13:12 info: =================================
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to email server
+2023-07-19 16:13:15 info: Connected to Database Successfully...
+2023-07-19 16:13:16 info: Connected to email server
+2023-07-19 16:13:16 info: Connected to email server
+2023-07-19 16:13:22 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:13:22 info: [0mPOST /service/requestServiceReview [32m200[0m 302.619 ms - 75[0m
+2023-07-19 16:13:47 info: [0mGET /users/profile [32m200[0m 578.537 ms - 520[0m
+2023-07-19 16:14:41 info: =================================
+2023-07-19 16:14:41 info: ======= ENV: development =======
+2023-07-19 16:14:41 info: 🚀 App listening on the port 3000
+2023-07-19 16:14:41 info: =================================
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:44 info: Connected to email server
+2023-07-19 16:14:49 info: Connected to Database Successfully...
+2023-07-19 16:14:54 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:14:54 info: [0mPOST /service/requestServiceReview [32m200[0m 339.988 ms - 75[0m
+2023-07-19 16:15:23 info: =================================
+2023-07-19 16:15:23 info: ======= ENV: development =======
+2023-07-19 16:15:23 info: 🚀 App listening on the port 3000
+2023-07-19 16:15:23 info: =================================
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to email server
+2023-07-19 16:15:26 info: Connected to Database Successfully...
+2023-07-19 16:15:27 info: Connected to email server
+2023-07-19 16:15:27 info: Connected to email server
+2023-07-19 16:15:27 info: Connected to email server
+2023-07-19 16:15:33 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:15:33 info: [0mPOST /service/requestServiceReview [32m200[0m 333.615 ms - 75[0m
+2023-07-19 16:16:11 info: =================================
+2023-07-19 16:16:11 info: ======= ENV: development =======
+2023-07-19 16:16:11 info: 🚀 App listening on the port 3000
+2023-07-19 16:16:11 info: =================================
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:14 info: Connected to email server
+2023-07-19 16:16:15 info: Connected to email server
+2023-07-19 16:16:15 info: Connected to email server
+2023-07-19 16:16:19 info: Connected to Database Successfully...
+2023-07-19 16:16:26 error: [POST] /service/requestServiceReview >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-19 16:16:26 info: [0mPOST /service/requestServiceReview [32m200[0m 368.331 ms - 75[0m
+2023-07-19 16:16:52 info: =================================
+2023-07-19 16:16:52 info: ======= ENV: development =======
+2023-07-19 16:16:52 info: 🚀 App listening on the port 3000
+2023-07-19 16:16:52 info: =================================
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to Database Successfully...
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:16:56 info: Connected to email server
+2023-07-19 16:17:10 info: [0mPOST /service/requestServiceReview [32m200[0m 10734.359 ms - 84[0m
+2023-07-19 16:17:41 info: =================================
+2023-07-19 16:17:41 info: ======= ENV: development =======
+2023-07-19 16:17:41 info: 🚀 App listening on the port 3000
+2023-07-19 16:17:41 info: =================================
+2023-07-19 16:17:54 info: =================================
+2023-07-19 16:17:54 info: ======= ENV: development =======
+2023-07-19 16:17:54 info: 🚀 App listening on the port 3000
+2023-07-19 16:17:54 info: =================================
+2023-07-19 16:17:56 info: Connected to email server
+2023-07-19 16:17:56 info: Connected to email server
+2023-07-19 16:17:56 info: Connected to email server
+2023-07-19 16:17:57 info: Connected to email server
+2023-07-19 16:17:57 info: Connected to email server
+2023-07-19 16:17:58 info: Connected to Database Successfully...
+2023-07-19 16:17:58 info: Connected to email server
+2023-07-19 16:18:21 info: [0mPOST /service/requestServiceReview [32m200[0m 6456.649 ms - 84[0m
+2023-07-19 16:18:27 info: Connected to email server
+2023-07-19 16:18:27 info: Connected to email server
+2023-07-19 16:18:27 info: Connected to email server
+2023-07-19 16:18:27 info: Connected to email server
