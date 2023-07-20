@@ -78,7 +78,7 @@ class InvoiceController {
   public updateInvoice = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body: IUpdateInvoice = req.body;
-      const data = await this.invoiceService.updateInvoiceById(req.user.id, body);
+      const data = await this.invoiceService.updateInvoiceById(req.params.id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'INVOICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

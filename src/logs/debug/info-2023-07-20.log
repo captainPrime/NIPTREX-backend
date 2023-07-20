@@ -105,3 +105,36 @@
 2023-07-20 17:23:42 info: [0mGET /invoice/getUserInvoice [32m200[0m 1039.290 ms - 265[0m
 2023-07-20 17:23:50 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREAD_ADDED
 2023-07-20 17:23:50 info: [0mPOST /invoice [32m200[0m 618.356 ms - 78[0m
+2023-07-20 17:25:51 info: =================================
+2023-07-20 17:25:51 info: ======= ENV: development =======
+2023-07-20 17:25:51 info: 🚀 App listening on the port 3000
+2023-07-20 17:25:51 info: =================================
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:53 info: Connected to email server
+2023-07-20 17:25:54 info: Connected to Database Successfully...
+2023-07-20 17:27:20 info: [0mGET /invoice/getInvoiceById/64b95ec8ced07805869f258b [32m200[0m 3066.198 ms - 263[0m
+2023-07-20 17:33:16 info: =================================
+2023-07-20 17:33:16 info: ======= ENV: development =======
+2023-07-20 17:33:16 info: 🚀 App listening on the port 3000
+2023-07-20 17:33:16 info: =================================
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:20 info: Connected to email server
+2023-07-20 17:33:21 info: Connected to Database Successfully...
+2023-07-20 17:35:29 info: [0mPUT /invoice/updateInvoice/64b95ec8ced07805869f258b [32m200[0m 3333.610 ms - 271[0m
+2023-07-20 17:35:36 info: [0mGET /invoice/getUserInvoice [32m200[0m 633.588 ms - 273[0m

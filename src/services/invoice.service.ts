@@ -66,10 +66,10 @@ class InvoiceService {
 
     if (error) throw new HttpException(400, 8002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.invoice.findOne({ user_id: id });
+    const data = await this.invoice.findOne({ _id: id });
     if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
-    const updatedData = await this.invoice.findByIdAndUpdate(data._id, body, {
+    const updatedData = await this.invoice.findByIdAndUpdate(id, body, {
       new: true,
     });
 
