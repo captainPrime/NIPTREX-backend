@@ -15,3 +15,93 @@
 2023-07-20 17:12:24 info: Connected to Database Successfully...
 2023-07-20 17:15:06 error: [POST] /invoice >> StatusCode:: 404, Message:: The requested path /invoice not found!
 2023-07-20 17:15:06 info: [0mPOST /invoice [32m200[0m 36.276 ms - 96[0m
+2023-07-20 17:16:33 info: =================================
+2023-07-20 17:16:33 info: ======= ENV: development =======
+2023-07-20 17:16:33 info: 🚀 App listening on the port 3000
+2023-07-20 17:16:34 info: =================================
+2023-07-20 17:16:37 info: Connected to email server
+2023-07-20 17:16:37 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:38 info: Connected to email server
+2023-07-20 17:16:39 info: Connected to Database Successfully...
+2023-07-20 17:17:19 error: [POST] /invoice >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-07-20 17:17:19 info: [0mPOST /invoice [32m200[0m 83.652 ms - 86[0m
+2023-07-20 17:17:28 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_VALIDATION_ERROR
+2023-07-20 17:17:28 info: [0mPOST /invoice [32m200[0m 800.329 ms - 114[0m
+2023-07-20 17:18:12 info: =================================
+2023-07-20 17:18:12 info: ======= ENV: development =======
+2023-07-20 17:18:12 info: 🚀 App listening on the port 3000
+2023-07-20 17:18:12 info: =================================
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to email server
+2023-07-20 17:18:14 info: Connected to Database Successfully...
+2023-07-20 17:18:44 error: [GET] /invoice >> StatusCode:: 404, Message:: The requested path /invoice not found!
+2023-07-20 17:18:44 info: [0mGET /invoice [32m200[0m 34.116 ms - 96[0m
+2023-07-20 17:18:58 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_VALIDATION_ERROR
+2023-07-20 17:18:58 info: [0mPOST /invoice [32m200[0m 824.742 ms - 110[0m
+2023-07-20 17:19:56 info: =================================
+2023-07-20 17:19:56 info: ======= ENV: development =======
+2023-07-20 17:19:56 info: 🚀 App listening on the port 3000
+2023-07-20 17:19:56 info: =================================
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:58 info: Connected to email server
+2023-07-20 17:19:59 info: Connected to email server
+2023-07-20 17:19:59 info: Connected to email server
+2023-07-20 17:19:59 info: Connected to email server
+2023-07-20 17:19:59 info: Connected to Database Successfully...
+2023-07-20 17:20:10 error: [GET] /invoice/getUserInvoice >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-07-20 17:20:10 info: [0mGET /invoice/getUserInvoice [32m200[0m 35.222 ms - 86[0m
+2023-07-20 17:20:19 info: [0mGET /invoice/getUserInvoice [32m200[0m 654.938 ms - 84[0m
+2023-07-20 17:20:25 info: [0mPOST /invoice [32m200[0m 919.847 ms - 272[0m
+2023-07-20 17:21:52 info: =================================
+2023-07-20 17:21:52 info: ======= ENV: development =======
+2023-07-20 17:21:52 info: 🚀 App listening on the port 3000
+2023-07-20 17:21:52 info: =================================
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:54 info: Connected to email server
+2023-07-20 17:21:55 info: Connected to Database Successfully...
+2023-07-20 17:23:24 info: =================================
+2023-07-20 17:23:24 info: ======= ENV: development =======
+2023-07-20 17:23:24 info: 🚀 App listening on the port 3000
+2023-07-20 17:23:24 info: =================================
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:26 info: Connected to email server
+2023-07-20 17:23:27 info: Connected to Database Successfully...
+2023-07-20 17:23:42 info: [0mGET /invoice/getUserInvoice [32m200[0m 1039.290 ms - 265[0m
+2023-07-20 17:23:50 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREAD_ADDED
+2023-07-20 17:23:50 info: [0mPOST /invoice [32m200[0m 618.356 ms - 78[0m

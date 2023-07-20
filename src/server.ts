@@ -11,6 +11,7 @@ import BidRoute from './routes/bid.route';
 import WalletRoute from './routes/wallet.route';
 import ServiceRoute from './routes/service.route';
 import RatingRoute from './routes/rating.route';
+import InvoiceRoute from './routes/invoice.route';
 
 validateEnv();
 
@@ -25,6 +26,7 @@ const app = new App([
   new WalletRoute(),
   new ServiceRoute(),
   new RatingRoute(),
+  new InvoiceRoute(),
 ]);
 
 app.listen();

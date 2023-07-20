@@ -15,11 +15,11 @@ class InvoiceService {
   |--------------------------------------------------------------------------
   */
   public async createInvoice(body: IInvoice): Promise<any> {
-    if (isEmpty(body)) throw new HttpException(400, 2005, "You're not userData");
+    if (isEmpty(body)) throw new HttpException(400, 8005, "You're not userData");
 
     const { error } = invoiceSchema.validate(body);
 
-    if (error) throw new HttpException(400, 2002, 'INVOICE_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 8002, 'INVOICE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: any = await this.invoice.create(body);
 
@@ -32,10 +32,10 @@ class InvoiceService {
   |--------------------------------------------------------------------------
   */
   public async getUserInvoice(userId: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
+    if (isEmpty(userId)) throw new HttpException(400, 8001, 'User id can not be empty');
 
     const data = await this.invoice.find({ user_id: userId });
-    if (!data) throw new HttpException(400, 2002, 'INVOICE_NOT_FOUND');
+    if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
     return data;
   }
@@ -46,10 +46,10 @@ class InvoiceService {
   |--------------------------------------------------------------------------
   */
   public async getInvoiceById(id: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+    if (isEmpty(id)) throw new HttpException(400, 8001, 'id can not be empty');
 
     const data = await this.invoice.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 2002, 'INVOICE_NOT_FOUND');
+    if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
     return data;
   }
@@ -60,20 +60,20 @@ class InvoiceService {
   |--------------------------------------------------------------------------
   */
   public async updateInvoiceById(id: mongoose.Types.ObjectId | string, body: IUpdateInvoice): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+    if (isEmpty(id)) throw new HttpException(400, 8001, 'id can not be empty');
 
     const { error } = invoiceUpdateSchema.validate(body);
 
-    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 8002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
 
     const data = await this.invoice.findOne({ user_id: id });
-    if (!data) throw new HttpException(400, 2002, 'INVOICE_NOT_FOUND');
+    if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
     const updatedData = await this.invoice.findByIdAndUpdate(data._id, body, {
       new: true,
     });
 
-    if (!updatedData) throw new HttpException(400, 2009, 'INVOICE_REQUEST_ERROR');
+    if (!updatedData) throw new HttpException(400, 8009, 'INVOICE_REQUEST_ERROR');
 
     return updatedData;
   }
@@ -84,10 +84,10 @@ class InvoiceService {
   |--------------------------------------------------------------------------
   */
   public async deleteInvoice(id: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+    if (isEmpty(id)) throw new HttpException(400, 8001, 'id can not be empty');
 
     const data = await this.invoice.findByIdAndDelete(id);
-    if (!data) throw new HttpException(400, 2009, 'INVOICE_REQUEST_ERROR');
+    if (!data) throw new HttpException(400, 8009, 'INVOICE_REQUEST_ERROR');
 
     return data;
   }

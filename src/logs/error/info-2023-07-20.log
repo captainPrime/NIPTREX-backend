@@ -1,1 +1,7 @@
 2023-07-20 17:15:06 error: [POST] /invoice >> StatusCode:: 404, Message:: The requested path /invoice not found!
+2023-07-20 17:17:19 error: [POST] /invoice >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-07-20 17:17:28 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_VALIDATION_ERROR
+2023-07-20 17:18:44 error: [GET] /invoice >> StatusCode:: 404, Message:: The requested path /invoice not found!
+2023-07-20 17:18:58 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_VALIDATION_ERROR
+2023-07-20 17:20:10 error: [GET] /invoice/getUserInvoice >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-07-20 17:23:50 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREAD_ADDED

@@ -1,3 +1,5 @@
+import { paginate } from '@/modules/paginate';
+import { toJSON } from '@/modules/toJSON';
 import { Schema, model, Document } from 'mongoose';
 
 interface IPackage {
@@ -28,6 +30,9 @@ const invoiceSchema = new Schema<IInvoice>({
   service_fee: { type: Number, required: false },
   vat: { type: Number, required: false },
 });
+
+invoiceSchema.plugin(toJSON);
+invoiceSchema.plugin(paginate);
 
 export type IUpdateInvoice = Partial<IInvoice>;
 
