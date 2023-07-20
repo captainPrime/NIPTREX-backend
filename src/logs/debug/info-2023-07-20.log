@@ -1,0 +1,17 @@
+2023-07-20 17:12:22 info: =================================
+2023-07-20 17:12:22 info: ======= ENV: development =======
+2023-07-20 17:12:22 info: 🚀 App listening on the port 3000
+2023-07-20 17:12:22 info: =================================
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to email server
+2023-07-20 17:12:24 info: Connected to Database Successfully...
+2023-07-20 17:15:06 error: [POST] /invoice >> StatusCode:: 404, Message:: The requested path /invoice not found!
+2023-07-20 17:15:06 info: [0mPOST /invoice [32m200[0m 36.276 ms - 96[0m

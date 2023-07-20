@@ -1,12 +1,12 @@
 import Joi from 'joi';
 
 export const invoiceSchema = Joi.object({
-  title: Joi.string().required(),
-  package: Joi.array().items(Joi.string().required()).required(),
+  title: Joi.string(),
+  package: Joi.array().items(Joi.string().required()),
   promo_code: Joi.string().optional(),
-  total: Joi.number().required(),
-  service_fee: Joi.number().required(),
-  VAT: Joi.number().required(),
+  total: Joi.number().optional(),
+  service_fee: Joi.number().optional(),
+  vat: Joi.number().optional(),
 });
 
 export const invoiceUpdateSchema = Joi.object({
@@ -15,5 +15,5 @@ export const invoiceUpdateSchema = Joi.object({
   promo_code: Joi.string().optional(),
   total: Joi.number(),
   service_fee: Joi.number(),
-  VAT: Joi.number(),
+  vat: Joi.number(),
 });

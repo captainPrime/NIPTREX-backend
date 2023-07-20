@@ -25,7 +25,7 @@ class InvoiceController {
       const invoice = await this.invoiceService.getUserInvoice(req.user.id);
       if (invoice.length !== 0) throw new HttpException(400, 5002, 'INVOICE_ALREAD_ADDED');
 
-      const data = await this.invoiceService.createInvoice({ ...userData, user_id: req.user.id });
+      const data = await this.invoiceService.createInvoice({ ...userData, user_id: req.user.id, vat: 10 });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'INVOICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
