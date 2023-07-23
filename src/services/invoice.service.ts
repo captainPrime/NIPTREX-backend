@@ -35,7 +35,6 @@ class InvoiceService {
     if (isEmpty(userId)) throw new HttpException(400, 8001, 'User id can not be empty');
 
     const data = await this.invoice.find({ user_id: userId });
-    if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
     return data;
   }
@@ -49,7 +48,6 @@ class InvoiceService {
     if (isEmpty(id)) throw new HttpException(400, 8001, 'id can not be empty');
 
     const data = await this.invoice.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 8002, 'INVOICE_NOT_FOUND');
 
     return data;
   }

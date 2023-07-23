@@ -23,8 +23,8 @@ class InvoiceController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      // const invoice = await this.invoiceService.getUserInvoice(req.user.id);
-      // if (invoice.length !== 0 && invoice) throw new HttpException(400, 5002, 'INVOICE_ALREAD_ADDED');
+      const invoice = await this.invoiceService.getUserInvoice(req.user.id);
+      if (invoice.length !== 0 && invoice) throw new HttpException(400, 5002, 'INVOICE_ALREAD_ADDED');
 
       const data = await this.invoiceService.createInvoice({
         ...userData,
