@@ -29,19 +29,10 @@ ratingSchema.plugin(paginate);
 
 const RatingModel: Model<IRating> = model<IRating>('Rating', ratingSchema);
 
-ratingSchema.post('save', async function (rating) {
+ratingSchema.pre('save', async function (next) {
   try {
-    const user = await User.findById(rating.user_id);
-
-    console.log('USER IN RATE HOOK', user);
-
-    if (!user) {
-      console.error('User not found');
-      return;
-    }
-
     // Find all the ratings for the user
-    const ratings = await RatingModel.find({ user_id: rating.user_id });
+    const ratings = await RatingModel.find({ user_id: this.user_id });
 
     console.log('USER_RATINGS', ratings);
 
@@ -50,11 +41,18 @@ ratingSchema.post('save', async function (rating) {
     const sumRatings = ratings.reduce((total, r) => total + r.rating_value, 0);
     const averageRating = sumRatings / totalRatings;
 
-    // Update the user model with the average rating
-    user.rating = averageRating;
-    await user.save();
+    await User.findByIdAndUpdate(
+      this.user_id,
+      { rating: averageRating },
+      {
+        new: true,
+        runValidators: true,
+      },
+    );
+    next();
   } catch (error) {
     console.error('Error updating average rating:', error);
+    next();
   }
 });
 

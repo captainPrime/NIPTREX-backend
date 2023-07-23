@@ -222,3 +222,24 @@
 2023-07-23 14:26:00 info: [0mPOST /auth/login [32m200[0m 505.833 ms - 587[0m
 2023-07-23 14:26:03 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
 2023-07-23 14:26:03 info: [0mPOST /service/proposal/64b0a5c514d977cdba9bb72a [32m200[0m 1281.064 ms - 77[0m
+2023-07-23 14:30:41 info: =================================
+2023-07-23 14:30:41 info: ======= ENV: development =======
+2023-07-23 14:30:41 info: 🚀 App listening on the port 3000
+2023-07-23 14:30:41 info: =================================
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:43 info: Connected to email server
+2023-07-23 14:30:49 info: Connected to Database Successfully...
+2023-07-23 14:31:13 info: Connected to email server
+2023-07-23 14:31:13 info: Connected to email server
+2023-07-23 14:31:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:31:39 info: [0mPOST /auth/login [32m200[0m 625.110 ms - 587[0m
+2023-07-23 14:31:44 info: [0mPOST /rate/64af766fd704ab63b3af876d [32m200[0m 1053.966 ms - 297[0m
+2023-07-23 14:31:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:31:50 info: [0mPOST /auth/login [32m200[0m 497.729 ms - 587[0m
+2023-07-23 14:31:54 info: [0mGET /users/profile [32m200[0m 529.289 ms - 520[0m

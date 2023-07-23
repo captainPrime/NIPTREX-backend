@@ -35,3 +35,5 @@ src/services/rating.service.ts(25,16): error TS1003: Identifier expected.
 2023-07-23 14:25:51 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
 2023-07-23 14:26:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 14:26:03 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-07-23 14:31:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:31:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
