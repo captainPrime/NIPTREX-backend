@@ -65,3 +65,26 @@ export const generateReferralCode = (length: number) => {
 
   return code;
 };
+
+export const calculateVAT = (country: string): number => {
+  const lowerCaseCountry = country.toLowerCase();
+
+  switch (lowerCaseCountry) {
+    case 'nigeria':
+      return 5;
+    case 'usa':
+      return 5;
+    case 'canada':
+      return 5;
+    case 'uk':
+      return 10;
+    case 'germany':
+      return 10;
+    default:
+      return 0; // Return 0 if the country is not found
+  }
+};
+
+export const calculateServiceFee = (): number => {
+  return 10;
+};
