@@ -1,5 +1,5 @@
 import { PaginationOptions } from '@/interfaces/job.inteface';
-import { HireServiceModel, IService, IServiceProposal, ServiceModel, ServiceProposalModel } from '@/models/service.models';
+import { HireServiceModel, IService, IServiceProposal, ServiceModel, ServiceProposalModel, ServiceProposalStatus } from '@/models/service.models';
 import EmailService from '@/modules/email/email.service';
 import { serviceUpdateValidationSchema, serviceValidationSchema, updateServiceProposalStatusValidation } from '@/validations/service.validation';
 import { HttpException } from '@exceptions/HttpException';
@@ -138,7 +138,7 @@ class ServiceService {
 
     const filter = {
       client: userId.toString(),
-      status: 'paid',
+      status: ServiceProposalStatus.PAID,
     };
 
     const data = await this.hireService.paginate(filter, options);

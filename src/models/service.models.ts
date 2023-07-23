@@ -107,6 +107,8 @@ const HireServiceSchema: Schema = new Schema(
   {
     user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     service: { type: Schema.Types.ObjectId, ref: 'Service', required: true },
+    proposal: { type: Schema.Types.ObjectId, ref: 'ServiceProposal', required: true },
+    status: { type: String, enum: Object.values(ServiceProposalStatus), default: ServiceProposalStatus.PAID, required: true },
     client: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   },
   {
