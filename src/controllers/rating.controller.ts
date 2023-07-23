@@ -44,14 +44,6 @@ class RatingController {
         await this.userService.updateUser(userId, { rating: calculateAverageRating(ratings) });
       }
 
-      // if (req.body.entity_name === 'User') {
-      //   await this.userService.updateUser(req.params.id, { rating: ratings?.length });
-      // } else if (req.body.entity_name === 'Job') {
-      //   await this.jobService.updateJobById(req.params.id, { rating: ratings?.length });
-      // } else {
-      //   await this.serviceService.updateServiceById(req.params.id, { rating: ratings?.length });
-      // }
-
       res.status(200).json({ status: 200, response_code: 8000, message: 'RATING_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
