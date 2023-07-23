@@ -513,3 +513,32 @@
 2023-07-23 19:24:16 info: Connected to email server
 2023-07-23 19:24:17 info: Connected to Database Successfully...
 2023-07-23 19:24:26 info: [0mGET /service/getAppliedServices [32m200[0m 754.782 ms - -[0m
+2023-07-23 19:30:48 info: =================================
+2023-07-23 19:30:48 info: ======= ENV: development =======
+2023-07-23 19:30:48 info: 🚀 App listening on the port 3000
+2023-07-23 19:30:48 info: =================================
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:50 info: Connected to email server
+2023-07-23 19:30:51 info: Connected to email server
+2023-07-23 19:30:51 info: Connected to Database Successfully...
+2023-07-23 19:31:15 info: [0mGET /reload_db [32m200[0m 234.198 ms - 74[0m
+2023-07-23 19:38:16 info: [0mGET /reload_db [32m200[0m 215.106 ms - 74[0m
+2023-07-23 19:43:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:43:17 info: [0mPOST /auth/login [32m200[0m 665.260 ms - 587[0m
+2023-07-23 19:43:24 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:43:24 info: [0mPOST /auth/login [32m200[0m 650.959 ms - 587[0m
+2023-07-23 19:43:29 info: [0mGET /users/profile [32m200[0m 426.773 ms - 520[0m
+2023-07-23 19:43:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:43:38 info: [0mPOST /auth/login [32m200[0m 1011.161 ms - 587[0m
+2023-07-23 19:43:46 info: [0mPOST /rate/64af766fd704ab63b3af876d [32m200[0m 1960.506 ms - 297[0m
+2023-07-23 19:43:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:43:54 info: [0mPOST /auth/login [32m200[0m 466.645 ms - 587[0m
+2023-07-23 19:43:59 info: [0mGET /users/profile [32m200[0m 455.437 ms - 520[0m

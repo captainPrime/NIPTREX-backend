@@ -55,10 +55,10 @@ class IndexController {
       // await this.saveJob.deleteMany({});
       // await this.bid.deleteMany({});
       // await this.hire.deleteMany({});
-      // await this.rating.deleteMany({});
+      await this.rating.deleteMany({});
       // await this.service.deleteMany({});
       // await this.chat.deleteMany({});
-      await this.serviceProposal.deleteMany({});
+      // await this.serviceProposal.deleteMany({});
       // await this.message.deleteMany({});
 
       const user = {
