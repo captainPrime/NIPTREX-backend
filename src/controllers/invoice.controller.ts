@@ -38,7 +38,7 @@ class InvoiceController {
         service_fee: calculateServiceFee(),
       });
 
-      await this.serviceService.updateServiceProjectById(req.body.proposal_id, { amount: req.body.total });
+      // await this.serviceService.updateServiceProjectById(req.body.proposal_id, { amount: req.body.total });
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'INVOICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

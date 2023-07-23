@@ -57,3 +57,6 @@ src/services/rating.service.ts(25,16): error TS1003: Identifier expected.
 2023-07-23 19:43:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 19:58:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 19:58:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 22:11:34 error: [POST] /invoice >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-23 22:11:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 22:12:25 error: [POST] /invoice >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR

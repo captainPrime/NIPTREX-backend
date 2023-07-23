@@ -564,3 +564,27 @@
 2023-07-23 19:58:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 19:58:34 info: [0mPOST /auth/login [32m200[0m 635.936 ms - 587[0m
 2023-07-23 19:59:00 info: [0mGET /users/profile [32m200[0m 432.854 ms - 522[0m
+2023-07-23 22:11:15 info: =================================
+2023-07-23 22:11:15 info: ======= ENV: development =======
+2023-07-23 22:11:15 info: 🚀 App listening on the port 3000
+2023-07-23 22:11:15 info: =================================
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to email server
+2023-07-23 22:11:18 info: Connected to Database Successfully...
+2023-07-23 22:11:34 error: [POST] /invoice >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-07-23 22:11:34 info: [0mPOST /invoice [32m200[0m 846.294 ms - 84[0m
+2023-07-23 22:11:53 info: [0mGET /service/getAppliedServices [32m200[0m 481.338 ms - 175[0m
+2023-07-23 22:11:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 22:11:59 info: [0mPOST /auth/login [32m200[0m 913.078 ms - 587[0m
+2023-07-23 22:12:03 info: [0mGET /service/getAppliedServices [32m200[0m 822.819 ms - -[0m
+2023-07-23 22:12:25 error: [POST] /invoice >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-07-23 22:12:25 info: [0mPOST /invoice [32m200[0m 1798.541 ms - 109[0m
