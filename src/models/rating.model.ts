@@ -11,7 +11,7 @@ export interface IRating extends Document {
   comment: string;
 }
 
-const ratingSchema = new Schema(
+const ratingSchema = new Schema<IRating>(
   {
     user_id: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
     reviewer: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
@@ -27,7 +27,35 @@ const ratingSchema = new Schema(
 ratingSchema.plugin(toJSON);
 ratingSchema.plugin(paginate);
 
-
 const RatingModel: Model<IRating> = model<IRating>('Rating', ratingSchema);
+
+ratingSchema.post('save', async function (rating) {
+  try {
+    const user = await User.findById(rating.user_id);
+
+    console.log('USER IN RATE HOOK', user);
+
+    if (!user) {
+      console.error('User not found');
+      return;
+    }
+
+    // Find all the ratings for the user
+    const ratings = await RatingModel.find({ user_id: rating.user_id });
+
+    console.log('USER_RATINGS', ratings);
+
+    // Calculate the average rating
+    const totalRatings = ratings.length;
+    const sumRatings = ratings.reduce((total, r) => total + r.rating_value, 0);
+    const averageRating = sumRatings / totalRatings;
+
+    // Update the user model with the average rating
+    user.rating = averageRating;
+    await user.save();
+  } catch (error) {
+    console.error('Error updating average rating:', error);
+  }
+});
 
 export { RatingModel };

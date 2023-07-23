@@ -210,9 +210,13 @@ class ServiceController {
       const serviceData = await this.serviceService.getServiceById(service_id);
       if (!serviceData) throw new HttpException(400, 7006, 'SERVICE_NOT_FOUND');
 
-      const serviceProposal = await this.serviceService.getServiceProposalByServiceId(service_id);
-      console.log(serviceProposal);
-      if (serviceProposal && serviceProposal.status !== ServiceProposalStatus.COMPLETED) throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
+      const serviceProposals = await this.serviceService.getAllServiceProposalByServiceId(service_id);
+      console.log(serviceProposals);
+
+      const hasOngoingService = serviceProposals.some((proposal: any) => proposal.status !== ServiceProposalStatus.COMPLETED);
+      if (hasOngoingService) {
+        throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
+      }
 
       const payload = {
         client_id: req.user.id,

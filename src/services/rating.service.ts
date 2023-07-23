@@ -22,6 +22,8 @@ class RatingService {
 
     const data: IRating = await this.rating.create(body);
 
+    await data.save();
+
     return data;
   }
 

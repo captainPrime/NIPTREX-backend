@@ -4,3 +4,34 @@
 2023-07-23 10:41:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 10:42:48 error: [GET] /bid/proposals/64b51731c1c76d2eb4ef7c21 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-07-23 10:43:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:03:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:03:47 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:05:07 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:16:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:16:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:17:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:17:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:17:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:19:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:19:05 error: [POST] /rate/64af766fd704ab63b3af876d >> StatusCode:: 400, Message:: this.rating.save is not a function
+2023-07-23 14:20:09 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/services/rating.service.ts(25,16): error TS1003: Identifier expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/services/rating.service.ts(25,16): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/rating.service.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-048126215169747244.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-048126215169747244.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-048126215169747244.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+2023-07-23 14:20:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:25:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:25:51 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-07-23 14:26:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 14:26:03 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
