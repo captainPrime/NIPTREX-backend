@@ -79,3 +79,23 @@
 2023-07-23 10:43:27 info: [0mGET /bid/proposals/64b51731c1c76d2eb4ef7c21 [32m200[0m 991.718 ms - -[0m
 2023-07-23 10:46:30 info: [0mGET /service?category=Web%20Development [32m200[0m 541.416 ms - -[0m
 2023-07-23 10:46:34 info: [0mGET /service [32m200[0m 871.388 ms - -[0m
+2023-07-23 10:47:26 info: [0mPOST /service/proposal/64b0a5c514d977cdba9bb72a [32m200[0m 1672.121 ms - 334[0m
+2023-07-23 10:47:31 info: [0mPOST /service/proposal/64b0a5c514d977cdba9bb72a [32m200[0m 1574.562 ms - 334[0m
+2023-07-23 10:48:35 info: =================================
+2023-07-23 10:48:35 info: ======= ENV: development =======
+2023-07-23 10:48:35 info: 🚀 App listening on the port 3000
+2023-07-23 10:48:35 info: =================================
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:38 info: Connected to Database Successfully...
+2023-07-23 10:48:38 info: Connected to email server
+2023-07-23 10:48:55 info: [0mPOST /service/proposal/64b0a5c514d977cdba9bb72a [32m200[0m 1703.693 ms - 334[0m
+2023-07-23 10:49:08 info: Connected to email server
+2023-07-23 10:49:08 info: Connected to email server
+2023-07-23 10:49:08 info: Connected to email server
+2023-07-23 10:49:08 info: Connected to email server
+2023-07-23 10:51:30 info: [0mGET /service/getAppliedServices [32m200[0m 1100.229 ms - -[0m
+2023-07-23 10:59:12 info: [0mGET /users/profile [32m200[0m 762.297 ms - 509[0m

@@ -190,6 +190,22 @@ class ServiceService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Service Proposal By Id
+  |--------------------------------------------------------------------------
+  */
+  public async getAllServiceProposalByServiceId(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.serviceProposal.find({ service_id: id }).populate({
+      path: 'client_id',
+      select: 'first_name last_name profile_picture',
+    });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get All Service Proposal
   |--------------------------------------------------------------------------
   */
