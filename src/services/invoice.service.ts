@@ -41,6 +41,19 @@ class InvoiceService {
 
   /*
   |--------------------------------------------------------------------------
+  | Get Invoice By Proposal ID
+  |--------------------------------------------------------------------------
+  */
+  public async getInvoiceByproposalId(proposalId: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(proposalId)) throw new HttpException(400, 8001, 'User id can not be empty');
+
+    const data = await this.invoice.find({ proposal_id: proposalId });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | Get Invoice By Id
   |--------------------------------------------------------------------------
   */
