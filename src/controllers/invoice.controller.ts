@@ -4,10 +4,12 @@ import { HttpException } from '@/exceptions/HttpException';
 import InvoiceService from '@/services/invoice.service';
 import { IUpdateInvoice } from '@/models/invoice.model';
 import { calculateServiceFee, calculateVAT } from '@/utils/matchPercentage';
+import ServiceService from '@/services/service.service';
 
 class InvoiceController {
   public userService = new UserService();
   public invoiceService = new InvoiceService();
+  public serviceService = new ServiceService();
 
   /*
   |--------------------------------------------------------------------------
@@ -23,8 +25,8 @@ class InvoiceController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const proposal = await this.invoiceService.getInvoiceByproposalId(req.body.proposal_id);
-      if (!proposal) throw new HttpException(400, 5002, 'INVOICE_ALREAD_ADDED');
+      const proposal = await this.serviceService.getServiceProposalById(req.body.proposal_id);
+      if (!proposal) throw new HttpException(400, 5002, 'SERVICE_PROPOSAL_NOT_FOUND');
 
       const invoice = await this.invoiceService.getInvoiceByproposalId(req.body.proposal_id);
       if (invoice && invoice.length !== 0) throw new HttpException(400, 5002, 'INVOICE_ALREAD_ADDED');
