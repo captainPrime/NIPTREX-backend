@@ -1,0 +1,6 @@
+2023-07-23 10:23:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 10:26:52 error: [GET] /service >> StatusCode:: 400, Message:: Cannot populate path `user_id.users` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-07-23 10:41:17 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-23 10:41:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 10:42:48 error: [GET] /bid/proposals/64b51731c1c76d2eb4ef7c21 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-23 10:43:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

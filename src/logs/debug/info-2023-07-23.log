@@ -1,0 +1,81 @@
+2023-07-23 10:23:08 info: =================================
+2023-07-23 10:23:08 info: ======= ENV: development =======
+2023-07-23 10:23:09 info: 🚀 App listening on the port 3000
+2023-07-23 10:23:09 info: =================================
+2023-07-23 10:23:11 info: Connected to email server
+2023-07-23 10:23:11 info: Connected to email server
+2023-07-23 10:23:11 info: Connected to email server
+2023-07-23 10:23:11 info: Connected to email server
+2023-07-23 10:23:11 info: Connected to email server
+2023-07-23 10:23:18 info: Connected to Database Successfully...
+2023-07-23 10:23:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 10:23:27 info: [0mPOST /auth/login [32m200[0m 825.829 ms - 587[0m
+2023-07-23 10:23:35 info: [0mGET /service?category=mobile%20development [32m200[0m 260.668 ms - 175[0m
+2023-07-23 10:23:40 info: [0mGET /service [32m200[0m 270.876 ms - -[0m
+2023-07-23 10:23:41 info: Connected to email server
+2023-07-23 10:23:41 info: Connected to email server
+2023-07-23 10:23:41 info: Connected to email server
+2023-07-23 10:23:41 info: Connected to email server
+2023-07-23 10:23:41 info: Connected to email server
+2023-07-23 10:24:06 info: [0mGET /service?category=Web%20Development [32m200[0m 235.855 ms - -[0m
+2023-07-23 10:26:33 info: =================================
+2023-07-23 10:26:33 info: ======= ENV: development =======
+2023-07-23 10:26:33 info: 🚀 App listening on the port 3000
+2023-07-23 10:26:33 info: =================================
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to email server
+2023-07-23 10:26:35 info: Connected to Database Successfully...
+2023-07-23 10:26:36 info: Connected to email server
+2023-07-23 10:26:52 error: [GET] /service >> StatusCode:: 400, Message:: Cannot populate path `user_id.users` because it is not in your schema. Set the `strictPopulate` option to false to override.
+2023-07-23 10:26:52 info: [0mGET /service?category=Web%20Development [32m200[0m 608.362 ms - 181[0m
+2023-07-23 10:27:13 info: =================================
+2023-07-23 10:27:13 info: ======= ENV: development =======
+2023-07-23 10:27:13 info: 🚀 App listening on the port 3000
+2023-07-23 10:27:13 info: =================================
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:15 info: Connected to email server
+2023-07-23 10:27:25 info: Connected to Database Successfully...
+2023-07-23 10:27:44 info: [0mGET /service?category=Web%20Development [32m200[0m 605.123 ms - -[0m
+2023-07-23 10:27:59 info: [0mGET /service/getAppliedServices [32m200[0m 728.366 ms - -[0m
+2023-07-23 10:39:57 info: =================================
+2023-07-23 10:39:57 info: ======= ENV: development =======
+2023-07-23 10:39:57 info: 🚀 App listening on the port 3000
+2023-07-23 10:39:57 info: =================================
+2023-07-23 10:40:00 info: Connected to email server
+2023-07-23 10:40:00 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:01 info: Connected to email server
+2023-07-23 10:40:11 info: Connected to Database Successfully...
+2023-07-23 10:40:30 info: Connected to email server
+2023-07-23 10:40:30 info: Connected to email server
+2023-07-23 10:41:17 error: [GET] /job/getFreelancerContracts >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-23 10:41:17 info: [0mGET /job/getFreelancerContracts [32m200[0m 286.089 ms - 75[0m
+2023-07-23 10:41:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 10:41:30 info: [0mPOST /auth/login [32m200[0m 733.695 ms - 587[0m
+2023-07-23 10:41:36 info: [0mGET /job/getFreelancerContracts [32m200[0m 1236.738 ms - -[0m
+2023-07-23 10:42:48 error: [GET] /bid/proposals/64b51731c1c76d2eb4ef7c21 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-07-23 10:42:48 info: [0mGET /bid/proposals/64b51731c1c76d2eb4ef7c21 [32m200[0m 336.757 ms - 75[0m
+2023-07-23 10:43:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 10:43:20 info: [0mPOST /auth/login [32m200[0m 658.136 ms - 587[0m
+2023-07-23 10:43:27 info: [0mGET /bid/proposals/64b51731c1c76d2eb4ef7c21 [32m200[0m 991.718 ms - -[0m
+2023-07-23 10:46:30 info: [0mGET /service?category=Web%20Development [32m200[0m 541.416 ms - -[0m
+2023-07-23 10:46:34 info: [0mGET /service [32m200[0m 871.388 ms - -[0m

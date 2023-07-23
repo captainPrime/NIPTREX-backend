@@ -98,6 +98,7 @@ class ServiceController {
         limit: parseInt(req.query.limit as string, 10) || 5,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
+        populate: 'user_id.first_name.last_name.profile_picture',
       };
 
       const data: any[] | null = await this.serviceService.getAllService(req.query, options);
@@ -158,6 +159,7 @@ class ServiceController {
       const payload = {
         user_id,
         service: service._id.toString(),
+        proposal_id: service._id.toString(),
         client: req.user.id,
       };
 
@@ -207,6 +209,9 @@ class ServiceController {
 
       const serviceData = await this.serviceService.getServiceById(service_id);
       if (!serviceData) throw new HttpException(400, 7006, 'SERVICE_NOT_FOUND');
+
+      const serviceProposal = await this.serviceService.getServiceProposalByServiceId(service_id);
+      if (serviceProposal && serviceProposal.status !== ServiceProposalStatus.COMPLETED) throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
 
       const payload = {
         client_id: req.user.id,
@@ -292,7 +297,7 @@ class ServiceController {
         tx_ref: generateUUID(),
         amount,
         currency,
-        redirect_url: 'http://localhost:3000/verify-payment',
+        redirect_url: 'http://localhost:3000/service/verify-payment',
         meta: {
           consumer_id: req.user.id,
           consumer_mac: proposal_id,

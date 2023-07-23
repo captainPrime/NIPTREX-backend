@@ -48,7 +48,7 @@ const userSchema = new Schema<IUserDoc, IUserModel>(
     },
     referral_code: {
       type: String,
-      required: true,
+      required: false,
     },
     profile_picture: {
       type: String,
