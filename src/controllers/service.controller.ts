@@ -385,7 +385,8 @@ class ServiceController {
           const payload = {
             user_id: service.user_id,
             service: service._id.toString(),
-            client: proposal.id.toString(),
+            client: proposal.client_id._id.toString(),
+            proposal: proposal._id.toString(),
           };
 
           await this.serviceService.hireFreelancerService(payload);

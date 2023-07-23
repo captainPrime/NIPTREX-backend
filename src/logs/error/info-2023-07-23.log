@@ -39,3 +39,13 @@ src/services/rating.service.ts(25,16): error TS1003: Identifier expected.
 2023-07-23 14:31:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-07-23 18:31:22 error: [POST] /invoice >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "ABC123" (type string) at path "_id" for model "ServiceProposal"
 2023-07-23 18:32:15 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREAD_ADDED
+2023-07-23 18:55:07 error: [POST] /service/proposal/64b0a5c514d977cdba9bb72a >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-07-23 18:57:22 error: [GET] /service/verify-payment >> StatusCode:: 404, Message:: The requested path /service/verify-payment not found!
+2023-07-23 18:57:23 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-07-23 18:57:48 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2023-07-23 19:06:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:09:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:10:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:11:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-07-23 19:12:18 error: [GET] /service/verify-payment >> StatusCode:: 404, Message:: The requested path /service/verify-payment not found!
+2023-07-23 19:12:19 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
