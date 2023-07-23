@@ -37,6 +37,13 @@ class RatingController {
         reviewer_location: req.user.country,
       });
 
+      // Find all the ratings for the user
+      const ratings = await this.ratingService.getRatingByUserId(userId);
+
+      if (ratings) {
+        await this.userService.updateUser(userId, { rating: calculateAverageRating(ratings) });
+      }
+
       // if (req.body.entity_name === 'User') {
       //   await this.userService.updateUser(req.params.id, { rating: ratings?.length });
       // } else if (req.body.entity_name === 'Job') {
