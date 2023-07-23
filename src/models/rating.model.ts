@@ -1,6 +1,7 @@
 import { toJSON } from '@/modules/toJSON';
 import { paginate } from '@/modules/paginate';
 import { Document, Schema, model, Model } from 'mongoose';
+import User from './users.model';
 
 export interface IRating extends Document {
   user_id: Schema.Types.ObjectId | string;
@@ -25,6 +26,7 @@ const ratingSchema = new Schema(
 
 ratingSchema.plugin(toJSON);
 ratingSchema.plugin(paginate);
+
 
 const RatingModel: Model<IRating> = model<IRating>('Rating', ratingSchema);
 
