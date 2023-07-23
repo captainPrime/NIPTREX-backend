@@ -4,6 +4,7 @@ import { IUser, IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.i
 import userService from '@services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import AboutService from '@/services/about.service';
+import { generateReferralCode } from '@/utils/matchPercentage';
 
 class UsersController {
   public userService = new userService();
@@ -43,7 +44,7 @@ class UsersController {
   public createUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userData: CreateUserDto = req.body;
-      const createUserData: IUserModel = await this.userService.createUser(userData);
+      const createUserData: IUserModel = await this.userService.createUser({ ...userData, referral_code: generateReferralCode(8) });
 
       if (userData.referral_code) {
         const referredUser = await this.userService.findUserByReferralCode(userData.referral_code);
