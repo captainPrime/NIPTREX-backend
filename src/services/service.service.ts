@@ -138,7 +138,7 @@ class ServiceService {
 
     const filter = {
       client: userId.toString(),
-      // status: ServiceProposalStatus.PAID,
+      status: ServiceProposalStatus.PAID,
     };
 
     const data = await this.hireService.paginate(filter, options);

@@ -56,7 +56,7 @@ class IndexController {
       // await this.bid.deleteMany({});
       // await this.hire.deleteMany({});
       // await this.rating.deleteMany({});
-      await this.service.deleteMany({});
+      // await this.service.deleteMany({});
       // await this.chat.deleteMany({});
       await this.serviceProposal.deleteMany({});
       // await this.message.deleteMany({});

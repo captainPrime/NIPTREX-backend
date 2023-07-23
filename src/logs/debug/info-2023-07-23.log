@@ -456,3 +456,60 @@
 2023-07-23 19:13:39 info: Connected to email server
 2023-07-23 19:13:48 info: Connected to Database Successfully...
 2023-07-23 19:14:21 info: [0mGET /service/getAppliedServices [32m200[0m 777.098 ms - -[0m
+2023-07-23 19:21:16 info: =================================
+2023-07-23 19:21:16 info: ======= ENV: development =======
+2023-07-23 19:21:16 info: 🚀 App listening on the port 3000
+2023-07-23 19:21:16 info: =================================
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:18 info: Connected to email server
+2023-07-23 19:21:19 info: Connected to email server
+2023-07-23 19:21:19 info: Connected to email server
+2023-07-23 19:21:19 info: Connected to email server
+2023-07-23 19:21:19 info: Connected to Database Successfully...
+2023-07-23 19:21:48 info: =================================
+2023-07-23 19:21:48 info: ======= ENV: development =======
+2023-07-23 19:21:48 info: 🚀 App listening on the port 3000
+2023-07-23 19:21:48 info: =================================
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to email server
+2023-07-23 19:21:50 info: Connected to Database Successfully...
+2023-07-23 19:22:02 info: [0mGET /reload_db [32m200[0m 286.534 ms - 74[0m
+2023-07-23 19:22:27 info: [0mPOST /service/proposal/64bd6d2e2d61bccc11577f5d [32m200[0m 1513.185 ms - 334[0m
+2023-07-23 19:22:41 info: [0mPOST /service/payment [32m200[0m 1484.614 ms - 163[0m
+2023-07-23 19:23:08 error: [GET] /service/verify-payment >> StatusCode:: 404, Message:: The requested path /service/verify-payment not found!
+2023-07-23 19:23:08 info: [0mGET /service/verify-payment?status=successful&tx_ref=38d772d0-c960-4ef2-b9db-b8bb18d81880&transaction_id=4480822 [32m200[0m 6.353 ms - 111[0m
+2023-07-23 19:23:09 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-07-23 19:23:09 info: [0mGET /favicon.ico [36m304[0m 1.901 ms - -[0m
+2023-07-23 19:23:23 info: [0mPOST /service/paymentCallback [32m200[0m 3489.054 ms - 615[0m
+2023-07-23 19:23:34 info: [0mGET /service/getAppliedServices [32m200[0m 1143.682 ms - -[0m
+2023-07-23 19:24:14 info: =================================
+2023-07-23 19:24:14 info: ======= ENV: development =======
+2023-07-23 19:24:14 info: 🚀 App listening on the port 3000
+2023-07-23 19:24:14 info: =================================
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:16 info: Connected to email server
+2023-07-23 19:24:17 info: Connected to Database Successfully...
+2023-07-23 19:24:26 info: [0mGET /service/getAppliedServices [32m200[0m 754.782 ms - -[0m
