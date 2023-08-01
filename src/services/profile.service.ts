@@ -65,6 +65,9 @@ class ProfileService {
 
     const profile = {
       user_id: userId,
+      first_name: findOneUserData.first_name,
+      last_name: findOneUserData.last_name,
+      role: findOneUserData.role,
       total_earnings: about?.total_earnings,
       total_jobs: about?.total_jobs,
       available: about?.available,
