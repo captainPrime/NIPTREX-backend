@@ -77,6 +77,7 @@ class ProfileService {
       social_links: about?.social_links,
       languages: about?.languages,
       rating: findOneUserData.rating,
+      referral_code: findOneUserData.referral_code,
       bio: bio,
       work_preferences: preference[0],
       education_history: education,
