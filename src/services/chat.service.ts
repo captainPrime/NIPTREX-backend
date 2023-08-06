@@ -83,24 +83,26 @@ class ChatService {
     const chats: IChat[] = await this.chat.find({ participants: { $in: userId } }).lean();
 
     // Loop through each chat and keep only the last message
-    const chatsWithLastMessage: IChat[] | any = chats.map(chat => {
-      const lastMessage = chat.messages[chat.messages.length - 1];
-      // return { ...chat, messages: [lastMessage] };
+    const chatsWithLastMessage: Promise<any[]> = Promise.all(
+      chats.map(async chat => {
+        const lastMessage = chat.messages[chat.messages.length - 1];
+        // return { ...chat, messages: [lastMessage] };
 
-      const participantIds = chat.participants.map(String); // Ensure participantIds are strings
+        const participantIds = chat.participants.map(String); // Ensure participantIds are strings
 
-      // Fetch participant data from UserService
-      const participantsData = this.userService.findUserByIds(participantIds);
+        // Fetch participant data from UserService
+        const participantsData = await this.userService.findUserByIds(participantIds);
 
-      // Map participantsData to the required format with name and email
-      const participants = participantsData.map((participant: any) => ({
-        last_name: participant.last_name,
-        first_name: participant.first_name,
-        profile_picture: participant.profile_picture,
-      }));
+        // Map participantsData to the required format with name and email
+        const participants = participantsData.map((participant: any) => ({
+          last_name: participant.last_name,
+          first_name: participant.first_name,
+          profile_picture: participant.profile_picture,
+        }));
 
-      return { ...chat, messages: [lastMessage], participants };
-    });
+        return { ...chat, messages: [lastMessage], participants };
+      }),
+    );
 
     return chatsWithLastMessage;
   }

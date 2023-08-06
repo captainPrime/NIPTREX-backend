@@ -1,0 +1,18 @@
+2023-08-06 11:19:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-06 11:19:37 error: [GET] /chat/user >> StatusCode:: 400, Message:: participantsData.map is not a function
+2023-08-06 11:20:18 error: uncaughtException: await is only valid in async functions and the top level bodies of modules
+/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/chat.service.ts:78
+            const participantsData = await this.userService.findUserByIds(participantIds);
+                                     ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9532654821395821.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9532654821395821.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9532654821395821.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)

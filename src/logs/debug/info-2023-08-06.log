@@ -1,0 +1,37 @@
+2023-08-06 11:19:15 info: =================================
+2023-08-06 11:19:15 info: ======= ENV: development =======
+2023-08-06 11:19:15 info: 🚀 App listening on the port 3000
+2023-08-06 11:19:15 info: =================================
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:17 info: Connected to email server
+2023-08-06 11:19:18 info: Connected to Database Successfully...
+2023-08-06 11:19:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-06 11:19:31 info: [0mPOST /auth/login [32m200[0m 1407.596 ms - 587[0m
+2023-08-06 11:19:37 error: [GET] /chat/user >> StatusCode:: 400, Message:: participantsData.map is not a function
+2023-08-06 11:19:37 info: [0mGET /chat/user [32m200[0m 494.381 ms - 95[0m
+2023-08-06 11:21:47 info: =================================
+2023-08-06 11:21:47 info: ======= ENV: development =======
+2023-08-06 11:21:47 info: 🚀 App listening on the port 3000
+2023-08-06 11:21:47 info: =================================
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:49 info: Connected to email server
+2023-08-06 11:21:50 info: Connected to Database Successfully...
+2023-08-06 11:21:56 info: [0mGET /chat/user [32m200[0m 930.224 ms - -[0m
