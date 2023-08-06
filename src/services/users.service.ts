@@ -46,6 +46,14 @@ class UserService {
     return findUser;
   }
 
+  public async findUserByIds(userIds: string[]): Promise<any[]> {
+    if (isEmpty(userIds)) throw new HttpException(400, 2001, 'User id can not be empty');
+
+    const findUser: any = await this.users.find({ _id: { $in: userIds } });
+
+    return findUser;
+  }
+
   public async findUserByEmail(email: string): Promise<IUserDoc> {
     if (isEmpty(email)) throw new HttpException(400, 2003, 'Email should not be empty');
 
