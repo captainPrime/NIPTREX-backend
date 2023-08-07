@@ -5,8 +5,10 @@ import InvoiceService from '@/services/invoice.service';
 import { IUpdateInvoice } from '@/models/invoice.model';
 import { calculateServiceFee, calculateVAT } from '@/utils/matchPercentage';
 import ServiceService from '@/services/service.service';
+import BidService from '@/services/bid.service';
 
 class InvoiceController {
+  public bidService = new BidService();
   public userService = new UserService();
   public invoiceService = new InvoiceService();
   public serviceService = new ServiceService();
@@ -25,22 +27,29 @@ class InvoiceController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const proposal = await this.serviceService.getServiceProposalById(req.body.proposal_id);
-      if (!proposal) throw new HttpException(400, 5002, 'SERVICE_PROPOSAL_NOT_FOUND');
+      const proposalId = req.body.proposal_id;
+      const serviceProposal = await this.serviceService.getServiceProposalById(proposalId);
+      const jobProposal = await this.bidService.getProposalById(proposalId);
 
-      const invoice = await this.invoiceService.getInvoiceByproposalId(req.body.proposal_id);
-      if (invoice && invoice.length !== 0) throw new HttpException(400, 5002, 'INVOICE_ALREADY_ADDED');
+      if (!serviceProposal && !jobProposal) {
+        throw new HttpException(400, 5002, 'PROPOSAL_NOT_FOUND');
+      }
 
-      const data = await this.invoiceService.createInvoice({
+      const existingInvoice = await this.invoiceService.getInvoiceByproposalId(proposalId);
+      if (existingInvoice && existingInvoice.length !== 0) {
+        throw new HttpException(400, 5002, 'INVOICE_ALREADY_ADDED');
+      }
+
+      const invoiceData = {
         ...userData,
         user_id: req.user.id,
         vat: calculateVAT(req.user.country),
         service_fee: calculateServiceFee(),
-      });
+      };
 
-      // await this.serviceService.updateServiceProjectById(req.body.proposal_id, { amount: req.body.total });
+      const invoice = await this.invoiceService.createInvoice(invoiceData);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'INVOICE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'INVOICE_REQUEST_SUCCESSFUL', data: invoice });
     } catch (error) {
       next(error);
     }

@@ -175,3 +175,69 @@
 2023-08-07 14:38:28 error: [POST] /service/proposal/64cf692b1e5d4f717dc5b030 >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
 2023-08-07 14:38:28 info: [0mPOST /service/proposal/64cf692b1e5d4f717dc5b030 [32m200[0m 1117.400 ms - 77[0m
 2023-08-07 14:38:33 info: Connected to email server
+2023-08-07 14:55:16 info: =================================
+2023-08-07 14:55:16 info: ======= ENV: development =======
+2023-08-07 14:55:16 info: 🚀 App listening on the port 3000
+2023-08-07 14:55:16 info: =================================
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to email server
+2023-08-07 14:55:18 info: Connected to Database Successfully...
+2023-08-07 14:55:19 info: Connected to email server
+2023-08-07 14:55:30 error: [POST] /invoice >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-08-07 14:55:30 info: [0mPOST /invoice [32m200[0m 1406.865 ms - 76[0m
+2023-08-07 14:56:06 info: [0mGET /job/getAllJobs [32m200[0m 235.806 ms - -[0m
+2023-08-07 14:56:27 error: [GET] /bid/proposals/64cfdc3681f01f0bbf337a31 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-08-07 14:56:27 info: [0mGET /bid/proposals/64cfdc3681f01f0bbf337a31 [32m200[0m 215.323 ms - 75[0m
+2023-08-07 14:56:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:56:36 info: [0mPOST /auth/login [32m200[0m 599.686 ms - 587[0m
+2023-08-07 14:56:40 info: [0mGET /bid/proposals/64cfdc3681f01f0bbf337a31 [32m200[0m 933.964 ms - -[0m
+2023-08-07 14:56:57 error: [POST] /invoice >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-08-07 14:56:57 info: [0mPOST /invoice [32m200[0m 831.017 ms - 76[0m
+2023-08-07 15:00:44 info: =================================
+2023-08-07 15:00:44 info: ======= ENV: development =======
+2023-08-07 15:00:44 info: 🚀 App listening on the port 3000
+2023-08-07 15:00:44 info: =================================
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to email server
+2023-08-07 15:00:46 info: Connected to Database Successfully...
+2023-08-07 15:10:29 error: [POST] /invoice >> StatusCode:: 400, Message:: PROPOSAL_NOT_FOUND
+2023-08-07 15:10:29 info: [0mPOST /invoice [32m200[0m 2867.181 ms - 76[0m
+2023-08-07 15:13:26 info: =================================
+2023-08-07 15:13:26 info: ======= ENV: development =======
+2023-08-07 15:13:26 info: 🚀 App listening on the port 3000
+2023-08-07 15:13:26 info: =================================
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to email server
+2023-08-07 15:13:28 info: Connected to Database Successfully...
+2023-08-07 15:13:34 info: [0mPOST /invoice [32m200[0m 1480.530 ms - 280[0m
+2023-08-07 15:13:38 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREADY_ADDED
+2023-08-07 15:13:38 info: [0mPOST /invoice [32m200[0m 1021.940 ms - 79[0m
