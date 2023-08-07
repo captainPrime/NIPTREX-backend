@@ -241,3 +241,7 @@
 2023-08-07 15:13:34 info: [0mPOST /invoice [32m200[0m 1480.530 ms - 280[0m
 2023-08-07 15:13:38 error: [POST] /invoice >> StatusCode:: 400, Message:: INVOICE_ALREADY_ADDED
 2023-08-07 15:13:38 info: [0mPOST /invoice [32m200[0m 1021.940 ms - 79[0m
+2023-08-07 16:06:32 info: [0mGET /service [32m200[0m 2411.430 ms - -[0m
+2023-08-07 16:07:08 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-08-07 16:07:08 info: [0mPOST /service/payment [32m200[0m 660.528 ms - 84[0m
+2023-08-07 16:07:17 info: [0mPOST /service/payment [32m200[0m 1919.435 ms - 163[0m
