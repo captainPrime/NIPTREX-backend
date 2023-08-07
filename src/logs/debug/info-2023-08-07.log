@@ -1,0 +1,21 @@
+2023-08-07 06:41:23 info: =================================
+2023-08-07 06:41:23 info: ======= ENV: development =======
+2023-08-07 06:41:23 info: 🚀 App listening on the port 3000
+2023-08-07 06:41:23 info: =================================
+2023-08-07 06:41:25 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:26 info: Connected to Database Successfully...
+2023-08-07 06:41:26 info: Connected to email server
+2023-08-07 06:41:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 06:41:36 info: [0mPOST /auth/login [32m200[0m 606.407 ms - 587[0m
+2023-08-07 06:41:56 error: [GET] /chat/message/64af782993bdfbeb42b039eb >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-08-07 06:41:56 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 749.228 ms - 72[0m
+2023-08-07 06:42:09 info: [0mGET /chat/user [32m200[0m 721.481 ms - 582[0m

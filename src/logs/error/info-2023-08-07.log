@@ -1,0 +1,2 @@
+2023-08-07 06:41:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 06:41:56 error: [GET] /chat/message/64af782993bdfbeb42b039eb >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
