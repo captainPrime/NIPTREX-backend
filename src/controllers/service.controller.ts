@@ -212,7 +212,9 @@ class ServiceController {
 
       const serviceProposals = await this.serviceService.getAllServiceProposalByServiceId(service_id);
 
-      const hasOngoingService = serviceProposals.some((proposal: any) => proposal.status !== ServiceProposalStatus.COMPLETED);
+      const hasOngoingService = serviceProposals.some(
+        (proposal: any) => proposal.status !== ServiceProposalStatus.COMPLETED && proposal.client_id === req.user.id,
+      );
       if (hasOngoingService) {
         throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
       }

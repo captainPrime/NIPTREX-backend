@@ -1,2 +1,17 @@
 2023-08-07 06:41:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-08-07 06:41:56 error: [GET] /chat/message/64af782993bdfbeb42b039eb >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2023-08-07 14:23:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:23:55 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-08-07 14:24:44 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:24:48 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-08-07 14:26:05 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:26:45 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2023-08-07 14:27:14 error: [POST] /service/hireFreelancerService/64cf64cf1e5d4f717dc5afe1 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2023-08-07 14:29:31 error: [POST] /service/proposal/64bd6d2e2d61bccc11577f5d >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:29:40 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:30:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:30:07 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:31:56 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-08-07 14:32:39 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:33:03 error: [POST] /service/proposal/64bd6d2e2d61bccc11577f5d >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:33:30 error: [POST] /service/proposal/64cf692b1e5d4f717dc5b030 >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE

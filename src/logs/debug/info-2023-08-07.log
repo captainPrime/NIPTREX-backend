@@ -19,3 +19,99 @@
 2023-08-07 06:41:56 error: [GET] /chat/message/64af782993bdfbeb42b039eb >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
 2023-08-07 06:41:56 info: [0mGET /chat/message/64af782993bdfbeb42b039eb [32m200[0m 749.228 ms - 72[0m
 2023-08-07 06:42:09 info: [0mGET /chat/user [32m200[0m 721.481 ms - 582[0m
+2023-08-07 14:22:48 info: =================================
+2023-08-07 14:22:48 info: ======= ENV: development =======
+2023-08-07 14:22:48 info: 🚀 App listening on the port 3000
+2023-08-07 14:22:48 info: =================================
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:50 info: Connected to email server
+2023-08-07 14:22:51 info: Connected to Database Successfully...
+2023-08-07 14:22:51 info: Connected to email server
+2023-08-07 14:22:51 info: Connected to email server
+2023-08-07 14:22:51 info: Connected to email server
+2023-08-07 14:22:51 info: Connected to email server
+2023-08-07 14:23:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:23:29 info: [0mPOST /auth/login [32m200[0m 3215.787 ms - 587[0m
+2023-08-07 14:23:55 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-08-07 14:23:55 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 3149.576 ms - 75[0m
+2023-08-07 14:24:44 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:24:44 info: [0mPOST /auth/login [32m200[0m 2500.411 ms - 587[0m
+2023-08-07 14:24:48 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-08-07 14:24:48 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 240.121 ms - 75[0m
+2023-08-07 14:25:57 info: =================================
+2023-08-07 14:25:57 info: ======= ENV: development =======
+2023-08-07 14:25:57 info: 🚀 App listening on the port 3000
+2023-08-07 14:25:57 info: =================================
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to email server
+2023-08-07 14:25:59 info: Connected to Database Successfully...
+2023-08-07 14:26:05 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:26:05 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 537.539 ms - 75[0m
+2023-08-07 14:26:22 info: [0mGET /service [32m200[0m 440.183 ms - -[0m
+2023-08-07 14:26:45 error: [POST] /service/hireFreelancerService/647dce3a5fab941b6eff394e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2023-08-07 14:26:45 info: [0mPOST /service/hireFreelancerService/647dce3a5fab941b6eff394e [32m200[0m 681.740 ms - 126[0m
+2023-08-07 14:27:03 info: [0mGET /service/proposals/64cf640d1e5d4f717dc5af6d [32m200[0m 1325.171 ms - 401[0m
+2023-08-07 14:27:14 error: [POST] /service/hireFreelancerService/64cf64cf1e5d4f717dc5afe1 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2023-08-07 14:27:14 info: [0mPOST /service/hireFreelancerService/64cf64cf1e5d4f717dc5afe1 [32m200[0m 720.853 ms - 126[0m
+2023-08-07 14:29:31 error: [POST] /service/proposal/64bd6d2e2d61bccc11577f5d >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:29:31 info: [0mPOST /service/proposal/64bd6d2e2d61bccc11577f5d [32m200[0m 5876.863 ms - 75[0m
+2023-08-07 14:29:40 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:29:40 info: [0mPOST /service/proposal/64cf640d1e5d4f717dc5af6d [32m200[0m 1098.045 ms - 77[0m
+2023-08-07 14:30:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-07 14:30:01 info: [0mPOST /auth/login [32m200[0m 505.766 ms - 587[0m
+2023-08-07 14:30:07 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:30:07 info: [0mPOST /service/proposal/64cf640d1e5d4f717dc5af6d [32m200[0m 1043.559 ms - 77[0m
+2023-08-07 14:31:39 info: =================================
+2023-08-07 14:31:39 info: ======= ENV: development =======
+2023-08-07 14:31:39 info: 🚀 App listening on the port 3000
+2023-08-07 14:31:39 info: =================================
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:41 info: Connected to Database Successfully...
+2023-08-07 14:31:41 info: Connected to email server
+2023-08-07 14:31:42 info: Connected to email server
+2023-08-07 14:31:42 info: Connected to email server
+2023-08-07 14:31:56 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-08-07 14:31:56 info: [0mPOST /service/proposal/64cf640d1e5d4f717dc5af6d [32m200[0m 1192.608 ms - 107[0m
+2023-08-07 14:32:26 info: =================================
+2023-08-07 14:32:26 info: ======= ENV: development =======
+2023-08-07 14:32:26 info: 🚀 App listening on the port 3000
+2023-08-07 14:32:26 info: =================================
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to Database Successfully...
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:29 info: Connected to email server
+2023-08-07 14:32:39 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:32:39 info: [0mPOST /service/proposal/64cf640d1e5d4f717dc5af6d [32m200[0m 1760.765 ms - 77[0m
+2023-08-07 14:33:03 error: [POST] /service/proposal/64bd6d2e2d61bccc11577f5d >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-08-07 14:33:03 info: [0mPOST /service/proposal/64bd6d2e2d61bccc11577f5d [32m200[0m 458.238 ms - 75[0m
+2023-08-07 14:33:30 error: [POST] /service/proposal/64cf692b1e5d4f717dc5b030 >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-08-07 14:33:30 info: [0mPOST /service/proposal/64cf692b1e5d4f717dc5b030 [32m200[0m 4821.324 ms - 77[0m
