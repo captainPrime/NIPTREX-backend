@@ -1,0 +1,35 @@
+2023-08-21 21:49:01 info: =================================
+2023-08-21 21:49:01 info: ======= ENV: development =======
+2023-08-21 21:49:01 info: 🚀 App listening on the port 3000
+2023-08-21 21:49:01 info: =================================
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:04 info: Connected to email server
+2023-08-21 21:49:06 info: Connected to email server
+2023-08-21 21:49:07 info: Connected to email server
+2023-08-21 21:49:07 info: Connected to email server
+2023-08-21 21:49:09 info: Connected to Database Successfully...
+2023-08-21 21:49:09 info: Connected to email server
+2023-08-21 21:49:10 info: Connected to email server
+2023-08-21 21:49:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-21 21:49:19 info: [0mPOST /auth/login [32m200[0m 806.910 ms - 587[0m
+2023-08-21 21:49:33 info: Connected to email server
+2023-08-21 21:50:24 info: [0mPOST /service [32m200[0m 644.649 ms - 947[0m
+2023-08-21 21:50:54 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-21 21:50:54 info: [0mPOST /auth/login [32m200[0m 588.110 ms - 587[0m
+2023-08-21 21:51:04 info: [0mGET /service [32m200[0m 548.536 ms - -[0m
+2023-08-21 21:51:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-08-21 21:51:55 info: [0mPOST /auth/login [32m200[0m 770.703 ms - 587[0m
+2023-08-21 21:52:30 info: [0mPOST /service/proposal/64e3ce1044332f3906bed8ef [32m200[0m 1254.104 ms - 334[0m
+2023-08-21 21:52:53 info: [0mGET /service/getServiceById/64e3ce1044332f3906bed8ef [32m200[0m 489.836 ms - -[0m
+2023-08-21 21:53:28 info: [0mGET /service/proposals/64e3ce1044332f3906bed8ef [32m200[0m 747.638 ms - 402[0m
+2023-08-21 21:54:12 info: [0mPOST /service/payment [32m200[0m 2016.878 ms - 163[0m
+2023-08-21 21:55:34 error: [GET] /service/verify-payment >> StatusCode:: 404, Message:: The requested path /service/verify-payment not found!
+2023-08-21 21:55:34 info: [0mGET /service/verify-payment?status=successful&tx_ref=005641ea-4c36-49bd-9b41-f29288e7a638&transaction_id=4543984 [32m200[0m 16.396 ms - 111[0m
+2023-08-21 21:55:35 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-08-21 21:55:35 info: [0mGET /favicon.ico [32m200[0m 2.231 ms - 100[0m
+2023-08-21 21:56:28 info: [0mPOST /service/paymentCallback [32m200[0m 4488.150 ms - 615[0m
+2023-08-21 21:56:46 info: [0mGET /service/proposals/64e3ce1044332f3906bed8ef [32m200[0m 1057.385 ms - 399[0m
