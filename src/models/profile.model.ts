@@ -101,7 +101,6 @@ const billingAddressSchema: Schema = new Schema(
     address: { type: String, required: false },
     country: { type: String, required: false },
     city: { type: String, required: false },
-    vat_number: { type: Number, required: false },
     postal_number: { type: Number, required: false },
   },
   {

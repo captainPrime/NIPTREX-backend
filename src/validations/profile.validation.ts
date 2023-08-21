@@ -278,7 +278,6 @@ export const billingAddressSchemaValidation = Joi.object({
   address: Joi.string().required(),
   country: Joi.string().required(),
   city: Joi.string().required(),
-  vat_number: Joi.number().required(),
   postal_number: Joi.number().required(),
 });
 
@@ -289,6 +288,5 @@ export const billingAddressUpdateValidation = Joi.object({
   address: Joi.string(),
   country: Joi.string(),
   city: Joi.string(),
-  vat_number: Joi.number(),
   postal_number: Joi.number(),
 }).min(1);

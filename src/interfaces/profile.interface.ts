@@ -217,7 +217,6 @@ export interface IBillingAddress {
   state: string;
   address: string;
   city: string;
-  vat_number: number;
   postal_number: number;
 }
 
