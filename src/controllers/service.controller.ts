@@ -349,6 +349,8 @@ class ServiceController {
           const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
           if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
 
+          if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
+
           console.log('PROPOSAL', proposal);
           const service = await this.serviceService.getServiceById(proposal.service_id.toString());
           if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
