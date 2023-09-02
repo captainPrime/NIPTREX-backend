@@ -1330,3 +1330,15 @@ SyntaxError: await is only valid in async functions and the top level bodies of 
     at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-9532654821395821.js:71:20)
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1033:32)
+2023-09-02 15:11:53 error: unhandledRejection: Token validation failed: user: Path `user` is required.
+ValidationError: Token validation failed: user: Path `user` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-02 15:11:53 error: unhandledRejection: Token validation failed: user: Path `user` is required.
+ValidationError: Token validation failed: user: Path `user` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

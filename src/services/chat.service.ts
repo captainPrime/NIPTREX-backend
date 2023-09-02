@@ -5,11 +5,13 @@ import { ChatModel, IChat, IMessage, MessageModel } from '@/models/chat.model';
 import { chatSchemaValidation, messageSchemaValidation } from '@/validations/chat.validation';
 import AboutService from './about.service';
 import UserService from './users.service';
+import ServiceService from './service.service';
 
 class ChatService {
   public chat = ChatModel;
   public message = MessageModel;
   public userService = new UserService();
+  public serviceService = new ServiceService();
   public aboutService = new AboutService();
 
   /*
@@ -86,13 +88,16 @@ class ChatService {
     const chatsWithLastMessage: Promise<any[]> = Promise.all(
       chats.map(async chat => {
         const lastMessage = chat.messages[chat.messages.length - 1];
-        // return { ...chat, messages: [lastMessage] };
 
-        const participantIds = chat.participants.map(String); // Ensure participantIds are strings
+        const participantIds = chat.participants.map(String);
 
         // Fetch participant data from UserService
         const participantsData = await this.userService.findUserByIds(participantIds);
 
+        // Fetch participant data from UserService
+        const serviceProposal = await this.serviceService.getServiceProposalByIdInternal(chat._id);
+
+        console.log('CHAT', serviceProposal);
         // Map participantsData to the required format with name and email
         const participants = participantsData.map((participant: any) => ({
           last_name: participant.last_name,
@@ -100,7 +105,7 @@ class ChatService {
           profile_picture: participant.profile_picture,
         }));
 
-        return { ...chat, messages: [lastMessage], participants };
+        return { ...chat, entity: serviceProposal.service_id, messages: [lastMessage], participants };
       }),
     );
 

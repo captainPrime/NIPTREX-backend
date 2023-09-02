@@ -14,3 +14,5 @@ declare module 'xss-clean' {
 }
 
 declare module 'flutterwave-node-v3';
+declare module 'passport';
+declare module 'passport-google-oauth20';

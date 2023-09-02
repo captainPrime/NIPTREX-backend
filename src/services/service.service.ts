@@ -161,6 +161,21 @@ class ServiceService {
   | Get Service Proposal By Id
   |--------------------------------------------------------------------------
   */
+  public async getServiceProposalByIdInternal(id: mongoose.Types.ObjectId | string): Promise<any> {
+    if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
+
+    const data = await this.serviceProposal.findOne({ _id: id }).populate({
+      path: 'client_id',
+    });
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Service Proposal By Id
+  |--------------------------------------------------------------------------
+  */
   public async getServiceProposalById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 

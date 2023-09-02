@@ -34,7 +34,7 @@ export class CreateUserDto {
   public user!: string;
 
   @IsString()
-  public country!: string;
+  public country?: string;
 
   @IsString()
   public referral_code!: string;

@@ -9,6 +9,7 @@ import TokenService from '@/modules/token/token.service';
 import EmailService from '@/modules/email/email.service';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
+import passport from '@/middlewares/passport.middleware';
 
 class AuthController {
   public authService = new AuthService();
@@ -32,6 +33,19 @@ class AuthController {
     const tokens = await this.tokenService.generateAuthTokens(user);
     res.send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: tokens });
   });
+
+  public googleLogin = passport.authenticate('google', { scope: ['profile', 'email'] });
+
+  public googleCallback = passport.authenticate('google', {
+    failureRedirect: '/login', // Redirect to login page on failure
+    session: false, // Disable session management for this route
+  });
+
+  // Handle the redirect after successful Google login
+  public googleLoginRedirect = (req: RequestWithUser, res: Response) => {
+    // You can redirect the user to a success page or perform any desired action here.
+    res.redirect('https://facebook.com');
+  };
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
     await this.authService.logout(req.body.refreshToken);

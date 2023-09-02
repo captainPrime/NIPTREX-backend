@@ -1,0 +1,373 @@
+2023-09-02 14:44:23 info: =================================
+2023-09-02 14:44:23 info: ======= ENV: development =======
+2023-09-02 14:44:23 info: 🚀 App listening on the port 3000
+2023-09-02 14:44:23 info: =================================
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:25 info: Connected to email server
+2023-09-02 14:44:26 info: Connected to Database Successfully...
+2023-09-02 14:44:51 error: [GET] /api/v1/auth/google >> StatusCode:: 404, Message:: The requested path /api/v1/auth/google not found!
+2023-09-02 14:44:51 info: [0mGET /api/v1/auth/google [32m200[0m 13.357 ms - 107[0m
+2023-09-02 14:44:52 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:44:52 info: [0mGET /favicon.ico [32m200[0m 4.443 ms - 100[0m
+2023-09-02 14:44:57 error: [GET] /api/auth/google >> StatusCode:: 404, Message:: The requested path /api/auth/google not found!
+2023-09-02 14:44:57 info: [0mGET /api/auth/google [32m200[0m 1.207 ms - 104[0m
+2023-09-02 14:44:57 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:44:57 info: [0mGET /favicon.ico [36m304[0m 1.472 ms - -[0m
+2023-09-02 14:45:55 error: [GET] /auth/google >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-09-02 14:45:55 info: [0mGET /auth/google [32m200[0m 11.695 ms - 184[0m
+2023-09-02 14:45:56 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:45:56 info: [0mGET /favicon.ico [36m304[0m 1.222 ms - -[0m
+2023-09-02 14:46:23 error: [GET] /auth/google >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-09-02 14:46:23 info: [0mGET /auth/google [32m200[0m 1.254 ms - 184[0m
+2023-09-02 14:47:10 info: =================================
+2023-09-02 14:47:10 info: ======= ENV: development =======
+2023-09-02 14:47:10 info: 🚀 App listening on the port 3000
+2023-09-02 14:47:10 info: =================================
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:12 info: Connected to email server
+2023-09-02 14:47:23 info: Connected to Database Successfully...
+2023-09-02 14:47:31 info: [0mGET /auth/google [36m302[0m 12.254 ms - 0[0m
+2023-09-02 14:47:39 info: [0mGET /auth/google [36m302[0m 1.218 ms - 0[0m
+2023-09-02 14:47:42 info: Connected to email server
+2023-09-02 14:47:42 info: Connected to email server
+2023-09-02 14:47:42 info: Connected to email server
+2023-09-02 14:47:42 info: Connected to email server
+2023-09-02 14:47:43 info: Connected to email server
+2023-09-02 14:49:25 info: =================================
+2023-09-02 14:49:25 info: ======= ENV: development =======
+2023-09-02 14:49:25 info: 🚀 App listening on the port 3000
+2023-09-02 14:49:25 info: =================================
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:27 info: Connected to email server
+2023-09-02 14:49:39 info: Connected to Database Successfully...
+2023-09-02 14:49:55 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:49:55 info: [0mGET /favicon.ico [36m304[0m 14.045 ms - -[0m
+2023-09-02 14:49:56 info: Connected to email server
+2023-09-02 14:49:56 info: Connected to email server
+2023-09-02 14:49:56 info: Connected to email server
+2023-09-02 14:49:56 info: Connected to email server
+2023-09-02 14:49:56 info: Connected to email server
+2023-09-02 14:49:59 info: [0mGET /auth/google [36m302[0m 2.717 ms - 0[0m
+2023-09-02 14:50:10 error: [GET] /oauth >> StatusCode:: 404, Message:: The requested path /oauth not found!
+2023-09-02 14:50:10 info: [0mGET /oauth?code=4%2F0Adeu5BVAR_RdCqCmyT0l7tgWKuAp2GTdn8A_NR11QAMEpMjXaaqtsj5PY4Lzd9XaQ3IBwA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [32m200[0m 5.639 ms - 94[0m
+2023-09-02 14:50:11 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:50:11 info: [0mGET /favicon.ico [36m304[0m 1.127 ms - -[0m
+2023-09-02 14:53:44 info: =================================
+2023-09-02 14:53:44 info: ======= ENV: development =======
+2023-09-02 14:53:44 info: 🚀 App listening on the port 3000
+2023-09-02 14:53:44 info: =================================
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:46 info: Connected to email server
+2023-09-02 14:53:47 info: Connected to Database Successfully...
+2023-09-02 14:53:59 info: [0mGET /auth/google [36m302[0m 6.236 ms - 0[0m
+2023-09-02 14:54:07 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:54:07 info: [0mGET /auth/oauth?code=4%2F0Adeu5BUgf4qXBgyYAM0G1s7aKTJpxwE7mKChy1y8W9yJDZRDF3X_Ms0DDVp8DujDnuoKCQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 6.302 ms - 99[0m
+2023-09-02 14:54:09 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:54:09 info: [0mGET /favicon.ico [36m304[0m 11.759 ms - -[0m
+2023-09-02 14:54:45 info: =================================
+2023-09-02 14:54:45 info: ======= ENV: development =======
+2023-09-02 14:54:45 info: 🚀 App listening on the port 3000
+2023-09-02 14:54:45 info: =================================
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:47 info: Connected to email server
+2023-09-02 14:54:57 info: Connected to Database Successfully...
+2023-09-02 14:55:05 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:55:05 info: [0mGET /favicon.ico [36m304[0m 17.282 ms - -[0m
+2023-09-02 14:55:17 info: Connected to email server
+2023-09-02 14:55:17 info: Connected to email server
+2023-09-02 14:55:17 info: Connected to email server
+2023-09-02 14:55:17 info: Connected to email server
+2023-09-02 14:55:17 info: Connected to email server
+2023-09-02 14:55:23 info: [0mGET /auth/google [36m302[0m 1.868 ms - 0[0m
+2023-09-02 14:55:30 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:55:30 info: [0mGET /auth/oauth?code=4%2F0Adeu5BWShs8XiRMtk4oQ9DDWbbQamJErzUeDSYAg_lMmzrdSHNL2fF1bQnK06GXOOczrpg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 835.213 ms - 99[0m
+2023-09-02 14:55:31 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:55:31 info: [0mGET /favicon.ico [36m304[0m 2.259 ms - -[0m
+2023-09-02 14:56:56 info: =================================
+2023-09-02 14:56:56 info: ======= ENV: development =======
+2023-09-02 14:56:56 info: 🚀 App listening on the port 3000
+2023-09-02 14:56:56 info: =================================
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:58 info: Connected to email server
+2023-09-02 14:56:59 info: Connected to Database Successfully...
+2023-09-02 14:57:21 info: [0mGET /auth/google [36m302[0m 9.999 ms - 0[0m
+2023-09-02 14:57:27 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:57:27 info: [0mGET /auth/oauth?code=4%2F0Adeu5BVaJ18wczhW9d0AObrCvz2sGGcNPT7TN-CNasScuNhx1BmEL2yRVGxSkJdkfv82RA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 934.579 ms - 99[0m
+2023-09-02 14:57:27 info: Connected to email server
+2023-09-02 14:57:27 info: Connected to email server
+2023-09-02 14:57:27 info: Connected to email server
+2023-09-02 14:57:27 info: Connected to email server
+2023-09-02 14:57:27 info: Connected to email server
+2023-09-02 14:57:29 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:57:29 info: [0mGET /favicon.ico [36m304[0m 6.203 ms - -[0m
+2023-09-02 15:11:01 info: =================================
+2023-09-02 15:11:01 info: ======= ENV: development =======
+2023-09-02 15:11:01 info: 🚀 App listening on the port 3000
+2023-09-02 15:11:01 info: =================================
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:03 info: Connected to email server
+2023-09-02 15:11:09 info: Connected to Database Successfully...
+2023-09-02 15:11:30 info: [0mGET /auth/google [36m302[0m 16.783 ms - 0[0m
+2023-09-02 15:11:33 info: Connected to email server
+2023-09-02 15:11:33 info: Connected to email server
+2023-09-02 15:11:33 info: Connected to email server
+2023-09-02 15:11:33 info: Connected to email server
+2023-09-02 15:11:33 info: Connected to email server
+2023-09-02 15:11:45 info: [0mGET /auth/google [36m302[0m 0.947 ms - 0[0m
+2023-09-02 15:11:53 info: [0mGET /auth/oauth?code=4%2F0Adeu5BU6BguDTMP9Gp74lhU_Q3kaLi04JhHnbc412uJoxdCxuTTjYY-FTLrjCTYHl_sxXg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [36m302[0m 951.503 ms - 60[0m
+2023-09-02 15:11:53 error: [ValidationError] >> Token validation failed: user: Path `user` is required.
+2023-09-02 15:13:09 info: =================================
+2023-09-02 15:13:09 info: ======= ENV: development =======
+2023-09-02 15:13:09 info: 🚀 App listening on the port 3000
+2023-09-02 15:13:09 info: =================================
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:12 info: Connected to email server
+2023-09-02 15:13:22 info: Connected to Database Successfully...
+2023-09-02 15:13:28 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-09-02 15:13:28 info: [0mGET /chat/user [32m200[0m 34.533 ms - 79[0m
+2023-09-02 15:13:29 error: [GET] /success >> StatusCode:: 404, Message:: The requested path /success not found!
+2023-09-02 15:13:29 info: [0mGET /success [32m200[0m 11.386 ms - 96[0m
+2023-09-02 15:13:31 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:13:31 info: [0mGET /favicon.ico [36m304[0m 2.392 ms - -[0m
+2023-09-02 15:13:41 info: Connected to email server
+2023-09-02 15:13:41 info: Connected to email server
+2023-09-02 15:13:41 info: Connected to email server
+2023-09-02 15:13:41 info: Connected to email server
+2023-09-02 15:13:41 info: Connected to email server
+2023-09-02 15:17:01 info: =================================
+2023-09-02 15:17:01 info: ======= ENV: development =======
+2023-09-02 15:17:01 info: 🚀 App listening on the port 3000
+2023-09-02 15:17:01 info: =================================
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to email server
+2023-09-02 15:17:03 info: Connected to Database Successfully...
+2023-09-02 15:17:18 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:17:18 info: [0mGET /favicon.ico [36m304[0m 23.642 ms - -[0m
+2023-09-02 15:17:22 info: [0mGET /auth/google [36m302[0m 1.861 ms - 0[0m
+2023-09-02 15:17:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:17:30 info: [0mGET /auth/oauth?code=4%2F0Adeu5BUCjd7gq1MPIKiFL-JriDMk_Y2Ox3nGYwzC4T_j9ZaLCZDqfrhnJnUOsTJUPld_5w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 1098.469 ms - 73[0m
+2023-09-02 15:17:33 info: Connected to email server
+2023-09-02 15:17:33 info: Connected to email server
+2023-09-02 15:17:33 info: Connected to email server
+2023-09-02 15:17:33 info: Connected to email server
+2023-09-02 15:17:33 info: Connected to email server
+2023-09-02 15:17:33 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:17:33 info: [0mGET /favicon.ico [36m304[0m 4.294 ms - -[0m
+2023-09-02 15:23:02 info: =================================
+2023-09-02 15:23:02 info: ======= ENV: development =======
+2023-09-02 15:23:02 info: 🚀 App listening on the port 3000
+2023-09-02 15:23:02 info: =================================
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:05 info: Connected to email server
+2023-09-02 15:23:06 info: Connected to Database Successfully...
+2023-09-02 15:23:35 info: Connected to email server
+2023-09-02 15:23:35 info: Connected to email server
+2023-09-02 15:23:35 info: Connected to email server
+2023-09-02 15:23:35 info: Connected to email server
+2023-09-02 15:23:35 info: Connected to email server
+2023-09-02 15:24:41 info: =================================
+2023-09-02 15:24:41 info: ======= ENV: development =======
+2023-09-02 15:24:41 info: 🚀 App listening on the port 3000
+2023-09-02 15:24:41 info: =================================
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:45 info: Connected to email server
+2023-09-02 15:24:46 info: Connected to Database Successfully...
+2023-09-02 15:25:02 info: [0mGET /auth/google [36m302[0m 11.668 ms - 0[0m
+2023-09-02 15:25:15 info: Connected to email server
+2023-09-02 15:25:15 info: Connected to email server
+2023-09-02 15:25:15 info: Connected to email server
+2023-09-02 15:25:15 info: Connected to email server
+2023-09-02 15:25:15 info: Connected to email server
+2023-09-02 15:27:04 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:27:04 info: [0mGET /auth/oauth?code=4%2F0Adeu5BUzjrI0puQ_RII7Mv0AGsJhFDrBTlPHl1IO_Bg6n2rBJ7O2P-gN6KUieL-smS2QNA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 935.997 ms - 73[0m
+2023-09-02 15:27:06 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:27:06 info: [0mGET /favicon.ico [36m304[0m 8.418 ms - -[0m
+2023-09-02 15:28:10 info: =================================
+2023-09-02 15:28:10 info: ======= ENV: development =======
+2023-09-02 15:28:10 info: 🚀 App listening on the port 3000
+2023-09-02 15:28:10 info: =================================
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:12 info: Connected to email server
+2023-09-02 15:28:23 info: Connected to Database Successfully...
+2023-09-02 15:28:33 info: [0mGET /auth/google [36m302[0m 8.163 ms - 0[0m
+2023-09-02 15:28:39 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:28:39 info: [0mGET /auth/oauth?code=4%2F0Adeu5BUMVEm46-8_6IrYPiXjseoBX1MU5RgNkp4I39BSsBzGX7LOcg7dbGOISY9V3qQKtA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 954.517 ms - 73[0m
+2023-09-02 15:28:42 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:28:42 info: [0mGET /favicon.ico [36m304[0m 4.540 ms - -[0m
+2023-09-02 15:28:42 info: Connected to email server
+2023-09-02 15:28:42 info: Connected to email server
+2023-09-02 15:28:42 info: Connected to email server
+2023-09-02 15:28:42 info: Connected to email server
+2023-09-02 15:28:42 info: Connected to email server
+2023-09-02 15:29:57 info: =================================
+2023-09-02 15:29:57 info: ======= ENV: development =======
+2023-09-02 15:29:57 info: 🚀 App listening on the port 3000
+2023-09-02 15:29:57 info: =================================
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:00 info: Connected to email server
+2023-09-02 15:30:10 info: Connected to Database Successfully...
+2023-09-02 15:30:23 info: [0mGET /auth/google [36m302[0m 15.222 ms - 0[0m
+2023-09-02 15:30:29 info: Connected to email server
+2023-09-02 15:30:29 info: Connected to email server
+2023-09-02 15:30:29 info: Connected to email server
+2023-09-02 15:30:29 info: Connected to email server
+2023-09-02 15:30:29 info: Connected to email server
+2023-09-02 15:30:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:30:30 info: [0mGET /auth/oauth?code=4%2F0Adeu5BXsQQFDZr6BhCou6jnnMLTQYVy_N8tcI3zhPJM_WRP_A_ZIht4iUiMhohGV_FC0aA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 875.683 ms - 73[0m
+2023-09-02 15:30:33 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:30:33 info: [0mGET /favicon.ico [36m304[0m 7.963 ms - -[0m
+2023-09-02 15:31:22 info: =================================
+2023-09-02 15:31:22 info: ======= ENV: development =======
+2023-09-02 15:31:22 info: 🚀 App listening on the port 3000
+2023-09-02 15:31:22 info: =================================
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:24 info: Connected to email server
+2023-09-02 15:31:34 info: Connected to Database Successfully...
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: Connected to email server
+2023-09-02 15:31:54 info: [0mGET /auth/google [36m302[0m 10.269 ms - 0[0m
+2023-09-02 15:32:04 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: User validation failed: country: Path `country` is required.
+2023-09-02 15:32:04 info: [0mGET /auth/oauth?code=4%2F0Adeu5BVfhl1eIli409-MHDfFpReMKEJFM7rkQzWR31eu3ZvAccMZ3Hcjt-uIxuxQP2VBtw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [32m200[0m 1376.136 ms - 117[0m
+2023-09-02 15:32:05 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:32:05 info: [0mGET /favicon.ico [36m304[0m 5.729 ms - -[0m
+2023-09-02 15:33:02 info: =================================
+2023-09-02 15:33:02 info: ======= ENV: development =======
+2023-09-02 15:33:02 info: 🚀 App listening on the port 3000
+2023-09-02 15:33:02 info: =================================
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:04 info: Connected to email server
+2023-09-02 15:33:05 info: Connected to email server
+2023-09-02 15:33:15 info: Connected to Database Successfully...
+2023-09-02 15:33:26 info: [0mGET /auth/google [36m302[0m 10.134 ms - 0[0m
+2023-09-02 15:33:34 info: Connected to email server
+2023-09-02 15:33:34 info: Connected to email server
+2023-09-02 15:33:34 info: Connected to email server
+2023-09-02 15:33:34 info: Connected to email server
+2023-09-02 15:33:37 info: [0mGET /auth/oauth?code=4%2F0Adeu5BUb-uX-tXA3iDETdwM-7SPCY1g1jXBGhOTr1du0wWLTbBFWKcjjiCJwEgJudyqXjg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [36m302[0m 2132.288 ms - 60[0m
+2023-09-02 15:33:37 error: [GET] /success >> StatusCode:: 404, Message:: The requested path /success not found!
+2023-09-02 15:33:37 info: [0mGET /success [36m304[0m 15.107 ms - -[0m
+2023-09-02 15:33:39 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:33:39 info: [0mGET /favicon.ico [36m304[0m 4.232 ms - -[0m
+2023-09-02 15:34:25 info: =================================
+2023-09-02 15:34:25 info: ======= ENV: development =======
+2023-09-02 15:34:25 info: 🚀 App listening on the port 3000
+2023-09-02 15:34:25 info: =================================
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:27 info: Connected to email server
+2023-09-02 15:34:35 info: [0mGET /auth/google [36m302[0m 11.656 ms - 0[0m
+2023-09-02 15:34:38 info: Connected to Database Successfully...
+2023-09-02 15:34:44 info: [0mGET /auth/oauth?code=4%2F0Adeu5BWl-6WA0RbUhiM7gagYHYYDVxlj1UzAyHCIvsJzUJMH2Jlheitxk9O0uPaexidIqQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=5&prompt=consent [36m302[0m 1350.503 ms - 84[0m
+2023-09-02 15:34:57 info: Connected to email server
+2023-09-02 15:34:57 info: Connected to email server
+2023-09-02 15:34:57 info: Connected to email server
+2023-09-02 15:34:58 info: Connected to email server

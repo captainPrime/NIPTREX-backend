@@ -1,0 +1,45 @@
+2023-09-02 14:44:51 error: [GET] /api/v1/auth/google >> StatusCode:: 404, Message:: The requested path /api/v1/auth/google not found!
+2023-09-02 14:44:52 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:44:57 error: [GET] /api/auth/google >> StatusCode:: 404, Message:: The requested path /api/auth/google not found!
+2023-09-02 14:44:57 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:45:55 error: [GET] /auth/google >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-09-02 14:45:56 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:46:23 error: [GET] /auth/google >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2023-09-02 14:49:55 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:50:10 error: [GET] /oauth >> StatusCode:: 404, Message:: The requested path /oauth not found!
+2023-09-02 14:50:11 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:54:07 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:54:09 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:55:05 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:55:30 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:55:31 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 14:57:27 error: [GET] /auth/oauth >> StatusCode:: 404, Message:: The requested path /auth/oauth not found!
+2023-09-02 14:57:29 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:11:53 error: unhandledRejection: Token validation failed: user: Path `user` is required.
+ValidationError: Token validation failed: user: Path `user` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-02 15:11:53 error: unhandledRejection: Token validation failed: user: Path `user` is required.
+ValidationError: Token validation failed: user: Path `user` is required.
+    at model.Document.invalidate (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:3013:32)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-02 15:13:28 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-09-02 15:13:29 error: [GET] /success >> StatusCode:: 404, Message:: The requested path /success not found!
+2023-09-02 15:13:31 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:17:18 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:17:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:17:33 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:27:04 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:27:06 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:28:39 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:28:42 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:30:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: You're not user
+2023-09-02 15:30:33 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:32:04 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: User validation failed: country: Path `country` is required.
+2023-09-02 15:32:05 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-09-02 15:33:37 error: [GET] /success >> StatusCode:: 404, Message:: The requested path /success not found!
+2023-09-02 15:33:39 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
