@@ -97,12 +97,22 @@ class ChatService {
         // Fetch participant data from UserService
         const participantsData = await this.userService.findUserByIds(participantIds);
 
+        // Initialize serviceProposal as null
+        let serviceProposal = null;
+
         // Fetch participant data from UserService
-        const serviceProposal = await this.serviceService.getServiceProposalByIdInternal(chat.milestone.toString());
+        const serviceProposalById = await this.serviceService.getServiceProposalByIdInternal(chat.milestone.toString());
 
         const serviceProposal_ = await this.bidService.getAllProposal();
 
-        console.log('CHAT', serviceProposal);
+        // Find a service proposal that matches any of the milestone IDs in chat.milestone
+        serviceProposal = serviceProposal_.find((proposal: any) => {
+          return proposal.milestone_stage.some((milestone: any) => {
+            return chat.milestone == milestone._id.toString(); // Convert milestone._id to string for comparison
+          });
+        });
+
+        console.log('CHAT', serviceProposal_);
         // Map participantsData to the required format with name and email
         const participants = participantsData.map((participant: any) => ({
           last_name: participant.last_name,
@@ -110,7 +120,7 @@ class ChatService {
           profile_picture: participant.profile_picture,
         }));
 
-        return { ...chat, entity: serviceProposal, messages: [lastMessage], participants };
+        return { ...chat, entity: serviceProposal || serviceProposalById, messages: [lastMessage], participants };
       }),
     );
 

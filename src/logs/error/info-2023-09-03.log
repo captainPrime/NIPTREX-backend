@@ -9,3 +9,4 @@
 2023-09-03 15:44:00 error: [GET] /chat/user >> StatusCode:: 400, Message:: chats is not defined
 2023-09-03 15:46:34 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
 2023-09-03 15:48:24 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
+2023-09-03 16:12:11 error: [GET] /chat/user >> StatusCode:: 400, Message:: chat.milestone.includes is not a function

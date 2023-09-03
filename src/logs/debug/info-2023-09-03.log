@@ -219,3 +219,46 @@
 2023-09-03 15:57:40 info: Connected to email server
 2023-09-03 15:57:40 info: Connected to email server
 2023-09-03 15:57:40 info: Connected to email server
+2023-09-03 16:04:54 info: [0mGET /bid/proposals/64cfdc3681f01f0bbf337a31 [32m200[0m 1322.724 ms - -[0m
+2023-09-03 16:11:40 info: =================================
+2023-09-03 16:11:40 info: ======= ENV: development =======
+2023-09-03 16:11:40 info: 🚀 App listening on the port 3000
+2023-09-03 16:11:40 info: =================================
+2023-09-03 16:11:48 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:50 info: Connected to email server
+2023-09-03 16:11:52 info: Connected to email server
+2023-09-03 16:11:54 info: Connected to Database Successfully...
+2023-09-03 16:12:01 info: [0mPOST /chat [32m200[0m 1078.897 ms - 236[0m
+2023-09-03 16:12:11 error: [GET] /chat/user >> StatusCode:: 400, Message:: chat.milestone.includes is not a function
+2023-09-03 16:12:11 info: [0mGET /chat/user [32m200[0m 1875.664 ms - 98[0m
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:12:13 info: Connected to email server
+2023-09-03 16:13:01 info: =================================
+2023-09-03 16:13:01 info: ======= ENV: development =======
+2023-09-03 16:13:01 info: 🚀 App listening on the port 3000
+2023-09-03 16:13:01 info: =================================
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:03 info: Connected to email server
+2023-09-03 16:13:16 info: Connected to Database Successfully...
+2023-09-03 16:13:21 info: [0mGET /chat/user [32m200[0m 1681.321 ms - -[0m
+2023-09-03 16:13:33 info: Connected to email server
+2023-09-03 16:13:34 info: Connected to email server
+2023-09-03 16:13:34 info: Connected to email server
+2023-09-03 16:13:34 info: Connected to email server
+2023-09-03 16:13:34 info: Connected to email server
+2023-09-03 16:13:34 info: Connected to email server
