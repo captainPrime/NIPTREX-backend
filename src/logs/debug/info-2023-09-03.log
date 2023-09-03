@@ -31,3 +31,186 @@
 2023-09-03 15:28:19 info: ======= ENV: development =======
 2023-09-03 15:28:19 info: 🚀 App listening on the port 3000
 2023-09-03 15:28:19 info: =================================
+2023-09-03 15:28:24 info: Connected to email server
+2023-09-03 15:28:24 info: Connected to email server
+2023-09-03 15:28:24 info: Connected to email server
+2023-09-03 15:28:24 info: Connected to email server
+2023-09-03 15:28:24 info: Connected to email server
+2023-09-03 15:28:25 info: Connected to email server
+2023-09-03 15:28:25 info: Connected to email server
+2023-09-03 15:28:25 info: Connected to email server
+2023-09-03 15:28:50 info: Connected to Database Successfully...
+2023-09-03 15:28:55 info: Connected to email server
+2023-09-03 15:28:55 info: Connected to email server
+2023-09-03 15:28:56 info: Connected to email server
+2023-09-03 15:28:58 info: Connected to email server
+2023-09-03 15:28:59 info: Connected to email server
+2023-09-03 15:29:05 info: [0mGET /reload_db [32m200[0m 7910.199 ms - 74[0m
+2023-09-03 15:29:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-09-03 15:29:14 info: [0mPOST /auth/login [32m200[0m 1425.522 ms - 587[0m
+2023-09-03 15:29:18 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-09-03 15:29:18 info: [0mGET /chat/user [32m200[0m 4.460 ms - 79[0m
+2023-09-03 15:29:20 error: [GET] /chat/user >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2023-09-03 15:29:20 info: [0mGET /chat/user [32m200[0m 2.925 ms - 79[0m
+2023-09-03 15:29:29 info: [0mGET /chat/user [32m200[0m 1564.230 ms - 81[0m
+2023-09-03 15:29:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-09-03 15:29:49 info: [0mPOST /auth/login [32m200[0m 1498.858 ms - 587[0m
+2023-09-03 15:30:05 info: [0mGET /service/getUserService [32m200[0m 2922.530 ms - -[0m
+2023-09-03 15:31:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-09-03 15:31:02 info: [0mPOST /auth/login [32m200[0m 3742.731 ms - 587[0m
+2023-09-03 15:31:12 error: [POST] /service/proposal/64cf640d1e5d4f717dc5af6d >> StatusCode:: 400, Message:: HAS_ONGOING_SERVICE
+2023-09-03 15:31:12 info: [0mPOST /service/proposal/64cf640d1e5d4f717dc5af6d [32m200[0m 2127.358 ms - 77[0m
+2023-09-03 15:31:30 info: [0mGET /service/getAppliedServices [32m200[0m 1399.668 ms - -[0m
+2023-09-03 15:32:16 info: [0mPOST /chat [32m200[0m 1519.117 ms - 236[0m
+2023-09-03 15:32:31 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
+2023-09-03 15:32:31 info: [0mGET /chat/user [32m200[0m 848.120 ms - 77[0m
+2023-09-03 15:40:27 info: =================================
+2023-09-03 15:40:27 info: ======= ENV: development =======
+2023-09-03 15:40:27 info: 🚀 App listening on the port 3000
+2023-09-03 15:40:27 info: =================================
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:30 info: Connected to email server
+2023-09-03 15:40:35 info: Connected to Database Successfully...
+2023-09-03 15:40:40 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
+2023-09-03 15:40:40 info: [0mGET /chat/user [32m200[0m 842.213 ms - 77[0m
+2023-09-03 15:40:59 info: Connected to email server
+2023-09-03 15:40:59 info: Connected to email server
+2023-09-03 15:41:00 info: Connected to email server
+2023-09-03 15:41:00 info: Connected to email server
+2023-09-03 15:41:01 info: Connected to email server
+2023-09-03 15:41:33 info: =================================
+2023-09-03 15:41:33 info: ======= ENV: development =======
+2023-09-03 15:41:33 info: 🚀 App listening on the port 3000
+2023-09-03 15:41:33 info: =================================
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to Database Successfully...
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:41:36 info: Connected to email server
+2023-09-03 15:42:05 info: Connected to email server
+2023-09-03 15:42:05 info: Connected to email server
+2023-09-03 15:42:05 info: Connected to email server
+2023-09-03 15:42:05 info: Connected to email server
+2023-09-03 15:42:06 info: Connected to email server
+2023-09-03 15:42:06 info: Connected to email server
+2023-09-03 15:44:00 error: [GET] /chat/user >> StatusCode:: 400, Message:: chats is not defined
+2023-09-03 15:44:00 info: [0mGET /chat/user [32m200[0m 741.357 ms - 77[0m
+2023-09-03 15:44:31 info: =================================
+2023-09-03 15:44:31 info: ======= ENV: development =======
+2023-09-03 15:44:31 info: 🚀 App listening on the port 3000
+2023-09-03 15:44:31 info: =================================
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to email server
+2023-09-03 15:44:34 info: Connected to Database Successfully...
+2023-09-03 15:44:35 info: Connected to email server
+2023-09-03 15:44:41 info: [0mGET /chat/user [32m200[0m 313.160 ms - 81[0m
+2023-09-03 15:45:03 info: Connected to email server
+2023-09-03 15:45:04 info: Connected to email server
+2023-09-03 15:46:11 info: =================================
+2023-09-03 15:46:11 info: ======= ENV: development =======
+2023-09-03 15:46:11 info: 🚀 App listening on the port 3000
+2023-09-03 15:46:11 info: =================================
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:14 info: Connected to email server
+2023-09-03 15:46:15 info: Connected to email server
+2023-09-03 15:46:19 info: Connected to Database Successfully...
+2023-09-03 15:46:34 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
+2023-09-03 15:46:34 info: [0mGET /chat/user [32m200[0m 1206.209 ms - 77[0m
+2023-09-03 15:46:45 info: Connected to email server
+2023-09-03 15:47:58 info: =================================
+2023-09-03 15:47:58 info: ======= ENV: development =======
+2023-09-03 15:47:58 info: 🚀 App listening on the port 3000
+2023-09-03 15:47:58 info: =================================
+2023-09-03 15:48:03 info: Connected to email server
+2023-09-03 15:48:07 info: Connected to email server
+2023-09-03 15:48:11 info: Connected to Database Successfully...
+2023-09-03 15:48:12 info: Connected to email server
+2023-09-03 15:48:12 info: Connected to email server
+2023-09-03 15:48:12 info: Connected to email server
+2023-09-03 15:48:13 info: Connected to email server
+2023-09-03 15:48:13 info: Connected to email server
+2023-09-03 15:48:24 error: [GET] /chat/user >> StatusCode:: 400, Message:: id can not be empty
+2023-09-03 15:48:24 info: [0mGET /chat/user [32m200[0m 1897.927 ms - 77[0m
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:48:33 info: Connected to email server
+2023-09-03 15:49:07 info: =================================
+2023-09-03 15:49:07 info: ======= ENV: development =======
+2023-09-03 15:49:07 info: 🚀 App listening on the port 3000
+2023-09-03 15:49:07 info: =================================
+2023-09-03 15:49:11 info: Connected to email server
+2023-09-03 15:49:11 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:12 info: Connected to email server
+2023-09-03 15:49:13 info: Connected to email server
+2023-09-03 15:49:13 info: Connected to Database Successfully...
+2023-09-03 15:49:30 info: [0mGET /chat/user [32m200[0m 1684.435 ms - 441[0m
+2023-09-03 15:49:42 info: Connected to email server
+2023-09-03 15:49:43 info: Connected to email server
+2023-09-03 15:52:06 info: =================================
+2023-09-03 15:52:06 info: ======= ENV: development =======
+2023-09-03 15:52:06 info: 🚀 App listening on the port 3000
+2023-09-03 15:52:06 info: =================================
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:13 info: Connected to email server
+2023-09-03 15:52:15 info: Connected to email server
+2023-09-03 15:52:15 info: Connected to Database Successfully...
+2023-09-03 15:52:22 info: Connected to email server
+2023-09-03 15:52:22 info: Connected to email server
+2023-09-03 15:52:22 info: Connected to email server
+2023-09-03 15:52:41 info: Connected to email server
+2023-09-03 15:52:41 info: Connected to email server
+2023-09-03 15:52:51 info: [0mGET /chat/user [32m200[0m 3305.020 ms - -[0m
+2023-09-03 15:57:08 info: =================================
+2023-09-03 15:57:08 info: ======= ENV: development =======
+2023-09-03 15:57:08 info: 🚀 App listening on the port 3000
+2023-09-03 15:57:08 info: =================================
+2023-09-03 15:57:12 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:13 info: Connected to email server
+2023-09-03 15:57:16 info: Connected to Database Successfully...

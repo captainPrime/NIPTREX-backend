@@ -91,11 +91,12 @@ class ChatService {
 
         const participantIds = chat.participants.map(String);
 
+        console.log(chat, 'CHAT');
         // Fetch participant data from UserService
         const participantsData = await this.userService.findUserByIds(participantIds);
 
         // Fetch participant data from UserService
-        const serviceProposal = await this.serviceService.getServiceProposalByIdInternal(chat._id);
+        const serviceProposal = await this.serviceService.getServiceProposalByIdInternal(chat.milestone.toString());
 
         console.log('CHAT', serviceProposal);
         // Map participantsData to the required format with name and email
@@ -105,7 +106,7 @@ class ChatService {
           profile_picture: participant.profile_picture,
         }));
 
-        return { ...chat, entity: serviceProposal.service_id, messages: [lastMessage], participants };
+        return { ...chat, entity: serviceProposal, messages: [lastMessage], participants };
       }),
     );
 
