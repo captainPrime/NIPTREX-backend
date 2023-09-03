@@ -69,8 +69,8 @@ class AuthController {
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {
     const user = await this.userService.findUserByEmail(req.body.email);
-    const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(user.id);
-    await this.emailService.sendVerificationEmail(user.email, verifyEmailToken, user.first_name);
+    const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(user?.id);
+    await this.emailService.sendVerificationEmail(user?.email, verifyEmailToken, user?.first_name);
     res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
   });
 
