@@ -6,11 +6,13 @@ import { chatSchemaValidation, messageSchemaValidation } from '@/validations/cha
 import AboutService from './about.service';
 import UserService from './users.service';
 import ServiceService from './service.service';
+import BidService from './bid.service';
 
 class ChatService {
   public chat = ChatModel;
   public message = MessageModel;
   public userService = new UserService();
+  public bidService = new BidService();
   public serviceService = new ServiceService();
   public aboutService = new AboutService();
 
@@ -97,6 +99,8 @@ class ChatService {
 
         // Fetch participant data from UserService
         const serviceProposal = await this.serviceService.getServiceProposalByIdInternal(chat.milestone.toString());
+
+        const serviceProposal_ = await this.bidService.getAllProposal();
 
         console.log('CHAT', serviceProposal);
         // Map participantsData to the required format with name and email
