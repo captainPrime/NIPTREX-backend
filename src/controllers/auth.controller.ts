@@ -44,7 +44,7 @@ class AuthController {
   // Handle the redirect after successful Google login
   public googleLoginRedirect = (req: RequestWithUser, res: Response) => {
     // You can redirect the user to a success page or perform any desired action here.
-    res.redirect('https://facebook.com');
+    res.redirect('https://localhost:3000/signin');
   };
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {

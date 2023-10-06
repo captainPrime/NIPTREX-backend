@@ -1,0 +1,27 @@
+2023-10-06 14:31:07 info: =================================
+2023-10-06 14:31:07 info: ======= ENV: development =======
+2023-10-06 14:31:07 info: 🚀 App listening on the port 3000
+2023-10-06 14:31:07 info: =================================
+2023-10-06 14:31:15 info: Connected to email server
+2023-10-06 14:31:15 info: Connected to email server
+2023-10-06 14:31:15 info: Connected to email server
+2023-10-06 14:31:16 info: Connected to email server
+2023-10-06 14:31:16 info: Connected to email server
+2023-10-06 14:31:16 info: Connected to email server
+2023-10-06 14:31:16 info: Connected to Database Successfully...
+2023-10-06 14:31:23 info: Connected to email server
+2023-10-06 14:31:24 info: Connected to email server
+2023-10-06 14:31:25 info: Connected to email server
+2023-10-06 14:31:25 info: Connected to email server
+2023-10-06 14:31:25 info: Connected to email server
+2023-10-06 14:31:38 error: [GET] /api/v1/auth/google >> StatusCode:: 404, Message:: The requested path /api/v1/auth/google not found!
+2023-10-06 14:31:38 info: [0mGET /api/v1/auth/google [32m200[0m 61.995 ms - 107[0m
+2023-10-06 14:31:39 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-06 14:31:39 info: [0mGET /favicon.ico [32m200[0m 4.734 ms - 100[0m
+2023-10-06 14:31:42 info: Connected to email server
+2023-10-06 14:31:42 info: Connected to email server
+2023-10-06 14:31:42 info: Connected to email server
+2023-10-06 14:31:51 info: [0mGET /auth/google [36m302[0m 3.571 ms - 0[0m
+2023-10-06 14:32:12 info: [0mGET /auth/oauth?code=4%2F0AfJohXn4_xK4ELC3Zxwa64JTiSHfchx3i8GR_53umNyg4DkepBJGwjjG9c25uZexNjPRZQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 2003.971 ms - 84[0m
+2023-10-06 14:32:27 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-06 14:32:27 info: [0mGET /favicon.ico [36m304[0m 2.199 ms - -[0m

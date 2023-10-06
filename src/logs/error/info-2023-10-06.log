@@ -1,0 +1,3 @@
+2023-10-06 14:31:38 error: [GET] /api/v1/auth/google >> StatusCode:: 404, Message:: The requested path /api/v1/auth/google not found!
+2023-10-06 14:31:39 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-06 14:32:27 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
