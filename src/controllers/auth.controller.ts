@@ -63,11 +63,11 @@ class AuthController {
     const email = payload.email;
 
     console.log(payload);
-
-    return {
+    const data = {
       userId,
       email,
     };
+    return res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data });
   };
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
@@ -91,7 +91,7 @@ class AuthController {
   });
 
   public sendVerificationEmail = asyncWrapper(async (req: Request, res: Response) => {
-    const user = await this.userService.findUserByEmail(req.body.email);
+    const user: any = await this.userService.findUserByEmail(req.body.email);
     const verifyEmailToken = await this.tokenService.generateVerifyEmailToken(user?.id);
     await this.emailService.sendVerificationEmail(user?.email, verifyEmailToken, user?.first_name);
     res.status(200).send({ status: 200, response_code: 1000, message: 'AUTH_REQUEST_SUCCESSFUL', data: [] });
