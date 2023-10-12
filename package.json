@@ -37,6 +37,7 @@
     "express-rate-limit": "^6.7.0",
     "flat": "^5.0.2",
     "flutterwave-node-v3": "^1.1.5",
+    "google-auth-library": "^9.1.0",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
     "http-status": "^1.6.2",

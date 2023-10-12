@@ -1,0 +1,21 @@
+2023-10-10 11:07:19 info: =================================
+2023-10-10 11:07:19 info: ======= ENV: development =======
+2023-10-10 11:07:19 info: 🚀 App listening on the port 3000
+2023-10-10 11:07:19 info: =================================
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:24 info: Connected to email server
+2023-10-10 11:07:25 info: Connected to Database Successfully...
+2023-10-10 11:07:53 info: [0mGET /auth/google [36m302[0m 8.568 ms - 0[0m
+2023-10-10 11:08:12 info: [0mGET /auth/oauth?code=4%2F0AfJohXlXL36XeihgwxE73l8GApleV3D-KyWnm34UnkzZw_T6To0Sk6LfbJEGOlCBFJmdxA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent [36m302[0m 2647.640 ms - 102[0m

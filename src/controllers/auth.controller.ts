@@ -11,6 +11,8 @@ import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import passport from '@/middlewares/passport.middleware';
 
+import { OAuth2Client } from 'google-auth-library';
+
 class AuthController {
   public authService = new AuthService();
   public tokenService = new TokenService();
@@ -45,6 +47,27 @@ class AuthController {
   public googleLoginRedirect = (req: RequestWithUser, res: Response) => {
     // You can redirect the user to a success page or perform any desired action here.
     res.redirect('https://localhost:3000/signin');
+  };
+
+  public googleLoginV2 = async (req: Request, res: Response) => {
+    const { code }: any = req;
+    // const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+    const client = new OAuth2Client('49640201474-atgdtc4t37bj0ig5u5slu3bgk8kvf29j.apps.googleusercontent.com');
+
+    const ticket = await client.verifyIdToken({
+      idToken: code,
+      audience: '49640201474-atgdtc4t37bj0ig5u5slu3bgk8kvf29j.apps.googleusercontent.com', // Your client ID
+    });
+    const payload: any = ticket.getPayload();
+    const userId = payload.sub;
+    const email = payload.email;
+
+    console.log(payload);
+
+    return {
+      userId,
+      email,
+    };
   };
 
   public logOut = asyncWrapper(async (req: RequestWithUser, res: Response) => {
