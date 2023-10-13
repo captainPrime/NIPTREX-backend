@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 import { BillingAddress } from '@/models/profile.model';
 import { IBillingAddress, IUpdateBio } from '@/interfaces/profile.interface';
 import { billingAddressUpdateValidation, billingAddressSchemaValidation } from '@/validations/profile.validation';
-import { Photography } from '@/models/photography.model';
+import { IPhotography, Photography } from '@/models/photography.model';
 
 class PhotographyService {
   public photography: any = Photography;
@@ -16,14 +16,14 @@ class PhotographyService {
   | Add bank Info
   |--------------------------------------------------------------------------
   */
-  public async addPhotography(body: IBillingAddress): Promise<any> {
+  public async createPhotography(body: IPhotography): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 9005, 'All required fields cannot be empty');
 
     const { error } = billingAddressSchemaValidation.validate(body);
 
-    if (error) throw new HttpException(400, 9002, 'BILLING_ADDRESS_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data: any = await this.bank.create(body);
+    const data: any = await this.photography.create(body);
 
     return data;
   }
