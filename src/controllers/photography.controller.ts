@@ -23,6 +23,7 @@ class PhotographyController {
 
       // The uploaded image can be accessed as req.file
       if (req.file) {
+        console.log(req.file);
         // Handle the uploaded file, for example, save it to Cloudinary
         const image = req.file.path;
         const cloudinaryResponse = await this.uploadToCloudinary(image);

@@ -1,0 +1,40 @@
+2023-10-14 00:01:28 info: =================================
+2023-10-14 00:01:28 info: ======= ENV: development =======
+2023-10-14 00:01:28 info: 🚀 App listening on the port 3000
+2023-10-14 00:01:28 info: =================================
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:30 info: Connected to email server
+2023-10-14 00:01:36 info: Connected to Database Successfully...
+2023-10-14 00:02:00 info: Connected to email server
+2023-10-14 00:02:00 info: Connected to email server
+2023-10-14 00:02:00 info: Connected to email server
+2023-10-14 00:02:00 info: Connected to email server
+2023-10-14 00:02:00 info: Connected to email server
+2023-10-14 00:02:02 info: Connected to email server
+2023-10-14 00:02:31 info: =================================
+2023-10-14 00:02:31 info: ======= ENV: development =======
+2023-10-14 00:02:31 info: 🚀 App listening on the port 3000
+2023-10-14 00:02:31 info: =================================
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:34 info: Connected to email server
+2023-10-14 00:02:35 info: Connected to email server
+2023-10-14 00:02:36 info: Connected to Database Successfully...
+2023-10-14 00:03:03 info: Connected to email server
+2023-10-14 00:03:32 error: [POST] /photography >> StatusCode:: 404, Message:: The requested path /photography not found!
+2023-10-14 00:03:32 info: [0mPOST /photography [32m200[0m 9.546 ms - 100[0m

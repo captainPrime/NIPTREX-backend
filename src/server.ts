@@ -12,6 +12,7 @@ import WalletRoute from './routes/wallet.route';
 import ServiceRoute from './routes/service.route';
 import RatingRoute from './routes/rating.route';
 import InvoiceRoute from './routes/invoice.route';
+import PhotographyRoute from './routes/photography.route';
 
 validateEnv();
 
@@ -27,6 +28,7 @@ const app = new App([
   new ServiceRoute(),
   new RatingRoute(),
   new InvoiceRoute(),
+  new PhotographyRoute(),
 ]);
 
 app.listen();
