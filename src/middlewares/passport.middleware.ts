@@ -32,10 +32,7 @@ passport.use(
     },
     async (accessToken: string, refreshToken: string, profile: any, done: any) => {
       try {
-        console.log('PROFILE', profile._json);
         const user = await userService.findUserByEmail(profile._json.email);
-
-        console.log('USER', user);
 
         if (!user) {
           // Create a new user here (pseudo-code)
@@ -49,15 +46,12 @@ passport.use(
             country: 'Nigeria',
             profile_picture: profile._json.picture,
           });
-          console.log('NEW USER', newUser);
           return done(null, newUser);
         }
 
         // Generate auth tokens (assuming an asynchronous operation)
         const tokens = await tokenService.generateAuthTokens(user);
 
-        console.log('TOKEN', tokens);
-        console.log('ACCESS TOKEN', accessToken);
         return done(null, tokens.access);
       } catch (err) {
         return done(err);
