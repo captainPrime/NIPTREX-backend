@@ -153,6 +153,9 @@ class PhotographyController {
   public deletePhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
+
+      const photography = await this.photographyService.getPhotographyById(id);
+      await cloudinary.v2.uploader.destroy(photography.cloudinary_id);
       const data = await this.photographyService.deletePhotography(id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });

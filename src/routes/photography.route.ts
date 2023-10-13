@@ -17,6 +17,7 @@ class PhotographyRoute implements Routes {
   private initializeRoutes() {
     this.router.post(`${this.path}`, authMiddleware(['freelancer']), upload.single('image'), this.photographyController.createPhotography);
     this.router.get(`${this.path}/getPhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.getPhotographyById);
+    this.router.delete(`${this.path}/deletePhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.deletePhotography);
     // this.router.put(`${this.path}/updateInvoice/:id`, authMiddleware(['freelancer']), this.photographyController.updatePhotography);
     this.router.get(`${this.path}/getUserPhotography`, authMiddleware(['freelancer']), this.photographyController.getUserPhotography);
   }

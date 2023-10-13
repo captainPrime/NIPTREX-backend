@@ -164,3 +164,26 @@
 2023-10-14 00:33:34 info: Connected to email server
 2023-10-14 00:33:34 info: Connected to email server
 2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:46 info: Connected to Database Successfully...
+2023-10-14 00:34:02 info: [0mPOST /photography [32m200[0m 8245.074 ms - 418[0m
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:03 info: Connected to email server
+2023-10-14 00:34:51 info: [0mGET /photography/getUserPhotography [32m200[0m 657.235 ms - 984[0m
+2023-10-14 00:35:27 info: [0mGET /photography/getPhotographyById/6529cebbb78309793375d303 [32m200[0m 436.458 ms - 308[0m
+2023-10-14 00:37:57 info: =================================
+2023-10-14 00:37:57 info: ======= ENV: development =======
+2023-10-14 00:37:57 info: 🚀 App listening on the port 3000
+2023-10-14 00:37:57 info: =================================
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:00 info: Connected to email server
+2023-10-14 00:38:05 info: Connected to Database Successfully...
