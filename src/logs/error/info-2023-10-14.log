@@ -1,1 +1,11 @@
 2023-10-14 00:03:32 error: [POST] /photography >> StatusCode:: 404, Message:: The requested path /photography not found!
+2023-10-14 00:04:45 error: unhandledRejection: Unknown API key your-api-key
+  No stack trace
+2023-10-14 00:04:45 error: unhandledRejection: Unknown API key your-api-key
+  No stack trace
+2023-10-14 00:08:27 error: unhandledRejection: Invalid cloud_name image
+  No stack trace
+2023-10-14 00:08:27 error: unhandledRejection: Invalid cloud_name image
+  No stack trace
+2023-10-14 00:10:45 error: [POST] /photography >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-10-14 00:11:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

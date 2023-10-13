@@ -38,3 +38,97 @@
 2023-10-14 00:03:03 info: Connected to email server
 2023-10-14 00:03:32 error: [POST] /photography >> StatusCode:: 404, Message:: The requested path /photography not found!
 2023-10-14 00:03:32 info: [0mPOST /photography [32m200[0m 9.546 ms - 100[0m
+2023-10-14 00:04:36 info: =================================
+2023-10-14 00:04:36 info: ======= ENV: development =======
+2023-10-14 00:04:36 info: 🚀 App listening on the port 3000
+2023-10-14 00:04:36 info: =================================
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:38 info: Connected to email server
+2023-10-14 00:04:39 info: Connected to Database Successfully...
+2023-10-14 00:04:45 error: [Error] >> Unknown API key your-api-key
+2023-10-14 00:07:41 info: =================================
+2023-10-14 00:07:41 info: ======= ENV: development =======
+2023-10-14 00:07:41 info: 🚀 App listening on the port 3000
+2023-10-14 00:07:41 info: =================================
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:45 info: Connected to email server
+2023-10-14 00:07:46 info: Connected to Database Successfully...
+2023-10-14 00:08:10 info: =================================
+2023-10-14 00:08:10 info: ======= ENV: development =======
+2023-10-14 00:08:10 info: 🚀 App listening on the port 3000
+2023-10-14 00:08:10 info: =================================
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:14 info: Connected to email server
+2023-10-14 00:08:23 info: Connected to Database Successfully...
+2023-10-14 00:08:27 error: [Error] >> Invalid cloud_name image
+2023-10-14 00:10:26 info: =================================
+2023-10-14 00:10:26 info: ======= ENV: development =======
+2023-10-14 00:10:26 info: 🚀 App listening on the port 3000
+2023-10-14 00:10:26 info: =================================
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to email server
+2023-10-14 00:10:31 info: Connected to Database Successfully...
+2023-10-14 00:10:45 error: [POST] /photography >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
+2023-10-14 00:10:45 info: [0mPOST /photography [32m200[0m 3278.048 ms - 107[0m
+2023-10-14 00:11:00 info: Connected to email server
+2023-10-14 00:11:00 info: Connected to email server
+2023-10-14 00:11:00 info: Connected to email server
+2023-10-14 00:11:00 info: Connected to email server
+2023-10-14 00:11:01 info: Connected to email server
+2023-10-14 00:11:18 info: =================================
+2023-10-14 00:11:18 info: ======= ENV: development =======
+2023-10-14 00:11:18 info: 🚀 App listening on the port 3000
+2023-10-14 00:11:18 info: =================================
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:21 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to email server
+2023-10-14 00:11:22 info: Connected to Database Successfully...
+2023-10-14 00:11:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-14 00:11:46 info: [0mPOST /auth/login [32m200[0m 1152.713 ms - 587[0m
+2023-10-14 00:11:56 info: [0mPOST /photography [32m200[0m 5473.446 ms - 308[0m

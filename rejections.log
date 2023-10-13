@@ -1342,3 +1342,11 @@ ValidationError: Token validation failed: user: Path `user` is required.
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/document.js:2802:17
     at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/mongoose/lib/schematype.js:1332:9
     at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-10-14 00:04:45 error: unhandledRejection: Unknown API key your-api-key
+  No stack trace
+2023-10-14 00:04:45 error: unhandledRejection: Unknown API key your-api-key
+  No stack trace
+2023-10-14 00:08:27 error: unhandledRejection: Invalid cloud_name image
+  No stack trace
+2023-10-14 00:08:27 error: unhandledRejection: Invalid cloud_name image
+  No stack trace
