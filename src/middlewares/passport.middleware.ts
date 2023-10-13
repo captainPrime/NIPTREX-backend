@@ -58,7 +58,7 @@ passport.use(
 
         console.log('TOKEN', tokens);
         console.log('ACCESS TOKEN', accessToken);
-        return done(null, tokens);
+        return done(null, tokens.access);
       } catch (err) {
         return done(err);
       }

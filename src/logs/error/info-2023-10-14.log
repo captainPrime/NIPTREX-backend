@@ -9,3 +9,14 @@
   No stack trace
 2023-10-14 00:10:45 error: [POST] /photography >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'id')
 2023-10-14 00:11:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-14 00:52:59 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-10-14 00:53:00 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-14 00:54:23 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2023-10-14 00:54:25 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-14 00:56:49 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!

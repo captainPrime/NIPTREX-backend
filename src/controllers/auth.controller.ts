@@ -44,9 +44,9 @@ class AuthController {
   });
 
   // Handle the redirect after successful Google login
-  public googleLoginRedirect = (req: RequestWithUser, res: Response) => {
-    // You can redirect the user to a success page or perform any desired action here.
-    res.redirect('https://localhost:3000/signin');
+  public googleLoginRedirect = (req: Request, res: Response) => {
+    const accessToken = req.user?.token;
+    res.redirect(`https://localhost:3000/signin?token=${accessToken}`);
   };
 
   public googleLoginV2 = async (req: Request, res: Response) => {
