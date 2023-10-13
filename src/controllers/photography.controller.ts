@@ -1,8 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
+import Jimp from 'jimp';
+import fs from 'fs';
 import cloudinary from '@/utils/cloudinary';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PhotographyService from '@/services/photography.service';
+import path from 'path';
 
 class PhotographyController {
   public userService = new UserService();
@@ -26,7 +29,33 @@ class PhotographyController {
         console.log(req.file);
         // Handle the uploaded file, for example, save it to Cloudinary
         const image = req.file.path;
-        const cloudinaryResponse = await this.uploadToCloudinary(image);
+
+        // Load the image using Jimp
+        const loadedImage = await Jimp.read(image);
+
+        // Add a text watermark to the image
+        const watermarkText = req.user.first_name + req.user.last_name;
+        const textWidth = Jimp.measureText(await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK), watermarkText);
+        const textHeight = Jimp.measureTextHeight(await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK), watermarkText, 80);
+
+        const x = (loadedImage.getWidth() - textWidth) / 2;
+        const y = (loadedImage.getHeight() - textHeight) / 2;
+
+        // Add the text watermark at the calculated position
+        loadedImage.print(await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK), x, y, watermarkText);
+
+        // Define the path to save the modified image in a "pictures" folder within the current directory
+        const modifiedImageTempPath = path.join(__dirname, 'pictures', `${new Date()}-modified_image.png`);
+        await loadedImage.writeAsync(modifiedImageTempPath);
+
+        // Upload the temporary file to Cloudinary
+        const cloudinaryResponse = await this.uploadToCloudinary(modifiedImageTempPath);
+
+        // You can use the cloudinaryResponse here as needed
+
+        // Delete the temporary file after uploading it to Cloudinary
+        // eslint-disable-next-line security/detect-non-literal-fs-filename
+        fs.unlinkSync(modifiedImageTempPath);
 
         // You can use the cloudinaryResponse here as needed
         const data = await this.photographyService.createPhotography({

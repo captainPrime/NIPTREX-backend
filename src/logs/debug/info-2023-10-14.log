@@ -132,3 +132,35 @@
 2023-10-14 00:11:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-14 00:11:46 info: [0mPOST /auth/login [32m200[0m 1152.713 ms - 587[0m
 2023-10-14 00:11:56 info: [0mPOST /photography [32m200[0m 5473.446 ms - 308[0m
+2023-10-14 00:28:15 info: =================================
+2023-10-14 00:28:15 info: ======= ENV: development =======
+2023-10-14 00:28:15 info: 🚀 App listening on the port 3000
+2023-10-14 00:28:15 info: =================================
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:17 info: Connected to email server
+2023-10-14 00:28:28 info: Connected to Database Successfully...
+2023-10-14 00:28:40 info: [0mPOST /photography [32m200[0m 6277.495 ms - 418[0m
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:28:47 info: Connected to email server
+2023-10-14 00:33:31 info: =================================
+2023-10-14 00:33:31 info: ======= ENV: development =======
+2023-10-14 00:33:31 info: 🚀 App listening on the port 3000
+2023-10-14 00:33:31 info: =================================
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
+2023-10-14 00:33:34 info: Connected to email server
