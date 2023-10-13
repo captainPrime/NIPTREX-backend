@@ -2,10 +2,8 @@ import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { BillingAddress } from '@/models/profile.model';
-import { IBillingAddress, IUpdateBio } from '@/interfaces/profile.interface';
-import { billingAddressUpdateValidation, billingAddressSchemaValidation } from '@/validations/profile.validation';
 import { IPhotography, Photography } from '@/models/photography.model';
+import { photographySchemaValidation, photographyUpdateValidation } from '@/validations/photography.validation';
 
 class PhotographyService {
   public photography: any = Photography;
@@ -13,13 +11,13 @@ class PhotographyService {
 
   /*
   |--------------------------------------------------------------------------
-  | Add bank Info
+  | Create New Photography
   |--------------------------------------------------------------------------
   */
-  public async createPhotography(body: IPhotography): Promise<any> {
+  public async createPhotography(body: IPhotography | any): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 9005, 'All required fields cannot be empty');
 
-    const { error } = billingAddressSchemaValidation.validate(body);
+    const { error } = photographySchemaValidation.validate(body);
 
     if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR', [error.details[0].message]);
 
@@ -30,27 +28,27 @@ class PhotographyService {
 
   /*
   |--------------------------------------------------------------------------
-  | Get User Bank
+  | Get User Photography
   |--------------------------------------------------------------------------
   */
-  public async getUserBank(userId: mongoose.Types.ObjectId | string): Promise<any> {
+  public async getUserPhotography(userId: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(userId)) throw new HttpException(400, 9001, 'User id can not be empty');
 
-    const data = await this.bank.find({ user_id: userId });
-    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
+    const data = await this.photography.find({ user_id: userId });
+    if (!data) throw new HttpException(400, 9003, 'PHOTOGRAPHY_NOT_FOUND');
 
     return data;
   }
 
   /*
   |--------------------------------------------------------------------------
-  | Get Bank By Id
+  | Get Photography By Id
   |--------------------------------------------------------------------------
   */
-  public async getBankById(id: mongoose.Types.ObjectId | string): Promise<any> {
+  public async getPhotographyById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
-    const data = await this.bank.findOne({ _id: id });
+    const data = await this.photography.findOne({ _id: id });
     if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
 
     return data;
@@ -61,35 +59,35 @@ class PhotographyService {
   | Update Bio By Id
   |--------------------------------------------------------------------------
   */
-  public async updateBankInfo(id: mongoose.Types.ObjectId | string, body: IUpdateBio): Promise<any> {
-    if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
+  //   public async updatePhotography(id: mongoose.Types.ObjectId | string, body: IUpdateBio): Promise<any> {
+  //     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
-    const { error } = billingAddressUpdateValidation.validate(body);
+  //     const { error } = photographyUpdateValidation.validate(body);
 
-    if (error) throw new HttpException(400, 9002, 'BILLING_ADDRESS_VALIDATION_ERROR', [error.details[0].message]);
+  //     if (error) throw new HttpException(400, 9002, 'BILLING_ADDRESS_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.bank.findOne({ user_id: id });
-    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
+  //     const data = await this.photography.findOne({ user_id: id });
+  //     if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
 
-    const updatedData = await this.bank.findByIdAndUpdate(data._id, body, {
-      new: true,
-    });
+  //     const updatedData = await this.photography.findByIdAndUpdate(data._id, body, {
+  //       new: true,
+  //     });
 
-    if (!updatedData) throw new HttpException(400, 9009, 'BILLING_ADDRESS_REQUEST_ERROR');
+  //     if (!updatedData) throw new HttpException(400, 9009, 'BILLING_ADDRESS_REQUEST_ERROR');
 
-    return updatedData;
-  }
+  //     return updatedData;
+  //   }
 
   /*
   |--------------------------------------------------------------------------
-  | Delete Bank
+  | Delete Photography
   |--------------------------------------------------------------------------
   */
-  public async deleteBank(id: mongoose.Types.ObjectId | string): Promise<any> {
+  public async deletePhotography(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.bank.findByIdAndDelete(id);
-    if (!data) throw new HttpException(400, 9009, 'BILLING_ADDRESS_REQUEST_ERROR');
+    const data = await this.photography.findByIdAndDelete(id);
+    if (!data) throw new HttpException(400, 9009, 'PHOTOGRAPHY_REQUEST_ERROR');
 
     return data;
   }

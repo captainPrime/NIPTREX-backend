@@ -1,10 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
+import cloudinary from '@/utils/cloudinary';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
-import { IUpdatePreference } from '@/interfaces/profile.interface';
 import PhotographyService from '@/services/photography.service';
-import { upload } from '@/utils/multerConfig';
-import cloudinary from '@/utils/cloudinary';
 
 class PhotographyController {
   public userService = new UserService();
@@ -32,10 +30,11 @@ class PhotographyController {
         // You can use the cloudinaryResponse here as needed
         const data = await this.photographyService.createPhotography({
           user_id: req.user.id,
-          cloudinary_id: cloudinaryResponse?.public_id,
-          image: cloudinaryResponse?.secure_url,
+          cloudinary_id: cloudinaryResponse?.public_id as string,
+          image: cloudinaryResponse?.secure_url as string,
         });
-        res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+
+        return res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
       }
 
       throw new HttpException(400, 1004, 'ERROR_UPLOADING_IMAGE');
@@ -68,7 +67,7 @@ class PhotographyController {
   | Get User Preference
   |--------------------------------------------------------------------------
   */
-  public getUserPreference = async (req: Request, res: Response, next: NextFunction) => {
+  public getUserPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const user: any = await this.userService.findUserById(req.user.id);
 
@@ -76,7 +75,7 @@ class PhotographyController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.preferenceService.getUserPreference(req.user.id);
+      const data = await this.photographyService.getUserPhotography(req.user.id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -86,13 +85,13 @@ class PhotographyController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Preference By Id
+  | Get Photography By Id
   |--------------------------------------------------------------------------
   */
-  public getPreferenceById = async (req: Request, res: Response, next: NextFunction) => {
+  public getPhotographyById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.preferenceService.getPreferenceById(id);
+      const data = await this.photographyService.getPhotographyById(id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -102,29 +101,29 @@ class PhotographyController {
 
   /*
   |--------------------------------------------------------------------------
-  | Update Preference
+  | Update Photography
   |--------------------------------------------------------------------------
   */
-  public updatePreference = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const body: IUpdatePreference = req.body;
-      const data = await this.preferenceService.updatePreferenceById(req.user.id, body);
+  //   public updatePhotography = async (req: Request, res: Response, next: NextFunction) => {
+  //     try {
+  //       const body: IUpdatePreference = req.body;
+  //       const data = await this.photographyService.updatePhotography(req.user.id, body);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
-    } catch (error) {
-      next(error);
-    }
-  };
+  //       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+  //     } catch (error) {
+  //       next(error);
+  //     }
+  //   };
 
   /*
   |--------------------------------------------------------------------------
-  | Delete Preference
+  | Delete Photography
   |--------------------------------------------------------------------------
   */
-  public deletePreference = async (req: Request, res: Response, next: NextFunction) => {
+  public deletePhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.preferenceService.deletePreference(id);
+      const data = await this.photographyService.deletePhotography(id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

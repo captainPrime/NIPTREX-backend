@@ -3,8 +3,8 @@ import { toJSON } from '@/modules/toJSON';
 import { Schema, model, Document, ObjectId } from 'mongoose';
 
 export interface IPhotography extends Document {
-  image: string;
-  cloudinary_id: string;
+  image: string | any;
+  cloudinary_id: string | any;
   user_id: string | ObjectId;
 }
 
