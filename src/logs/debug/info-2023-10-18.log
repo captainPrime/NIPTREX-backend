@@ -76,3 +76,23 @@
 2023-10-18 16:14:05 info: Connected to Database Successfully...
 2023-10-18 16:14:18 info: [0mGET /auth/google [36m302[0m 22.537 ms - 0[0m
 2023-10-18 16:16:37 info: [0mGET /auth/oauth?code=4%2F0AfJohXkucbSFZ_sfPs3l_poiqNhyYhR0J0Ar443EZp0NX5T0J9KoCHFR-oKHqpeN6y_WbA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 2308.947 ms - 502[0m
+2023-10-18 16:17:22 info: =================================
+2023-10-18 16:17:22 info: ======= ENV: development =======
+2023-10-18 16:17:22 info: 🚀 App listening on the port 3000
+2023-10-18 16:17:22 info: =================================
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:24 info: Connected to email server
+2023-10-18 16:17:25 info: Connected to Database Successfully...
+2023-10-18 16:17:44 info: [0mGET /auth/oauth?code=4%2F0AfJohXllmZfpus1WhhaG3--fMAckUsuLfZ3P8aVqCDvMkTkZ1EnO7oSMQfdp8w8nr5UaXA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 3430.910 ms - 502[0m
