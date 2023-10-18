@@ -28,7 +28,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID || '',
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-      callbackURL: 'http://localhost:3000/auth/oauth', // Update with your actual callback URL
+      callbackURL: 'https://niptrex.onrender.com/auth/oauth', // Update with your actual callback URL
     },
     async (accessToken: string, refreshToken: string, profile: any, done: any) => {
       try {

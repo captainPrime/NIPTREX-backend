@@ -96,3 +96,4 @@
 2023-10-18 16:17:24 info: Connected to email server
 2023-10-18 16:17:25 info: Connected to Database Successfully...
 2023-10-18 16:17:44 info: [0mGET /auth/oauth?code=4%2F0AfJohXllmZfpus1WhhaG3--fMAckUsuLfZ3P8aVqCDvMkTkZ1EnO7oSMQfdp8w8nr5UaXA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 3430.910 ms - 502[0m
+2023-10-18 16:26:06 info: [0mGET /auth/oauth?code=4%2F0AfJohXlGhew7gj07qtOIOlJ5eI475J-3SaSHfB_aFdNORwTvohVWPp5l45Mv8QeaI4Goug&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 7431.840 ms - 502[0m
