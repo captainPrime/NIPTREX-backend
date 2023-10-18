@@ -28,7 +28,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID || '',
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-      callbackURL: 'http://localhost:3000/auth/oauth', // Update with your actual callback URL
+      callbackURL: 'http://localhost:3000/signin', // Update with your actual callback URL
     },
     async (accessToken: string, refreshToken: string, profile: any, done: any) => {
       try {
@@ -36,7 +36,7 @@ passport.use(
 
         if (!user) {
           // Create a new user here (pseudo-code)
-          const newUser = await userService.createUser({
+          const newUser: any = await userService.createUser({
             email: profile._json.email,
             first_name: profile._json.given_name,
             last_name: profile._json.family_name,
@@ -46,7 +46,11 @@ passport.use(
             country: 'Nigeria',
             profile_picture: profile._json.picture,
           });
-          return done(null, newUser);
+
+          // Generate auth tokens (assuming an asynchronous operation)
+          const tokens = await tokenService.generateAuthTokens(newUser);
+
+          return done(null, tokens.access);
         }
 
         // Generate auth tokens (assuming an asynchronous operation)
