@@ -31,3 +31,48 @@
 2023-10-18 15:58:31 info: [0mGET /auth/oauth?code=4%2F0AfJohXmGalyEOK8B0JBLJaYaDjzZJSxIxSjEawzk44QOgmp7I-sfC3KiejHQL_roAlaR9w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 2040.790 ms - 502[0m
 2023-10-18 15:59:34 info: [0mGET /auth/oauth?code=4%2F0AfJohXmxquaEU1neiP0m1jHoJ-zqVXFwhS8FamI248JO42dlblaJxeP7QWmCoyYYj_SuGw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 4520.577 ms - 502[0m
 2023-10-18 15:59:50 info: [0mGET /auth/oauth?code=4%2F0AfJohXnfhkAznO3flLOpMDFvHZGBub0N4jcVE2Z3yqMVCEjuqP3F6XuKedxcodP-SV4RHA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none [36m302[0m 1164.900 ms - 502[0m
+2023-10-18 16:05:10 info: =================================
+2023-10-18 16:05:10 info: ======= ENV: development =======
+2023-10-18 16:05:10 info: 🚀 App listening on the port 3000
+2023-10-18 16:05:10 info: =================================
+2023-10-18 16:05:14 info: Connected to email server
+2023-10-18 16:05:14 info: Connected to email server
+2023-10-18 16:05:14 info: Connected to email server
+2023-10-18 16:05:14 info: Connected to email server
+2023-10-18 16:05:14 info: Connected to email server
+2023-10-18 16:05:14 info: Connected to Database Successfully...
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:15 info: Connected to email server
+2023-10-18 16:05:39 info: [0mGET /auth/google [36m302[0m 13.482 ms - 0[0m
+2023-10-18 16:08:01 error: [GET] /signin >> StatusCode:: 404, Message:: The requested path /signin not found!
+2023-10-18 16:08:01 info: [0mGET /signin?code=4%2F0AfJohXkOcOmNoKMaz7fr5K6g2z6ve3FJCC4eiJmsAIhZwr3ZLSA5f8n97PBEcA3RmdtISw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [32m200[0m 8.281 ms - 95[0m
+2023-10-18 16:08:03 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-18 16:08:03 info: [0mGET /favicon.ico [36m304[0m 13.274 ms - -[0m
+2023-10-18 16:14:03 info: =================================
+2023-10-18 16:14:03 info: ======= ENV: development =======
+2023-10-18 16:14:03 info: 🚀 App listening on the port 3000
+2023-10-18 16:14:03 info: =================================
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to email server
+2023-10-18 16:14:05 info: Connected to Database Successfully...
+2023-10-18 16:14:18 info: [0mGET /auth/google [36m302[0m 22.537 ms - 0[0m
+2023-10-18 16:16:37 info: [0mGET /auth/oauth?code=4%2F0AfJohXkucbSFZ_sfPs3l_poiqNhyYhR0J0Ar443EZp0NX5T0J9KoCHFR-oKHqpeN6y_WbA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent [36m302[0m 2308.947 ms - 502[0m
