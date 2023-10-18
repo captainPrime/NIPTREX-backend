@@ -1,0 +1,26 @@
+2023-10-18 15:45:48 info: =================================
+2023-10-18 15:45:48 info: ======= ENV: development =======
+2023-10-18 15:45:48 info: 🚀 App listening on the port 3000
+2023-10-18 15:45:48 info: =================================
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:51 info: Connected to email server
+2023-10-18 15:45:52 info: Connected to Database Successfully...
+2023-10-18 15:46:08 info: [0mGET /auth/google [36m302[0m 4.732 ms - 0[0m
+2023-10-18 15:46:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: User validation failed: last_name: Path `last_name` is required.
+2023-10-18 15:46:30 info: [0mGET /auth/oauth?code=4%2F0AfJohXkGTXY6lWy-5gnNhp6ROYx_x__a28SwOCEQhIr3X8Z-tto1bFddhQyu1B_IqLlq6A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent [32m200[0m 2320.137 ms - 121[0m
+2023-10-18 15:46:32 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-18 15:46:32 info: [0mGET /favicon.ico [36m304[0m 7.362 ms - -[0m
+2023-10-18 15:47:06 info: [0mGET /auth/google [36m302[0m 1.142 ms - 0[0m
+2023-10-18 15:47:24 info: [0mGET /auth/oauth?code=4%2F0AfJohXlkYqwkRGqNjLM2dAXXoysuHo0BhSZSuzdZxfAZo3qwWwGL_s03CXuQa4ZG3urF3Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent [36m302[0m 2112.066 ms - 502[0m

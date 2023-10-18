@@ -1,0 +1,2 @@
+2023-10-18 15:46:30 error: [GET] /auth/oauth >> StatusCode:: 400, Message:: User validation failed: last_name: Path `last_name` is required.
+2023-10-18 15:46:32 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
