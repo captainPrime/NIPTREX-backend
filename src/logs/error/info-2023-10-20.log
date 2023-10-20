@@ -1,0 +1,5 @@
+2023-10-20 10:06:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-20 10:07:04 error: [POST] /bid/652ea856a5ec87d04c3119c8 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-10-20 10:07:15 error: [GET] /bid/proposals/64cfdc3681f01f0bbf337a31 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-20 10:07:21 error: [GET] /bid/proposals/652ea856a5ec87d04c3119c8 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-20 11:45:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

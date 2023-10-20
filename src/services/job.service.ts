@@ -202,9 +202,13 @@ class JobService {
 
     const savedJob = await this.saveJob.findOne({ user_id: userId, job: id });
 
+    const proposal = await this.bid.findOne({ job_id: id, user_id: userId });
+    // if (!proposal) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
+
     const updatedData = {
       ...data.toJSON(),
       is_saved: !!savedJob,
+      applied: !!proposal,
       profile_match: calculateMatchPercentage(about?.skills, data.jobs_tags),
     };
 

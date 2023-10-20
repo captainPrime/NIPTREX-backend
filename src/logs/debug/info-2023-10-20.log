@@ -1,0 +1,52 @@
+2023-10-20 10:03:56 info: =================================
+2023-10-20 10:03:56 info: ======= ENV: development =======
+2023-10-20 10:03:56 info: 🚀 App listening on the port 3000
+2023-10-20 10:03:56 info: =================================
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:03:59 info: Connected to email server
+2023-10-20 10:04:00 info: Connected to email server
+2023-10-20 10:04:09 info: Connected to Database Successfully...
+2023-10-20 10:04:28 info: Connected to email server
+2023-10-20 10:04:28 info: Connected to email server
+2023-10-20 10:04:28 info: Connected to email server
+2023-10-20 10:04:29 info: Connected to email server
+2023-10-20 10:04:29 info: Connected to email server
+2023-10-20 10:04:30 info: Connected to email server
+2023-10-20 10:06:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-20 10:06:04 info: [0mPOST /auth/login [32m200[0m 629.811 ms - 587[0m
+2023-10-20 10:06:12 info: [0mGET /job/getAllJobs [32m200[0m 259.848 ms - -[0m
+2023-10-20 10:06:33 info: [0mGET /job/652ea856a5ec87d04c3119c8 [32m200[0m 1156.331 ms - -[0m
+2023-10-20 10:07:04 error: [POST] /bid/652ea856a5ec87d04c3119c8 >> StatusCode:: 400, Message:: JOB_ALREAD_BIDDED
+2023-10-20 10:07:04 info: [0mPOST /bid/652ea856a5ec87d04c3119c8 [32m200[0m 701.583 ms - 75[0m
+2023-10-20 10:07:15 error: [GET] /bid/proposals/64cfdc3681f01f0bbf337a31 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-20 10:07:15 info: [0mGET /bid/proposals/64cfdc3681f01f0bbf337a31 [32m200[0m 241.592 ms - 75[0m
+2023-10-20 10:07:21 error: [GET] /bid/proposals/652ea856a5ec87d04c3119c8 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-20 10:07:21 info: [0mGET /bid/proposals/652ea856a5ec87d04c3119c8 [32m200[0m 244.472 ms - 75[0m
+2023-10-20 10:08:40 info: [0mGET /job/getFreelancerContracts [32m200[0m 1473.400 ms - -[0m
+2023-10-20 11:45:20 info: =================================
+2023-10-20 11:45:20 info: ======= ENV: development =======
+2023-10-20 11:45:20 info: 🚀 App listening on the port 3000
+2023-10-20 11:45:20 info: =================================
+2023-10-20 11:45:23 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to email server
+2023-10-20 11:45:24 info: Connected to Database Successfully...
+2023-10-20 11:45:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-20 11:45:45 info: [0mPOST /auth/login [32m200[0m 742.256 ms - 587[0m
+2023-10-20 11:45:53 info: [0mGET /job/652ea856a5ec87d04c3119c8 [32m200[0m 1702.132 ms - -[0m
