@@ -172,7 +172,7 @@ class JobService {
   | getAllJobs
   |--------------------------------------------------------------------------
   */
-  public async getAllJobs(filter: any, options: PaginationOptions): Promise<any> {
+  public async getAllJobs(filter: any, options: PaginationOptions, userId: string): Promise<any> {
     const data = await this.job.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
