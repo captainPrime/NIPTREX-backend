@@ -87,3 +87,26 @@
 2023-10-26 16:13:29 info: [0mPOST /auth/login [32m200[0m 681.115 ms - 587[0m
 2023-10-26 16:13:38 info: Connected to email server
 2023-10-26 16:13:42 info: [0mPOST /profile/about [32m200[0m 1514.656 ms - -[0m
+2023-10-26 16:15:08 info: =================================
+2023-10-26 16:15:08 info: ======= ENV: development =======
+2023-10-26 16:15:08 info: 🚀 App listening on the port 3000
+2023-10-26 16:15:08 info: =================================
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to email server
+2023-10-26 16:15:11 info: Connected to Database Successfully...
+2023-10-26 16:15:27 info: [0mGET /reload_db [32m200[0m 5381.571 ms - 74[0m
+2023-10-26 16:15:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:15:33 info: [0mPOST /auth/login [32m200[0m 860.789 ms - 587[0m
+2023-10-26 16:15:45 info: [0mPOST /profile/about [32m200[0m 1398.968 ms - -[0m

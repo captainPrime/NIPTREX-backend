@@ -2,3 +2,4 @@
 2023-10-26 16:00:24 error: [POST] /profile/about >> StatusCode:: 400, Message:: ABOUT_ALREADY_ADDED
 2023-10-26 16:01:28 error: [PUT] /profile/about >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 61
 2023-10-26 16:13:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:15:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
