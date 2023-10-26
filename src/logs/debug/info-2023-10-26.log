@@ -147,3 +147,48 @@
 2023-10-26 16:31:28 info: [0mPOST /job [32m200[0m 713.647 ms - 961[0m
 2023-10-26 16:31:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-26 16:31:38 info: [0mPOST /auth/login [32m200[0m 632.281 ms - 587[0m
+2023-10-26 16:44:59 info: =================================
+2023-10-26 16:44:59 info: ======= ENV: development =======
+2023-10-26 16:44:59 info: 🚀 App listening on the port 3000
+2023-10-26 16:44:59 info: =================================
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to email server
+2023-10-26 16:45:01 info: Connected to Database Successfully...
+2023-10-26 16:45:59 error: [GET] /job/getAllJobs >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-10-26 16:45:59 info: [0mGET /job/getAllJobs [32m200[0m 11.332 ms - 86[0m
+2023-10-26 16:46:20 info: [0mGET /job/getAllJobs [32m200[0m 1245.297 ms - 85[0m
+2023-10-26 16:46:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:46:41 info: [0mPOST /auth/login [32m200[0m 900.411 ms - 587[0m
+2023-10-26 16:46:50 info: [0mGET /job/getAllJobs [32m200[0m 719.872 ms - 85[0m
+2023-10-26 16:48:00 info: =================================
+2023-10-26 16:48:00 info: ======= ENV: development =======
+2023-10-26 16:48:00 info: 🚀 App listening on the port 3000
+2023-10-26 16:48:00 info: =================================
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:03 info: Connected to email server
+2023-10-26 16:48:04 info: Connected to Database Successfully...
+2023-10-26 16:48:04 info: Connected to email server
+2023-10-26 16:48:04 info: Connected to email server
+2023-10-26 16:48:04 info: Connected to email server
+2023-10-26 16:48:08 info: [0mGET /job/getAllJobs [32m200[0m 968.077 ms - -[0m

@@ -8,3 +8,21 @@
 2023-10-26 16:30:32 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
 2023-10-26 16:31:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-26 16:31:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:43:53 error: uncaughtException: await is only valid in async functions and the top level bodies of modules
+/Users/olashina/Documents/workspace/NIPTREX-backend/src/services/job.service.ts:136
+            const proposal = await this.bid.findOne({ job_id: job.id, user_id: userId });
+                             ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1126:15)
+    at Module._compile (node:internal/modules/cjs/loader:1162:27)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-2437745189710363.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-2437745189710363.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-2437745189710363.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+2023-10-26 16:45:59 error: [GET] /job/getAllJobs >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-10-26 16:46:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
