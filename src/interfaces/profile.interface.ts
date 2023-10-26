@@ -172,7 +172,7 @@ export interface IAbout extends Document {
   total_jobs: number;
   available: number;
   nips: number;
-  personal_details: IPersonalDetails;
+  personal_details: Partial<IPersonalDetails>;
   address: IAddress;
   social_details?: ISocialLink;
   languages?: string[];
