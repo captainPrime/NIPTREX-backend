@@ -185,7 +185,7 @@ class JobService {
       };
     });
 
-    return updatedData;
+    return data;
   }
 
   /*

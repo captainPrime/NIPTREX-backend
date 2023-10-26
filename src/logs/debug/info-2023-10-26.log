@@ -192,3 +192,23 @@
 2023-10-26 16:48:04 info: Connected to email server
 2023-10-26 16:48:04 info: Connected to email server
 2023-10-26 16:48:08 info: [0mGET /job/getAllJobs [32m200[0m 968.077 ms - -[0m
+2023-10-26 16:52:56 info: =================================
+2023-10-26 16:52:56 info: ======= ENV: development =======
+2023-10-26 16:52:56 info: 🚀 App listening on the port 3000
+2023-10-26 16:52:56 info: =================================
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:00 info: Connected to email server
+2023-10-26 16:53:01 info: Connected to Database Successfully...
+2023-10-26 16:53:08 info: [0mGET /job/getAllJobs [32m200[0m 807.121 ms - -[0m
