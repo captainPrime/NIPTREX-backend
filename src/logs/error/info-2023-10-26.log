@@ -3,3 +3,8 @@
 2023-10-26 16:01:28 error: [PUT] /profile/about >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 61
 2023-10-26 16:13:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-26 16:15:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:27:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:28:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:30:32 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-26 16:31:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:31:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

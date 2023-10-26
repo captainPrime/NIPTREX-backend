@@ -176,7 +176,16 @@ class JobService {
     const data = await this.job.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
-    return data;
+    const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
+
+    const updatedData = data.results.map((job: any) => {
+      return {
+        ...job.toJSON(),
+        is_saved: savedJobIds.includes(job._id.toString()),
+      };
+    });
+
+    return updatedData;
   }
 
   /*

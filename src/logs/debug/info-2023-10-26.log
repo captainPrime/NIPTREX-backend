@@ -110,3 +110,40 @@
 2023-10-26 16:15:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-26 16:15:33 info: [0mPOST /auth/login [32m200[0m 860.789 ms - 587[0m
 2023-10-26 16:15:45 info: [0mPOST /profile/about [32m200[0m 1398.968 ms - -[0m
+2023-10-26 16:22:17 info: =================================
+2023-10-26 16:22:17 info: ======= ENV: development =======
+2023-10-26 16:22:17 info: 🚀 App listening on the port 3000
+2023-10-26 16:22:17 info: =================================
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:19 info: Connected to email server
+2023-10-26 16:22:20 info: Connected to Database Successfully...
+2023-10-26 16:23:33 info: [0mGET /profile/about [32m200[0m 714.436 ms - -[0m
+2023-10-26 16:27:37 info: [0mGET /job/getAllJobs [32m200[0m 379.475 ms - 171[0m
+2023-10-26 16:27:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:27:52 info: [0mPOST /auth/login [32m200[0m 636.020 ms - 587[0m
+2023-10-26 16:27:57 info: [0mPOST /job [32m200[0m 727.120 ms - 967[0m
+2023-10-26 16:28:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:28:08 info: [0mPOST /auth/login [32m200[0m 482.038 ms - 587[0m
+2023-10-26 16:28:13 info: [0mGET /job/getAllJobs [32m200[0m 830.116 ms - -[0m
+2023-10-26 16:29:04 info: [0mPOST /job/saveJob/653a857de3a1a3538a149aef [32m200[0m 1478.225 ms - 221[0m
+2023-10-26 16:29:13 info: [0mGET /job/getAllJobs [32m200[0m 233.601 ms - -[0m
+2023-10-26 16:29:24 info: [0mGET /job/getUserJobBestMatches [32m200[0m 963.019 ms - 985[0m
+2023-10-26 16:30:32 error: [POST] /job >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-10-26 16:30:32 info: [0mPOST /job [32m200[0m 4091.117 ms - 75[0m
+2023-10-26 16:31:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:31:15 info: [0mPOST /auth/login [32m200[0m 5954.600 ms - 587[0m
+2023-10-26 16:31:28 info: [0mPOST /job [32m200[0m 713.647 ms - 961[0m
+2023-10-26 16:31:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-26 16:31:38 info: [0mPOST /auth/login [32m200[0m 632.281 ms - 587[0m
