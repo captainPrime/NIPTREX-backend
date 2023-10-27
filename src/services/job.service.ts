@@ -194,7 +194,7 @@ class JobService {
       );
 
       return updatedData;
-    } catch (error) {
+    } catch (error: any) {
       throw new HttpException(400, 2002, error);
     }
   }
