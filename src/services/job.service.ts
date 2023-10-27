@@ -21,6 +21,14 @@ class JobService {
   public userService = new UserService();
   public aboutService = new AboutService();
 
+  capitalizeFirstLetter = (str: string) => {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   /*
   |--------------------------------------------------------------------------
   | Create Job
@@ -31,9 +39,12 @@ class JobService {
 
     const { error } = jobSchemaValidation.validate(body);
 
-    console.log(body);
-
     if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
+
+    // Capitalize job_title and job_description
+    body.job_title = this.capitalizeFirstLetter(body.job_title);
+    body.job_description = this.capitalizeFirstLetter(body.job_description);
+
     const data: any = await this.job.create(body);
 
     return data;
