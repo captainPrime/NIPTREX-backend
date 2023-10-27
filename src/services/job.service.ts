@@ -131,12 +131,17 @@ class JobService {
 
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
 
-    const updatedData = data.results.map((job: any) => {
-      return {
-        ...job.toJSON(),
-        is_saved: savedJobIds.includes(job._id.toString()),
-      };
-    });
+    const updatedData = await Promise.all(
+      data.results.map(async (job: any) => {
+        const proposal = await this.bid.findOne({ job_id: job.id, user_id: userId });
+        return {
+          ...job.toJSON(),
+          applied: !!proposal,
+          is_saved: savedJobIds.includes(job._id.toString()),
+        };
+      }),
+    );
+
     return updatedData;
   }
 
@@ -157,12 +162,16 @@ class JobService {
 
     const savedJobIds = (await this.saveJob.find({ user_id: userId })).map((job: { job: any }) => job.job.toString());
 
-    const updatedData = data.results.map((job: any) => {
-      return {
-        ...job.toJSON(),
-        is_saved: savedJobIds.includes(job._id.toString()),
-      };
-    });
+    const updatedData = await Promise.all(
+      data.results.map(async (job: any) => {
+        const proposal = await this.bid.findOne({ job_id: job.id, user_id: userId });
+        return {
+          ...job.toJSON(),
+          applied: !!proposal,
+          is_saved: savedJobIds.includes(job._id.toString()),
+        };
+      }),
+    );
 
     return updatedData;
   }
