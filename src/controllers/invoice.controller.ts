@@ -35,10 +35,10 @@ class InvoiceController {
         throw new HttpException(400, 5002, 'PROPOSAL_NOT_FOUND');
       }
 
-      const existingInvoice = await this.invoiceService.getInvoiceByproposalId(proposalId);
-      if (existingInvoice && existingInvoice.length !== 0) {
-        throw new HttpException(400, 5002, 'INVOICE_ALREADY_ADDED');
-      }
+      // const existingInvoice = await this.invoiceService.getInvoiceByproposalId(proposalId);
+      // if (existingInvoice && existingInvoice.length !== 0) {
+      //   throw new HttpException(400, 5002, 'INVOICE_ALREADY_ADDED');
+      // }
 
       const invoiceData = {
         ...userData,
