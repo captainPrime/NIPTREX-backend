@@ -1,0 +1,50 @@
+2023-10-29 22:37:49 info: =================================
+2023-10-29 22:37:49 info: ======= ENV: development =======
+2023-10-29 22:37:49 info: 🚀 App listening on the port 3000
+2023-10-29 22:37:49 info: =================================
+2023-10-29 22:38:15 info: Connected to email server
+2023-10-29 22:38:23 info: Connected to email server
+2023-10-29 22:38:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:29 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:42 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-10-29 22:38:53 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:55 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:38:57 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:39:04 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:39:04 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-10-29 22:39:38 info: =================================
+2023-10-29 22:39:38 info: ======= ENV: development =======
+2023-10-29 22:39:38 info: 🚀 App listening on the port 3000
+2023-10-29 22:39:38 info: =================================
+2023-10-29 22:39:51 info: Connected to Database Successfully...
+2023-10-29 22:39:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-29 22:39:58 info: [0mPOST /auth/login [32m200[0m 3205.511 ms - 587[0m
+2023-10-29 22:40:11 info: Connected to email server
+2023-10-29 22:40:11 info: Connected to email server
+2023-10-29 22:40:12 info: Connected to email server
+2023-10-29 22:40:12 info: Connected to email server
+2023-10-29 22:40:12 info: Connected to email server
+2023-10-29 22:40:13 info: Connected to email server
+2023-10-29 22:40:13 info: Connected to email server
+2023-10-29 22:40:13 info: Connected to email server
+2023-10-29 22:40:21 info: [0mGET /service [32m200[0m 1098.929 ms - -[0m
+2023-10-29 22:40:55 info: [0mGET /service/proposals/653d138c14276a36f75f29f0 [32m200[0m 574.820 ms - 84[0m
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:10 info: Connected to email server
+2023-10-29 22:41:16 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-10-29 22:41:16 info: [0mPOST /service/payment [32m200[0m 528.815 ms - 84[0m
+2023-10-29 22:41:35 info: [0mPOST /service/proposal/653d138c14276a36f75f29f0 [32m200[0m 1336.671 ms - 334[0m
+2023-10-29 22:41:41 info: [0mGET /service/proposals/653d138c14276a36f75f29f0 [32m200[0m 950.961 ms - 504[0m
+2023-10-29 22:43:16 info: [0mGET /service/getAppliedServices [32m200[0m 524.600 ms - 175[0m
+2023-10-29 22:55:48 info: [0mGET /service/getServiceProposalById/653b95035cc385f1b0b936c7 [32m200[0m 822.809 ms - 86[0m
+2023-10-29 23:25:19 error: [GET] /user-invitation >> StatusCode:: 404, Message:: The requested path /user-invitation not found!
+2023-10-29 23:25:19 info: [0mGET /user-invitation?eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1YWRyaW9sYXNoaW5hMUBnbWFpbC5jb20iLCJ0eXBlIjoidXNlckludml0ZSIsIl9pZCI6IjY1M2VkYjg2Y2I3ZTE2NGI0Y2UwNmE5MiIsImlhdCI6MTY5ODYxODI0NywiZXhwIjoxNjk4NzA0NjQ3LCJhdWQiOiJvYWljYy5jb20iLCJpc3MiOiJvYWljY3BsYXRmb3JtIiwic3ViIjoib2FpY2M6dXNlciJ9.z6r8X6iGcdvBcSK3fapoiidyGs5KpslQDNFo48MDq7SBVaR9_0-7IpOlY8Z1c-MkdeaN3BUTDDHcLByM_rucTg [32m200[0m 107.099 ms - 104[0m
+2023-10-29 23:25:19 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-29 23:25:19 info: [0mGET /favicon.ico [32m200[0m 8.035 ms - 100[0m

@@ -1,0 +1,5 @@
+2023-10-29 22:38:42 error: Error connecting to Database: MongooseServerSelectionError: Server selection timed out after 30000 ms
+2023-10-29 22:39:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-29 22:41:16 error: [POST] /service/payment >> StatusCode:: 400, Message:: SERVICE_PROPOSAL_NOT_FOUND
+2023-10-29 23:25:19 error: [GET] /user-invitation >> StatusCode:: 404, Message:: The requested path /user-invitation not found!
+2023-10-29 23:25:19 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
