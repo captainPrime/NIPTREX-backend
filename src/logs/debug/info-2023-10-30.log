@@ -87,3 +87,5 @@
 2023-10-30 17:19:27 info: Connected to email server
 2023-10-30 17:19:27 info: Connected to email server
 2023-10-30 17:19:27 info: Connected to Database Successfully...
+2023-10-30 17:19:52 info: [0mPOST /photography [32m200[0m 6622.203 ms - 453[0m
+2023-10-30 17:20:17 info: [0mGET /photography/getUserPhotography [32m200[0m 1002.797 ms - 455[0m
