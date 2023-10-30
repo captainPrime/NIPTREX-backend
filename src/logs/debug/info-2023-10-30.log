@@ -40,3 +40,50 @@
 2023-10-30 16:30:15 info: Connected to Database Successfully...
 2023-10-30 16:30:21 error: [POST] /photography >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
 2023-10-30 16:30:21 info: [0mPOST /photography [32m200[0m 2122.932 ms - 101[0m
+2023-10-30 16:31:03 info: =================================
+2023-10-30 16:31:03 info: ======= ENV: development =======
+2023-10-30 16:31:03 info: 🚀 App listening on the port 3000
+2023-10-30 16:31:03 info: =================================
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to email server
+2023-10-30 16:31:05 info: Connected to Database Successfully...
+2023-10-30 16:31:06 info: Connected to email server
+2023-10-30 16:31:07 info: Connected to email server
+2023-10-30 16:31:36 info: Connected to email server
+2023-10-30 17:06:51 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2023-10-30 17:06:51 info: [0mPOST /photography [32m200[0m 4033.473 ms - 109[0m
+2023-10-30 17:07:05 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2023-10-30 17:07:05 info: [0mPOST /photography [32m200[0m 2246.638 ms - 109[0m
+2023-10-30 17:07:15 info: [0mPOST /photography [32m200[0m 347.500 ms - 109[0m
+2023-10-30 17:07:15 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2023-10-30 17:18:00 info: [0mGET /photography/getUserPhotography [32m200[0m 3503.880 ms - 84[0m
+2023-10-30 17:18:17 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR
+2023-10-30 17:18:17 info: [0mPOST /photography [32m200[0m 9920.557 ms - 121[0m
+2023-10-30 17:19:24 info: =================================
+2023-10-30 17:19:24 info: ======= ENV: development =======
+2023-10-30 17:19:24 info: 🚀 App listening on the port 3000
+2023-10-30 17:19:24 info: =================================
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to email server
+2023-10-30 17:19:27 info: Connected to Database Successfully...

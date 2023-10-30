@@ -16,11 +16,6 @@ class PhotographyService {
   */
   public async createPhotography(body: IPhotography | any): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 9005, 'All required fields cannot be empty');
-
-    const { error } = photographySchemaValidation.validate(body);
-
-    if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR', [error.details[0].message]);
-
     const data: any = await this.photography.create(body);
 
     return data;
