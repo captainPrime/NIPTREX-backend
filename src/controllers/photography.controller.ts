@@ -6,6 +6,7 @@ import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
 import PhotographyService from '@/services/photography.service';
 import path from 'path';
+import { photographySchemaValidation } from '@/validations/photography.validation';
 
 class PhotographyController {
   public userService = new UserService();
@@ -18,6 +19,12 @@ class PhotographyController {
   */
   public createPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      const { title, price } = req.body;
+
+      const { error } = photographySchemaValidation.validate({ ...req.body, image: req.file?.path });
+
+      if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_VALIDATION_ERROR', [error.details[0].message]);
+
       const user: any = await this.userService.findUserById(req.user.id);
 
       if (!user.verified) {
@@ -60,6 +67,8 @@ class PhotographyController {
         // You can use the cloudinaryResponse here as needed
         const data = await this.photographyService.createPhotography({
           user_id: req.user.id,
+          title,
+          price,
           cloudinary_id: cloudinaryResponse?.public_id as string,
           image: cloudinaryResponse?.secure_url as string,
         });

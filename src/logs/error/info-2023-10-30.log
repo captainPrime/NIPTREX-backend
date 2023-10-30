@@ -1,0 +1,2 @@
+2023-10-30 16:26:26 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR
+2023-10-30 16:30:21 error: [POST] /photography >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR

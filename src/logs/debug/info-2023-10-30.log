@@ -1,0 +1,42 @@
+2023-10-30 16:22:46 info: =================================
+2023-10-30 16:22:46 info: ======= ENV: development =======
+2023-10-30 16:22:46 info: 🚀 App listening on the port 3000
+2023-10-30 16:22:46 info: =================================
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:49 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:50 info: Connected to email server
+2023-10-30 16:22:51 info: Connected to email server
+2023-10-30 16:22:51 info: Connected to Database Successfully...
+2023-10-30 16:26:26 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR
+2023-10-30 16:26:26 info: [0mPOST /photography [32m200[0m 16146.326 ms - 119[0m
+2023-10-30 16:30:12 info: =================================
+2023-10-30 16:30:12 info: ======= ENV: development =======
+2023-10-30 16:30:12 info: 🚀 App listening on the port 3000
+2023-10-30 16:30:12 info: =================================
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:14 info: Connected to email server
+2023-10-30 16:30:15 info: Connected to Database Successfully...
+2023-10-30 16:30:21 error: [POST] /photography >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-10-30 16:30:21 info: [0mPOST /photography [32m200[0m 2122.932 ms - 101[0m
