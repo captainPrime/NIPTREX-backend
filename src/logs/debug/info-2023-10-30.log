@@ -89,3 +89,25 @@
 2023-10-30 17:19:27 info: Connected to Database Successfully...
 2023-10-30 17:19:52 info: [0mPOST /photography [32m200[0m 6622.203 ms - 453[0m
 2023-10-30 17:20:17 info: [0mGET /photography/getUserPhotography [32m200[0m 1002.797 ms - 455[0m
+2023-10-30 18:15:50 error: [GET] /reload_db >> StatusCode:: 400, Message:: connection 7 to 18.213.242.139:27017 closed
+2023-10-30 18:15:50 info: [0mGET /reload_db [32m200[0m 490.495 ms - 100[0m
+2023-10-30 18:16:17 info: =================================
+2023-10-30 18:16:17 info: ======= ENV: development =======
+2023-10-30 18:16:17 info: 🚀 App listening on the port 3000
+2023-10-30 18:16:17 info: =================================
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:20 info: Connected to email server
+2023-10-30 18:16:21 info: Connected to Database Successfully...
+2023-10-30 18:17:01 info: [0mGET /reload_db [32m200[0m 5232.071 ms - 74[0m

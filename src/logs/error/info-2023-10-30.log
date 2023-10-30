@@ -4,3 +4,4 @@
 2023-10-30 17:07:05 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
 2023-10-30 17:07:15 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
 2023-10-30 17:18:17 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_UPLOAD_VALIDATION_ERROR
+2023-10-30 18:15:50 error: [GET] /reload_db >> StatusCode:: 400, Message:: connection 7 to 18.213.242.139:27017 closed
