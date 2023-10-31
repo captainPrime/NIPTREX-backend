@@ -23,3 +23,4 @@ Error: Channel closed
     at require (node:internal/modules/cjs/helpers:108:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
 2023-10-31 12:25:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-31 12:27:38 error: [GET] /photography >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING

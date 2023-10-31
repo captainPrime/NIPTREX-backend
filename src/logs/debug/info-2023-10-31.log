@@ -39,3 +39,25 @@
 2023-10-31 12:24:46 info: Connected to Database Successfully...
 2023-10-31 12:25:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-31 12:25:13 info: [0mPOST /auth/login [32m200[0m 870.194 ms - 587[0m
+2023-10-31 12:26:46 info: =================================
+2023-10-31 12:26:46 info: ======= ENV: development =======
+2023-10-31 12:26:46 info: 🚀 App listening on the port 3000
+2023-10-31 12:26:46 info: =================================
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:49 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to email server
+2023-10-31 12:26:50 info: Connected to Database Successfully...
+2023-10-31 12:27:38 error: [GET] /photography >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-10-31 12:27:38 info: [0mGET /photography [32m200[0m 14.259 ms - 86[0m
+2023-10-31 12:27:55 info: [0mGET /photography [32m200[0m 4809.701 ms - -[0m
