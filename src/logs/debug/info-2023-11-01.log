@@ -78,3 +78,43 @@
 2023-11-01 00:11:23 info: Connected to email server
 2023-11-01 00:11:23 info: Connected to Database Successfully...
 2023-11-01 00:11:36 info: [0mPOST /photography [32m200[0m 8020.371 ms - 457[0m
+2023-11-01 00:16:31 info: =================================
+2023-11-01 00:16:31 info: ======= ENV: development =======
+2023-11-01 00:16:31 info: 🚀 App listening on the port 3000
+2023-11-01 00:16:31 info: =================================
+2023-11-01 00:17:46 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:20:04 info: Connected to email server
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:24:01 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-11-01 00:27:40 info: =================================
+2023-11-01 00:27:40 info: ======= ENV: development =======
+2023-11-01 00:27:40 info: 🚀 App listening on the port 3000
+2023-11-01 00:27:40 info: =================================
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:42 info: Connected to email server
+2023-11-01 00:27:43 info: Connected to email server
+2023-11-01 00:27:43 info: Connected to email server
+2023-11-01 00:27:44 info: Connected to Database Successfully...
+2023-11-01 00:28:01 info: [0mPOST /photography [32m200[0m 8089.134 ms - 457[0m
+2023-11-01 00:28:28 info: [0mPOST /photography [32m200[0m 5708.083 ms - 457[0m

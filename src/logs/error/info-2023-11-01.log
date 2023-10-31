@@ -1,2 +1,3 @@
 2023-11-01 00:05:51 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
 2023-11-01 00:09:43 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2023-11-01 00:17:46 error: Error connecting to Database: Error: querySrv ETIMEOUT _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
