@@ -17,3 +17,25 @@
 2023-10-31 12:23:00 info: Connected to email server
 2023-10-31 12:23:00 info: Connected to email server
 2023-10-31 12:23:00 info: Connected to Database Successfully...
+2023-10-31 12:24:18 error: [Error] >> Channel closed
+2023-10-31 12:24:43 info: =================================
+2023-10-31 12:24:43 info: ======= ENV: development =======
+2023-10-31 12:24:43 info: 🚀 App listening on the port 3000
+2023-10-31 12:24:43 info: =================================
+2023-10-31 12:24:45 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to email server
+2023-10-31 12:24:46 info: Connected to Database Successfully...
+2023-10-31 12:25:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-31 12:25:13 info: [0mPOST /auth/login [32m200[0m 870.194 ms - 587[0m
