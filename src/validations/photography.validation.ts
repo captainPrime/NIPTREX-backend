@@ -6,7 +6,6 @@ import Joi from 'joi';
 |--------------------------------------------------------------------------
 */
 export const photographySchemaValidation = Joi.object({
-  image: Joi.string().required(),
   title: Joi.string().required(),
   price: Joi.string().required(),
 });
