@@ -333,7 +333,7 @@ class WalletController {
             card_type: response.data.card?.type,
             card_expiry: response.data.card?.expiry,
           };
-          console.log('TRANSACTION_DATA', transactionData);
+
           const transaction = await this.walletService.createTransaction(transactionData);
           const emailPayload = {
             proposalId: proposal.id,

@@ -365,7 +365,7 @@ class ServiceController {
             status: response.data.status,
             payment_type: response.data.payment_type,
             created_at: new Date(response.data.created_at),
-            customer_id: response.data.customer?.id.toString(),
+            customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
             customer_name: response.data.customer?.name,
             customer_email: response.data.customer?.email,
             nuban: response.data.meta?.originatoraccountnumber,
