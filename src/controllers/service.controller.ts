@@ -298,7 +298,7 @@ class ServiceController {
       const serviceProposal = await this.serviceService.getServiceProposalById(proposal_id);
       if (!serviceProposal) throw new HttpException(400, 7002, 'SERVICE_PROPOSAL_NOT_FOUND');
 
-      if (amount < serviceProposal.amount) throw new HttpException(400, 2002, 'AMOUNT_LESS_THAN_PROPOSAL_AMOUNT');
+      // if (amount < serviceProposal.amount) throw new HttpException(400, 2002, 'AMOUNT_LESS_THAN_PROPOSAL_AMOUNT');
 
       const paymentData = {
         tx_ref: generateUUID(),

@@ -250,7 +250,7 @@ class WalletController {
 
       const proposalAmount = data.milestone_stage.reduce((total: any, stage: any) => total + stage.amount, 0);
 
-      if (amount < proposalAmount) throw new HttpException(400, 2002, 'AMOUNT_LESS_THAN_PROPOSAL_AMOUNT');
+      // if (amount < proposalAmount) throw new HttpException(400, 2002, 'AMOUNT_LESS_THAN_PROPOSAL_AMOUNT');
 
       const paymentData = {
         tx_ref: generateUUID(),
