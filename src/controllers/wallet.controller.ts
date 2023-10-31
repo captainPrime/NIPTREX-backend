@@ -248,6 +248,8 @@ class WalletController {
       const data = await this.bidService.getBidById(proposal_id);
       if (!data) throw new HttpException(400, 2002, 'PROPOSAL_NOT_FOUND');
 
+      console.log('PROPOSAL', data);
+
       const proposalAmount = data.milestone_stage.reduce((total: any, stage: any) => total + stage.amount, 0);
 
       // if (amount < proposalAmount) throw new HttpException(400, 2002, 'AMOUNT_LESS_THAN_PROPOSAL_AMOUNT');
@@ -267,6 +269,8 @@ class WalletController {
           name: `${req.user.first_name} ${req.user.last_name}`,
         },
       };
+
+      console.log('PAYMENT_DATA', paymentData);
 
       const response = await axios.post('https://api.flutterwave.com/v3/payments', paymentData, {
         headers: {
@@ -292,6 +296,7 @@ class WalletController {
       if (status === 'successful' || status === 'completed') {
         // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
         const response = await flw.Transaction.verify({ id: transaction_id });
+        // return res.status(200).json({ status: 400, response_code: 6000, message: 'PAYMENT_REQUEST_ERROR', data: response });
         // console.log('TRANSACTION_DETAILS', transactionDetails);
         console.log('TRANSACTION_VERIFY', response);
         if (response.data.status === 'successful') {
@@ -315,7 +320,7 @@ class WalletController {
             status: response.data.status,
             payment_type: response.data.payment_type,
             created_at: new Date(response.data.created_at),
-            customer_id: response.data.customer?.id,
+            customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
             customer_name: response.data.customer?.name,
             customer_email: response.data.customer?.email,
             nuban: response.data.meta?.originatoraccountnumber,
@@ -328,7 +333,7 @@ class WalletController {
             card_type: response.data.card?.type,
             card_expiry: response.data.card?.expiry,
           };
-
+          console.log('TRANSACTION_DATA', transactionData);
           const transaction = await this.walletService.createTransaction(transactionData);
           const emailPayload = {
             proposalId: proposal.id,

@@ -24,3 +24,8 @@ Error: Channel closed
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
 2023-10-31 12:25:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-10-31 12:27:38 error: [GET] /photography >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-10-31 16:30:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-10-31 16:35:47 error: [GET] /job/verify-payment >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-10-31 16:35:49 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-10-31 16:44:04 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
+2023-10-31 16:46:04 error: [POST] /payment/callback >> StatusCode:: 400, Message:: PAYMENT_VALIDATION_ERROR
