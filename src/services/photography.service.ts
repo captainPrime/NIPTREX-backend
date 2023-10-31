@@ -4,6 +4,7 @@ import UserService from './users.service';
 import mongoose from 'mongoose';
 import { IPhotography, Photography } from '@/models/photography.model';
 import { photographySchemaValidation, photographyUpdateValidation } from '@/validations/photography.validation';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class PhotographyService {
   public photography: any = Photography;
@@ -31,6 +32,17 @@ class PhotographyService {
 
     const data = await this.photography.find({ user_id: userId });
     if (!data) throw new HttpException(400, 9003, 'PHOTOGRAPHY_NOT_FOUND');
+
+    return data;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get All Photography
+  |--------------------------------------------------------------------------
+  */
+  public async getAllPhotography(filter: any, options: PaginationOptions): Promise<any> {
+    const data = await this.photography.paginate(filter, options);
 
     return data;
   }

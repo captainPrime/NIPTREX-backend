@@ -7,6 +7,7 @@ import { HttpException } from '@/exceptions/HttpException';
 import PhotographyService from '@/services/photography.service';
 import path from 'path';
 import { photographySchemaValidation } from '@/validations/photography.validation';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 
 class PhotographyController {
   public userService = new UserService();
@@ -73,7 +74,7 @@ class PhotographyController {
           image: cloudinaryResponse?.secure_url as string,
         });
 
-        return res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+        return res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
       }
 
       throw new HttpException(400, 1004, 'ERROR_UPLOADING_IMAGE');
@@ -116,7 +117,29 @@ class PhotographyController {
 
       const data = await this.photographyService.getUserPhotography(req.user.id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get User Preference
+  |--------------------------------------------------------------------------
+  */
+  public getAllPhotography = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'created_at:desc',
+        limit: parseInt(req.query.limit as string, 10) || 5,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
+
+      const data = await this.photographyService.getAllPhotography(req.query, options);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -132,7 +155,7 @@ class PhotographyController {
       const id: string = req.params.id;
       const data = await this.photographyService.getPhotographyById(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -148,7 +171,7 @@ class PhotographyController {
   //       const body: IUpdatePreference = req.body;
   //       const data = await this.photographyService.updatePhotography(req.user.id, body);
 
-  //       res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+  //       res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
   //     } catch (error) {
   //       next(error);
   //     }
@@ -167,7 +190,7 @@ class PhotographyController {
       await cloudinary.v2.uploader.destroy(photography.cloudinary_id);
       const data = await this.photographyService.deletePhotography(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
