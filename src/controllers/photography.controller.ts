@@ -21,8 +21,8 @@ class PhotographyController {
   public createPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { title, price } = req.body;
-
-      const { error } = photographySchemaValidation.validate({ title, price });
+      console.log(req);
+      const { error } = photographySchemaValidation.validate({ title, price, image: req.file });
 
       if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_VALIDATION_ERROR', [error.details[0].message]);
 
