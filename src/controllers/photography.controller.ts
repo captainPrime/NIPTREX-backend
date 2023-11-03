@@ -20,7 +20,9 @@ class PhotographyController {
   */
   public createPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      console.log('FILES', req.file);
+      console.log('FILE', req.file);
+      console.log('FILES', req.files);
+      console.log('REQUEST', req);
       const { title, price } = req.body;
       const { error } = photographySchemaValidation.validate({ title, price, image: req.file });
 
