@@ -1,0 +1,171 @@
+2023-11-03 10:53:44 info: =================================
+2023-11-03 10:53:44 info: ======= ENV: development =======
+2023-11-03 10:53:44 info: 🚀 App listening on the port 3000
+2023-11-03 10:53:44 info: =================================
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:46 info: Connected to email server
+2023-11-03 10:53:47 info: Connected to Database Successfully...
+2023-11-03 10:54:16 info: Connected to email server
+2023-11-03 10:54:16 info: Connected to email server
+2023-11-03 10:54:16 info: Connected to email server
+2023-11-03 10:54:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 10:54:51 info: [0mPOST /auth/login [32m200[0m 579.949 ms - 587[0m
+2023-11-03 10:55:03 info: [0mPOST /photography [32m200[0m 7102.260 ms - 457[0m
+2023-11-03 11:01:35 info: =================================
+2023-11-03 11:01:35 info: ======= ENV: development =======
+2023-11-03 11:01:35 info: 🚀 App listening on the port 3000
+2023-11-03 11:01:35 info: =================================
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:37 info: Connected to email server
+2023-11-03 11:01:38 info: Connected to Database Successfully...
+2023-11-03 11:02:08 info: Connected to email server
+2023-11-03 11:02:08 info: Connected to email server
+2023-11-03 11:02:08 info: Connected to email server
+2023-11-03 11:03:10 info: =================================
+2023-11-03 11:03:10 info: ======= ENV: development =======
+2023-11-03 11:03:10 info: 🚀 App listening on the port 3000
+2023-11-03 11:03:10 info: =================================
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to email server
+2023-11-03 11:03:12 info: Connected to Database Successfully...
+2023-11-03 11:03:42 info: Connected to email server
+2023-11-03 11:03:42 info: Connected to email server
+2023-11-03 11:03:42 info: Connected to email server
+2023-11-03 11:05:31 info: [0mOPTIONS /auth/login [32m204[0m 2.002 ms - 0[0m
+2023-11-03 11:05:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:05:32 info: [0mPOST /auth/login [32m200[0m 646.122 ms - 587[0m
+2023-11-03 11:05:33 info: [0mOPTIONS /profile [32m204[0m 0.155 ms - 0[0m
+2023-11-03 11:05:36 info: [0mGET /profile [32m200[0m 2579.663 ms - -[0m
+2023-11-03 11:05:36 info: [0mOPTIONS /users/profile [32m204[0m 0.153 ms - 0[0m
+2023-11-03 11:05:37 info: [0mGET /users/profile [32m200[0m 469.777 ms - 540[0m
+2023-11-03 11:05:38 info: [0mOPTIONS /job/getUserJobBestMatches?limit=8&skip= [32m204[0m 0.767 ms - 0[0m
+2023-11-03 11:05:38 info: [0mOPTIONS /job/savedJobs? [32m204[0m 0.222 ms - 0[0m
+2023-11-03 11:05:38 info: [0mGET /users/profile [36m304[0m 489.454 ms - -[0m
+2023-11-03 11:05:39 info: [0mOPTIONS /profile [32m204[0m 0.172 ms - 0[0m
+2023-11-03 11:05:39 info: [0mGET /job/savedJobs? [32m200[0m 920.082 ms - -[0m
+2023-11-03 11:05:39 info: [0mGET /job/getUserJobBestMatches?limit=8&skip= [32m200[0m 1166.970 ms - -[0m
+2023-11-03 11:05:40 info: [0mGET /profile [36m304[0m 2474.771 ms - -[0m
+2023-11-03 11:05:43 info: [0mGET /profile [36m304[0m 2443.796 ms - -[0m
+2023-11-03 11:05:51 info: [0mOPTIONS /profile [32m204[0m 0.419 ms - 0[0m
+2023-11-03 11:05:51 info: [0mOPTIONS /users/profile [32m204[0m 0.158 ms - 0[0m
+2023-11-03 11:05:52 info: [0mGET /users/profile [36m304[0m 463.361 ms - -[0m
+2023-11-03 11:05:54 info: [0mGET /profile [36m304[0m 2466.565 ms - -[0m
+2023-11-03 11:05:57 info: [0mGET /profile [36m304[0m 2460.168 ms - -[0m
+2023-11-03 11:06:08 info: [0mOPTIONS /photography [32m204[0m 0.369 ms - 0[0m
+2023-11-03 11:06:08 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:06:08 info: [0mPOST /photography [32m200[0m 480.215 ms - 79[0m
+2023-11-03 11:07:16 info: [0mOPTIONS /profile [32m204[0m 0.150 ms - 0[0m
+2023-11-03 11:07:16 info: [0mOPTIONS /users/profile [32m204[0m 0.192 ms - 0[0m
+2023-11-03 11:07:17 info: [0mGET /users/profile [36m304[0m 460.146 ms - -[0m
+2023-11-03 11:07:19 info: [0mGET /profile [36m304[0m 2499.548 ms - -[0m
+2023-11-03 11:07:22 info: [0mGET /profile [36m304[0m 2444.150 ms - -[0m
+2023-11-03 11:07:34 info: [0mOPTIONS /photography [32m204[0m 0.145 ms - 0[0m
+2023-11-03 11:07:35 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:07:35 info: [0mPOST /photography [32m200[0m 464.772 ms - 79[0m
+2023-11-03 11:08:08 info: =================================
+2023-11-03 11:08:08 info: ======= ENV: development =======
+2023-11-03 11:08:08 info: 🚀 App listening on the port 3000
+2023-11-03 11:08:08 info: =================================
+2023-11-03 11:08:10 info: Connected to email server
+2023-11-03 11:08:10 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to email server
+2023-11-03 11:08:11 info: Connected to Database Successfully...
+2023-11-03 11:08:22 info: [0mOPTIONS /photography [32m204[0m 1.931 ms - 0[0m
+2023-11-03 11:08:23 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:08:23 info: [0mPOST /photography [32m200[0m 753.883 ms - 79[0m
+2023-11-03 11:08:40 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:08:41 info: Connected to email server
+2023-11-03 11:09:35 info: =================================
+2023-11-03 11:09:35 info: ======= ENV: development =======
+2023-11-03 11:09:35 info: 🚀 App listening on the port 3000
+2023-11-03 11:09:35 info: =================================
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:37 info: Connected to email server
+2023-11-03 11:09:41 info: [0mOPTIONS /profile [32m204[0m 1.540 ms - 0[0m
+2023-11-03 11:09:41 info: [0mOPTIONS /users/profile [32m204[0m 0.524 ms - 0[0m
+2023-11-03 11:09:42 info: Connected to Database Successfully...
+2023-11-03 11:09:45 info: [0mGET /users/profile [36m304[0m 4477.090 ms - -[0m
+2023-11-03 11:09:48 info: [0mGET /profile [36m304[0m 6526.098 ms - -[0m
+2023-11-03 11:09:50 info: [0mGET /profile [36m304[0m 2468.294 ms - -[0m
+2023-11-03 11:10:03 info: [0mOPTIONS /photography [32m204[0m 1.415 ms - 0[0m
+2023-11-03 11:10:04 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:10:04 info: [0mPOST /photography [32m200[0m 529.901 ms - 79[0m
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:07 info: Connected to email server
+2023-11-03 11:10:34 info: [0mOPTIONS /profile [32m204[0m 0.131 ms - 0[0m
+2023-11-03 11:10:34 info: [0mOPTIONS /users/profile [32m204[0m 0.203 ms - 0[0m
+2023-11-03 11:10:35 info: [0mGET /users/profile [36m304[0m 447.692 ms - -[0m
+2023-11-03 11:10:37 info: [0mGET /profile [36m304[0m 2613.648 ms - -[0m
+2023-11-03 11:10:40 info: [0mGET /profile [36m304[0m 2618.330 ms - -[0m
+2023-11-03 11:12:09 info: =================================
+2023-11-03 11:12:09 info: ======= ENV: development =======
+2023-11-03 11:12:09 info: 🚀 App listening on the port 3000
+2023-11-03 11:12:09 info: =================================
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:11 info: Connected to email server
+2023-11-03 11:12:22 info: Connected to Database Successfully...
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:41 info: Connected to email server
+2023-11-03 11:12:56 info: [0mOPTIONS /users/profile [32m204[0m 2.487 ms - 0[0m
+2023-11-03 11:12:56 info: [0mOPTIONS /profile [32m204[0m 0.654 ms - 0[0m
+2023-11-03 11:12:56 info: [0mGET /users/profile [36m304[0m 495.376 ms - -[0m
+2023-11-03 11:12:58 info: [0mGET /profile [36m304[0m 2481.981 ms - -[0m
+2023-11-03 11:13:01 info: [0mGET /profile [36m304[0m 2537.494 ms - -[0m
+2023-11-03 11:13:12 info: [0mOPTIONS /photography [32m204[0m 0.217 ms - 0[0m
+2023-11-03 11:13:19 info: [0mPOST /photography [32m200[0m 6157.340 ms - 452[0m

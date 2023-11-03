@@ -1,0 +1,6 @@
+2023-11-03 10:54:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:05:32 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:06:08 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:07:35 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:08:23 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:10:04 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
