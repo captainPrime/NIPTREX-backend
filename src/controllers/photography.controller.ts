@@ -79,6 +79,7 @@ class PhotographyController {
       throw new HttpException(400, 1004, 'ERROR_UPLOADING_IMAGE');
       // Continue with the rest of your code for creating a photography record
     } catch (error) {
+      console.log(error);
       next(error);
     }
   };
