@@ -115,6 +115,21 @@ class EmailService {
     await this.sendEmail(to, subject, text, html);
   }
 
+  public async sendFailedPaymentConfirmationEmail(to: string, payload: any, name: string): Promise<void> {
+    const subject = 'Payment Confirmation';
+    // replace this url with the link to the email verification page of your front-end app
+    // const verificationEmailUrl = `http://${CLIENT_URL}/verify-email?token=${token}`;
+    const text = `Hi ${name},
+    Payment for
+      Proposal: ${payload.proposalId}
+      with job: ${payload.jobTitle} failed`;
+    const html = `<div style="margin:30px; padding:30px; border:1px solid black; border-radius: 20px 10px;"><h4><strong>Hi ${name},</strong></h4>
+      <p>Payment for Proposal: ${payload.proposalId}
+      <p>with Job: ${payload.jobTitle}</p>
+      <p>failed.</p></div>`;
+    await this.sendEmail(to, subject, text, html);
+  }
+
   public async sendSuccessfulRegistration(to: string, token: string, name: string): Promise<void> {
     const subject = 'Email Verification';
     // replace this url with the link to the email verification page of your front-end app

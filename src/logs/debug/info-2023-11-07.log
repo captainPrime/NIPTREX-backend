@@ -120,3 +120,39 @@
 2023-11-07 11:25:08 info: Connected to email server
 2023-11-07 11:25:09 info: Connected to Database Successfully...
 2023-11-07 11:25:57 info: [0mGET /chat/user [32m200[0m 3967.476 ms - -[0m
+2023-11-07 11:37:56 info: =================================
+2023-11-07 11:37:56 info: ======= ENV: development =======
+2023-11-07 11:37:56 info: 🚀 App listening on the port 3000
+2023-11-07 11:37:56 info: =================================
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:37:59 info: Connected to email server
+2023-11-07 11:38:00 info: Connected to Database Successfully...
+2023-11-07 11:40:42 info: [0mPOST /payment/callback [32m200[0m 4062.936 ms - 617[0m
+2023-11-07 11:42:29 error: [GET] /bid/proposals/652ea856a5ec87d04c3119c8 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-11-07 11:42:29 info: [0mGET /bid/proposals/652ea856a5ec87d04c3119c8 [32m200[0m 305.135 ms - 75[0m
+2023-11-07 11:42:48 info: [0mGET /job/getAllJobs [32m200[0m 956.308 ms - -[0m
+2023-11-07 11:44:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-11-07 11:44:39 info: [0mPOST /auth/login [32m200[0m 351.403 ms - 85[0m
+2023-11-07 11:44:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-07 11:44:48 info: [0mPOST /auth/login [32m200[0m 622.325 ms - 587[0m
+2023-11-07 11:44:58 info: [0mPOST /job [32m200[0m 790.913 ms - 977[0m
+2023-11-07 11:45:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-07 11:45:10 info: [0mPOST /auth/login [32m200[0m 641.789 ms - 587[0m
+2023-11-07 11:45:36 info: [0mPOST /bid/654a152a35a12dd9465e0fad [32m200[0m 2578.262 ms - 835[0m
+2023-11-07 11:45:55 info: [0mPOST /payment [32m200[0m 1304.210 ms - 163[0m
+2023-11-07 11:50:22 error: [GET] /job/verify-payment >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-11-07 11:50:22 info: [0mGET /job/verify-payment?status=completed&tx_ref=d3daf58c-3be9-485f-8fcf-b14984e11530&transaction_id=4708233 [32m200[0m 2.847 ms - 86[0m
+2023-11-07 11:50:23 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-11-07 11:50:23 info: [0mGET /favicon.ico [36m304[0m 2.518 ms - -[0m

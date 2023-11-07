@@ -1,3 +1,9 @@
 2023-11-07 10:17:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
 2023-11-07 10:24:01 error: [DELETE] /photography/deletePhotographyById/6529cebbb78309793375d303 >> StatusCode:: 400, Message:: BILLING_ADDRESS_NOT_FOUND
 2023-11-07 10:29:42 error: [DELETE] /photography/deletePhotographyById/6529cebbb78309793375d303 >> StatusCode:: 400, Message:: PHOTOGRAPHY_NOT_FOUND
+2023-11-07 11:42:29 error: [GET] /bid/proposals/652ea856a5ec87d04c3119c8 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-11-07 11:44:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-11-07 11:44:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-07 11:45:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-07 11:50:22 error: [GET] /job/verify-payment >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-11-07 11:50:23 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
