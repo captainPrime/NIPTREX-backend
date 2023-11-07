@@ -115,6 +115,7 @@ class ChatService {
         console.log('CHAT', serviceProposal_);
         // Map participantsData to the required format with name and email
         const participants = participantsData.map((participant: any) => ({
+          id: participant.id,
           last_name: participant.last_name,
           first_name: participant.first_name,
           profile_picture: participant.profile_picture,
