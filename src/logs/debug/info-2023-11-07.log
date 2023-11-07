@@ -98,3 +98,5 @@
 2023-11-07 10:32:02 info: [0mGET /photography?limit=10 [32m200[0m 2949.582 ms - -[0m
 2023-11-07 10:32:18 info: [0mDELETE /photography/deletePhotographyById/65418d9c1bee3c83cef35082 [32m200[0m 3101.096 ms - 457[0m
 2023-11-07 10:32:23 info: [0mGET /photography?limit=10 [32m200[0m 973.032 ms - -[0m
+2023-11-07 10:34:07 info: [0mGET /service [32m200[0m 1313.840 ms - -[0m
+2023-11-07 10:34:34 info: [0mGET /service?limit=10 [32m200[0m 629.617 ms - -[0m

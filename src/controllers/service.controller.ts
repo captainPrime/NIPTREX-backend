@@ -95,7 +95,7 @@ class ServiceController {
     try {
       const options: PaginationOptions = {
         sortBy: req.query.sortBy || 'created_at:desc',
-        limit: parseInt(req.query.limit as string, 10) || 5,
+        limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         populate: 'user_id.first_name.last_name.profile_picture',
@@ -182,7 +182,7 @@ class ServiceController {
 
       const options: PaginationOptions = {
         sortBy: 'created_at:desc',
-        limit: parseInt(req.query.limit as string, 10) || 5,
+        limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         populate: 'service,user_id,proposal',

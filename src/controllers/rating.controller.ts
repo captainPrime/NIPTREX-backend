@@ -110,7 +110,7 @@ class RatingController {
     try {
       const options: PaginationOptions = {
         // sortBy: req.query.sortBy || 'date_posted:desc',
-        limit: parseInt(req.query.limit as string, 10) || 5,
+        limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
       };
