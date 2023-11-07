@@ -4,3 +4,46 @@
 2023-11-03 11:07:35 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
 2023-11-03 11:08:23 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
 2023-11-03 11:10:04 error: [POST] /photography >> StatusCode:: 400, Message:: ERROR_UPLOADING_IMAGE
+2023-11-03 11:24:53 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-11-03 11:24:53 error: uncaughtException: Channel closed
+Error: Channel closed
+    at new NodeError (node:internal/errors:387:5)
+    at process.target.send (node:internal/child_process:749:16)
+    at Object.exports.send (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:108:18)
+    at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-11-03 11:25:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

@@ -52,7 +52,7 @@ class PhotographyController {
         loadedImage.print(await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK), x, y, watermarkText);
 
         // Define the path to save the modified image in a "pictures" folder within the current directory
-        const modifiedImageTempPath = path.join(__dirname, 'pictures', `${new Date()}-modified_image.png`);
+        const modifiedImageTempPath = path.join(__dirname, 'pictures', `${new Date()}-${req.file?.filename}.png`);
         await loadedImage.writeAsync(modifiedImageTempPath);
 
         // Upload the temporary file to Cloudinary

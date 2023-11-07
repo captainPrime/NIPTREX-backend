@@ -56,7 +56,7 @@ class PhotographyService {
     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
     const data = await this.photography.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 9003, 'BILLING_ADDRESS_NOT_FOUND');
+    if (!data) throw new HttpException(400, 9003, 'PHOTOGRAPHY_NOT_FOUND');
 
     return data;
   }

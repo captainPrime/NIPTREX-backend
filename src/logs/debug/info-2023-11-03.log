@@ -169,3 +169,122 @@
 2023-11-03 11:13:01 info: [0mGET /profile [36m304[0m 2537.494 ms - -[0m
 2023-11-03 11:13:12 info: [0mOPTIONS /photography [32m204[0m 0.217 ms - 0[0m
 2023-11-03 11:13:19 info: [0mPOST /photography [32m200[0m 6157.340 ms - 452[0m
+2023-11-03 11:14:33 info: [0mOPTIONS /profile [32m204[0m 0.143 ms - 0[0m
+2023-11-03 11:14:33 info: [0mOPTIONS /users/profile [32m204[0m 0.239 ms - 0[0m
+2023-11-03 11:14:34 info: [0mGET /users/profile [36m304[0m 456.576 ms - -[0m
+2023-11-03 11:14:36 info: [0mGET /profile [36m304[0m 2491.494 ms - -[0m
+2023-11-03 11:14:38 info: [0mGET /profile [36m304[0m 2522.861 ms - -[0m
+2023-11-03 11:16:45 info: [0mOPTIONS /users/profile [32m204[0m 0.419 ms - 0[0m
+2023-11-03 11:16:45 info: [0mOPTIONS /profile [32m204[0m 0.164 ms - 0[0m
+2023-11-03 11:16:46 info: [0mGET /users/profile [36m304[0m 456.080 ms - -[0m
+2023-11-03 11:16:46 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:16:48 info: [0mOPTIONS /job/technicalTools [32m204[0m 0.172 ms - 0[0m
+2023-11-03 11:16:48 info: [0mGET /job/technicalTools [32m200[0m 2.154 ms - -[0m
+2023-11-03 11:17:15 info: [0mOPTIONS /job/technicalTools [32m204[0m 0.141 ms - 0[0m
+2023-11-03 11:17:15 info: [0mGET /job/technicalTools [36m304[0m 0.741 ms - -[0m
+2023-11-03 11:20:11 info: [0mOPTIONS /job/technicalTools [32m204[0m 0.406 ms - 0[0m
+2023-11-03 11:20:11 info: [0mGET /job/technicalTools [36m304[0m 1.182 ms - -[0m
+2023-11-03 11:20:31 info: [0mOPTIONS /job/technicalTools [32m204[0m 0.182 ms - 0[0m
+2023-11-03 11:20:32 info: [0mGET /job/technicalTools [36m304[0m 0.910 ms - -[0m
+2023-11-03 11:24:35 info: [0mOPTIONS /job/technicalTools [32m204[0m 15.588 ms - 0[0m
+2023-11-03 11:24:35 info: [0mGET /job/technicalTools [36m304[0m 9.466 ms - -[0m
+2023-11-03 11:24:53 info: [0mOPTIONS /auth/login [32m204[0m 0.546 ms - 0[0m
+2023-11-03 11:24:53 error: [Error] >> Channel closed
+2023-11-03 11:25:00 info: =================================
+2023-11-03 11:25:00 info: ======= ENV: development =======
+2023-11-03 11:25:00 info: 🚀 App listening on the port 3000
+2023-11-03 11:25:00 info: =================================
+2023-11-03 11:25:00 info: [0mOPTIONS /auth/login [32m204[0m 1.319 ms - 0[0m
+2023-11-03 11:25:02 info: Connected to email server
+2023-11-03 11:25:02 info: Connected to email server
+2023-11-03 11:25:02 info: Connected to email server
+2023-11-03 11:25:02 info: Connected to email server
+2023-11-03 11:25:03 info: Connected to email server
+2023-11-03 11:25:03 info: Connected to email server
+2023-11-03 11:25:03 info: Connected to email server
+2023-11-03 11:25:03 info: Connected to email server
+2023-11-03 11:25:13 info: Connected to Database Successfully...
+2023-11-03 11:25:14 info: [0mPOST /auth/login [0m-[0m - ms - -[0m
+2023-11-03 11:25:14 info: [0mPOST /auth/login [0m-[0m - ms - -[0m
+2023-11-03 11:25:14 info: [0mPOST /auth/login [0m-[0m - ms - -[0m
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:32 info: Connected to email server
+2023-11-03 11:25:36 info: [0mOPTIONS /auth/login [32m204[0m 0.237 ms - 0[0m
+2023-11-03 11:25:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:37 info: [0mPOST /auth/login [32m200[0m 548.723 ms - 587[0m
+2023-11-03 11:25:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:37 info: [0mPOST /auth/login [32m200[0m 567.062 ms - 587[0m
+2023-11-03 11:25:38 info: [0mOPTIONS /profile [32m204[0m 0.209 ms - 0[0m
+2023-11-03 11:25:38 info: [0mOPTIONS /profile [32m204[0m 0.145 ms - 0[0m
+2023-11-03 11:25:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:38 info: [0mPOST /auth/login [32m200[0m 474.765 ms - 587[0m
+2023-11-03 11:25:38 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:38 info: [0mPOST /auth/login [32m200[0m 489.101 ms - 587[0m
+2023-11-03 11:25:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:39 info: [0mPOST /auth/login [32m200[0m 491.236 ms - 587[0m
+2023-11-03 11:25:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:39 info: [0mPOST /auth/login [32m200[0m 544.917 ms - 587[0m
+2023-11-03 11:25:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:40 info: [0mPOST /auth/login [32m200[0m 483.054 ms - 587[0m
+2023-11-03 11:25:40 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:40 info: [0mPOST /auth/login [32m200[0m 568.616 ms - 587[0m
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 info: [0mPOST /auth/login [32m200[0m 499.536 ms - 587[0m
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 info: [0mPOST /auth/login [32m200[0m 500.478 ms - 587[0m
+2023-11-03 11:25:41 info: [0mGET /profile [32m200[0m 2612.564 ms - -[0m
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 info: [0mPOST /auth/login [32m200[0m 482.376 ms - 587[0m
+2023-11-03 11:25:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:41 info: [0mPOST /auth/login [32m200[0m 483.263 ms - 587[0m
+2023-11-03 11:25:41 info: [0mOPTIONS /users/profile [32m204[0m 0.312 ms - 0[0m
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 info: [0mPOST /auth/login [32m200[0m 525.427 ms - 587[0m
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 info: [0mPOST /auth/login [32m200[0m 534.841 ms - 587[0m
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 info: [0mPOST /auth/login [32m200[0m 496.059 ms - 587[0m
+2023-11-03 11:25:42 info: [0mOPTIONS /auth/login [32m204[0m 0.188 ms - 0[0m
+2023-11-03 11:25:42 info: [0mGET /users/profile [36m304[0m 506.118 ms - -[0m
+2023-11-03 11:25:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:42 info: [0mPOST /auth/login [32m200[0m 515.781 ms - 587[0m
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 info: [0mPOST /auth/login [32m200[0m 485.219 ms - 587[0m
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 info: [0mPOST /auth/login [32m200[0m 500.812 ms - 587[0m
+2023-11-03 11:25:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-03 11:25:43 info: [0mPOST /auth/login [32m200[0m 472.037 ms - 587[0m
+2023-11-03 11:25:43 info: [0mOPTIONS /job/getUserJobBestMatches?limit=8&skip= [32m204[0m 0.159 ms - 0[0m
+2023-11-03 11:25:43 info: [0mOPTIONS /job/savedJobs? [32m204[0m 0.485 ms - 0[0m
+2023-11-03 11:25:43 info: [0mOPTIONS /profile [32m204[0m 0.286 ms - 0[0m
+2023-11-03 11:25:44 info: [0mOPTIONS /profile [32m204[0m 0.319 ms - 0[0m
+2023-11-03 11:25:44 info: [0mGET /users/profile [36m304[0m 452.202 ms - -[0m
+2023-11-03 11:25:44 info: [0mGET /profile [36m304[0m 2476.501 ms - -[0m
+2023-11-03 11:25:44 info: [0mGET /job/savedJobs? [36m304[0m 904.751 ms - -[0m
+2023-11-03 11:25:45 info: [0mGET /job/getUserJobBestMatches?limit=8&skip= [36m304[0m 1141.769 ms - -[0m
+2023-11-03 11:25:45 info: [0mGET /users/profile [36m304[0m 486.214 ms - -[0m
+2023-11-03 11:25:47 info: [0mGET /profile [36m304[0m 2618.130 ms - -[0m
+2023-11-03 11:25:47 info: [0mOPTIONS /users/profile [32m204[0m 0.153 ms - 0[0m
+2023-11-03 11:25:48 info: [0mGET /users/profile [36m304[0m 438.913 ms - -[0m
+2023-11-03 11:25:50 info: [0mGET /profile [36m304[0m 2443.198 ms - -[0m
+2023-11-03 11:25:50 info: [0mGET /users/profile [36m304[0m 448.640 ms - -[0m
+2023-11-03 11:25:53 info: [0mGET /profile [36m304[0m 2875.265 ms - -[0m
+2023-11-03 11:25:53 info: [0mOPTIONS /users/profile [32m204[0m 0.141 ms - 0[0m
+2023-11-03 11:25:54 info: [0mGET /users/profile [36m304[0m 509.652 ms - -[0m
+2023-11-03 11:25:55 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:56 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:56 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:57 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:57 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:57 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:58 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:58 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:59 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:59 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:25:59 info: [0mGET /profile [0m-[0m - ms - -[0m
+2023-11-03 11:26:19 info: [0mOPTIONS /job/technicalTools [32m204[0m 0.202 ms - 0[0m
+2023-11-03 11:26:19 info: [0mGET /job/technicalTools [36m304[0m 1.246 ms - -[0m

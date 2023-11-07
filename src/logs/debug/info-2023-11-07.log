@@ -1,0 +1,100 @@
+2023-11-07 10:17:16 info: =================================
+2023-11-07 10:17:16 info: ======= ENV: development =======
+2023-11-07 10:17:16 info: 🚀 App listening on the port 3000
+2023-11-07 10:17:16 info: =================================
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:18 info: Connected to email server
+2023-11-07 10:17:19 info: Connected to Database Successfully...
+2023-11-07 10:17:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-07 10:17:30 info: [0mPOST /auth/login [32m200[0m 852.152 ms - 587[0m
+2023-11-07 10:17:35 info: [0mGET /photography [32m200[0m 762.196 ms - -[0m
+2023-11-07 10:18:02 info: [0mGET /photography?limit=10 [32m200[0m 511.879 ms - -[0m
+2023-11-07 10:20:39 info: =================================
+2023-11-07 10:20:39 info: ======= ENV: development =======
+2023-11-07 10:20:39 info: 🚀 App listening on the port 3000
+2023-11-07 10:20:39 info: =================================
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:41 info: Connected to email server
+2023-11-07 10:20:42 info: Connected to Database Successfully...
+2023-11-07 10:21:43 info: [0mPOST /photography [32m200[0m 7266.394 ms - 464[0m
+2023-11-07 10:23:38 info: =================================
+2023-11-07 10:23:38 info: ======= ENV: development =======
+2023-11-07 10:23:38 info: 🚀 App listening on the port 3000
+2023-11-07 10:23:38 info: =================================
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:41 info: Connected to email server
+2023-11-07 10:23:42 info: Connected to Database Successfully...
+2023-11-07 10:23:56 info: [0mDELETE /photography/deletePhotographyById/6529cebbb78309793375d303 [32m200[0m 2195.519 ms - 312[0m
+2023-11-07 10:24:01 error: [DELETE] /photography/deletePhotographyById/6529cebbb78309793375d303 >> StatusCode:: 400, Message:: BILLING_ADDRESS_NOT_FOUND
+2023-11-07 10:24:01 info: [0mDELETE /photography/deletePhotographyById/6529cebbb78309793375d303 [32m200[0m 690.202 ms - 83[0m
+2023-11-07 10:24:42 info: =================================
+2023-11-07 10:24:42 info: ======= ENV: development =======
+2023-11-07 10:24:42 info: 🚀 App listening on the port 3000
+2023-11-07 10:24:42 info: =================================
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:45 info: Connected to email server
+2023-11-07 10:24:46 info: Connected to Database Successfully...
+2023-11-07 10:24:46 info: Connected to email server
+2023-11-07 10:24:46 info: Connected to email server
+2023-11-07 10:24:53 info: [0mDELETE /photography/deletePhotographyById/65418d811bee3c83cef3507e [32m200[0m 2146.710 ms - 457[0m
+2023-11-07 10:28:45 info: [0mDELETE /photography/deletePhotographyById/6529d3ea372006aaa26cf21a [32m200[0m 4491.042 ms - 422[0m
+2023-11-07 10:29:42 error: [DELETE] /photography/deletePhotographyById/6529cebbb78309793375d303 >> StatusCode:: 400, Message:: PHOTOGRAPHY_NOT_FOUND
+2023-11-07 10:29:42 info: [0mDELETE /photography/deletePhotographyById/6529cebbb78309793375d303 [32m200[0m 466.862 ms - 79[0m
+2023-11-07 10:29:49 info: [0mGET /photography?limit=10 [32m200[0m 1873.249 ms - -[0m
+2023-11-07 10:30:02 info: [0mDELETE /photography/deletePhotographyById/654191d8a873f29bcd263b67 [32m200[0m 1932.430 ms - 439[0m
+2023-11-07 10:30:11 info: [0mDELETE /photography/deletePhotographyById/6541885dc042608e0bdc8629 [32m200[0m 2037.922 ms - 457[0m
+2023-11-07 10:30:29 info: [0mDELETE /photography/deletePhotographyById/6529d2a87699837c360e20e9 [32m200[0m 1978.878 ms - 422[0m
+2023-11-07 10:30:42 info: [0mDELETE /photography/deletePhotographyById/653fd7a7956af549f8022bda [32m200[0m 2133.884 ms - 457[0m
+2023-11-07 10:30:56 info: [0mDELETE /photography/deletePhotographyById/654189a79355c60bcd83c19f [32m200[0m 1720.730 ms - 457[0m
+2023-11-07 10:31:08 info: [0mDELETE /photography/deletePhotographyById/6541919fa873f29bcd263b61 [32m200[0m 1515.216 ms - 439[0m
+2023-11-07 10:31:16 info: [0mGET /photography?limit=10 [32m200[0m 3586.253 ms - -[0m
+2023-11-07 10:31:30 info: [0mDELETE /photography/deletePhotographyById/6547fb55279ba885a5f0a14b [32m200[0m 2537.229 ms - 434[0m
+2023-11-07 10:32:02 info: [0mGET /photography?limit=10 [32m200[0m 2949.582 ms - -[0m
+2023-11-07 10:32:18 info: [0mDELETE /photography/deletePhotographyById/65418d9c1bee3c83cef35082 [32m200[0m 3101.096 ms - 457[0m
+2023-11-07 10:32:23 info: [0mGET /photography?limit=10 [32m200[0m 973.032 ms - -[0m
