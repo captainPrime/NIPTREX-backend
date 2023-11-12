@@ -55,7 +55,14 @@ class PhotographyService {
   public async getPhotographyById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 9001, 'id can not be empty');
 
-    const data = await this.photography.findOne({ _id: id });
+    const data = await this.photography.findOne({ _id: id }).populate({
+      path: 'user_id',
+      select: 'id first_name last_name email phone_number country createdAt', // fields to be returned from the referenced document
+      options: {
+        lean: true, // return plain JS objects instead of Mongoose documents
+      },
+      as: 'user', // the name of the key to populate, defaults to the path
+    });
     if (!data) throw new HttpException(400, 9003, 'PHOTOGRAPHY_NOT_FOUND');
 
     return data;
