@@ -109,13 +109,14 @@ class PhotographyController {
   */
   public getUserPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const user: any = await this.userService.findUserById(req.user.id);
+      const userId: string = req.query.id ?? req.user.id;
+      const user: any = await this.userService.findUserById(userId);
 
       if (!user.verified) {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.photographyService.getUserPhotography(req.user.id);
+      const data = await this.photographyService.getUserPhotography(userId);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
     } catch (error) {
