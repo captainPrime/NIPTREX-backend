@@ -134,6 +134,7 @@ class PhotographyController {
         sortBy: req.query.sortBy || 'created_at:desc',
         limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
+        search: (req.query.search as any) || '',
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         populate: 'user_id',
       };

@@ -394,6 +394,7 @@ class JobController {
         sortBy: req.query.sortBy || 'date_applied:desc',
         limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
+        search: (req.query.search as any) || '',
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         populate: 'job_id,user_id',
       };
