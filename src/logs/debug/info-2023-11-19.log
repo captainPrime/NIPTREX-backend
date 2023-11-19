@@ -1,0 +1,76 @@
+2023-11-19 08:24:03 info: =================================
+2023-11-19 08:24:03 info: ======= ENV: development =======
+2023-11-19 08:24:03 info: 🚀 App listening on the port 3000
+2023-11-19 08:24:03 info: =================================
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:05 info: Connected to email server
+2023-11-19 08:24:11 info: Connected to Database Successfully...
+2023-11-19 08:24:35 info: Connected to email server
+2023-11-19 08:24:35 info: Connected to email server
+2023-11-19 08:25:02 info: [0mGET /service [32m200[0m 553.046 ms - -[0m
+2023-11-19 08:25:37 info: [0mGET /service?tools=Tool%201 [32m200[0m 329.229 ms - 179[0m
+2023-11-19 08:25:44 info: [0mGET /service?category=Web%20Development [32m200[0m 1151.808 ms - -[0m
+2023-11-19 08:35:07 info: [0mGET /service?headline=Professional%20Book%20Services [32m200[0m 563.228 ms - -[0m
+2023-11-19 08:40:45 info: =================================
+2023-11-19 08:40:45 info: ======= ENV: development =======
+2023-11-19 08:40:45 info: 🚀 App listening on the port 3000
+2023-11-19 08:40:45 info: =================================
+2023-11-19 08:40:48 info: Connected to email server
+2023-11-19 08:40:48 info: Connected to email server
+2023-11-19 08:40:48 info: Connected to email server
+2023-11-19 08:40:48 info: Connected to email server
+2023-11-19 08:40:48 info: Connected to email server
+2023-11-19 08:40:49 info: Connected to email server
+2023-11-19 08:40:49 info: Connected to email server
+2023-11-19 08:40:49 info: Connected to email server
+2023-11-19 08:41:00 info: Connected to Database Successfully...
+2023-11-19 08:41:04 info: [0mGET /service?title=Book%20Service%20Testing%202 [32m200[0m 601.632 ms - -[0m
+2023-11-19 08:41:18 info: Connected to email server
+2023-11-19 08:41:18 info: Connected to email server
+2023-11-19 08:41:18 info: Connected to email server
+2023-11-19 08:41:18 info: Connected to email server
+2023-11-19 08:42:19 info: Connected to email server
+2023-11-19 08:42:21 info: Connected to email server
+2023-11-19 08:43:17 info: [0mGET /service?search=Book%20Service%20Testing%202 [32m200[0m 107080.202 ms - -[0m
+2023-11-19 08:44:55 info: =================================
+2023-11-19 08:44:55 info: ======= ENV: development =======
+2023-11-19 08:44:55 info: 🚀 App listening on the port 3000
+2023-11-19 08:44:55 info: =================================
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:58 info: Connected to email server
+2023-11-19 08:44:59 info: Connected to Database Successfully...
+2023-11-19 08:45:04 info: [0mGET /service?search=Book%20Service%20Testing%202 [32m200[0m 715.838 ms - -[0m
+2023-11-19 08:45:28 info: Connected to email server
+2023-11-19 08:45:29 info: Connected to email server
+2023-11-19 08:45:29 info: Connected to email server
+2023-11-19 08:45:29 info: Connected to email server
+2023-11-19 08:45:29 info: Connected to email server
+2023-11-19 08:45:29 info: Connected to email server
+2023-11-19 08:45:30 info: Connected to email server
+2023-11-19 08:48:43 info: =================================
+2023-11-19 08:48:43 info: ======= ENV: development =======
+2023-11-19 08:48:43 info: 🚀 App listening on the port 3000
+2023-11-19 08:48:43 info: =================================
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server
+2023-11-19 08:48:46 info: Connected to email server

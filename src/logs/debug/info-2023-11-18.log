@@ -1,0 +1,68 @@
+2023-11-18 22:56:43 info: =================================
+2023-11-18 22:56:43 info: ======= ENV: development =======
+2023-11-18 22:56:43 info: 🚀 App listening on the port 3000
+2023-11-18 22:56:43 info: =================================
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:45 info: Connected to email server
+2023-11-18 22:56:47 info: Connected to email server
+2023-11-18 22:56:54 info: Connected to Database Successfully...
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:16 info: Connected to email server
+2023-11-18 22:57:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-18 22:57:21 info: [0mPOST /auth/login [32m200[0m 1089.368 ms - 587[0m
+2023-11-18 22:57:46 info: [0mGET /service?search=Luxenude [32m200[0m 860.324 ms - -[0m
+2023-11-18 22:58:18 info: [0mGET /job/getAllJobs?page=2&skip=2&limit=3 [32m200[0m 1193.494 ms - -[0m
+2023-11-18 22:58:50 info: [0mGET /job/getAllJobs?page=2&skip=2&limit=3&search=Softwqae%20Engnner [32m200[0m 969.975 ms - -[0m
+2023-11-18 23:03:17 info: =================================
+2023-11-18 23:03:17 info: ======= ENV: development =======
+2023-11-18 23:03:17 info: 🚀 App listening on the port 3000
+2023-11-18 23:03:17 info: =================================
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:22 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to email server
+2023-11-18 23:03:23 info: Connected to Database Successfully...
+2023-11-18 23:03:33 info: [0mGET /job/getAllJobs?page=2&skip=2&limit=3&search=Softwqae%20Engnner [32m200[0m 1084.727 ms - -[0m
+2023-11-18 23:04:02 info: [0mGET /job/getAllJobs?page=2&skip=2&limit=3&search=Softw [32m200[0m 1050.369 ms - -[0m
+2023-11-18 23:04:17 info: [0mGET /service?search=Luxenude [32m200[0m 909.544 ms - -[0m
+2023-11-18 23:04:30 info: [0mPOST /service [32m200[0m 558.674 ms - 947[0m
+2023-11-18 23:04:41 info: [0mGET /service?search=Book%20Service%20Testing [32m200[0m 641.965 ms - -[0m
+2023-11-18 23:07:34 info: =================================
+2023-11-18 23:07:34 info: ======= ENV: development =======
+2023-11-18 23:07:34 info: 🚀 App listening on the port 3000
+2023-11-18 23:07:34 info: =================================
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:37 info: Connected to email server
+2023-11-18 23:07:38 info: Connected to email server
+2023-11-18 23:07:38 info: Connected to Database Successfully...
+2023-11-18 23:07:44 info: [0mGET /service?search=Book%20Service%20Testing [32m200[0m 1169.794 ms - -[0m

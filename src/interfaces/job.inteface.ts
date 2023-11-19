@@ -5,6 +5,7 @@ export interface PaginationOptions {
   limit?: number;
   page?: number;
   populate?: string;
+  search?: string;
   projectBy?: unknown;
 }
 

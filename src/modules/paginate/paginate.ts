@@ -2,8 +2,8 @@
 import { Schema, Document } from 'mongoose';
 
 interface Pagination {
-  page: number;
-  limit: number;
+  page: any;
+  limit: any;
 }
 
 export interface QueryResult {
@@ -20,66 +20,55 @@ export interface IOptions {
   sortBy?: string;
   selectedFieldsToIncludeOrHide?: string;
   populate?: string;
-  limit?: number;
-  skip?: number;
-  page?: number;
+  search?: string;
+  limit?: any;
+  skip?: any;
+  page?: any;
 }
 
 const paginate = (schema: Schema) => {
-  /**
-   * @typedef {Object} QueryResult
-   * @property {Document[]} results - Results found
-   * @property {number} currentPage - Current page
-   * @property {number} limit - Maximum number of results per page
-   * @property {number} totalPages - Total number of pages
-   * @property {number} countOfFilteredDocuments - Total number of documents
-   * @property {Object} next - Pagination object for the next page
-   * @property {Object} prev - Pagination object for the previous page
-   */
-  /**
-   * Query for documents with pagination
-   * @param {Object} [filter] - Mongo filter
-   * @param {Object} [options] - Query options
-   * @param {string} [options.sortBy] - Sorting criteria using the format: sortField:(desc|asc). Multiple sorting criteria should be separated by commas (,) e.g. createdAt:desc,name:asc
-   * @param {string} [options.populate] - Populate data fields. Hierarchy of fields should be separated by (.). Multiple populating criteria should be separated by commas (,) e.g. user,posts.author
-   * @param {number} [options.limit] - Maximum number of results per page (default = 10)
-   * @param {number} [options.page] - Current page (default = 1)
-   * @param {string} [options.selectedFieldsToIncludeOrHide] - Fields to hide or include (default = '') e.g. password:hide,email:include,name:include,createdAt:include
-   * @returns {Promise<QueryResult>}
-   */
   schema.static('paginate', async function (filter: Record<string, any>, options: IOptions): Promise<QueryResult> {
-    let sort = '-created_at'; // Sort by newest created item by default
+    let sort = '-created_at';
 
     if (options.sortBy) {
-      const sortingCriteria: any = [];
-      options.sortBy.split(',').forEach((sortOption: string) => {
-        const [key, order] = sortOption.split(':');
-        sortingCriteria.push((order === 'desc' ? '-' : '') + key);
-      });
-      sort = sortingCriteria.join(' ');
+      sort = options.sortBy
+        .split(',')
+        .map((sortOption: string) => {
+          const [key, order] = sortOption.split(':');
+          return (order === 'desc' ? '-' : '') + key;
+        })
+        .join(' ');
     }
 
-    let select = '';
-    if (options.selectedFieldsToIncludeOrHide) {
-      const selectionCriteria: string[] = [];
-      options.selectedFieldsToIncludeOrHide.split(',').forEach((projectOption: string) => {
-        const [key, include] = projectOption.split(':');
-        selectionCriteria.push((include === 'hide' ? '-' : '') + key);
-      });
-      select = selectionCriteria.join(' ');
-    } else {
-      select = '-password -updatedAt';
+    if (options.search) {
+      const modelFields = Object.keys(this.schema.obj);
+      const searchValue = options.search.toLowerCase();
+
+      const orConditions = modelFields.map((field: string) => ({
+        [field]: { $regex: new RegExp(searchValue, 'i') },
+      }));
+
+      filter = { $or: orConditions };
     }
 
-    const skipValue = (options.skip && parseInt(options.skip.toString(), 10)) ?? 1;
-    const limit = options.limit && parseInt(options.limit.toString(), 10) > 0 ? parseInt(options.limit.toString(), 10) : 2; // Default limit = 10
-    const page = options.page && parseInt(options.page.toString(), 10) > 0 ? parseInt(options.page.toString(), 10) : 1; // Default page number = 1
-    const skip = (page - skipValue) * limit; // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
+    const select = options.selectedFieldsToIncludeOrHide
+      ? options.selectedFieldsToIncludeOrHide
+          .split(',')
+          .map((projectOption: string) => {
+            const [key, include] = projectOption.split(':');
+            return (include === 'hide' ? '-' : '') + key;
+          })
+          .join(' ')
+      : '-password -updatedAt';
+
+    const skipValue = parseInt(options.skip?.toString(), 10) ?? 1;
+    const limit = Math.max(parseInt(options.limit?.toString(), 10) || 2, 1);
+    const page = Math.max(parseInt(options.page?.toString(), 10) || 1, 1);
+    const skip = (page - skipValue) * limit;
     const startIndex = skip;
     const endIndex = page * limit;
 
     const countPromise = this.countDocuments(filter).exec();
-    // OR const count = await this.countDocuments(filter);
     let documentsPromise = this.find(filter).sort(sort).skip(skip).limit(limit).select(select);
 
     if (options.populate) {
@@ -93,7 +82,6 @@ const paginate = (schema: Schema) => {
       });
     }
 
-    // Execute when the logic is done for populating
     documentsPromise = documentsPromise.exec();
 
     return Promise.all([countPromise, documentsPromise])
@@ -105,19 +93,13 @@ const paginate = (schema: Schema) => {
         let prev: Pagination | undefined;
 
         if (endIndex < countOfFilteredDocuments) {
-          next = {
-            page: page + 1,
-            limit,
-          };
+          next = { page: page + 1, limit };
         }
         if (startIndex > 0 && page <= totalPages) {
-          prev = {
-            page: page - 1,
-            limit,
-          };
+          prev = { page: page - 1, limit };
         }
 
-        const result = {
+        return {
           results,
           currentPage,
           limit,
@@ -127,7 +109,6 @@ const paginate = (schema: Schema) => {
           next,
           prev,
         };
-        return Promise.resolve(result);
       })
       .catch(err => Promise.reject(err));
   });
