@@ -1,5 +1,6 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable no-param-reassign */
-import { Schema, Document } from 'mongoose';
+import { Schema, Document, Types } from 'mongoose';
 
 interface Pagination {
   page: any;
@@ -41,12 +42,24 @@ const paginate = (schema: Schema) => {
     }
 
     if (options.search) {
-      const modelFields = Object.keys(this.schema.obj);
+      const searchFields = Object.keys(this.schema.obj);
       const searchValue = options.search.toLowerCase();
 
-      const orConditions = modelFields.map((field: string) => ({
-        [field]: { $regex: new RegExp(searchValue, 'i') },
-      }));
+      const orConditions = searchFields
+        .map((field: string) => {
+          if (this.schema.paths[field]?.instance === 'ObjectID') {
+            return Types.ObjectId.isValid(searchValue) ? { [field]: new Types.ObjectId(searchValue) } : null;
+          }
+
+          if (this.schema.paths[field]?.instance === 'Number') {
+            return Number.isNaN(Number(searchValue)) ? null : { [field]: Number(searchValue) };
+          }
+
+          return {
+            [field]: new RegExp(searchValue, 'i'),
+          };
+        })
+        .filter(condition => condition !== null);
 
       filter = { $or: orConditions };
     }

@@ -1414,3 +1414,19 @@ Error: Channel closed
     at Module.require (node:internal/modules/cjs/loader:1100:19)
     at require (node:internal/modules/cjs/helpers:108:18)
     at Object.getCodec (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/iconv-lite/lib/index.js:65:27)
+2023-11-19 09:04:51 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/modules/paginate/paginate.ts(129,4): error TS1128: Declaration or statement expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/modules/paginate/paginate.ts(129,4): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (/Users/olashina/Documents/workspace/NIPTREX-backend/src/modules/paginate/paginate.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5550912375343535.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5550912375343535.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/7y/g7wt7_g17x58s0b1kmllks7m0000gn/T/ts-node-dev-hook-5550912375343535.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
