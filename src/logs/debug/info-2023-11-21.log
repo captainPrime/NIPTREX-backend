@@ -18,3 +18,37 @@
 2023-11-21 14:13:50 info: Connected to email server
 2023-11-21 14:13:53 info: Connected to Database Successfully...
 2023-11-21 14:17:00 info: [0mGET /photography [32m200[0m 3056.249 ms - -[0m
+2023-11-21 14:19:29 info: =================================
+2023-11-21 14:19:29 info: ======= ENV: development =======
+2023-11-21 14:19:29 info: 🚀 App listening on the port 3000
+2023-11-21 14:19:29 info: =================================
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:31 info: Connected to email server
+2023-11-21 14:19:32 info: Connected to Database Successfully...
+2023-11-21 14:19:38 info: [0mGET /photography [32m200[0m 715.607 ms - -[0m
+2023-11-21 14:20:19 info: [0mGET /photography?limit=7&skip=7 [32m200[0m 519.970 ms - -[0m
+2023-11-21 14:21:25 info: [0mGET /photography?limit=7&skip=2 [32m200[0m 751.163 ms - -[0m
+2023-11-21 14:21:49 info: [0mGET /photography?limit=10 [32m200[0m 679.025 ms - -[0m
+2023-11-21 14:22:04 info: [0mGET /photography?limit=10&page=1 [32m200[0m 432.520 ms - -[0m
+2023-11-21 14:22:09 info: [0mGET /photography?limit=10&page=2 [32m200[0m 535.481 ms - -[0m
+2023-11-21 14:23:02 info: [0mGET /photography?limit=10 [32m200[0m 778.072 ms - -[0m
+2023-11-21 14:24:24 info: [0mGET /photography?limit=10&page=2 [32m200[0m 426.780 ms - -[0m
+2023-11-21 14:25:09 info: [0mGET /photography?limit=12 [32m200[0m 472.351 ms - -[0m
+2023-11-21 14:25:59 info: [0mGET /photography?limit=12&page=2 [32m200[0m 6244.003 ms - -[0m
+2023-11-21 14:28:20 info: [0mGET /service?search=Providing%20high-quality%20book%20service [32m200[0m 3165.482 ms - -[0m
+2023-11-21 14:29:05 info: [0mGET /service?category=Web%20Development [32m200[0m 693.333 ms - -[0m
+2023-11-21 14:29:33 info: [0mGET /service?category=Mobile%20App%20Development [32m200[0m 667.951 ms - -[0m
+2023-11-21 14:30:02 info: [0mGET /service?category=Mobile%20App%20Development&limit=12 [32m200[0m 571.647 ms - -[0m
+2023-11-21 14:30:32 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2 [32m200[0m 418.828 ms - -[0m
