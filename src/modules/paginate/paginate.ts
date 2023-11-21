@@ -74,10 +74,9 @@ const paginate = (schema: Schema) => {
           .join(' ')
       : '-password -updatedAt';
 
-    const skipValue = parseInt(options.skip?.toString(), 10) ?? 1;
     const limit = Math.max(parseInt(options.limit?.toString(), 10) || 2, 1);
     const page = Math.max(parseInt(options.page?.toString(), 10) || 1, 1);
-    const skip = (page - skipValue) * limit;
+    const skip = (page - 1) * limit;
     const startIndex = skip;
     const endIndex = page * limit;
 
