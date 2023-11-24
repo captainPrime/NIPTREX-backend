@@ -153,7 +153,16 @@ class JobService {
       }),
     );
 
-    return updatedData;
+    return {
+      results: updatedData,
+      currentPage: data.currentPage,
+      limit: data.limit,
+      totalPages: data.totalPages,
+      countOfFilteredDocuments: data.countOfFilteredDocuments,
+      skip: data.skip,
+      next: data.next,
+      prev: data.prev,
+    };
   }
 
   /*
@@ -184,7 +193,16 @@ class JobService {
       }),
     );
 
-    return updatedData;
+    return {
+      results: updatedData,
+      currentPage: data.currentPage,
+      limit: data.limit,
+      totalPages: data.totalPages,
+      countOfFilteredDocuments: data.countOfFilteredDocuments,
+      skip: data.skip,
+      next: data.next,
+      prev: data.prev,
+    };
   }
 
   /*
@@ -213,7 +231,17 @@ class JobService {
         }),
       );
 
-      return updatedData;
+      console.log(data.next);
+      return {
+        results: updatedData,
+        currentPage: data.currentPage,
+        limit: data.limit,
+        totalPages: data.totalPages,
+        countOfFilteredDocuments: data.countOfFilteredDocuments,
+        skip: data.skip,
+        next: data.next,
+        prev: data.prev,
+      };
     } catch (error: any) {
       throw new HttpException(400, 2002, error);
     }
@@ -364,7 +392,16 @@ class JobService {
       };
     });
 
-    return updatedData;
+    return {
+      results: updatedData,
+      currentPage: data.currentPage,
+      limit: data.limit,
+      totalPages: data.totalPages,
+      countOfFilteredDocuments: data.countOfFilteredDocuments,
+      skip: data.skip,
+      next: data.next,
+      prev: data.prev,
+    };
   }
 
   /*
