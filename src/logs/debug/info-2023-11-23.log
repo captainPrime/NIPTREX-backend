@@ -1,0 +1,60 @@
+2023-11-23 16:55:46 info: =================================
+2023-11-23 16:55:46 info: ======= ENV: development =======
+2023-11-23 16:55:46 info: 🚀 App listening on the port 3000
+2023-11-23 16:55:46 info: =================================
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:47 info: Connected to email server
+2023-11-23 16:55:48 info: Connected to Database Successfully...
+2023-11-23 16:55:48 info: Connected to email server
+2023-11-23 16:55:48 info: Connected to email server
+2023-11-23 16:56:18 info: Connected to email server
+2023-11-23 16:56:41 info: =================================
+2023-11-23 16:56:41 info: ======= ENV: development =======
+2023-11-23 16:56:41 info: 🚀 App listening on the port 3000
+2023-11-23 16:56:41 info: =================================
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:43 info: Connected to email server
+2023-11-23 16:56:44 info: Connected to Database Successfully...
+2023-11-23 16:57:16 info: [0mGET /job/getAllJobs [32m200[0m 853.856 ms - -[0m
+2023-11-23 16:57:39 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2 [32m200[0m 402.283 ms - -[0m
+2023-11-23 16:59:03 info: =================================
+2023-11-23 16:59:03 info: ======= ENV: development =======
+2023-11-23 16:59:03 info: 🚀 App listening on the port 3000
+2023-11-23 16:59:03 info: =================================
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:05 info: Connected to Database Successfully...
+2023-11-23 16:59:05 info: Connected to email server
+2023-11-23 16:59:11 info: [0mGET /job/getAllJobs [32m200[0m 1087.755 ms - -[0m
+2023-11-23 17:02:38 info: [0mGET /job/getAllJobs?limit=3 [32m200[0m 2012.674 ms - -[0m
