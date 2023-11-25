@@ -1,0 +1,2 @@
+2023-11-26 00:34:00 error: [POST] /config >> StatusCode:: 400, Message:: CONFIG_VALIDATION_ERROR
+2023-11-26 00:36:48 error: [GET] /config/656284924f4b9a3925d17809 >> StatusCode:: 404, Message:: The requested path /config/656284924f4b9a3925d17809 not found!

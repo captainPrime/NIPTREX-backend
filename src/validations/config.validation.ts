@@ -6,7 +6,7 @@ import Joi from 'joi';
 |--------------------------------------------------------------------------
 */
 export const configSchemaValidation = Joi.object({
-  key: Joi.object().required(),
+  key: Joi.string().required(),
   value: Joi.string().required(),
 });
 

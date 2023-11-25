@@ -36,3 +36,53 @@
 2023-11-26 00:32:33 info: Connected to email server
 2023-11-26 00:32:33 info: Connected to email server
 2023-11-26 00:32:34 info: Connected to email server
+2023-11-26 00:33:07 info: =================================
+2023-11-26 00:33:07 info: ======= ENV: development =======
+2023-11-26 00:33:07 info: 🚀 App listening on the port 3000
+2023-11-26 00:33:07 info: =================================
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:09 info: Connected to Database Successfully...
+2023-11-26 00:33:09 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:33:39 info: Connected to email server
+2023-11-26 00:34:00 error: [POST] /config >> StatusCode:: 400, Message:: CONFIG_VALIDATION_ERROR
+2023-11-26 00:34:00 info: [0mPOST /config [32m200[0m 37.274 ms - 113[0m
+2023-11-26 00:34:26 info: =================================
+2023-11-26 00:34:26 info: ======= ENV: development =======
+2023-11-26 00:34:26 info: 🚀 App listening on the port 3000
+2023-11-26 00:34:26 info: =================================
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:29 info: Connected to email server
+2023-11-26 00:34:30 info: Connected to Database Successfully...
+2023-11-26 00:34:43 info: [0mPOST /config [32m200[0m 287.064 ms - 142[0m
+2023-11-26 00:34:58 info: Connected to email server
+2023-11-26 00:34:59 info: Connected to email server
+2023-11-26 00:34:59 info: Connected to email server
+2023-11-26 00:34:59 info: Connected to email server
+2023-11-26 00:34:59 info: Connected to email server
+2023-11-26 00:34:59 info: Connected to email server
+2023-11-26 00:35:17 info: [0mGET /config [32m200[0m 244.952 ms - 144[0m
+2023-11-26 00:35:26 info: [0mGET /config [32m200[0m 706.132 ms - 144[0m
+2023-11-26 00:35:51 info: [0mPUT /config/656284924f4b9a3925d17809 [32m200[0m 568.278 ms - 149[0m
+2023-11-26 00:35:57 info: [0mGET /config [32m200[0m 218.231 ms - 151[0m
+2023-11-26 00:36:48 error: [GET] /config/656284924f4b9a3925d17809 >> StatusCode:: 404, Message:: The requested path /config/656284924f4b9a3925d17809 not found!
+2023-11-26 00:36:48 info: [0mGET /config/656284924f4b9a3925d17809 [32m200[0m 1.860 ms - 120[0m
+2023-11-26 00:37:04 info: [0mGET /config/getConfigById/656284924f4b9a3925d17809 [32m200[0m 217.911 ms - 149[0m
+2023-11-26 00:37:31 info: [0mDELETE /config/656284924f4b9a3925d17809 [32m200[0m 237.167 ms - 149[0m
+2023-11-26 00:37:35 info: [0mGET /config [32m200[0m 227.002 ms - 83[0m
