@@ -1,33 +1,33 @@
 import { NextFunction, Request, Response } from 'express';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
-import { IUpdatePreference } from '@/interfaces/profile.interface';
-import PreferenceService from '@/services/preference.service';
+import ConfigService from '@/services/config.service';
+import { IUpdateConfig } from '@/models/config.model';
 
 class ConfigController {
   public userService = new UserService();
-  public preferenceService = new PreferenceService();
+  public configServicee = new ConfigService();
 
   /*
   |--------------------------------------------------------------------------
-  | Create Preference
+  | Create Config
   |--------------------------------------------------------------------------
   */
-  public createPreference = async (req: Request, res: Response, next: NextFunction) => {
+  public createConfig = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userData = req.body;
-      const user: any = await this.userService.findUserById(req.user.id);
+      //   const user: any = await this.userService.findUserById(req.user.id);
 
-      if (!user.verified) {
-        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
-      }
+      //   if (!user.verified) {
+      //     throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
+      //   }
 
-      const preference = await this.preferenceService.getUserPreference(req.user.id);
-      if (preference.length !== 0) throw new HttpException(400, 5002, 'WORK_PREFERENCE_ALREAD_ADDED');
+      //   const config = await this.configService.getUserConfig(req.user.id);
+      //   if (config.length !== 0) throw new HttpException(400, 5002, 'WORK_Config_ALREAD_ADDED');
 
-      const data = await this.preferenceService.createPreference({ ...userData, user_id: req.user.id });
+      const data = await this.configService.createConfig(userData);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -35,10 +35,10 @@ class ConfigController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get User Preference
+  | Get User Config
   |--------------------------------------------------------------------------
   */
-  public getUserPreference = async (req: Request, res: Response, next: NextFunction) => {
+  public getAllConfig = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const user: any = await this.userService.findUserById(req.user.id);
 
@@ -46,9 +46,9 @@ class ConfigController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.preferenceService.getUserPreference(req.user.id);
+      const data = await this.configService.getAllConfig(req.user.id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -56,15 +56,15 @@ class ConfigController {
 
   /*
   |--------------------------------------------------------------------------
-  | Get Preference By Id
+  | Get Config By Id
   |--------------------------------------------------------------------------
   */
-  public getPreferenceById = async (req: Request, res: Response, next: NextFunction) => {
+  public getConfigById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.preferenceService.getPreferenceById(id);
+      const data = await this.configService.getConfigById(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -72,15 +72,15 @@ class ConfigController {
 
   /*
   |--------------------------------------------------------------------------
-  | Update Preference
+  | Update Config
   |--------------------------------------------------------------------------
   */
-  public updatePreference = async (req: Request, res: Response, next: NextFunction) => {
+  public updateConfig = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const body: IUpdatePreference = req.body;
-      const data = await this.preferenceService.updatePreferenceById(req.user.id, body);
+      const body: IUpdateConfig = req.body;
+      const data = await this.configService.updateConfigById(req.params.id, body);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
@@ -88,15 +88,15 @@ class ConfigController {
 
   /*
   |--------------------------------------------------------------------------
-  | Delete Preference
+  | Delete Config
   |--------------------------------------------------------------------------
   */
-  public deletePreference = async (req: Request, res: Response, next: NextFunction) => {
+  public deleteConfig = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const id: string = req.params.id;
-      const data = await this.preferenceService.deletePreference(id);
+      const data = await this.configService.deleteConfig(id);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'PROFILE_REQUEST_SUCCESSFUL', data });
+      res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
       next(error);
     }
