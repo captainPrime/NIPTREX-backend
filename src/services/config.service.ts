@@ -2,7 +2,7 @@ import { HttpException } from '@exceptions/HttpException';
 import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { Config, IConfig } from '@/models/config.model';
+import { Config, IConfig, IUpdateConfig } from '@/models/config.model';
 import { configSchemaValidation, configUpdateValidation } from '@/validations/config.validation';
 
 class ConfigService {
@@ -31,25 +31,25 @@ class ConfigService {
   | Get User Config
   |--------------------------------------------------------------------------
   */
-  public async getUserPreference(userId: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
+  //   public async getUserPreference(userId: mongoose.Types.ObjectId | string): Promise<any> {
+  //     if (isEmpty(userId)) throw new HttpException(400, 2001, 'User id can not be empty');
 
-    const data = await this.Config.find({ user_id: userId });
-    if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');
+  //     const data = await this.Config.find({ user_id: userId });
+  //     if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');
 
-    return data;
-  }
+  //     return data;
+  //   }
 
   /*
   |--------------------------------------------------------------------------
   | Get Config By Id
   |--------------------------------------------------------------------------
   */
-  public async getPreferenceById(id: mongoose.Types.ObjectId | string): Promise<any> {
+  public async getConfigById(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.Config.findOne({ _id: id });
-    if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');
+    const data = await this.config.findOne({ _id: id });
+    if (!data) throw new HttpException(400, 9004, 'CONFIG_NOT_FOUND');
 
     return data;
   }
@@ -59,21 +59,21 @@ class ConfigService {
   | Update Config By Id
   |--------------------------------------------------------------------------
   */
-  public async updatePreferenceById(id: mongoose.Types.ObjectId | string, body: IUpdatePreference): Promise<any> {
+  public async updateConfigById(id: mongoose.Types.ObjectId | string, body: IUpdateConfig): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const { error } = workPreferenceUpdateSchema.validate(body);
+    const { error } = configUpdateValidation.validate(body);
 
-    if (error) throw new HttpException(400, 2002, 'PROFILE_VALIDATION_ERROR', [error.details[0].message]);
+    if (error) throw new HttpException(400, 9002, 'CONFIG_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.Config.findOne({ user_id: id });
+    const data = await this.config.findOne({ _id: id });
     if (!data) throw new HttpException(400, 2002, 'PREFERENCE_NOT_FOUND');
 
-    const updatedData = await this.Config.findByIdAndUpdate(data._id, body, {
+    const updatedData = await this.config.findByIdAndUpdate(data._id, body, {
       new: true,
     });
 
-    if (!updatedData) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+    if (!updatedData) throw new HttpException(400, 9009, 'CONFIG_REQUEST_ERROR');
 
     return updatedData;
   }
@@ -86,8 +86,8 @@ class ConfigService {
   public async deleteConfig(id: mongoose.Types.ObjectId | string): Promise<any> {
     if (isEmpty(id)) throw new HttpException(400, 2001, 'id can not be empty');
 
-    const data = await this.Config.findByIdAndDelete(id);
-    if (!data) throw new HttpException(400, 2009, 'PROFILE_REQUEST_ERROR');
+    const data = await this.config.findByIdAndDelete(id);
+    if (!data) throw new HttpException(400, 9009, 'CONFIG_REQUEST_ERROR');
 
     return data;
   }
