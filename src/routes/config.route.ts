@@ -2,26 +2,24 @@ import { Router } from 'express';
 
 import { Routes } from '@interfaces/routes.interface';
 import authMiddleware from '@/middlewares/auth.middleware';
-import PhotographyController from '@/controllers/photography.controller';
-import { upload } from '@/utils/multerConfig';
+import ConfigController from '@/controllers/config.controller';
 
 class ConfigRoute implements Routes {
-  public path = '/photography';
+  public path = '/config';
   public router = Router();
-  public photographyController = new PhotographyController();
+  public configController = new ConfigController();
 
   constructor() {
     this.initializeRoutes();
   }
 
   private initializeRoutes() {
-    this.router.post(`${this.path}`, authMiddleware(['freelancer', 'client']), upload.single('image'), this.photographyController.createPhotography);
-    this.router.get(`${this.path}`, this.photographyController.getAllPhotography);
-    this.router.get(`${this.path}/getPhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.getPhotographyById);
-    this.router.delete(`${this.path}/deletePhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.deletePhotography);
-    // this.router.put(`${this.path}/updateInvoice/:id`, authMiddleware(['freelancer']), this.photographyController.updatePhotography);
-    this.router.get(`${this.path}/getUserPhotography`, authMiddleware(['freelancer']), this.photographyController.getUserPhotography);
+    this.router.post(`${this.path}`, this.configController.createConfig);
+    this.router.get(`${this.path}`, this.configController.getAllConfig);
+    this.router.get(`${this.path}/getConfigById/:id`, this.configController.getConfigById);
+    this.router.delete(`${this.path}/:id`, this.configController.deleteConfig);
+    this.router.put(`${this.path}/:id`, this.configController.updateConfig);
   }
 }
 
-export default PhotographyRoute;
+export default ConfigRoute;
