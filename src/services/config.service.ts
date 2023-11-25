@@ -3,7 +3,7 @@ import { isEmpty } from '@utils/util';
 import UserService from './users.service';
 import mongoose from 'mongoose';
 import { Config, IConfig } from '@/models/config.model';
-import { workPreferenceSchema, workPreferenceUpdateSchema } from '@/validations/profile.validation';
+import { configSchemaValidation, configUpdateValidation } from '@/validations/config.validation';
 
 class ConfigService {
   public config: any = Config;
@@ -14,16 +14,14 @@ class ConfigService {
   | Create Config
   |--------------------------------------------------------------------------
   */
-  public async createPreference(body: IConfig): Promise<any> {
+  public async createConfig(body: IConfig): Promise<any> {
     if (isEmpty(body)) throw new HttpException(400, 2005, "You're not userData");
 
-    const { error } = workPreferenceSchema.validate(body);
+    const { error } = configSchemaValidation.validate(body);
 
     if (error) throw new HttpException(400, 9002, 'CONFIG_VALIDATION_ERROR', [error.details[0].message]);
 
     const data: any = await this.config.create(body);
-
-    await this.userService.updateUser(data.user_id, { has_work_preference: true });
 
     return data;
   }
