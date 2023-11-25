@@ -61,10 +61,10 @@ class ServiceService {
   | Get Service by ID
   |--------------------------------------------------------------------------
   */
-  public async getServiceByUserId(id: mongoose.Types.ObjectId | string): Promise<IService[] | null> {
-    if (isEmpty(id)) throw new HttpException(400, 2001, 'ID cannot be empty');
+  public async getServiceByUserId(options: PaginationOptions, filter: string): Promise<IService[] | null> {
+    // if (isEmpty(filter)) throw new HttpException(400, 2001, 'ID cannot be empty');
 
-    const data: IService[] | null = await this.service.find({ user_id: id });
+    const data: IService[] | null = await this.service.paginate(filter, options);
     if (!data) throw new HttpException(400, 2002, 'SERVICE_NOT_FOUND');
 
     return data;
