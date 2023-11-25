@@ -1,0 +1,69 @@
+2023-11-25 23:44:18 info: =================================
+2023-11-25 23:44:18 info: ======= ENV: development =======
+2023-11-25 23:44:18 info: 🚀 App listening on the port 3000
+2023-11-25 23:44:18 info: =================================
+2023-11-25 23:44:24 info: Connected to email server
+2023-11-25 23:44:26 info: Connected to email server
+2023-11-25 23:44:26 info: Connected to email server
+2023-11-25 23:44:26 info: Connected to email server
+2023-11-25 23:44:26 info: Connected to email server
+2023-11-25 23:44:27 info: Connected to Database Successfully...
+2023-11-25 23:44:28 info: Connected to email server
+2023-11-25 23:44:28 info: Connected to email server
+2023-11-25 23:44:28 info: Connected to email server
+2023-11-25 23:44:29 info: Connected to email server
+2023-11-25 23:44:29 info: Connected to email server
+2023-11-25 23:44:30 info: Connected to email server
+2023-11-25 23:44:31 info: Connected to email server
+2023-11-25 23:44:32 info: Connected to email server
+2023-11-25 23:44:32 info: Connected to email server
+2023-11-25 23:46:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-11-25 23:46:35 info: [0mPOST /auth/login [32m200[0m 339.701 ms - 85[0m
+2023-11-25 23:48:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-25 23:48:22 info: [0mPOST /auth/login [32m200[0m 1540.484 ms - 587[0m
+2023-11-25 23:48:27 info: [0mGET /photography?limit=10&search [32m200[0m 648.928 ms - -[0m
+2023-11-25 23:48:49 info: [0mGET /photography/getUserPhotography [32m200[0m 1201.397 ms - -[0m
+2023-11-25 23:50:37 info: [0mGET /photography/getUserPhotography [32m200[0m 919.202 ms - -[0m
+2023-11-25 23:50:56 info: =================================
+2023-11-25 23:50:56 info: ======= ENV: development =======
+2023-11-25 23:50:56 info: 🚀 App listening on the port 3000
+2023-11-25 23:50:56 info: =================================
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:50:59 info: Connected to email server
+2023-11-25 23:51:00 info: Connected to Database Successfully...
+2023-11-25 23:51:05 error: [GET] /photography/getUserPhotography >> StatusCode:: 400, Message:: options.search.toLowerCase is not a function
+2023-11-25 23:51:05 info: [0mGET /photography/getUserPhotography [32m200[0m 693.980 ms - 101[0m
+2023-11-25 23:51:23 error: [GET] /photography/getUserPhotography >> StatusCode:: 400, Message:: options.search.toLowerCase is not a function
+2023-11-25 23:51:23 info: [0mGET /photography/getUserPhotography [32m200[0m 704.057 ms - 101[0m
+2023-11-25 23:52:13 info: =================================
+2023-11-25 23:52:13 info: ======= ENV: development =======
+2023-11-25 23:52:13 info: 🚀 App listening on the port 3000
+2023-11-25 23:52:13 info: =================================
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to email server
+2023-11-25 23:52:15 info: Connected to Database Successfully...
+2023-11-25 23:52:20 info: [0mGET /photography/getUserPhotography [32m200[0m 769.804 ms - -[0m

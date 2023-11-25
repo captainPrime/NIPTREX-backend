@@ -1,0 +1,4 @@
+2023-11-25 23:46:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2023-11-25 23:48:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-25 23:51:05 error: [GET] /photography/getUserPhotography >> StatusCode:: 400, Message:: options.search.toLowerCase is not a function
+2023-11-25 23:51:23 error: [GET] /photography/getUserPhotography >> StatusCode:: 400, Message:: options.search.toLowerCase is not a function

@@ -67,7 +67,6 @@ class ServiceController {
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         search: (req.query.search as any) || '',
-        populate: 'user_id.first_name.last_name.profile_picture',
       };
 
       const filter = { user_id: id };

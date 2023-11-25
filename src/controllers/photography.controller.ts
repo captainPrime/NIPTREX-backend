@@ -116,7 +116,17 @@ class PhotographyController {
         throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
       }
 
-      const data = await this.photographyService.getUserPhotography(userId);
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'created_at:desc',
+        limit: parseInt(req.query.limit as string, 10) || 10,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        search: (req.query.search as any) || '',
+      };
+
+      const filter = { user_id: userId };
+
+      const data = await this.photographyService.getUserPhotography(options, filter);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });
     } catch (error) {

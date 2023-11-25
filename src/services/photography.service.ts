@@ -27,10 +27,10 @@ class PhotographyService {
   | Get User Photography
   |--------------------------------------------------------------------------
   */
-  public async getUserPhotography(userId: mongoose.Types.ObjectId | string): Promise<any> {
-    if (isEmpty(userId)) throw new HttpException(400, 9001, 'User id can not be empty');
+  public async getUserPhotography(options: PaginationOptions, filter: string): Promise<any> {
+    // if (isEmpty(userId)) throw new HttpException(400, 9001, 'User id can not be empty');
 
-    const data = await this.photography.find({ user_id: userId });
+    const data = await this.photography.paginate(filter, options);
     if (!data) throw new HttpException(400, 9003, 'PHOTOGRAPHY_NOT_FOUND');
 
     return data;
