@@ -6,7 +6,7 @@ import { IUpdateConfig } from '@/models/config.model';
 
 class ConfigController {
   public userService = new UserService();
-  public configServicee = new ConfigService();
+  public configService = new ConfigService();
 
   /*
   |--------------------------------------------------------------------------
@@ -40,13 +40,7 @@ class ConfigController {
   */
   public getAllConfig = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const user: any = await this.userService.findUserById(req.user.id);
-
-      if (!user.verified) {
-        throw new HttpException(400, 1004, 'ACCOUNT_NOT_VERIFIED');
-      }
-
-      const data = await this.configService.getAllConfig(req.user.id);
+      const data = await this.configService.getAllConfig();
 
       res.status(200).json({ status: 200, response_code: 9000, message: 'CONFIG_REQUEST_SUCCESSFUL', data });
     } catch (error) {
