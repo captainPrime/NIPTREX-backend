@@ -67,3 +67,27 @@
 2023-11-25 23:52:15 info: Connected to email server
 2023-11-25 23:52:15 info: Connected to Database Successfully...
 2023-11-25 23:52:20 info: [0mGET /photography/getUserPhotography [32m200[0m 769.804 ms - -[0m
+2023-11-25 23:54:49 info: [0mGET /job/getAllJobs [32m200[0m 1202.777 ms - -[0m
+2023-11-25 23:56:19 info: [0mGET /job/getAllJobs?search=fvee [32m200[0m 1597.088 ms - -[0m
+2023-11-25 23:56:31 info: [0mGET /job/getAllJobs?search=fv [32m200[0m 1333.043 ms - -[0m
+2023-11-25 23:57:03 info: =================================
+2023-11-25 23:57:03 info: ======= ENV: development =======
+2023-11-25 23:57:03 info: 🚀 App listening on the port 3000
+2023-11-25 23:57:03 info: =================================
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:06 info: Connected to Database Successfully...
+2023-11-25 23:57:06 info: Connected to email server
+2023-11-25 23:57:13 info: [0mGET /job/getAllJobs?search=fv [32m200[0m 1860.298 ms - -[0m
+2023-11-25 23:57:26 info: [0mGET /job/getAllJobs?search=Front%20End [32m200[0m 1031.196 ms - -[0m
