@@ -13,6 +13,7 @@ import ServiceRoute from './routes/service.route';
 import RatingRoute from './routes/rating.route';
 import InvoiceRoute from './routes/invoice.route';
 import PhotographyRoute from './routes/photography.route';
+import ConfigRoute from './routes/config.route';
 
 validateEnv();
 
@@ -29,6 +30,7 @@ const app = new App([
   new RatingRoute(),
   new InvoiceRoute(),
   new PhotographyRoute(),
+  new ConfigRoute(),
 ]);
 
 app.listen();

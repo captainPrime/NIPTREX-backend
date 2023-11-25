@@ -1,7 +1,6 @@
 import { Router } from 'express';
 
 import { Routes } from '@interfaces/routes.interface';
-import authMiddleware from '@/middlewares/auth.middleware';
 import ConfigController from '@/controllers/config.controller';
 
 class ConfigRoute implements Routes {
