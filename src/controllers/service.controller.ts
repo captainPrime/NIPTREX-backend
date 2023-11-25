@@ -71,7 +71,7 @@ class ServiceController {
 
       const filter = { user_id: id };
 
-      const data: IService[] | null = await this.serviceService.getServiceByUserId(filter, options);
+      const data: IService[] | null = await this.serviceService.getServiceByUserId(options, filter);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -88,7 +88,17 @@ class ServiceController {
     try {
       const id: string = req.user.id;
 
-      const data: IService[] | null = await this.serviceService.getServiceByUserId(id);
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'created_at:desc',
+        limit: parseInt(req.query.limit as string, 10) || 10,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+        search: (req.query.search as any) || '',
+      };
+
+      const filter = { user_id: id };
+
+      const data: IService[] | null = await this.serviceService.getServiceByUserId(options, filter);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
     } catch (error) {

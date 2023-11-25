@@ -61,7 +61,7 @@ class ServiceService {
   | Get Service by ID
   |--------------------------------------------------------------------------
   */
-  public async getServiceByUserId(options: PaginationOptions, filter: string): Promise<IService[] | null> {
+  public async getServiceByUserId(options: PaginationOptions, filter: any): Promise<IService[] | null> {
     // if (isEmpty(filter)) throw new HttpException(400, 2001, 'ID cannot be empty');
 
     const data: IService[] | null = await this.service.paginate(filter, options);
