@@ -86,3 +86,22 @@
 2023-11-26 00:37:04 info: [0mGET /config/getConfigById/656284924f4b9a3925d17809 [32m200[0m 217.911 ms - 149[0m
 2023-11-26 00:37:31 info: [0mDELETE /config/656284924f4b9a3925d17809 [32m200[0m 237.167 ms - 149[0m
 2023-11-26 00:37:35 info: [0mGET /config [32m200[0m 227.002 ms - 83[0m
+2023-11-26 22:34:18 info: =================================
+2023-11-26 22:34:18 info: ======= ENV: development =======
+2023-11-26 22:34:18 info: 🚀 App listening on the port 3000
+2023-11-26 22:34:18 info: =================================
+2023-11-26 22:34:26 info: Connected to email server
+2023-11-26 22:34:26 info: Connected to email server
+2023-11-26 22:34:26 info: Connected to email server
+2023-11-26 22:34:26 info: Connected to email server
+2023-11-26 22:34:31 info: Connected to email server
+2023-11-26 22:34:32 info: Connected to email server
+2023-11-26 22:34:32 info: Connected to Database Successfully...
+2023-11-26 22:34:33 info: Connected to email server
+2023-11-26 22:34:33 info: Connected to email server
+2023-11-26 22:34:33 info: Connected to email server
+2023-11-26 22:34:34 info: Connected to email server
+2023-11-26 22:34:52 info: Connected to email server
+2023-11-26 22:34:52 info: Connected to email server
+2023-11-26 22:34:52 info: Connected to email server
+2023-11-26 22:34:53 info: Connected to email server

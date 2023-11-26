@@ -2,6 +2,7 @@
 import { BiddingModel } from '@/models/bid.model';
 import { ChatModel, MessageModel } from '@/models/chat.model';
 import { Hire, JobModel, SavedJob } from '@/models/job.model';
+import { Photography } from '@/models/photography.model';
 import { About, Billing, Identity, Education, Experience, Preference, Certification } from '@/models/profile.model';
 import { RatingModel } from '@/models/rating.model';
 import { ServiceModel, ServiceProposalModel } from '@/models/service.models';
@@ -27,6 +28,7 @@ class IndexController {
   public certification: any = Certification;
   public service: any = ServiceModel;
   public serviceProposal: any = ServiceProposalModel;
+  public photography: any = Photography;
 
   public index = (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -43,23 +45,24 @@ class IndexController {
 
   public reloadDb = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      await this.users.deleteMany({});
-      await this.about.deleteMany({});
-      await this.billing.deleteMany({});
-      await this.identity.deleteMany({});
-      await this.education.deleteMany({});
-      await this.experience.deleteMany({});
-      await this.preference.deleteMany({});
-      await this.certification.deleteMany({});
-      await this.job.deleteMany({});
-      await this.saveJob.deleteMany({});
-      await this.bid.deleteMany({});
-      await this.hire.deleteMany({});
-      await this.rating.deleteMany({});
-      await this.service.deleteMany({});
-      await this.chat.deleteMany({});
-      await this.serviceProposal.deleteMany({});
-      await this.message.deleteMany({});
+      // await this.users.deleteMany({});
+      // await this.about.deleteMany({});
+      // await this.billing.deleteMany({});
+      // await this.identity.deleteMany({});
+      // await this.education.deleteMany({});
+      // await this.experience.deleteMany({});
+      // await this.preference.deleteMany({});
+      // await this.certification.deleteMany({});
+      // await this.job.deleteMany({});
+      // await this.saveJob.deleteMany({});
+      // await this.bid.deleteMany({});
+      // await this.hire.deleteMany({});
+      // await this.rating.deleteMany({});
+      // await this.service.deleteMany({});
+      // await this.chat.deleteMany({});
+      // await this.serviceProposal.deleteMany({});
+      // await this.message.deleteMany({});
+      await this.photography.deleteMany({});
 
       const user = {
         first_name: 'John',
@@ -95,9 +98,9 @@ class IndexController {
         referral_code: generateReferralCode(8),
       };
 
-      await this.users.create(user);
-      await this.users.create(user2);
-      await this.users.create(user3);
+      // await this.users.create(user);
+      // await this.users.create(user2);
+      // await this.users.create(user3);
 
       res.status(200).json({ status: 200, response_code: 2000, message: 'DATABASE_RELOAD_SUCCESSFUL' });
     } catch (error) {
