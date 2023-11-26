@@ -122,6 +122,7 @@ class PhotographyController {
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
         search: (req.query.search as any) || '',
+        populate: 'user_id',
       };
 
       const filter = { user_id: userId };

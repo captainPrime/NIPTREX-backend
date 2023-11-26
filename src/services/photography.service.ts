@@ -27,7 +27,7 @@ class PhotographyService {
   | Get User Photography
   |--------------------------------------------------------------------------
   */
-  public async getUserPhotography(options: PaginationOptions, filter: string): Promise<any> {
+  public async getUserPhotography(options: PaginationOptions, filter: any): Promise<any> {
     // if (isEmpty(userId)) throw new HttpException(400, 9001, 'User id can not be empty');
 
     const data = await this.photography.paginate(filter, options);
