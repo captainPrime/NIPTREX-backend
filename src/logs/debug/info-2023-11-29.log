@@ -1,0 +1,25 @@
+2023-11-29 23:53:53 info: =================================
+2023-11-29 23:53:53 info: ======= ENV: development =======
+2023-11-29 23:53:53 info: 🚀 App listening on the port 3000
+2023-11-29 23:53:53 info: =================================
+2023-11-29 23:53:56 info: Connected to email server
+2023-11-29 23:53:56 info: Connected to email server
+2023-11-29 23:53:56 info: Connected to email server
+2023-11-29 23:53:56 info: Connected to email server
+2023-11-29 23:53:56 info: Connected to email server
+2023-11-29 23:53:58 info: Connected to email server
+2023-11-29 23:53:58 info: Connected to email server
+2023-11-29 23:54:03 info: Connected to email server
+2023-11-29 23:54:17 info: Connected to Database Successfully...
+2023-11-29 23:54:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-29 23:54:25 info: [0mPOST /auth/login [32m200[0m 654.482 ms - 587[0m
+2023-11-29 23:54:25 info: Connected to email server
+2023-11-29 23:54:25 info: Connected to email server
+2023-11-29 23:54:26 info: Connected to email server
+2023-11-29 23:54:26 info: Connected to email server
+2023-11-29 23:54:26 info: Connected to email server
+2023-11-29 23:54:29 info: Connected to email server
+2023-11-29 23:54:30 info: [0mGET /photography?limit=10&search [32m200[0m 2934.642 ms - -[0m
+2023-11-29 23:54:45 error: [POST] /photography/payment >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2023-11-29 23:54:45 info: [0mPOST /photography/payment [32m200[0m 6.340 ms - 86[0m
+2023-11-29 23:55:07 info: [0mPOST /photography/payment [32m200[0m 9030.695 ms - 167[0m

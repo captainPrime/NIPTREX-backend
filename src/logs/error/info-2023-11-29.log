@@ -1,0 +1,2 @@
+2023-11-29 23:54:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-11-29 23:54:45 error: [POST] /photography/payment >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
