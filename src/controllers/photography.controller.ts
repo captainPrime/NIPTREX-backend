@@ -8,6 +8,9 @@ import PhotographyService from '@/services/photography.service';
 import path from 'path';
 import { photographySchemaValidation } from '@/validations/photography.validation';
 import { PaginationOptions } from '@/interfaces/job.inteface';
+import { generateUUID } from '@/utils/matchPercentage';
+import axios from 'axios';
+import { FLW_SECRET_KEY } from '@/config';
 
 class PhotographyController {
   public userService = new UserService();
@@ -209,6 +212,127 @@ class PhotographyController {
       next(error);
     }
   };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  public makePayment = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { currency, photography_id } = req.body;
+
+      const photographyService = await this.photographyService.getPhotographyById(photography_id);
+      if (!photographyService) throw new HttpException(400, 1102, 'PHOTOGRAPHY_NOT_FOUND');
+
+      const paymentData = {
+        tx_ref: generateUUID(),
+        amount: photographyService.price,
+        currency,
+        redirect_url: 'http://localhost:3000/photography/verify-payment',
+        meta: {
+          consumer_id: req.user.id,
+          consumer_mac: photography_id,
+        },
+        customer: {
+          email: req.user.email,
+          phonenumber: req.user.phone_number,
+          name: `${req.user.first_name} ${req.user.last_name}`,
+        },
+      };
+
+      const response = await axios.post('https://api.flutterwave.com/v3/payments', paymentData, {
+        headers: {
+          Authorization: `Bearer ${FLW_SECRET_KEY}`,
+        },
+      });
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data: response.data.data });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Charge Card
+  |--------------------------------------------------------------------------
+  */
+  // public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
+  //   try {
+  //     const { status, transaction_id } = req.body;
+  //     if (status === 'successful' || status === 'completed') {
+  //       // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
+  //       const response = await flw.Transaction.verify({ id: transaction_id });
+  //       // console.log('TRANSACTION_DETAILS', transactionDetails);
+  //       console.log('TRANSACTION_VERIFY', response);
+  //       if (response.data.status === 'successful') {
+  //         // Success! Confirm the customer's payment
+  //         const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
+
+  //         const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
+  //         if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
+
+  //         if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
+
+  //         console.log('PROPOSAL', proposal);
+  //         const service = await this.serviceService.getServiceById(proposal.service_id.toString());
+  //         if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
+
+  //         const transactionData: any = {
+  //           user_id: user.id,
+  //           proposal_id: response.data.meta?.consumer_mac,
+  //           tx_ref: response.data.tx_ref,
+  //           flw_ref: response.data.flw_ref,
+  //           amount: response.data.amount,
+  //           currency: response.data.currency,
+  //           status: response.data.status,
+  //           payment_type: response.data.payment_type,
+  //           created_at: new Date(response.data.created_at),
+  //           customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
+  //           customer_name: response.data.customer?.name,
+  //           customer_email: response.data.customer?.email,
+  //           nuban: response.data.meta?.originatoraccountnumber,
+  //           bank: response.data.meta?.bankname,
+  //           bank_name: response.data.meta?.originatorname,
+  //           card_first_6digits: response.data.card?.first_6digits,
+  //           card_last_4digits: response.data.card?.last_4digits,
+  //           card_issuer: response.data.card?.issuer,
+  //           card_country: response.data.card?.country,
+  //           card_type: response.data.card?.type,
+  //           card_expiry: response.data.card?.expiry,
+  //         };
+
+  //         const transaction = await this.walletService.createTransaction(transactionData);
+  //         const emailPayload = {
+  //           proposalId: proposal.id,
+  //           jobTitle: service.title,
+  //         };
+
+  //         this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
+
+  //         const payload = {
+  //           user_id: service.user_id,
+  //           service: service._id.toString(),
+  //           client: proposal.client_id._id.toString(),
+  //           proposal: proposal._id.toString(),
+  //         };
+
+  //         await this.serviceService.hireFreelancerService(payload);
+
+  //         await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
+
+  //         res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
+  //       } else {
+  //         res.status(200).json({ status: 400, response_code: 6000, message: 'SERVICE_REQUEST_ERROR', data: [] });
+  //       }
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     next(error);
+  //   }
+  // };
 }
 
 export default PhotographyController;

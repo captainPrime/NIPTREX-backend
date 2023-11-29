@@ -17,10 +17,15 @@ class PhotographyRoute implements Routes {
   private initializeRoutes() {
     this.router.post(`${this.path}`, authMiddleware(['freelancer', 'client']), upload.single('image'), this.photographyController.createPhotography);
     this.router.get(`${this.path}`, this.photographyController.getAllPhotography);
-    this.router.get(`${this.path}/getPhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.getPhotographyById);
-    this.router.delete(`${this.path}/deletePhotographyById/:id`, authMiddleware(['freelancer']), this.photographyController.deletePhotography);
+    this.router.get(`${this.path}/getPhotographyById/:id`, authMiddleware(['freelancer', 'client']), this.photographyController.getPhotographyById);
+    this.router.delete(
+      `${this.path}/deletePhotographyById/:id`,
+      authMiddleware(['freelancer', 'client']),
+      this.photographyController.deletePhotography,
+    );
     // this.router.put(`${this.path}/updateInvoice/:id`, authMiddleware(['freelancer']), this.photographyController.updatePhotography);
-    this.router.get(`${this.path}/getUserPhotography`, authMiddleware(['freelancer']), this.photographyController.getUserPhotography);
+    this.router.get(`${this.path}/getUserPhotography`, authMiddleware(['freelancer', 'client']), this.photographyController.getUserPhotography);
+    this.router.post(`${this.path}/payment`, authMiddleware(['freelancer', 'client']), this.photographyController.makePayment);
   }
 }
 
