@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import Jimp from 'jimp';
 import fs from 'fs';
+import { flw } from '@/modules/flutterwave';
 import cloudinary from '@/utils/cloudinary';
 import UserService from '@/services/users.service';
 import { HttpException } from '@/exceptions/HttpException';
@@ -259,80 +260,80 @@ class PhotographyController {
   | Charge Card
   |--------------------------------------------------------------------------
   */
-  // public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
-  //   try {
-  //     const { status, transaction_id } = req.body;
-  //     if (status === 'successful' || status === 'completed') {
-  //       // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
-  //       const response = await flw.Transaction.verify({ id: transaction_id });
-  //       // console.log('TRANSACTION_DETAILS', transactionDetails);
-  //       console.log('TRANSACTION_VERIFY', response);
-  //       if (response.data.status === 'successful') {
-  //         // Success! Confirm the customer's payment
-  //         const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
+  public paymentCallback = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { status, transaction_id } = req.body;
+      if (status === 'successful' || status === 'completed') {
+        // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
+        const response = await flw.Transaction.verify({ id: transaction_id });
+        // console.log('TRANSACTION_DETAILS', transactionDetails);
+        console.log('TRANSACTION_VERIFY', response);
+        if (response.data.status === 'successful') {
+          // Success! Confirm the customer's payment
+          const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
 
-  //         const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
-  //         if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
+          const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
+          if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
 
-  //         if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
+          if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
 
-  //         console.log('PROPOSAL', proposal);
-  //         const service = await this.serviceService.getServiceById(proposal.service_id.toString());
-  //         if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
+          console.log('PROPOSAL', proposal);
+          const service = await this.serviceService.getServiceById(proposal.service_id.toString());
+          if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
 
-  //         const transactionData: any = {
-  //           user_id: user.id,
-  //           proposal_id: response.data.meta?.consumer_mac,
-  //           tx_ref: response.data.tx_ref,
-  //           flw_ref: response.data.flw_ref,
-  //           amount: response.data.amount,
-  //           currency: response.data.currency,
-  //           status: response.data.status,
-  //           payment_type: response.data.payment_type,
-  //           created_at: new Date(response.data.created_at),
-  //           customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
-  //           customer_name: response.data.customer?.name,
-  //           customer_email: response.data.customer?.email,
-  //           nuban: response.data.meta?.originatoraccountnumber,
-  //           bank: response.data.meta?.bankname,
-  //           bank_name: response.data.meta?.originatorname,
-  //           card_first_6digits: response.data.card?.first_6digits,
-  //           card_last_4digits: response.data.card?.last_4digits,
-  //           card_issuer: response.data.card?.issuer,
-  //           card_country: response.data.card?.country,
-  //           card_type: response.data.card?.type,
-  //           card_expiry: response.data.card?.expiry,
-  //         };
+          const transactionData: any = {
+            user_id: user.id,
+            proposal_id: response.data.meta?.consumer_mac,
+            tx_ref: response.data.tx_ref,
+            flw_ref: response.data.flw_ref,
+            amount: response.data.amount,
+            currency: response.data.currency,
+            status: response.data.status,
+            payment_type: response.data.payment_type,
+            created_at: new Date(response.data.created_at),
+            customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
+            customer_name: response.data.customer?.name,
+            customer_email: response.data.customer?.email,
+            nuban: response.data.meta?.originatoraccountnumber,
+            bank: response.data.meta?.bankname,
+            bank_name: response.data.meta?.originatorname,
+            card_first_6digits: response.data.card?.first_6digits,
+            card_last_4digits: response.data.card?.last_4digits,
+            card_issuer: response.data.card?.issuer,
+            card_country: response.data.card?.country,
+            card_type: response.data.card?.type,
+            card_expiry: response.data.card?.expiry,
+          };
 
-  //         const transaction = await this.walletService.createTransaction(transactionData);
-  //         const emailPayload = {
-  //           proposalId: proposal.id,
-  //           jobTitle: service.title,
-  //         };
+          const transaction = await this.walletService.createTransaction(transactionData);
+          const emailPayload = {
+            proposalId: proposal.id,
+            jobTitle: service.title,
+          };
 
-  //         this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
+          this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
-  //         const payload = {
-  //           user_id: service.user_id,
-  //           service: service._id.toString(),
-  //           client: proposal.client_id._id.toString(),
-  //           proposal: proposal._id.toString(),
-  //         };
+          const payload = {
+            user_id: service.user_id,
+            service: service._id.toString(),
+            client: proposal.client_id._id.toString(),
+            proposal: proposal._id.toString(),
+          };
 
-  //         await this.serviceService.hireFreelancerService(payload);
+          await this.serviceService.hireFreelancerService(payload);
 
-  //         await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
+          await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
 
-  //         res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
-  //       } else {
-  //         res.status(200).json({ status: 400, response_code: 6000, message: 'SERVICE_REQUEST_ERROR', data: [] });
-  //       }
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //     next(error);
-  //   }
-  // };
+          res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
+        } else {
+          res.status(200).json({ status: 400, response_code: 6000, message: 'SERVICE_REQUEST_ERROR', data: [] });
+        }
+      }
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
 }
 
 export default PhotographyController;
