@@ -308,11 +308,12 @@ class PhotographyController {
 
           const transaction = await this.walletService.createTransaction(transactionData);
           const emailPayload = {
-            proposalId: proposal.id,
-            jobTitle: service.title,
+            photographyId: photography.id,
+            photographyTitle: photography.title,
+            imageUrl: photography.image,
           };
 
-          this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
+          this.emailService.sendPhotographyPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
         } else {

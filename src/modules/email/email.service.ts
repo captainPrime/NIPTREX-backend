@@ -115,6 +115,22 @@ class EmailService {
     await this.sendEmail(to, subject, text, html);
   }
 
+  public async sendPhotographyPaymentConfirmationEmail(to: string, payload: any, name: string): Promise<void> {
+    const subject = 'Payment Confirmation';
+    const text = `Hi ${name},
+    Payment for Photography: ${payload.photographyTitle} was made`;
+
+    const imageUrl = payload.imageUrl; // Assuming imageUrl is part of the payload
+
+    const html = `<div style="margin:30px; padding:30px; border:1px solid black; border-radius: 20px 10px;">
+        <h4><strong>Hi ${name},</strong></h4>
+        <p>Payment for Photography: ${payload.photographyTitle} was made.</p>
+        <p>Image Download Link: <a href="${imageUrl}" download>Download Image</a></p>
+    </div>`;
+
+    await this.sendEmail(to, subject, text, html);
+  }
+
   public async sendFailedPaymentConfirmationEmail(to: string, payload: any, name: string): Promise<void> {
     const subject = 'Payment Confirmation';
     // replace this url with the link to the email verification page of your front-end app

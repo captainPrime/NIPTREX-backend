@@ -26,6 +26,7 @@ class PhotographyRoute implements Routes {
     // this.router.put(`${this.path}/updateInvoice/:id`, authMiddleware(['freelancer']), this.photographyController.updatePhotography);
     this.router.get(`${this.path}/getUserPhotography`, authMiddleware(['freelancer', 'client']), this.photographyController.getUserPhotography);
     this.router.post(`${this.path}/payment`, authMiddleware(['freelancer', 'client']), this.photographyController.makePayment);
+    this.router.post(`${this.path}/paymentCallback`, authMiddleware(['freelancer', 'client']), this.photographyController.paymentCallback);
   }
 }
 
