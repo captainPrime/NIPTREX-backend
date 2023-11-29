@@ -12,9 +12,13 @@ import { PaginationOptions } from '@/interfaces/job.inteface';
 import { generateUUID } from '@/utils/matchPercentage';
 import axios from 'axios';
 import { FLW_SECRET_KEY } from '@/config';
+import WalletService from '@/services/wallet.service';
+import EmailService from '@/modules/email/email.service';
 
 class PhotographyController {
   public userService = new UserService();
+  public emailService = new EmailService();
+  public walletService = new WalletService();
   public photographyService = new PhotographyService();
 
   /*
@@ -272,14 +276,10 @@ class PhotographyController {
           // Success! Confirm the customer's payment
           const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
 
-          const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
-          if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
+          const photography = await this.photographyService.getPhotographyById(response.data.meta.consumer_mac.toString());
+          if (!photography) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
 
-          if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
-
-          console.log('PROPOSAL', proposal);
-          const service = await this.serviceService.getServiceById(proposal.service_id.toString());
-          if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
+          console.log('photography', photography);
 
           const transactionData: any = {
             user_id: user.id,
@@ -290,6 +290,7 @@ class PhotographyController {
             currency: response.data.currency,
             status: response.data.status,
             payment_type: response.data.payment_type,
+            photography: photography.image,
             created_at: new Date(response.data.created_at),
             customer_id: response.data.customer?.id.toString() ?? response.meta?.consumer_id.toString(),
             customer_name: response.data.customer?.name,
@@ -312,17 +313,6 @@ class PhotographyController {
           };
 
           this.emailService.sendPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
-
-          const payload = {
-            user_id: service.user_id,
-            service: service._id.toString(),
-            client: proposal.client_id._id.toString(),
-            proposal: proposal._id.toString(),
-          };
-
-          await this.serviceService.hireFreelancerService(payload);
-
-          await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
         } else {
