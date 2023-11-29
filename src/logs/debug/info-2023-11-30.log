@@ -1,0 +1,127 @@
+2023-11-30 00:11:34 info: =================================
+2023-11-30 00:11:34 info: ======= ENV: development =======
+2023-11-30 00:11:34 info: 🚀 App listening on the port 3000
+2023-11-30 00:11:34 info: =================================
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:37 info: Connected to email server
+2023-11-30 00:11:38 info: Connected to email server
+2023-11-30 00:11:39 info: Connected to email server
+2023-11-30 00:11:40 info: Connected to email server
+2023-11-30 00:11:41 info: Connected to email server
+2023-11-30 00:11:42 info: Connected to email server
+2023-11-30 00:11:42 info: Connected to Database Successfully...
+2023-11-30 00:11:45 info: Connected to email server
+2023-11-30 00:11:49 info: Connected to email server
+2023-11-30 00:11:55 info: [0mGET /photography?limit=10&search=wom [32m200[0m 422.501 ms - 180[0m
+2023-11-30 00:12:10 info: [0mGET /photography?limit=10 [32m200[0m 1105.887 ms - -[0m
+2023-11-30 00:12:20 info: [0mGET /photography?limit=10&search=Wom [32m200[0m 1282.857 ms - 180[0m
+2023-11-30 00:14:11 info: =================================
+2023-11-30 00:14:11 info: ======= ENV: development =======
+2023-11-30 00:14:11 info: 🚀 App listening on the port 3000
+2023-11-30 00:14:11 info: =================================
+2023-11-30 00:14:14 info: Connected to email server
+2023-11-30 00:14:14 info: Connected to email server
+2023-11-30 00:14:14 info: Connected to email server
+2023-11-30 00:14:15 info: Connected to email server
+2023-11-30 00:14:15 info: Connected to email server
+2023-11-30 00:14:16 info: Connected to email server
+2023-11-30 00:14:17 info: Connected to email server
+2023-11-30 00:14:20 info: Connected to email server
+2023-11-30 00:14:20 info: Connected to Database Successfully...
+2023-11-30 00:14:20 info: Connected to email server
+2023-11-30 00:14:34 info: [0mGET /photography?limit=10 [32m200[0m 4702.411 ms - -[0m
+2023-11-30 00:14:45 info: Connected to email server
+2023-11-30 00:14:45 info: Connected to email server
+2023-11-30 00:14:45 info: Connected to email server
+2023-11-30 00:14:45 info: Connected to email server
+2023-11-30 00:14:45 info: Connected to email server
+2023-11-30 00:14:46 info: [0mGET /photography?limit=10&search=200 [32m200[0m 1151.558 ms - 180[0m
+2023-11-30 00:14:47 info: Connected to email server
+2023-11-30 00:15:11 info: [0mGET /photography?limit=10 [32m200[0m 2795.436 ms - -[0m
+2023-11-30 00:15:23 info: [0mGET /photography?limit=10&search=Woman [32m200[0m 1154.196 ms - 180[0m
+2023-11-30 00:15:28 info: [0mGET /photography?limit=10 [32m200[0m 1281.274 ms - -[0m
+2023-11-30 00:15:49 info: [0mGET /photography?limit=10&search=lanscape [32m200[0m 1269.372 ms - 180[0m
+2023-11-30 00:16:00 info: [0mGET /photography?limit=10 [32m200[0m 3373.922 ms - -[0m
+2023-11-30 00:17:13 info: =================================
+2023-11-30 00:17:13 info: ======= ENV: development =======
+2023-11-30 00:17:13 info: 🚀 App listening on the port 3000
+2023-11-30 00:17:13 info: =================================
+2023-11-30 00:17:16 info: Connected to email server
+2023-11-30 00:17:16 info: Connected to email server
+2023-11-30 00:17:16 info: Connected to email server
+2023-11-30 00:17:16 info: Connected to email server
+2023-11-30 00:17:17 info: Connected to email server
+2023-11-30 00:17:17 info: Connected to email server
+2023-11-30 00:17:17 info: Connected to email server
+2023-11-30 00:17:18 info: Connected to email server
+2023-11-30 00:17:18 info: Connected to email server
+2023-11-30 00:17:22 info: Connected to email server
+2023-11-30 00:17:24 info: Connected to email server
+2023-11-30 00:17:25 info: Connected to email server
+2023-11-30 00:17:28 info: Connected to Database Successfully...
+2023-11-30 00:17:38 info: [0mGET /photography?limit=10 [32m200[0m 5033.144 ms - -[0m
+2023-11-30 00:17:43 info: [0mGET /photography?limit=10&search=lanscape [32m200[0m 1553.047 ms - 948[0m
+2023-11-30 00:17:46 info: Connected to email server
+2023-11-30 00:17:46 info: Connected to email server
+2023-11-30 00:17:47 info: Connected to email server
+2023-11-30 00:17:52 info: [0mGET /photography?limit=10&search=lans [32m200[0m 282.537 ms - 180[0m
+2023-11-30 00:19:27 info: =================================
+2023-11-30 00:19:27 info: ======= ENV: development =======
+2023-11-30 00:19:27 info: 🚀 App listening on the port 3000
+2023-11-30 00:19:27 info: =================================
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:29 info: Connected to email server
+2023-11-30 00:19:30 info: Connected to email server
+2023-11-30 00:19:31 info: Connected to email server
+2023-11-30 00:19:31 info: Connected to email server
+2023-11-30 00:19:32 info: Connected to email server
+2023-11-30 00:19:34 info: Connected to email server
+2023-11-30 00:19:42 info: Connected to Database Successfully...
+2023-11-30 00:19:42 info: Connected to email server
+2023-11-30 00:19:46 info: [0mGET /photography?limit=10&search=lans [32m200[0m 558.880 ms - 180[0m
+2023-11-30 00:19:59 info: Connected to email server
+2023-11-30 00:20:03 info: Connected to email server
+2023-11-30 00:20:05 info: Connected to email server
+2023-11-30 00:20:08 info: [0mGET /photography?limit=10&search=lanscape [32m200[0m 318.218 ms - 180[0m
+2023-11-30 00:21:05 info: =================================
+2023-11-30 00:21:05 info: ======= ENV: development =======
+2023-11-30 00:21:05 info: 🚀 App listening on the port 3000
+2023-11-30 00:21:05 info: =================================
+2023-11-30 00:21:08 info: Connected to email server
+2023-11-30 00:21:08 info: Connected to email server
+2023-11-30 00:21:08 info: Connected to email server
+2023-11-30 00:21:08 info: Connected to email server
+2023-11-30 00:21:09 info: Connected to email server
+2023-11-30 00:21:10 info: Connected to Database Successfully...
+2023-11-30 00:21:10 info: Connected to email server
+2023-11-30 00:21:11 info: Connected to email server
+2023-11-30 00:21:11 info: Connected to email server
+2023-11-30 00:21:11 info: Connected to email server
+2023-11-30 00:21:13 info: Connected to email server
+2023-11-30 00:21:13 info: Connected to email server
+2023-11-30 00:21:14 info: Connected to email server
+2023-11-30 00:21:23 info: [0mGET /photography?limit=10&search=lanscape [32m200[0m 567.291 ms - 948[0m
+2023-11-30 00:21:32 info: [0mGET /photography?limit=10&search=lans [32m200[0m 1252.093 ms - 948[0m
+2023-11-30 00:21:40 info: Connected to email server
+2023-11-30 00:21:41 info: Connected to email server
+2023-11-30 00:21:41 info: Connected to email server
+2023-11-30 00:21:49 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2 [32m200[0m 1172.904 ms - -[0m
+2023-11-30 00:21:56 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2&search=Book%20Service%20Testing [32m200[0m 280.695 ms - 177[0m
+2023-11-30 00:22:01 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2 [32m200[0m 1317.686 ms - -[0m
+2023-11-30 00:22:17 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2&search=Book [32m200[0m 519.774 ms - -[0m
+2023-11-30 00:22:39 info: [0mGET /service?category=Mobile%20App%20Development&limit=12&page=2 [32m200[0m 580.468 ms - -[0m
+2023-11-30 00:22:51 info: [0mGET /service?limit=12&page=2 [32m200[0m 1183.900 ms - -[0m
+2023-11-30 00:23:34 info: [0mGET /service?limit=12&page=2&search=Luxenude [32m200[0m 1534.632 ms - 177[0m
+2023-11-30 00:23:41 info: [0mGET /service?limit=12&page=2&search=Luxe [32m200[0m 278.085 ms - 177[0m
+2023-11-30 00:23:46 info: [0mGET /service?search=Luxe [32m200[0m 1366.144 ms - -[0m
+2023-11-30 00:24:12 info: [0mGET /service?search=Professional%20Book%20Services [32m200[0m 623.867 ms - -[0m

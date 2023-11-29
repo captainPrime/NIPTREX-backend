@@ -56,7 +56,7 @@ const paginate = (schema: Schema) => {
           }
 
           return {
-            [field]: new RegExp(searchValue, 'i'),
+            [field]: new RegExp(`\\b\\w{0,2}\\s*${searchValue}\\w*\\b`, 'i'),
           };
         })
         .filter(condition => condition !== null);
