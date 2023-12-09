@@ -28,6 +28,7 @@ export const jobSchemaValidation = Joi.object({
   proposal_limit: Joi.number().default(50),
   proposal_left: Joi.number().default(50),
   experience_level: Joi.string(),
+  featured: Joi.boolean().optional(),
   activities: Joi.object({
     proposals: Joi.number().default(0),
     last_viewed: Joi.date(),
@@ -84,4 +85,5 @@ export const jobSchemaUpdateValidation = Joi.object({
   soft_skills: Joi.array().items(Joi.string()),
   languages: Joi.array().items(Joi.string()),
   date_posted: Joi.date().default(Date.now),
+  featured: Joi.boolean().optional(),
 }).min(1);

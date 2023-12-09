@@ -61,7 +61,7 @@ class JobService {
     const { error } = jobSchemaUpdateValidation.validate(body);
     if (error) throw new HttpException(400, 2002, 'JOB_VALIDATION_ERROR', [error.details[0].message]);
 
-    const data = await this.job.findOne({ user_id: selector });
+    const data = await this.job.findOne({ _id: selector });
     if (!data) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
     const updatedPayload = {
