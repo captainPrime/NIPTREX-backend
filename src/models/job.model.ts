@@ -50,6 +50,7 @@ const JobSchema: Schema = new Schema(
       type: Date,
       default: Date.now,
     },
+    featured: { type: Boolean, required: false, default: false },
   },
   {
     timestamps: true,
