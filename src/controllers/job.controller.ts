@@ -47,8 +47,9 @@ class JobController {
   public updateJob = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const body: IUpdateJob = req.body;
+      const id: string = req.params.id;
 
-      const data = await this.jobService.updateJob(req.user.id, body);
+      const data = await this.jobService.updateJob(id, body);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {
@@ -69,7 +70,30 @@ class JobController {
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
       };
+
       const data = await this.jobService.getAllJobs(req.query, options, req.user.id);
+
+      res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get all Jobs
+  |--------------------------------------------------------------------------
+  */
+  public getFeaturedJobs = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const options: PaginationOptions = {
+        sortBy: req.query.sortBy || 'date_posted:desc',
+        limit: parseInt(req.query.limit as string, 10) || 10,
+        page: parseInt(req.query.page as string, 10) || 1,
+        projectBy: req.query.projectBy || 'name:hide, role:hide',
+      };
+      const filter = { featured: true };
+      const data = await this.jobService.getAllJobs(filter, options, req.user.id);
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data });
     } catch (error) {

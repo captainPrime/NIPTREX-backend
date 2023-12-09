@@ -37,6 +37,7 @@ export interface IService extends Document {
     standard: IServicePrice;
     premium: IServicePrice;
   };
+  featured: boolean;
 }
 
 export interface IServiceProposal extends Document {
@@ -85,6 +86,7 @@ const serviceSchema: Schema<IService> = new Schema(
         services: [{ type: String }],
       },
     },
+    featured: { type: Boolean, required: false, default: false },
   },
   { versionKey: false },
 );

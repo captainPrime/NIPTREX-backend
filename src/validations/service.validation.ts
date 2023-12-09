@@ -32,6 +32,7 @@ export const serviceValidationSchema = Joi.object({
       services: Joi.array().items(Joi.string()),
     }),
   }),
+  featured: Joi.boolean().optional(),
 });
 
 export const serviceUpdateValidationSchema = Joi.object({
@@ -64,6 +65,7 @@ export const serviceUpdateValidationSchema = Joi.object({
       services: Joi.array().items(Joi.string()),
     }),
   }),
+  featured: Joi.boolean().optional(),
 }).min(1);
 
 export const updateServiceProposalStatusValidation = Joi.object({

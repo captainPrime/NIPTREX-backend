@@ -46,6 +46,7 @@ export interface IJob extends Document {
   project_type?: string;
   soft_skills?: string[];
   languages?: string[];
+  featured: boolean;
   date_posted?: Date;
 }
 

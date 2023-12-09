@@ -1,0 +1,7 @@
+2023-12-09 18:20:17 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-09 18:22:22 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-12-09 18:22:27 error: [GET] /service >> StatusCode:: 400, Message:: Cast to Boolean failed for value "/\b\w{0,2}\s*professional book services\w*\b/i" (type RegExp) at path "featured" for model "Service"
+2023-12-09 18:33:54 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 404, Message:: The requested path /job/update/65732656065a46e8e329bc46 not found!
+2023-12-09 18:35:15 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-12-09 18:35:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-09 18:35:57 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR

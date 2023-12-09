@@ -84,7 +84,11 @@ class ChatService {
       throw new HttpException(400, 2001, 'User id cannot be empty');
     }
 
-    const chats: IChat[] = await this.chat.find({ participants: { $in: userId } }).lean();
+    const chats: IChat[] = await this.chat
+      .find({ participants: { $in: userId } })
+      .sort({ createdAt: -1 })
+      .lean();
+    // return chats;
 
     // Loop through each chat and keep only the last message
     const chatsWithLastMessage: Promise<any[]> = Promise.all(

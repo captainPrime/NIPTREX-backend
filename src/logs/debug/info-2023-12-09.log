@@ -1,0 +1,252 @@
+2023-12-09 18:18:29 info: =================================
+2023-12-09 18:18:29 info: ======= ENV: development =======
+2023-12-09 18:18:29 info: 🚀 App listening on the port 3000
+2023-12-09 18:18:29 info: =================================
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:31 info: Connected to email server
+2023-12-09 18:18:37 info: Connected to Database Successfully...
+2023-12-09 18:19:01 info: Connected to email server
+2023-12-09 18:19:01 info: Connected to email server
+2023-12-09 18:19:01 info: Connected to email server
+2023-12-09 18:19:13 info: [0mGET /service/getFeaturedService [32m200[0m 707.689 ms - 176[0m
+2023-12-09 18:20:17 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-09 18:20:17 info: [0mPUT /service/updateServiceById/6493ab72d916a3719ee18e38 [32m200[0m 272.481 ms - 111[0m
+2023-12-09 18:21:34 info: =================================
+2023-12-09 18:21:34 info: ======= ENV: development =======
+2023-12-09 18:21:34 info: 🚀 App listening on the port 3000
+2023-12-09 18:21:34 info: =================================
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:37 info: Connected to email server
+2023-12-09 18:21:47 info: Connected to Database Successfully...
+2023-12-09 18:22:04 info: =================================
+2023-12-09 18:22:04 info: ======= ENV: development =======
+2023-12-09 18:22:04 info: 🚀 App listening on the port 3000
+2023-12-09 18:22:04 info: =================================
+2023-12-09 18:22:06 info: Connected to email server
+2023-12-09 18:22:06 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:07 info: Connected to email server
+2023-12-09 18:22:12 info: Connected to Database Successfully...
+2023-12-09 18:22:22 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-12-09 18:22:22 info: [0mPUT /service/updateServiceById/6493ab72d916a3719ee18e38 [32m200[0m 651.531 ms - 75[0m
+2023-12-09 18:22:27 error: [GET] /service >> StatusCode:: 400, Message:: Cast to Boolean failed for value "/\b\w{0,2}\s*professional book services\w*\b/i" (type RegExp) at path "featured" for model "Service"
+2023-12-09 18:22:27 info: [0mGET /service?search=Professional%20Book%20Services [32m200[0m 9.958 ms - 202[0m
+2023-12-09 18:22:34 info: [0mGET /service [32m200[0m 535.299 ms - -[0m
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:22:36 info: Connected to email server
+2023-12-09 18:23:10 info: [0mPUT /service/updateServiceById/6548a1256b6fb8479cbb4107 [32m200[0m 821.929 ms - 950[0m
+2023-12-09 18:23:19 info: [0mGET /service/getUserService [32m200[0m 510.493 ms - -[0m
+2023-12-09 18:26:27 info: =================================
+2023-12-09 18:26:27 info: ======= ENV: development =======
+2023-12-09 18:26:27 info: 🚀 App listening on the port 3000
+2023-12-09 18:26:27 info: =================================
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:30 info: Connected to email server
+2023-12-09 18:26:35 info: Connected to Database Successfully...
+2023-12-09 18:26:39 info: [0mGET /service?search=Professional%20Book%20Services [32m200[0m 997.699 ms - -[0m
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:27:00 info: Connected to email server
+2023-12-09 18:30:14 info: =================================
+2023-12-09 18:30:14 info: ======= ENV: development =======
+2023-12-09 18:30:14 info: 🚀 App listening on the port 3000
+2023-12-09 18:30:14 info: =================================
+2023-12-09 18:30:19 info: Connected to email server
+2023-12-09 18:30:19 info: Connected to email server
+2023-12-09 18:30:19 info: Connected to email server
+2023-12-09 18:30:20 info: Connected to email server
+2023-12-09 18:30:20 info: Connected to email server
+2023-12-09 18:30:20 info: Connected to email server
+2023-12-09 18:30:22 info: Connected to email server
+2023-12-09 18:30:22 info: Connected to email server
+2023-12-09 18:30:24 info: Connected to Database Successfully...
+2023-12-09 18:30:30 info: [0mGET /job/getFeaturedJobs [32m200[0m 5246.298 ms - 172[0m
+2023-12-09 18:30:43 info: [0mGET /job/getAllJobs?search=Front%20End [32m200[0m 1564.631 ms - -[0m
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:30:48 info: Connected to email server
+2023-12-09 18:33:13 info: =================================
+2023-12-09 18:33:13 info: ======= ENV: development =======
+2023-12-09 18:33:13 info: 🚀 App listening on the port 3000
+2023-12-09 18:33:13 info: =================================
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:18 info: Connected to email server
+2023-12-09 18:33:19 info: Connected to email server
+2023-12-09 18:33:29 info: Connected to Database Successfully...
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:47 info: Connected to email server
+2023-12-09 18:33:54 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 404, Message:: The requested path /job/update/65732656065a46e8e329bc46 not found!
+2023-12-09 18:33:54 info: [0mPUT /job/update/65732656065a46e8e329bc46 [32m200[0m 29.150 ms - 124[0m
+2023-12-09 18:34:22 info: =================================
+2023-12-09 18:34:22 info: ======= ENV: development =======
+2023-12-09 18:34:22 info: 🚀 App listening on the port 3000
+2023-12-09 18:34:22 info: =================================
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:27 info: Connected to Database Successfully...
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:27 info: Connected to email server
+2023-12-09 18:34:28 info: Connected to email server
+2023-12-09 18:35:02 info: =================================
+2023-12-09 18:35:02 info: ======= ENV: development =======
+2023-12-09 18:35:02 info: 🚀 App listening on the port 3000
+2023-12-09 18:35:02 info: =================================
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:06 info: Connected to email server
+2023-12-09 18:35:07 info: Connected to email server
+2023-12-09 18:35:07 info: Connected to email server
+2023-12-09 18:35:07 info: Connected to email server
+2023-12-09 18:35:08 info: Connected to Database Successfully...
+2023-12-09 18:35:15 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2023-12-09 18:35:15 info: [0mPUT /job/update/65732656065a46e8e329bc46 [32m200[0m 528.005 ms - 75[0m
+2023-12-09 18:35:48 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-09 18:35:48 info: [0mPOST /auth/login [32m200[0m 1251.267 ms - 587[0m
+2023-12-09 18:35:57 error: [PUT] /job/update/65732656065a46e8e329bc46 >> StatusCode:: 400, Message:: JOB_VALIDATION_ERROR
+2023-12-09 18:35:57 info: [0mPUT /job/update/65732656065a46e8e329bc46 [32m200[0m 418.309 ms - 107[0m
+2023-12-09 18:36:52 info: =================================
+2023-12-09 18:36:52 info: ======= ENV: development =======
+2023-12-09 18:36:52 info: 🚀 App listening on the port 3000
+2023-12-09 18:36:52 info: =================================
+2023-12-09 18:36:56 info: Connected to email server
+2023-12-09 18:36:56 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:57 info: Connected to email server
+2023-12-09 18:36:59 info: Connected to email server
+2023-12-09 18:36:59 info: Connected to email server
+2023-12-09 18:37:07 info: Connected to Database Successfully...
+2023-12-09 18:37:14 info: [0mPUT /job/update/65732656065a46e8e329bc46 [32m200[0m 3031.822 ms - -[0m
+2023-12-09 18:37:28 info: Connected to email server
+2023-12-09 18:37:28 info: Connected to email server
+2023-12-09 18:37:28 info: Connected to email server
+2023-12-09 18:37:29 info: [0mGET /job/getFeaturedJobs [32m200[0m 2127.344 ms - -[0m
+2023-12-09 18:38:32 info: [0mGET /chat/user [32m200[0m 4132.749 ms - -[0m
+2023-12-09 18:41:08 info: =================================
+2023-12-09 18:41:08 info: ======= ENV: development =======
+2023-12-09 18:41:08 info: 🚀 App listening on the port 3000
+2023-12-09 18:41:08 info: =================================
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:11 info: Connected to email server
+2023-12-09 18:41:16 info: Connected to Database Successfully...
+2023-12-09 18:41:35 info: [0mGET /chat/user [32m200[0m 3532.817 ms - -[0m
+2023-12-09 18:41:41 info: Connected to email server
+2023-12-09 18:41:41 info: Connected to email server
+2023-12-09 18:41:41 info: Connected to email server
+2023-12-09 18:42:27 info: =================================
+2023-12-09 18:42:27 info: ======= ENV: development =======
+2023-12-09 18:42:27 info: 🚀 App listening on the port 3000
+2023-12-09 18:42:27 info: =================================
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:29 info: Connected to email server
+2023-12-09 18:42:30 info: Connected to Database Successfully...
+2023-12-09 18:42:30 info: Connected to email server
+2023-12-09 18:42:38 info: [0mGET /chat/user [32m200[0m 5119.072 ms - -[0m
+2023-12-09 18:42:59 info: Connected to email server
+2023-12-09 18:42:59 info: Connected to email server
+2023-12-09 18:42:59 info: Connected to email server
+2023-12-09 18:42:59 info: Connected to email server
+2023-12-09 18:43:35 info: =================================
+2023-12-09 18:43:35 info: ======= ENV: development =======
+2023-12-09 18:43:35 info: 🚀 App listening on the port 3000
+2023-12-09 18:43:35 info: =================================
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to Database Successfully...
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:38 info: Connected to email server
+2023-12-09 18:43:47 info: [0mGET /chat/user [32m200[0m 4209.295 ms - -[0m
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:09 info: Connected to email server
+2023-12-09 18:44:10 info: Connected to email server
+2023-12-09 18:44:10 info: Connected to email server
