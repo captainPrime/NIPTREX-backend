@@ -1,0 +1,3 @@
+2023-12-09 18:20:17 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-09 18:22:22 error: [PUT] /service/updateServiceById/6493ab72d916a3719ee18e38 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2023-12-09 18:22:27 error: [GET] /service >> StatusCode:: 400, Message:: Cast to Boolean failed for value "/\b\w{0,2}\s*professional book services\w*\b/i" (type RegExp) at path "featured" for model "Service"

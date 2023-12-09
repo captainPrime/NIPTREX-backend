@@ -51,6 +51,11 @@ const paginate = (schema: Schema) => {
             return Types.ObjectId.isValid(searchValue) ? { [field]: new Types.ObjectId(searchValue) } : null;
           }
 
+          if (this.schema.paths[field]?.instance === 'Boolean') {
+            const searchBoolean = searchValue === 'true' ? true : searchValue === 'false' ? false : null;
+            return searchBoolean !== null ? { [field]: searchBoolean } : null;
+          }
+
           if (this.schema.paths[field]?.instance === 'Number') {
             return Number.isNaN(Number(searchValue)) ? null : { [field]: Number(searchValue) };
           }
