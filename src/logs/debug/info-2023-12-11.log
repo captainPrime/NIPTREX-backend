@@ -1,0 +1,49 @@
+2023-12-11 10:32:19 info: =================================
+2023-12-11 10:32:19 info: ======= ENV: development =======
+2023-12-11 10:32:19 info: 🚀 App listening on the port 3000
+2023-12-11 10:32:19 info: =================================
+2023-12-11 10:32:21 info: Connected to email server
+2023-12-11 10:32:21 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:22 info: Connected to email server
+2023-12-11 10:32:23 info: Connected to email server
+2023-12-11 10:32:23 info: Connected to Database Successfully...
+2023-12-11 10:32:23 info: Connected to email server
+2023-12-11 10:34:27 info: =================================
+2023-12-11 10:34:27 info: ======= ENV: development =======
+2023-12-11 10:34:27 info: 🚀 App listening on the port 3000
+2023-12-11 10:34:27 info: =================================
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:29 info: Connected to email server
+2023-12-11 10:34:30 info: Connected to Database Successfully...
+2023-12-11 10:35:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-11 10:35:04 info: [0mPOST /auth/login [32m200[0m 780.226 ms - 587[0m
+2023-12-11 10:35:12 info: [0mGET /photography?limit=10&search=lans [32m200[0m 1158.778 ms - 948[0m
+2023-12-11 10:35:32 info: [0mPOST /photography/payment [32m200[0m 3469.614 ms - 167[0m
+2023-12-11 10:36:54 error: [GET] /photography/verify-payment >> StatusCode:: 404, Message:: The requested path /photography/verify-payment not found!
+2023-12-11 10:36:54 info: [0mGET /photography/verify-payment?status=successful&tx_ref=f6e598d3-55c1-4e1b-8be3-7449bc7ae783&transaction_id=4776924 [32m200[0m 2.651 ms - 115[0m
+2023-12-11 10:36:57 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2023-12-11 10:36:57 info: [0mGET /favicon.ico [32m200[0m 2.623 ms - 100[0m
+2023-12-11 10:37:17 info: [0mPOST /photography/paymentCallback [32m200[0m 3053.648 ms - 720[0m

@@ -1,0 +1,3 @@
+2023-12-11 10:35:04 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-11 10:36:54 error: [GET] /photography/verify-payment >> StatusCode:: 404, Message:: The requested path /photography/verify-payment not found!
+2023-12-11 10:36:57 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!

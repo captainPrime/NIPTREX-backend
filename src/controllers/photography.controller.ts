@@ -315,9 +315,9 @@ class PhotographyController {
 
           this.emailService.sendPhotographyPaymentConfirmationEmail(user.email, emailPayload, user.first_name);
 
-          res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });
+          res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data: transaction });
         } else {
-          res.status(200).json({ status: 400, response_code: 6000, message: 'SERVICE_REQUEST_ERROR', data: [] });
+          res.status(200).json({ status: 400, response_code: 3002, message: 'PHOTOGRAPHY_REQUEST_ERROR', data: [] });
         }
       }
     } catch (error) {
