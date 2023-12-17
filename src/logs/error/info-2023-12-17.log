@@ -1,1 +1,5 @@
 2023-12-17 17:17:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-17 17:29:53 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:30:37 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:30:51 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:31:12 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR

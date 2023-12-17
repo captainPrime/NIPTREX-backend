@@ -61,3 +61,16 @@
 2023-12-17 17:22:28 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-12-17 17:22:28 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
 2023-12-17 17:22:36 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:37 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:23:05 info: [0mGET /service [32m200[0m 60948.922 ms - -[0m
+2023-12-17 17:29:53 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:29:53 info: [0mPOST /service [32m200[0m 3414.213 ms - 122[0m
+2023-12-17 17:30:37 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:30:37 info: [0mPOST /service [32m200[0m 243.608 ms - 118[0m
+2023-12-17 17:30:51 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:30:51 info: [0mPOST /service [32m200[0m 465.922 ms - 125[0m
+2023-12-17 17:31:12 error: [POST] /service >> StatusCode:: 400, Message:: SERVICE_VALIDATION_ERROR
+2023-12-17 17:31:12 info: [0mPOST /service [32m200[0m 238.935 ms - 127[0m
+2023-12-17 17:31:22 info: [0mPOST /service [32m200[0m 2000.310 ms - 905[0m
+2023-12-17 17:31:34 info: [0mGET /service [32m200[0m 662.576 ms - -[0m
+2023-12-17 17:32:11 info: [0mGET /service?page=2 [32m200[0m 842.093 ms - -[0m

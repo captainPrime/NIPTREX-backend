@@ -29,7 +29,7 @@ export interface IOptions {
 
 const paginate = (schema: Schema) => {
   schema.static('paginate', async function (filter: Record<string, any>, options: IOptions): Promise<QueryResult> {
-    let sort = '-created_at';
+    let sort = '-createdAt';
 
     if (options.sortBy) {
       sort = options.sortBy
