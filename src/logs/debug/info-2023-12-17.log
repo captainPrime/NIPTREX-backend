@@ -1,0 +1,63 @@
+2023-12-17 17:16:56 info: =================================
+2023-12-17 17:16:56 info: ======= ENV: development =======
+2023-12-17 17:16:56 info: 🚀 App listening on the port 3000
+2023-12-17 17:16:56 info: =================================
+2023-12-17 17:16:59 info: Connected to email server
+2023-12-17 17:16:59 info: Connected to email server
+2023-12-17 17:16:59 info: Connected to email server
+2023-12-17 17:17:01 info: Connected to email server
+2023-12-17 17:17:02 info: Connected to email server
+2023-12-17 17:17:02 info: Connected to email server
+2023-12-17 17:17:02 info: Connected to email server
+2023-12-17 17:17:02 info: Connected to email server
+2023-12-17 17:17:03 info: Connected to Database Successfully...
+2023-12-17 17:17:03 info: Connected to email server
+2023-12-17 17:17:04 info: Connected to email server
+2023-12-17 17:17:05 info: Connected to email server
+2023-12-17 17:17:06 info: Connected to email server
+2023-12-17 17:17:08 info: Connected to email server
+2023-12-17 17:17:09 info: Connected to email server
+2023-12-17 17:17:11 info: Connected to email server
+2023-12-17 17:17:34 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-17 17:17:34 info: [0mPOST /auth/login [32m200[0m 1202.580 ms - 587[0m
+2023-12-17 17:18:04 info: [0mGET /service [32m200[0m 677.287 ms - -[0m
+2023-12-17 17:19:33 info: =================================
+2023-12-17 17:19:33 info: ======= ENV: development =======
+2023-12-17 17:19:33 info: 🚀 App listening on the port 3000
+2023-12-17 17:19:33 info: =================================
+2023-12-17 17:19:36 info: Connected to email server
+2023-12-17 17:19:36 info: Connected to email server
+2023-12-17 17:19:36 info: Connected to email server
+2023-12-17 17:19:36 info: Connected to email server
+2023-12-17 17:19:37 info: Connected to email server
+2023-12-17 17:19:37 info: Connected to email server
+2023-12-17 17:19:37 info: Connected to email server
+2023-12-17 17:19:38 info: Connected to email server
+2023-12-17 17:19:38 info: Connected to Database Successfully...
+2023-12-17 17:19:38 info: Connected to email server
+2023-12-17 17:19:38 info: Connected to email server
+2023-12-17 17:19:39 info: Connected to email server
+2023-12-17 17:19:39 info: Connected to email server
+2023-12-17 17:19:40 info: Connected to email server
+2023-12-17 17:19:41 info: Connected to email server
+2023-12-17 17:19:44 info: Connected to email server
+2023-12-17 17:20:14 info: [0mGET /service [32m200[0m 965.572 ms - -[0m
+2023-12-17 17:21:38 info: =================================
+2023-12-17 17:21:38 info: ======= ENV: development =======
+2023-12-17 17:21:38 info: 🚀 App listening on the port 3000
+2023-12-17 17:21:38 info: =================================
+2023-12-17 17:21:41 info: Connected to email server
+2023-12-17 17:21:41 info: Connected to email server
+2023-12-17 17:21:42 info: Connected to email server
+2023-12-17 17:21:42 info: Connected to Database Successfully...
+2023-12-17 17:21:58 info: Connected to email server
+2023-12-17 17:21:58 info: Connected to email server
+2023-12-17 17:21:59 info: Connected to email server
+2023-12-17 17:22:03 info: Connected to email server
+2023-12-17 17:22:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:24 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:27 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:27 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:28 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:28 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2023-12-17 17:22:36 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
