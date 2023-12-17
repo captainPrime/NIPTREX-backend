@@ -74,3 +74,151 @@
 2023-12-17 17:31:22 info: [0mPOST /service [32m200[0m 2000.310 ms - 905[0m
 2023-12-17 17:31:34 info: [0mGET /service [32m200[0m 662.576 ms - -[0m
 2023-12-17 17:32:11 info: [0mGET /service?page=2 [32m200[0m 842.093 ms - -[0m
+2023-12-17 17:36:23 info: =================================
+2023-12-17 17:36:23 info: ======= ENV: development =======
+2023-12-17 17:36:23 info: 🚀 App listening on the port 3000
+2023-12-17 17:36:23 info: =================================
+2023-12-17 17:36:25 info: Connected to email server
+2023-12-17 17:36:25 info: Connected to email server
+2023-12-17 17:36:26 info: Connected to email server
+2023-12-17 17:36:30 info: Connected to email server
+2023-12-17 17:36:33 info: Connected to email server
+2023-12-17 17:36:33 info: Connected to email server
+2023-12-17 17:36:37 info: Connected to email server
+2023-12-17 17:36:39 info: Connected to Database Successfully...
+2023-12-17 17:36:54 info: [0mGET /service?page=2 [32m200[0m 1486.886 ms - -[0m
+2023-12-17 17:36:55 info: Connected to email server
+2023-12-17 17:36:55 info: Connected to email server
+2023-12-17 17:36:56 info: Connected to email server
+2023-12-17 17:36:56 info: Connected to email server
+2023-12-17 17:36:58 info: Connected to email server
+2023-12-17 17:36:59 info: Connected to email server
+2023-12-17 17:37:00 info: Connected to email server
+2023-12-17 17:37:02 info: [0mGET /service [32m200[0m 1289.943 ms - -[0m
+2023-12-17 17:37:03 info: Connected to email server
+2023-12-17 17:43:05 info: =================================
+2023-12-17 17:43:05 info: ======= ENV: development =======
+2023-12-17 17:43:05 info: 🚀 App listening on the port 3000
+2023-12-17 17:43:05 info: =================================
+2023-12-17 17:43:07 info: Connected to email server
+2023-12-17 17:43:07 info: Connected to email server
+2023-12-17 17:43:07 info: Connected to email server
+2023-12-17 17:43:08 info: Connected to email server
+2023-12-17 17:43:08 info: Connected to email server
+2023-12-17 17:43:10 info: Connected to email server
+2023-12-17 17:43:10 info: Connected to email server
+2023-12-17 17:43:13 info: Connected to email server
+2023-12-17 17:43:13 info: Connected to email server
+2023-12-17 17:43:13 info: Connected to email server
+2023-12-17 17:43:14 info: Connected to email server
+2023-12-17 17:43:18 info: Connected to Database Successfully...
+2023-12-17 17:43:23 info: Connected to email server
+2023-12-17 17:43:28 info: [0mGET /service [32m200[0m 3670.208 ms - -[0m
+2023-12-17 17:43:38 info: Connected to email server
+2023-12-17 17:44:08 info: =================================
+2023-12-17 17:44:08 info: ======= ENV: development =======
+2023-12-17 17:44:08 info: 🚀 App listening on the port 3000
+2023-12-17 17:44:08 info: =================================
+2023-12-17 17:44:10 info: Connected to email server
+2023-12-17 17:44:10 info: Connected to email server
+2023-12-17 17:44:10 info: Connected to email server
+2023-12-17 17:44:10 info: Connected to email server
+2023-12-17 17:44:10 info: Connected to email server
+2023-12-17 17:44:11 info: Connected to email server
+2023-12-17 17:44:12 info: Connected to email server
+2023-12-17 17:44:12 info: Connected to email server
+2023-12-17 17:44:15 info: Connected to email server
+2023-12-17 17:44:16 info: Connected to email server
+2023-12-17 17:44:18 info: Connected to Database Successfully...
+2023-12-17 17:44:41 info: =================================
+2023-12-17 17:44:41 info: ======= ENV: development =======
+2023-12-17 17:44:41 info: 🚀 App listening on the port 3000
+2023-12-17 17:44:41 info: =================================
+2023-12-17 17:44:45 info: Connected to email server
+2023-12-17 17:44:45 info: Connected to email server
+2023-12-17 17:44:45 info: Connected to email server
+2023-12-17 17:44:45 info: Connected to email server
+2023-12-17 17:44:45 info: Connected to email server
+2023-12-17 17:44:46 info: Connected to email server
+2023-12-17 17:44:46 info: Connected to email server
+2023-12-17 17:44:47 info: Connected to email server
+2023-12-17 17:44:51 info: Connected to Database Successfully...
+2023-12-17 17:45:13 info: Connected to email server
+2023-12-17 17:45:14 info: Connected to email server
+2023-12-17 17:45:15 info: Connected to email server
+2023-12-17 17:45:15 info: Connected to email server
+2023-12-17 17:45:16 info: Connected to email server
+2023-12-17 17:45:16 info: Connected to email server
+2023-12-17 17:45:21 info: Connected to email server
+2023-12-17 17:45:34 info: [0mGET /service [32m200[0m 5495.274 ms - -[0m
+2023-12-17 17:47:49 info: =================================
+2023-12-17 17:47:49 info: ======= ENV: development =======
+2023-12-17 17:47:49 info: 🚀 App listening on the port 3000
+2023-12-17 17:47:49 info: =================================
+2023-12-17 17:47:52 info: Connected to email server
+2023-12-17 17:47:53 info: Connected to email server
+2023-12-17 17:47:54 info: Connected to email server
+2023-12-17 17:47:55 info: Connected to email server
+2023-12-17 17:47:55 info: Connected to email server
+2023-12-17 17:47:55 info: Connected to email server
+2023-12-17 17:47:55 info: Connected to email server
+2023-12-17 17:47:56 info: Connected to email server
+2023-12-17 17:47:58 info: Connected to email server
+2023-12-17 17:48:01 info: Connected to email server
+2023-12-17 17:48:03 info: Connected to email server
+2023-12-17 17:48:04 info: Connected to Database Successfully...
+2023-12-17 17:48:18 info: [0mGET /service [32m200[0m 3252.780 ms - -[0m
+2023-12-17 17:48:22 info: Connected to email server
+2023-12-17 17:48:22 info: Connected to email server
+2023-12-17 17:48:23 info: Connected to email server
+2023-12-17 17:48:23 info: Connected to email server
+2023-12-17 17:48:37 info: [0mGET /job/getAllJobs [32m200[0m 3629.442 ms - -[0m
+2023-12-17 17:49:34 info: =================================
+2023-12-17 17:49:34 info: ======= ENV: development =======
+2023-12-17 17:49:34 info: 🚀 App listening on the port 3000
+2023-12-17 17:49:34 info: =================================
+2023-12-17 17:49:38 info: Connected to email server
+2023-12-17 17:49:38 info: Connected to email server
+2023-12-17 17:49:38 info: Connected to email server
+2023-12-17 17:49:38 info: Connected to email server
+2023-12-17 17:49:39 info: Connected to email server
+2023-12-17 17:49:39 info: Connected to email server
+2023-12-17 17:49:40 info: Connected to email server
+2023-12-17 17:49:41 info: Connected to email server
+2023-12-17 17:49:42 info: Connected to Database Successfully...
+2023-12-17 17:49:43 info: Connected to email server
+2023-12-17 17:49:43 info: Connected to email server
+2023-12-17 17:49:44 info: Connected to email server
+2023-12-17 17:49:50 info: Connected to email server
+2023-12-17 17:50:07 info: Connected to email server
+2023-12-17 17:50:10 info: Connected to email server
+2023-12-17 17:50:12 info: Connected to email server
+2023-12-17 17:50:38 info: =================================
+2023-12-17 17:50:38 info: ======= ENV: development =======
+2023-12-17 17:50:38 info: 🚀 App listening on the port 3000
+2023-12-17 17:50:38 info: =================================
+2023-12-17 17:50:41 info: Connected to email server
+2023-12-17 17:50:41 info: Connected to email server
+2023-12-17 17:50:41 info: Connected to email server
+2023-12-17 17:50:42 info: Connected to email server
+2023-12-17 17:50:44 info: Connected to email server
+2023-12-17 17:50:44 info: Connected to email server
+2023-12-17 17:50:44 info: Connected to email server
+2023-12-17 17:50:45 info: Connected to email server
+2023-12-17 17:50:46 info: Connected to email server
+2023-12-17 17:50:46 info: Connected to email server
+2023-12-17 17:50:47 info: Connected to Database Successfully...
+2023-12-17 17:50:48 info: Connected to email server
+2023-12-17 17:51:00 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-17 17:51:00 info: [0mPOST /auth/login [32m200[0m 3793.949 ms - 587[0m
+2023-12-17 17:51:11 info: Connected to email server
+2023-12-17 17:51:11 info: Connected to email server
+2023-12-17 17:51:12 info: Connected to email server
+2023-12-17 17:51:17 info: [0mPOST /job [32m200[0m 4900.608 ms - -[0m
+2023-12-17 17:51:27 info: Connected to email server
+2023-12-17 17:51:35 info: [0mGET /job/getAllJobs [32m200[0m 13054.143 ms - -[0m
+2023-12-17 17:52:07 info: [0mGET /service [32m200[0m 18921.896 ms - -[0m
+2023-12-17 17:52:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2023-12-17 17:52:28 info: [0mPOST /auth/login [32m200[0m 920.444 ms - 587[0m
+2023-12-17 17:52:40 info: [0mPOST /service [32m200[0m 2330.756 ms - 987[0m
+2023-12-17 17:53:00 info: [0mGET /service [32m200[0m 9844.199 ms - -[0m

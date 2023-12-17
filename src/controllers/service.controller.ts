@@ -139,7 +139,7 @@ class ServiceController {
   public getAllServices = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'created_at:desc',
+        sortBy: req.query?.sortBy,
         limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',

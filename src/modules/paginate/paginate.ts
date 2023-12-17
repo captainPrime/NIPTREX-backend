@@ -29,16 +29,20 @@ export interface IOptions {
 
 const paginate = (schema: Schema) => {
   schema.static('paginate', async function (filter: Record<string, any>, options: IOptions): Promise<QueryResult> {
-    let sort = '-createdAt';
+    let sort = { created_at: -1 }; // Sort by 'createdAt' in descending order by default
 
     if (options.sortBy) {
       sort = options.sortBy
         .split(',')
         .map((sortOption: string) => {
           const [key, order] = sortOption.split(':');
-          return (order === 'desc' ? '-' : '') + key;
+          return { [key]: order === 'desc' ? -1 : 1 };
         })
-        .join(' ');
+        .reduce((prev: any, current: any) => Object.assign(prev, current), {});
+    }
+
+    if (!sort.created_at) {
+      sort = { ...sort, created_at: -1 }; // Ensure 'createdAt' is sorted in descending order
     }
 
     if (options.search) {

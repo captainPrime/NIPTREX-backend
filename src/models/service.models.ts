@@ -88,7 +88,9 @@ const serviceSchema: Schema<IService> = new Schema(
     },
     featured: { type: Boolean, required: false, default: false },
   },
-  { versionKey: false },
+  {
+    timestamps: true,
+  },
 );
 
 const serviceProposalSchema: Schema = new Schema(
