@@ -1,0 +1,31 @@
+2025-05-11 20:06:33 info: [0mGET / [32m200[0m 120.490 ms - 115[0m
+2025-05-11 20:18:48 info: [0mGET / [32m200[0m 138.087 ms - 115[0m
+2025-05-11 22:00:50 info: [0mGET / [32m200[0m 32.382 ms - 115[0m
+2025-05-11 22:12:57 info: [0mGET /api/auth/error?error=CredentialsSignin&provider=credentials [32m200[0m 66.108 ms - 103[0m
+2025-05-11 22:12:57 error: [GET] /api/auth/error >> StatusCode:: 404, Message:: The requested path /api/auth/error not found!
+2025-05-11 22:12:57 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 22:12:57 info: [0mGET /favicon.ico [32m200[0m 2.997 ms - 100[0m
+2025-05-11 22:13:10 error: [GET] /api/auth/error >> StatusCode:: 404, Message:: The requested path /api/auth/error not found!
+2025-05-11 22:13:10 info: [0mGET /api/auth/error?error=CredentialsSignin&provider=credentials [36m304[0m 17.664 ms - -[0m
+2025-05-11 22:13:10 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 22:13:10 info: [0mGET /favicon.ico [36m304[0m 0.642 ms - -[0m
+2025-05-11 22:13:37 error: [GET] /api/auth/error >> StatusCode:: 404, Message:: The requested path /api/auth/error not found!
+2025-05-11 22:13:37 info: [0mGET /api/auth/error?error=CredentialsSignin&provider=credentials [36m304[0m 4.498 ms - -[0m
+2025-05-11 22:13:37 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 22:13:37 info: [0mGET /favicon.ico [36m304[0m 1.517 ms - -[0m
+2025-05-11 23:54:04 error: [GET] /dashboard >> StatusCode:: 404, Message:: The requested path /dashboard not found!
+2025-05-11 23:54:04 info: [0mGET /dashboard [32m200[0m 74.885 ms - 98[0m
+2025-05-11 23:54:05 error: [GET] /.well-known/appspecific/com.chrome.devtools.json >> StatusCode:: 404, Message:: The requested path /.well-known/appspecific/com.chrome.devtools.json not found!
+2025-05-11 23:54:05 info: [0mGET /.well-known/appspecific/com.chrome.devtools.json [32m200[0m 1.907 ms - 137[0m
+2025-05-11 23:54:05 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 23:54:05 info: [0mGET /favicon.ico [36m304[0m 2.078 ms - -[0m
+2025-05-11 23:55:06 info: [0mGET / [32m200[0m 3.627 ms - 115[0m
+2025-05-11 23:55:06 error: [GET] /.well-known/appspecific/com.chrome.devtools.json >> StatusCode:: 404, Message:: The requested path /.well-known/appspecific/com.chrome.devtools.json not found!
+2025-05-11 23:55:06 info: [0mGET /.well-known/appspecific/com.chrome.devtools.json [36m304[0m 8.264 ms - -[0m
+2025-05-11 23:55:06 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 23:55:06 info: [0mGET /favicon.ico [36m304[0m 4.670 ms - -[0m
+2025-05-11 23:55:58 info: [0mGET / [32m200[0m 7.008 ms - 115[0m
+2025-05-11 23:55:58 error: [GET] /.well-known/appspecific/com.chrome.devtools.json >> StatusCode:: 404, Message:: The requested path /.well-known/appspecific/com.chrome.devtools.json not found!
+2025-05-11 23:55:58 info: [0mGET /.well-known/appspecific/com.chrome.devtools.json [36m304[0m 18.420 ms - -[0m
+2025-05-11 23:55:58 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-11 23:55:58 info: [0mGET /favicon.ico [36m304[0m 1.909 ms - -[0m

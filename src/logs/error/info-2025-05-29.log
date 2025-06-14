@@ -1,0 +1,39 @@
+2025-05-29 11:00:27 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 11:40:02 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 11:51:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:02:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:04:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:04:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:13:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:13:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:14:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:27:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:27:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:28:11 error: [GET] /bid/check/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /bid/check/680a38bccd739f43478e6770 not found!
+2025-05-29 12:28:11 error: [GET] /bid/check/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /bid/check/680a38bccd739f43478e6770 not found!
+2025-05-29 12:29:41 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 12:33:38 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2025-05-29 12:33:53 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2025-05-29 12:34:16 error: [POST] /chat >> StatusCode:: 400, Message:: All required fields cannot be empty
+2025-05-29 12:41:14 error: [POST] /chat/message >> StatusCode:: 400, Message:: CHAT_NOT_FOUND
+2025-05-29 12:42:07 error: [POST] /chat/message >> StatusCode:: 400, Message:: CANT_SEND_BOTH_FILES_AND_MESSAGE
+2025-05-29 12:47:35 error: [GET] /chat/milestone/64e3ce8e44332f3906bed900 >> StatusCode:: 400, Message:: Cannot read properties of null (reading 'first_name')
+2025-05-29 13:06:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 13:06:49 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 13:07:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 13:07:39 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 13:07:56 error: [POST] /chat >> StatusCode:: 400, Message:: Chat id cannot be empty
+2025-05-29 13:08:13 error: [POST] /chat >> StatusCode:: 400, Message:: Chat id cannot be empty
+2025-05-29 13:08:34 error: [POST] /chat >> StatusCode:: 400, Message:: Chat id cannot be empty
+2025-05-29 13:09:02 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_VALIDATION_ERROR
+2025-05-29 13:12:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 13:14:55 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_ALREADY_EXISTS
+2025-05-29 14:00:14 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 14:00:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 14:00:55 error: [GET] /proposals/job/68101c1b191d80b5fd7f069a >> StatusCode:: 404, Message:: The requested path /proposals/job/68101c1b191d80b5fd7f069a not found!
+2025-05-29 14:00:55 error: [GET] /proposals/job/68101c1b191d80b5fd7f069a >> StatusCode:: 404, Message:: The requested path /proposals/job/68101c1b191d80b5fd7f069a not found!
+2025-05-29 14:02:45 error: [GET] /contracts/undefined >> StatusCode:: 404, Message:: The requested path /contracts/undefined not found!
+2025-05-29 14:02:45 error: [GET] /contracts/undefined >> StatusCode:: 404, Message:: The requested path /contracts/undefined not found!
+2025-05-29 14:54:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 15:19:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-29 15:26:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

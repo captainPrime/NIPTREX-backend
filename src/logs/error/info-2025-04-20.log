@@ -1,0 +1,17 @@
+2025-04-20 00:55:46 error: Error connecting to Database: Error: querySrv ECONNREFUSED _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2025-04-20 00:56:19 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 00:56:43 error: [GET] /admin >> StatusCode:: 404, Message:: The requested path /admin not found!
+2025-04-20 00:56:43 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 00:56:53 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 00:57:53 error: [GET] /swagger >> StatusCode:: 404, Message:: The requested path /swagger not found!
+2025-04-20 00:57:53 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 00:58:02 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 01:11:00 error: [GET] /api-docs >> StatusCode:: 404, Message:: The requested path /api-docs not found!
+2025-04-20 01:11:00 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-04-20 01:21:07 error: [POST] /auth/register >> StatusCode:: 400, Message:: referral_code must be a string
+2025-04-20 01:21:30 error: [POST] /auth/register >> StatusCode:: 400, Message:: referral_code must be a string
+2025-04-20 01:21:46 error: [POST] /auth/register >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2025-04-20 12:33:41 error: [POST] /auth/register >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2025-04-20 12:34:14 error: Error connecting to Database: Error: querySrv ENOTFOUND _mongodb._tcp.niptrex.xzoqe5t.mongodb.net
+2025-04-20 12:34:41 error: [POST] /auth/register >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2025-04-20 12:35:39 error: [POST] /auth/register >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms

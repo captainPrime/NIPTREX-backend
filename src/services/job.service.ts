@@ -470,6 +470,39 @@ class JobService {
     // return { ...data, results };
     return data;
   }
+
+  /*
+  |--------------------------------------------------------------------------
+  | Get Freelance Contracts By id
+  |--------------------------------------------------------------------------
+  */
+  public async getFreelancerContractById(userId: string, contractId: string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'USER_ID_REQUIRED');
+    if (isEmpty(contractId)) throw new HttpException(400, 2003, 'CONTRACT_ID_REQUIRED');
+
+    const contract = await this.bid
+      .findOne({
+        _id: contractId,
+        user_id: userId, // ensures user owns it
+      })
+      .populate('job_id user_id'); // optional
+
+    return contract;
+  }
+
+  public async getFreelancerContractByIdClient(userId: string, contractId: string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2001, 'USER_ID_REQUIRED');
+    if (isEmpty(contractId)) throw new HttpException(400, 2003, 'CONTRACT_ID_REQUIRED');
+
+    const contract = await this.bid
+      .findOne({
+        _id: contractId,
+        user_id: userId, // ensures user owns it
+      })
+      .populate('job_id user_id'); // optional
+
+    return contract;
+  }
 }
 
 export default JobService;

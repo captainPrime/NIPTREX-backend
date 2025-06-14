@@ -1430,3 +1430,115 @@ src/modules/paginate/paginate.ts(129,4): error TS1128: Declaration or statement 
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+2025-04-29 03:22:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-04-29 03:22:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-30 12:09:09 error: uncaughtException: Unexpected identifier 'assert'
+SyntaxError: Unexpected identifier 'assert'
+    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)
+    at ModuleLoader.#translate (node:internal/modules/esm/loader:534:12)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:487:33)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+2025-05-30 12:09:36 error: uncaughtException: Unexpected identifier 'assert'
+SyntaxError: Unexpected identifier 'assert'
+    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)
+    at ModuleLoader.#translate (node:internal/modules/esm/loader:534:12)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:487:33)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+2025-06-13 14:28:44 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-13 14:28:44 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)

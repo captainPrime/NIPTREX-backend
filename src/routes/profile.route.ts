@@ -31,7 +31,8 @@ class ProfileRoute implements Routes {
   }
 
   private initializeRoutes() {
-    this.router.get(`${this.path}`, authMiddleware(['freelancer', 'client']), this.profileController.getProfile);
+    this.router.get(`${this.path}`, authMiddleware(['freelancer', 'client']), this.profileController.getDirectProfile);
+    this.router.get(`${this.path}/details`, authMiddleware(['freelancer', 'client']), this.profileController.getProfile);
     this.router.get(`${this.path}/getProfileByUserId`, this.profileController.getProfileByUserId);
     /*
     |--------------------------------------------------------------------------

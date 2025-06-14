@@ -99,6 +99,16 @@ class ProfileService {
     return { profile_percentage, profile };
   }
 
+  public async getDirectProfile(userId: string): Promise<any> {
+    if (isEmpty(userId)) throw new HttpException(400, 2005, "You're not userData");
+
+    const findOneUserData: any = await this.userService.findUserById(userId);
+
+    if (!findOneUserData) throw new HttpException(400, 2002, 'PROFILE_NOT_FOUND');
+
+    return findOneUserData;
+  }
+
   /*
   |--------------------------------------------------------------------------
   | Create Experience
