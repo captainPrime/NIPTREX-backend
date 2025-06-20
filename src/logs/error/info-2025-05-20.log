@@ -1,0 +1,79 @@
+2025-05-20 11:08:13 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-05-20 11:08:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 11:08:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 11:18:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 11:19:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 11:27:05 error: [GET] /profile/details >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:27:05 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:27:25 error: [GET] /profile/details >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:29:12 error: [GET] /profile/details >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:29:13 error: [GET] /job/getUserJobBestMatches >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:29:32 error: [GET] /profile/details >> StatusCode:: 400, Message:: INVALID_AUTHORIZATION
+2025-05-20 11:40:15 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:47:51 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:49:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:56:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:57:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:58:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 13:59:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:03:18 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:03:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:20:15 error: [GET] /dashboard >> StatusCode:: 404, Message:: The requested path /dashboard not found!
+2025-05-20 14:20:21 error: [GET] /dashboard >> StatusCode:: 404, Message:: The requested path /dashboard not found!
+2025-05-20 14:20:29 error: [GET] /dashboard >> StatusCode:: 404, Message:: The requested path /dashboard not found!
+2025-05-20 14:23:04 error: [GET] /dashboard >> StatusCode:: 404, Message:: The requested path /dashboard not found!
+2025-05-20 14:23:04 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-05-20 14:34:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:34:23 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:37:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:39:01 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 14:39:34 error: [GET] /profile/freelancer/6812d2a0a0daecfceb93c326 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d2a0a0daecfceb93c326 not found!
+2025-05-20 14:39:34 error: [GET] /profile/freelancer/6812d2a0a0daecfceb93c326 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d2a0a0daecfceb93c326 not found!
+2025-05-20 14:42:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-05-20 14:42:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 15:21:53 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 15:22:05 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 15:22:18 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 15:23:46 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:23:46 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:23:46 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:23:46 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:24:50 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:24:50 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:24:50 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:24:50 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:25:55 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:26:02 error: [GET] /profile/freelancer/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /profile/freelancer/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:26:02 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:26:51 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: You're not userData
+2025-05-20 15:26:51 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:26:52 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:27:24 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: You're not userData
+2025-05-20 15:27:24 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:28:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 15:28:57 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 15:28:57 error: [GET] /job/freelancer/history/6812d1daa0daecfceb93c2d4 >> StatusCode:: 404, Message:: The requested path /job/freelancer/history/6812d1daa0daecfceb93c2d4 not found!
+2025-05-20 16:03:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 16:04:08 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 16:16:20 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 16:17:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 16:23:03 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 16:23:31 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 16:25:29 error: [GET] /profile/getProfileByUserId >> StatusCode:: 400, Message:: PROFILE_NOT_FOUND
+2025-05-20 16:34:40 error: [GET] /proposals/job/68101c1b191d80b5fd7f069a >> StatusCode:: 404, Message:: The requested path /proposals/job/68101c1b191d80b5fd7f069a not found!
+2025-05-20 16:34:53 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:34:53 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:35:12 error: [GET] /proposals/job/68101c1b191d80b5fd7f069a >> StatusCode:: 404, Message:: The requested path /proposals/job/68101c1b191d80b5fd7f069a not found!
+2025-05-20 16:35:12 error: [GET] /proposals/job/68101c1b191d80b5fd7f069a >> StatusCode:: 404, Message:: The requested path /proposals/job/68101c1b191d80b5fd7f069a not found!
+2025-05-20 16:35:22 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:35:22 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:36:12 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:36:44 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:36:44 error: [GET] /proposals/job/680a38bccd739f43478e6770 >> StatusCode:: 404, Message:: The requested path /proposals/job/680a38bccd739f43478e6770 not found!
+2025-05-20 16:40:46 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-20 16:41:37 error: [GET] /services/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 404, Message:: The requested path /services/681eb9c2ceecc0bf0373ba59 not found!
+2025-05-20 16:41:37 error: [GET] /services/saved/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 404, Message:: The requested path /services/saved/681eb9c2ceecc0bf0373ba59 not found!
+2025-05-20 16:41:37 error: [GET] /services/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 404, Message:: The requested path /services/681eb9c2ceecc0bf0373ba59 not found!
+2025-05-20 16:41:37 error: [GET] /services/saved/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 404, Message:: The requested path /services/saved/681eb9c2ceecc0bf0373ba59 not found!
+2025-05-20 16:44:21 error: [POST] /conversations/create >> StatusCode:: 404, Message:: The requested path /conversations/create not found!
+2025-05-20 16:50:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')

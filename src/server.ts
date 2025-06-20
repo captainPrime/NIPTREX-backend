@@ -37,6 +37,7 @@ app.listen();
 
 ErrorMiddleware.initializeUnhandledException();
 
+
 process.on('SIGTERM', () => {
   console.info('SIGTERM received');
 });

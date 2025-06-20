@@ -8,6 +8,10 @@ export interface IPhotography extends Document {
   price: string | any;
   cloudinary_id: string | any;
   user_id: string | ObjectId;
+  category: string[];
+  tags: string[];
+  licence: string;
+  listAsNFT: boolean;
 }
 
 const photographySchema = new Schema<IPhotography>({
@@ -26,7 +30,27 @@ const photographySchema = new Schema<IPhotography>({
   cloudinary_id: {
     type: String,
   },
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+  user_id: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
+  },
+  category: {
+    type: [String],
+    default: [],
+  },
+  tags: {
+    type: [String],
+    default: [],
+  },
+  licence: {
+    type: String,
+    default: '',
+  },
+  listAsNFT: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 photographySchema.plugin(toJSON);

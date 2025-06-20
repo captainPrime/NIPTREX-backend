@@ -1430,3 +1430,1275 @@ src/modules/paginate/paginate.ts(129,4): error TS1128: Declaration or statement 
     at Object.nodeDevHook [as .ts] (/Users/olashina/Documents/workspace/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1076:32)
     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+2025-04-29 03:22:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-04-29 03:22:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-30 12:09:09 error: uncaughtException: Unexpected identifier 'assert'
+SyntaxError: Unexpected identifier 'assert'
+    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)
+    at ModuleLoader.#translate (node:internal/modules/esm/loader:534:12)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:487:33)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+2025-05-30 12:09:36 error: uncaughtException: Unexpected identifier 'assert'
+SyntaxError: Unexpected identifier 'assert'
+    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)
+    at ModuleLoader.#translate (node:internal/modules/esm/loader:534:12)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:487:33)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+    at new ModuleJobSync (node:internal/modules/esm/module_job:344:34)
+    at ModuleLoader.getModuleJobForRequire (node:internal/modules/esm/loader:510:11)
+2025-06-13 14:28:44 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-13 14:28:44 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 02:04:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 02:04:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 02:17:04 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 02:17:04 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 02:19:36 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 02:19:36 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 02:22:16 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 02:22:16 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 02:22:45 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 02:22:45 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:24:00 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:24:00 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:24:50 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:24:50 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:25:32 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:25:32 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:25:39 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:25:39 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:28:11 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:28:11 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:28:24 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:28:24 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:29:35 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:29:35 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:29:40 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:29:40 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:31:08 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:31:08 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:31:15 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:31:15 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:32:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:32:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:32:17 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:32:17 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:33:47 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/controllers/wallet.controller.ts(309,59): error TS1005: ')' expected.
+
+Error: ⨯ Unable to compile TypeScript:
+src/controllers/wallet.controller.ts(309,59): error TS1005: ')' expected.
+
+    at Object.<anonymous> (/Users/user/Desktop/niptrex/NIPTREX-backend/src/controllers/wallet.controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/ld/33w2d7kn06q07zxmdcc39r480000gn/T/ts-node-dev-hook-025505121999974234.js:69:33)
+    at loadTS (node:internal/modules/cjs/loader:1826:10)
+    at require.extensions.<computed> (/private/var/folders/ld/33w2d7kn06q07zxmdcc39r480000gn/T/ts-node-dev-hook-025505121999974234.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-06-20 10:34:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:34:10 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:34:21 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:34:21 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:36:04 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:36:04 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:36:12 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:36:12 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:37:01 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:37:01 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:38:51 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:38:51 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:38:57 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:38:57 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:39:18 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:39:18 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:39:22 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:39:22 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:39:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:39:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:40:26 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:40:26 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:40:32 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:40:32 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:41:04 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:41:04 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:41:09 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:41:09 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:41:30 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:41:30 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:05 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:05 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:26 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:26 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:53 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:42:53 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:43:12 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:43:12 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:47:10 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:47:10 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:48:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:48:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:49:26 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:49:26 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:50:03 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:50:03 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:51:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:51:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:53:46 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:53:46 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:54:46 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:54:46 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:55:27 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:55:27 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:56:45 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:56:45 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:58:13 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:58:13 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 10:58:32 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:58:32 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:59:41 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 10:59:41 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:01:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:01:29 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:02:25 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:02:25 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:02:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:02:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:03:56 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:03:56 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:05:05 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:05:05 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:05:22 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:05:22 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:09:51 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:09:51 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:11:28 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:11:28 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:12:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 11:12:30 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-06-20 11:14:56 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:14:56 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:17:59 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:17:59 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:18:43 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:18:43 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:22:41 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:22:41 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:23:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:23:48 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:29:09 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:29:09 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:30:04 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:30:04 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)

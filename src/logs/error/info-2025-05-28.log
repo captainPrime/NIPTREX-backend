@@ -1,0 +1,71 @@
+2025-05-28 00:43:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2025-05-28 00:44:11 error: [POST] /auth/login >> StatusCode:: 400, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2025-05-28 00:44:33 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 00:48:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 00:54:57 error: [POST] /photography/paymentCallback >> StatusCode:: 400, Message:: PHOTOGRAPHY_NOT_FOUND
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 00:54:58 error: unhandledRejection: Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/flutterwave-node-v3/node_modules/axios/lib/adapters/http.js:269:11)
+    at IncomingMessage.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 01:19:17 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-05-28 01:19:55 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2025-05-28 01:20:56 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2025-05-28 01:21:09 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2025-05-28 01:22:40 error: [POST] /photography >> StatusCode:: 400, Message:: PHOTOGRAPHY_VALIDATION_ERROR
+2025-05-28 02:05:19 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 02:05:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 02:07:22 error: [GET] /photography/getPhotographyById/683661a6a0027064a6ab29eb >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 02:07:35 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 02:07:59 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 02:08:24 error: [GET] /photography/getPhotographyById/683661a6a0027064a6ab29eb >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 02:08:31 error: [GET] /photography/getPhotographyById/683661a6a0027064a6ab29eb >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 02:08:31 error: [GET] /photography/getPhotographyById/683661a6a0027064a6ab29eb >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 02:09:05 error: [GET] /photography/getPhotographyById/683661a6a0027064a6ab29eb >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 02:28:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 02:55:55 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 03:03:05 error: [GET] /service/getFeaturedService >> StatusCode:: 400, Message:: AUTHENTICATION_TOKEN_MISSING
+2025-05-28 03:05:50 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:06:29 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:06:34 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:15:46 error: [PUT] /service/updateServiceById/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:15:58 error: [PUT] /service/updateServiceById/681eb9c2ceecc0bf0373ba59 >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:22:52 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 03:25:10 error: [POST] /service >> StatusCode:: 401, Message:: UNAUTHORIZED_USER
+2025-05-28 03:25:25 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-05-28 03:41:52 error: [GET] /phography >> StatusCode:: 404, Message:: The requested path /phography not found!
+2025-05-28 03:41:52 error: [GET] /phography >> StatusCode:: 404, Message:: The requested path /phography not found!

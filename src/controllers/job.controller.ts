@@ -263,7 +263,7 @@ class JobController {
       const id: string = req.params.id;
 
       const options: PaginationOptions = {
-        sortBy: req.query.sortBy || 'name:desc',
+        sortBy: req.query.sortBy || 'createdAt:desc',
         limit: parseInt(req.query.limit as string, 10) || 10,
         page: parseInt(req.query.page as string, 10) || 1,
         projectBy: req.query.projectBy || 'name:hide, role:hide',
@@ -427,6 +427,50 @@ class JobController {
       if (!job) throw new HttpException(400, 2002, 'JOB_NOT_FOUND');
 
       res.status(200).json({ status: 200, response_code: 3000, message: 'JOB_REQUEST_SUCCESSFUL', data: job });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  public getFreelancerContractsById = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const contractId = req.params.id;
+      const userId = req.user.id;
+
+      if (!contractId) throw new HttpException(400, 2003, 'CONTRACT_ID_REQUIRED');
+
+      const contract = await this.jobService.getFreelancerContractById(userId, contractId);
+
+      if (!contract) throw new HttpException(404, 2004, 'CONTRACT_NOT_FOUND');
+
+      res.status(200).json({
+        status: 200,
+        response_code: 3000,
+        message: 'CONTRACT_FETCH_SUCCESS',
+        data: contract,
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  public getFreelancerContractsByIdClient = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const proposalId = req.params.proposal_id;
+      const userId = req.params.freelancer_id;
+
+      if (!proposalId) throw new HttpException(400, 2003, 'PROPOSAL_ID_REQUIRED');
+
+      const contract = await this.jobService.getFreelancerContractByIdClient(userId, proposalId);
+
+      if (!contract) throw new HttpException(404, 2004, 'PROPOSAL_NOT_FOUND');
+
+      res.status(200).json({
+        status: 200,
+        response_code: 3000,
+        message: 'CONTRACT_FETCH_SUCCESS',
+        data: contract,
+      });
     } catch (error) {
       next(error);
     }

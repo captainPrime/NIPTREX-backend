@@ -1,0 +1,16 @@
+2025-06-15 14:06:27 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 14:06:42 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 14:12:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 14:42:30 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 14:50:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 15:30:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 15:37:43 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 15:42:58 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 15:45:17 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-15 15:47:49 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 15:47:56 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 15:48:00 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 15:49:02 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 15:50:09 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 15:59:47 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR
+2025-06-15 16:00:07 error: [POST] /chat/message >> StatusCode:: 400, Message:: MESSAGE_VALIDATION_ERROR

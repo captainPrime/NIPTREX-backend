@@ -29,8 +29,17 @@ class PhotographyController {
   public createPhotography = async (req: Request, res: Response, next: NextFunction) => {
     try {
       // return req.file;
-      const { title, price } = req.body;
-      const { error } = photographySchemaValidation.validate({ title, price, image: req.file });
+      const { title, price, category, tags, licence, listAsNFT } = req.body;
+
+      const { error } = photographySchemaValidation.validate({
+        title,
+        price,
+        image: req.file,
+        category,
+        tags,
+        licence,
+        listAsNFT,
+      });
 
       if (error) throw new HttpException(400, 9002, 'PHOTOGRAPHY_VALIDATION_ERROR', [error.details[0].message]);
 
@@ -79,6 +88,10 @@ class PhotographyController {
           price,
           cloudinary_id: cloudinaryResponse?.public_id as string,
           image: cloudinaryResponse?.secure_url as string,
+          category: Array.isArray(category) ? category : category?.split(',') || [],
+          tags: Array.isArray(tags) ? tags : tags?.split(',') || [],
+          licence,
+          listAsNFT: listAsNFT === 'true' || listAsNFT === true,
         });
 
         return res.status(200).json({ status: 200, response_code: 3000, message: 'PHOTOGRAPHY_REQUEST_SUCCESSFUL', data });

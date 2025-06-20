@@ -1,0 +1,336 @@
+2025-06-19 00:15:59 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 5.913 ms - 0[0m
+2025-06-19 00:16:01 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 2257.820 ms - -[0m
+2025-06-19 00:18:17 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 3.685 ms - 0[0m
+2025-06-19 00:18:19 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1395.271 ms - -[0m
+2025-06-19 00:18:21 info: [0mOPTIONS /auth/login [32m204[0m 0.929 ms - 0[0m
+2025-06-19 00:18:22 info: [0mPOST /auth/login [32m200[0m 758.050 ms - 587[0m
+2025-06-19 00:18:22 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:18:22 info: [0mOPTIONS /profile [32m204[0m 0.102 ms - 0[0m
+2025-06-19 00:18:23 info: [0mGET /profile [36m304[0m 1229.516 ms - -[0m
+2025-06-19 00:18:24 info: [0mOPTIONS /profile/details [32m204[0m 36.562 ms - 0[0m
+2025-06-19 00:18:24 info: [0mOPTIONS /profile/details [32m204[0m 0.165 ms - 0[0m
+2025-06-19 00:18:25 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.383 ms - 0[0m
+2025-06-19 00:18:26 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1738.885 ms - -[0m
+2025-06-19 00:18:29 info: [0mGET /profile/details [36m304[0m 4373.677 ms - -[0m
+2025-06-19 00:18:29 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.298 ms - 0[0m
+2025-06-19 00:18:29 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.816 ms - 0[0m
+2025-06-19 00:18:31 info: [0mGET /job/getFreelancerContracts [36m304[0m 1755.671 ms - -[0m
+2025-06-19 00:18:33 info: [0mGET /job/getFreelancerContracts [36m304[0m 1689.477 ms - -[0m
+2025-06-19 00:18:33 info: [0mGET /profile/details [36m304[0m 4608.085 ms - -[0m
+2025-06-19 00:18:40 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 2.639 ms - 0[0m
+2025-06-19 00:18:40 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.795 ms - 0[0m
+2025-06-19 00:18:41 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1296.043 ms - -[0m
+2025-06-19 00:18:42 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1121.980 ms - -[0m
+2025-06-19 00:25:14 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 12.144 ms - 0[0m
+2025-06-19 00:25:14 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.100 ms - 0[0m
+2025-06-19 00:25:16 info: [0mGET /job/getFreelancerContracts [36m304[0m 1947.900 ms - -[0m
+2025-06-19 00:25:17 info: [0mGET /job/getFreelancerContracts [36m304[0m 1342.477 ms - -[0m
+2025-06-19 00:27:01 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 61.516 ms - 0[0m
+2025-06-19 00:27:01 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.607 ms - 0[0m
+2025-06-19 00:27:02 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1381.544 ms - -[0m
+2025-06-19 00:27:03 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 990.446 ms - -[0m
+2025-06-19 00:28:19 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 1.411 ms - 0[0m
+2025-06-19 00:28:20 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1363.420 ms - -[0m
+2025-06-19 00:28:30 info: =================================
+2025-06-19 00:28:30 info: ======= ENV: development =======
+2025-06-19 00:28:30 info: 🚀 App listening on the port 3000
+2025-06-19 00:28:30 info: =================================
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:32 info: Connected to email server
+2025-06-19 00:28:34 info: Connected to Database Successfully...
+2025-06-19 00:29:09 info: [0mOPTIONS /auth/login [32m204[0m 2.073 ms - 0[0m
+2025-06-19 00:29:10 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:29:10 info: [0mPOST /auth/login [32m200[0m 755.887 ms - 587[0m
+2025-06-19 00:29:10 info: [0mOPTIONS /profile [32m204[0m 0.692 ms - 0[0m
+2025-06-19 00:29:11 info: [0mGET /profile [36m304[0m 1026.986 ms - -[0m
+2025-06-19 00:29:15 info: [0mOPTIONS /profile/details [32m204[0m 106.521 ms - 0[0m
+2025-06-19 00:29:15 info: [0mOPTIONS /profile/details [32m204[0m 0.360 ms - 0[0m
+2025-06-19 00:29:15 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.200 ms - 0[0m
+2025-06-19 00:29:17 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1524.063 ms - -[0m
+2025-06-19 00:29:18 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.425 ms - 0[0m
+2025-06-19 00:29:18 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.396 ms - 0[0m
+2025-06-19 00:29:18 info: [0mGET /profile/details [36m304[0m 3561.503 ms - -[0m
+2025-06-19 00:29:21 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2025-06-19 00:29:21 info: [0mGET /job/getFreelancerContracts [32m200[0m 3258.357 ms - 71[0m
+2025-06-19 00:29:22 info: [0mGET /profile/details [36m304[0m 3836.918 ms - -[0m
+2025-06-19 00:29:25 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2025-06-19 00:29:25 info: [0mGET /job/getFreelancerContracts [36m304[0m 3993.506 ms - -[0m
+2025-06-19 00:29:33 info: [0mOPTIONS /profile/details [32m204[0m 1.009 ms - 0[0m
+2025-06-19 00:29:33 info: [0mOPTIONS /profile/details [32m204[0m 0.150 ms - 0[0m
+2025-06-19 00:29:33 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.416 ms - 0[0m
+2025-06-19 00:29:35 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1641.991 ms - -[0m
+2025-06-19 00:29:35 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.622 ms - 0[0m
+2025-06-19 00:29:35 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.295 ms - 0[0m
+2025-06-19 00:29:37 info: [0mGET /profile/details [36m304[0m 4330.398 ms - -[0m
+2025-06-19 00:29:38 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2025-06-19 00:29:38 info: [0mGET /job/getFreelancerContracts [36m304[0m 2603.784 ms - -[0m
+2025-06-19 00:29:40 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: JOB_NOT_FOUND
+2025-06-19 00:29:40 info: [0mGET /job/getFreelancerContracts [36m304[0m 2119.618 ms - -[0m
+2025-06-19 00:29:45 info: [0mGET /profile/details [36m304[0m 7778.949 ms - -[0m
+2025-06-19 00:31:04 info: =================================
+2025-06-19 00:31:04 info: ======= ENV: development =======
+2025-06-19 00:31:04 info: 🚀 App listening on the port 3000
+2025-06-19 00:31:04 info: =================================
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:06 info: Connected to email server
+2025-06-19 00:31:07 info: Connected to Database Successfully...
+2025-06-19 00:31:26 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 31.175 ms - 0[0m
+2025-06-19 00:31:28 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "{\n' +
+  '  _id: new ObjectId("6812d1daa0daecfceb93c2d4"),\n' +
+  "  first_name: 'Teniola',\n" +
+  "  last_name: 'Ozone',\n" +
+  "  email: 'ozone@gmail.com',\n" +
+  "  password: '$2a$08$GVXkjPebU20or6mxD0hHTub5Lr/ju5yODXIiV4IPfQuYed.Mwv68y',\n" +
+  "  user: 'freelancer',\n" +
+  "  country: 'Nigeria',\n" +
+  '  rating: 0,\n' +
+  "  referral_code: '12345',\n" +
+  "  profile_picture: 'https://res.cloudinary.com/dh3qqbqa5/image/upload/v1746064028/Niptrex/bpnuptxj3wzpsi8axl3m.jpg',\n" +
+  '  verified: true,\n' +
+  '  has_profile: true,\n' +
+  '  has_about: true,\n' +
+  '  has_experience: true,\n' +
+  '  has_education: true,\n' +
+  '  has_certification: true,\n' +
+  '  has_billing: true,\n' +
+  '  has_identity: true,\n' +
+  '  has_work_preference: true,\n' +
+  '  is_profile_completed: false,\n' +
+  '  createdAt: 2025-05-01T01:43:54.506Z,\n' +
+  '  updatedAt: 2025-06-13T16:09:44.835Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "_id" for model "User"
+2025-06-19 00:31:28 info: [0mGET /job/getFreelancerContracts [32m200[0m 1594.517 ms - -[0m
+2025-06-19 00:31:28 info: [0mOPTIONS /auth/login [32m204[0m 0.358 ms - 0[0m
+2025-06-19 00:31:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:31:29 info: [0mPOST /auth/login [32m200[0m 944.839 ms - 587[0m
+2025-06-19 00:31:29 info: [0mOPTIONS /profile [32m204[0m 0.299 ms - 0[0m
+2025-06-19 00:31:30 info: [0mGET /profile [36m304[0m 774.339 ms - -[0m
+2025-06-19 00:31:31 info: [0mOPTIONS /profile/details [32m204[0m 3.357 ms - 0[0m
+2025-06-19 00:31:31 info: [0mOPTIONS /profile/details [32m204[0m 0.622 ms - 0[0m
+2025-06-19 00:31:31 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.713 ms - 0[0m
+2025-06-19 00:31:32 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.731 ms - 0[0m
+2025-06-19 00:31:32 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.423 ms - 0[0m
+2025-06-19 00:31:33 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1830.036 ms - -[0m
+2025-06-19 00:31:34 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "{\n' +
+  '  _id: new ObjectId("6812d1daa0daecfceb93c2d4"),\n' +
+  "  first_name: 'Teniola',\n" +
+  "  last_name: 'Ozone',\n" +
+  "  email: 'ozone@gmail.com',\n" +
+  "  password: '$2a$08$GVXkjPebU20or6mxD0hHTub5Lr/ju5yODXIiV4IPfQuYed.Mwv68y',\n" +
+  "  user: 'freelancer',\n" +
+  "  country: 'Nigeria',\n" +
+  '  rating: 0,\n' +
+  "  referral_code: '12345',\n" +
+  "  profile_picture: 'https://res.cloudinary.com/dh3qqbqa5/image/upload/v1746064028/Niptrex/bpnuptxj3wzpsi8axl3m.jpg',\n" +
+  '  verified: true,\n' +
+  '  has_profile: true,\n' +
+  '  has_about: true,\n' +
+  '  has_experience: true,\n' +
+  '  has_education: true,\n' +
+  '  has_certification: true,\n' +
+  '  has_billing: true,\n' +
+  '  has_identity: true,\n' +
+  '  has_work_preference: true,\n' +
+  '  is_profile_completed: false,\n' +
+  '  createdAt: 2025-05-01T01:43:54.506Z,\n' +
+  '  updatedAt: 2025-06-13T16:09:44.835Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "_id" for model "User"
+2025-06-19 00:31:34 info: [0mGET /job/getFreelancerContracts [36m304[0m 1634.461 ms - -[0m
+2025-06-19 00:31:35 info: [0mGET /profile/details [36m304[0m 4190.824 ms - -[0m
+2025-06-19 00:31:35 error: [GET] /job/getFreelancerContracts >> StatusCode:: 400, Message:: Cast to ObjectId failed for value "{\n' +
+  '  _id: new ObjectId("6812d1daa0daecfceb93c2d4"),\n' +
+  "  first_name: 'Teniola',\n" +
+  "  last_name: 'Ozone',\n" +
+  "  email: 'ozone@gmail.com',\n" +
+  "  password: '$2a$08$GVXkjPebU20or6mxD0hHTub5Lr/ju5yODXIiV4IPfQuYed.Mwv68y',\n" +
+  "  user: 'freelancer',\n" +
+  "  country: 'Nigeria',\n" +
+  '  rating: 0,\n' +
+  "  referral_code: '12345',\n" +
+  "  profile_picture: 'https://res.cloudinary.com/dh3qqbqa5/image/upload/v1746064028/Niptrex/bpnuptxj3wzpsi8axl3m.jpg',\n" +
+  '  verified: true,\n' +
+  '  has_profile: true,\n' +
+  '  has_about: true,\n' +
+  '  has_experience: true,\n' +
+  '  has_education: true,\n' +
+  '  has_certification: true,\n' +
+  '  has_billing: true,\n' +
+  '  has_identity: true,\n' +
+  '  has_work_preference: true,\n' +
+  '  is_profile_completed: false,\n' +
+  '  createdAt: 2025-05-01T01:43:54.506Z,\n' +
+  '  updatedAt: 2025-06-13T16:09:44.835Z,\n' +
+  '  __v: 0\n' +
+  '}" (type string) at path "_id" for model "User"
+2025-06-19 00:31:35 info: [0mGET /job/getFreelancerContracts [36m304[0m 1219.581 ms - -[0m
+2025-06-19 00:31:39 info: [0mGET /profile/details [36m304[0m 3887.716 ms - -[0m
+2025-06-19 00:31:53 info: =================================
+2025-06-19 00:31:53 info: ======= ENV: development =======
+2025-06-19 00:31:53 info: 🚀 App listening on the port 3000
+2025-06-19 00:31:53 info: =================================
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to email server
+2025-06-19 00:31:56 info: Connected to Database Successfully...
+2025-06-19 00:32:04 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 4.260 ms - 0[0m
+2025-06-19 00:32:05 info: [0mGET /job/getFreelancerContracts [32m200[0m 1448.159 ms - -[0m
+2025-06-19 00:32:08 info: [0mOPTIONS /auth/login [32m204[0m 0.760 ms - 0[0m
+2025-06-19 00:32:09 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:32:09 info: [0mPOST /auth/login [32m200[0m 1020.579 ms - 587[0m
+2025-06-19 00:32:09 info: [0mOPTIONS /profile [32m204[0m 0.251 ms - 0[0m
+2025-06-19 00:32:10 info: [0mGET /profile [36m304[0m 908.981 ms - -[0m
+2025-06-19 00:32:11 info: [0mOPTIONS /profile/details [32m204[0m 1.079 ms - 0[0m
+2025-06-19 00:32:11 info: [0mOPTIONS /profile/details [32m204[0m 0.553 ms - 0[0m
+2025-06-19 00:32:11 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.146 ms - 0[0m
+2025-06-19 00:32:14 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 2541.891 ms - -[0m
+2025-06-19 00:32:16 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.894 ms - 0[0m
+2025-06-19 00:32:16 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.282 ms - 0[0m
+2025-06-19 00:32:16 info: [0mGET /profile/details [36m304[0m 5428.240 ms - -[0m
+2025-06-19 00:32:18 info: [0mGET /job/getFreelancerContracts [36m304[0m 1841.996 ms - -[0m
+2025-06-19 00:32:20 info: [0mGET /job/getFreelancerContracts [36m304[0m 1840.341 ms - -[0m
+2025-06-19 00:32:21 info: [0mGET /profile/details [36m304[0m 5007.127 ms - -[0m
+2025-06-19 00:32:25 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 2.227 ms - 0[0m
+2025-06-19 00:32:25 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.910 ms - 0[0m
+2025-06-19 00:32:26 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1377.871 ms - -[0m
+2025-06-19 00:32:27 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1534.343 ms - -[0m
+2025-06-19 00:34:07 info: =================================
+2025-06-19 00:34:07 info: ======= ENV: development =======
+2025-06-19 00:34:07 info: 🚀 App listening on the port 3000
+2025-06-19 00:34:07 info: =================================
+2025-06-19 00:34:08 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 3.023 ms - 0[0m
+2025-06-19 00:34:08 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.581 ms - 0[0m
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:09 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to email server
+2025-06-19 00:34:10 info: Connected to Database Successfully...
+2025-06-19 00:34:30 info: [0mGET /job/getFreelancerContracts [32m200[0m 1909.749 ms - -[0m
+2025-06-19 00:34:31 info: [0mGET /job/getFreelancerContracts [0m-[0m - ms - -[0m
+2025-06-19 00:34:33 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.581 ms - 0[0m
+2025-06-19 00:34:35 info: [0mGET /job/getFreelancerContracts [32m200[0m 1609.185 ms - -[0m
+2025-06-19 00:34:35 info: [0mOPTIONS /auth/login [32m204[0m 0.345 ms - 0[0m
+2025-06-19 00:34:36 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:34:36 info: [0mPOST /auth/login [32m200[0m 1246.277 ms - 587[0m
+2025-06-19 00:34:36 info: [0mOPTIONS /profile [32m204[0m 0.320 ms - 0[0m
+2025-06-19 00:34:37 info: [0mGET /profile [36m304[0m 996.953 ms - -[0m
+2025-06-19 00:34:38 info: [0mOPTIONS /profile/details [32m204[0m 0.967 ms - 0[0m
+2025-06-19 00:34:38 info: [0mOPTIONS /profile/details [32m204[0m 0.411 ms - 0[0m
+2025-06-19 00:34:38 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.229 ms - 0[0m
+2025-06-19 00:34:40 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1684.394 ms - -[0m
+2025-06-19 00:34:42 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.201 ms - 0[0m
+2025-06-19 00:34:42 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.172 ms - 0[0m
+2025-06-19 00:34:42 info: [0mGET /profile/details [36m304[0m 4249.639 ms - -[0m
+2025-06-19 00:34:43 info: [0mGET /job/getFreelancerContracts [36m304[0m 1692.493 ms - -[0m
+2025-06-19 00:34:45 info: [0mGET /job/getFreelancerContracts [36m304[0m 1660.207 ms - -[0m
+2025-06-19 00:34:47 info: [0mGET /profile/details [36m304[0m 4858.148 ms - -[0m
+2025-06-19 00:34:50 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.940 ms - 0[0m
+2025-06-19 00:34:50 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 39.890 ms - 0[0m
+2025-06-19 00:34:52 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m200[0m 1701.434 ms - -[0m
+2025-06-19 00:34:54 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m200[0m 1943.332 ms - -[0m
+2025-06-19 00:36:07 info: =================================
+2025-06-19 00:36:07 info: ======= ENV: development =======
+2025-06-19 00:36:07 info: 🚀 App listening on the port 3000
+2025-06-19 00:36:07 info: =================================
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:09 info: Connected to email server
+2025-06-19 00:36:10 info: Connected to Database Successfully...
+2025-06-19 00:36:26 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 4.743 ms - 0[0m
+2025-06-19 00:36:27 info: [0mGET /job/getFreelancerContracts [36m304[0m 1712.248 ms - -[0m
+2025-06-19 00:36:30 info: [0mOPTIONS /auth/login [32m204[0m 2.824 ms - 0[0m
+2025-06-19 00:36:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-19 00:36:31 info: [0mPOST /auth/login [32m200[0m 1155.224 ms - 587[0m
+2025-06-19 00:36:31 info: [0mOPTIONS /profile [32m204[0m 0.623 ms - 0[0m
+2025-06-19 00:36:31 info: [0mGET /profile [36m304[0m 690.918 ms - -[0m
+2025-06-19 00:36:33 info: [0mOPTIONS /profile/details [32m204[0m 0.992 ms - 0[0m
+2025-06-19 00:36:33 info: [0mOPTIONS /profile/details [32m204[0m 0.361 ms - 0[0m
+2025-06-19 00:36:33 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.273 ms - 0[0m
+2025-06-19 00:36:35 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 2261.192 ms - -[0m
+2025-06-19 00:36:36 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.913 ms - 0[0m
+2025-06-19 00:36:36 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.441 ms - 0[0m
+2025-06-19 00:36:37 info: [0mGET /profile/details [36m304[0m 4383.285 ms - -[0m
+2025-06-19 00:36:37 info: [0mGET /job/getFreelancerContracts [36m304[0m 1419.906 ms - -[0m
+2025-06-19 00:36:39 info: [0mGET /job/getFreelancerContracts [36m304[0m 1933.957 ms - -[0m
+2025-06-19 00:36:42 info: [0mGET /profile/details [36m304[0m 5027.417 ms - -[0m
+2025-06-19 00:36:43 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 3.265 ms - 0[0m
+2025-06-19 00:36:43 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.591 ms - 0[0m
+2025-06-19 00:36:45 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m200[0m 1818.818 ms - -[0m
+2025-06-19 00:36:46 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1538.051 ms - -[0m
+2025-06-19 00:37:12 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 3.926 ms - 0[0m
+2025-06-19 00:37:14 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 2280.040 ms - -[0m
+2025-06-19 00:37:18 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 2048.698 ms - -[0m
+2025-06-19 00:37:32 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.832 ms - 0[0m
+2025-06-19 00:37:34 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1888.069 ms - -[0m
+2025-06-19 00:37:35 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1608.906 ms - -[0m
+2025-06-19 00:37:38 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1465.772 ms - -[0m
+2025-06-19 00:37:38 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 3.253 ms - 0[0m
+2025-06-19 00:37:40 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1693.243 ms - -[0m
+2025-06-19 00:37:42 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1518.283 ms - -[0m
+2025-06-19 00:37:45 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 3.128 ms - 0[0m
+2025-06-19 00:37:47 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 2198.163 ms - -[0m
+2025-06-19 00:38:01 info: [0mOPTIONS /chat [32m204[0m 0.792 ms - 0[0m
+2025-06-19 00:38:02 info: [0mPOST /chat [32m200[0m 629.368 ms - -[0m
+2025-06-19 00:38:05 info: [0mPOST /chat [32m200[0m 701.382 ms - 403[0m
