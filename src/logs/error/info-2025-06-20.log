@@ -1196,3 +1196,43 @@ Error: Request failed with status code 500
     at IncomingMessage.emit (node:events:519:35)
     at endReadableNT (node:internal/streams/readable:1696:12)
     at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-06-20 11:40:03 error: [GET] /bid/check/681a22d0857ab6b017165db6 >> StatusCode:: 404, Message:: The requested path /bid/check/681a22d0857ab6b017165db6 not found!
+2025-06-20 11:40:03 error: [GET] /bid/check/681a22d0857ab6b017165db6 >> StatusCode:: 404, Message:: The requested path /bid/check/681a22d0857ab6b017165db6 not found!
+2025-06-20 11:44:56 error: [GET] /bid/check/681a227b857ab6b017165d9a >> StatusCode:: 404, Message:: The requested path /bid/check/681a227b857ab6b017165d9a not found!
+2025-06-20 11:44:56 error: [GET] /bid/check/681a227b857ab6b017165d9a >> StatusCode:: 404, Message:: The requested path /bid/check/681a227b857ab6b017165d9a not found!
+2025-06-20 11:46:15 error: [GET] /client/proposals/681a227b857ab6b017165d9a >> StatusCode:: 404, Message:: The requested path /client/proposals/681a227b857ab6b017165d9a not found!
+2025-06-20 11:46:15 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-06-20 11:46:33 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-06-20 11:46:50 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-20 11:46:58 error: unhandledRejection: Data command failed: 550 5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing
+Error: Data command failed: 550 5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing
+    at SMTPConnection._formatError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionDATA (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:1662:34)
+    at SMTPConnection.<anonymous> (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:1634:26)
+    at SMTPConnection._processResponse (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+2025-06-20 11:46:58 error: unhandledRejection: Data command failed: 550 5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing
+Error: Data command failed: 550 5.7.0 Too many emails per second. Please upgrade your plan https://mailtrap.io/billing/plans/testing
+    at SMTPConnection._formatError (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionDATA (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:1662:34)
+    at SMTPConnection.<anonymous> (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:1634:26)
+    at SMTPConnection._processResponse (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)
+2025-06-20 11:48:23 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-06-20 11:48:28 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-20 11:49:06 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-20 11:51:31 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-20 11:52:26 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-20 11:55:48 error: [GET] /bid/check/681a2279857ab6b017165d96 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2279857ab6b017165d96 not found!
+2025-06-20 11:55:48 error: [GET] /bid/check/681a2279857ab6b017165d96 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2279857ab6b017165d96 not found!
+2025-06-20 12:03:42 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
