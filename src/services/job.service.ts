@@ -487,7 +487,21 @@ class JobService {
       })
       .populate('job_id user_id'); // optional
 
-    return contract;
+    const clientId = contract.job_id?.user_id;
+    let clientDetails = null;
+
+    if (clientId) {
+      try {
+        clientDetails = await this.userService.findUserById(clientId.toString());
+      } catch (err) {
+        console.warn(`Failed to fetch client details for ID: ${clientId}`, err);
+      }
+    }
+
+    return {
+      ...contract.toObject(),
+      client_details: clientDetails,
+    };
   }
 
   public async getFreelancerContractByIdClient(userId: string, contractId: string): Promise<any> {

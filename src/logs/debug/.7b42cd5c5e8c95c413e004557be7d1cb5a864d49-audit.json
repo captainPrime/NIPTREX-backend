@@ -109,6 +109,36 @@
             "date": 1749811540526,
             "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-13.log",
             "hash": "9e4a96d2d48a6256455d1d06edeea1849e82a20d063f1ce0efc59b5106566718"
+        },
+        {
+            "date": 1749909357152,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-14.log",
+            "hash": "1b9a389fb35a85186758a55ffc35cd7077831fb102447bba665b9a4f6c8714ed"
+        },
+        {
+            "date": 1749992587699,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-15.log",
+            "hash": "98ff245046ebc76bf542eb9f05372ab38d0dc2ae7d57907ad3f918c5987e81d7"
+        },
+        {
+            "date": 1750105405880,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-16.log",
+            "hash": "adbc04cb1f8eae767b68079895d277f81b950b726917eda5924be7ec837c2941"
+        },
+        {
+            "date": 1750284906809,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-18.log",
+            "hash": "6dc73c322de3754081909ffe7df5de1c2b192797ba42b33aa02c66a09957eac4"
+        },
+        {
+            "date": 1750288702269,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-19.log",
+            "hash": "4db821a2566c5638a0f91fdee29f4ebaacfe26136edc14aa1e80f93d1d72b914"
+        },
+        {
+            "date": 1750378193700,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/debug/info-2025-06-20.log",
+            "hash": "4648da6d4c14c83439649d985e39341571d9f0241857c7752a3521a1ff65b15d"
         }
     ],
     "hashType": "sha256"
