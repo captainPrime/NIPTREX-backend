@@ -182,6 +182,9 @@ class ServiceService {
       select: 'first_name last_name profile_picture',
     });
 
+    console.log('first proposal:', this.serviceProposal.findOne({ _id: id }));
+    console.log('second proposal:', data);
+
     return data;
   }
 

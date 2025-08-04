@@ -6,11 +6,6 @@
     "auditLog": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/.20d6ab45901ec46f18e8a5ef415072682b24bd8d-audit.json",
     "files": [
         {
-            "date": 1745106944712,
-            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-04-20.log",
-            "hash": "b38755216e3ae9fa277bf02be3858c7de4948489f773ea875ac6b40e28537b0b"
-        },
-        {
             "date": 1745230433004,
             "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-04-21.log",
             "hash": "e01c7b6fb66feae2ab08a40df6ff0ff15ebd87e2972648197cb34d6bd4132665"
@@ -134,6 +129,31 @@
             "date": 1750378193703,
             "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-06-20.log",
             "hash": "4ffb462206706228346f0323aae4db0a9e99c626e8013a54d1ad788f3109b64c"
+        },
+        {
+            "date": 1750616416541,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-06-22.log",
+            "hash": "c59995fda481a6f08cf4d9dbedbf4c9b5df1d0ab69025447c52f3c3e537db7d4"
+        },
+        {
+            "date": 1750675210209,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-06-23.log",
+            "hash": "97a5cf15a9a7292a8a88244b886ac51438144c90b6b31b72efd4e1ece1e3c396"
+        },
+        {
+            "date": 1751838277180,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-07-06.log",
+            "hash": "336ef583d1a83544ed26f01e093462519a8e468da29c4b633af5df6ce87d7de8"
+        },
+        {
+            "date": 1753529795514,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-07-26.log",
+            "hash": "e879123e5d8bb8c197366590adb5b72b25816bfe95a14f4f2e9e1d24d5d3a960"
+        },
+        {
+            "date": 1753712420404,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-07-28.log",
+            "hash": "3d61c9b61ab28b6c28c8e721ca6cdf385226e1971ad8980e3ba834452395a6ad"
         }
     ],
     "hashType": "sha256"

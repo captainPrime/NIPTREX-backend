@@ -204,10 +204,12 @@ class ServiceController {
 
       const payload = {
         user_id,
-        service: service._id.toString(),
-        proposal_id: service._id.toString(),
+        service: service._id.toString(), // Optional: could also use req.body.service
+        proposal: req.body.proposal, // ✅ Must be this
         client: req.user.id,
       };
+
+      console.log('Payload being sent:', payload); // 👈 Add this for debugging
 
       const data = await this.serviceService.hireFreelancerService(payload);
 
@@ -258,13 +260,13 @@ class ServiceController {
 
       const serviceProposals = await this.serviceService.getAllServiceProposalByServiceId(service_id);
 
-      console.log(serviceProposals);
-      const hasOngoingService = serviceProposals.some(
-        (proposal: any) => proposal.status !== ServiceProposalStatus.COMPLETED && proposal.client_id.id.toString() === req.user.id,
-      );
-      if (hasOngoingService) {
-        throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
-      }
+      // console.log(serviceProposals);
+      // const hasOngoingService = serviceProposals.some(
+      //   (proposal: any) => proposal.status !== ServiceProposalStatus.COMPLETED && proposal.client_id.id.toString() === req.user.id,
+      // );
+      // if (hasOngoingService) {
+      //   throw new HttpException(400, 7007, 'HAS_ONGOING_SERVICE');
+      // }
 
       const payload = {
         client_id: req.user.id,
@@ -306,9 +308,38 @@ class ServiceController {
   public getServiceProposalById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const serviceProposalId: string = req.params.id;
-      const data = await this.serviceService.getServiceProposalById(serviceProposalId);
 
-      res.status(200).json({ status: 200, response_code: 3000, message: 'SERVICE_REQUEST_SUCCESSFUL', data });
+      const proposalDoc = await this.serviceService.getServiceProposalById(serviceProposalId);
+      if (!proposalDoc) {
+        return res.status(404).json({
+          status: 404,
+          response_code: 3001,
+          message: 'SERVICE_PROPOSAL_NOT_FOUND',
+        });
+      }
+
+      const serviceDoc = await this.serviceService.getServiceById(proposalDoc.service_id.toString());
+      if (!serviceDoc) {
+        return res.status(404).json({
+          status: 404,
+          response_code: 3002,
+          message: 'RELATED_SERVICE_NOT_FOUND',
+        });
+      }
+
+      // Convert both Mongoose documents to plain JS objects
+      const proposal = proposalDoc.toObject();
+      const service = serviceDoc.toObject();
+
+      res.status(200).json({
+        status: 200,
+        response_code: 3000,
+        message: 'SERVICE_REQUEST_SUCCESSFUL',
+        data: {
+          ...proposal,
+          service,
+        },
+      });
     } catch (error) {
       next(error);
     }
@@ -350,7 +381,7 @@ class ServiceController {
         tx_ref: generateUUID(),
         amount,
         currency,
-        redirect_url: 'http://localhost:3000/service/verify-payment',
+        redirect_url: `http://localhost:3001/services/${serviceProposal.service_id}`,
         meta: {
           consumer_id: req.user.id,
           consumer_mac: proposal_id,
@@ -439,6 +470,8 @@ class ServiceController {
             client: proposal.client_id._id.toString(),
             proposal: proposal._id.toString(),
           };
+
+          console.log(payload)
 
           await this.serviceService.hireFreelancerService(payload);
 
