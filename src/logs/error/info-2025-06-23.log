@@ -1,0 +1,26 @@
+2025-06-23 11:40:10 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:41:25 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:41:32 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:45:15 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:46:44 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:46:55 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:48:33 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:49:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-06-23 11:49:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-06-23 11:49:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-23 11:50:01 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:51:34 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2025-06-23 11:51:59 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:53:00 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2025-06-23 11:53:18 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:55:06 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:55:10 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:55:19 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:55:19 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:55:34 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:57:14 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 12:04:16 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 12:08:54 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 12:21:17 error: [GET] /bid/check/681a2277857ab6b017165d92 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2277857ab6b017165d92 not found!
+2025-06-23 12:21:17 error: [GET] /bid/check/681a2277857ab6b017165d92 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2277857ab6b017165d92 not found!
+2025-06-23 12:24:16 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_VALIDATION_ERROR

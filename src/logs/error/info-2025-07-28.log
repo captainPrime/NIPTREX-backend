@@ -1,0 +1,2 @@
+2025-07-28 15:20:20 error: [GET] /images/qoute.svg >> StatusCode:: 404, Message:: The requested path /images/qoute.svg not found!
+2025-07-28 15:20:21 error: [GET] /images/user.png >> StatusCode:: 404, Message:: The requested path /images/user.png not found!

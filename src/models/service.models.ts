@@ -47,6 +47,7 @@ export interface IServiceProposal extends Document {
   service_id: string;
   status: ServiceProposalStatus;
   client_id: string;
+  service_buyer: string;
 }
 
 const serviceSchema: Schema<IService> = new Schema(
@@ -101,6 +102,7 @@ const serviceProposalSchema: Schema = new Schema(
     service_id: { type: Schema.Types.ObjectId, ref: 'Service', required: true },
     status: { type: String, enum: Object.values(ServiceProposalStatus), default: ServiceProposalStatus.APPLIED, required: true },
     client_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    service_buyer: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   },
   {
     timestamps: true,
@@ -114,6 +116,7 @@ const HireServiceSchema: Schema = new Schema(
     proposal: { type: Schema.Types.ObjectId, ref: 'ServiceProposal', required: true },
     status: { type: String, enum: Object.values(ServiceProposalStatus), default: ServiceProposalStatus.PAID, required: true },
     client: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    service_buyer: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   },
   {
     timestamps: true,

@@ -1,0 +1,937 @@
+2025-06-23 10:45:58 info: [0mGET / [32m200[0m 224.295 ms - 115[0m
+2025-06-23 10:46:03 info: [0mGET / [32m200[0m 53.957 ms - 115[0m
+2025-06-23 10:46:13 info: [0mOPTIONS /service/getServiceById/681e8ed5857ab6b01716673b [32m204[0m 2.115 ms - 0[0m
+2025-06-23 10:46:14 info: [0mOPTIONS /service/getServiceById/681e8ed5857ab6b01716673b [32m204[0m 0.610 ms - 0[0m
+2025-06-23 10:46:16 info: [0mGET /service/getServiceById/681e8ed5857ab6b01716673b [36m304[0m 2936.742 ms - -[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 1.489 ms - 0[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.973 ms - 0[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /photography [32m204[0m 0.117 ms - 0[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.780 ms - 0[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.660 ms - 0[0m
+2025-06-23 10:46:17 info: [0mOPTIONS /photography [32m204[0m 0.293 ms - 0[0m
+2025-06-23 10:46:17 info: [0mGET /service/getServiceById/681e8ed5857ab6b01716673b [36m304[0m 572.429 ms - -[0m
+2025-06-23 10:46:18 info: [0mGET /photography [36m304[0m 943.379 ms - -[0m
+2025-06-23 10:46:18 info: [0mGET /photography [36m304[0m 810.150 ms - -[0m
+2025-06-23 10:46:20 info: [0mGET /service/getFeaturedService [36m304[0m 3401.288 ms - -[0m
+2025-06-23 10:46:21 info: [0mGET /job/getFeaturedJobs [36m304[0m 3917.965 ms - -[0m
+2025-06-23 10:46:21 info: [0mGET /service/getFeaturedService [36m304[0m 613.956 ms - -[0m
+2025-06-23 10:46:22 info: [0mGET /job/getFeaturedJobs [36m304[0m 1145.306 ms - -[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 4.800 ms - 0[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.072 ms - 0[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /photography [32m204[0m 0.052 ms - 0[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.048 ms - 0[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.094 ms - 0[0m
+2025-06-23 10:51:09 info: [0mOPTIONS /photography [32m204[0m 0.044 ms - 0[0m
+2025-06-23 10:51:10 info: [0mGET /service/getFeaturedService [36m304[0m 587.089 ms - -[0m
+2025-06-23 10:51:10 info: [0mGET /photography [36m304[0m 578.048 ms - -[0m
+2025-06-23 10:51:10 info: [0mGET /service/getFeaturedService [36m304[0m 539.963 ms - -[0m
+2025-06-23 10:51:11 info: [0mGET /photography [36m304[0m 602.252 ms - -[0m
+2025-06-23 10:51:12 info: [0mGET /job/getFeaturedJobs [32m200[0m 2918.872 ms - -[0m
+2025-06-23 10:51:14 info: [0mGET /job/getFeaturedJobs [36m304[0m 1184.778 ms - -[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.551 ms - 0[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.082 ms - 0[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /photography [32m204[0m 0.054 ms - 0[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.893 ms - 0[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.907 ms - 0[0m
+2025-06-23 10:51:56 info: [0mOPTIONS /photography [32m204[0m 0.294 ms - 0[0m
+2025-06-23 10:51:57 info: [0mGET /photography [36m304[0m 872.260 ms - -[0m
+2025-06-23 10:51:57 info: [0mGET /photography [36m304[0m 548.460 ms - -[0m
+2025-06-23 10:51:58 info: [0mGET /service/getFeaturedService [32m200[0m 1758.029 ms - -[0m
+2025-06-23 10:51:59 info: [0mGET /job/getFeaturedJobs [36m304[0m 2524.960 ms - -[0m
+2025-06-23 10:51:59 info: [0mGET /service/getFeaturedService [36m304[0m 1055.204 ms - -[0m
+2025-06-23 10:52:00 info: [0mGET /job/getFeaturedJobs [36m304[0m 1145.882 ms - -[0m
+2025-06-23 10:52:13 info: [0mOPTIONS /photography?limit=20&page=1 [32m204[0m 0.208 ms - 0[0m
+2025-06-23 10:52:13 info: [0mOPTIONS /photography?limit=20&page=1 [32m204[0m 0.082 ms - 0[0m
+2025-06-23 10:52:13 info: [0mGET /photography?limit=20&page=1 [32m200[0m 601.049 ms - -[0m
+2025-06-23 10:52:14 info: [0mGET /photography?limit=20&page=1 [36m304[0m 573.222 ms - -[0m
+2025-06-23 10:52:17 info: [0mOPTIONS /photography?limit=20&search=Nature&page=1 [32m204[0m 0.298 ms - 0[0m
+2025-06-23 10:52:18 info: [0mGET /photography?limit=20&search=Nature&page=1 [32m200[0m 575.110 ms - -[0m
+2025-06-23 10:52:23 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.455 ms - 0[0m
+2025-06-23 10:52:24 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.066 ms - 0[0m
+2025-06-23 10:52:24 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.084 ms - 0[0m
+2025-06-23 10:52:24 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.100 ms - 0[0m
+2025-06-23 10:52:24 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m200[0m 305.140 ms - -[0m
+2025-06-23 10:52:24 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 356.042 ms - -[0m
+2025-06-23 10:52:24 info: [0mGET /service/getAppliedServices [32m200[0m 887.495 ms - -[0m
+2025-06-23 10:52:25 info: [0mGET /service/getAppliedServices [36m304[0m 884.620 ms - -[0m
+2025-06-23 10:52:27 info: [0mOPTIONS /service/proposals/681e8ed5857ab6b01716673b [32m204[0m 0.170 ms - 0[0m
+2025-06-23 10:52:28 info: [0mGET /service/proposals/681e8ed5857ab6b01716673b [36m304[0m 784.019 ms - -[0m
+2025-06-23 10:52:42 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.805 ms - 0[0m
+2025-06-23 10:52:42 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.221 ms - 0[0m
+2025-06-23 10:52:42 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 346.292 ms - -[0m
+2025-06-23 10:52:43 info: [0mGET /service/getAppliedServices [36m304[0m 823.656 ms - -[0m
+2025-06-23 10:52:47 info: [0mOPTIONS /service/proposals/681e8ed5857ab6b01716673b [32m204[0m 0.363 ms - 0[0m
+2025-06-23 10:52:47 info: [0mGET /service/proposals/681e8ed5857ab6b01716673b [36m304[0m 821.366 ms - -[0m
+2025-06-23 10:54:24 info: [0mOPTIONS /job/skillsCategory [32m204[0m 19.260 ms - 0[0m
+2025-06-23 10:54:25 info: [0mGET /job/skillsCategory [36m304[0m 53.455 ms - -[0m
+2025-06-23 10:54:25 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.240 ms - 0[0m
+2025-06-23 10:54:25 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.168 ms - 0[0m
+2025-06-23 10:54:25 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.236 ms - 0[0m
+2025-06-23 10:54:25 info: [0mGET /job/skillsCategory [36m304[0m 0.473 ms - -[0m
+2025-06-23 10:54:25 info: [0mGET /service?page=1&limit=10 [32m200[0m 910.054 ms - -[0m
+2025-06-23 10:54:26 info: [0mGET /service?page=1&limit=10 [36m304[0m 556.265 ms - -[0m
+2025-06-23 10:54:45 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.381 ms - 0[0m
+2025-06-23 10:54:45 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.261 ms - 0[0m
+2025-06-23 10:54:47 info: [0mGET /job/getFreelancerContracts [32m200[0m 1488.180 ms - -[0m
+2025-06-23 10:54:48 info: [0mGET /job/getFreelancerContracts [36m304[0m 1410.831 ms - -[0m
+2025-06-23 10:54:54 info: [0mOPTIONS /job/getFreelancerContracts/68553e3c7f80c7109309af46 [32m204[0m 16.789 ms - 0[0m
+2025-06-23 10:54:54 info: [0mOPTIONS /job/getFreelancerContracts/68553e3c7f80c7109309af46 [32m204[0m 0.383 ms - 0[0m
+2025-06-23 10:54:56 info: [0mGET /job/getFreelancerContracts/68553e3c7f80c7109309af46 [36m304[0m 1336.066 ms - -[0m
+2025-06-23 10:54:57 info: [0mGET /job/getFreelancerContracts/68553e3c7f80c7109309af46 [36m304[0m 1262.500 ms - -[0m
+2025-06-23 10:55:00 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.888 ms - 0[0m
+2025-06-23 10:55:00 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 4.981 ms - 0[0m
+2025-06-23 10:55:01 info: [0mGET /job/getFreelancerContracts [36m304[0m 1234.270 ms - -[0m
+2025-06-23 10:55:03 info: [0mGET /job/getFreelancerContracts [36m304[0m 1516.822 ms - -[0m
+2025-06-23 10:55:20 info: [0mOPTIONS /job/getFreelancerContracts/684c0722cc25ff93196d8311 [32m204[0m 0.546 ms - 0[0m
+2025-06-23 10:55:20 info: [0mOPTIONS /job/getFreelancerContracts/684c0722cc25ff93196d8311 [32m204[0m 0.768 ms - 0[0m
+2025-06-23 10:55:21 info: [0mGET /job/getFreelancerContracts/684c0722cc25ff93196d8311 [32m200[0m 1284.017 ms - -[0m
+2025-06-23 10:55:22 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.097 ms - 0[0m
+2025-06-23 10:55:22 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.057 ms - 0[0m
+2025-06-23 10:55:22 info: [0mGET /job/getFreelancerContracts/684c0722cc25ff93196d8311 [36m304[0m 1291.916 ms - -[0m
+2025-06-23 10:55:24 info: [0mGET /job/getFreelancerContracts [36m304[0m 2065.788 ms - -[0m
+2025-06-23 10:55:25 info: [0mGET /job/getFreelancerContracts [36m304[0m 1552.692 ms - -[0m
+2025-06-23 10:55:40 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.095 ms - 0[0m
+2025-06-23 10:55:40 info: [0mOPTIONS /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m204[0m 0.192 ms - 0[0m
+2025-06-23 10:55:41 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [32m200[0m 1130.729 ms - -[0m
+2025-06-23 10:55:42 info: [0mGET /job/getFreelancerContracts/684c4805372d8ecd47480cd0 [36m304[0m 1142.467 ms - -[0m
+2025-06-23 10:55:44 info: [0mOPTIONS /chat [32m204[0m 0.102 ms - 0[0m
+2025-06-23 10:55:44 info: [0mPOST /chat [32m200[0m 606.145 ms - -[0m
+2025-06-23 10:55:46 info: [0mPOST /chat [32m200[0m 606.210 ms - 403[0m
+2025-06-23 10:57:23 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 9.915 ms - 0[0m
+2025-06-23 10:57:24 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.109 ms - 0[0m
+2025-06-23 10:57:24 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.044 ms - 0[0m
+2025-06-23 10:57:24 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.040 ms - 0[0m
+2025-06-23 10:57:24 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m200[0m 322.785 ms - 176[0m
+2025-06-23 10:57:24 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 270.861 ms - -[0m
+2025-06-23 10:57:24 info: [0mGET /service/getAppliedServices [32m200[0m 859.040 ms - -[0m
+2025-06-23 10:57:25 info: [0mGET /service/getAppliedServices [36m304[0m 940.703 ms - -[0m
+2025-06-23 10:57:31 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.511 ms - 0[0m
+2025-06-23 10:57:31 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.048 ms - 0[0m
+2025-06-23 10:57:31 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.043 ms - 0[0m
+2025-06-23 10:57:31 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.089 ms - 0[0m
+2025-06-23 10:57:31 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 256.832 ms - -[0m
+2025-06-23 10:57:31 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 249.607 ms - -[0m
+2025-06-23 10:57:32 info: [0mGET /service/getAppliedServices [36m304[0m 768.905 ms - -[0m
+2025-06-23 10:57:33 info: [0mGET /service/getAppliedServices [36m304[0m 781.448 ms - -[0m
+2025-06-23 11:04:07 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [32m200[0m 1406.702 ms - -[0m
+2025-06-23 11:10:56 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 3.330 ms - 0[0m
+2025-06-23 11:10:56 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.091 ms - 0[0m
+2025-06-23 11:10:57 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [32m200[0m 1487.142 ms - -[0m
+2025-06-23 11:10:59 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1524.750 ms - -[0m
+2025-06-23 11:11:00 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 4.695 ms - 0[0m
+2025-06-23 11:11:00 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.518 ms - 0[0m
+2025-06-23 11:11:00 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 2.396 ms - 0[0m
+2025-06-23 11:11:00 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 1.452 ms - 0[0m
+2025-06-23 11:11:00 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 434.413 ms - -[0m
+2025-06-23 11:11:01 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 299.458 ms - -[0m
+2025-06-23 11:11:01 info: [0mGET /service/getAppliedServices [36m304[0m 881.110 ms - -[0m
+2025-06-23 11:11:02 info: [0mGET /service/getAppliedServices [36m304[0m 801.251 ms - -[0m
+2025-06-23 11:11:24 info: [0mOPTIONS /service/proposals/681ec02aceecc0bf0373bad4 [32m204[0m 0.394 ms - 0[0m
+2025-06-23 11:11:25 info: [0mGET /service/proposals/681ec02aceecc0bf0373bad4 [36m304[0m 578.129 ms - -[0m
+2025-06-23 11:11:27 info: [0mOPTIONS /service/proposals/681e8ed5857ab6b01716673b [32m204[0m 0.105 ms - 0[0m
+2025-06-23 11:11:28 info: [0mGET /service/proposals/681e8ed5857ab6b01716673b [36m304[0m 890.764 ms - -[0m
+2025-06-23 11:11:30 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 1.240 ms - 0[0m
+2025-06-23 11:11:30 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.148 ms - 0[0m
+2025-06-23 11:11:32 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [32m200[0m 1493.533 ms - -[0m
+2025-06-23 11:11:33 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1244.106 ms - -[0m
+2025-06-23 11:12:19 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 1.560 ms - 0[0m
+2025-06-23 11:12:24 info: [0mPOST /service/requestServiceReview [32m200[0m 4126.927 ms - 84[0m
+2025-06-23 11:12:24 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.060 ms - 0[0m
+2025-06-23 11:12:25 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1270.192 ms - -[0m
+2025-06-23 11:12:31 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.499 ms - 0[0m
+2025-06-23 11:12:32 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1261.453 ms - -[0m
+2025-06-23 11:13:57 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 2.250 ms - 0[0m
+2025-06-23 11:13:59 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1437.653 ms - -[0m
+2025-06-23 11:14:22 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 0.886 ms - 0[0m
+2025-06-23 11:14:27 info: [0mPOST /service/requestServiceReview [32m200[0m 4811.677 ms - 84[0m
+2025-06-23 11:14:27 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.088 ms - 0[0m
+2025-06-23 11:14:29 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1351.787 ms - -[0m
+2025-06-23 11:14:38 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.854 ms - 0[0m
+2025-06-23 11:14:39 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1354.817 ms - -[0m
+2025-06-23 11:17:07 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 1.633 ms - 0[0m
+2025-06-23 11:17:07 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.070 ms - 0[0m
+2025-06-23 11:17:07 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.053 ms - 0[0m
+2025-06-23 11:17:07 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.045 ms - 0[0m
+2025-06-23 11:17:07 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 310.677 ms - -[0m
+2025-06-23 11:17:07 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 338.110 ms - -[0m
+2025-06-23 11:17:08 info: [0mGET /service/getAppliedServices [36m304[0m 943.472 ms - -[0m
+2025-06-23 11:17:08 info: [0mGET /service/getAppliedServices [36m304[0m 816.405 ms - -[0m
+2025-06-23 11:17:14 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.428 ms - 0[0m
+2025-06-23 11:17:14 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.085 ms - 0[0m
+2025-06-23 11:17:16 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1331.190 ms - -[0m
+2025-06-23 11:17:17 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1427.885 ms - -[0m
+2025-06-23 11:18:39 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.685 ms - 0[0m
+2025-06-23 11:18:39 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.059 ms - 0[0m
+2025-06-23 11:18:40 info: [0mGET /job/getFreelancerContracts [36m304[0m 1472.415 ms - -[0m
+2025-06-23 11:18:42 info: [0mGET /job/getFreelancerContracts [36m304[0m 1338.611 ms - -[0m
+2025-06-23 11:18:45 info: [0mOPTIONS /job/getFreelancerContracts/68553bb447f4025c273a20fb [32m204[0m 0.813 ms - 0[0m
+2025-06-23 11:18:45 info: [0mOPTIONS /job/getFreelancerContracts/68553bb447f4025c273a20fb [32m204[0m 0.296 ms - 0[0m
+2025-06-23 11:18:47 info: [0mGET /job/getFreelancerContracts/68553bb447f4025c273a20fb [32m200[0m 1124.798 ms - -[0m
+2025-06-23 11:18:48 info: [0mGET /job/getFreelancerContracts/68553bb447f4025c273a20fb [36m304[0m 1013.730 ms - -[0m
+2025-06-23 11:20:24 info: [0mOPTIONS /job/getFreelancerContracts/68553bb447f4025c273a20fb [32m204[0m 0.910 ms - 0[0m
+2025-06-23 11:20:25 info: [0mGET /job/getFreelancerContracts/68553bb447f4025c273a20fb [36m304[0m 1133.929 ms - -[0m
+2025-06-23 11:21:10 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 42.852 ms - 0[0m
+2025-06-23 11:21:10 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.219 ms - 0[0m
+2025-06-23 11:21:10 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 4.167 ms - 0[0m
+2025-06-23 11:21:10 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 1.372 ms - 0[0m
+2025-06-23 11:21:11 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 425.438 ms - -[0m
+2025-06-23 11:21:11 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 279.614 ms - -[0m
+2025-06-23 11:21:11 info: [0mGET /service/getAppliedServices [36m304[0m 912.156 ms - -[0m
+2025-06-23 11:21:12 info: [0mGET /service/getAppliedServices [36m304[0m 861.720 ms - -[0m
+2025-06-23 11:21:14 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.364 ms - 0[0m
+2025-06-23 11:21:15 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1275.561 ms - -[0m
+2025-06-23 11:23:45 info: [0mOPTIONS /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m204[0m 4.328 ms - 0[0m
+2025-06-23 11:23:45 info: [0mOPTIONS /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m204[0m 0.405 ms - 0[0m
+2025-06-23 11:23:47 info: [0mGET /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m200[0m 1386.692 ms - -[0m
+2025-06-23 11:23:48 info: [0mGET /service/getServiceProposalById/685573a83899d3ae4d69b73b [36m304[0m 1763.544 ms - -[0m
+2025-06-23 11:23:58 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 2.884 ms - 0[0m
+2025-06-23 11:23:58 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.138 ms - 0[0m
+2025-06-23 11:23:58 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.122 ms - 0[0m
+2025-06-23 11:23:58 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.063 ms - 0[0m
+2025-06-23 11:23:59 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 263.900 ms - -[0m
+2025-06-23 11:23:59 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 265.101 ms - -[0m
+2025-06-23 11:23:59 info: [0mGET /service/getAppliedServices [36m304[0m 836.110 ms - -[0m
+2025-06-23 11:24:00 info: [0mGET /service/getAppliedServices [36m304[0m 762.422 ms - -[0m
+2025-06-23 11:25:57 info: [0mOPTIONS /service/proposals/681e8ed5857ab6b01716673b [32m204[0m 69.520 ms - 0[0m
+2025-06-23 11:25:58 info: [0mGET /service/proposals/681e8ed5857ab6b01716673b [36m304[0m 1121.949 ms - -[0m
+2025-06-23 11:26:07 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 2.411 ms - 0[0m
+2025-06-23 11:26:08 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.188 ms - 0[0m
+2025-06-23 11:26:08 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.175 ms - 0[0m
+2025-06-23 11:26:08 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1464.905 ms - -[0m
+2025-06-23 11:26:09 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1439.164 ms - -[0m
+2025-06-23 11:26:10 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1405.449 ms - -[0m
+2025-06-23 11:26:11 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1421.326 ms - -[0m
+2025-06-23 11:26:49 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 1.427 ms - 0[0m
+2025-06-23 11:26:54 info: [0mPOST /service/requestServiceReview [32m200[0m 4749.130 ms - 84[0m
+2025-06-23 11:26:54 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.490 ms - 0[0m
+2025-06-23 11:26:55 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1314.427 ms - -[0m
+2025-06-23 11:27:00 info: [0mOPTIONS /service/approveService/6855519af22554adb0e8663b [32m204[0m 0.289 ms - 0[0m
+2025-06-23 11:27:01 info: [0mPUT /service/approveService/6855519af22554adb0e8663b [32m200[0m 954.037 ms - 375[0m
+2025-06-23 11:27:01 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.060 ms - 0[0m
+2025-06-23 11:27:02 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [32m200[0m 1287.964 ms - -[0m
+2025-06-23 11:27:12 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.958 ms - 0[0m
+2025-06-23 11:27:14 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [32m200[0m 1373.859 ms - -[0m
+2025-06-23 11:27:17 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 1.984 ms - 0[0m
+2025-06-23 11:27:17 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.080 ms - 0[0m
+2025-06-23 11:27:18 info: [0mGET /job/getFreelancerContracts [36m304[0m 1067.687 ms - -[0m
+2025-06-23 11:27:19 info: [0mGET /job/getFreelancerContracts [36m304[0m 1118.108 ms - -[0m
+2025-06-23 11:27:25 info: [0mOPTIONS /job/getFreelancerContracts/68553e3c7f80c7109309af46 [32m204[0m 24.778 ms - 0[0m
+2025-06-23 11:27:25 info: [0mOPTIONS /job/getFreelancerContracts/68553e3c7f80c7109309af46 [32m204[0m 1.355 ms - 0[0m
+2025-06-23 11:27:26 info: [0mGET /job/getFreelancerContracts/68553e3c7f80c7109309af46 [36m304[0m 1278.458 ms - -[0m
+2025-06-23 11:27:27 info: [0mGET /job/getFreelancerContracts/68553e3c7f80c7109309af46 [36m304[0m 1084.124 ms - -[0m
+2025-06-23 11:27:32 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.299 ms - 0[0m
+2025-06-23 11:27:32 info: [0mGET /job/skillsCategory [36m304[0m 0.957 ms - -[0m
+2025-06-23 11:27:32 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.062 ms - 0[0m
+2025-06-23 11:27:32 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.095 ms - 0[0m
+2025-06-23 11:27:32 info: [0mGET /job/skillsCategory [36m304[0m 0.255 ms - -[0m
+2025-06-23 11:27:32 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.064 ms - 0[0m
+2025-06-23 11:27:32 info: [0mGET /service?page=1&limit=10 [32m200[0m 566.138 ms - -[0m
+2025-06-23 11:27:33 info: [0mGET /service?page=1&limit=10 [36m304[0m 512.915 ms - -[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 1.161 ms - 0[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 1.103 ms - 0[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.269 ms - 0[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.062 ms - 0[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.044 ms - 0[0m
+2025-06-23 11:27:44 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.037 ms - 0[0m
+2025-06-23 11:27:45 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m200[0m 792.454 ms - -[0m
+2025-06-23 11:27:45 info: [0mGET /bid/proposals/shortlist?limit=5 [32m200[0m 1395.371 ms - -[0m
+2025-06-23 11:27:45 info: [0mGET /bid/proposals/archive?limit=5 [32m200[0m 1400.147 ms - -[0m
+2025-06-23 11:27:47 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1375.151 ms - -[0m
+2025-06-23 11:27:47 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1356.762 ms - -[0m
+2025-06-23 11:27:48 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 3489.194 ms - -[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /bid/proposals/681a2279857ab6b017165d96?sortBy=date_applied:desc [32m204[0m 19.875 ms - 0[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /job/681a2279857ab6b017165d96 [32m204[0m 0.402 ms - 0[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.958 ms - 0[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /bid/proposals/681a2279857ab6b017165d96?sortBy=date_applied:desc [32m204[0m 0.127 ms - 0[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /job/681a2279857ab6b017165d96 [32m204[0m 0.456 ms - 0[0m
+2025-06-23 11:28:03 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.125 ms - 0[0m
+2025-06-23 11:28:03 info: [0mGET /profile/billingAddress [36m304[0m 557.410 ms - -[0m
+2025-06-23 11:28:04 info: [0mGET /bid/proposals/681a2279857ab6b017165d96?sortBy=date_applied:desc [36m304[0m 1166.279 ms - -[0m
+2025-06-23 11:28:04 info: [0mGET /profile/billingAddress [36m304[0m 542.443 ms - -[0m
+2025-06-23 11:28:04 info: [0mGET /job/681a2279857ab6b017165d96 [36m304[0m 1599.654 ms - -[0m
+2025-06-23 11:28:05 info: [0mGET /bid/proposals/681a2279857ab6b017165d96?sortBy=date_applied:desc [36m304[0m 1035.964 ms - -[0m
+2025-06-23 11:28:06 info: [0mGET /job/681a2279857ab6b017165d96 [36m304[0m 1653.309 ms - -[0m
+2025-06-23 11:28:55 info: [0mOPTIONS /job/681a2279857ab6b017165d96 [32m204[0m 5.408 ms - 0[0m
+2025-06-23 11:28:57 info: [0mGET /job/681a2279857ab6b017165d96 [36m304[0m 1796.175 ms - -[0m
+2025-06-23 11:29:09 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/68553e3c7f80c7109309af46 [32m204[0m 2.150 ms - 0[0m
+2025-06-23 11:29:10 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/68553e3c7f80c7109309af46 [36m304[0m 822.114 ms - -[0m
+2025-06-23 11:29:11 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/68553e3c7f80c7109309af46 [36m304[0m 804.198 ms - -[0m
+2025-06-23 11:29:41 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.561 ms - 0[0m
+2025-06-23 11:29:41 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.082 ms - 0[0m
+2025-06-23 11:29:41 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.386 ms - 0[0m
+2025-06-23 11:29:41 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.584 ms - 0[0m
+2025-06-23 11:29:42 info: [0mGET /job/getFreelancerContracts [36m304[0m 1089.442 ms - -[0m
+2025-06-23 11:29:43 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1329.281 ms - -[0m
+2025-06-23 11:29:43 info: [0mGET /job/getFreelancerContracts [36m304[0m 1035.829 ms - -[0m
+2025-06-23 11:29:44 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1425.777 ms - -[0m
+2025-06-23 11:29:52 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 1.002 ms - 0[0m
+2025-06-23 11:29:52 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.107 ms - 0[0m
+2025-06-23 11:29:52 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.063 ms - 0[0m
+2025-06-23 11:29:52 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.075 ms - 0[0m
+2025-06-23 11:29:53 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 323.770 ms - -[0m
+2025-06-23 11:29:53 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 295.811 ms - -[0m
+2025-06-23 11:29:53 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.395 ms - 0[0m
+2025-06-23 11:29:53 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.165 ms - 0[0m
+2025-06-23 11:29:53 info: [0mGET /service/getAppliedServices [36m304[0m 919.941 ms - -[0m
+2025-06-23 11:29:54 info: [0mGET /service/getAppliedServices [36m304[0m 928.015 ms - -[0m
+2025-06-23 11:29:55 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1477.141 ms - -[0m
+2025-06-23 11:29:56 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1452.877 ms - -[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 1.066 ms - 0[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.062 ms - 0[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.053 ms - 0[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.058 ms - 0[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.255 ms - 0[0m
+2025-06-23 11:30:30 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.052 ms - 0[0m
+2025-06-23 11:30:30 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 536.704 ms - -[0m
+2025-06-23 11:30:31 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 538.024 ms - -[0m
+2025-06-23 11:30:31 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1371.437 ms - -[0m
+2025-06-23 11:30:31 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1390.522 ms - -[0m
+2025-06-23 11:30:32 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1330.088 ms - -[0m
+2025-06-23 11:30:33 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1325.439 ms - -[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 13.669 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 1.374 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 1.201 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.308 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.415 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.052 ms - 0[0m
+2025-06-23 11:35:30 info: [0mOPTIONS /service/getServiceProposalById/6855519af22554adb0e8663b [32m204[0m 0.037 ms - 0[0m
+2025-06-23 11:35:30 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 545.976 ms - -[0m
+2025-06-23 11:35:31 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1521.052 ms - -[0m
+2025-06-23 11:35:31 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1357.981 ms - -[0m
+2025-06-23 11:35:31 info: [0mGET /service/getServiceProposalById/6855519af22554adb0e8663b [36m304[0m 1323.455 ms - -[0m
+2025-06-23 11:35:33 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1386.351 ms - -[0m
+2025-06-23 11:35:33 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 2161.753 ms - -[0m
+2025-06-23 11:35:33 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1412.968 ms - -[0m
+2025-06-23 11:36:18 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 11.961 ms - 0[0m
+2025-06-23 11:36:18 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.068 ms - 0[0m
+2025-06-23 11:36:18 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.070 ms - 0[0m
+2025-06-23 11:36:18 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.086 ms - 0[0m
+2025-06-23 11:36:18 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 332.175 ms - -[0m
+2025-06-23 11:36:18 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 269.539 ms - -[0m
+2025-06-23 11:36:19 info: [0mGET /service/getAppliedServices [32m200[0m 854.511 ms - -[0m
+2025-06-23 11:36:20 info: [0mGET /service/getAppliedServices [36m304[0m 850.326 ms - -[0m
+2025-06-23 11:36:32 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.639 ms - 0[0m
+2025-06-23 11:36:32 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.080 ms - 0[0m
+2025-06-23 11:36:32 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 328.221 ms - -[0m
+2025-06-23 11:36:33 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 298.126 ms - -[0m
+2025-06-23 11:36:35 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.872 ms - 0[0m
+2025-06-23 11:36:35 info: [0mGET /job/skillsCategory [36m304[0m 18.727 ms - -[0m
+2025-06-23 11:36:35 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.070 ms - 0[0m
+2025-06-23 11:36:35 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.062 ms - 0[0m
+2025-06-23 11:36:35 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.059 ms - 0[0m
+2025-06-23 11:36:35 info: [0mGET /job/skillsCategory [36m304[0m 0.528 ms - -[0m
+2025-06-23 11:36:35 info: [0mGET /service?page=1&limit=10 [36m304[0m 652.342 ms - -[0m
+2025-06-23 11:36:36 info: [0mGET /service?page=1&limit=10 [36m304[0m 534.478 ms - -[0m
+2025-06-23 11:36:40 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.791 ms - 0[0m
+2025-06-23 11:36:40 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.362 ms - 0[0m
+2025-06-23 11:36:40 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 537.905 ms - -[0m
+2025-06-23 11:36:41 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 519.036 ms - -[0m
+2025-06-23 11:36:52 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.458 ms - 0[0m
+2025-06-23 11:36:52 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.067 ms - 0[0m
+2025-06-23 11:36:52 info: [0mGET /job/skillsCategory [36m304[0m 1.435 ms - -[0m
+2025-06-23 11:36:52 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.156 ms - 0[0m
+2025-06-23 11:36:52 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.044 ms - 0[0m
+2025-06-23 11:36:52 info: [0mGET /job/skillsCategory [36m304[0m 0.407 ms - -[0m
+2025-06-23 11:36:52 info: [0mGET /service?page=1&limit=10 [36m304[0m 536.499 ms - -[0m
+2025-06-23 11:36:53 info: [0mGET /service?page=1&limit=10 [36m304[0m 533.823 ms - -[0m
+2025-06-23 11:36:55 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.853 ms - 0[0m
+2025-06-23 11:36:55 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.079 ms - 0[0m
+2025-06-23 11:36:55 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 592.022 ms - -[0m
+2025-06-23 11:36:56 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 525.427 ms - -[0m
+2025-06-23 11:37:14 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 3.045 ms - 0[0m
+2025-06-23 11:37:15 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1749.642 ms - 375[0m
+2025-06-23 11:37:28 info: [0mOPTIONS /service/getServiceProposalById/68592e5b2380ebdd163e1b27 [32m204[0m 0.252 ms - 0[0m
+2025-06-23 11:37:30 info: [0mGET /service/getServiceProposalById/68592e5b2380ebdd163e1b27 [32m200[0m 1338.364 ms - -[0m
+2025-06-23 11:37:33 info: [0mOPTIONS /service/payment [32m204[0m 0.084 ms - 0[0m
+2025-06-23 11:37:34 info: [0mPOST /service/payment [32m200[0m 1426.983 ms - 167[0m
+2025-06-23 11:38:01 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.237 ms - 0[0m
+2025-06-23 11:38:04 info: [0mPOST /service/paymentCallback [32m200[0m 2961.522 ms - 647[0m
+2025-06-23 11:38:04 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.065 ms - 0[0m
+2025-06-23 11:38:05 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 533.769 ms - -[0m
+2025-06-23 11:38:11 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.203 ms - 0[0m
+2025-06-23 11:38:11 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.061 ms - 0[0m
+2025-06-23 11:38:11 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.059 ms - 0[0m
+2025-06-23 11:38:11 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.039 ms - 0[0m
+2025-06-23 11:38:12 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 261.501 ms - -[0m
+2025-06-23 11:38:12 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 254.240 ms - -[0m
+2025-06-23 11:38:12 info: [0mGET /service/getAppliedServices [36m304[0m 781.687 ms - -[0m
+2025-06-23 11:38:14 info: [0mGET /service/getAppliedServices [36m304[0m 1292.400 ms - -[0m
+2025-06-23 11:38:59 info: [0mOPTIONS /job/skillsCategory [32m204[0m 7.132 ms - 0[0m
+2025-06-23 11:38:59 info: [0mGET /job/skillsCategory [36m304[0m 12.005 ms - -[0m
+2025-06-23 11:38:59 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.371 ms - 0[0m
+2025-06-23 11:38:59 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.173 ms - 0[0m
+2025-06-23 11:38:59 info: [0mGET /job/skillsCategory [36m304[0m 1.094 ms - -[0m
+2025-06-23 11:38:59 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.083 ms - 0[0m
+2025-06-23 11:39:00 info: [0mGET /service?page=1&limit=10 [36m304[0m 585.767 ms - -[0m
+2025-06-23 11:39:00 info: [0mGET /service?page=1&limit=10 [36m304[0m 505.361 ms - -[0m
+2025-06-23 11:39:03 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 1.138 ms - 0[0m
+2025-06-23 11:39:03 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.106 ms - 0[0m
+2025-06-23 11:39:03 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 538.421 ms - -[0m
+2025-06-23 11:39:04 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 523.483 ms - -[0m
+2025-06-23 11:39:28 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.252 ms - 0[0m
+2025-06-23 11:39:30 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1605.076 ms - 376[0m
+2025-06-23 11:39:38 info: [0mOPTIONS /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m204[0m 0.940 ms - 0[0m
+2025-06-23 11:39:40 info: [0mGET /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m200[0m 1369.077 ms - -[0m
+2025-06-23 11:40:10 info: [0mPOST /service/hireFreelancerService/68592ee22380ebdd163e1b5e [32m200[0m 795.010 ms - 126[0m
+2025-06-23 11:40:10 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:40:27 info: [0mOPTIONS /service/payment [32m204[0m 0.253 ms - 0[0m
+2025-06-23 11:40:28 info: [0mPOST /service/payment [32m200[0m 1128.510 ms - 167[0m
+2025-06-23 11:41:03 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.323 ms - 0[0m
+2025-06-23 11:41:07 info: [0mPOST /service/paymentCallback [32m200[0m 3898.651 ms - 647[0m
+2025-06-23 11:41:07 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.070 ms - 0[0m
+2025-06-23 11:41:07 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 635.486 ms - -[0m
+2025-06-23 11:41:23 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.385 ms - 0[0m
+2025-06-23 11:41:25 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:41:25 info: [0mPOST /service/paymentCallback [32m200[0m 1951.119 ms - 82[0m
+2025-06-23 11:41:31 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.058 ms - 0[0m
+2025-06-23 11:41:32 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:41:32 info: [0mPOST /service/paymentCallback [32m200[0m 1539.743 ms - 82[0m
+2025-06-23 11:41:34 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.110 ms - 0[0m
+2025-06-23 11:41:34 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.060 ms - 0[0m
+2025-06-23 11:41:34 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.076 ms - 0[0m
+2025-06-23 11:41:34 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.040 ms - 0[0m
+2025-06-23 11:41:35 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 409.133 ms - -[0m
+2025-06-23 11:41:35 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 283.989 ms - -[0m
+2025-06-23 11:41:35 info: [0mGET /service/getAppliedServices [36m304[0m 1042.811 ms - -[0m
+2025-06-23 11:41:36 info: [0mGET /service/getAppliedServices [36m304[0m 1092.467 ms - -[0m
+2025-06-23 11:43:42 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.283 ms - 0[0m
+2025-06-23 11:43:42 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.377 ms - 0[0m
+2025-06-23 11:43:43 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 371.691 ms - -[0m
+2025-06-23 11:43:43 info: [0mGET /service/getAppliedServices [36m304[0m 1077.780 ms - -[0m
+2025-06-23 11:44:50 info: [0mGET /service/proposals/681eb9c2ceecc0bf0373ba59 [32m200[0m 995.455 ms - -[0m
+2025-06-23 11:45:15 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:45:15 info: [0mPOST /service/hireFreelancerService/68592ee22380ebdd163e1b5e [32m200[0m 912.945 ms - 126[0m
+2025-06-23 11:46:44 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:46:44 info: [0mPOST /service/hireFreelancerService/68592ee22380ebdd163e1b5e [32m200[0m 773.794 ms - 126[0m
+2025-06-23 11:46:55 error: [POST] /service/hireFreelancerService/68592ee22380ebdd163e1b5e >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:46:55 info: [0mPOST /service/hireFreelancerService/68592ee22380ebdd163e1b5e [32m200[0m 900.979 ms - 126[0m
+2025-06-23 11:48:17 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 2.162 ms - 0[0m
+2025-06-23 11:48:18 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 572.579 ms - -[0m
+2025-06-23 11:48:33 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:48:33 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 900.779 ms - 126[0m
+2025-06-23 11:49:29 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-06-23 11:49:29 info: [0mPOST /auth/login [32m200[0m 288.291 ms - 85[0m
+2025-06-23 11:49:37 error: [POST] /auth/login >> StatusCode:: 400, Message:: Incorrect email or password
+2025-06-23 11:49:37 info: [0mPOST /auth/login [32m200[0m 272.488 ms - 85[0m
+2025-06-23 11:49:45 error: [POST] /auth/login >> StatusCode:: 400, Message:: Cannot read properties of undefined (reading 'status')
+2025-06-23 11:49:45 info: [0mPOST /auth/login [32m200[0m 585.658 ms - 587[0m
+2025-06-23 11:50:01 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:50:01 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 803.551 ms - 126[0m
+2025-06-23 11:50:22 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 2.031 ms - 0[0m
+2025-06-23 11:50:23 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 526.869 ms - -[0m
+2025-06-23 11:51:34 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2025-06-23 11:51:34 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 575.354 ms - 75[0m
+2025-06-23 11:51:59 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:51:59 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 898.975 ms - 126[0m
+2025-06-23 11:53:00 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: SERVICE_NOT_FOUND
+2025-06-23 11:53:00 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 632.264 ms - 75[0m
+2025-06-23 11:53:18 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:53:18 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 966.462 ms - 126[0m
+2025-06-23 11:54:52 info: =================================
+2025-06-23 11:54:52 info: ======= ENV: development =======
+2025-06-23 11:54:52 info: 🚀 App listening on the port 3000
+2025-06-23 11:54:52 info: =================================
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:54 info: Connected to email server
+2025-06-23 11:54:55 info: Connected to Database Successfully...
+2025-06-23 11:55:06 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:55:06 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 931.042 ms - 126[0m
+2025-06-23 11:55:10 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 11:55:10 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 812.564 ms - 126[0m
+2025-06-23 11:55:17 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.274 ms - 0[0m
+2025-06-23 11:55:17 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.152 ms - 0[0m
+2025-06-23 11:55:19 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:55:19 info: [0mPOST /service/paymentCallback [32m200[0m 1682.425 ms - 82[0m
+2025-06-23 11:55:19 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:55:19 info: [0mPOST /service/paymentCallback [32m200[0m 1859.282 ms - 82[0m
+2025-06-23 11:55:33 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.393 ms - 0[0m
+2025-06-23 11:55:34 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:55:34 info: [0mPOST /service/paymentCallback [32m200[0m 1655.691 ms - 82[0m
+2025-06-23 11:55:43 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.174 ms - 0[0m
+2025-06-23 11:55:43 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.061 ms - 0[0m
+2025-06-23 11:55:43 info: [0mGET /job/skillsCategory [36m304[0m 0.463 ms - -[0m
+2025-06-23 11:55:43 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.074 ms - 0[0m
+2025-06-23 11:55:43 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.067 ms - 0[0m
+2025-06-23 11:55:43 info: [0mGET /job/skillsCategory [36m304[0m 0.334 ms - -[0m
+2025-06-23 11:55:44 info: [0mGET /service?page=1&limit=10 [36m304[0m 534.675 ms - -[0m
+2025-06-23 11:55:44 info: [0mGET /service?page=1&limit=10 [36m304[0m 526.027 ms - -[0m
+2025-06-23 11:55:48 info: [0mOPTIONS /service/getServiceById/681ec02aceecc0bf0373bad4 [32m204[0m 0.398 ms - 0[0m
+2025-06-23 11:55:48 info: [0mOPTIONS /service/getServiceById/681ec02aceecc0bf0373bad4 [32m204[0m 0.843 ms - 0[0m
+2025-06-23 11:55:49 info: [0mGET /service/getServiceById/681ec02aceecc0bf0373bad4 [36m304[0m 516.818 ms - -[0m
+2025-06-23 11:55:50 info: [0mGET /service/getServiceById/681ec02aceecc0bf0373bad4 [36m304[0m 626.474 ms - -[0m
+2025-06-23 11:56:08 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.227 ms - 0[0m
+2025-06-23 11:56:10 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1809.648 ms - 375[0m
+2025-06-23 11:56:17 info: [0mOPTIONS /service/getServiceProposalById/685932c9ed9b540164261455 [32m204[0m 0.220 ms - 0[0m
+2025-06-23 11:56:18 info: [0mGET /service/getServiceProposalById/685932c9ed9b540164261455 [32m200[0m 1339.402 ms - -[0m
+2025-06-23 11:56:20 info: [0mOPTIONS /service/payment [32m204[0m 0.096 ms - 0[0m
+2025-06-23 11:56:21 info: [0mPOST /service/payment [32m200[0m 1134.901 ms - 167[0m
+2025-06-23 11:56:46 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.151 ms - 0[0m
+2025-06-23 11:56:50 info: [0mPOST /service/paymentCallback [32m200[0m 3404.845 ms - 647[0m
+2025-06-23 11:56:50 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.057 ms - 0[0m
+2025-06-23 11:56:50 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 567.712 ms - -[0m
+2025-06-23 11:57:14 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 11:57:14 info: [0mPOST /service/paymentCallback [32m200[0m 1535.830 ms - 82[0m
+2025-06-23 11:57:19 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.787 ms - 0[0m
+2025-06-23 11:57:19 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.046 ms - 0[0m
+2025-06-23 11:57:19 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.068 ms - 0[0m
+2025-06-23 11:57:19 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.096 ms - 0[0m
+2025-06-23 11:57:20 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 356.369 ms - -[0m
+2025-06-23 11:57:20 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 350.322 ms - -[0m
+2025-06-23 11:57:20 info: [0mGET /service/getAppliedServices [36m304[0m 983.556 ms - -[0m
+2025-06-23 11:57:21 info: [0mGET /service/getAppliedServices [36m304[0m 809.945 ms - -[0m
+2025-06-23 11:58:15 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.392 ms - 0[0m
+2025-06-23 11:58:16 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1636.506 ms - 376[0m
+2025-06-23 11:58:39 info: [0mPOST /service/payment [32m200[0m 1171.085 ms - 167[0m
+2025-06-23 11:59:23 info: [0mOPTIONS /service/getServiceProposalById/68593348ed9b540164261486 [32m204[0m 0.245 ms - 0[0m
+2025-06-23 11:59:25 info: [0mGET /service/getServiceProposalById/68593348ed9b540164261486 [32m200[0m 1378.432 ms - -[0m
+2025-06-23 11:59:27 info: [0mOPTIONS /service/payment [32m204[0m 0.108 ms - 0[0m
+2025-06-23 11:59:28 info: [0mPOST /service/payment [32m200[0m 1225.528 ms - 167[0m
+2025-06-23 11:59:54 info: =================================
+2025-06-23 11:59:54 info: ======= ENV: development =======
+2025-06-23 11:59:54 info: 🚀 App listening on the port 3000
+2025-06-23 11:59:54 info: =================================
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to email server
+2025-06-23 11:59:56 info: Connected to Database Successfully...
+2025-06-23 12:00:24 info: [0mOPTIONS /service/getServiceProposalById/68593348ed9b540164261486 [32m204[0m 0.946 ms - 0[0m
+2025-06-23 12:00:25 info: [0mGET /service/getServiceProposalById/68593348ed9b540164261486 [36m304[0m 1334.324 ms - -[0m
+2025-06-23 12:00:28 info: [0mOPTIONS /service/payment [32m204[0m 0.154 ms - 0[0m
+2025-06-23 12:00:29 info: [0mPOST /service/payment [32m200[0m 1189.473 ms - 167[0m
+2025-06-23 12:01:05 info: [0mPOST /service/paymentCallback [32m200[0m 3165.551 ms - 647[0m
+2025-06-23 12:01:17 info: =================================
+2025-06-23 12:01:17 info: ======= ENV: development =======
+2025-06-23 12:01:17 info: 🚀 App listening on the port 3000
+2025-06-23 12:01:17 info: =================================
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to email server
+2025-06-23 12:01:19 info: Connected to Database Successfully...
+2025-06-23 12:01:25 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 1.158 ms - 0[0m
+2025-06-23 12:01:25 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.275 ms - 0[0m
+2025-06-23 12:01:25 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 284.363 ms - -[0m
+2025-06-23 12:01:26 info: [0mGET /service/getAppliedServices [36m304[0m 794.596 ms - -[0m
+2025-06-23 12:01:42 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.186 ms - 0[0m
+2025-06-23 12:01:42 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.089 ms - 0[0m
+2025-06-23 12:01:42 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 280.521 ms - -[0m
+2025-06-23 12:01:43 info: [0mGET /service/getAppliedServices [36m304[0m 814.052 ms - -[0m
+2025-06-23 12:04:16 error: [POST] /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 >> StatusCode:: 400, Message:: HireService validation failed: proposal: Path `proposal` is required.
+2025-06-23 12:04:16 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 811.894 ms - 126[0m
+2025-06-23 12:05:37 info: =================================
+2025-06-23 12:05:37 info: ======= ENV: development =======
+2025-06-23 12:05:37 info: 🚀 App listening on the port 3000
+2025-06-23 12:05:37 info: =================================
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:39 info: Connected to email server
+2025-06-23 12:05:40 info: Connected to Database Successfully...
+2025-06-23 12:05:48 info: [0mPOST /service/hireFreelancerService/6812d1daa0daecfceb93c2d4 [32m200[0m 1173.481 ms - 358[0m
+2025-06-23 12:05:58 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.392 ms - 0[0m
+2025-06-23 12:05:58 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.060 ms - 0[0m
+2025-06-23 12:05:59 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 283.845 ms - -[0m
+2025-06-23 12:05:59 info: [0mGET /service/getAppliedServices [32m200[0m 836.379 ms - -[0m
+2025-06-23 12:06:21 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.205 ms - 0[0m
+2025-06-23 12:06:21 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.335 ms - 0[0m
+2025-06-23 12:06:21 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.089 ms - 0[0m
+2025-06-23 12:06:21 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.452 ms - 0[0m
+2025-06-23 12:06:22 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 288.385 ms - -[0m
+2025-06-23 12:06:22 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 271.922 ms - -[0m
+2025-06-23 12:06:22 info: [0mGET /service/getAppliedServices [32m200[0m 835.051 ms - -[0m
+2025-06-23 12:06:23 info: [0mGET /service/getAppliedServices [36m304[0m 821.138 ms - -[0m
+2025-06-23 12:06:29 info: [0mOPTIONS /service/proposals/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.294 ms - 0[0m
+2025-06-23 12:06:29 info: [0mGET /service/proposals/681eb9c2ceecc0bf0373ba59 [32m200[0m 825.415 ms - -[0m
+2025-06-23 12:06:59 info: [0mOPTIONS /service/proposals/681ec3dcceecc0bf0373bb2e [32m204[0m 0.467 ms - 0[0m
+2025-06-23 12:07:00 info: [0mGET /service/proposals/681ec3dcceecc0bf0373bb2e [32m200[0m 513.660 ms - 84[0m
+2025-06-23 12:07:02 info: [0mOPTIONS /service/getServiceById/681ec3dcceecc0bf0373bb2e [32m204[0m 0.483 ms - 0[0m
+2025-06-23 12:07:02 info: [0mOPTIONS /service/getServiceById/681ec3dcceecc0bf0373bb2e [32m204[0m 0.112 ms - 0[0m
+2025-06-23 12:07:02 info: [0mGET /service/getServiceById/681ec3dcceecc0bf0373bb2e [32m200[0m 527.249 ms - -[0m
+2025-06-23 12:07:03 info: [0mGET /service/getServiceById/681ec3dcceecc0bf0373bb2e [36m304[0m 538.085 ms - -[0m
+2025-06-23 12:07:37 info: [0mOPTIONS /service/proposal/681ec3dcceecc0bf0373bb2e [32m204[0m 0.583 ms - 0[0m
+2025-06-23 12:07:38 info: [0mPOST /service/proposal/681ec3dcceecc0bf0373bb2e [32m200[0m 1308.931 ms - 371[0m
+2025-06-23 12:07:48 info: [0mOPTIONS /service/getServiceProposalById/6859357a3edb9a8a6facb982 [32m204[0m 0.254 ms - 0[0m
+2025-06-23 12:07:49 info: [0mGET /service/getServiceProposalById/6859357a3edb9a8a6facb982 [32m200[0m 1314.458 ms - -[0m
+2025-06-23 12:07:52 info: [0mOPTIONS /service/payment [32m204[0m 0.234 ms - 0[0m
+2025-06-23 12:07:54 info: [0mPOST /service/payment [32m200[0m 1536.342 ms - 167[0m
+2025-06-23 12:08:33 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.280 ms - 0[0m
+2025-06-23 12:08:36 info: [0mPOST /service/paymentCallback [32m200[0m 3475.833 ms - 645[0m
+2025-06-23 12:08:36 info: [0mOPTIONS /service/getServiceById/681ec3dcceecc0bf0373bb2e [32m204[0m 0.043 ms - 0[0m
+2025-06-23 12:08:37 info: [0mGET /service/getServiceById/681ec3dcceecc0bf0373bb2e [32m200[0m 545.318 ms - -[0m
+2025-06-23 12:08:41 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.254 ms - 0[0m
+2025-06-23 12:08:41 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.213 ms - 0[0m
+2025-06-23 12:08:41 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 295.877 ms - -[0m
+2025-06-23 12:08:42 info: [0mGET /service/getAppliedServices [36m304[0m 845.722 ms - -[0m
+2025-06-23 12:08:52 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.298 ms - 0[0m
+2025-06-23 12:08:54 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-06-23 12:08:54 info: [0mPOST /service/paymentCallback [32m200[0m 1562.306 ms - 82[0m
+2025-06-23 12:08:56 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.744 ms - 0[0m
+2025-06-23 12:08:56 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.226 ms - 0[0m
+2025-06-23 12:08:56 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 0.099 ms - 0[0m
+2025-06-23 12:08:56 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.116 ms - 0[0m
+2025-06-23 12:08:56 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 314.530 ms - -[0m
+2025-06-23 12:08:57 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 285.349 ms - -[0m
+2025-06-23 12:08:57 info: [0mGET /service/getAppliedServices [36m304[0m 841.358 ms - -[0m
+2025-06-23 12:08:58 info: [0mGET /service/getAppliedServices [36m304[0m 771.388 ms - -[0m
+2025-06-23 12:10:02 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 2.321 ms - 0[0m
+2025-06-23 12:10:03 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.048 ms - 0[0m
+2025-06-23 12:10:03 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 413.293 ms - -[0m
+2025-06-23 12:10:03 info: [0mGET /service/getAppliedServices [36m304[0m 958.045 ms - -[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 3.602 ms - 0[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.203 ms - 0[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /photography [32m204[0m 0.056 ms - 0[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.042 ms - 0[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.035 ms - 0[0m
+2025-06-23 12:12:52 info: [0mOPTIONS /photography [32m204[0m 0.097 ms - 0[0m
+2025-06-23 12:12:52 info: [0mGET /service/getFeaturedService [36m304[0m 604.687 ms - -[0m
+2025-06-23 12:12:53 info: [0mGET /photography [36m304[0m 705.710 ms - -[0m
+2025-06-23 12:12:53 info: [0mGET /service/getFeaturedService [36m304[0m 646.056 ms - -[0m
+2025-06-23 12:12:53 info: [0mGET /photography [36m304[0m 589.276 ms - -[0m
+2025-06-23 12:12:55 info: [0mGET /job/getFeaturedJobs [36m304[0m 2743.666 ms - -[0m
+2025-06-23 12:12:56 info: [0mGET /job/getFeaturedJobs [36m304[0m 1080.765 ms - -[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.882 ms - 0[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.051 ms - 0[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /photography [32m204[0m 0.047 ms - 0[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.044 ms - 0[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.042 ms - 0[0m
+2025-06-23 12:13:01 info: [0mOPTIONS /photography [32m204[0m 0.047 ms - 0[0m
+2025-06-23 12:13:01 info: [0mGET /photography [36m304[0m 567.713 ms - -[0m
+2025-06-23 12:13:01 info: [0mGET /service/getFeaturedService [32m200[0m 568.011 ms - -[0m
+2025-06-23 12:13:02 info: [0mGET /job/getFeaturedJobs [32m200[0m 1110.118 ms - -[0m
+2025-06-23 12:13:02 info: [0mGET /photography [36m304[0m 562.028 ms - -[0m
+2025-06-23 12:13:02 info: [0mGET /service/getFeaturedService [36m304[0m 561.591 ms - -[0m
+2025-06-23 12:13:03 info: [0mGET /job/getFeaturedJobs [36m304[0m 1087.116 ms - -[0m
+2025-06-23 12:20:04 info: [0mOPTIONS /profile/details [32m204[0m 5.705 ms - 0[0m
+2025-06-23 12:20:04 info: [0mOPTIONS /profile/details [32m204[0m 0.064 ms - 0[0m
+2025-06-23 12:20:04 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.505 ms - 0[0m
+2025-06-23 12:20:05 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1356.632 ms - -[0m
+2025-06-23 12:20:07 info: [0mGET /profile/details [36m304[0m 2990.236 ms - -[0m
+2025-06-23 12:20:09 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.086 ms - 0[0m
+2025-06-23 12:20:10 info: [0mGET /profile/details [36m304[0m 2929.561 ms - -[0m
+2025-06-23 12:20:10 info: [0mOPTIONS /job/getAllJobs?page=1&limit=5 [32m204[0m 0.051 ms - 0[0m
+2025-06-23 12:20:11 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 1326.725 ms - -[0m
+2025-06-23 12:20:11 info: [0mGET /job/getAllJobs?page=1&limit=5 [32m200[0m 1079.730 ms - -[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 2.927 ms - 0[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.062 ms - 0[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.050 ms - 0[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.051 ms - 0[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.110 ms - 0[0m
+2025-06-23 12:20:15 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.045 ms - 0[0m
+2025-06-23 12:20:16 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 545.174 ms - -[0m
+2025-06-23 12:20:16 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 565.049 ms - -[0m
+2025-06-23 12:20:16 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1395.364 ms - -[0m
+2025-06-23 12:20:16 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1421.766 ms - -[0m
+2025-06-23 12:20:18 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1382.414 ms - -[0m
+2025-06-23 12:20:18 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1389.543 ms - -[0m
+2025-06-23 12:20:28 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.237 ms - 0[0m
+2025-06-23 12:20:28 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.071 ms - 0[0m
+2025-06-23 12:20:28 info: [0mGET /job/skillsCategory [36m304[0m 1.035 ms - -[0m
+2025-06-23 12:20:28 info: [0mGET /job/skillsCategory [36m304[0m 0.326 ms - -[0m
+2025-06-23 12:20:30 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1528.943 ms - -[0m
+2025-06-23 12:20:31 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1527.156 ms - -[0m
+2025-06-23 12:20:44 info: [0mOPTIONS /job/update/681a2277857ab6b017165d92 [32m204[0m 0.305 ms - 0[0m
+2025-06-23 12:20:44 info: [0mPUT /job/update/681a2277857ab6b017165d92 [32m200[0m 838.843 ms - -[0m
+2025-06-23 12:20:47 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.216 ms - 0[0m
+2025-06-23 12:20:47 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.111 ms - 0[0m
+2025-06-23 12:20:47 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.061 ms - 0[0m
+2025-06-23 12:20:47 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.275 ms - 0[0m
+2025-06-23 12:20:47 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.056 ms - 0[0m
+2025-06-23 12:20:47 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m200[0m 547.430 ms - -[0m
+2025-06-23 12:20:48 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 568.785 ms - -[0m
+2025-06-23 12:20:48 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1364.727 ms - -[0m
+2025-06-23 12:20:48 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1377.343 ms - -[0m
+2025-06-23 12:20:49 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1282.078 ms - -[0m
+2025-06-23 12:20:49 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1292.484 ms - -[0m
+2025-06-23 12:20:49 info: [0mOPTIONS /job/getAllJobs?page=1&limit=5 [32m204[0m 0.073 ms - 0[0m
+2025-06-23 12:20:50 info: [0mGET /job/getAllJobs?page=1&limit=5 [36m304[0m 1036.044 ms - -[0m
+2025-06-23 12:20:52 info: [0mOPTIONS /job/getAllJobs?page=2&limit=5 [32m204[0m 0.057 ms - 0[0m
+2025-06-23 12:20:53 info: [0mGET /job/getAllJobs?page=2&limit=5 [36m304[0m 1091.619 ms - -[0m
+2025-06-23 12:20:56 info: [0mOPTIONS /job/getAllJobs?page=3&limit=5 [32m204[0m 0.875 ms - 0[0m
+2025-06-23 12:20:57 info: [0mGET /job/getAllJobs?page=3&limit=5 [32m200[0m 1083.127 ms - -[0m
+2025-06-23 12:21:00 info: [0mOPTIONS /job/getAllJobs?page=4&limit=5 [32m204[0m 0.106 ms - 0[0m
+2025-06-23 12:21:01 info: [0mGET /job/getAllJobs?page=4&limit=5 [32m200[0m 1108.168 ms - -[0m
+2025-06-23 12:21:09 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 4.207 ms - 0[0m
+2025-06-23 12:21:09 info: [0mOPTIONS /job/getSimilarJobs/681a2277857ab6b017165d92 [32m204[0m 0.146 ms - 0[0m
+2025-06-23 12:21:09 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.616 ms - 0[0m
+2025-06-23 12:21:09 info: [0mOPTIONS /job/getSimilarJobs/681a2277857ab6b017165d92 [32m204[0m 0.168 ms - 0[0m
+2025-06-23 12:21:10 info: [0mGET /job/getSimilarJobs/681a2277857ab6b017165d92 [32m200[0m 1099.093 ms - -[0m
+2025-06-23 12:21:10 info: [0mGET /job/681a2277857ab6b017165d92 [32m200[0m 1560.158 ms - -[0m
+2025-06-23 12:21:11 info: [0mGET /job/getSimilarJobs/681a2277857ab6b017165d92 [36m304[0m 764.494 ms - -[0m
+2025-06-23 12:21:12 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1586.858 ms - -[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.673 ms - 0[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /bid/getTopBidders/681a2277857ab6b017165d92 [32m204[0m 0.096 ms - 0[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /profile/details [32m204[0m 0.062 ms - 0[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /bid/check/681a2277857ab6b017165d92 [32m204[0m 0.188 ms - 0[0m
+2025-06-23 12:21:17 error: [GET] /bid/check/681a2277857ab6b017165d92 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2277857ab6b017165d92 not found!
+2025-06-23 12:21:17 info: [0mOPTIONS /bid/getTopBidders/681a2277857ab6b017165d92 [32m204[0m 0.209 ms - 0[0m
+2025-06-23 12:21:17 info: [0mGET /bid/check/681a2277857ab6b017165d92 [32m200[0m 1.553 ms - 123[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /bid/check/681a2277857ab6b017165d92 [32m204[0m 0.063 ms - 0[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.053 ms - 0[0m
+2025-06-23 12:21:17 info: [0mOPTIONS /profile/details [32m204[0m 0.046 ms - 0[0m
+2025-06-23 12:21:17 error: [GET] /bid/check/681a2277857ab6b017165d92 >> StatusCode:: 404, Message:: The requested path /bid/check/681a2277857ab6b017165d92 not found!
+2025-06-23 12:21:17 info: [0mGET /bid/check/681a2277857ab6b017165d92 [36m304[0m 0.820 ms - -[0m
+2025-06-23 12:21:17 info: [0mGET /bid/getTopBidders/681a2277857ab6b017165d92 [32m200[0m 279.864 ms - 80[0m
+2025-06-23 12:21:18 info: [0mGET /bid/getTopBidders/681a2277857ab6b017165d92 [36m304[0m 261.872 ms - -[0m
+2025-06-23 12:21:19 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1586.363 ms - -[0m
+2025-06-23 12:21:20 info: [0mGET /profile/details [36m304[0m 2861.460 ms - -[0m
+2025-06-23 12:21:20 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1571.248 ms - -[0m
+2025-06-23 12:21:23 info: [0mGET /profile/details [36m304[0m 2909.749 ms - -[0m
+2025-06-23 12:21:46 info: [0mOPTIONS /bid/681a2277857ab6b017165d92 [32m204[0m 0.160 ms - 0[0m
+2025-06-23 12:21:49 info: [0mPOST /bid/681a2277857ab6b017165d92 [32m200[0m 2932.956 ms - 782[0m
+2025-06-23 12:21:52 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.527 ms - 0[0m
+2025-06-23 12:21:52 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.152 ms - 0[0m
+2025-06-23 12:21:53 info: [0mGET /job/getFreelancerContracts [32m200[0m 1296.780 ms - -[0m
+2025-06-23 12:21:54 info: [0mGET /job/getFreelancerContracts [36m304[0m 1169.767 ms - -[0m
+2025-06-23 12:21:59 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.282 ms - 0[0m
+2025-06-23 12:21:59 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.112 ms - 0[0m
+2025-06-23 12:21:59 info: [0mGET /job/skillsCategory [36m304[0m 1.488 ms - -[0m
+2025-06-23 12:21:59 info: [0mGET /job/skillsCategory [36m304[0m 1.311 ms - -[0m
+2025-06-23 12:22:01 info: [0mGET /job/681a2277857ab6b017165d92 [32m200[0m 1712.603 ms - -[0m
+2025-06-23 12:22:03 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1696.069 ms - -[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.279 ms - 0[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.065 ms - 0[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.047 ms - 0[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.043 ms - 0[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.038 ms - 0[0m
+2025-06-23 12:22:03 info: [0mOPTIONS /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m204[0m 0.029 ms - 0[0m
+2025-06-23 12:22:04 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [32m200[0m 630.141 ms - -[0m
+2025-06-23 12:22:05 info: [0mGET /job/client/680684f099bd8d166bd766c3?page=1&limit=10 [36m304[0m 756.398 ms - -[0m
+2025-06-23 12:22:05 info: [0mGET /bid/proposals/shortlist?limit=5 [32m200[0m 1623.735 ms - -[0m
+2025-06-23 12:22:05 info: [0mGET /bid/proposals/archive?limit=5 [32m200[0m 1620.245 ms - -[0m
+2025-06-23 12:22:06 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 1458.881 ms - -[0m
+2025-06-23 12:22:06 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 1460.538 ms - -[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 10.772 ms - 0[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.065 ms - 0[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.083 ms - 0[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 0.050 ms - 0[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.053 ms - 0[0m
+2025-06-23 12:22:14 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.057 ms - 0[0m
+2025-06-23 12:22:15 info: [0mGET /profile/billingAddress [36m304[0m 582.526 ms - -[0m
+2025-06-23 12:22:15 info: [0mGET /profile/billingAddress [36m304[0m 588.762 ms - -[0m
+2025-06-23 12:22:15 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m200[0m 1174.059 ms - -[0m
+2025-06-23 12:22:16 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1692.407 ms - -[0m
+2025-06-23 12:22:17 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [36m304[0m 1222.246 ms - -[0m
+2025-06-23 12:22:18 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1818.577 ms - -[0m
+2025-06-23 12:22:20 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1833.032 ms - -[0m
+2025-06-23 12:22:32 info: [0mOPTIONS /payment [32m204[0m 0.880 ms - 0[0m
+2025-06-23 12:22:34 info: [0mPOST /payment [32m200[0m 1411.988 ms - 167[0m
+2025-06-23 12:23:00 info: [0mOPTIONS /payment/callback [32m204[0m 1.926 ms - 0[0m
+2025-06-23 12:23:00 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 0.225 ms - 0[0m
+2025-06-23 12:23:00 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.091 ms - 0[0m
+2025-06-23 12:23:00 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.051 ms - 0[0m
+2025-06-23 12:23:01 info: [0mGET /profile/billingAddress [36m304[0m 521.256 ms - -[0m
+2025-06-23 12:23:01 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [36m304[0m 1046.065 ms - -[0m
+2025-06-23 12:23:02 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1572.400 ms - -[0m
+2025-06-23 12:23:03 info: [0mPOST /payment/callback [32m200[0m 3164.089 ms - 645[0m
+2025-06-23 12:23:05 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 0.109 ms - 0[0m
+2025-06-23 12:23:06 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m200[0m 1059.817 ms - -[0m
+2025-06-23 12:23:11 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.259 ms - 0[0m
+2025-06-23 12:23:12 info: [0mGET /job/getFreelancerContracts [32m200[0m 1070.077 ms - -[0m
+2025-06-23 12:23:31 info: [0mOPTIONS /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m204[0m 0.287 ms - 0[0m
+2025-06-23 12:23:31 info: [0mOPTIONS /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m204[0m 0.311 ms - 0[0m
+2025-06-23 12:23:32 info: [0mGET /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m200[0m 1140.009 ms - -[0m
+2025-06-23 12:23:33 info: [0mGET /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [36m304[0m 1024.027 ms - -[0m
+2025-06-23 12:23:42 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.218 ms - 0[0m
+2025-06-23 12:23:44 info: [0mGET /job/681a2277857ab6b017165d92 [32m200[0m 1647.956 ms - -[0m
+2025-06-23 12:23:47 info: [0mOPTIONS /payment/callback [32m204[0m 0.271 ms - 0[0m
+2025-06-23 12:23:47 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 0.166 ms - 0[0m
+2025-06-23 12:23:47 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.070 ms - 0[0m
+2025-06-23 12:23:47 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.311 ms - 0[0m
+2025-06-23 12:23:48 info: [0mGET /profile/billingAddress [36m304[0m 569.124 ms - -[0m
+2025-06-23 12:23:49 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [36m304[0m 1200.275 ms - -[0m
+2025-06-23 12:23:49 info: [0mPOST /payment/callback [32m200[0m 1545.256 ms - 645[0m
+2025-06-23 12:23:49 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1658.426 ms - -[0m
+2025-06-23 12:23:51 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [36m304[0m 1085.454 ms - -[0m
+2025-06-23 12:23:57 info: [0mOPTIONS /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [32m204[0m 0.309 ms - 0[0m
+2025-06-23 12:23:57 info: [0mOPTIONS /job/681a2277857ab6b017165d92 [32m204[0m 0.072 ms - 0[0m
+2025-06-23 12:23:57 info: [0mOPTIONS /profile/billingAddress [32m204[0m 0.138 ms - 0[0m
+2025-06-23 12:23:57 info: [0mGET /profile/billingAddress [36m304[0m 582.724 ms - -[0m
+2025-06-23 12:23:58 info: [0mGET /bid/proposals/681a2277857ab6b017165d92?sortBy=date_applied:desc [36m304[0m 1178.918 ms - -[0m
+2025-06-23 12:23:58 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1747.871 ms - -[0m
+2025-06-23 12:24:01 info: [0mGET /job/681a2277857ab6b017165d92 [36m304[0m 1711.365 ms - -[0m
+2025-06-23 12:24:07 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m204[0m 0.250 ms - 0[0m
+2025-06-23 12:24:07 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m204[0m 0.434 ms - 0[0m
+2025-06-23 12:24:08 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m200[0m 887.824 ms - -[0m
+2025-06-23 12:24:09 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [36m304[0m 986.714 ms - -[0m
+2025-06-23 12:24:15 info: [0mOPTIONS /chat [32m204[0m 0.247 ms - 0[0m
+2025-06-23 12:24:16 error: [POST] /chat >> StatusCode:: 400, Message:: CHAT_VALIDATION_ERROR
+2025-06-23 12:24:16 info: [0mPOST /chat [32m200[0m 573.932 ms - 117[0m
+2025-06-23 12:24:36 info: [0mOPTIONS /chat [32m204[0m 0.257 ms - 0[0m
+2025-06-23 12:24:37 info: [0mPOST /chat [32m200[0m 1192.956 ms - 236[0m
+2025-06-23 12:25:39 info: [0mOPTIONS /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m204[0m 2.739 ms - 0[0m
+2025-06-23 12:25:40 info: [0mGET /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [36m304[0m 1190.775 ms - -[0m
+2025-06-23 12:25:44 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m204[0m 0.326 ms - 0[0m
+2025-06-23 12:25:45 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [36m304[0m 796.213 ms - -[0m
+2025-06-23 12:25:47 info: [0mOPTIONS /chat [32m204[0m 0.323 ms - 0[0m
+2025-06-23 12:25:48 info: [0mPOST /chat [32m200[0m 545.814 ms - 232[0m
+2025-06-23 12:26:02 info: [0mOPTIONS /chat/message [32m204[0m 0.201 ms - 0[0m
+2025-06-23 12:26:03 info: [0mPOST /chat/message [32m200[0m 1110.987 ms - 258[0m
+2025-06-23 12:26:07 info: [0mOPTIONS /chat [32m204[0m 0.561 ms - 0[0m
+2025-06-23 12:26:07 info: [0mPOST /chat [32m200[0m 553.428 ms - 411[0m
+2025-06-23 12:26:15 info: [0mOPTIONS /chat/message [32m204[0m 0.196 ms - 0[0m
+2025-06-23 12:26:16 info: [0mPOST /chat/message [32m200[0m 1061.932 ms - 234[0m
+2025-06-23 12:26:22 info: [0mOPTIONS /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m204[0m 0.300 ms - 0[0m
+2025-06-23 12:26:23 info: [0mGET /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [36m304[0m 1121.125 ms - -[0m
+2025-06-23 12:26:24 info: [0mOPTIONS /chat [32m204[0m 0.136 ms - 0[0m
+2025-06-23 12:26:25 info: [0mPOST /chat [32m200[0m 598.605 ms - 567[0m
+2025-06-23 12:26:41 info: [0mOPTIONS /chat/message [32m204[0m 0.639 ms - 0[0m
+2025-06-23 12:26:42 info: [0mPOST /chat/message [32m200[0m 1292.887 ms - 249[0m
+2025-06-23 12:26:43 info: [0mOPTIONS /bid/requestMilestoneReview [32m204[0m 0.065 ms - 0[0m
+2025-06-23 12:26:47 info: [0mPOST /bid/requestMilestoneReview [32m200[0m 4047.885 ms - 80[0m
+2025-06-23 12:26:52 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m204[0m 0.733 ms - 0[0m
+2025-06-23 12:26:53 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [36m304[0m 883.931 ms - -[0m
+2025-06-23 12:26:55 info: [0mOPTIONS /chat [32m204[0m 0.680 ms - 0[0m
+2025-06-23 12:26:55 info: [0mPOST /chat [32m200[0m 665.379 ms - 738[0m
+2025-06-23 12:27:07 info: [0mOPTIONS /bid/updateMilestone/685938cb3edb9a8a6facbae6/685938cb3edb9a8a6facbae7 [32m204[0m 0.631 ms - 0[0m
+2025-06-23 12:27:08 info: [0mPUT /bid/updateMilestone/685938cb3edb9a8a6facbae6/685938cb3edb9a8a6facbae7 [32m200[0m 999.320 ms - 788[0m
+2025-06-23 12:27:08 info: [0mOPTIONS /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m204[0m 0.190 ms - 0[0m
+2025-06-23 12:27:09 info: [0mGET /job/getFreelancerContracts/6812d1daa0daecfceb93c2d4/685938cb3edb9a8a6facbae6 [32m200[0m 948.311 ms - -[0m
+2025-06-23 12:27:14 info: [0mOPTIONS /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m204[0m 0.435 ms - 0[0m
+2025-06-23 12:27:15 info: [0mGET /job/getFreelancerContracts/685938cb3edb9a8a6facbae6 [32m200[0m 1118.872 ms - -[0m
+2025-06-23 12:27:17 info: [0mOPTIONS /chat [32m204[0m 0.119 ms - 0[0m
+2025-06-23 12:27:17 info: [0mPOST /chat [32m200[0m 538.962 ms - 738[0m
+2025-06-23 12:28:17 info: [0mOPTIONS /job/skillsCategory [32m204[0m 2.031 ms - 0[0m
+2025-06-23 12:28:17 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 2.579 ms - 0[0m
+2025-06-23 12:28:17 info: [0mGET /job/skillsCategory [36m304[0m 14.446 ms - -[0m
+2025-06-23 12:28:17 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.054 ms - 0[0m
+2025-06-23 12:28:17 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.038 ms - 0[0m
+2025-06-23 12:28:17 info: [0mGET /job/skillsCategory [36m304[0m 0.216 ms - -[0m
+2025-06-23 12:28:18 info: [0mGET /service?page=1&limit=10 [32m200[0m 637.402 ms - -[0m
+2025-06-23 12:28:18 info: [0mGET /service?page=1&limit=10 [36m304[0m 558.222 ms - -[0m
+2025-06-23 12:28:26 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.452 ms - 0[0m
+2025-06-23 12:28:26 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.089 ms - 0[0m
+2025-06-23 12:28:27 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m200[0m 748.914 ms - -[0m
+2025-06-23 12:28:28 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 637.133 ms - -[0m
+2025-06-23 12:28:48 info: [0mOPTIONS /job/skillsCategory [32m204[0m 2.164 ms - 0[0m
+2025-06-23 12:28:48 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.060 ms - 0[0m
+2025-06-23 12:28:48 info: [0mGET /job/skillsCategory [36m304[0m 2.286 ms - -[0m
+2025-06-23 12:28:48 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.075 ms - 0[0m
+2025-06-23 12:28:48 info: [0mGET /job/skillsCategory [36m304[0m 1.502 ms - -[0m
+2025-06-23 12:28:48 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.061 ms - 0[0m
+2025-06-23 12:28:48 info: [0mGET /service?page=1&limit=10 [32m200[0m 575.595 ms - -[0m
+2025-06-23 12:28:49 info: [0mGET /service?page=1&limit=10 [36m304[0m 559.689 ms - -[0m
+2025-06-23 12:28:50 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 1.765 ms - 0[0m
+2025-06-23 12:28:50 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.209 ms - 0[0m
+2025-06-23 12:28:51 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m200[0m 523.580 ms - -[0m
+2025-06-23 12:28:51 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 525.610 ms - -[0m
+2025-06-23 12:29:31 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.741 ms - 0[0m
+2025-06-23 12:29:32 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1757.381 ms - 372[0m
+2025-06-23 12:30:12 info: [0mOPTIONS /service/getServiceProposalById/68593a9c3edb9a8a6facbc1d [32m204[0m 1.573 ms - 0[0m
+2025-06-23 12:30:13 info: [0mGET /service/getServiceProposalById/68593a9c3edb9a8a6facbc1d [32m200[0m 1351.461 ms - -[0m
+2025-06-23 12:30:37 info: [0mOPTIONS /service/payment [32m204[0m 0.187 ms - 0[0m
+2025-06-23 12:30:38 info: [0mPOST /service/payment [32m200[0m 1493.355 ms - 167[0m
+2025-06-23 12:31:31 info: [0mOPTIONS /service/proposal/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.159 ms - 0[0m
+2025-06-23 12:31:32 info: [0mPOST /service/proposal/681eb9c2ceecc0bf0373ba59 [32m200[0m 1662.537 ms - 373[0m
+2025-06-23 12:31:39 info: [0mOPTIONS /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m204[0m 4.632 ms - 0[0m
+2025-06-23 12:31:40 info: [0mGET /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m200[0m 1342.639 ms - -[0m
+2025-06-23 12:31:43 info: [0mOPTIONS /service/payment [32m204[0m 0.083 ms - 0[0m
+2025-06-23 12:31:44 info: [0mPOST /service/payment [32m200[0m 1330.863 ms - 167[0m
+2025-06-23 12:32:13 info: [0mOPTIONS /service/paymentCallback [32m204[0m 0.545 ms - 0[0m
+2025-06-23 12:32:16 info: [0mPOST /service/paymentCallback [32m200[0m 2990.797 ms - 647[0m
+2025-06-23 12:32:16 info: [0mOPTIONS /service/getServiceById/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.124 ms - 0[0m
+2025-06-23 12:32:16 info: [0mGET /service/getServiceById/681eb9c2ceecc0bf0373ba59 [36m304[0m 538.925 ms - -[0m
+2025-06-23 12:32:37 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 4.967 ms - 0[0m
+2025-06-23 12:32:37 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.167 ms - 0[0m
+2025-06-23 12:32:37 info: [0mOPTIONS /service/getServiceByUserId/680684f099bd8d166bd766c3 [32m204[0m 2.334 ms - 0[0m
+2025-06-23 12:32:37 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.085 ms - 0[0m
+2025-06-23 12:32:37 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 318.289 ms - -[0m
+2025-06-23 12:32:38 info: [0mGET /service/getServiceByUserId/680684f099bd8d166bd766c3 [36m304[0m 299.015 ms - -[0m
+2025-06-23 12:32:38 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.078 ms - 0[0m
+2025-06-23 12:32:38 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 3.998 ms - 0[0m
+2025-06-23 12:32:38 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.077 ms - 0[0m
+2025-06-23 12:32:38 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.161 ms - 0[0m
+2025-06-23 12:32:38 info: [0mGET /service/getAppliedServices [32m200[0m 877.668 ms - -[0m
+2025-06-23 12:32:38 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 336.925 ms - -[0m
+2025-06-23 12:32:39 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 284.459 ms - -[0m
+2025-06-23 12:32:39 info: [0mGET /service/getAppliedServices [36m304[0m 850.500 ms - -[0m
+2025-06-23 12:32:40 info: [0mGET /service/getAppliedServices [32m200[0m 2322.227 ms - -[0m
+2025-06-23 12:32:41 info: [0mGET /service/getAppliedServices [36m304[0m 922.347 ms - -[0m
+2025-06-23 12:33:36 info: [0mOPTIONS /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m204[0m 0.819 ms - 0[0m
+2025-06-23 12:33:36 info: [0mOPTIONS /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m204[0m 0.070 ms - 0[0m
+2025-06-23 12:33:37 info: [0mGET /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m200[0m 1459.844 ms - -[0m
+2025-06-23 12:33:38 info: [0mGET /service/getServiceProposalById/68592ee22380ebdd163e1b5e [36m304[0m 1363.660 ms - -[0m
+2025-06-23 12:33:57 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 2.633 ms - 0[0m
+2025-06-23 12:33:57 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 362.951 ms - -[0m
+2025-06-23 12:34:06 info: [0mOPTIONS /service/deleteService/681ec121ceecc0bf0373badd [32m204[0m 0.162 ms - 0[0m
+2025-06-23 12:34:06 info: [0mDELETE /service/deleteService/681ec121ceecc0bf0373badd [32m200[0m 542.690 ms - 807[0m
+2025-06-23 12:34:22 info: [0mOPTIONS /service/proposals/681eb9c2ceecc0bf0373ba59 [32m204[0m 12.930 ms - 0[0m
+2025-06-23 12:34:23 info: [0mGET /service/proposals/681eb9c2ceecc0bf0373ba59 [32m200[0m 913.644 ms - -[0m
+2025-06-23 12:34:24 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.275 ms - 0[0m
+2025-06-23 12:34:24 info: [0mGET /job/skillsCategory [36m304[0m 2.799 ms - -[0m
+2025-06-23 12:34:24 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.055 ms - 0[0m
+2025-06-23 12:34:24 info: [0mGET /job/skillsCategory [36m304[0m 0.751 ms - -[0m
+2025-06-23 12:34:32 info: [0mOPTIONS /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m204[0m 1.259 ms - 0[0m
+2025-06-23 12:34:33 info: [0mOPTIONS /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m204[0m 1.240 ms - 0[0m
+2025-06-23 12:34:34 info: [0mGET /service/getServiceProposalById/685573a83899d3ae4d69b73b [32m200[0m 1285.440 ms - -[0m
+2025-06-23 12:34:34 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.964 ms - 0[0m
+2025-06-23 12:34:34 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 11.468 ms - 0[0m
+2025-06-23 12:34:34 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.086 ms - 0[0m
+2025-06-23 12:34:34 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.292 ms - 0[0m
+2025-06-23 12:34:34 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m200[0m 308.661 ms - -[0m
+2025-06-23 12:34:35 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 266.674 ms - -[0m
+2025-06-23 12:34:35 info: [0mGET /service/getAppliedServices [36m304[0m 830.292 ms - -[0m
+2025-06-23 12:34:35 info: [0mGET /service/getServiceProposalById/685573a83899d3ae4d69b73b [36m304[0m 1322.361 ms - -[0m
+2025-06-23 12:34:36 info: [0mGET /service/getAppliedServices [36m304[0m 760.435 ms - -[0m
+2025-06-23 12:34:37 info: [0mOPTIONS /service/proposals/681eb9c2ceecc0bf0373ba59 [32m204[0m 0.159 ms - 0[0m
+2025-06-23 12:34:37 info: [0mGET /service/proposals/681eb9c2ceecc0bf0373ba59 [36m304[0m 782.117 ms - -[0m
+2025-06-23 12:34:43 info: [0mOPTIONS /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m204[0m 0.706 ms - 0[0m
+2025-06-23 12:34:43 info: [0mOPTIONS /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m204[0m 0.077 ms - 0[0m
+2025-06-23 12:34:44 info: [0mGET /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m200[0m 1259.229 ms - -[0m
+2025-06-23 12:34:45 info: [0mGET /service/getServiceProposalById/68593b143edb9a8a6facbc2c [36m304[0m 1318.753 ms - -[0m
+2025-06-23 12:35:20 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 12.390 ms - 0[0m
+2025-06-23 12:35:25 info: [0mPOST /service/requestServiceReview [32m200[0m 4609.735 ms - 84[0m
+2025-06-23 12:35:25 info: [0mOPTIONS /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m204[0m 0.131 ms - 0[0m
+2025-06-23 12:35:26 info: [0mGET /service/getServiceProposalById/68593b143edb9a8a6facbc2c [36m304[0m 1401.044 ms - -[0m
+2025-06-23 12:35:35 info: [0mOPTIONS /service/getServiceProposalById/68592ee22380ebdd163e1b5e [32m204[0m 1.187 ms - 0[0m
+2025-06-23 12:35:36 info: [0mGET /service/getServiceProposalById/68592ee22380ebdd163e1b5e [36m304[0m 1327.600 ms - -[0m
+2025-06-23 12:35:59 info: [0mOPTIONS /service/approveService/68593b143edb9a8a6facbc2c [32m204[0m 0.338 ms - 0[0m
+2025-06-23 12:36:00 info: [0mPUT /service/approveService/68593b143edb9a8a6facbc2c [32m200[0m 881.775 ms - 375[0m
+2025-06-23 12:36:00 info: [0mOPTIONS /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m204[0m 0.330 ms - 0[0m
+2025-06-23 12:36:01 info: [0mGET /service/getServiceProposalById/68593b143edb9a8a6facbc2c [32m200[0m 1314.160 ms - -[0m
