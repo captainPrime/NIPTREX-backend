@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.billingAddressUpdateValidation = exports.billingAddressSchemaValidation = exports.updateResumeValidation = exports.updateAboutSchema = exports.aboutSchema = exports.workPreferenceUpdateSchema = exports.workPreferenceSchema = exports.bioSchemaUpdateValidation = exports.bioSchemaValidation = exports.identityUpdateSchema = exports.identitySchema = exports.billingUpdateSchema = exports.billingSchema = exports.certificationUpdateSchema = exports.certificationSchema = exports.educationHistoryUpdateSchema = exports.educationHistorySchema = exports.experienceValidation = void 0;
 const tslib_1 = require("tslib");
-const profile_interface_1 = require("../interfaces/profile.interface");
+const profile_interface_1 = require("@/interfaces/profile.interface");
 const joi_1 = tslib_1.__importDefault(require("joi"));
 const mongoose_1 = tslib_1.__importDefault(require("mongoose"));
 /*

@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IPreferences, IUpdatePreference } from '../interfaces/profile.interface';
+import { IPreferences, IUpdatePreference } from '@/interfaces/profile.interface';
 declare class PreferenceService {
     preference: any;
     userService: UserService;

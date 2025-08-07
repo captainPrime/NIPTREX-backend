@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const preference_service_1 = tslib_1.__importDefault(require("../services/preference.service"));
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const HttpException_1 = require("@/exceptions/HttpException");
+const preference_service_1 = tslib_1.__importDefault(require("@/services/preference.service"));
 class PreferenceController {
     constructor() {
         this.userService = new users_service_1.default();

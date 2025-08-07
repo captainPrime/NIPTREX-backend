@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const auth_controller_1 = tslib_1.__importDefault(require("../controllers/auth.controller"));
-const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
-const validation_middleware_1 = tslib_1.__importDefault(require("../middlewares/validation.middleware"));
-const users_dto_1 = require("../dtos/users.dto");
+const auth_controller_1 = tslib_1.__importDefault(require("@controllers/auth.controller"));
+const auth_middleware_1 = tslib_1.__importDefault(require("@middlewares/auth.middleware"));
+const validation_middleware_1 = tslib_1.__importDefault(require("@middlewares/validation.middleware"));
+const users_dto_1 = require("@dtos/users.dto");
 class AuthRoute {
     constructor() {
         this.path = '/auth';

@@ -1,7 +1,7 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IPhotography } from '../models/photography.model';
-import { PaginationOptions } from '../interfaces/job.inteface';
+import { IPhotography } from '@/models/photography.model';
+import { PaginationOptions } from '@/interfaces/job.inteface';
 declare class PhotographyService {
     photography: any;
     userService: UserService;

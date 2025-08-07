@@ -16,11 +16,11 @@ const toobusy_js_1 = tslib_1.__importDefault(require("toobusy-js"));
 const xss_clean_1 = tslib_1.__importDefault(require("xss-clean"));
 const http_1 = require("http");
 const socket_io_1 = require("socket.io");
-const _config_1 = require("./config");
-const _databases_1 = require("./databases");
-const error_middleware_1 = tslib_1.__importDefault(require("./middlewares/error.middleware"));
-const logger_1 = require("./utils/logger");
-const HttpException_1 = require("./exceptions/HttpException");
+const _config_1 = require("@config");
+const _databases_1 = require("@databases");
+const error_middleware_1 = tslib_1.__importDefault(require("@middlewares/error.middleware"));
+const logger_1 = require("@utils/logger");
+const HttpException_1 = require("@exceptions/HttpException");
 class App {
     constructor(routes) {
         this.app = (0, express_1.default)();

@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '../services/users.service';
-import IdentityService from '../services/identity.service';
+import UserService from '@/services/users.service';
+import IdentityService from '@/services/identity.service';
 declare class IdentityController {
     userService: UserService;
     identityService: IdentityService;

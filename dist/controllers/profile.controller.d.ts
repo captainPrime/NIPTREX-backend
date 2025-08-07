@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import ProfileService from '../services/profile.service';
-import UserService from '../services/users.service';
+import ProfileService from '@/services/profile.service';
+import UserService from '@/services/users.service';
 declare class ProfileController {
     userService: UserService;
     profileService: ProfileService;

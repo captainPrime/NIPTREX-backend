@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Hire = exports.SavedJob = exports.JobModel = void 0;
-const job_inteface_1 = require("../interfaces/job.inteface");
-const profile_interface_1 = require("../interfaces/profile.interface");
-const toJSON_1 = require("../modules/toJSON");
-const paginate_1 = require("../modules/paginate");
+const job_inteface_1 = require("@/interfaces/job.inteface");
+const profile_interface_1 = require("@/interfaces/profile.interface");
+const toJSON_1 = require("@/modules/toJSON");
+const paginate_1 = require("@/modules/paginate");
 const mongoose_1 = require("mongoose");
 const JobSchema = new mongoose_1.Schema({
     user_id: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User', required: true },

@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const token_service_1 = tslib_1.__importDefault(require("../modules/token/token.service"));
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const matchPercentage_1 = require("../utils/matchPercentage");
+const token_service_1 = tslib_1.__importDefault(require("@/modules/token/token.service"));
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const matchPercentage_1 = require("@/utils/matchPercentage");
 const passport_1 = tslib_1.__importDefault(require("passport"));
 const passport_google_oauth20_1 = require("passport-google-oauth20");
 const userService = new users_service_1.default();

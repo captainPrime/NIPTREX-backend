@@ -1,7 +1,7 @@
-import UserService from '../services/users.service';
-import WalletService from '../services/wallet.service';
-import ServiceService from '../services/service.service';
-import EmailService from '../modules/email/email.service';
+import UserService from '@/services/users.service';
+import WalletService from '@/services/wallet.service';
+import ServiceService from '@/services/service.service';
+import EmailService from '@/modules/email/email.service';
 import { NextFunction, Request, Response } from 'express';
 declare class ServiceController {
     userService: UserService;

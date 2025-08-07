@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BillingAddress = exports.Bio = exports.Preference = exports.Identity = exports.Billing = exports.Certification = exports.Education = exports.Experience = exports.About = void 0;
-const profile_interface_1 = require("../interfaces/profile.interface");
-const toJSON_1 = require("../modules/toJSON");
+const profile_interface_1 = require("@/interfaces/profile.interface");
+const toJSON_1 = require("@/modules/toJSON");
 const mongoose_1 = require("mongoose");
 const experienceSchema = new mongoose_1.Schema({
     user_id: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User', required: true },

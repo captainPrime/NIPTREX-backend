@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '../services/users.service';
-import PhotographyService from '../services/photography.service';
-import WalletService from '../services/wallet.service';
-import EmailService from '../modules/email/email.service';
+import UserService from '@/services/users.service';
+import PhotographyService from '@/services/photography.service';
+import WalletService from '@/services/wallet.service';
+import EmailService from '@/modules/email/email.service';
 declare class PhotographyController {
     userService: UserService;
     emailService: EmailService;

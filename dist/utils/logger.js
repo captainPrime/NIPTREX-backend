@@ -7,7 +7,7 @@ const fs_1 = require("fs");
 const path_1 = require("path");
 const winston_1 = require("winston");
 const winston_daily_rotate_file_1 = tslib_1.__importDefault(require("winston-daily-rotate-file"));
-const _config_1 = require("../config");
+const _config_1 = require("@config");
 const morgan_1 = tslib_1.__importDefault(require("morgan"));
 const { combine, timestamp, splat, colorize } = winston_1.format;
 // logs dir

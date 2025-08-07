@@ -1,8 +1,8 @@
 import { Moment } from 'moment';
 import mongoose from 'mongoose';
 import { AccessAndRefreshTokens, ITokenDoc } from './token.interfaces';
-import UserService from '../../services/users.service';
-import { IUserDoc } from '../../interfaces/users.interface';
+import UserService from '@/services/users.service';
+import { IUserDoc } from '@/interfaces/users.interface';
 declare class TokenService {
     secret: string | undefined;
     userService: UserService;

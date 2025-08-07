@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IAbout, IUpdateAbout } from '../interfaces/profile.interface';
+import { IAbout, IUpdateAbout } from '@/interfaces/profile.interface';
 declare class AboutService {
     about: any;
     userService: UserService;

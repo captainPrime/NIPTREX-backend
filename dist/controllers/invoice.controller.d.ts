@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '../services/users.service';
-import InvoiceService from '../services/invoice.service';
-import ServiceService from '../services/service.service';
-import BidService from '../services/bid.service';
+import UserService from '@/services/users.service';
+import InvoiceService from '@/services/invoice.service';
+import ServiceService from '@/services/service.service';
+import BidService from '@/services/bid.service';
 declare class InvoiceController {
     bidService: BidService;
     userService: UserService;

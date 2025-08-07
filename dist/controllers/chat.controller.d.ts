@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import ChatService from '../services/chat.service';
-import UserService from '../services/users.service';
+import ChatService from '@/services/chat.service';
+import UserService from '@/services/users.service';
 declare class ChatController {
     userService: UserService;
     chatService: ChatService;

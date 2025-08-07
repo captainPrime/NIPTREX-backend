@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IDocument, IUpdateDocument } from '../interfaces/profile.interface';
+import { IDocument, IUpdateDocument } from '@/interfaces/profile.interface';
 declare class IdentityService {
     identity: any;
     userService: UserService;

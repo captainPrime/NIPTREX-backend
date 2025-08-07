@@ -2,15 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const axios_1 = tslib_1.__importDefault(require("axios"));
-const config_1 = require("../config");
-const flutterwave_1 = require("../modules/flutterwave");
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const wallet_service_1 = tslib_1.__importDefault(require("../services/wallet.service"));
-const matchPercentage_1 = require("../utils/matchPercentage");
-const service_service_1 = tslib_1.__importDefault(require("../services/service.service"));
-const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const service_models_1 = require("../models/service.models");
+const config_1 = require("@/config");
+const flutterwave_1 = require("@/modules/flutterwave");
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const wallet_service_1 = tslib_1.__importDefault(require("@/services/wallet.service"));
+const matchPercentage_1 = require("@/utils/matchPercentage");
+const service_service_1 = tslib_1.__importDefault(require("@/services/service.service"));
+const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
+const HttpException_1 = require("@/exceptions/HttpException");
+const service_models_1 = require("@/models/service.models");
 class ServiceController {
     constructor() {
         this.userService = new users_service_1.default();

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import UserService from './users.service';
 import AboutService from './about.service';
-import { IJob, IUpdateJob, PaginationOptions } from '../interfaces/job.inteface';
+import { IJob, IUpdateJob, PaginationOptions } from '@/interfaces/job.inteface';
 declare class JobService {
     hire: any;
     user: any;

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateServiceProposalStatusValidation = exports.serviceUpdateValidationSchema = exports.serviceValidationSchema = void 0;
 const tslib_1 = require("tslib");
-const service_models_1 = require("../models/service.models");
+const service_models_1 = require("@/models/service.models");
 const joi_1 = tslib_1.__importDefault(require("joi"));
 exports.serviceValidationSchema = joi_1.default.object({
     user_id: joi_1.default.string().required(),

@@ -2,17 +2,17 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
-const about_controller_1 = tslib_1.__importDefault(require("../controllers/about.controller"));
-const profile_controller_1 = tslib_1.__importDefault(require("../controllers/profile.controller"));
-const billing_controller_1 = tslib_1.__importDefault(require("../controllers/billing.controller"));
-const identity_controller_1 = tslib_1.__importDefault(require("../controllers/identity.controller"));
-const education_controller_1 = tslib_1.__importDefault(require("../controllers/education.controller"));
-const preference_controller_1 = tslib_1.__importDefault(require("../controllers/preference.controller"));
-const certification_controller_1 = tslib_1.__importDefault(require("../controllers/certification.controller"));
-const bio_controller_1 = tslib_1.__importDefault(require("../controllers/bio.controller"));
-const job_controller_1 = tslib_1.__importDefault(require("../controllers/job.controller"));
-const bank_controller_1 = tslib_1.__importDefault(require("../controllers/bank.controller"));
+const auth_middleware_1 = tslib_1.__importDefault(require("@middlewares/auth.middleware"));
+const about_controller_1 = tslib_1.__importDefault(require("@/controllers/about.controller"));
+const profile_controller_1 = tslib_1.__importDefault(require("@/controllers/profile.controller"));
+const billing_controller_1 = tslib_1.__importDefault(require("@/controllers/billing.controller"));
+const identity_controller_1 = tslib_1.__importDefault(require("@/controllers/identity.controller"));
+const education_controller_1 = tslib_1.__importDefault(require("@/controllers/education.controller"));
+const preference_controller_1 = tslib_1.__importDefault(require("@/controllers/preference.controller"));
+const certification_controller_1 = tslib_1.__importDefault(require("@/controllers/certification.controller"));
+const bio_controller_1 = tslib_1.__importDefault(require("@/controllers/bio.controller"));
+const job_controller_1 = tslib_1.__importDefault(require("@/controllers/job.controller"));
+const bank_controller_1 = tslib_1.__importDefault(require("@/controllers/bank.controller"));
 class ProfileRoute {
     constructor() {
         this.path = '/profile';

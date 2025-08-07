@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import JobService from './job.service';
 import UserService from './users.service';
 import AboutService from './about.service';
-import EmailService from '../modules/email/email.service';
-import { PaginationOptions } from '../interfaces/job.inteface';
-import { BiddingStage, IBidding, IUpdateBidding } from '../models/bid.model';
+import EmailService from '@/modules/email/email.service';
+import { PaginationOptions } from '@/interfaces/job.inteface';
+import { BiddingStage, IBidding, IUpdateBidding } from '@/models/bid.model';
 declare class BidService {
     bid: any;
     jobService: JobService;

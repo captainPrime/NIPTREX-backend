@@ -1,4 +1,4 @@
-import { ITransaction, IUpdateWallet, IWallet } from '../models/wallet.model';
+import { ITransaction, IUpdateWallet, IWallet } from '@/models/wallet.model';
 declare class WalletService {
     wallet: any;
     transaction: any;

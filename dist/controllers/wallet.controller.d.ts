@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '../services/users.service';
-import WalletService from '../services/wallet.service';
-import EmailService from '../modules/email/email.service';
-import BidService from '../services/bid.service';
-import JobService from '../services/job.service';
-import AboutService from '../services/about.service';
+import UserService from '@/services/users.service';
+import WalletService from '@/services/wallet.service';
+import EmailService from '@/modules/email/email.service';
+import BidService from '@/services/bid.service';
+import JobService from '@/services/job.service';
+import AboutService from '@/services/about.service';
 declare class WalletController {
     bidService: BidService;
     jobService: JobService;

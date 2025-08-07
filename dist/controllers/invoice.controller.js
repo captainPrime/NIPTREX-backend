@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const invoice_service_1 = tslib_1.__importDefault(require("../services/invoice.service"));
-const matchPercentage_1 = require("../utils/matchPercentage");
-const service_service_1 = tslib_1.__importDefault(require("../services/service.service"));
-const bid_service_1 = tslib_1.__importDefault(require("../services/bid.service"));
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const HttpException_1 = require("@/exceptions/HttpException");
+const invoice_service_1 = tslib_1.__importDefault(require("@/services/invoice.service"));
+const matchPercentage_1 = require("@/utils/matchPercentage");
+const service_service_1 = tslib_1.__importDefault(require("@/services/service.service"));
+const bid_service_1 = tslib_1.__importDefault(require("@/services/bid.service"));
 class InvoiceController {
     constructor() {
         this.bidService = new bid_service_1.default();

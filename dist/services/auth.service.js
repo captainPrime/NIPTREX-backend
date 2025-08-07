@@ -3,15 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const http_status_1 = tslib_1.__importDefault(require("http-status"));
 const jsonwebtoken_1 = require("jsonwebtoken");
-const _config_1 = require("../config");
-const users_model_1 = tslib_1.__importDefault(require("../models/users.model"));
-const util_1 = require("../utils/util");
-const ApiError_1 = tslib_1.__importDefault(require("../exceptions/ApiError"));
+const _config_1 = require("@config");
+const users_model_1 = tslib_1.__importDefault(require("@models/users.model"));
+const util_1 = require("@utils/util");
+const ApiError_1 = tslib_1.__importDefault(require("@/exceptions/ApiError"));
 const users_service_1 = tslib_1.__importDefault(require("./users.service"));
-const token_service_1 = tslib_1.__importDefault(require("../modules/token/token.service"));
-const token_1 = require("../modules/token");
+const token_service_1 = tslib_1.__importDefault(require("@/modules/token/token.service"));
+const token_1 = require("@/modules/token");
 const mongoose_1 = tslib_1.__importDefault(require("mongoose"));
-const HttpException_1 = require("../exceptions/HttpException");
+const HttpException_1 = require("@/exceptions/HttpException");
 class AuthService {
     constructor() {
         this.users = users_model_1.default;

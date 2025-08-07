@@ -22,7 +22,7 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose/types/inferschematype" />
 import { Types } from 'mongoose';
-import { IChat, IMessage } from '../models/chat.model';
+import { IChat, IMessage } from '@/models/chat.model';
 import AboutService from './about.service';
 import UserService from './users.service';
 import ServiceService from './service.service';

@@ -1,9 +1,9 @@
 /// <reference types="qs" />
 import { Request, Response } from 'express';
-import AuthService from '../services/auth.service';
-import TokenService from '../modules/token/token.service';
-import EmailService from '../modules/email/email.service';
-import UserService from '../services/users.service';
+import AuthService from '@services/auth.service';
+import TokenService from '@/modules/token/token.service';
+import EmailService from '@/modules/email/email.service';
+import UserService from '@/services/users.service';
 declare class AuthController {
     authService: AuthService;
     tokenService: TokenService;

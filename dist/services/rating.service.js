@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const util_1 = require("../utils/util");
-const HttpException_1 = require("../exceptions/HttpException");
-const rating_model_1 = require("../models/rating.model");
-const rating_validation_1 = require("../validations/rating.validation");
+const util_1 = require("@utils/util");
+const HttpException_1 = require("@exceptions/HttpException");
+const rating_model_1 = require("@/models/rating.model");
+const rating_validation_1 = require("@/validations/rating.validation");
 class RatingService {
     constructor() {
         this.rating = rating_model_1.RatingModel;

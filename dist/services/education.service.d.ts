@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IEducationHistory, IUpdateEducationHistory } from '../interfaces/profile.interface';
+import { IEducationHistory, IUpdateEducationHistory } from '@/interfaces/profile.interface';
 declare class EducationService {
     education: any;
     userService: UserService;

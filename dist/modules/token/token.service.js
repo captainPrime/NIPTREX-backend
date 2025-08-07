@@ -6,9 +6,9 @@ const moment_1 = tslib_1.__importDefault(require("moment"));
 const http_status_1 = tslib_1.__importDefault(require("http-status"));
 const token_model_1 = tslib_1.__importDefault(require("./token.model"));
 const token_types_1 = tslib_1.__importDefault(require("./token.types"));
-const ApiError_1 = tslib_1.__importDefault(require("../../exceptions/ApiError"));
-const users_service_1 = tslib_1.__importDefault(require("../../services/users.service"));
-const config_1 = require("../../config");
+const ApiError_1 = tslib_1.__importDefault(require("@/exceptions/ApiError"));
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const config_1 = require("@/config");
 class TokenService {
     constructor() {
         this.userService = new users_service_1.default();

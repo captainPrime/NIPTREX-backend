@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IInvoice, IUpdateInvoice } from '../models/invoice.model';
+import { IInvoice, IUpdateInvoice } from '@/models/invoice.model';
 declare class InvoiceService {
     invoice: any;
     userService: UserService;

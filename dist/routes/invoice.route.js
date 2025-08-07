@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
-const invoice_controller_1 = tslib_1.__importDefault(require("../controllers/invoice.controller"));
+const auth_middleware_1 = tslib_1.__importDefault(require("@/middlewares/auth.middleware"));
+const invoice_controller_1 = tslib_1.__importDefault(require("@/controllers/invoice.controller"));
 class InvoiceRoute {
     constructor() {
         this.path = '/invoice';

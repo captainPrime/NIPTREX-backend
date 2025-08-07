@@ -3,11 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 /* eslint-disable security/detect-non-literal-regexp */
 const bcryptjs_1 = require("bcryptjs");
-const HttpException_1 = require("../exceptions/HttpException");
-const users_model_1 = tslib_1.__importDefault(require("../models/users.model"));
-const util_1 = require("../utils/util");
-const profile_model_1 = require("../models/profile.model");
-const matchPercentage_1 = require("../utils/matchPercentage");
+const HttpException_1 = require("@exceptions/HttpException");
+const users_model_1 = tslib_1.__importDefault(require("@models/users.model"));
+const util_1 = require("@utils/util");
+const profile_model_1 = require("@/models/profile.model");
+const matchPercentage_1 = require("@/utils/matchPercentage");
 class UserService {
     constructor() {
         this.users = users_model_1.default;

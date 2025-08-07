@@ -2,13 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const http_status_1 = tslib_1.__importDefault(require("http-status"));
-const auth_service_1 = tslib_1.__importDefault(require("../services/auth.service"));
-const asyncWrapper_1 = require("../utils/asyncWrapper");
-const token_service_1 = tslib_1.__importDefault(require("../modules/token/token.service"));
-const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const passport_middleware_1 = tslib_1.__importDefault(require("../middlewares/passport.middleware"));
+const auth_service_1 = tslib_1.__importDefault(require("@services/auth.service"));
+const asyncWrapper_1 = require("@/utils/asyncWrapper");
+const token_service_1 = tslib_1.__importDefault(require("@/modules/token/token.service"));
+const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const HttpException_1 = require("@/exceptions/HttpException");
+const passport_middleware_1 = tslib_1.__importDefault(require("@/middlewares/passport.middleware"));
 const google_auth_library_1 = require("google-auth-library");
 class AuthController {
     constructor() {

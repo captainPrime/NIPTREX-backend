@@ -3,15 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 /* eslint-disable security/detect-object-injection */
 const mongoose_1 = tslib_1.__importDefault(require("mongoose"));
-const util_1 = require("../utils/util");
+const util_1 = require("@utils/util");
 const job_service_1 = tslib_1.__importDefault(require("./job.service"));
 const users_service_1 = tslib_1.__importDefault(require("./users.service"));
 const about_service_1 = tslib_1.__importDefault(require("./about.service"));
-const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const matchPercentage_1 = require("../utils/matchPercentage");
-const bid_validation_1 = require("../validations/bid.validation");
-const bid_model_1 = require("../models/bid.model");
+const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
+const HttpException_1 = require("@exceptions/HttpException");
+const matchPercentage_1 = require("@/utils/matchPercentage");
+const bid_validation_1 = require("@/validations/bid.validation");
+const bid_model_1 = require("@/models/bid.model");
 class BidService {
     constructor() {
         this.bid = bid_model_1.BiddingModel;

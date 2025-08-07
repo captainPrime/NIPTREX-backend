@@ -53,3 +53,31 @@
 2025-08-07 11:41:10 info: [0mGET / [32m200[0m 2.903 ms - 115[0m
 2025-08-07 11:41:10 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
 2025-08-07 11:41:10 info: [0mGET /favicon.ico [36m304[0m 1.212 ms - -[0m
+2025-08-07 12:00:22 info: =================================
+2025-08-07 12:00:22 info: ======= ENV: development =======
+2025-08-07 12:00:22 info: 🚀 App listening on the port 3000
+2025-08-07 12:00:22 info: =================================
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:24 info: Connected to email server
+2025-08-07 12:00:25 info: Connected to email server
+2025-08-07 12:00:25 info: Connected to email server
+2025-08-07 12:00:25 info: Connected to email server
+2025-08-07 12:00:25 info: Connected to email server
+2025-08-07 12:00:26 info: Connected to Database Successfully...
+2025-08-07 12:00:39 info: [0mOPTIONS /job/681c8ebf857ab6b017166643 [32m204[0m 1.395 ms - 0[0m
+2025-08-07 12:00:39 info: [0mOPTIONS /job/getSimilarJobs/681c8ebf857ab6b017166643 [32m204[0m 0.264 ms - 0[0m
+2025-08-07 12:00:39 info: [0mOPTIONS /job/681c8ebf857ab6b017166643 [32m204[0m 0.128 ms - 0[0m
+2025-08-07 12:00:39 info: [0mOPTIONS /job/getSimilarJobs/681c8ebf857ab6b017166643 [32m204[0m 0.072 ms - 0[0m
+2025-08-07 12:00:40 info: [0mGET /job/getSimilarJobs/681c8ebf857ab6b017166643 [36m304[0m 983.445 ms - -[0m
+2025-08-07 12:00:41 info: [0mGET /job/getSimilarJobs/681c8ebf857ab6b017166643 [36m304[0m 1111.527 ms - -[0m
+2025-08-07 12:00:41 info: [0mGET /job/681c8ebf857ab6b017166643 [32m200[0m 2126.261 ms - -[0m
+2025-08-07 12:00:43 info: [0mGET /job/681c8ebf857ab6b017166643 [36m304[0m 2014.287 ms - -[0m

@@ -1,9 +1,9 @@
 import { NextFunction, Request, Response } from 'express';
-import JobService from '../services/job.service';
-import UserService from '../services/users.service';
-import AboutService from '../services/about.service';
-import PreferenceService from '../services/preference.service';
-import BidService from '../services/bid.service';
+import JobService from '@/services/job.service';
+import UserService from '@/services/users.service';
+import AboutService from '@/services/about.service';
+import PreferenceService from '@/services/preference.service';
+import BidService from '@/services/bid.service';
 declare class JobController {
     jobService: JobService;
     bidService: BidService;

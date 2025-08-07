@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '../services/users.service';
-import BillingService from '../services/billing.service';
+import UserService from '@/services/users.service';
+import BillingService from '@/services/billing.service';
 declare class BillingController {
     userService: UserService;
     billingService: BillingService;

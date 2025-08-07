@@ -1,19 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
-const HttpException_1 = require("../exceptions/HttpException");
-const wallet_service_1 = tslib_1.__importDefault(require("../services/wallet.service"));
-const flutterwave_1 = require("../modules/flutterwave");
-const matchPercentage_1 = require("../utils/matchPercentage");
-const config_1 = require("../config");
+const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const HttpException_1 = require("@/exceptions/HttpException");
+const wallet_service_1 = tslib_1.__importDefault(require("@/services/wallet.service"));
+const flutterwave_1 = require("@/modules/flutterwave");
+const matchPercentage_1 = require("@/utils/matchPercentage");
+const config_1 = require("@/config");
 const axios_1 = tslib_1.__importDefault(require("axios"));
-const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
-const bid_service_1 = tslib_1.__importDefault(require("../services/bid.service"));
-const job_service_1 = tslib_1.__importDefault(require("../services/job.service"));
-const job_inteface_1 = require("../interfaces/job.inteface");
-const bid_model_1 = require("../models/bid.model");
-const about_service_1 = tslib_1.__importDefault(require("../services/about.service"));
+const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
+const bid_service_1 = tslib_1.__importDefault(require("@/services/bid.service"));
+const job_service_1 = tslib_1.__importDefault(require("@/services/job.service"));
+const job_inteface_1 = require("@/interfaces/job.inteface");
+const bid_model_1 = require("@/models/bid.model");
+const about_service_1 = tslib_1.__importDefault(require("@/services/about.service"));
 class WalletController {
     constructor() {
         this.bidService = new bid_service_1.default();

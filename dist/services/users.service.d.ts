@@ -1,5 +1,5 @@
-import { CreateUserDto } from '../dtos/users.dto';
-import { IUserDoc, IUserModel, UpdateUserBody } from '../interfaces/users.interface';
+import { CreateUserDto } from '@dtos/users.dto';
+import { IUserDoc, IUserModel, UpdateUserBody } from '@interfaces/users.interface';
 import mongoose from 'mongoose';
 declare class UserService {
     users: IUserModel;

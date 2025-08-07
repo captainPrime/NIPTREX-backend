@@ -22,7 +22,7 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
-import { IAbout, IBillingAddress, IBilling, IBio, ICertification, IDocument, IEducationHistory, IExperience, IPreferences } from '../interfaces/profile.interface';
+import { IAbout, IBillingAddress, IBilling, IBio, ICertification, IDocument, IEducationHistory, IExperience, IPreferences } from '@/interfaces/profile.interface';
 declare const About: import("mongoose").Model<IAbout, {}, {}, {}, any>;
 declare const Experience: import("mongoose").Model<IExperience, {}, {}, {}, any>;
 declare const Education: import("mongoose").Model<IEducationHistory, {}, {}, {}, any>;

@@ -22,7 +22,7 @@
 /// <reference types="mongoose/types/validation" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
-import { IJob } from '../interfaces/job.inteface';
+import { IJob } from '@/interfaces/job.inteface';
 declare const JobModel: import("mongoose").Model<IJob, {}, {}, {}, any>;
 declare const SavedJob: import("mongoose").Model<unknown, unknown, unknown, {}, any>;
 declare const Hire: import("mongoose").Model<unknown, unknown, unknown, {}, any>;
