@@ -4,7 +4,7 @@
   "compilerOptions": {
     "target": "es2017",
     "lib": ["es2017", "esnext.asynciterable"],
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["./src/types", "node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -39,5 +39,5 @@
   },
   "include": ["src/**/*", "tests/**/*"],
   "exclude": ["node_modules", "src/http", "src/logs", "src/tests"],
-  // "files": ["src/types.d.ts"]
+  "files": ["src/types.d.ts"]
 }

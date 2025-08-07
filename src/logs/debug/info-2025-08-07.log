@@ -46,3 +46,10 @@
 2025-08-07 11:30:27 info: [0mGET /profile/details [36m304[0m 8339.077 ms - -[0m
 2025-08-07 11:30:28 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 8375.577 ms - -[0m
 2025-08-07 11:30:31 info: [0mGET /profile/details [36m304[0m 4199.814 ms - -[0m
+2025-08-07 11:41:04 error: [GET] /admin >> StatusCode:: 404, Message:: The requested path /admin not found!
+2025-08-07 11:41:04 info: [0mGET /admin [32m200[0m 12.504 ms - 94[0m
+2025-08-07 11:41:04 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-08-07 11:41:04 info: [0mGET /favicon.ico [32m200[0m 15.276 ms - 100[0m
+2025-08-07 11:41:10 info: [0mGET / [32m200[0m 2.903 ms - 115[0m
+2025-08-07 11:41:10 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-08-07 11:41:10 info: [0mGET /favicon.ico [36m304[0m 1.212 ms - -[0m

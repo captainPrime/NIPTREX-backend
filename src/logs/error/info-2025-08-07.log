@@ -1,0 +1,3 @@
+2025-08-07 11:41:04 error: [GET] /admin >> StatusCode:: 404, Message:: The requested path /admin not found!
+2025-08-07 11:41:04 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-08-07 11:41:10 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
