@@ -1,0 +1,36 @@
+export declare const skills: {
+    'Programming Languages': string[];
+    'Web Development': string[];
+    'Mobile Development': string[];
+    Database: string[];
+    'Cloud Computing': string[];
+    DevOps: string[];
+    'Artificial Intelligence/Machine Learning': string[];
+    Cybersecurity: string[];
+    'Photography Software': string[];
+    'Color Management': string[];
+    'Digital Asset Management': string[];
+    'Image Editing Techniques': string[];
+    'Graphic Design Software': string[];
+    'User Interface/User Experience Design': string[];
+    'Web Design': string[];
+    '3D Design': string[];
+    'Digital Painting and Illustration': string[];
+    'Motion Graphics and Animation': string[];
+    Typography: string[];
+};
+export declare const skillsWithOutSection: string[];
+export declare const softSkills: string[];
+export declare const technicalTools: {
+    'Graphic Designing': string[];
+    'Web Development': string[];
+    'Mobile App Development': string[];
+    'Database Management': string[];
+    'Version Control': string[];
+    'IDEs and Text Editors': string[];
+    'Project Management': string[];
+    'Virtualization and Containerization': string[];
+    Networking: string[];
+    'Machine Learning and Data Science': string[];
+    'Cloud Platforms': string[];
+};

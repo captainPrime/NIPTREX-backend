@@ -1,0 +1,35 @@
+import mongoose from 'mongoose';
+import UserService from './users.service';
+import AboutService from './about.service';
+import { IJob, IUpdateJob, PaginationOptions } from '../interfaces/job.inteface';
+declare class JobService {
+    hire: any;
+    user: any;
+    job: any;
+    bid: any;
+    saveJob: any;
+    userService: UserService;
+    aboutService: AboutService;
+    capitalizeFirstLetter: (str: string) => string;
+    createJob(body: IJob): Promise<any>;
+    updateJob(selector: string, body: IUpdateJob): Promise<any>;
+    updateJobById(id: string, body: IUpdateJob): Promise<any>;
+    savedJob(payload: any): Promise<any>;
+    getUserJobBestMatches(query: any, userId: string, otherQuery: any, options: PaginationOptions): Promise<any>;
+    getMostRecentJobs(query: any, userId: string, otherQuery: any, options: PaginationOptions): Promise<any>;
+    getAllJobs(filter: any, options: PaginationOptions, userId: string): Promise<any>;
+    getJobById(id: string, userId: string): Promise<any>;
+    getSimilarJobs(id: string, query: any): Promise<any>;
+    getJobByJobId(id: string): Promise<any>;
+    getJobByClientId(userId: string, otherQuery: any, options: PaginationOptions): Promise<any>;
+    getSavedJobById(id: mongoose.Types.ObjectId | string): Promise<any>;
+    deleteSavedJob(id: mongoose.Types.ObjectId | string): Promise<any>;
+    getUserSavedJobs(id: mongoose.Types.ObjectId | string): Promise<any>;
+    getUserSavedItems(id: mongoose.Types.ObjectId | string): Promise<any>;
+    hireFreelancer(payload: any): Promise<any>;
+    freelanceWorkHistory(userId: string, otherQuery: any, options: PaginationOptions): Promise<any>;
+    getFreelancerContracts(userId: string, otherQuery: any, options: PaginationOptions): Promise<any>;
+    getFreelancerContractById(userId: string, contractId: string): Promise<any>;
+    getFreelancerContractByIdClient(userId: string, contractId: string): Promise<any>;
+}
+export default JobService;

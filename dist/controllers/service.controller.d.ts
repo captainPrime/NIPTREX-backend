@@ -1,0 +1,30 @@
+import UserService from '../services/users.service';
+import WalletService from '../services/wallet.service';
+import ServiceService from '../services/service.service';
+import EmailService from '../modules/email/email.service';
+import { NextFunction, Request, Response } from 'express';
+declare class ServiceController {
+    userService: UserService;
+    emailService: EmailService;
+    walletService: WalletService;
+    serviceService: ServiceService;
+    createService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getServiceById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getServiceByUserId: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getUserService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getFeaturedService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getAllServices: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    updateServiceById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    deleteService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    hireFreelancerService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getAppliedServices: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    serviceProposal: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getAllServiceProposal: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    getServiceProposalById: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>>>;
+    updateServiceProposalById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    makePayment: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    paymentCallback: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    requestServiceReview: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    approveService: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+}
+export default ServiceController;
