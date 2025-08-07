@@ -20,7 +20,7 @@ declare class ServiceController {
     getAppliedServices: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     serviceProposal: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     getAllServiceProposal: (req: Request, res: Response, next: NextFunction) => Promise<void>;
-    getServiceProposalById: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>;
+    getServiceProposalById: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>>>;
     updateServiceProposalById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     makePayment: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     paymentCallback: (req: Request, res: Response, next: NextFunction) => Promise<void>;

@@ -3,8 +3,8 @@ export declare const jobPayload: {
     jobTitle: string;
     jobSubInfo: string;
     jobDescription: string;
-    attachments: never[];
-    links: never[];
+    attachments: any[];
+    links: any[];
     duration: string;
     hourly: number;
     experience_level: string;

@@ -7,6 +7,6 @@ export declare class Logger {
     static error: (message: string) => void;
     static getErrorLoggerTransport: () => winstonDaily;
     static getDebugLoggerTransport: () => winstonDaily;
-    static getHttpLoggerInstance: () => (req: import("http").IncomingMessage, res: import("http").ServerResponse<import("http").IncomingMessage>, callback: (err?: Error | undefined) => void) => void;
+    static getHttpLoggerInstance: () => (req: import("http").IncomingMessage, res: import("http").ServerResponse<import("http").IncomingMessage>, callback: (err?: Error) => void) => void;
 }
 export declare const logger: import("winston").Logger;

@@ -8,7 +8,7 @@ declare class PhotographyController {
     emailService: EmailService;
     walletService: WalletService;
     photographyService: PhotographyService;
-    createPhotography: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>;
+    createPhotography: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>>>;
     private uploadToCloudinary;
     getUserPhotography: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     getAllPhotography: (req: Request, res: Response, next: NextFunction) => Promise<void>;

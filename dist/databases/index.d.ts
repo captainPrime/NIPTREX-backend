@@ -1,5 +1,5 @@
 export declare const dbConnection: {
-    url: string | undefined;
+    url: string;
     options: {
         useNewUrlParser: boolean;
         useUnifiedTopology: boolean;

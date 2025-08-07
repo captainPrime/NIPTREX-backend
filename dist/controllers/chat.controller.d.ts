@@ -4,12 +4,12 @@ import UserService from '@/services/users.service';
 declare class ChatController {
     userService: UserService;
     chatService: ChatService;
-    createChat: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>;
+    createChat: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>>>;
     getChatById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     getChatsByUser: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     createMessage: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     getMessagesByChat: (req: Request, res: Response, next: NextFunction) => Promise<void>;
-    getMessagesByMilestone: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>;
+    getMessagesByMilestone: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>>>;
     getUserMessages: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     getFilesByMilestone: (req: Request, res: Response, next: NextFunction) => Promise<void>;
 }
