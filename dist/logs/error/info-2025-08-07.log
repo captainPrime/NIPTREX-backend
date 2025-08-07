@@ -10,3 +10,15 @@ TypeError: OAuth2Strategy requires a clientID option
     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
     at Module.require (node:internal/modules/cjs/loader:1491:12)
+2025-08-07 14:17:18 error: uncaughtException: OAuth2Strategy requires a clientID option
+TypeError: OAuth2Strategy requires a clientID option
+    at Strategy.OAuth2Strategy (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/passport-oauth2/lib/strategy.js:87:34)
+    at new Strategy (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/passport-google-oauth20/lib/strategy.js:52:18)
+    at Object.<anonymous> (/Users/user/Desktop/niptrex/NIPTREX-backend/dist/middlewares/passport.middleware.js:26:24)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
