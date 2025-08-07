@@ -1,0 +1,48 @@
+2025-08-07 11:07:11 info: =================================
+2025-08-07 11:07:11 info: ======= ENV: development =======
+2025-08-07 11:07:11 info: 🚀 App listening on the port 3000
+2025-08-07 11:07:11 info: =================================
+2025-08-07 11:07:42 info: Connected to email server
+2025-08-07 11:07:42 info: Connected to email server
+2025-08-07 11:07:43 info: Connected to email server
+2025-08-07 11:07:45 info: Connected to email server
+2025-08-07 11:07:45 info: Connected to email server
+2025-08-07 11:07:46 info: Connected to email server
+2025-08-07 11:07:46 info: Connected to email server
+2025-08-07 11:07:46 info: Connected to email server
+2025-08-07 11:07:47 info: Connected to email server
+2025-08-07 11:07:50 info: Connected to email server
+2025-08-07 11:07:53 info: Connected to email server
+2025-08-07 11:07:57 info: Connected to email server
+2025-08-07 11:07:57 info: Connected to email server
+2025-08-07 11:07:58 warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-08-07 11:08:00 info: Connected to email server
+2025-08-07 11:08:04 info: Connected to Database Successfully...
+2025-08-07 11:08:06 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 1.593 ms - 0[0m
+2025-08-07 11:08:06 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.149 ms - 0[0m
+2025-08-07 11:08:06 info: [0mOPTIONS /photography [32m204[0m 0.085 ms - 0[0m
+2025-08-07 11:08:06 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.156 ms - 0[0m
+2025-08-07 11:08:06 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.120 ms - 0[0m
+2025-08-07 11:08:06 info: [0mOPTIONS /photography [32m204[0m 0.168 ms - 0[0m
+2025-08-07 11:08:48 info: [0mGET /service/getFeaturedService [36m304[0m 42167.730 ms - -[0m
+2025-08-07 11:08:49 info: [0mGET /photography [36m304[0m 42785.003 ms - -[0m
+2025-08-07 11:08:55 info: [0mGET /job/getFeaturedJobs [32m200[0m 29333.157 ms - -[0m
+2025-08-07 11:08:56 info: [0mGET /service/getFeaturedService [32m200[0m 29857.367 ms - -[0m
+2025-08-07 11:08:56 info: [0mOPTIONS /profile/details [32m204[0m 0.641 ms - 0[0m
+2025-08-07 11:08:56 info: [0mOPTIONS /profile/details [32m204[0m 0.479 ms - 0[0m
+2025-08-07 11:08:57 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.351 ms - 0[0m
+2025-08-07 11:09:06 info: [0mGET /job/getFeaturedJobs [36m304[0m 60443.793 ms - -[0m
+2025-08-07 11:09:10 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 12826.207 ms - -[0m
+2025-08-07 11:09:39 info: [0mGET /photography [32m200[0m 72988.803 ms - -[0m
+2025-08-07 11:09:51 info: [0mGET /profile/details [32m200[0m 34634.222 ms - -[0m
+2025-08-07 11:10:12 info: [0mGET /profile/details [36m304[0m 75642.311 ms - -[0m
+2025-08-07 11:10:18 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 1.488 ms - 0[0m
+2025-08-07 11:10:18 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.344 ms - 0[0m
+2025-08-07 11:10:21 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 2949.301 ms - -[0m
+2025-08-07 11:10:26 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 5452.153 ms - -[0m
+2025-08-07 11:30:19 info: [0mOPTIONS /profile/details [32m204[0m 1.662 ms - 0[0m
+2025-08-07 11:30:19 info: [0mOPTIONS /profile/details [32m204[0m 0.076 ms - 0[0m
+2025-08-07 11:30:19 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.234 ms - 0[0m
+2025-08-07 11:30:27 info: [0mGET /profile/details [36m304[0m 8339.077 ms - -[0m
+2025-08-07 11:30:28 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 8375.577 ms - -[0m
+2025-08-07 11:30:31 info: [0mGET /profile/details [36m304[0m 4199.814 ms - -[0m
