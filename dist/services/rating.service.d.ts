@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { IRating } from '@/models/rating.model';
-import { PaginationOptions } from '@/interfaces/job.inteface';
+import { IRating } from '../models/rating.model';
+import { PaginationOptions } from '../interfaces/job.inteface';
 declare class RatingService {
     rating: any;
     rateEntity(body: IRating): Promise<IRating>;

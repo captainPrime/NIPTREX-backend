@@ -6,7 +6,7 @@ const mongoose_1 = tslib_1.__importDefault(require("mongoose"));
 const faker_1 = require("@faker-js/faker");
 const token_types_1 = tslib_1.__importDefault(require("./token.types"));
 const token_model_1 = tslib_1.__importDefault(require("./token.model"));
-const config_1 = require("@/config");
+const config_1 = require("../../config");
 const token_service_1 = tslib_1.__importDefault(require("./token.service"));
 class TokenModelTest {
     constructor() {

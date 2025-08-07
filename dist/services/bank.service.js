@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const HttpException_1 = require("@exceptions/HttpException");
-const util_1 = require("@utils/util");
+const HttpException_1 = require("../exceptions/HttpException");
+const util_1 = require("../utils/util");
 const users_service_1 = tslib_1.__importDefault(require("./users.service"));
-const profile_model_1 = require("@/models/profile.model");
-const profile_validation_1 = require("@/validations/profile.validation");
+const profile_model_1 = require("../models/profile.model");
+const profile_validation_1 = require("../validations/profile.validation");
 class BankService {
     constructor() {
         this.bank = profile_model_1.BillingAddress;

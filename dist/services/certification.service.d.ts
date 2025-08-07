@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { ICertification, IUpdateCertification } from '@/interfaces/profile.interface';
+import { ICertification, IUpdateCertification } from '../interfaces/profile.interface';
 declare class CertificationService {
     userService: UserService;
     certification: any;

@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-// import Profile from '@/models/profile.model';
-const bid_model_1 = require("@/models/bid.model");
-const chat_model_1 = require("@/models/chat.model");
-const job_model_1 = require("@/models/job.model");
-const photography_model_1 = require("@/models/photography.model");
-const profile_model_1 = require("@/models/profile.model");
-const rating_model_1 = require("@/models/rating.model");
-const service_models_1 = require("@/models/service.models");
-const users_model_1 = tslib_1.__importDefault(require("@/models/users.model"));
-const matchPercentage_1 = require("@/utils/matchPercentage");
+// import Profile from '../models/profile.model';
+const bid_model_1 = require("../models/bid.model");
+const chat_model_1 = require("../models/chat.model");
+const job_model_1 = require("../models/job.model");
+const photography_model_1 = require("../models/photography.model");
+const profile_model_1 = require("../models/profile.model");
+const rating_model_1 = require("../models/rating.model");
+const service_models_1 = require("../models/service.models");
+const users_model_1 = tslib_1.__importDefault(require("../models/users.model"));
+const matchPercentage_1 = require("../utils/matchPercentage");
 class IndexController {
     constructor() {
         this.users = users_model_1.default;

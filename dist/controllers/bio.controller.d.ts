@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import BioService from '@/services/bio.service';
+import UserService from '../services/users.service';
+import BioService from '../services/bio.service';
 declare class BioController {
     userService: UserService;
     bioService: BioService;

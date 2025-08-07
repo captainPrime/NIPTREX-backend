@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const HttpException_1 = require("@exceptions/HttpException");
-const util_1 = require("@utils/util");
-const wallet_model_1 = require("@/models/wallet.model");
-const payment_validation_1 = require("@/validations/payment.validation");
+const HttpException_1 = require("../exceptions/HttpException");
+const util_1 = require("../utils/util");
+const wallet_model_1 = require("../models/wallet.model");
+const payment_validation_1 = require("../validations/payment.validation");
 class WalletService {
     constructor() {
         this.wallet = wallet_model_1.WalletModel;

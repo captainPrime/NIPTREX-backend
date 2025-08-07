@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Config = void 0;
-const paginate_1 = require("@/modules/paginate");
-const toJSON_1 = require("@/modules/toJSON");
+const paginate_1 = require("../modules/paginate");
+const toJSON_1 = require("../modules/toJSON");
 const mongoose_1 = require("mongoose");
 const configSchema = new mongoose_1.Schema({
     key: { type: String, required: true },

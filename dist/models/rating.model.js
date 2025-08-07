@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RatingModel = void 0;
 const tslib_1 = require("tslib");
-const toJSON_1 = require("@/modules/toJSON");
-const paginate_1 = require("@/modules/paginate");
+const toJSON_1 = require("../modules/toJSON");
+const paginate_1 = require("../modules/paginate");
 const mongoose_1 = require("mongoose");
 const users_model_1 = tslib_1.__importDefault(require("./users.model"));
 const ratingSchema = new mongoose_1.Schema({

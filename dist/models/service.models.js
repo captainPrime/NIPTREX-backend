@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ServiceProposalModel = exports.HireServiceModel = exports.ServiceModel = exports.ServiceProposalStatus = void 0;
 const mongoose_1 = require("mongoose");
-const toJSON_1 = require("@/modules/toJSON");
-const paginate_1 = require("@/modules/paginate");
+const toJSON_1 = require("../modules/toJSON");
+const paginate_1 = require("../modules/paginate");
 var ServiceProposalStatus;
 (function (ServiceProposalStatus) {
     ServiceProposalStatus["NULL"] = "null";

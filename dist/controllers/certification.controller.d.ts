@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import CertificationService from '@/services/certification.service';
+import UserService from '../services/users.service';
+import CertificationService from '../services/certification.service';
 declare class CertificationController {
     userService: UserService;
     certificationService: CertificationService;

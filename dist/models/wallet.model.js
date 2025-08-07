@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransactionModel = exports.WalletModel = void 0;
 const mongoose_1 = require("mongoose");
-const toJSON_1 = require("@/modules/toJSON");
+const toJSON_1 = require("../modules/toJSON");
 const walletSchema = new mongoose_1.Schema({
     user_id: { type: mongoose_1.Schema.Types.ObjectId, ref: 'User', required: true },
     currency: { type: String, required: true },

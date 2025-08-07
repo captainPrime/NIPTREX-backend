@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const morgan_1 = tslib_1.__importDefault(require("morgan"));
 const logger_1 = require("./logger");
-const config_1 = require("@/config");
+const config_1 = require("../config");
 morgan_1.default.token('message', (_req, res) => res.locals['errorMessage'] || '');
 const getIpFormat = () => (config_1.NODE_ENV === 'production' ? ':remote-addr - ' : '');
 const successResponseFormat = `${getIpFormat()}:method :url :status - :response-time ms`;

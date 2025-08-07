@@ -6,7 +6,7 @@ const tslib_1 = require("tslib");
 const class_transformer_1 = require("class-transformer");
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const class_validator_1 = require("class-validator");
-const HttpException_1 = require("@exceptions/HttpException");
+const HttpException_1 = require("../exceptions/HttpException");
 // Use as first argument of the validation middleware - classInstance
 class CreateUserRequest {
 }

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ShortListProposalModel = exports.ArchiveProposalModel = exports.BiddingModel = exports.PaymentType = exports.BiddingStatus = exports.MilestoneStatus = void 0;
-const paginate_1 = require("@/modules/paginate");
+const paginate_1 = require("../modules/paginate");
 const mongoose_1 = require("mongoose");
 var MilestoneStatus;
 (function (MilestoneStatus) {

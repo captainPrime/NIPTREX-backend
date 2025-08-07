@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const util_1 = require("@utils/util");
-const users_model_1 = tslib_1.__importDefault(require("@/models/users.model"));
+const util_1 = require("../utils/util");
+const users_model_1 = tslib_1.__importDefault(require("../models/users.model"));
 const users_service_1 = tslib_1.__importDefault(require("./users.service"));
 const about_service_1 = tslib_1.__importDefault(require("./about.service"));
-const HttpException_1 = require("@exceptions/HttpException");
-const job_model_1 = require("@/models/job.model");
-const matchPercentage_1 = require("@/utils/matchPercentage");
-const job_validation_1 = require("@/validations/job.validation");
-const bid_model_1 = require("@/models/bid.model");
+const HttpException_1 = require("../exceptions/HttpException");
+const job_model_1 = require("../models/job.model");
+const matchPercentage_1 = require("../utils/matchPercentage");
+const job_validation_1 = require("../validations/job.validation");
+const bid_model_1 = require("../models/bid.model");
 class JobService {
     constructor() {
         this.hire = job_model_1.Hire;

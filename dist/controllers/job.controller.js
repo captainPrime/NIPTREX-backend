@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const job_service_1 = tslib_1.__importDefault(require("@/services/job.service"));
-const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
-const about_service_1 = tslib_1.__importDefault(require("@/services/about.service"));
-const HttpException_1 = require("@/exceptions/HttpException");
-const preference_service_1 = tslib_1.__importDefault(require("@/services/preference.service"));
-const skills_1 = require("@/utils/skills");
-const job_inteface_1 = require("@/interfaces/job.inteface");
-const bid_service_1 = tslib_1.__importDefault(require("@/services/bid.service"));
-const bid_model_1 = require("@/models/bid.model");
+const job_service_1 = tslib_1.__importDefault(require("../services/job.service"));
+const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
+const about_service_1 = tslib_1.__importDefault(require("../services/about.service"));
+const HttpException_1 = require("../exceptions/HttpException");
+const preference_service_1 = tslib_1.__importDefault(require("../services/preference.service"));
+const skills_1 = require("../utils/skills");
+const job_inteface_1 = require("../interfaces/job.inteface");
+const bid_service_1 = tslib_1.__importDefault(require("../services/bid.service"));
+const bid_model_1 = require("../models/bid.model");
 class JobController {
     constructor() {
         this.jobService = new job_service_1.default();

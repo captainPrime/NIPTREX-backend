@@ -1,4 +1,4 @@
-import { ITokenDoc } from '@/modules/token/token.interfaces';
+import { ITokenDoc } from '../modules/token/token.interfaces';
 import { Document, Schema } from 'mongoose';
 export declare enum EmploymentType {
     FullTime = "Full Time",

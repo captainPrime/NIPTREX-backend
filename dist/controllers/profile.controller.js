@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const profile_service_1 = tslib_1.__importDefault(require("@/services/profile.service"));
-const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
-const HttpException_1 = require("@/exceptions/HttpException");
-// import { CreateProfileDto } from '@/dtos/profile.dto';
+const profile_service_1 = tslib_1.__importDefault(require("../services/profile.service"));
+const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
+const HttpException_1 = require("../exceptions/HttpException");
+// import { CreateProfileDto } from '../dtos/profile.dto';
 class ProfileController {
     constructor() {
         this.userService = new users_service_1.default();

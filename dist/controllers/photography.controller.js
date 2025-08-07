@@ -3,18 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const jimp_1 = tslib_1.__importDefault(require("jimp"));
 const fs_1 = tslib_1.__importDefault(require("fs"));
-const flutterwave_1 = require("@/modules/flutterwave");
-const cloudinary_1 = tslib_1.__importDefault(require("@/utils/cloudinary"));
-const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
-const HttpException_1 = require("@/exceptions/HttpException");
-const photography_service_1 = tslib_1.__importDefault(require("@/services/photography.service"));
+const flutterwave_1 = require("../modules/flutterwave");
+const cloudinary_1 = tslib_1.__importDefault(require("../utils/cloudinary"));
+const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
+const HttpException_1 = require("../exceptions/HttpException");
+const photography_service_1 = tslib_1.__importDefault(require("../services/photography.service"));
 const path_1 = tslib_1.__importDefault(require("path"));
-const photography_validation_1 = require("@/validations/photography.validation");
-const matchPercentage_1 = require("@/utils/matchPercentage");
+const photography_validation_1 = require("../validations/photography.validation");
+const matchPercentage_1 = require("../utils/matchPercentage");
 const axios_1 = tslib_1.__importDefault(require("axios"));
-const config_1 = require("@/config");
-const wallet_service_1 = tslib_1.__importDefault(require("@/services/wallet.service"));
-const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
+const config_1 = require("../config");
+const wallet_service_1 = tslib_1.__importDefault(require("../services/wallet.service"));
+const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
 class PhotographyController {
     constructor() {
         this.userService = new users_service_1.default();

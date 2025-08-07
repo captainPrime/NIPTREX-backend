@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const rating_service_1 = tslib_1.__importDefault(require("@/services/rating.service"));
-const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
-const matchPercentage_1 = require("@/utils/matchPercentage");
-const HttpException_1 = require("@/exceptions/HttpException");
-const job_service_1 = tslib_1.__importDefault(require("@/services/job.service"));
-const service_service_1 = tslib_1.__importDefault(require("@/services/service.service"));
+const rating_service_1 = tslib_1.__importDefault(require("../services/rating.service"));
+const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
+const matchPercentage_1 = require("../utils/matchPercentage");
+const HttpException_1 = require("../exceptions/HttpException");
+const job_service_1 = tslib_1.__importDefault(require("../services/job.service"));
+const service_service_1 = tslib_1.__importDefault(require("../services/service.service"));
 class RatingController {
     constructor() {
         this.ratingService = new rating_service_1.default();

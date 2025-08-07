@@ -1,6 +1,6 @@
-import { PaginationOptions } from '@/interfaces/job.inteface';
-import { IService, IServiceProposal } from '@/models/service.models';
-import EmailService from '@/modules/email/email.service';
+import { PaginationOptions } from '../interfaces/job.inteface';
+import { IService, IServiceProposal } from '../models/service.models';
+import EmailService from '../modules/email/email.service';
 import mongoose from 'mongoose';
 import UserService from './users.service';
 declare class ServiceService {

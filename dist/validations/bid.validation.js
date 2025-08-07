@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateOutrightStatusValidation = exports.updateMilestoneStageSchema = exports.updateBiddingSchemaValidation = exports.biddingSchemaValidation = void 0;
 const tslib_1 = require("tslib");
-const bid_model_1 = require("@/models/bid.model");
+const bid_model_1 = require("../models/bid.model");
 const joi_1 = tslib_1.__importDefault(require("joi"));
 exports.biddingSchemaValidation = joi_1.default.object({
     user_id: joi_1.default.string().required(),

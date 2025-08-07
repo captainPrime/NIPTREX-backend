@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const service_models_1 = require("@/models/service.models");
-const email_service_1 = tslib_1.__importDefault(require("@/modules/email/email.service"));
-const service_validation_1 = require("@/validations/service.validation");
-const HttpException_1 = require("@exceptions/HttpException");
-const util_1 = require("@utils/util");
+const service_models_1 = require("../models/service.models");
+const email_service_1 = tslib_1.__importDefault(require("../modules/email/email.service"));
+const service_validation_1 = require("../validations/service.validation");
+const HttpException_1 = require("../exceptions/HttpException");
+const util_1 = require("../utils/util");
 const mongoose_1 = tslib_1.__importDefault(require("mongoose"));
 const users_service_1 = tslib_1.__importDefault(require("./users.service"));
 class ServiceService {

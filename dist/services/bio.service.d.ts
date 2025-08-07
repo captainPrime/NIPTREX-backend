@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IBio, IUpdateBio } from '@/interfaces/profile.interface';
+import { IBio, IUpdateBio } from '../interfaces/profile.interface';
 declare class BioService {
     bio: any;
     userService: UserService;

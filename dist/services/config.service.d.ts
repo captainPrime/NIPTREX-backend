@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IConfig, IUpdateConfig } from '@/models/config.model';
+import { IConfig, IUpdateConfig } from '../models/config.model';
 declare class ConfigService {
     config: any;
     userService: UserService;

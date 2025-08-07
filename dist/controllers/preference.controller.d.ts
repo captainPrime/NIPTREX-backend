@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import PreferenceService from '@/services/preference.service';
+import UserService from '../services/users.service';
+import PreferenceService from '../services/preference.service';
 declare class PreferenceController {
     userService: UserService;
     preferenceService: PreferenceService;

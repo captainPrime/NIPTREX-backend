@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const chat_service_1 = tslib_1.__importDefault(require("@/services/chat.service"));
-const wordChecker_1 = require("@/utils/wordChecker");
-const HttpException_1 = require("@/exceptions/HttpException");
-const users_service_1 = tslib_1.__importDefault(require("@/services/users.service"));
+const chat_service_1 = tslib_1.__importDefault(require("../services/chat.service"));
+const wordChecker_1 = require("../utils/wordChecker");
+const HttpException_1 = require("../exceptions/HttpException");
+const users_service_1 = tslib_1.__importDefault(require("../services/users.service"));
 class ChatController {
     constructor() {
         this.userService = new users_service_1.default();

@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const auth_middleware_1 = tslib_1.__importDefault(require("@/middlewares/auth.middleware"));
-const photography_controller_1 = tslib_1.__importDefault(require("@/controllers/photography.controller"));
-const multerConfig_1 = require("@/utils/multerConfig");
+const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
+const photography_controller_1 = tslib_1.__importDefault(require("../controllers/photography.controller"));
+const multerConfig_1 = require("../utils/multerConfig");
 class PhotographyRoute {
     constructor() {
         this.path = '/photography';

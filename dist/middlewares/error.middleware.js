@@ -1,7 +1,7 @@
 "use strict";
 var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
-const logger_1 = require("@utils/logger");
+const logger_1 = require("../utils/logger");
 class ErrorMiddleware {
 }
 _a = ErrorMiddleware;

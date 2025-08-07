@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const bid_controller_1 = tslib_1.__importDefault(require("@/controllers/bid.controller"));
-const job_controller_1 = tslib_1.__importDefault(require("@/controllers/job.controller"));
-const auth_middleware_1 = tslib_1.__importDefault(require("@/middlewares/auth.middleware"));
+const bid_controller_1 = tslib_1.__importDefault(require("../controllers/bid.controller"));
+const job_controller_1 = tslib_1.__importDefault(require("../controllers/job.controller"));
+const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
 class BidRoute {
     constructor() {
         this.path = '/bid';

@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import AboutService from '@/services/about.service';
+import UserService from '../services/users.service';
+import AboutService from '../services/about.service';
 declare class AboutController {
     userService: UserService;
     aboutService: AboutService;

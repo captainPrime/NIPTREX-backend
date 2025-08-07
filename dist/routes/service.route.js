@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const service_controller_1 = tslib_1.__importDefault(require("@/controllers/service.controller"));
-const auth_middleware_1 = tslib_1.__importDefault(require("@/middlewares/auth.middleware"));
+const service_controller_1 = tslib_1.__importDefault(require("../controllers/service.controller"));
+const auth_middleware_1 = tslib_1.__importDefault(require("../middlewares/auth.middleware"));
 class ServiceRoute {
     constructor() {
         this.path = '/service';

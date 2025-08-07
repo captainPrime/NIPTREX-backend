@@ -1,6 +1,6 @@
 import UserService from './users.service';
 import mongoose from 'mongoose';
-import { IBilling, IUpdateBilling } from '@/interfaces/profile.interface';
+import { IBilling, IUpdateBilling } from '../interfaces/profile.interface';
 declare class BillingService {
     billing: any;
     userService: UserService;

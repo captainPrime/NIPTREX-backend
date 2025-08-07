@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import ConfigService from '@/services/config.service';
+import UserService from '../services/users.service';
+import ConfigService from '../services/config.service';
 declare class ConfigController {
     userService: UserService;
     configService: ConfigService;

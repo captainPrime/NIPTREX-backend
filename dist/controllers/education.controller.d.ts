@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import UserService from '@/services/users.service';
-import EducationService from '@/services/education.service';
+import UserService from '../services/users.service';
+import EducationService from '../services/education.service';
 declare class EducationController {
     userService: UserService;
     educationService: EducationService;
