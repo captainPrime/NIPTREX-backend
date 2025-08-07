@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/user/Desktop/niptrex/NIPTREX-backend/dist/logs/error/.d33e68947a1f5b0868f9ce395d0d8fa2e22eb4e5-audit.json",
+    "files": [
+        {
+            "date": 1754572122604,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/dist/logs/error/info-2025-08-07.log",
+            "hash": "009e5ee14ca8744a6becf15f40e1e447b4bc84269904036bbf0147cb62c557b7"
+        }
+    ],
+    "hashType": "sha256"
+}
