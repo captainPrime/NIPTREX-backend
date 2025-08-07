@@ -197,3 +197,23 @@
 2025-08-07 13:13:09 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 347.665 ms - -[0m
 2025-08-07 13:13:29 info: [0mGET /service/getAppliedServices [32m200[0m 1002.653 ms - -[0m
 2025-08-07 13:13:30 info: [0mGET /service/getAppliedServices [36m304[0m 21898.333 ms - -[0m
+2025-08-07 13:31:45 info: =================================
+2025-08-07 13:31:45 info: ======= ENV: development =======
+2025-08-07 13:31:45 info: 🚀 App listening on the port 3000
+2025-08-07 13:31:45 info: =================================
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:31:48 info: Connected to email server
+2025-08-07 13:32:08 info: Connected to email server
+2025-08-07 13:32:08 info: Connected to email server
+2025-08-07 13:32:13 info: Connected to Database Successfully...
+2025-08-07 13:32:23 info: Connected to email server
