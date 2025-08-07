@@ -125,3 +125,75 @@
 2025-08-07 12:33:22 info: Connected to Database Successfully...
 2025-08-07 12:33:31 info: [0mGET /job/681c8ebf857ab6b017166643 [36m304[0m 11067.705 ms - -[0m
 2025-08-07 12:33:34 info: [0mGET /job/getSimilarJobs/681c8ebf857ab6b017166643 [36m304[0m 14076.472 ms - -[0m
+2025-08-07 12:52:13 info: =================================
+2025-08-07 12:52:13 info: ======= ENV: development =======
+2025-08-07 12:52:13 info: 🚀 App listening on the port 3000
+2025-08-07 12:52:13 info: =================================
+2025-08-07 12:52:17 info: Connected to email server
+2025-08-07 12:52:17 info: Connected to email server
+2025-08-07 12:52:17 info: Connected to email server
+2025-08-07 12:52:17 info: Connected to email server
+2025-08-07 12:52:20 info: [0mOPTIONS /job/681c8ebf857ab6b017166643 [32m204[0m 1.507 ms - 0[0m
+2025-08-07 12:52:20 info: [0mOPTIONS /job/getSimilarJobs/681c8ebf857ab6b017166643 [32m204[0m 0.202 ms - 0[0m
+2025-08-07 12:52:20 info: Connected to email server
+2025-08-07 12:52:20 info: Connected to email server
+2025-08-07 12:52:20 info: Connected to email server
+2025-08-07 12:52:20 info: Connected to email server
+2025-08-07 12:52:21 info: Connected to Database Successfully...
+2025-08-07 12:52:22 info: Connected to email server
+2025-08-07 12:52:22 info: Connected to email server
+2025-08-07 12:52:22 info: Connected to email server
+2025-08-07 12:52:22 info: Connected to email server
+2025-08-07 12:52:25 info: [0mGET /job/getSimilarJobs/681c8ebf857ab6b017166643 [36m304[0m 5741.586 ms - -[0m
+2025-08-07 12:52:26 info: Connected to email server
+2025-08-07 12:52:26 info: Connected to email server
+2025-08-07 12:52:26 info: [0mGET /job/681c8ebf857ab6b017166643 [36m304[0m 6695.175 ms - -[0m
+2025-08-07 12:52:28 info: Connected to email server
+2025-08-07 13:12:30 info: =================================
+2025-08-07 13:12:30 info: ======= ENV: development =======
+2025-08-07 13:12:30 info: 🚀 App listening on the port 3000
+2025-08-07 13:12:30 info: =================================
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:33 info: Connected to email server
+2025-08-07 13:12:34 info: Connected to Database Successfully...
+2025-08-07 13:12:40 info: [0mOPTIONS /job/681c8ebf857ab6b017166643 [32m204[0m 0.746 ms - 0[0m
+2025-08-07 13:12:40 info: [0mOPTIONS /job/getSimilarJobs/681c8ebf857ab6b017166643 [32m204[0m 0.118 ms - 0[0m
+2025-08-07 13:12:41 info: [0mGET /job/getSimilarJobs/681c8ebf857ab6b017166643 [36m304[0m 1056.691 ms - -[0m
+2025-08-07 13:12:42 info: [0mGET /job/681c8ebf857ab6b017166643 [36m304[0m 2083.403 ms - -[0m
+2025-08-07 13:12:49 info: [0mOPTIONS /profile/details [32m204[0m 0.448 ms - 0[0m
+2025-08-07 13:12:49 info: [0mOPTIONS /profile/details [32m204[0m 0.091 ms - 0[0m
+2025-08-07 13:12:49 info: [0mOPTIONS /job/getUserJobBestMatches?page=1&limit=5 [32m204[0m 0.065 ms - 0[0m
+2025-08-07 13:12:52 info: Connected to email server
+2025-08-07 13:12:52 info: Connected to email server
+2025-08-07 13:12:52 info: Connected to email server
+2025-08-07 13:12:52 info: Connected to email server
+2025-08-07 13:12:52 info: [0mGET /job/getUserJobBestMatches?page=1&limit=5 [36m304[0m 2985.874 ms - -[0m
+2025-08-07 13:12:52 info: Connected to email server
+2025-08-07 13:12:53 info: [0mGET /profile/details [36m304[0m 4243.562 ms - -[0m
+2025-08-07 13:12:57 info: [0mOPTIONS /job/68101c1b191d80b5fd7f069a [32m204[0m 0.252 ms - 0[0m
+2025-08-07 13:12:57 info: [0mOPTIONS /job/getSimilarJobs/68101c1b191d80b5fd7f069a [32m204[0m 0.128 ms - 0[0m
+2025-08-07 13:12:57 info: [0mOPTIONS /job/68101c1b191d80b5fd7f069a [32m204[0m 0.237 ms - 0[0m
+2025-08-07 13:12:57 info: [0mOPTIONS /job/getSimilarJobs/68101c1b191d80b5fd7f069a [32m204[0m 27.286 ms - 0[0m
+2025-08-07 13:12:57 info: [0mGET /profile/details [36m304[0m 3991.360 ms - -[0m
+2025-08-07 13:12:58 info: [0mGET /job/getSimilarJobs/68101c1b191d80b5fd7f069a [32m200[0m 975.087 ms - -[0m
+2025-08-07 13:12:59 info: [0mGET /job/getSimilarJobs/68101c1b191d80b5fd7f069a [36m304[0m 987.368 ms - -[0m
+2025-08-07 13:12:59 info: [0mGET /job/68101c1b191d80b5fd7f069a [36m304[0m 2029.771 ms - -[0m
+2025-08-07 13:13:01 info: [0mGET /job/68101c1b191d80b5fd7f069a [36m304[0m 2011.868 ms - -[0m
+2025-08-07 13:13:03 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.125 ms - 0[0m
+2025-08-07 13:13:03 info: [0mOPTIONS /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [32m204[0m 0.066 ms - 0[0m
+2025-08-07 13:13:04 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 339.136 ms - -[0m
+2025-08-07 13:13:04 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 313.250 ms - -[0m
+2025-08-07 13:13:08 info: Connected to email server
+2025-08-07 13:13:08 info: Connected to email server
+2025-08-07 13:13:08 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.935 ms - 0[0m
+2025-08-07 13:13:08 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.164 ms - 0[0m
+2025-08-07 13:13:09 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 375.574 ms - -[0m
+2025-08-07 13:13:09 info: [0mGET /service/getServiceByUserId/6812d1daa0daecfceb93c2d4 [36m304[0m 347.665 ms - -[0m
+2025-08-07 13:13:29 info: [0mGET /service/getAppliedServices [32m200[0m 1002.653 ms - -[0m
+2025-08-07 13:13:30 info: [0mGET /service/getAppliedServices [36m304[0m 21898.333 ms - -[0m
