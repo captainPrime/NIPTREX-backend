@@ -116,5 +116,8 @@
     "hooks": {
       "pre-commit": "yarn pretty && yarn lint"
     }
-  }
+  },
+  "engines": {
+  "node": "18.x"
+}
 }
