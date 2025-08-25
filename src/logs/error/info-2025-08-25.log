@@ -1,0 +1,41 @@
+2025-08-25 09:28:46 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-08-25 09:28:46 error: uncaughtException: Channel closed
+Error: Channel closed
+    at process.target.send (node:internal/child_process:753:16)
+    at Object.exports.send (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .js] (/Users/user/Desktop/niptrex/NIPTREX-backend/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+2025-08-25 09:28:59 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-08-25 09:35:07 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:35:29 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:38:56 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:39:45 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:40:23 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:40:54 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:41:33 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:42:04 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:42:28 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:44:14 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:47:46 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:49:19 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:50:38 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:51:50 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: HireService validation failed: service_buyer: Path `service_buyer` is required.
+2025-08-25 09:57:20 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED
+2025-08-25 09:57:21 error: [POST] /service/paymentCallback >> StatusCode:: 400, Message:: PAYMENT_ALREADY_VERIFIED

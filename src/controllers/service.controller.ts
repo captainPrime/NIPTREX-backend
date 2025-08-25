@@ -253,7 +253,7 @@ class ServiceController {
     try {
       const service_id: string = req.params.id;
 
-      const { amount, package_type, delivery_date } = req.body;
+      const { amount, package_type, delivery_date, service_buyer } = req.body;
 
       const serviceData = await this.serviceService.getServiceById(service_id);
       if (!serviceData) throw new HttpException(400, 7006, 'SERVICE_NOT_FOUND');
@@ -274,7 +274,10 @@ class ServiceController {
         amount,
         delivery_date,
         package_type,
+        service_buyer,
       };
+
+      console.log(delivery_date, 'service proposal');
 
       const data = await this.serviceService.createServiceProposal(payload);
 
@@ -417,19 +420,20 @@ class ServiceController {
       if (status === 'successful' || status === 'completed') {
         // const transactionDetails = await flw.Transaction.find({ ref: tx_ref });
         const response = await flw.Transaction.verify({ id: transaction_id });
-        // console.log('TRANSACTION_DETAILS', transactionDetails);
-        console.log('TRANSACTION_VERIFY', response);
+
         if (response.data.status === 'successful') {
           // Success! Confirm the customer's payment
+
           const user: any = await this.userService.findUserById(response.data.meta.consumer_id);
 
           const proposal = await this.serviceService.getServiceProposalById(response.data.meta.consumer_mac.toString());
+
           if (!proposal) throw new HttpException(400, 7002, 'PROPOSAL_NOT_FOUND');
 
           if (proposal && proposal.status == ServiceProposalStatus.PAID) throw new HttpException(400, 7002, 'PAYMENT_ALREADY_VERIFIED');
 
-          console.log('PROPOSAL', proposal);
           const service = await this.serviceService.getServiceById(proposal.service_id.toString());
+
           if (!service) throw new HttpException(400, 7002, 'SERVICE_NOT_FOUND');
 
           const transactionData: any = {
@@ -469,12 +473,9 @@ class ServiceController {
             service: service._id.toString(),
             client: proposal.client_id._id.toString(),
             proposal: proposal._id.toString(),
+            service_buyer: proposal.service_buyer.toString(),
           };
-
-          console.log(payload)
-
           await this.serviceService.hireFreelancerService(payload);
-
           await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: ServiceProposalStatus.PAID });
 
           res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });

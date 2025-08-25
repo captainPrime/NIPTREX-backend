@@ -6,11 +6,6 @@
     "auditLog": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/.20d6ab45901ec46f18e8a5ef415072682b24bd8d-audit.json",
     "files": [
         {
-            "date": 1745366123156,
-            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-04-23.log",
-            "hash": "beaa4b6681a44b5daa152ead9a1209e5e833c8d89d5484778aa57c1601d3e40e"
-        },
-        {
             "date": 1745494137746,
             "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-04-24.log",
             "hash": "b7faef505db535a3cbdfb9cafe01592be435c27b8b87583ce5b94306ac2aa493"
@@ -154,6 +149,11 @@
             "date": 1754560958092,
             "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-08-07.log",
             "hash": "49bd97a2cf7507b773fe233c9fed346615ebe86d8a749a2efc3ac63eb5e883ef"
+        },
+        {
+            "date": 1756109348374,
+            "name": "/Users/user/Desktop/niptrex/NIPTREX-backend/src/logs/error/info-2025-08-25.log",
+            "hash": "62adad900d3877bef6b0d50129a402401b868af5b7274e1f5dbbe647f2d8080e"
         }
     ],
     "hashType": "sha256"

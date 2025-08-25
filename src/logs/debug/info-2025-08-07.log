@@ -237,3 +237,13 @@
 2025-08-07 16:01:33 info: Connected to email server
 2025-08-07 16:01:34 info: Connected to email server
 2025-08-07 16:01:36 info: Connected to Database Successfully...
+2025-08-07 16:53:09 info: [0mOPTIONS /profile/education [32m204[0m 12.023 ms - 0[0m
+2025-08-07 16:53:09 info: [0mOPTIONS /profile/certificate [32m204[0m 0.237 ms - 0[0m
+2025-08-07 16:53:09 info: [0mOPTIONS /profile/education [32m204[0m 0.100 ms - 0[0m
+2025-08-07 16:53:09 info: [0mOPTIONS /profile/certificate [32m204[0m 0.089 ms - 0[0m
+2025-08-07 16:53:14 info: [0mGET /profile/education [32m200[0m 4705.234 ms - 84[0m
+2025-08-07 16:53:14 info: [0mGET /profile/certificate [32m200[0m 4603.133 ms - 84[0m
+2025-08-07 16:53:15 info: [0mGET /profile/certificate [36m304[0m 976.521 ms - -[0m
+2025-08-07 16:53:15 info: [0mGET /profile/education [36m304[0m 981.132 ms - -[0m
+2025-08-07 16:53:29 info: [0mOPTIONS /auth/forgot_password [32m204[0m 0.340 ms - 0[0m
+2025-08-07 16:53:29 error: [Error] >> Channel closed
