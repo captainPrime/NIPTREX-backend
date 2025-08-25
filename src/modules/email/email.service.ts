@@ -150,7 +150,7 @@ class EmailService {
           ${content}
           <div class="footer">
             <div class="footer-text">
-              This email was sent from <a href="https://niptrex.vercel.app" class="footer-link">niptrex.vercel.app</a>
+              This email was sent from <a href="https://niptrex.com" class="footer-link">niptrex.com</a>
             </div>
             <div class="footer-text">
               If you have any questions, please don't hesitate to contact our support team.
@@ -175,7 +175,7 @@ class EmailService {
 
   public async sendResetPasswordEmail(to: string, token: string): Promise<void> {
     const subject = 'Reset Your Password - Niptrex';
-    const resetPasswordUrl = `https://niptrex.vercel.app/reset-password?token=${token}`;
+    const resetPasswordUrl = `https://niptrex.com/reset-password?token=${token}`;
     const text = `Hi,
     
 To reset your password, click on this link: ${resetPasswordUrl}
@@ -207,7 +207,7 @@ If you did not request any password resets, then ignore this email.`;
 
   public async sendVerificationEmail(to: string, token: string, name: string): Promise<void> {
     const subject = 'Verify Your Email - Niptrex';
-    const verificationEmailUrl = `https://niptrex.vercel.app/auth/verify-email?token=${token}`;
+    const verificationEmailUrl = `https://niptrex.com/auth/verify-email?token=${token}`;
     const text = `Hi ${name},
 
 To verify your email, click on this link: ${verificationEmailUrl}
@@ -258,7 +258,7 @@ is ready for review`;
           </div>
         </div>
         <div style="text-align: center;">
-          <a href="https://niptrex.vercel.app/dashboard" class="cta-button">Review Milestone</a>
+          <a href="https://niptrex.com/dashboard" class="cta-button">Review Milestone</a>
         </div>
         <div class="message">
           Please log in to your dashboard to review and approve this milestone.
@@ -290,7 +290,7 @@ is ready for review`;
           </div>
         </div>
         <div style="text-align: center;">
-          <a href="https://niptrex.vercel.app/dashboard" class="cta-button">Review Proposal</a>
+          <a href="https://niptrex.com/dashboard" class="cta-button">Review Proposal</a>
         </div>
         <div class="message">
           Please review the proposal details in your dashboard and take appropriate action.
@@ -322,7 +322,7 @@ is ready for review`;
           </div>
         </div>
         <div style="text-align: center;">
-          <a href="https://niptrex.vercel.app/dashboard" class="cta-button">Review Service</a>
+          <a href="https://niptrex.com/dashboard" class="cta-button">Review Service</a>
         </div>
         <div class="message">
           Please check your dashboard to review the service details and provide your feedback.
@@ -356,7 +356,7 @@ with job: ${payload.jobTitle} was made`;
           </div>
         </div>
         <div style="text-align: center;">
-          <a href="https://niptrex.vercel.app/dashboard" class="cta-button">View Transaction</a>
+          <a href="https://niptrex.com/dashboard" class="cta-button">View Transaction</a>
         </div>
         <div class="message">
           You can view the full transaction details in your dashboard.
@@ -423,7 +423,7 @@ with job: ${payload.jobTitle} failed`;
           </div>
         </div>
         <div style="text-align: center;">
-          <a href="https://niptrex.vercel.app/dashboard" class="cta-button">Retry Payment</a>
+          <a href="https://niptrex.com/dashboard" class="cta-button">Retry Payment</a>
         </div>
         <div class="message">
           Please check your payment method and try again. If the issue persists, contact our support team for assistance.
@@ -437,7 +437,7 @@ with job: ${payload.jobTitle} failed`;
 
   public async sendSuccessfulRegistration(to: string, token: string, name: string): Promise<void> {
     const subject = 'Welcome to Niptrex - Verify Your Email';
-    const verificationEmailUrl = `https://niptrex.vercel.app/auth/verify-email?token=${token}`;
+    const verificationEmailUrl = `https://niptrex.com/auth/verify-email?token=${token}`;
     const text = `Hi ${name},
 
 Congratulations! Your account has been created.
@@ -482,7 +482,7 @@ Team`;
 
   public sendAccountCreated = async (to: string, name: string): Promise<void> => {
     const subject = 'Account Created Successfully - Niptrex';
-    const loginUrl = `https://niptrex.vercel.app/auth/login`;
+    const loginUrl = `https://niptrex.com/auth/login`;
     const text = `Hi ${name},
 
 Congratulations! Your account has been created successfully.
