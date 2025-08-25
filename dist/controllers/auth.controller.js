@@ -38,7 +38,7 @@ class AuthController {
         this.googleLoginRedirect = (req, res) => {
             var _a;
             const accessToken = (_a = req.user) === null || _a === void 0 ? void 0 : _a.token;
-            res.redirect(`http://localhost:3000/signin?token=${accessToken}`);
+            res.redirect(`${process.env.NEXT_PUBLIC_API_URL}/signin?token=${accessToken}`);
         };
         this.googleLoginV2 = async (req, res) => {
             const { code } = req;

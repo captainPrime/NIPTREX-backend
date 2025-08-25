@@ -323,7 +323,7 @@ class ServiceController {
           tx_ref: (0, matchPercentage_1.generateUUID)(),
           amount,
           currency,
-          redirect_url: `http://localhost:3001/services/${serviceProposal.service_id}`,
+          redirect_url: `${process.env.NEXT_PUBLIC_API_URL}/services/${serviceProposal.service_id}`,
           meta: {
             consumer_id: req.user.id,
             consumer_mac: proposal_id,
@@ -409,7 +409,7 @@ class ServiceController {
               client: proposal.client_id._id.toString(),
               proposal: proposal._id.toString(),
             };
-       
+
             await this.serviceService.hireFreelancerService(payload);
             await this.serviceService.updateServiceProjectById(proposal.id.toString(), { status: service_models_1.ServiceProposalStatus.PAID });
             res.status(200).json({ status: 200, response_code: 6000, message: 'SERVICE_REQUEST_SUCCESSFUL', data: transaction });

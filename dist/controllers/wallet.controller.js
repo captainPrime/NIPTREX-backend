@@ -229,7 +229,7 @@ class WalletController {
                     tx_ref: (0, matchPercentage_1.generateUUID)(),
                     amount,
                     currency,
-                    redirect_url: `http://localhost:3001/client/proposals/${data.job_id}`,
+                    redirect_url: `http://${process.env.NEXT_PUBLIC_API_URL}/client/proposals/${data.job_id}`,
                     meta: {
                         consumer_id: req.user.id,
                         consumer_mac: proposal_id,

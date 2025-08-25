@@ -46,7 +46,7 @@ class AuthController {
   // Handle the redirect after successful Google login
   public googleLoginRedirect = (req: Request, res: Response) => {
     const accessToken = req.user?.token;
-    res.redirect(`http://localhost:3000/signin?token=${accessToken}`);
+    res.redirect(`${process.env.NEXT_PUBLIC_API_URL}/signin?token=${accessToken}`);
   };
 
   public googleLoginV2 = async (req: Request, res: Response) => {

@@ -384,7 +384,7 @@ class ServiceController {
         tx_ref: generateUUID(),
         amount,
         currency,
-        redirect_url: `http://localhost:3001/services/${serviceProposal.service_id}`,
+        redirect_url: `${process.env.NEXT_PUBLIC_API_URL}/services/${serviceProposal.service_id}`,
         meta: {
           consumer_id: req.user.id,
           consumer_mac: proposal_id,

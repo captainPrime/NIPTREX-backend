@@ -203,7 +203,7 @@ class PhotographyController {
                     tx_ref: (0, matchPercentage_1.generateUUID)(),
                     amount: photographyService.price,
                     currency,
-                    redirect_url: 'http://localhost:3000/photography/verify-payment',
+                    redirect_url: `${process.env.NEXT_PUBLIC_API_URL}/photography/verify-payment`,
                     meta: {
                         consumer_id: req.user.id,
                         consumer_mac: photography_id,

@@ -303,3 +303,126 @@
 2025-08-25 09:57:35 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.135 ms - 0[0m
 2025-08-25 09:57:37 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m200[0m 1727.954 ms - -[0m
 2025-08-25 09:57:38 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1579.957 ms - -[0m
+2025-08-25 10:05:49 info: [0mOPTIONS /job/skillsCategory [32m204[0m 3.123 ms - 0[0m
+2025-08-25 10:05:49 info: [0mGET /job/skillsCategory [36m304[0m 175.520 ms - -[0m
+2025-08-25 10:05:49 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 20.132 ms - 0[0m
+2025-08-25 10:05:49 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.120 ms - 0[0m
+2025-08-25 10:05:49 info: [0mGET /job/skillsCategory [36m304[0m 1.515 ms - -[0m
+2025-08-25 10:05:50 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.549 ms - 0[0m
+2025-08-25 10:05:50 info: [0mGET /service?page=1&limit=10 [32m200[0m 715.057 ms - -[0m
+2025-08-25 10:05:51 info: [0mGET /service?page=1&limit=10 [36m304[0m 635.785 ms - -[0m
+2025-08-25 10:05:52 info: [0mOPTIONS /service/getServiceById/6894cfa39956fd1d0fd46ade [32m204[0m 0.849 ms - 0[0m
+2025-08-25 10:05:52 info: [0mOPTIONS /service/getServiceById/6894cfa39956fd1d0fd46ade [32m204[0m 0.660 ms - 0[0m
+2025-08-25 10:05:53 info: [0mGET /service/getServiceById/6894cfa39956fd1d0fd46ade [36m304[0m 737.417 ms - -[0m
+2025-08-25 10:05:54 info: [0mGET /service/getServiceById/6894cfa39956fd1d0fd46ade [36m304[0m 609.275 ms - -[0m
+2025-08-25 10:06:10 info: =================================
+2025-08-25 10:06:10 info: ======= ENV: development =======
+2025-08-25 10:06:10 info: 🚀 App listening on the port 3000
+2025-08-25 10:06:10 info: =================================
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:17 info: Connected to email server
+2025-08-25 10:06:18 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to Database Successfully...
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:19 info: Connected to email server
+2025-08-25 10:06:26 info: [0mOPTIONS /service/proposal/6894cfa39956fd1d0fd46ade [32m204[0m 0.746 ms - 0[0m
+2025-08-25 10:06:31 info: [0mPOST /service/proposal/6894cfa39956fd1d0fd46ade [32m200[0m 5611.146 ms - 418[0m
+2025-08-25 10:06:39 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.750 ms - 0[0m
+2025-08-25 10:06:39 info: [0mGET /job/skillsCategory [36m304[0m 25.748 ms - -[0m
+2025-08-25 10:06:39 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 0.231 ms - 0[0m
+2025-08-25 10:06:39 info: [0mOPTIONS /job/skillsCategory [32m204[0m 0.103 ms - 0[0m
+2025-08-25 10:06:39 info: [0mOPTIONS /service?page=1&limit=10 [32m204[0m 1.635 ms - 0[0m
+2025-08-25 10:06:39 info: [0mGET /job/skillsCategory [36m304[0m 1.261 ms - -[0m
+2025-08-25 10:06:40 info: [0mGET /service?page=1&limit=10 [36m304[0m 622.753 ms - -[0m
+2025-08-25 10:06:40 info: [0mOPTIONS /service/getServiceById/6894cfa39956fd1d0fd46ade [32m204[0m 0.082 ms - 0[0m
+2025-08-25 10:06:40 info: [0mOPTIONS /service/getServiceById/6894cfa39956fd1d0fd46ade [32m204[0m 0.368 ms - 0[0m
+2025-08-25 10:06:41 info: [0mGET /service?page=1&limit=10 [36m304[0m 676.301 ms - -[0m
+2025-08-25 10:06:41 info: [0mGET /service/getServiceById/6894cfa39956fd1d0fd46ade [36m304[0m 601.244 ms - -[0m
+2025-08-25 10:06:42 info: [0mGET /service/getServiceById/6894cfa39956fd1d0fd46ade [36m304[0m 645.688 ms - -[0m
+2025-08-25 10:07:22 info: [0mOPTIONS /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [32m204[0m 1.371 ms - 0[0m
+2025-08-25 10:07:22 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.086 ms - 0[0m
+2025-08-25 10:07:22 info: [0mOPTIONS /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [32m204[0m 0.244 ms - 0[0m
+2025-08-25 10:07:22 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.238 ms - 0[0m
+2025-08-25 10:07:22 info: [0mGET /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [36m304[0m 353.132 ms - -[0m
+2025-08-25 10:07:22 info: [0mGET /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [36m304[0m 409.450 ms - -[0m
+2025-08-25 10:07:22 info: [0mGET /service/getAppliedServices [36m304[0m 740.702 ms - -[0m
+2025-08-25 10:07:23 info: [0mGET /service/getAppliedServices [36m304[0m 811.061 ms - -[0m
+2025-08-25 10:07:28 info: [0mOPTIONS /service/proposals/6894cfa39956fd1d0fd46ade [32m204[0m 0.226 ms - 0[0m
+2025-08-25 10:07:31 info: [0mGET /service/proposals/6894cfa39956fd1d0fd46ade [32m200[0m 2549.473 ms - 895[0m
+2025-08-25 10:07:42 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.937 ms - 0[0m
+2025-08-25 10:07:43 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.066 ms - 0[0m
+2025-08-25 10:07:44 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1692.143 ms - -[0m
+2025-08-25 10:07:46 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1840.247 ms - -[0m
+2025-08-25 10:07:48 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 0.249 ms - 0[0m
+2025-08-25 10:07:58 info: [0mPOST /service/requestServiceReview [32m200[0m 10734.407 ms - 84[0m
+2025-08-25 10:07:58 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.113 ms - 0[0m
+2025-08-25 10:08:00 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1632.216 ms - -[0m
+2025-08-25 10:08:07 info: [0mOPTIONS /service/requestServiceReview [32m204[0m 1.083 ms - 0[0m
+2025-08-25 10:08:12 info: [0mPOST /service/requestServiceReview [32m200[0m 4458.078 ms - 84[0m
+2025-08-25 10:08:12 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.152 ms - 0[0m
+2025-08-25 10:08:13 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1488.689 ms - -[0m
+2025-08-25 10:08:23 info: [0mOPTIONS /service/getServiceByUserId/6894c79f9956fd1d0fd46946 [32m204[0m 1.500 ms - 0[0m
+2025-08-25 10:08:23 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.077 ms - 0[0m
+2025-08-25 10:08:23 info: [0mOPTIONS /service/getServiceByUserId/6894c79f9956fd1d0fd46946 [32m204[0m 0.233 ms - 0[0m
+2025-08-25 10:08:23 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.585 ms - 0[0m
+2025-08-25 10:08:24 info: [0mGET /service/getServiceByUserId/6894c79f9956fd1d0fd46946 [36m304[0m 327.648 ms - -[0m
+2025-08-25 10:08:24 info: [0mGET /service/getServiceByUserId/6894c79f9956fd1d0fd46946 [36m304[0m 294.524 ms - -[0m
+2025-08-25 10:08:24 info: [0mGET /service/getAppliedServices [36m304[0m 908.243 ms - -[0m
+2025-08-25 10:08:25 info: [0mGET /service/getAppliedServices [36m304[0m 902.098 ms - -[0m
+2025-08-25 10:08:28 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.949 ms - 0[0m
+2025-08-25 10:08:28 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.414 ms - 0[0m
+2025-08-25 10:08:29 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1570.571 ms - -[0m
+2025-08-25 10:08:31 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [36m304[0m 1512.563 ms - -[0m
+2025-08-25 10:08:34 info: [0mOPTIONS /service/approveService/68ac1ed4d9b9341418a93a75 [32m204[0m 0.128 ms - 0[0m
+2025-08-25 10:08:35 info: [0mPUT /service/approveService/68ac1ed4d9b9341418a93a75 [32m200[0m 986.779 ms - 421[0m
+2025-08-25 10:08:35 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.095 ms - 0[0m
+2025-08-25 10:08:36 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m200[0m 1479.751 ms - -[0m
+2025-08-25 10:08:41 info: [0mOPTIONS /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m204[0m 0.688 ms - 0[0m
+2025-08-25 10:08:43 info: [0mGET /service/getServiceProposalById/68ac1ed4d9b9341418a93a75 [32m200[0m 1583.202 ms - -[0m
+2025-08-25 10:08:47 info: [0mOPTIONS /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [32m204[0m 0.076 ms - 0[0m
+2025-08-25 10:08:47 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.062 ms - 0[0m
+2025-08-25 10:08:47 info: [0mOPTIONS /service/getAppliedServices [32m204[0m 0.100 ms - 0[0m
+2025-08-25 10:08:48 info: [0mGET /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [36m304[0m 303.964 ms - -[0m
+2025-08-25 10:08:48 info: [0mGET /service/getServiceByUserId/6894c9bd9956fd1d0fd46985 [36m304[0m 308.849 ms - -[0m
+2025-08-25 10:08:48 info: [0mGET /service/getAppliedServices [36m304[0m 623.437 ms - -[0m
+2025-08-25 10:08:49 info: [0mGET /service/getAppliedServices [36m304[0m 640.789 ms - -[0m
+2025-08-25 10:08:50 info: [0mOPTIONS /service/proposals/6894cfa39956fd1d0fd46ade [32m204[0m 0.320 ms - 0[0m
+2025-08-25 10:08:51 info: [0mGET /service/proposals/6894cfa39956fd1d0fd46ade [32m200[0m 897.756 ms - 900[0m
+2025-08-25 10:09:07 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.431 ms - 0[0m
+2025-08-25 10:09:07 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 0.100 ms - 0[0m
+2025-08-25 10:09:08 info: [0mGET /job/getFreelancerContracts [32m200[0m 1045.436 ms - 172[0m
+2025-08-25 10:09:09 info: [0mGET /job/getFreelancerContracts [36m304[0m 916.741 ms - -[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 2.731 ms - 0[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 2.176 ms - 0[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /job/client/6894c79f9956fd1d0fd46946?page=1&limit=10 [32m204[0m 0.203 ms - 0[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /bid/proposals/shortlist?limit=5 [32m204[0m 0.106 ms - 0[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /bid/proposals/archive?limit=5 [32m204[0m 0.234 ms - 0[0m
+2025-08-25 10:09:29 info: [0mOPTIONS /job/client/6894c79f9956fd1d0fd46946?page=1&limit=10 [32m204[0m 0.103 ms - 0[0m
+2025-08-25 10:09:30 info: [0mGET /job/client/6894c79f9956fd1d0fd46946?page=1&limit=10 [32m200[0m 633.039 ms - 172[0m
+2025-08-25 10:09:30 info: [0mGET /bid/proposals/shortlist?limit=5 [32m200[0m 622.381 ms - 80[0m
+2025-08-25 10:09:30 info: [0mGET /bid/proposals/archive?limit=5 [32m200[0m 620.661 ms - 80[0m
+2025-08-25 10:09:30 info: [0mGET /job/client/6894c79f9956fd1d0fd46946?page=1&limit=10 [36m304[0m 638.260 ms - -[0m
+2025-08-25 10:09:30 info: [0mGET /bid/proposals/archive?limit=5 [36m304[0m 633.312 ms - -[0m
+2025-08-25 10:09:30 info: [0mGET /bid/proposals/shortlist?limit=5 [36m304[0m 639.221 ms - -[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 3.243 ms - 0[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.080 ms - 0[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /photography [32m204[0m 0.449 ms - 0[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.409 ms - 0[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.217 ms - 0[0m
+2025-08-25 10:09:33 info: [0mOPTIONS /photography [32m204[0m 0.175 ms - 0[0m
+2025-08-25 10:09:33 info: [0mGET /service/getFeaturedService [36m304[0m 683.287 ms - -[0m
+2025-08-25 10:09:33 info: [0mGET /photography [36m304[0m 626.196 ms - -[0m
+2025-08-25 10:09:34 info: [0mGET /service/getFeaturedService [36m304[0m 605.731 ms - -[0m
+2025-08-25 10:09:34 info: [0mGET /photography [36m304[0m 608.478 ms - -[0m
+2025-08-25 10:09:36 info: [0mGET /job/getFeaturedJobs [32m200[0m 2828.758 ms - -[0m
+2025-08-25 10:09:37 info: [0mGET /job/getFeaturedJobs [36m304[0m 1213.710 ms - -[0m
