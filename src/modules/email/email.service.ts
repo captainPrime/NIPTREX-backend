@@ -5,8 +5,8 @@ import { Message } from './email.interfaces';
 
 class EmailService {
   private transport = nodemailer.createTransport({
-    host: 'smtp.mailtrap.io',
-    port: 2525,
+    host: 'live.smtp.mailtrap.io',
+    port: 587,
     auth: {
       user: MAIL_USERNAME,
       pass: MAIL_PASSWORD,
@@ -164,7 +164,7 @@ class EmailService {
 
   public async sendEmail(to: string, subject: string, text: string, html: string): Promise<void> {
     const msg: Message = {
-      from: `Niptrex <${MAIL_USERNAME}>`,
+   from: `"Niptrex" <no-reply@niptrex.com>`,
       to,
       subject,
       text,

@@ -1,0 +1,73 @@
+2025-09-02 00:33:38 info: =================================
+2025-09-02 00:33:38 info: ======= ENV: development =======
+2025-09-02 00:33:38 info: 🚀 App listening on the port 3000
+2025-09-02 00:33:38 info: =================================
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:47 info: Connected to email server
+2025-09-02 00:33:48 info: Connected to email server
+2025-09-02 00:33:48 info: Connected to email server
+2025-09-02 00:33:50 info: Connected to Database Successfully...
+2025-09-02 00:35:17 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 3.833 ms - 0[0m
+2025-09-02 00:35:17 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.175 ms - 0[0m
+2025-09-02 00:35:17 info: [0mOPTIONS /photography [32m204[0m 0.094 ms - 0[0m
+2025-09-02 00:35:17 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.097 ms - 0[0m
+2025-09-02 00:35:17 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.106 ms - 0[0m
+2025-09-02 00:35:17 info: [0mOPTIONS /photography [32m204[0m 0.209 ms - 0[0m
+2025-09-02 00:35:19 info: [0mGET /service/getFeaturedService [36m304[0m 1875.747 ms - -[0m
+2025-09-02 00:35:19 info: [0mGET /photography [36m304[0m 1908.019 ms - -[0m
+2025-09-02 00:35:21 info: [0mGET /service/getFeaturedService [36m304[0m 2060.367 ms - -[0m
+2025-09-02 00:35:21 info: [0mGET /photography [36m304[0m 2021.316 ms - -[0m
+2025-09-02 00:35:25 info: [0mGET /job/getFeaturedJobs [36m304[0m 8471.296 ms - -[0m
+2025-09-02 00:35:29 info: [0mGET /job/getFeaturedJobs [36m304[0m 3032.032 ms - -[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 2.440 ms - 0[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.334 ms - 0[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /photography [32m204[0m 0.095 ms - 0[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.109 ms - 0[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.115 ms - 0[0m
+2025-09-02 00:59:06 info: [0mOPTIONS /photography [32m204[0m 0.208 ms - 0[0m
+2025-09-02 00:59:08 info: [0mGET /photography [36m304[0m 2144.411 ms - -[0m
+2025-09-02 00:59:08 info: [0mGET /service/getFeaturedService [36m304[0m 2198.846 ms - -[0m
+2025-09-02 00:59:09 info: [0mGET /job/getFeaturedJobs [36m304[0m 3456.140 ms - -[0m
+2025-09-02 00:59:09 info: [0mGET /photography [36m304[0m 1305.066 ms - -[0m
+2025-09-02 00:59:09 info: [0mGET /service/getFeaturedService [36m304[0m 1418.381 ms - -[0m
+2025-09-02 00:59:13 info: [0mGET /job/getFeaturedJobs [36m304[0m 3588.303 ms - -[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.180 ms - 0[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.339 ms - 0[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /photography [32m204[0m 0.204 ms - 0[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.063 ms - 0[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.109 ms - 0[0m
+2025-09-02 00:59:14 info: [0mOPTIONS /photography [32m204[0m 0.116 ms - 0[0m
+2025-09-02 00:59:15 info: [0mGET /photography [36m304[0m 627.180 ms - -[0m
+2025-09-02 00:59:15 info: [0mGET /service/getFeaturedService [36m304[0m 639.651 ms - -[0m
+2025-09-02 00:59:16 info: [0mGET /photography [36m304[0m 941.163 ms - -[0m
+2025-09-02 00:59:16 info: [0mGET /service/getFeaturedService [36m304[0m 927.681 ms - -[0m
+2025-09-02 00:59:18 info: [0mGET /job/getFeaturedJobs [36m304[0m 3510.156 ms - -[0m
+2025-09-02 00:59:22 info: [0mGET /job/getFeaturedJobs [36m304[0m 4270.072 ms - -[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 3.594 ms - 0[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.058 ms - 0[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /photography [32m204[0m 0.036 ms - 0[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /service/getFeaturedService [32m204[0m 0.111 ms - 0[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /job/getFeaturedJobs [32m204[0m 0.054 ms - 0[0m
+2025-09-02 12:24:02 info: [0mOPTIONS /photography [32m204[0m 0.074 ms - 0[0m
+2025-09-02 12:24:05 info: [0mGET /service/getFeaturedService [36m304[0m 3432.233 ms - -[0m
+2025-09-02 12:24:07 info: [0mGET /photography [36m304[0m 4644.049 ms - -[0m
+2025-09-02 12:24:07 info: [0mGET /photography [36m304[0m 660.684 ms - -[0m
+2025-09-02 12:24:08 info: [0mGET /job/getFeaturedJobs [36m304[0m 5771.775 ms - -[0m
+2025-09-02 12:24:08 info: [0mGET /service/getFeaturedService [36m304[0m 2632.674 ms - -[0m
+2025-09-02 12:24:09 error: [GET] /admin >> StatusCode:: 404, Message:: The requested path /admin not found!
+2025-09-02 12:24:09 info: [0mGET /admin [32m200[0m 6.507 ms - 94[0m
+2025-09-02 12:24:09 info: [0mGET /job/getFeaturedJobs [36m304[0m 1278.729 ms - -[0m
+2025-09-02 12:24:11 info: [0mGET / [32m200[0m 1.110 ms - 115[0m
+2025-09-02 12:24:11 error: [GET] /favicon.ico >> StatusCode:: 404, Message:: The requested path /favicon.ico not found!
+2025-09-02 12:24:11 info: [0mGET /favicon.ico [32m200[0m 0.896 ms - 100[0m

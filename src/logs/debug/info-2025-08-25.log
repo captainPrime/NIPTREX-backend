@@ -426,3 +426,8 @@
 2025-08-25 10:09:34 info: [0mGET /photography [36m304[0m 608.478 ms - -[0m
 2025-08-25 10:09:36 info: [0mGET /job/getFeaturedJobs [32m200[0m 2828.758 ms - -[0m
 2025-08-25 10:09:37 info: [0mGET /job/getFeaturedJobs [36m304[0m 1213.710 ms - -[0m
+2025-08-25 13:11:57 info: [0mOPTIONS /job/getFreelancerContracts [32m204[0m 9.942 ms - 0[0m
+2025-08-25 13:12:03 info: [0mGET /job/getFreelancerContracts [36m304[0m 6143.901 ms - -[0m
+2025-08-25 13:34:39 info: [0mGET / [32m200[0m 159.324 ms - 115[0m
+2025-08-25 22:50:21 info: [0mGET / [32m200[0m 564.680 ms - 115[0m
+2025-08-25 22:50:23 info: [0mGET / [0m-[0m - ms - -[0m
